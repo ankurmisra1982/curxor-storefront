@@ -84,7 +84,7 @@ export function Footer() {
               className="mb-8 inline-flex items-center gap-2 text-xs tracking-widest text-white/60 transition-colors hover:text-neon-purple"
             >
               <span className="text-neon-purple">𝕏</span>
-              @curxor
+              {siteConfig.twitterHandle}
             </a>
 
             <div className="text-right">

@@ -1,10 +1,12 @@
 export const siteConfig = {
   name: "CurXor",
+  siteUrl: "https://curxor.ai",
   tagline: "The Sovereign Edge Nexus for Physical AI",
   stripeCheckoutUrl:
     process.env.NEXT_PUBLIC_STRIPE_CHECKOUT_URL ??
     "https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00",
-  twitterUrl: "https://x.com/curxor",
+  twitterUrl: "https://x.com/curxorai",
+  twitterHandle: "@curxorai",
   emailEndpoint: "/api/subscribe",
 };
 
@@ -68,5 +70,17 @@ export const apps = [
     name: "Claw Cafe",
     description: "Deploy clawbots for service automation on-prem.",
     icon: "⎔",
+  },
+  {
+    id: "invest-agent",
+    name: "Invest Agent",
+    description: "Claw-agent market research and sovereign trading workflows.",
+    icon: "↗",
+  },
+  {
+    id: "content-creator",
+    name: "Content Creator",
+    description: "Claw-agent media pipelines — video, copy, and social from the edge.",
+    icon: "✦",
   },
 ] as const;

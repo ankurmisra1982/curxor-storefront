@@ -1,5 +1,17 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { siteConfig } from "@/lib/config";
+
+const HardwareScene = dynamic(
+  () =>
+    import("@/components/HardwareScene").then((mod) => mod.HardwareScene),
+  {
+    ssr: false,
+    loading: () => <HardwareSceneFallback />,
+  }
+);
 
 export function Hero() {
   return (
@@ -66,7 +78,7 @@ export function Hero() {
         </div>
 
         <div className="relative">
-          <HardwareRenderPlaceholder />
+          <HardwareScene />
         </div>
       </div>
 
@@ -75,59 +87,14 @@ export function Hero() {
   );
 }
 
-function HardwareRenderPlaceholder() {
+function HardwareSceneFallback() {
   return (
     <div className="relative aspect-square w-full max-w-lg mx-auto lg:max-w-none">
       <div className="absolute -inset-4 border border-neon-purple/20" />
-      <div className="absolute -inset-8 border border-white/5" />
-
-      <div className="relative flex h-full flex-col border-industrial bg-black">
-        <div className="flex items-center justify-between border-b border-white/10 px-4 py-2 text-[10px] tracking-widest text-white/40">
-          <span>RENDER // CURXOR-NEXUS-V1</span>
-          <span className="text-neon-purple">● LIVE</span>
-        </div>
-
-        <div className="relative flex flex-1 items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 grid-industrial opacity-60" />
-          <div className="absolute inset-0 bg-gradient-to-b from-neon-purple/5 via-transparent to-neon-purple/10" />
-
-          <div className="relative z-10 flex flex-col items-center gap-6 p-8">
-            <div className="relative">
-              <div className="h-48 w-64 border-2 border-white/20 bg-gradient-to-br from-white/5 to-white/[0.02] sm:h-56 sm:w-72">
-                <div className="absolute inset-x-4 top-4 h-1 bg-neon-purple/60" />
-                <div className="absolute inset-x-8 top-8 flex gap-2">
-                  {[...Array(6)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="h-8 w-1 bg-white/10"
-                      style={{ height: `${20 + (i % 3) * 12}px` }}
-                    />
-                  ))}
-                </div>
-                <div className="absolute bottom-6 left-1/2 flex -translate-x-1/2 gap-3">
-                  <div className="h-3 w-3 rounded-full bg-neon-purple shadow-[0_0_12px_#BF5AF2]" />
-                  <div className="h-3 w-3 rounded-full bg-white/20" />
-                  <div className="h-3 w-3 rounded-full bg-white/20" />
-                </div>
-              </div>
-              <div className="absolute -bottom-2 -right-2 h-full w-full border border-neon-purple/30 -z-10" />
-            </div>
-
-            <p className="text-center text-[10px] tracking-[0.3em] text-white/30">
-              [ 3D HARDWARE RENDER PLACEHOLDER ]
-            </p>
-          </div>
-
-          <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-20">
-            <div className="h-px w-full bg-neon-purple/50 animate-scan-line" />
-          </div>
-        </div>
-
-        <div className="flex justify-between border-t border-white/10 px-4 py-2 text-[10px] tracking-widest text-white/30">
-          <span>ROT: 0.0°</span>
-          <span>ZOOM: 1.0×</span>
-          <span>MESH: NEXUS-01</span>
-        </div>
+      <div className="relative flex min-h-[320px] items-center justify-center border-industrial bg-black sm:min-h-[420px]">
+        <p className="text-[10px] tracking-[0.3em] text-white/30">
+          INITIALIZING NEXUS RENDER...
+        </p>
       </div>
     </div>
   );

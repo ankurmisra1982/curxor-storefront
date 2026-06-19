@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import { siteConfig } from "@/lib/config";
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -9,13 +10,19 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.siteUrl),
   title: "CurXor — Vibe-Code the Physical World",
   description:
     "The Sovereign Edge Nexus for Physical AI. Locally control robotics without cloud latency.",
   icons: { icon: "/favicon.svg" },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "CurXor — Vibe-Code the Physical World",
     description: "The Sovereign Edge Nexus for Physical AI.",
+    url: siteConfig.siteUrl,
+    siteName: siteConfig.name,
     type: "website",
   },
 };

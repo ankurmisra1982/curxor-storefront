@@ -32,12 +32,12 @@ export function AppEcosystem() {
             </h2>
           </div>
           <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            Five production-ready applications ship with every CurXor nexus. No
+            Seven production-ready applications ship with every CurXor nexus. No
             app store. No cloud provisioning.
           </p>
         </div>
 
-        <div className="hidden gap-4 md:grid md:grid-cols-5">
+        <div className="hidden gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {apps.map((app) => (
             <AppCard key={app.id} app={app} />
           ))}

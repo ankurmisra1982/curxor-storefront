@@ -14,8 +14,8 @@ export function SpecMatrix() {
             </h2>
           </div>
           <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            Full-stack sovereignty. Hardware, network spine, and OS engineered
-            for physical AI at the edge.
+            Flagship silicon first. Then the two-port kill switch. Then the Claws
+            that turn compute into cash.
           </p>
         </div>
 
@@ -23,9 +23,19 @@ export function SpecMatrix() {
           {specColumns.map((column) => (
             <div
               key={column.id}
-              className="group relative bg-black p-8 transition-colors hover:bg-white/[0.02]"
+              className={`group relative bg-black p-8 transition-colors hover:bg-white/[0.02] ${
+                "featured" in column && column.featured
+                  ? "md:col-span-1 ring-1 ring-inset ring-neon-purple/30"
+                  : ""
+              }`}
             >
               <div className="absolute left-0 top-0 h-px w-0 bg-neon-purple transition-all duration-500 group-hover:w-full" />
+
+              {"featured" in column && column.featured && (
+                <p className="mb-4 text-[10px] tracking-[0.25em] text-neon-purple">
+                  FLAGSHIP SILICON
+                </p>
+              )}
 
               <h3 className="mb-8 text-xs font-bold tracking-[0.3em] text-neon-purple">
                 {column.label}
@@ -35,9 +45,13 @@ export function SpecMatrix() {
                 {column.items.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 text-sm leading-relaxed text-white/80"
+                    className={`flex items-start gap-3 leading-relaxed text-white/80 ${
+                      "featured" in column && column.featured
+                        ? "text-sm sm:text-base"
+                        : "text-sm"
+                    }`}
                   >
-                    <span className="mt-2 h-1 w-1 shrink-0 bg-white/40" />
+                    <span className="mt-2 h-1 w-1 shrink-0 bg-neon-purple/60" />
                     {item}
                   </li>
                 ))}

@@ -79,24 +79,28 @@ async function main() {
   const version = loadVersion();
   const ootbApps = await loadOotbApps();
 
-  const apps = ootbApps.map((app) => {
-    const marketing =
-      MARKETING_BY_APPLIANCE_ID[
-        app.id as keyof typeof MARKETING_BY_APPLIANCE_ID
-      ];
+  const apps = ootbApps
+    .map((app) => {
+      const marketing =
+        MARKETING_BY_APPLIANCE_ID[
+          app.id as keyof typeof MARKETING_BY_APPLIANCE_ID
+        ];
 
-    if (!marketing) {
-      throw new Error(`Missing marketing map for appliance app id: ${app.id}`);
-    }
+      if (!marketing) {
+        throw new Error(`Missing marketing map for appliance app id: ${app.id}`);
+      }
 
-    return {
-      id: marketing.storefrontId,
-      applianceId: app.id,
-      name: marketing.storefrontName,
-      description: app.description,
-      icon: marketing.icon,
-    };
-  });
+      return {
+        id: marketing.storefrontId,
+        applianceId: app.id,
+        name: app.name,
+        description: app.description,
+        icon: marketing.icon,
+        sortOrder: marketing.sortOrder ?? 999,
+      };
+    })
+    .sort((a, b) => a.sortOrder - b.sortOrder)
+    .map(({ sortOrder: _sortOrder, ...app }) => app);
 
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, buildGeneratedSource(apps, version), "utf8");

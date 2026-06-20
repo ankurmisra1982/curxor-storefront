@@ -12,39 +12,39 @@ npm run sync:appliance
 
 This runs automatically before `npm run dev` and `npm run build`. It reads:
 
-- `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` → app **descriptions**
+- `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` → canonical **names**, **descriptions**, appliance IDs
 - `../curxor-os/version.json` → **BUNDLED // vX.Y.Z** badges
+- `scripts/marketing-map.ts` → storefront slugs, icons, sort order only
 
 Output: `src/lib/generated/appliance-sync.ts` (committed for Vercel when the sibling repo is absent).
 
 Override appliance path: `CURXOR_OS_ROOT=/path/to/curxor-os npm run sync:appliance`
 
-Marketing IDs/names/icons: `scripts/marketing-map.ts` (storefront names vs appliance FRE ids).
+## App naming (canonical)
 
-## App naming (storefront vs Flight Command)
+Appliance IDs and routes are stable. Display names pivot to the **Digital Wealth & Growth** paradigm — same on storefront and Flight Command.
 
-| Storefront (`src/lib/config.ts`) | Appliance (`ootb-apps.ts`) | Route |
-|----------------------------------|----------------------------|-------|
-| My Work | My Work | `/my-work` |
-| My Shop | My Shop | `/my-shop` |
-| Tesla Optimus Engine | Tesla Optimus Engine | `/optimus` |
-| Robotaxi Fleet Manager | Robotaxi Fleet Manager | `/robotaxi` |
-| Claw Cafe | Claw Cafe | `/claw-cafe` |
-| **Content Creator** | **My Content Creator** | `/my-content` |
-| **Invest Agent** | **My Capital** | `/my-capital` |
-| **Claw Forge** | **Claw Forge** | `/claw-forge` |
-| **Claw Forge** | **Claw Forge** | `/claw-forge` |
+| Appliance ID | Display name | Route | Nav short |
+|--------------|--------------|-------|-----------|
+| `claw-forge` | The Forge | `/claw-forge` | FORGE |
+| `my-capital` | Capital Claw | `/my-capital` | CAP |
+| `my-content-creator` | Creator Claw | `/my-content` | CRE |
+| `my-work` | Outreach Claw | `/my-work` | OUT |
+| `my-shop` | Arbitrage Claw | `/my-shop` | ARB |
+| `tesla-optimus-engine` | Signal Claw | `/optimus` | SIG |
+| `robotaxi-fleet-manager` | Swarm Claw | `/robotaxi` | SWARM |
+| `claw-cafe` | Engage Claw | `/claw-cafe` | ENG |
 
-Marketing names are fine on the landing page; FRE/module IDs on appliance use the right column.
+Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketing-map.ts` for URLs and section anchors. Names and descriptions always come from `ootb-apps.ts`.
 
-**Sync rule:** When adding an appliance app, update `ootb-apps.ts`, then run `npm run sync:appliance` and extend `scripts/marketing-map.ts` if the storefront marketing name/id differs.
+**Sync rule:** When adding an appliance app, update `ootb-apps.ts`, extend `marketing-map.ts` with slug/icon/sortOrder, then run `npm run sync:appliance`.
 
 ## Copy guardrails (storefront vs audit)
 
 | Storefront today | Audit note |
 |------------------|------------|
 | Spec: "Sub-millisecond ZeroMQ telemetry" | Aspirational — **not validated** until MS-S1 MAX mesh benchmarks |
-| "Seven production-ready applications" | **UI shells ship**; many modules use mock data until hardware + integrations |
+| "Eight Claw verticals + The Forge" | **UI shells ship**; many modules use mock data until integrations land |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 
@@ -67,13 +67,13 @@ Close enough for GTM; unify later if needed.
 3. Refresh [TECHNICAL-HANDOFF.md](TECHNICAL-HANDOFF.md) if needed
 4. Changelog page (when added)
 
-## Digital layer (Invest Agent + Content Creator)
+## Digital layer (Capital Claw + Creator Claw)
 
 Appliance tools (engine, not LLM):
 
 - `capital.execute_trade` → Alpaca paper via Python bridge
 - `content.publish_post` → X API via Python bridge
 
-Safe marketing line: *"Your LLM never talks to the internet — dedicated bridges handle trades and posts."*
+Safe marketing line: *"Your LLM never talks to the internet — dedicated bridges handle trades and posts on eno2."*
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`

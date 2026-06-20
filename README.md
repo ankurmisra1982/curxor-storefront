@@ -12,7 +12,7 @@ GTM site and marketing workspace for **CurXor OS** — sovereign edge appliance 
 | `npm run dev` | [http://localhost:3000](http://localhost:3000) |
 | `npm run build` | Production build |
 
-**Live stack:** Next.js 15 · Tailwind · Resend email capture · Stripe pre-order · 3D hardware hero · seven-app ecosystem grid (`src/lib/config.ts`).
+**Live stack:** Next.js 15 · Tailwind · Resend email capture · Stripe pre-order · 3D hardware hero · eight Claw verticals + The Forge (`src/lib/generated/appliance-sync.ts`).
 
 ## GTM docs (from appliance audit)
 
@@ -22,7 +22,7 @@ GTM site and marketing workspace for **CurXor OS** — sovereign edge appliance 
 | [Product positioning](docs/PRODUCT-POSITIONING.md) | Messaging, personas, guardrails |
 | [Technical handoff](docs/TECHNICAL-HANDOFF.md) | Spec sheet for accurate copy |
 | [GTM checklist](docs/GTM-CHECKLIST.md) | Done vs todo while waiting for hardware |
-| [Marketing ↔ appliance sync](docs/SYNC.md) | Naming map (Invest Agent vs My Capital, etc.) |
+| [Marketing ↔ appliance sync](docs/SYNC.md) | Canonical Claw naming + sync from `ootb-apps.ts` |
 
 ## Repo split
 

@@ -4,9 +4,9 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 
 ## Done in **curxor storefront** ✅
 
-- [x] Landing page hero (*Vibe-Code the Physical World*)
+- [x] Landing page hero (*Mint Autonomous Employees on Bare Metal.*)
 - [x] Spec sheet matrix (Compute / Spine / OS)
-- [x] Seven-app ecosystem grid + mobile carousel
+- [x] Eight Claw verticals + The Forge grid + mobile carousel
 - [x] 3D hardware scene (R3F)
 - [x] Email capture (`/api/subscribe` + Resend)
 - [x] Stripe pre-order CTA
@@ -31,7 +31,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [ ] "Works on MS-S1 MAX" validation badge
 - [ ] Factory USB / cloud-init install video
 - [ ] PDF operator guide (`../curxor-os/docs/scripts/export-guides-pdf.sh`)
-- [ ] Live demo unit (Claw Cafe + captive portal)
+- [ ] Live demo unit (Engage Claw + captive portal)
 - [ ] Production OTA release URL
 - [ ] Customer case study
 
@@ -50,5 +50,5 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 |--------|-----|
 | `docs/guides/02-architecture.md` | Architecture page |
 | `docs/guides/10-ms-s1-max-hardware-bios.md` | Hardware FAQ |
-| `docs/guides/12-digital-action-layer.md` | Invest Agent + Content Creator privacy story |
+| `docs/guides/12-digital-action-layer.md` | Capital Claw + Creator Claw privacy story |
 | `docs/quick-reference/operator-card.md` | Support download |

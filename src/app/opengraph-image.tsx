@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/config";
 
-export const alt = "CurXor — Vibe-Code the Physical World";
+export const alt = "CurXor — 126 TOPS · 64GB UMA AI Powerhouse";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -60,25 +60,37 @@ export default async function Image() {
               style={{
                 display: "flex",
                 flexWrap: "wrap",
-                fontSize: 68,
+                fontSize: 56,
                 lineHeight: 1.05,
                 fontWeight: 700,
                 letterSpacing: "-0.03em",
                 maxWidth: 760,
               }}
             >
-              Vibe-Code the Physical World.
+              126 TOPS · 64GB UMA
             </div>
             <div
               style={{
                 display: "flex",
-                fontSize: 24,
+                fontSize: 28,
+                lineHeight: 1.2,
+                fontWeight: 700,
+                letterSpacing: "-0.02em",
+                maxWidth: 680,
+              }}
+            >
+              Mint AI Employees on Bare Metal.
+            </div>
+            <div
+              style={{
+                display: "flex",
+                fontSize: 20,
                 color: "#BF5AF2",
                 letterSpacing: "0.04em",
                 maxWidth: 680,
               }}
             >
-              {siteConfig.tagline}
+              {siteConfig.ogTagline}
             </div>
           </div>
 
@@ -92,11 +104,11 @@ export default async function Image() {
               color: "rgba(255,255,255,0.35)",
             }}
           >
-            <span style={{ display: "flex", color: "#BF5AF2" }}>126 TOPS</span>
+            <span style={{ display: "flex", color: "#BF5AF2" }}>RYZEN AI MAX+</span>
             <span style={{ display: "flex" }}>|</span>
-            <span style={{ display: "flex" }}>&lt;1ms TELEMETRY</span>
+            <span style={{ display: "flex" }}>$3,999 ONCE</span>
             <span style={{ display: "flex" }}>|</span>
-            <span style={{ display: "flex" }}>0 CLOUD DEPS</span>
+            <span style={{ display: "flex" }}>$0/mo API</span>
           </div>
         </div>
 

@@ -3,64 +3,64 @@
 
 export const applianceVersion = "0.1.0" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-06-20T03:57:43.386Z" as const;
+export const applianceSyncedAt = "2026-06-20T06:07:25.589Z" as const;
 
 export const apps = [
   {
-    "id": "my-work",
-    "applianceId": "my-work",
-    "name": "My Work",
-    "description": "Your personal command center for daily tasks, notes, and local AI assistance — all on your appliance.",
-    "icon": "⌘"
+    "id": "claw-forge",
+    "applianceId": "claw-forge",
+    "name": "The Forge",
+    "description": "Prompt the local LLM to forge a custom Claw for your niche hustle — wire it to eno2 and deploy in one session.",
+    "icon": "✚"
   },
   {
-    "id": "my-shop",
-    "applianceId": "my-shop",
-    "name": "My Shop",
-    "description": "Run a small storefront or inventory desk with offline tools for orders, stock, and customer pickup.",
-    "icon": "◈"
-  },
-  {
-    "id": "optimus",
-    "applianceId": "tesla-optimus-engine",
-    "name": "Tesla Optimus Engine",
-    "description": "Humanoid motion planning and safety orchestration for Optimus-class units on your local mesh.",
-    "icon": "⊕"
-  },
-  {
-    "id": "robotaxi",
-    "applianceId": "robotaxi-fleet-manager",
-    "name": "Robotaxi Fleet Manager",
-    "description": "See every vehicle at a glance, assign routes, and monitor fleet health without leaving the building.",
-    "icon": "◎"
-  },
-  {
-    "id": "claw-cafe",
-    "applianceId": "claw-cafe",
-    "name": "Claw Cafe",
-    "description": "A playful claw-bot kiosk experience — grab prizes, run demos, and delight guests at events.",
-    "icon": "⎔"
-  },
-  {
-    "id": "content-creator",
-    "applianceId": "my-content-creator",
-    "name": "Content Creator",
-    "description": "Manage social channels, headless video pipelines, and post queues — drafted and scheduled on your appliance.",
-    "icon": "✦"
-  },
-  {
-    "id": "invest-agent",
+    "id": "capital-claw",
     "applianceId": "my-capital",
-    "name": "Invest Agent",
-    "description": "Build flexible investment rules for stocks and crypto, monitor portfolios, and run automated strategies locally.",
+    "name": "Capital Claw",
+    "description": "Algorithmic trading, crypto sniping, and automated portfolio rebalancing — your alpha stays on bare metal.",
     "icon": "↗"
   },
   {
-    "id": "claw-forge",
-    "applianceId": "claw-forge",
-    "name": "Claw Forge",
-    "description": "Design new claw bots in natural language — describe goals, attach photos, or pull live vision, then deploy locally.",
-    "icon": "✚"
+    "id": "creator-claw",
+    "applianceId": "my-content-creator",
+    "name": "Creator Claw",
+    "description": "SEO blog generation, X thread scheduling, and YouTube scripts — content pipelines with zero API rent.",
+    "icon": "✦"
+  },
+  {
+    "id": "outreach-claw",
+    "applianceId": "my-work",
+    "name": "Outreach Claw",
+    "description": "Lead scraping, personalized cold email sequencing, and CRM follow-ups — outbound that never sleeps.",
+    "icon": "⌘"
+  },
+  {
+    "id": "arbitrage-claw",
+    "applianceId": "my-shop",
+    "name": "Arbitrage Claw",
+    "description": "E-commerce price scraping, margin alerts, and automated dropshipping fulfillment — find spread, act instantly.",
+    "icon": "◈"
+  },
+  {
+    "id": "signal-claw",
+    "applianceId": "tesla-optimus-engine",
+    "name": "Signal Claw",
+    "description": "Ingest market feeds, social mentions, and news triggers — spin up agents the moment alpha appears.",
+    "icon": "⊕"
+  },
+  {
+    "id": "swarm-claw",
+    "applianceId": "robotaxi-fleet-manager",
+    "name": "Swarm Claw",
+    "description": "Orchestrate dozens of Claws in parallel — assign workloads, monitor uptime, and scale your digital workforce.",
+    "icon": "◎"
+  },
+  {
+    "id": "engage-claw",
+    "applianceId": "claw-cafe",
+    "name": "Engage Claw",
+    "description": "Auto-replies, DM triage, and community thread engagement on X and LinkedIn — grow audience while you sleep.",
+    "icon": "⎔"
   }
 ] as const;
 

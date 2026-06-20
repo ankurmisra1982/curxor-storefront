@@ -14,8 +14,14 @@ export function Header() {
           <a href="#specs" className="transition-colors hover:text-neon-purple">
             SPECS
           </a>
+          <a href="#compute" className="transition-colors hover:text-neon-purple">
+            COMPUTE
+          </a>
+          <a href="#forge-loop" className="transition-colors hover:text-neon-purple">
+            FORGE
+          </a>
           <a href="#apps" className="transition-colors hover:text-neon-purple">
-            APPS
+            CLAWS
           </a>
           <TrackedPreorderLink
             location="header"

@@ -1,59 +1,60 @@
-# CurXor OS — Product Positioning (GTM)
+# CurXor — Product Positioning (GTM)
 
-Aligned with live storefront copy in `src/lib/config.ts` and `src/components/Hero.tsx`.
+**Paradigm:** Digital Wealth & Growth — autonomous Clawbot employees on sovereign bare metal, not physical robotics.
+
+Aligned with live storefront copy in `src/lib/config.ts`, `Hero.tsx`, and `CreateToEarn.tsx`.
 
 ## Category
 
-**Sovereign edge AI appliance** — not a cloud SaaS, not a generic mini PC. A packaged stack for local inference, physical agents, and operator UI on fixed hardware.
+**Sovereign agent appliance** — a $3,999 box that runs digital employees 24/7 with $0/mo cloud API fees. Not a mini PC. Not a SaaS.
 
 ## Public taglines (in use)
 
 | Surface | Copy |
 |---------|------|
-| Hero | **Vibe-Code the Physical World.** |
-| Site config | *The Sovereign Edge Nexus for Physical AI* |
-| Footer | *Designed for the edge.* |
-
-Draft alternates (see prior brainstorm): *Your AI. Your metal. No cloud.*
+| Hero | **Mint Autonomous Employees on Bare Metal.** |
+| Subhead | *Stop paying monthly cloud API fees and handing your proprietary strategies to OpenAI.* |
+| Pitch | 64GB UMA · infinite local Claws · one-time hardware |
+| Footer | *Sovereign metal. Infinite Claws.* |
+| Price anchor | **$3,999** one-time |
 
 ## Target buyer personas
 
 | Persona | Pain | CurXor answer |
 |---------|------|---------------|
-| Robotics builder | Cloud latency + data egress | Local VLA + mesh motor bus on eno2 |
-| Small fleet / kiosk operator | Onboarding friction | Captive portal FRE on eno1 |
-| Privacy-conscious creator/trader | LLM + API keys on same machine | LLM localhost-only; bridges isolate HTTPS |
-| Edge AI hobbyist / prosumer | ROCm tuning hell | Opinionated Ollama defaults for gfx1151 UMA |
+| Algo trader / crypto operator | API fees + strategy leakage | Capital Claw on localhost; Alpaca egress on eno2 only |
+| Creator / indie hacker | Token rent + platform lock-in | Creator Claw; schedule posts without OpenAI bills |
+| Outbound / agency founder | Lead tools + CRM SaaS stack | Outreach Claw; scrape, sequence, CRM locally |
+| E-com / arbitrage operator | Margin tools + fulfillment SaaS | Arbitrage Claw; price watch + ops on-box |
+| Sovereignty-maximalist | “My alpha is my moat” | Pull eno2 = kill switch; LLM never cloud-bound |
 
 ## Differentiators (lead with these)
 
-1. **Sovereign inference** — models on `127.0.0.1`; engine rejects cloud LLM URLs
-2. **Split network plane** — users on eno1, robots on eno2
-3. **Flight Command Desktop** — industrial UI, live telemetry SSE, Master Claw sidebar
-4. **Claw wizard** — intent → local model stack → engine profile
-5. **OTA with rollback** — nightly updates, pre-update tarball, System Health log
-6. **Digital action layer** — agent intents on ZMQ; Python bridges alone hit Alpaca/X
+1. **Create-to-Earn** — The Forge spawns custom Clawbots from natural language
+2. **$0/mo inference tax** — 64GB UMA, local models, no OpenAI invoice
+3. **Two-port security** — eno1 command UI · eno2 egress only · unplug to stop agents
+4. **Digital employees OOTB** — Capital, Creator, Outreach, Arbitrage + specialty modules
+5. **Alpha stays on metal** — strategies, prompts, and data never leave the appliance
+6. **OTA golden image** — flash once, iterate locally, ship updates with rollback
 
-## OOTB module stories (landing page ↔ appliance)
+## Clawbot verticals (storefront ↔ appliance)
 
-See [SYNC.md](SYNC.md) for **Invest Agent** / **Content Creator** naming vs appliance **My Capital** / **My Content Creator**.
+| Storefront name | Appliance ID | Role |
+|-----------------|--------------|------|
+| Capital Claw | `my-capital` | Trading, rebalancing, paper/live via bridge |
+| Creator Claw | `my-content-creator` | Content pipeline, X bridge |
+| Outreach Claw | `my-work` | Outbound, CRM, productivity |
+| Arbitrage Claw | `my-shop` | E-com ops, fulfillment |
+| The Forge | `claw-forge` | Custom agent factory |
+| Fleet / Optimus / Cafe | optional modules | Demos, mesh, events |
 
-## Budget tiers (claw wizard — future pricing page)
-
-| Tier | UMA cap | Audience |
-|------|---------|----------|
-| Economy | ~20 GB | Kiosks, single-claw |
-| Balanced | ~36 GB | Default SMB |
-| Performance | ~48 GB | VLA manipulation |
-
-Source: `../curxor-os/pillar-4-dashboard/lib/local-llm-catalog.ts`
+Run `npm run sync:appliance` after changing `scripts/marketing-map.ts`.
 
 ## Words to avoid (until hardware proof)
 
-- “Production-ready on your desk today” (without SKU validation)
-- **“Sub-millisecond” as guaranteed** (currently on spec matrix — soften or qualify)
-- “Full VLA manipulation out of the box”
-- “Live trading included” (paper Alpaca + credentials required)
+- “Guaranteed returns” / “prints money” as literal claim (use ROI stories, not promises)
+- “Unhackable” as absolute security claim (prefer “alpha stays local” / “no cloud exfil”)
+- “Live trading included” (paper + credentials required)
 
 ## Visual identity
 

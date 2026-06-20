@@ -14,17 +14,15 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
-  title: "CurXor — Vibe-Code the Physical World",
-  description:
-    "The Sovereign Edge Nexus for Physical AI. Locally control robotics without cloud latency.",
+  title: siteConfig.pageTitle,
+  description: siteConfig.metaDescription,
   icons: { icon: "/favicon.svg" },
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "CurXor — Vibe-Code the Physical World",
-    description:
-      "The Sovereign Edge Nexus for Physical AI. Locally control robotics without cloud latency.",
+    title: siteConfig.pageTitle,
+    description: siteConfig.metaDescription,
     url: siteConfig.siteUrl,
     siteName: siteConfig.name,
     type: "website",
@@ -34,12 +32,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: siteConfig.twitterHandle,
     creator: siteConfig.twitterHandle,
-    title: "CurXor — Vibe-Code the Physical World",
-    description:
-      "The Sovereign Edge Nexus for Physical AI. Locally control robotics without cloud latency.",
+    title: siteConfig.pageTitle,
+    description: siteConfig.metaDescription,
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

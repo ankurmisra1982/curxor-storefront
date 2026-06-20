@@ -25,15 +25,15 @@ export function AppEcosystem() {
         <div className="mb-16 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-              OUT-OF-THE-BOX
+              DIGITAL EMPLOYEES
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              App Ecosystem
+              Claw Verticals
             </h2>
           </div>
           <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            {apps.length} production-ready applications ship with every CurXor
-            nexus. No app store. No cloud provisioning.
+            126 TOPS running 8 bundled verticals — plus infinite custom Claws from
+            The Forge. No app store. No cloud provisioning.
           </p>
         </div>
 

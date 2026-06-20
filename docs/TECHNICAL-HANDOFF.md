@@ -36,9 +36,20 @@ Copy-paste facts for storefront, datasheets, and pitch decks. Source of truth: `
 
 ## OOTB apps — marketing IDs
 
-From `src/lib/config.ts` (7 apps): `my-work`, `my-shop`, `optimus`, `robotaxi`, `claw-cafe`, `invest-agent`, `content-creator`
+Eight Claws synced from `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` into `src/lib/generated/appliance-sync.ts`:
 
-Appliance FRE IDs: see `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` — [SYNC.md](SYNC.md)
+| Storefront slug | Appliance ID | Display name |
+|-----------------|--------------|--------------|
+| `claw-forge` | `claw-forge` | The Forge |
+| `capital-claw` | `my-capital` | Capital Claw |
+| `creator-claw` | `my-content-creator` | Creator Claw |
+| `outreach-claw` | `my-work` | Outreach Claw |
+| `arbitrage-claw` | `my-shop` | Arbitrage Claw |
+| `signal-claw` | `tesla-optimus-engine` | Signal Claw |
+| `swarm-claw` | `robotaxi-fleet-manager` | Swarm Claw |
+| `engage-claw` | `claw-cafe` | Engage Claw |
+
+Full naming table: [SYNC.md](SYNC.md)
 
 ## Appliance ports & paths
 

@@ -91,7 +91,7 @@ export function Footer() {
 
             <div className="text-right">
               <p className="text-2xl font-bold tracking-tight text-white/90">
-                Designed for the edge.
+                126 TOPS. $0 API. Infinite Claws.
               </p>
               <p className="mt-2 text-[10px] tracking-[0.3em] text-white/30">
                 © {new Date().getFullYear()} CURXOR SYSTEMS

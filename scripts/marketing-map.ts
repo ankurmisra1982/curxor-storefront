@@ -1,45 +1,45 @@
-/** Storefront marketing IDs/names/icons keyed by curxor-os `ootb-apps.ts` id. */
-export const MARKETING_BY_APPLIANCE_ID = {
-  "my-work": {
-    storefrontId: "my-work",
-    storefrontName: "My Work",
-    icon: "⌘",
-  },
-  "my-shop": {
-    storefrontId: "my-shop",
-    storefrontName: "My Shop",
-    icon: "◈",
-  },
-  "tesla-optimus-engine": {
-    storefrontId: "optimus",
-    storefrontName: "Tesla Optimus Engine",
-    icon: "⊕",
-  },
-  "robotaxi-fleet-manager": {
-    storefrontId: "robotaxi",
-    storefrontName: "Robotaxi Fleet Manager",
-    icon: "◎",
-  },
-  "claw-cafe": {
-    storefrontId: "claw-cafe",
-    storefrontName: "Claw Cafe",
-    icon: "⎔",
-  },
-  "my-content-creator": {
-    storefrontId: "content-creator",
-    storefrontName: "Content Creator",
-    icon: "✦",
-  },
-  "my-capital": {
-    storefrontId: "invest-agent",
-    storefrontName: "Invest Agent",
-    icon: "↗",
-  },
-  "claw-forge": {
-    storefrontId: "claw-forge",
-    storefrontName: "Claw Forge",
-    icon: "✚",
-  },
-} as const;
-
-export type ApplianceAppId = keyof typeof MARKETING_BY_APPLIANCE_ID;
+/** Storefront slugs + presentation keyed by curxor-os `ootb-apps.ts` id. Names/descriptions sync from appliance. */
+export const MARKETING_BY_APPLIANCE_ID = {
+  "claw-forge": {
+    storefrontId: "claw-forge",
+    icon: "✚",
+    sortOrder: 0,
+  },
+  "my-capital": {
+    storefrontId: "capital-claw",
+    icon: "↗",
+    sortOrder: 1,
+  },
+  "my-content-creator": {
+    storefrontId: "creator-claw",
+    icon: "✦",
+    sortOrder: 2,
+  },
+  "my-work": {
+    storefrontId: "outreach-claw",
+    icon: "⌘",
+    sortOrder: 3,
+  },
+  "my-shop": {
+    storefrontId: "arbitrage-claw",
+    icon: "◈",
+    sortOrder: 4,
+  },
+  "tesla-optimus-engine": {
+    storefrontId: "signal-claw",
+    icon: "⊕",
+    sortOrder: 5,
+  },
+  "robotaxi-fleet-manager": {
+    storefrontId: "swarm-claw",
+    icon: "◎",
+    sortOrder: 6,
+  },
+  "claw-cafe": {
+    storefrontId: "engage-claw",
+    icon: "⎔",
+    sortOrder: 7,
+  },
+} as const;
+
+export type ApplianceAppId = keyof typeof MARKETING_BY_APPLIANCE_ID;

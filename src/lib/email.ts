@@ -90,11 +90,11 @@ export async function subscribeEmail(rawEmail: string): Promise<void> {
         <p style="color: #BF5AF2; letter-spacing: 0.2em; font-size: 12px;">CURXOR SYSTEMS</p>
         <h1 style="font-size: 24px; font-weight: 700;">You're on the list.</h1>
         <p style="color: #aaa; line-height: 1.6;">
-          Thanks for subscribing. We'll send pre-order updates, firmware drops, and launch news
-          for the Sovereign Edge Nexus.
+          Thanks for subscribing. We'll send pre-order updates, Forge drops, and launch news
+          for the sovereign Clawbot appliance — mint autonomous employees on bare metal.
         </p>
         <p style="color: #666; font-size: 12px; margin-top: 32px;">
-          Designed for the edge. · <a href="https://curxor.ai" style="color: #BF5AF2;">curxor.ai</a>
+          126 TOPS. $0 API. Infinite Claws. · <a href="https://curxor.ai" style="color: #BF5AF2;">curxor.ai</a>
         </p>
       </div>
     `,

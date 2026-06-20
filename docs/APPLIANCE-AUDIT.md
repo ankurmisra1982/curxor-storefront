@@ -24,8 +24,8 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Pillar 1 Compute | ✅ Scaffold + scripts | Ollama default, vLLM experimental; needs gfx1151 proof |
 | Pillar 2 Engine | ✅ Functional design | Physical + digital tools; vision-throttled LLM loop |
 | Pillar 3 Telemetry | ✅ Complete | Dual ZMQ proxy + digital bridges in `curxor-broker-stack` |
-| Pillar 4 Dashboard | ✅ Rich UI | 7 OOTB apps, FRE, claw wizard, SSE telemetry, OTA terminal |
-| **Storefront (this repo)** | ✅ Landing v1 | Hero, spec matrix, 7 apps, Stripe, email API |
+| Pillar 4 Dashboard | ✅ Rich UI | 8 OOTB apps, FRE, claw wizard, SSE telemetry, OTA terminal |
+| **Storefront (this repo)** | ✅ Landing v1 | Hero, spec matrix, 8 Claws + Forge, Stripe, email API |
 | Networking | ✅ Documented | eno1 captive `10.0.0.1` · eno2 mesh `10.77.0.1` |
 | OTA | ✅ Complete | Backup, SHA256, rollback, cron, System Health log stream |
 | Digital layer | ⚠️ Scaffold | Bridges coded; requires `/etc/curxor/digital.env` + live APIs |
@@ -36,17 +36,18 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 
 ---
 
-## OOTB apps (7) — appliance routes
+## OOTB apps (8) — appliance routes
 
-| App | Route | Storefront name | Maturity |
-|-----|-------|-----------------|----------|
-| My Work | `/my-work` | My Work | Mock productivity UI |
-| My Shop | `/my-shop` | My Shop | Mock fulfillment UI |
-| Optimus | `/optimus` | Tesla Optimus Engine | Placeholder canvas |
-| Robotaxi | `/robotaxi` | Robotaxi Fleet Manager | Mock fleet grid |
-| Claw Cafe | `/claw-cafe` | Claw Cafe | Vision grid (live when mesh feeds) |
-| My Content Creator | `/my-content` | Content Creator | Mock queues + live digital receipts |
-| My Capital | `/my-capital` | Invest Agent | Mock portfolio + live digital receipts |
+| App | Route | Display name | Maturity |
+|-----|-------|--------------|----------|
+| The Forge | `/claw-forge` | The Forge | Claw provisioning wizard + local LLM recommend |
+| Capital Claw | `/my-capital` | Capital Claw | Mock portfolio + live digital receipts |
+| Creator Claw | `/my-content` | Creator Claw | Mock queues + live digital receipts |
+| Outreach Claw | `/my-work` | Outreach Claw | Mock outbound / CRM UI |
+| Arbitrage Claw | `/my-shop` | Arbitrage Claw | Mock margin / fulfillment UI |
+| Signal Claw | `/optimus` | Signal Claw | Demo signal canvas |
+| Swarm Claw | `/robotaxi` | Swarm Claw | Mock swarm grid |
+| Engage Claw | `/claw-cafe` | Engage Claw | Vision grid (live when mesh feeds) |
 
 ---
 
@@ -56,11 +57,11 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 |---------|---------|
 | FRE provisioning | 3 s mock delay; no real cloud provisioner |
 | Claw create | 3 s mock delay; writes local JSON + engine env |
-| My Work / Shop / Capital quotes | Mock data tables |
+| Outreach / Arbitrage / Capital quotes | Mock data tables |
 | Ollama tok/s in dashboard | Often null unless vLLM metrics path hit |
 | Multimodal inference | Engine sends vision **metadata** in text prompts, not JPEG to LLM |
 | Digital trades / posts | Real only after Alpaca/X credentials + bridge running |
-| Optimus / Robotaxi pages | Demo shells, not production fleet integrations |
+| Signal / Swarm pages | Demo shells, not production integrations |
 
 ---
 

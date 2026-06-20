@@ -1,3 +1,5 @@
+import { ComputePower } from "@/components/ComputePower";
+import { CreateToEarn } from "@/components/CreateToEarn";
 import { Hero } from "@/components/Hero";
 import { SpecMatrix } from "@/components/SpecMatrix";
 import { AppEcosystem } from "@/components/AppEcosystem";
@@ -10,6 +12,8 @@ export default function Home() {
       <div className="pointer-events-none fixed inset-0 grid-industrial opacity-40" />
       <Header />
       <Hero />
+      <ComputePower />
+      <CreateToEarn />
       <SpecMatrix />
       <AppEcosystem />
       <Footer />

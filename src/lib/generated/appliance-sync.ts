@@ -3,65 +3,103 @@
 
 export const applianceVersion = "0.1.0" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-06-20T07:19:59.788Z" as const;
+export const applianceSyncedAt = "2026-06-20T11:29:41.736Z" as const;
+
+export const clawCategoryLabels = {
+  "forge": "Create",
+  "wealth": "Wealth & growth",
+  "work": "Work & commerce",
+  "physical": "Signals & swarm"
+} as const;
+export const clawCategoryOrder = [
+  "forge",
+  "wealth",
+  "work",
+  "physical"
+] as const;
 
 export const apps = [
   {
     "id": "claw-forge",
     "applianceId": "claw-forge",
     "name": "The Forge",
+    "tagline": "Agent factory — design and deploy new claw bots in natural language",
     "description": "Prompt the local LLM to forge a custom Claw for your niche hustle — wire it to eno2 and deploy in one session.",
-    "icon": "✚"
+    "icon": "✚",
+    "category": "forge",
+    "categoryLabel": "Create"
   },
   {
     "id": "capital-claw",
     "applianceId": "my-capital",
     "name": "Capital Claw",
+    "tagline": "Rule-based investing agent — stocks, crypto, local evaluation",
     "description": "Algorithmic trading, crypto sniping, and automated portfolio rebalancing — your alpha stays on bare metal.",
-    "icon": "↗"
+    "icon": "↗",
+    "category": "wealth",
+    "categoryLabel": "Wealth & growth"
   },
   {
     "id": "creator-claw",
     "applianceId": "my-content-creator",
     "name": "Creator Claw",
+    "tagline": "Content pipeline employee — draft, schedule, publish",
     "description": "SEO blog generation, X thread scheduling, and YouTube scripts — content pipelines with zero API rent.",
-    "icon": "✦"
+    "icon": "✦",
+    "category": "wealth",
+    "categoryLabel": "Wealth & growth"
   },
   {
     "id": "outreach-claw",
     "applianceId": "my-work",
     "name": "Outreach Claw",
+    "tagline": "Outbound digital employee — leads, sequences, CRM",
     "description": "Lead scraping, personalized cold email sequencing, and CRM follow-ups — outbound that never sleeps.",
-    "icon": "⌘"
+    "icon": "⌘",
+    "category": "work",
+    "categoryLabel": "Work & commerce"
   },
   {
     "id": "arbitrage-claw",
     "applianceId": "my-shop",
     "name": "Arbitrage Claw",
+    "tagline": "E-commerce arbitrage and fulfillment employee",
     "description": "E-commerce price scraping, margin alerts, and automated dropshipping fulfillment — find spread, act instantly.",
-    "icon": "◈"
+    "icon": "◈",
+    "category": "work",
+    "categoryLabel": "Work & commerce"
   },
   {
     "id": "signal-claw",
     "applianceId": "tesla-optimus-engine",
     "name": "Signal Claw",
+    "tagline": "Market and social signal ingestion agent",
     "description": "Ingest market feeds, social mentions, and news triggers — spin up agents the moment alpha appears.",
-    "icon": "⊕"
+    "icon": "⊕",
+    "category": "physical",
+    "categoryLabel": "Signals & swarm"
   },
   {
     "id": "swarm-claw",
     "applianceId": "robotaxi-fleet-manager",
     "name": "Swarm Claw",
+    "tagline": "Orchestrator for your digital employee fleet",
     "description": "Orchestrate dozens of Claws in parallel — assign workloads, monitor uptime, and scale your digital workforce.",
-    "icon": "◎"
+    "icon": "◎",
+    "category": "physical",
+    "categoryLabel": "Signals & swarm"
   },
   {
     "id": "engage-claw",
     "applianceId": "claw-cafe",
     "name": "Engage Claw",
+    "tagline": "Community and DM engagement employee",
     "description": "Auto-replies, DM triage, and community thread engagement on X and LinkedIn — grow audience while you sleep.",
-    "icon": "⎔"
+    "icon": "⎔",
+    "category": "physical",
+    "categoryLabel": "Signals & swarm"
   }
 ] as const;
 
 export type StorefrontApp = (typeof apps)[number];
+export type ClawCategoryId = keyof typeof clawCategoryLabels;

@@ -2,6 +2,7 @@ import { AppEcosystem } from "@/components/AppEcosystem";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ComputePower } from "@/components/ComputePower";
 import { CreateToEarn } from "@/components/CreateToEarn";
+import { DayOneHub } from "@/components/DayOneHub";
 import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <ComputePower />
       <CreateToEarn />
+      <DayOneHub />
       <ComparisonTable />
       <SpecMatrix />
       <AppEcosystem />

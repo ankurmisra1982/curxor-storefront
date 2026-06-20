@@ -55,7 +55,25 @@ export {
   applianceVersion,
   applianceChannel,
   applianceSyncedAt,
+  clawCategoryLabels,
+  clawCategoryOrder,
+  type StorefrontApp,
 } from "./generated/appliance-sync";
+
+export const dayOneSteps = [
+  {
+    title: "1 · Pick a Claw",
+    body: "Choose the job — investing, content, outreach, signals, or mint a new one in The Forge.",
+  },
+  {
+    title: "2 · Chat or tap",
+    body: "Ask in plain language, or tap a skill button when you know the action. No coding required.",
+  },
+  {
+    title: "3 · Stay local",
+    body: "Reasoning stays on your box. Outbound trades and posts only egress through eno2 bridges.",
+  },
+] as const;
 
 export const specColumns = [
   {
@@ -82,7 +100,8 @@ export const specColumns = [
     id: "engine",
     label: "CLAW ENGINE",
     items: [
-      "Containerized digital employees, 24/7",
+      "Home hub — pick a Claw, chat or tap skills",
+      "Simple/Expert UI — day-one friendly, telemetry when ready",
       "The Forge — describe it, deploy it, earn",
       "Alpaca · X · CRM bridges on eno2 only",
     ],
@@ -135,7 +154,12 @@ export const faqItems = [
   {
     question: "What is included for $3,999?",
     answer:
-      "The CurXor Edge Nexus appliance, CurXor OS, Flight Command dashboard, eight bundled Claw verticals (Capital, Creator, Outreach, Arbitrage, Signal, Swarm, Engage, and The Forge), local LLM inference on 64GB UMA, and OTA firmware updates. No monthly API or token fees.",
+      "The CurXor Edge Nexus appliance, CurXor OS, Flight Command dashboard with Home hub and Simple/Expert UI modes, eight bundled Claw verticals (Capital, Creator, Outreach, Arbitrage, Signal, Swarm, Engage, and The Forge), chat workspaces with one-tap skill buttons, local LLM inference on 64GB UMA, and OTA firmware updates. No monthly API or token fees.",
+  },
+  {
+    question: "Do I need to code to use CurXor?",
+    answer:
+      "No. Each Claw opens a workspace with plain-language chat on the right and skill buttons for common actions. Pick a vertical, describe what you want, and tap when you're ready — The Forge is the only place you design new agents, and that is also natural language.",
   },
   {
     question: "Are there monthly fees or API costs?",

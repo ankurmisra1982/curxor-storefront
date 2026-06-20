@@ -1,7 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { MARKETING_BY_APPLIANCE_ID } from "./marketing-map";
+import {
+  CATEGORY_DISPLAY_ORDER,
+  CLAW_CATEGORY_LABELS,
+  MARKETING_BY_APPLIANCE_ID,
+} from "./marketing-map";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const storefrontRoot = path.join(__dirname, "..");
@@ -35,6 +39,24 @@ async function loadOotbApps(): Promise<OotbApp[]> {
   return [...imported.OOTB_APPS] as OotbApp[];
 }
 
+async function loadAgentTaglines(): Promise<Record<string, string>> {
+  const modulePath = path.join(
+    osRoot,
+    "pillar-4-dashboard/lib/app-agent-catalog.ts"
+  );
+
+  if (!fs.existsSync(modulePath)) {
+    return {};
+  }
+
+  const moduleUrl = `${pathToFileURL(modulePath).href}?sync=${Date.now()}`;
+  const imported = await import(moduleUrl);
+  const agents = imported.APP_AGENTS as Record<string, { tagline: string }>;
+  return Object.fromEntries(
+    Object.entries(agents).map(([id, agent]) => [id, agent.tagline])
+  );
+}
+
 function loadVersion(): VersionFile {
   const versionPath = path.join(osRoot, "version.json");
 
@@ -55,8 +77,11 @@ function buildGeneratedSource(
     id: string;
     applianceId: string;
     name: string;
+    tagline: string;
     description: string;
     icon: string;
+    category: string;
+    categoryLabel: string;
   }>,
   version: VersionFile
 ): string {
@@ -69,15 +94,20 @@ export const applianceVersion = ${JSON.stringify(version.version)} as const;
 export const applianceChannel = ${JSON.stringify(version.channel ?? "stable")} as const;
 export const applianceSyncedAt = ${JSON.stringify(syncedAt)} as const;
 
+export const clawCategoryLabels = ${JSON.stringify(CLAW_CATEGORY_LABELS, null, 2)} as const;
+export const clawCategoryOrder = ${JSON.stringify(CATEGORY_DISPLAY_ORDER, null, 2)} as const;
+
 export const apps = ${JSON.stringify(apps, null, 2)} as const;
 
 export type StorefrontApp = (typeof apps)[number];
+export type ClawCategoryId = keyof typeof clawCategoryLabels;
 `;
 }
 
 async function main() {
   const version = loadVersion();
   const ootbApps = await loadOotbApps();
+  const agentTaglines = await loadAgentTaglines();
 
   const apps = ootbApps
     .map((app) => {
@@ -94,8 +124,11 @@ async function main() {
         id: marketing.storefrontId,
         applianceId: app.id,
         name: app.name,
+        tagline: agentTaglines[app.id] ?? app.description,
         description: app.description,
         icon: marketing.icon,
+        category: marketing.category,
+        categoryLabel: CLAW_CATEGORY_LABELS[marketing.category],
         sortOrder: marketing.sortOrder ?? 999,
       };
     })

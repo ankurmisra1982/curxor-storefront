@@ -10,6 +10,13 @@ export const siteConfig = {
   emailEndpoint: "/api/subscribe",
 };
 
+export {
+  apps,
+  applianceVersion,
+  applianceChannel,
+  applianceSyncedAt,
+} from "./generated/appliance-sync";
+
 export const specColumns = [
   {
     id: "compute",
@@ -37,50 +44,5 @@ export const specColumns = [
       "Next.js Captive Portal",
       "OpenClaw Agent Engine",
     ],
-  },
-] as const;
-
-export const apps = [
-  {
-    id: "my-work",
-    name: "My Work",
-    description: "Local-first productivity suite. No cloud sync required.",
-    icon: "⌘",
-  },
-  {
-    id: "my-shop",
-    name: "My Shop",
-    description: "Edge-native commerce and inventory for physical retail.",
-    icon: "◈",
-  },
-  {
-    id: "optimus",
-    name: "Tesla Optimus Engine",
-    description: "Direct motor control and motion planning for humanoids.",
-    icon: "⊕",
-  },
-  {
-    id: "robotaxi",
-    name: "Robotaxi Fleet Manager",
-    description: "Orchestrate autonomous fleets from your local nexus.",
-    icon: "◎",
-  },
-  {
-    id: "claw-cafe",
-    name: "Claw Cafe",
-    description: "Deploy clawbots for service automation on-prem.",
-    icon: "⎔",
-  },
-  {
-    id: "invest-agent",
-    name: "Invest Agent",
-    description: "Claw-agent market research and sovereign trading workflows.",
-    icon: "↗",
-  },
-  {
-    id: "content-creator",
-    name: "Content Creator",
-    description: "Claw-agent media pipelines — video, copy, and social from the edge.",
-    icon: "✦",
   },
 ] as const;

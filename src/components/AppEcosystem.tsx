@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { apps } from "@/lib/config";
+import { apps, applianceVersion } from "@/lib/config";
 
 export function AppEcosystem() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -32,8 +32,8 @@ export function AppEcosystem() {
             </h2>
           </div>
           <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            Seven production-ready applications ship with every CurXor nexus. No
-            app store. No cloud provisioning.
+            {apps.length} production-ready applications ship with every CurXor
+            nexus. No app store. No cloud provisioning.
           </p>
         </div>
 
@@ -122,7 +122,7 @@ function AppCard({
       </p>
 
       <div className="mt-6 text-[10px] tracking-widest text-white/20">
-        BUNDLED // v1.0
+        BUNDLED // v{applianceVersion}
       </div>
     </article>
   );

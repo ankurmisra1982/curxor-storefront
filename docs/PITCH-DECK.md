@@ -7,7 +7,8 @@
 ### PowerPoint export (speaker notes)
 
 - **File:** `docs/CurXor-Pitch-Deck-Speaker-Notes.pptx` — 15 slides (14 + appendix), branded, notes on every slide
-- **Regenerate:** `python scripts/export-pitch-deck-pptx.py` from repo root
+- **Regenerate:** `npm run export:pitch-deck` (or `python scripts/export-pitch-deck-pptx.py`)
+- **Python deps:** `pip install -r scripts/requirements-pitch-deck.txt`
 - **Logo asset:** `docs/assets/curxor-logo-mark.png` (generated from favicon palette)
 
 ---

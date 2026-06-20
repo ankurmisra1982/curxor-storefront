@@ -65,7 +65,8 @@ Close enough for GTM; unify later if needed.
 1. Bump `../curxor-os/version.json`
 2. Run `npm run sync:appliance` (updates badges + generated file)
 3. Refresh [TECHNICAL-HANDOFF.md](TECHNICAL-HANDOFF.md) if needed
-4. Changelog page (when added)
+4. Add a bullet to `src/lib/changelog.ts` for the release
+5. Run `npm run sync:appliance` and deploy storefront
 
 ## Digital layer (Capital Claw + Creator Claw)
 

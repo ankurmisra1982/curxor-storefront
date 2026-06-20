@@ -62,16 +62,20 @@ export {
 
 export const dayOneSteps = [
   {
-    title: "1 · Pick a Claw",
-    body: "Choose the job — investing, content, outreach, signals, or mint a new one in The Forge.",
+    title: "1 · Pick your Claws",
+    body: "Enable the digital employees you want on day one — Capital, Creator, Outreach, and more. Add or remove anytime in Settings.",
   },
   {
     title: "2 · Chat or tap",
     body: "Ask in plain language, or tap a skill button when you know the action. No coding required.",
   },
   {
-    title: "3 · Stay local",
-    body: "Reasoning stays on your box. Outbound trades and posts only egress through eno2 bridges.",
+    title: "3 · Local by default",
+    body: "Reasoning runs on your box. Optional frontier LLMs (your API key) in Settings. Trades and posts egress only through eno2.",
+  },
+  {
+    title: "4 · Make it yours",
+    body: "Settings → Appearance: Simple or Expert mode, light/dark, and accent themes (CurXor, Ocean, Amber, Mono).",
   },
 ] as const;
 
@@ -101,7 +105,8 @@ export const specColumns = [
     label: "CLAW ENGINE",
     items: [
       "Home hub — pick a Claw, chat or tap skills",
-      "Simple/Expert UI — day-one friendly, telemetry when ready",
+      "Settings — enable Claws, intelligence, themes",
+      "Simple/Expert UI · light/dark · four accent schemes",
       "The Forge — describe it, deploy it, earn",
       "Alpaca · X · CRM bridges on eno2 only",
     ],
@@ -144,27 +149,32 @@ export const faqItems = [
   {
     question: "What is CurXor?",
     answer:
-      "CurXor is a sovereign 64GB AI compute appliance with 126 TOPS NPU. It runs CurXor OS — a local stack with eight bundled Claw verticals plus The Forge, where you create custom AI agents that trade, create, scrape, and scale 24/7 without cloud API fees.",
+      "CurXor is a sovereign 64GB AI compute appliance with 126 TOPS NPU. It runs CurXor OS — eight Claw verticals plus The Forge. Enable the Claws you want, chat in plain language, and scale 24/7 with local inference by default.",
   },
   {
     question: "How is CurXor different from a Mac Studio plus Ollama?",
     answer:
-      "A Mac Studio gives you inference hardware. CurXor gives you inference plus a complete agent platform: eight pre-built Claw verticals, The Forge wizard, dual-port networking with an eno2 kill switch, and digital bridges for trading and social — ready on day one, not a weekend DIY project.",
+      "A Mac Studio gives you inference hardware. CurXor gives you inference plus a complete agent platform: pre-built Claw workspaces, The Forge wizard, dual-port networking with an eno2 kill switch, digital bridges for trading and social, and a Settings hub to customize everything — ready on day one.",
   },
   {
     question: "What is included for $3,999?",
     answer:
-      "The CurXor Edge Nexus appliance, CurXor OS, Flight Command dashboard with Home hub and Simple/Expert UI modes, eight bundled Claw verticals (Capital, Creator, Outreach, Arbitrage, Signal, Swarm, Engage, and The Forge), chat workspaces with one-tap skill buttons, local LLM inference on 64GB UMA, and OTA firmware updates. No monthly API or token fees.",
+      "The CurXor Edge Nexus appliance, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), eight available Claw verticals (enable any combination), chat workspaces with one-tap skills, local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.",
   },
   {
     question: "Do I need to code to use CurXor?",
     answer:
-      "No. Each Claw opens a workspace with plain-language chat on the right and skill buttons for common actions. Pick a vertical, describe what you want, and tap when you're ready — The Forge is the only place you design new agents, and that is also natural language.",
+      "No. Each Claw opens a workspace with plain-language chat and skill buttons. Pick verticals in setup or Settings, describe what you want, and tap when you're ready. The Forge also uses natural language.",
   },
   {
     question: "Are there monthly fees or API costs?",
     answer:
-      "No. You pay $3,999 once for the hardware. All inference runs locally on your appliance. There are no per-token charges, no OpenAI bills, and no cloud subscriptions required to operate your Claws.",
+      "CurXor charges $3,999 once for the hardware — no monthly appliance fee and no per-token billing from us. All included Claws run local models by default. If you optionally connect OpenAI, Anthropic, Google, Cursor, or OpenRouter in Settings, those providers bill your account directly (bring your own key).",
+  },
+  {
+    question: "Can I use GPT, Claude, or other cloud models?",
+    answer:
+      "Yes, optionally. Settings → Intelligence lets you stay local-only, use frontier models only, or auto-fallback. Trades and social posts still egress only through eno2 bridges — cloud LLMs are for chat and planning when you choose them.",
   },
   {
     question: "When does it ship?",
@@ -174,7 +184,12 @@ export const faqItems = [
   {
     question: "Can I disconnect my agents from the internet?",
     answer:
-      "Yes. CurXor uses a dual-port design: eno1 is the Command Port for your Flight Command UI, and eno2 is the Egress Port for outbound agent actions. Unplug eno2 to kill every outbound Claw instantly while keeping local inference running.",
+      "Yes. eno1 is Command (Flight Command UI). eno2 is Egress for outbound agent actions. Unplug eno2 to kill outbound Claws instantly. Keep intelligence on local-only in Settings for fully offline reasoning.",
+  },
+  {
+    question: "Where are your privacy policy and trading disclaimers?",
+    answer:
+      "Privacy policy: curxor.ai/privacy. Terms, pre-order conditions, and Capital Claw trading disclaimers: curxor.ai/terms.",
   },
 ] as const;
 
@@ -209,9 +224,10 @@ export const comparisonOptions = [
     price: "$3,999 once",
     highlights: [
       "126 TOPS · 64GB UMA included",
-      "8 Claw verticals + The Forge",
+      "8 Claws available · pick your stack",
+      "Settings hub · themes & LLM choice",
       "eno2 kill switch for agents",
-      "Zero monthly API fees",
+      "Zero CurXor API fees",
     ],
     negative: false,
   },

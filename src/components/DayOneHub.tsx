@@ -14,11 +14,12 @@ export function DayOneHub() {
           <p className="mt-4 text-sm leading-relaxed text-white/50">
             CurXor OS ships with a Home hub — grouped Claw workspaces, plain-language
             chat, and one-tap skill buttons. Simple mode for day one; Expert mode when
-            you want telemetry and mesh controls.
+            you want telemetry. Settings lets you add Claws, connect optional frontier
+            LLMs with your own keys, and personalize themes.
           </p>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {dayOneSteps.map((step) => (
             <article
               key={step.title}

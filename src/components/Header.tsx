@@ -5,12 +5,13 @@ import { useState } from "react";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 
 const navLinks = [
-  { href: "#specs", label: "SPECS" },
-  { href: "#compute", label: "COMPUTE" },
-  { href: "#forge-loop", label: "FORGE" },
-  { href: "#apps", label: "CLAWS" },
-  { href: "#compare", label: "COMPARE" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#specs", label: "SPECS" },
+  { href: "/#compute", label: "COMPUTE" },
+  { href: "/#forge-loop", label: "FORGE" },
+  { href: "/#apps", label: "CLAWS" },
+  { href: "/#compare", label: "COMPARE" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/architecture", label: "STACK" },
 ];
 
 export function Header() {

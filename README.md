@@ -25,6 +25,8 @@ GTM site and marketing workspace for **CurXor OS** — sovereign edge appliance 
 | [Feature & function (appliance)](../../curxor-os/docs/FEATURE-FUNCTION.md) | Full product scope, maturity, API catalog |
 | [Feature & function (storefront)](docs/FEATURE-FUNCTION.md) | GTM site capabilities |
 | [Marketing ↔ appliance sync](docs/SYNC.md) | Canonical Claw naming + sync from `ootb-apps.ts` |
+| [Pitch deck (markdown)](docs/PITCH-DECK.md) | 15-slide investor narrative + appendix |
+| [Pitch deck (PowerPoint)](docs/CurXor-Pitch-Deck-Speaker-Notes.pptx) | Branded `.pptx` with speaker notes — `npm run export:pitch-deck` |
 
 ## Repo split
 

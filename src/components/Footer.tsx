@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { trackEmailSubscribe } from "@/lib/analytics";
 import { siteConfig } from "@/lib/config";
+import { footerLinks } from "@/lib/legal";
 
 export function Footer() {
   const [email, setEmail] = useState("");
@@ -93,7 +95,21 @@ export function Footer() {
               <p className="text-2xl font-bold tracking-tight text-white/90">
                 126 TOPS. $0 API. Infinite Claws.
               </p>
-              <p className="mt-2 text-[10px] tracking-[0.3em] text-white/30">
+              <nav
+                aria-label="Legal and resources"
+                className="mt-6 flex flex-wrap justify-start gap-x-4 gap-y-2 md:justify-end"
+              >
+                {footerLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-[10px] tracking-widest text-white/30 transition-colors hover:text-neon-purple"
+                  >
+                    {link.label.toUpperCase()}
+                  </Link>
+                ))}
+              </nav>
+              <p className="mt-4 text-[10px] tracking-[0.3em] text-white/30">
                 © {new Date().getFullYear()} CURXOR SYSTEMS
               </p>
             </div>

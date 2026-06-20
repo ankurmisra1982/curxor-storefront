@@ -54,6 +54,13 @@ export const apps = [
     "name": "Invest Agent",
     "description": "Build flexible investment rules for stocks and crypto, monitor portfolios, and run automated strategies locally.",
     "icon": "↗"
+  },
+  {
+    "id": "claw-forge",
+    "applianceId": "claw-forge",
+    "name": "Claw Forge",
+    "description": "Design new claw bots in natural language — describe goals, attach photos, or pull live vision, then deploy locally.",
+    "icon": "✚"
   }
 ] as const;
 

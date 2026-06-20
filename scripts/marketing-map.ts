@@ -35,6 +35,11 @@ export const MARKETING_BY_APPLIANCE_ID = {
     storefrontName: "Invest Agent",
     icon: "↗",
   },
+  "claw-forge": {
+    storefrontId: "claw-forge",
+    storefrontName: "Claw Forge",
+    icon: "✚",
+  },
 } as const;
 
 export type ApplianceAppId = keyof typeof MARKETING_BY_APPLIANCE_ID;

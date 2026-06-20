@@ -32,6 +32,8 @@ Marketing IDs/names/icons: `scripts/marketing-map.ts` (storefront names vs appli
 | Claw Cafe | Claw Cafe | `/claw-cafe` |
 | **Content Creator** | **My Content Creator** | `/my-content` |
 | **Invest Agent** | **My Capital** | `/my-capital` |
+| **Claw Forge** | **Claw Forge** | `/claw-forge` |
+| **Claw Forge** | **Claw Forge** | `/claw-forge` |
 
 Marketing names are fine on the landing page; FRE/module IDs on appliance use the right column.
 

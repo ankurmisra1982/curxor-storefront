@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { siteConfig } from "@/lib/config";
-
+import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 export function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-sm">
@@ -18,14 +17,12 @@ export function Header() {
           <a href="#apps" className="transition-colors hover:text-neon-purple">
             APPS
           </a>
-          <a
-            href={siteConfig.stripeCheckoutUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <TrackedPreorderLink
+            location="header"
             className="border border-neon-purple/50 px-4 py-2 text-neon-purple transition-all hover:bg-neon-purple/10 hover:shadow-[0_0_20px_rgba(191,90,242,0.3)]"
           >
             PRE-ORDER
-          </a>
+          </TrackedPreorderLink>
         </nav>
       </div>
     </header>

@@ -1,8 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import { siteConfig } from "@/lib/config";
+import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 
 const HardwareScene = dynamic(
   () =>
@@ -40,17 +40,15 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <Link
-              href={siteConfig.stripeCheckoutUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <TrackedPreorderLink
+              location="hero"
               className="group relative inline-flex items-center gap-3 bg-neon-purple px-8 py-4 text-sm font-bold tracking-[0.2em] text-black transition-all hover:bg-neon-glow animate-pulse-glow"
             >
               <span>PRE-ORDER NOW</span>
               <span className="transition-transform group-hover:translate-x-1">
                 →
               </span>
-            </Link>
+            </TrackedPreorderLink>
             <a
               href="#specs"
               className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-white/30 hover:text-white"

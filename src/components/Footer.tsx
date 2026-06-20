@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { trackEmailSubscribe } from "@/lib/analytics";
 import { siteConfig } from "@/lib/config";
 
 export function Footer() {
@@ -22,6 +23,7 @@ export function Footer() {
       });
 
       if (!res.ok) throw new Error("Subscribe failed");
+      trackEmailSubscribe();
       setStatus("success");
       setEmail("");
     } catch {

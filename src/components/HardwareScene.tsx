@@ -94,7 +94,7 @@ function NexusAppliance() {
   );
 }
 
-function Scene() {
+function Scene({ autoRotate }: { autoRotate: boolean }) {
   return (
     <>
       <color attach="background" args={["#000000"]} />
@@ -119,7 +119,7 @@ function Scene() {
         enableZoom={false}
         minPolarAngle={Math.PI / 3.5}
         maxPolarAngle={Math.PI / 2.1}
-        autoRotate
+        autoRotate={autoRotate}
         autoRotateSpeed={0.6}
       />
     </>
@@ -139,13 +139,24 @@ function HardwareSceneFallback() {
 
 export function HardwareScene() {
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const update = () => setReducedMotion(media.matches);
-    update();
-    media.addEventListener("change", update);
-    return () => media.removeEventListener("change", update);
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mobile = window.matchMedia("(max-width: 768px)");
+
+    const updateMotion = () => setReducedMotion(motion.matches);
+    const updateMobile = () => setIsMobile(mobile.matches);
+
+    updateMotion();
+    updateMobile();
+    motion.addEventListener("change", updateMotion);
+    mobile.addEventListener("change", updateMobile);
+
+    return () => {
+      motion.removeEventListener("change", updateMotion);
+      mobile.removeEventListener("change", updateMobile);
+    };
   }, []);
 
   return (
@@ -171,7 +182,7 @@ export function HardwareScene() {
               className="!absolute inset-0"
               dpr={[1, 1.5]}
             >
-              <Scene />
+              <Scene autoRotate={!isMobile} />
             </Canvas>
           )}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neon-purple/5 via-transparent to-neon-purple/10" />

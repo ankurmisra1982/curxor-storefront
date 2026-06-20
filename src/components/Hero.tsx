@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { computePower, siteConfig } from "@/lib/config";
+import { LazyMount } from "@/components/LazyMount";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 
 const HardwareScene = dynamic(
@@ -78,9 +79,9 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <LazyMount fallback={<HardwareSceneFallback />}>
           <HardwareScene />
-        </div>
+        </LazyMount>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-neon-purple/50 to-transparent" />

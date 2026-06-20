@@ -15,8 +15,27 @@ export function AppEcosystem() {
   }, []);
 
   useEffect(() => {
-    const timer = setInterval(next, 5000);
-    return () => clearInterval(timer);
+    let timer: ReturnType<typeof setInterval> | undefined;
+
+    function start() {
+      timer = setInterval(next, 5000);
+    }
+
+    function stop() {
+      if (timer) clearInterval(timer);
+    }
+
+    function onVisibilityChange() {
+      stop();
+      if (!document.hidden) start();
+    }
+
+    if (!document.hidden) start();
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    return () => {
+      stop();
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+    };
   }, [next]);
 
   return (

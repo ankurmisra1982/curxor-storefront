@@ -3,7 +3,7 @@
 
 export const applianceVersion = "0.1.0" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-06-20T06:07:25.589Z" as const;
+export const applianceSyncedAt = "2026-06-20T07:19:59.788Z" as const;
 
 export const apps = [
   {

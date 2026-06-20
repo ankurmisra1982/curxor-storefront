@@ -43,8 +43,8 @@ export function Footer() {
               Get launch updates
             </h3>
             <p className="mb-6 max-w-sm text-xs leading-relaxed text-white/40">
-              Ship dates, firmware drops, and pre-order availability — delivered
-              to your inbox.
+              Forge updates, Claw vertical drops, and pre-order availability —
+              delivered to your inbox.
             </p>
 
             <form onSubmit={handleSubmit} className="flex max-w-md flex-col gap-3 sm:flex-row">

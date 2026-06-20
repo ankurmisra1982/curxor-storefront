@@ -1,8 +1,8 @@
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { ContactShadows, Environment, OrbitControls } from "@react-three/drei";
-import { useMemo, useRef } from "react";
+import { ContactShadows, OrbitControls } from "@react-three/drei";
+import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 
 const PURPLE = "#BF5AF2";
@@ -104,7 +104,7 @@ function Scene() {
         castShadow
         intensity={1.4}
         position={[4, 6, 3]}
-        shadow-mapSize={[1024, 1024]}
+        shadow-mapSize={[512, 512]}
       />
       <NexusAppliance />
       <ContactShadows
@@ -114,7 +114,6 @@ function Scene() {
         blur={2.5}
         far={4}
       />
-      <Environment preset="city" />
       <OrbitControls
         enablePan={false}
         enableZoom={false}
@@ -127,7 +126,28 @@ function Scene() {
   );
 }
 
+function HardwareSceneFallback() {
+  return (
+    <div className="relative flex min-h-[320px] flex-col items-center justify-center gap-4 sm:min-h-[420px]">
+      <p className="text-3xl font-bold text-neon-purple">126 TOPS</p>
+      <p className="text-[10px] tracking-[0.3em] text-white/30">
+        CURXOR NEXUS // 64GB UMA
+      </p>
+    </div>
+  );
+}
+
 export function HardwareScene() {
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReducedMotion(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+
   return (
     <div className="relative aspect-square w-full max-w-lg mx-auto lg:max-w-none">
       <div className="absolute -inset-4 border border-neon-purple/20" />
@@ -141,24 +161,26 @@ export function HardwareScene() {
 
         <div className="relative flex-1 overflow-hidden">
           <div className="absolute inset-0 grid-industrial opacity-40" />
-          <Canvas
-            shadows
-            camera={{ position: [2.8, 1.6, 3.2], fov: 42 }}
-            gl={{ antialias: true, alpha: true }}
-            className="!absolute inset-0"
-          >
-            <Scene />
-          </Canvas>
+          {reducedMotion ? (
+            <HardwareSceneFallback />
+          ) : (
+            <Canvas
+              shadows
+              camera={{ position: [2.8, 1.6, 3.2], fov: 42 }}
+              gl={{ antialias: true, alpha: true }}
+              className="!absolute inset-0"
+              dpr={[1, 1.5]}
+            >
+              <Scene />
+            </Canvas>
+          )}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neon-purple/5 via-transparent to-neon-purple/10" />
-          <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-20">
-            <div className="h-px w-full bg-neon-purple/50 animate-scan-line" />
-          </div>
         </div>
 
         <div className="flex justify-between border-t border-white/10 px-4 py-2 text-[10px] tracking-widest text-white/30">
           <span>ROT: AUTO</span>
-          <span>DRAG: ORBIT</span>
-          <span>MESH: NEXUS-01</span>
+          <span>126 TOPS</span>
+          <span>64GB UMA</span>
         </div>
       </div>
     </div>

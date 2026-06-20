@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { JsonLd } from "@/components/JsonLd";
 import { ScrollDepthTracker } from "@/components/ScrollDepthTracker";
 import { siteConfig } from "@/lib/config";
 import "./globals.css";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: siteConfig.pageTitle,
   description: siteConfig.metaDescription,
+  keywords: [...siteConfig.keywords],
   icons: { icon: "/favicon.svg" },
   alternates: {
     canonical: "/",
@@ -43,7 +45,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={jetbrainsMono.variable}>
-      <body className="min-h-screen overflow-x-hidden">
+      <body className="min-h-screen overflow-x-hidden pb-20 md:pb-0">
+        <JsonLd />
         {children}
         <ScrollDepthTracker />
         <Analytics />

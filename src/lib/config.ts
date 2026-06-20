@@ -3,14 +3,27 @@ export const siteConfig = {
   siteUrl: "https://curxor.ai",
   pageTitle: "CurXor — 126 TOPS · 64GB UMA AI Powerhouse | $0/mo API",
   metaDescription:
-    "126 TOPS NPU. 64GB unified memory. Mint AI employees on bare metal — $3,999 once, zero monthly API fees. Your alpha stays local.",
+    "Sovereign AI hardware with 126 TOPS NPU and 64GB unified memory. Run local LLM agents on bare metal — $3,999 once, zero monthly API fees.",
+  keywords: [
+    "sovereign AI hardware",
+    "local LLM appliance",
+    "edge AI agent server",
+    "on-premise AI agents",
+    "agentic AI hardware",
+    "64GB unified memory AI",
+    "Ryzen AI Max+ 395",
+    "zero API fees",
+  ],
   ogTagline: "126 TOPS · 64GB UMA · $0/mo API · $3,999 once",
   viralHook: "ChatGPT bills per token. CurXor bills once.",
+  computeHook:
+    "126 TOPS NPU · 64GB unified memory · outpaces most cloud API tiers.",
   tagline:
     "A sovereign 64GB compute appliance that runs an infinite swarm of digital Claws — trade, create, scrape, and scale 24/7 without sending your strategies to OpenAI.",
   heroSubtext:
     "Not a PC. A money printer with 126 TOPS of local inference, dual 10GbE, and alpha that never leaves your building.",
   preOrderPrice: "$3,999",
+  preOrderPriceUsd: 3999,
   stripeCheckoutUrl:
     process.env.NEXT_PUBLIC_STRIPE_CHECKOUT_URL ??
     "https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00",
@@ -106,4 +119,76 @@ export const shareLines = [
   "126 TOPS on my desk. $0 to OpenAI.",
   "I unplugged the internet and killed every agent.",
   "Mint autonomous employees on bare metal → curxor.ai",
+] as const;
+
+export const faqItems = [
+  {
+    question: "What is CurXor?",
+    answer:
+      "CurXor is a sovereign 64GB AI compute appliance with 126 TOPS NPU. It runs CurXor OS — a local stack with eight bundled Claw verticals plus The Forge, where you create custom AI agents that trade, create, scrape, and scale 24/7 without cloud API fees.",
+  },
+  {
+    question: "How is CurXor different from a Mac Studio plus Ollama?",
+    answer:
+      "A Mac Studio gives you inference hardware. CurXor gives you inference plus a complete agent platform: eight pre-built Claw verticals, The Forge wizard, dual-port networking with an eno2 kill switch, and digital bridges for trading and social — ready on day one, not a weekend DIY project.",
+  },
+  {
+    question: "What is included for $3,999?",
+    answer:
+      "The CurXor Edge Nexus appliance, CurXor OS, Flight Command dashboard, eight bundled Claw verticals (Capital, Creator, Outreach, Arbitrage, Signal, Swarm, Engage, and The Forge), local LLM inference on 64GB UMA, and OTA firmware updates. No monthly API or token fees.",
+  },
+  {
+    question: "Are there monthly fees or API costs?",
+    answer:
+      "No. You pay $3,999 once for the hardware. All inference runs locally on your appliance. There are no per-token charges, no OpenAI bills, and no cloud subscriptions required to operate your Claws.",
+  },
+  {
+    question: "When does it ship?",
+    answer:
+      "CurXor is available for pre-order now. Pre-order customers receive launch updates by email as production batches are scheduled. Subscribe on curxor.ai or follow @curxorai on X for ship-date announcements.",
+  },
+  {
+    question: "Can I disconnect my agents from the internet?",
+    answer:
+      "Yes. CurXor uses a dual-port design: eno1 is the Command Port for your Flight Command UI, and eno2 is the Egress Port for outbound agent actions. Unplug eno2 to kill every outbound Claw instantly while keeping local inference running.",
+  },
+] as const;
+
+export const comparisonOptions = [
+  {
+    id: "cloud",
+    label: "CLOUD API STACK",
+    price: "$500+/mo",
+    highlights: [
+      "Per-token billing forever",
+      "Your data sent to OpenAI",
+      "Rate limits and downtime",
+      "No bundled agent platform",
+    ],
+    negative: true,
+  },
+  {
+    id: "diy",
+    label: "MAC STUDIO DIY",
+    price: "~$3,500+",
+    highlights: [
+      "Inference hardware only",
+      "You build the agent stack",
+      "No egress kill switch",
+      "Weeks of integration work",
+    ],
+    negative: true,
+  },
+  {
+    id: "curxor",
+    label: "CURXOR NEXUS",
+    price: "$3,999 once",
+    highlights: [
+      "126 TOPS · 64GB UMA included",
+      "8 Claw verticals + The Forge",
+      "eno2 kill switch for agents",
+      "Zero monthly API fees",
+    ],
+    negative: false,
+  },
 ] as const;

@@ -17,7 +17,7 @@ export function ComputePower() {
             </p>
           </div>
           <p className="max-w-sm border-l-2 border-neon-purple/50 pl-4 text-lg font-bold leading-snug text-white/90">
-            {siteConfig.viralHook}
+            {siteConfig.computeHook}
           </p>
         </div>
 

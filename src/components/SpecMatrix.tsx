@@ -58,7 +58,7 @@ export function SpecMatrix() {
               </ul>
 
               <div className="mt-10 text-[10px] tracking-widest text-white/20">
-                SYS.{column.id.toUpperCase()} // OK
+                {`SYS.${column.id.toUpperCase()} · OK`}
               </div>
             </div>
           ))}

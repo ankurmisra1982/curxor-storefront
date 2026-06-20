@@ -1,0 +1,31 @@
+# CurXor
+
+> Sovereign 64GB AI appliance. Mint autonomous digital employees on bare metal.
+
+## Product
+
+- Name: CurXor Edge Nexus
+- Price: $3,999 USD (one-time pre-order, no monthly API fees)
+- Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU
+- Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
+- Software: CurXor OS with 8 bundled Claw verticals + The Forge custom agent wizard
+- Pre-order: https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00
+
+## Canonical URLs
+
+- Homepage: https://curxor.ai/
+- Open Graph image: https://curxor.ai/opengraph-image
+- Sitemap: https://curxor.ai/sitemap.xml
+
+## Key differentiators vs Mac Studio + Ollama
+
+- Turnkey agent platform (not DIY inference only)
+- Bundled Claw verticals: Capital, Creator, Outreach, Arbitrage, Signal, Swarm, Engage, The Forge
+- Physical eno2 kill switch for outbound agents
+- Zero per-token cloud API fees
+
+## Contact
+
+- Website: https://curxor.ai
+- X: https://x.com/curxorai (@curxorai)
+- Email list: POST https://curxor.ai/api/subscribe

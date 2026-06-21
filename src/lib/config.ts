@@ -197,6 +197,21 @@ export const faqItems = [
       "Yes. eno1 is Command (Flight Command UI). eno2 is Egress for outbound agent actions. Unplug eno2 to kill outbound Claws instantly. Keep intelligence on local-only in Settings for fully offline reasoning.",
   },
   {
+    question: "How is CurXor different from DIY OpenClaw on a Mac mini or mini PC?",
+    answer:
+      "OpenClaw is the open-source agent runtime — free, but you supply the hardware, install the stack, wire skills and bridges, and harden security yourself. CurXor ships CurXor OS on appliance hardware: Flight Command, nine Claw verticals plus The Forge, Settings, eno1/eno2 networking, and OTA updates. You get a turnkey independent computer, not a weekend integration project.",
+  },
+  {
+    question: "How is CurXor different from ClawBox or other Jetson OpenClaw boxes?",
+    answer:
+      "ClawBox-class devices (~€549, 8GB RAM, ~67 TOPS) are great for lightweight always-on assistants and messaging bots. CurXor targets serious local inference — 64GB UMA, 126 TOPS NPU — plus wealth, work, and life Claws (Capital, Vital, Kin, and more). Same always-on idea, different compute class and product depth.",
+  },
+  {
+    question: "How is CurXor different from NVIDIA NemoClaw?",
+    answer:
+      "NemoClaw is an alpha governance layer for DIY OpenClaw deployments — sandboxing, policies, and model routing on hardware you bring. CurXor is a complete appliance product: curated OOTB Claws, local inference by default, optional frontier LLMs in Settings, and a physical eno2 egress kill switch — without assembling the stack yourself.",
+  },
+  {
     question: "How is CurXor different from Perplexity Personal Computer?",
     answer:
       "Perplexity Personal Computer is agent software on your Mac — often a Mac mini on the Perplexity Max plan (~$200/month) — that orchestrates frontier models via Perplexity's cloud. CurXor is a dedicated appliance: local inference on 64GB UMA, pre-built Claw verticals, Settings to pick your stack, and an eno2 kill switch. You pay $3,999 once instead of ~$2,400/year in subscriptions, and your prompts and playbooks stay on your metal by default.",
@@ -246,13 +261,37 @@ export const comparisonOptions = [
     negative: true,
   },
   {
+    id: "openclaw-diy",
+    label: "OPENCLAW DIY",
+    price: "$150–700+",
+    highlights: [
+      "Free runtime — you build everything",
+      "Weeks of setup, skills, and bridges",
+      "No bundled wealth or life verticals",
+      "Security hardening is on you",
+    ],
+    negative: true,
+  },
+  {
+    id: "clawbox",
+    label: "CLAWBOX / JETSON",
+    price: "~€549",
+    highlights: [
+      "8GB RAM · ~67 TOPS class",
+      "Great for light assistants",
+      "Optional cloud model plans",
+      "Not built for 64GB local models",
+    ],
+    negative: true,
+  },
+  {
     id: "curxor",
     label: "CURXOR NEXUS",
     price: "$3,999 once",
     highlights: [
       "126 TOPS · 64GB UMA included",
       clawPickStackLabel,
-      "Settings hub · themes & LLM choice",
+      "OpenClaw engine · turnkey Flight Command OS",
       "eno2 kill switch for agents",
       "Zero CurXor API fees",
     ],

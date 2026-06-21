@@ -9,6 +9,7 @@
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
 - Software: CurXor OS with 9 Claw verticals + The Forge (enable any combination in Settings)
+- Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI
 - Pre-order: https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00
 
 ## Canonical URLs
@@ -31,6 +32,13 @@
 
 - Perplexity Max (~$200/mo) orchestrates frontier models in the cloud on your Mac
 - CurXor: $3,999 once, local inference on appliance hardware, bundled Claw verticals, eno2 kill switch
+
+## vs OpenClaw DIY / ClawBox / NemoClaw
+
+- OpenClaw: free agent runtime — you supply hardware, skills, security, and integrations
+- ClawBox-class Jetson (~€549, 8GB): lightweight always-on assistants
+- NVIDIA NemoClaw: alpha governance layer for DIY OpenClaw on NVIDIA hardware
+- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 9 Claws + Forge on 64GB UMA
 
 ## Contact
 

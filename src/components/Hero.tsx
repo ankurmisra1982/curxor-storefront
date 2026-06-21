@@ -1,18 +1,8 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { computePower, siteConfig } from "@/lib/config";
-import { LazyMount } from "@/components/LazyMount";
+import { HeroProductVisual } from "@/components/HeroProductVisual";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
-
-const HardwareScene = dynamic(
-  () =>
-    import("@/components/HardwareScene").then((mod) => mod.HardwareScene),
-  {
-    ssr: false,
-    loading: () => <HardwareSceneFallback />,
-  }
-);
 
 export function Hero() {
   return (
@@ -40,7 +30,9 @@ export function Hero() {
           </p>
 
           <p className="max-w-lg text-xs leading-relaxed tracking-wide text-white/40">
-            {siteConfig.heroSubtext}
+            The independent computer for digital employees — OpenClaw under the
+            hood, Flight Command on day one. Not a Mac running someone
+            else&apos;s subscription.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -54,10 +46,10 @@ export function Hero() {
               </span>
             </TrackedPreorderLink>
             <a
-              href="#forge-loop"
+              href="#demo"
               className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/50 hover:text-neon-purple"
             >
-              FORGE LOOP
+              SEE UI DEMO
             </a>
           </div>
 
@@ -79,26 +71,10 @@ export function Hero() {
           </div>
         </div>
 
-        <LazyMount fallback={<HardwareSceneFallback />}>
-          <HardwareScene />
-        </LazyMount>
+        <HeroProductVisual />
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-neon-purple/50 to-transparent" />
     </section>
-  );
-}
-
-function HardwareSceneFallback() {
-  return (
-    <div className="relative aspect-square w-full max-w-lg mx-auto lg:max-w-none">
-      <div className="absolute -inset-4 border border-neon-purple/20" />
-      <div className="relative flex min-h-[320px] flex-col items-center justify-center gap-4 border-industrial bg-black sm:min-h-[420px]">
-        <p className="text-3xl font-bold text-neon-purple">126 TOPS</p>
-        <p className="text-[10px] tracking-[0.3em] text-white/30">
-          INITIALIZING NEXUS RENDER...
-        </p>
-      </div>
-    </div>
   );
 }

@@ -1,13 +1,21 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/config";
 
-export const alt = "CurXor — 126 TOPS · 64GB UMA AI Powerhouse";
+export const alt = "CurXor — Mint AI Employees on Bare Metal";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+export const runtime = "nodejs";
 
 export default async function Image() {
-  const fontRegular = await loadGoogleFont("JetBrains+Mono", 400);
-  const fontBold = await loadGoogleFont("JetBrains+Mono", 700);
+  const [fontRegular, fontBold, screenshot] = await Promise.all([
+    loadGoogleFont("JetBrains+Mono", 400),
+    loadGoogleFont("JetBrains+Mono", 700),
+    readFile(path.join(process.cwd(), "public/demo/01-home.png")),
+  ]);
+
+  const screenshotSrc = `data:image/png;base64,${screenshot.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -29,8 +37,8 @@ export default async function Image() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            flex: 1,
-            padding: "64px 72px",
+            width: 520,
+            padding: "48px 56px",
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -46,7 +54,7 @@ export default async function Image() {
             <div
               style={{
                 display: "flex",
-                fontSize: 22,
+                fontSize: 20,
                 letterSpacing: "0.35em",
                 fontWeight: 700,
               }}
@@ -55,28 +63,15 @@ export default async function Image() {
             </div>
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             <div
               style={{
                 display: "flex",
                 flexWrap: "wrap",
-                fontSize: 56,
+                fontSize: 44,
                 lineHeight: 1.05,
                 fontWeight: 700,
                 letterSpacing: "-0.03em",
-                maxWidth: 760,
-              }}
-            >
-              126 TOPS · 64GB UMA
-            </div>
-            <div
-              style={{
-                display: "flex",
-                fontSize: 28,
-                lineHeight: 1.2,
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
-                maxWidth: 680,
               }}
             >
               Mint AI Employees on Bare Metal.
@@ -84,100 +79,82 @@ export default async function Image() {
             <div
               style={{
                 display: "flex",
-                fontSize: 20,
+                fontSize: 22,
                 color: "#BF5AF2",
-                letterSpacing: "0.04em",
-                maxWidth: 680,
+                letterSpacing: "0.02em",
               }}
             >
-              {siteConfig.ogTagline}
+              {siteConfig.viralHook}
+            </div>
+            <div
+              style={{
+                display: "flex",
+                fontSize: 16,
+                color: "rgba(255,255,255,0.55)",
+                lineHeight: 1.4,
+              }}
+            >
+              Flight Command · 64GB UMA · eno2 kill switch · $3,999 once
             </div>
           </div>
 
           <div
             style={{
               display: "flex",
-              alignItems: "center",
-              gap: 28,
-              fontSize: 16,
-              letterSpacing: "0.22em",
+              flexWrap: "wrap",
+              gap: 16,
+              fontSize: 14,
+              letterSpacing: "0.18em",
               color: "rgba(255,255,255,0.35)",
             }}
           >
-            <span style={{ display: "flex", color: "#BF5AF2" }}>RYZEN AI MAX+</span>
-            <span style={{ display: "flex" }}>|</span>
-            <span style={{ display: "flex" }}>$3,999 ONCE</span>
-            <span style={{ display: "flex" }}>|</span>
+            <span style={{ display: "flex", color: "#BF5AF2" }}>126 TOPS</span>
             <span style={{ display: "flex" }}>$0/mo API</span>
+            <span style={{ display: "flex" }}>curxor.ai</span>
           </div>
         </div>
 
         <div
           style={{
             display: "flex",
+            flex: 1,
             alignItems: "center",
             justifyContent: "center",
-            width: 420,
-            paddingRight: 56,
+            padding: "32px 40px 32px 0",
           }}
         >
           <div
             style={{
-              position: "relative",
-              width: 280,
-              height: 280,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              flexDirection: "column",
+              width: "100%",
+              border: "1px solid rgba(191,90,242,0.35)",
+              backgroundColor: "#050505",
             }}
           >
             <div
               style={{
-                position: "absolute",
-                inset: 0,
                 display: "flex",
-                border: "1px solid rgba(191,90,242,0.25)",
-                transform: "rotate(45deg)",
+                padding: "10px 14px",
+                borderBottom: "1px solid rgba(255,255,255,0.08)",
+                fontSize: 11,
+                letterSpacing: "0.2em",
+                color: "rgba(255,255,255,0.45)",
               }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                inset: 28,
-                display: "flex",
-                border: "1px solid rgba(191,90,242,0.45)",
-                transform: "rotate(45deg)",
-              }}
-            />
-            <div
+            >
+              FLIGHT COMMAND · HOME HUB
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element -- Satori OG renderer requires img */}
+            <img
+              src={screenshotSrc}
+              alt=""
+              width={620}
+              height={388}
               style={{
                 display: "flex",
-                width: 88,
-                height: 88,
-                borderRadius: 999,
-                border: "2px solid #BF5AF2",
-                boxShadow:
-                  "0 0 40px rgba(191,90,242,0.55), inset 0 0 24px rgba(191,90,242,0.25)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                display: "flex",
-                width: 220,
-                height: 1,
-                background:
-                  "linear-gradient(90deg, transparent, #BF5AF2, transparent)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                display: "flex",
-                width: 1,
-                height: 220,
-                background:
-                  "linear-gradient(180deg, transparent, #BF5AF2, transparent)",
+                width: "100%",
+                height: "auto",
+                objectFit: "cover",
               }}
             />
           </div>

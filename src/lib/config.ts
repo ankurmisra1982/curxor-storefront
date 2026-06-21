@@ -196,6 +196,11 @@ export const faqItems = [
       "Yes. eno1 is Command (Flight Command UI). eno2 is Egress for outbound agent actions. Unplug eno2 to kill outbound Claws instantly. Keep intelligence on local-only in Settings for fully offline reasoning.",
   },
   {
+    question: "How is CurXor different from Perplexity Personal Computer?",
+    answer:
+      "Perplexity Personal Computer is agent software on your Mac — often a Mac mini on the Perplexity Max plan (~$200/month) — that orchestrates frontier models via Perplexity's cloud. CurXor is a dedicated appliance: local inference on 64GB UMA, pre-built Claw verticals, Settings to pick your stack, and an eno2 kill switch. You pay $3,999 once instead of ~$2,400/year in subscriptions, and your prompts and playbooks stay on your metal by default.",
+  },
+  {
     question: "Where are your privacy policy and trading disclaimers?",
     answer:
       "Privacy policy: curxor.ai/privacy. Terms, pre-order conditions, and Capital Claw trading disclaimers: curxor.ai/terms.",
@@ -224,6 +229,18 @@ export const comparisonOptions = [
       "You build the agent stack",
       "No egress kill switch",
       "Weeks of integration work",
+    ],
+    negative: true,
+  },
+  {
+    id: "perplexity",
+    label: "PERPLEXITY MAX + MAC",
+    price: "$200/mo",
+    highlights: [
+      "~$2,400/yr on Max tier",
+      "Frontier models orchestrated in the cloud",
+      "You supply the Mac mini for 24/7 runs",
+      "General automation — no bundled Claws",
     ],
     negative: true,
   },

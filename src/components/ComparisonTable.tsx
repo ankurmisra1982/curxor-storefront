@@ -15,13 +15,13 @@ export function ComparisonTable() {
               Not Another Cloud Bill
             </h2>
           </div>
-          <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            At $3,999 you are choosing between a monthly API habit, a DIY Mac
-            project, or a turnkey agent appliance.
+          <p className="max-w-md text-xs leading-relaxed tracking-wide text-white/40">
+            At $3,999 you are choosing between a monthly API habit, a rented
+            Mac mini agent stack, a DIY project, or a turnkey Claw appliance.
           </p>
         </div>
 
-        <div className="grid gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
+        <div className="grid gap-px border border-white/10 bg-white/10 md:grid-cols-2 xl:grid-cols-4">
           {comparisonOptions.map((option) => (
             <div
               key={option.id}

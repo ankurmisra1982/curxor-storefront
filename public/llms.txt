@@ -27,6 +27,11 @@
 - Physical eno2 kill switch for outbound agents
 - Zero per-token cloud API fees
 
+## vs Perplexity Personal Computer
+
+- Perplexity Max (~$200/mo) orchestrates frontier models in the cloud on your Mac
+- CurXor: $3,999 once, local inference on appliance hardware, bundled Claw verticals, eno2 kill switch
+
 ## Contact
 
 - Website: https://curxor.ai

@@ -3,7 +3,7 @@
 
 export const applianceVersion = "0.2.0" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-06-21T03:56:50.962Z" as const;
+export const applianceSyncedAt = "2026-06-21T07:24:26.694Z" as const;
 
 export const clawCategoryLabels = {
   "forge": "Create",
@@ -45,8 +45,8 @@ export const apps = [
     "id": "creator-claw",
     "applianceId": "my-content-creator",
     "name": "Creator Claw",
-    "tagline": "Content pipeline employee — draft, schedule, publish",
-    "description": "SEO blog generation, X thread scheduling, and YouTube scripts — content pipelines with zero API rent.",
+    "tagline": "Content pipeline — draft, create, adapt, publish",
+    "description": "Draft, adapt, and publish across social channels — video pipelines, engage inbox, calendar, and digital bridges on eno2 with zero API rent.",
     "icon": "✦",
     "category": "wealth",
     "categoryLabel": "Wealth & growth"

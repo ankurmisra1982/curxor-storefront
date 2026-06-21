@@ -51,7 +51,7 @@ export const architectureContent = {
   ],
   bridges: [
     "capital.execute_trade → Alpaca paper/live via Python bridge on eno2",
-    "content.publish_post → X API via Python bridge on eno2",
+    "content.publish_post → X, LinkedIn, Meta, YouTube, TikTok, and more via Python bridges on eno2",
     "Channel router → Telegram, Slack, WhatsApp, iMessage — local inference, CCP inbox sync",
     "Your LLM never talks to the internet — dedicated bridges and gateways handle egress",
   ],

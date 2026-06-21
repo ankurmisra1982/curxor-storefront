@@ -37,6 +37,11 @@ const SHOTS = [
     title: "Unified inbox",
     body: "Telegram, Slack, WhatsApp, iMessage, and dashboard chat — one router on your appliance, synced to the Claw Context mesh.",
   },
+  {
+    src: "/demo/08-creator-claw.png",
+    title: "Creator Claw",
+    body: "Go Live checklist, content queue, bridge health, calendar, engage inbox, and publish recovery — draft locally, egress on eno2 only.",
+  },
 ] as const;
 
 export function ScreenshotGallery() {
@@ -53,8 +58,8 @@ export function ScreenshotGallery() {
             </h2>
           </div>
           <p className="max-w-md text-xs leading-relaxed tracking-wide text-white/40">
-            No concept art — live dashboard captures across wealth, work, life
-            &amp; family, and unified comms.
+            No concept art — live dashboard captures across wealth, creator
+            pipeline, life &amp; family, and unified comms.
           </p>
         </div>
 

@@ -115,7 +115,7 @@ export const clawPickStackLabel = `${clawVerticalCount} Claws + The Forge · pic
 export const dayOneSteps = [
   {
     title: "1 · Pick your Claws",
-    body: "Enable the digital employees you want on day one — Capital, Vital, Kin, Outreach, and more. Add or remove anytime in Settings.",
+    body: "Enable the digital employees you want on day one — Capital, Creator, Vital, Kin, Outreach, and more. Add or remove anytime in Settings.",
   },
   {
     title: "2 · Chat or tap",
@@ -157,12 +157,13 @@ export const specColumns = [
     label: "CLAW ENGINE",
     items: [
       "Home hub — pick a Claw, chat or tap skills",
+      "Creator Claw — queue, calendar, engage loop, multi-platform bridges",
       "Unified inbox — dashboard + Telegram · Slack · WhatsApp · iMessage",
       "Settings — enable Claws, channels, intelligence, themes",
       "Claw Context mesh — Vital, Kin, Optimus share context",
       "Wearables & health apps — user-configured OAuth, any vendor you authorize",
       "The Forge — describe it, deploy it, customize anything",
-      "Alpaca · X · CRM bridges on eno2 only",
+      "Alpaca · social publish · CRM bridges on eno2 only",
     ],
   },
 ] as const;
@@ -237,6 +238,11 @@ export const faqItems = [
     question: "Can I message my Claws from Telegram, WhatsApp, or Slack?",
     answer:
       "Yes. CurXor OS routes dashboard chat and external messaging through one local channel router synced to the Claw Context inbox. Connect the gateways you want in Settings — Telegram, Slack, WhatsApp, iMessage, and more. Reasoning stays on your appliance; outbound actions still egress only through eno2 when a Claw needs the internet.",
+  },
+  {
+    question: "What does Creator Claw do on day one?",
+    answer:
+      "Creator Claw is a sovereign social operator: draft and adapt posts locally, fan out to TikTok, Instagram, YouTube, X, and more, then publish through digital bridges on eno2 only. Go Live checklist, content calendar, engage inbox, bridge health, and optional approve-before-publish — Beginner, Standard, or Expert modes in Settings.",
   },
   {
     question: "Can Vital Claw sync with my smartwatch or health apps?",

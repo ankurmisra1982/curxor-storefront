@@ -3,7 +3,7 @@
 export const changelogMeta = {
   version: "0.2.0" as const,
   channel: "stable" as const,
-  syncedAt: "2026-06-21T03:56:50.965Z" as const,
+  syncedAt: "2026-06-21T07:24:26.697Z" as const,
 } as const;
 
 export const changelogEntries = [
@@ -16,9 +16,11 @@ export const changelogEntries = [
       "Unified communications — Flight Command chat and external channels share one router synced to CCP",
       "Messaging gateways — Telegram, Slack, WhatsApp, and iMessage; unified inbox on Home and Outreach Claw",
       "Kin channel handles map external senders to household profiles for family-aware replies",
+      "Creator Claw day-one — Go Live checklist, content queue, multi-platform bridges, engage loop, and analytics",
+      "Experience levels — Beginner, Standard, Expert progressive disclosure across all OOTB Claws",
       "Wearables and health devices connect via user-configured OAuth — you pick the vendors in Settings",
       "MCP tool protocol and browser automation on eno2 — extensible, not locked to one stack",
-      "54 automated QA checks — smoke, user flows, typecheck, and production build"
+      "57 automated QA checks — smoke, user flows, typecheck, and production build"
     ]
   },
   {

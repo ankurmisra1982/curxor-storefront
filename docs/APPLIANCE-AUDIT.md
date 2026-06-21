@@ -32,7 +32,7 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Hardware validation | ❌ Blocked | No ROCm/UMA/mesh benchmarks on target SKU |
 | Reproducible builds | ⚠️ Gap | No committed `pnpm-lock.yaml` in pillar 2/4 |
 | Security hardening | ⚠️ Partial | Dashboard on `0.0.0.0:3080`; APIs unauthenticated (LAN/captive OK) |
-| Tests / CI | ✅ Local QA | 54 checks — smoke, user flows, typecheck, production build (`qa-smoke.mjs`) |
+| Tests / CI | ✅ Local QA | 57 checks — smoke, user flows, typecheck, production build (`qa-smoke.mjs`) |
 | Agent runtime | ✅ v0.2 | Workspace memory, skills, heartbeat, channel router → CCP inbox |
 | Messaging gateways | ✅ v0.2 | Telegram, Slack, WhatsApp, iMessage — user-configured in Settings |
 
@@ -44,7 +44,7 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 |-----|-------|--------------|----------|
 | The Forge | `/claw-forge` | The Forge | Claw provisioning wizard + local LLM recommend |
 | Capital Claw | `/my-capital` | Capital Claw | Mock portfolio + live digital receipts |
-| Creator Claw | `/my-content` | Creator Claw | Mock queues + live digital receipts |
+| Creator Claw | `/my-content` | Creator Claw | Day-one queue, calendar, engage loop, bridge health, multi-platform publish |
 | Outreach Claw | `/my-work` | Outreach Claw | Mock outbound / CRM UI |
 | Arbitrage Claw | `/my-shop` | Arbitrage Claw | Mock margin / fulfillment UI |
 | Signal Claw | `/optimus` | Signal Claw | Demo signal canvas |

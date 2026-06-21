@@ -26,7 +26,7 @@ export const pressKit = {
   assets: [
     { label: "Logo mark (PNG)", path: "/favicon.svg", note: "SVG favicon — PNG in docs/assets for decks" },
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
-    { label: "Flight Command demo", path: "/#demo", note: "Home, Settings, Capital, Forge, Vital, Kin screenshots" },
+    { label: "Flight Command demo", path: "/#demo", note: "Home, Settings, Capital, Forge, Vital, Kin, unified inbox" },
     { label: "Install video", path: "/architecture#validation", note: "Coming with production hardware batch" },
     { label: "Operator PDF", path: "/architecture#validation", note: "Exported from CurXor OS guides when hardware ships" },
   ],

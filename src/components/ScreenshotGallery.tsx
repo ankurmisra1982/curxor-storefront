@@ -32,6 +32,11 @@ const SHOTS = [
     title: "Kin Claw",
     body: "Household profiles — each member's devices, preferences, and shared context through the Claw Context mesh.",
   },
+  {
+    src: "/demo/07-unified-inbox.png",
+    title: "Unified inbox",
+    body: "Telegram, Slack, WhatsApp, iMessage, and dashboard chat — one router on your appliance, synced to the Claw Context mesh.",
+  },
 ] as const;
 
 export function ScreenshotGallery() {
@@ -48,8 +53,8 @@ export function ScreenshotGallery() {
             </h2>
           </div>
           <p className="max-w-md text-xs leading-relaxed tracking-wide text-white/40">
-            No concept art — live dashboard captures across wealth, create, and
-            life &amp; family verticals.
+            No concept art — live dashboard captures across wealth, work, life
+            &amp; family, and unified comms.
           </p>
         </div>
 

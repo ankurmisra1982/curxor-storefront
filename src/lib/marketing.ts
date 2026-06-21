@@ -30,7 +30,7 @@ export const trustSignals = [
   },
 ] as const;
 
-export const socialProofLine = `CurXor OS ${applianceVersion} · 57 QA checks · MS-S1 MAX validation in progress`;
+export const socialProofLine = `CurXor OS ${applianceVersion} · 61 smoke + 12 user-flow QA checks · MS-S1 MAX validation in progress`;
 
 export const setupClaim =
   "Flight Command on day one — pick Claws in Settings, chat or tap skills. Live bridges need your credentials on eno2.";
@@ -78,7 +78,7 @@ export const personaCards = [
     id: "creators",
     eyebrow: "GROWTH",
     title: "Creators & indie hackers",
-    body: "Creator Claw — draft, adapt, and publish across social channels. Go Live checklist and bridge health on day one.",
+    body: "Creator Claw v0.3 — 5-step Creation Wizard, Go Live checklist, and 10 publish bridges. Draft locally, egress on eno2 only.",
     claw: "Creator Claw",
     href: "/for/creators",
     demo: "/demo/08-creator-claw.png",
@@ -149,7 +149,7 @@ export const creatorFlowShots = [
   {
     src: "/demo/creator/12-creation-wizard.png",
     title: "Creation wizard",
-    body: "Guided first-post flow — draft, attach media, schedule.",
+    body: "5 steps — channel, draft, media, pre-flight, best-time schedule.",
   },
   {
     src: "/demo/creator/13-bridge-health.png",

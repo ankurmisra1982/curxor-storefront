@@ -23,7 +23,7 @@ export const siteConfig = {
   heroSubtext:
     "The independent computer for digital employees — 126 TOPS local inference, dual 10GbE, and strategies that stay on your metal.",
   heroCreatorBadge:
-    "Creator Claw — draft, adapt, publish on eno2 only",
+    "Creator Claw v0.3 — 5-step wizard · Go Live · 10 publish bridges",
   preOrderPrice: "$3,999",
   preOrderPriceUsd: 3999,
   stripeCheckoutUrl:
@@ -159,7 +159,7 @@ export const specColumns = [
     label: "CLAW ENGINE",
     items: [
       "Home hub — pick a Claw, chat or tap skills",
-      "Creator Claw — queue, calendar, engage loop, multi-platform bridges",
+      "Creator Claw — 5-step Creation Wizard, Go Live checklist, 10 publish bridges, engage loop",
       "Unified inbox — dashboard + Telegram · Slack · WhatsApp · iMessage",
       "Settings — enable Claws, channels, intelligence, themes",
       "Claw Context mesh — Vital, Kin, Optimus share context",
@@ -244,7 +244,7 @@ export const faqItems = [
   {
     question: "What does Creator Claw do on day one?",
     answer:
-      "Creator Claw is a sovereign social operator: draft and adapt posts locally, fan out to TikTok, Instagram, YouTube, X, and more, then publish through digital bridges on eno2 only. Go Live checklist, content calendar, engage inbox, bridge health, and optional approve-before-publish — Beginner, Standard, or Expert modes in Settings.",
+      "Creator Claw v0.3 is a sovereign social operator: a 5-step Creation Wizard (channel → draft → media → pre-flight → best-time schedule), Go Live checklist with strict bridge-ready semantics, 10 live publish bridges on eno2, bridge health, publish recovery, and optional approve-before-publish via dashboard, Telegram, or Slack. Beginner mode surfaces wizard and Go Live first; Standard and Expert unlock planner, campaigns, and analytics.",
   },
   {
     question: "Can Vital Claw sync with my smartwatch or health apps?",

@@ -1,7 +1,7 @@
 # CurXor OS — Full Appliance Audit (Holding Pattern)
 
 **Audit date:** June 2026  
-**Version:** `0.2.0` (`../curxor-os/version.json`)  
+**Version:** `0.3.0` (`../curxor-os/version.json`)  
 **Hardware status:** MS-S1 MAX not yet received — **no on-device validation**  
 **GTM site:** This repo (`curxor storefront`) — landing + pre-order live; see [SYNC.md](SYNC.md)
 
@@ -32,7 +32,7 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Hardware validation | ❌ Blocked | No ROCm/UMA/mesh benchmarks on target SKU |
 | Reproducible builds | ⚠️ Gap | No committed `pnpm-lock.yaml` in pillar 2/4 |
 | Security hardening | ⚠️ Partial | Dashboard on `0.0.0.0:3080`; APIs unauthenticated (LAN/captive OK) |
-| Tests / CI | ✅ Local QA | 57 checks — smoke, user flows, typecheck, production build (`qa-smoke.mjs`) |
+| Tests / CI | ✅ Local QA | 61 smoke + 12 user-flow checks — typecheck, production build (`qa-smoke.mjs`, `qa-user-flows.mjs`) |
 | Agent runtime | ✅ v0.2 | Workspace memory, skills, heartbeat, channel router → CCP inbox |
 | Messaging gateways | ✅ v0.2 | Telegram, Slack, WhatsApp, iMessage — user-configured in Settings |
 
@@ -44,7 +44,7 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 |-----|-------|--------------|----------|
 | The Forge | `/claw-forge` | The Forge | Claw provisioning wizard + local LLM recommend |
 | Capital Claw | `/my-capital` | Capital Claw | Mock portfolio + live digital receipts |
-| Creator Claw | `/my-content` | Creator Claw | Day-one queue, calendar, engage loop, bridge health, multi-platform publish |
+| Creator Claw | `/my-content` | Creator Claw | v0.3 day-one — 5-step wizard, Go Live, 10 bridges, engage loop, bootstrap API |
 | Outreach Claw | `/my-work` | Outreach Claw | Mock outbound / CRM UI |
 | Arbitrage Claw | `/my-shop` | Arbitrage Claw | Mock margin / fulfillment UI |
 | Signal Claw | `/optimus` | Signal Claw | Demo signal canvas |

@@ -8,7 +8,7 @@
 - Price: $3,999 USD (one-time pre-order, no monthly API fees)
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
-- Software: CurXor OS 0.2+ with 9 Claw verticals + The Forge (enable any combination in Settings)
+- Software: CurXor OS 0.3+ with 9 Claw verticals + The Forge (enable any combination in Settings)
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
 - Health: Vital Claw syncs wearables and health apps via OAuth you authorize — not locked to one device brand
 - Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI
@@ -34,7 +34,7 @@
 
 - Turnkey agent platform (not DIY inference only)
 - Bundled Claws: Capital, Creator, Outreach, Arbitrage, Signal, Swarm, Engage, Vital, Kin, The Forge
-- Creator Claw: Go Live checklist, content queue, calendar, engage inbox, multi-platform publish bridges on eno2
+- Creator Claw v0.3: 5-step Creation Wizard, Go Live checklist, 10 publish bridges, engage loop, planner/campaigns (Standard/Expert)
 - Life & family: Vital Claw (longevity desk), Kin Claw (household profiles)
 - Physical eno2 kill switch for outbound agents
 - Zero per-token cloud API fees

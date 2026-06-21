@@ -60,7 +60,7 @@ export const personaPages: PersonaPage[] = [
       "Creator Claw — draft, adapt, and publish across TikTok, Instagram, YouTube, and X. Local inference, eno2 bridges only.",
     eyebrow: "FOR CREATORS",
     headline: "Draft locally. Publish on eno2 only.",
-    lead: "Creator Claw is a sovereign social operator — Go Live checklist, content queue, calendar, engage inbox, and multi-platform bridges. No OpenAI bill for every caption.",
+    lead: "Creator Claw v0.3 is a sovereign social operator — 5-step Creation Wizard, Go Live checklist with strict bridge-ready semantics, 10 live publish bridges, and closed-loop engage → analytics → planner growth.",
     painPoints: [
       "Token rent on every draft and rewrite",
       "Platform lock-in on cloud schedulers",
@@ -69,7 +69,7 @@ export const personaPages: PersonaPage[] = [
     claws: [
       {
         name: "Creator Claw",
-        body: "Draft, adapt, fan out, schedule, and publish — video renders, bridge health, and engage loop on day one.",
+        body: "5-step Creation Wizard, Go Live checklist, bridge health, publish recovery, and 10 live platform bridges on eno2.",
       },
       {
         name: "Engage Claw",
@@ -83,9 +83,9 @@ export const personaPages: PersonaPage[] = [
     demoSrc: "/demo/08-creator-claw.png",
     demoAlt: "Creator Claw Go Live and queue",
     outcomes: [
-      "Multi-platform publish bridges (X, Meta, YouTube, TikTok, LinkedIn, …)",
-      "Optional approve-before-publish via dashboard or Telegram",
-      "Learned scheduling from your own metrics — not generic cloud heuristics",
+      "5-step Creation Wizard with pre-flight and learned best-time scheduling",
+      "10 live publish bridges with Go Live strict-ready semantics",
+      "Approve-before-publish via dashboard, Telegram, or Slack operators",
     ],
     compareLinks: [
       { href: "/compare/clawbox", label: "vs ClawBox" },

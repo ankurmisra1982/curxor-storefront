@@ -40,7 +40,7 @@ const SHOTS = [
   {
     src: "/demo/08-creator-claw.png",
     title: "Creator Claw",
-    body: "Go Live checklist, content queue, bridge health, calendar, engage inbox, and publish recovery — draft locally, egress on eno2 only.",
+    body: "Creator Claw v0.3 — Go Live panel, 5-step Creation Wizard path, queue, and strict bridge-ready semantics.",
   },
 ] as const;
 

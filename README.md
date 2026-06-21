@@ -12,7 +12,7 @@ GTM site and marketing workspace for **CurXor OS** — sovereign edge appliance 
 | `npm run dev` | [http://localhost:3000](http://localhost:3000) |
 | `npm run build` | Production build |
 
-**Live stack:** Next.js 15 · Tailwind · Resend email capture · Stripe pre-order · 3D hardware hero · eight Claw verticals + The Forge (`src/lib/generated/appliance-sync.ts`).
+**Live stack:** Next.js 15 · Tailwind · Resend email capture · Stripe pre-order · 3D hardware hero · synced Claw roster from `appliance-sync.ts` (9 verticals + The Forge).
 
 ## GTM docs (from appliance audit)
 

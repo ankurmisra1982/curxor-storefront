@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/config";
 
 const staticRoutes = [
+  "/pricing",
   "/architecture",
   "/changelog",
   "/press",

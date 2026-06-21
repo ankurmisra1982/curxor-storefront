@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   apps,
   applianceVersion,
+  clawRosterLabel,
   clawCategoryOrder,
   type StorefrontApp,
 } from "@/lib/config";
@@ -67,8 +68,9 @@ export function AppEcosystem() {
             </h2>
           </div>
           <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            126 TOPS running 8 bundled verticals — grouped like Flight Command
-            nav. Plus infinite custom Claws from The Forge.
+            126 TOPS running {clawRosterLabel} — grouped like Flight Command
+            nav. Enable your stack in Settings; mint infinite custom Claws from
+            The Forge.
           </p>
         </div>
 

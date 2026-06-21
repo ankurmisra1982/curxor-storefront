@@ -6,7 +6,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 
 - [x] Landing page hero (*Mint AI Employees on Bare Metal.*)
 - [x] Spec sheet matrix (Compute / Network / Claw Engine)
-- [x] Eight Claw verticals grouped by category + mobile carousel
+- [x] Ten Claw workspaces (9 verticals + The Forge) grouped by category + mobile carousel
 - [x] Day One hub section (Home / chat / stay local / Settings)
 - [x] 3D hardware scene (R3F) with perf deferrals
 - [x] Email capture (`/api/subscribe` + Resend)
@@ -25,7 +25,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 
 - [x] Settings / user freedom copy (Claws toggle, optional frontier LLM, themes) — `src/lib/config.ts`
 - [x] Pricing / UMA tiers page (`/pricing`) — synced from `local-llm-catalog.ts`
-- [ ] Demo screenshots in `public/demo/` (source: `../curxor-os/docs/demo-pack/`)
+- [x] Demo screenshots in `public/demo/` (Home, Settings, Capital Claw, Forge)
 - [ ] Changelog auto-append on version bump (script, not manual edits)
 
 ## Wait for **curxor-os + hardware**
@@ -54,7 +54,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 |-------|--------|
 | "Sub-millisecond ZeroMQ telemetry" | **Removed** — use "low-latency local mesh; benchmarks pending" |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
-| Eight Claw verticals | UI shells ship; integrations need your bridges/credentials |
+| Claw verticals + The Forge | UI shells ship; enable any combination in Settings; integrations need your bridges/credentials |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 
 See [SYNC.md](SYNC.md) and [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md).

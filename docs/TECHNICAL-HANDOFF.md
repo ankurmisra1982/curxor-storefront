@@ -36,7 +36,7 @@ Copy-paste facts for storefront, datasheets, and pitch decks. Source of truth: `
 
 ## OOTB apps — marketing IDs
 
-Eight Claws synced from `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` into `src/lib/generated/appliance-sync.ts`:
+Ten Claw workspaces (9 verticals + The Forge) synced from `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` into `src/lib/generated/appliance-sync.ts`:
 
 | Storefront slug | Appliance ID | Display name |
 |-----------------|--------------|--------------|

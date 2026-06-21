@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LegalDocument, LegalSection } from "@/components/LegalDocument";
 import { SiteShell } from "@/components/SiteShell";
 import { legalUpdated } from "@/lib/legal";
-import { siteConfig } from "@/lib/config";
+import { clawRosterLabel, siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: `Terms & Disclaimers — ${siteConfig.name}`,
@@ -45,9 +45,9 @@ export default function TermsPage() {
 
         <LegalSection title="Software maturity">
           <p>
-            CurXor OS 0.1.0 ships with eight Claw vertical UI shells and The Forge.
-            Some integrations use mock or stub data until you connect real bridges
-            (Alpaca, X, CRM, etc.). Features described on the marketing site reflect
+            CurXor OS 0.1.0 ships with {clawRosterLabel}. Some integrations use
+            mock or stub data until you connect real bridges (Alpaca, X, CRM,
+            wearables, etc.). Features described on the marketing site reflect
             product direction — verify behavior on your unit.
           </p>
         </LegalSection>

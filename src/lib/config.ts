@@ -60,6 +60,17 @@ export {
   type StorefrontApp,
 } from "./generated/appliance-sync";
 
+import { apps as syncedApps } from "./generated/appliance-sync";
+
+/** Claw workspaces excluding The Forge — synced from curxor-os ootb-apps. */
+export const clawVerticalCount = syncedApps.filter(
+  (app) => app.applianceId !== "claw-forge"
+).length;
+
+export const clawRosterLabel = `${clawVerticalCount} Claw verticals + The Forge`;
+
+export const clawPickStackLabel = `${clawVerticalCount} Claws + The Forge · pick your stack`;
+
 export const dayOneSteps = [
   {
     title: "1 · Pick your Claws",
@@ -148,8 +159,7 @@ export const shareLines = [
 export const faqItems = [
   {
     question: "What is CurXor?",
-    answer:
-      "CurXor is a sovereign 64GB AI compute appliance with 126 TOPS NPU. It runs CurXor OS — eight Claw verticals plus The Forge. Enable the Claws you want, chat in plain language, and scale 24/7 with local inference by default.",
+    answer: `CurXor is a sovereign 64GB AI compute appliance with 126 TOPS NPU. It runs CurXor OS — ${clawRosterLabel}. Enable the Claws you want, chat in plain language, and scale 24/7 with local inference by default.`,
   },
   {
     question: "How is CurXor different from a Mac Studio plus Ollama?",
@@ -158,8 +168,7 @@ export const faqItems = [
   },
   {
     question: "What is included for $3,999?",
-    answer:
-      "The CurXor Edge Nexus appliance, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), eight available Claw verticals (enable any combination), chat workspaces with one-tap skills, local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.",
+    answer: `The CurXor Edge Nexus appliance, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.`,
   },
   {
     question: "Do I need to code to use CurXor?",
@@ -224,7 +233,7 @@ export const comparisonOptions = [
     price: "$3,999 once",
     highlights: [
       "126 TOPS · 64GB UMA included",
-      "8 Claws available · pick your stack",
+      clawPickStackLabel,
       "Settings hub · themes & LLM choice",
       "eno2 kill switch for agents",
       "Zero CurXor API fees",

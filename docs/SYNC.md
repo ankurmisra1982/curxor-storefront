@@ -44,7 +44,7 @@ Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketi
 | Storefront today | Audit note |
 |------------------|------------|
 | Spec: "Sub-millisecond ZeroMQ telemetry" | Aspirational — **not validated** until MS-S1 MAX mesh benchmarks |
-| "Eight Claw verticals + The Forge" | **UI shells ship**; many modules use mock data until integrations land |
+| "Nine Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; many modules use mock data until integrations land |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 

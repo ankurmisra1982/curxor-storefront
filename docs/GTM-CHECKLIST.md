@@ -21,6 +21,10 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [x] Press kit (`/press`) — boilerplate + fact sheet
 - [x] Claw taglines synced from `app-agent-catalog.ts` when sibling repo present
 
+## Before marketing (one-time ops)
+
+- [ ] **Resend on Vercel** — verify `curxor.ai` in Resend → create Segment → set `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `RESEND_FROM_EMAIL` on Vercel Production → redeploy → test `POST /api/subscribe` returns `{"ok":true}`
+
 ## Build next (this repo)
 
 - [x] Settings / user freedom copy (Claws toggle, optional frontier LLM, themes) — `src/lib/config.ts`

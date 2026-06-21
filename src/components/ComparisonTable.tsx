@@ -2,6 +2,14 @@ import Link from "next/link";
 
 import { comparisonOptions } from "@/lib/config";
 
+const compareHrefById: Partial<Record<(typeof comparisonOptions)[number]["id"], string>> = {
+  clawbox: "/compare/clawbox",
+  perplexity: "/compare/perplexity-personal-computer",
+  miky: "/compare/miky",
+  diy: "/compare/mac-studio-ollama",
+  "openclaw-diy": "/compare/nemoclaw",
+};
+
 export function ComparisonTable() {
   const competitors = comparisonOptions.filter((option) => option.negative);
   const curxor = comparisonOptions.find((option) => !option.negative);
@@ -59,16 +67,22 @@ export function ComparisonTable() {
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Link
-            href="/pricing"
+            href="/compare"
             className="inline-flex items-center gap-2 border border-neon-purple/50 px-5 py-3 text-xs tracking-[0.2em] text-neon-purple transition-colors hover:bg-neon-purple/10"
           >
-            SEE UMA TIERS <span>→</span>
+            FULL COMPARISONS <span>→</span>
+          </Link>
+          <Link
+            href="/pricing"
+            className="text-xs tracking-widest text-white/35 transition-colors hover:text-neon-purple"
+          >
+            UMA TIERS →
           </Link>
           <Link
             href="#faq"
             className="text-xs tracking-widest text-white/35 transition-colors hover:text-neon-purple"
           >
-            OPENCLAW &amp; CLAWBOX FAQ →
+            FAQ →
           </Link>
         </div>
       </div>
@@ -81,6 +95,8 @@ function ComparisonCard({
 }: {
   option: (typeof comparisonOptions)[number];
 }) {
+  const compareHref = compareHrefById[option.id];
+
   return (
     <div className="bg-black p-6 lg:p-8">
       <p className="mb-2 text-[10px] tracking-[0.25em] text-white/30">
@@ -100,6 +116,14 @@ function ComparisonCard({
           </li>
         ))}
       </ul>
+      {compareHref && (
+        <Link
+          href={compareHref}
+          className="mt-6 inline-block text-[10px] tracking-widest text-white/35 transition-colors hover:text-neon-purple"
+        >
+          DEEP COMPARE →
+        </Link>
+      )}
     </div>
   );
 }

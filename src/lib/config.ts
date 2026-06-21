@@ -21,7 +21,9 @@ export const siteConfig = {
   tagline:
     "A sovereign 64GB compute appliance that runs an infinite swarm of digital Claws — trade, create, scrape, and scale 24/7 without sending your strategies to OpenAI.",
   heroSubtext:
-    "Not a PC. A money printer with 126 TOPS of local inference, dual 10GbE, and alpha that never leaves your building.",
+    "The independent computer for digital employees — 126 TOPS local inference, dual 10GbE, and strategies that stay on your metal.",
+  heroCreatorBadge:
+    "Creator Claw — draft, adapt, publish on eno2 only",
   preOrderPrice: "$3,999",
   preOrderPriceUsd: 3999,
   stripeCheckoutUrl:
@@ -127,7 +129,7 @@ export const dayOneSteps = [
   },
   {
     title: "4 · Make it yours",
-    body: "Settings → Appearance: Simple or Expert mode, light/dark, and accent themes (CurXor, Ocean, Amber, Mono).",
+    body: "Settings → Appearance: Beginner, Standard, or Expert experience levels, light/dark, and accent themes (CurXor, Ocean, Amber, Mono).",
   },
 ] as const;
 

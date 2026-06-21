@@ -5,15 +5,13 @@ import { useState } from "react";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 
 const navLinks = [
+  { href: "/for/traders", label: "TRADERS" },
+  { href: "/for/creators", label: "CREATORS" },
   { href: "/pricing", label: "PRICING" },
-  { href: "/#specs", label: "SPECS" },
-  { href: "/#compute", label: "COMPUTE" },
-  { href: "/#forge-loop", label: "FORGE" },
   { href: "/#demo", label: "DEMO" },
-  { href: "/#apps", label: "CLAWS" },
-  { href: "/#compare", label: "COMPARE" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/compare", label: "WHY CURXOR" },
   { href: "/architecture", label: "STACK" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Header() {
@@ -29,7 +27,7 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 text-xs tracking-widest text-white/60 lg:flex">
+        <nav className="hidden items-center gap-5 text-xs tracking-widest text-white/60 xl:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}

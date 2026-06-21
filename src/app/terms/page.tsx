@@ -26,6 +26,11 @@ export default function TermsPage() {
             announced as batches are scheduled. Pre-orders are subject to change
             until fulfillment — we will communicate material changes by email.
           </p>
+          <p>
+            Questions before or after pre-order: hello@curxor.ai. Full pre-order
+            policy, support expectations, and refund handling are updated here as
+            production batches are finalized.
+          </p>
         </LegalSection>
 
         <LegalSection title="Not financial advice">

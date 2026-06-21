@@ -1,6 +1,7 @@
 "use client";
 
 import { computePower, siteConfig } from "@/lib/config";
+import { setupClaim } from "@/lib/marketing";
 import { HeroProductVisual } from "@/components/HeroProductVisual";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 import { ValidationBadge } from "@/components/ValidationBadge";
@@ -16,6 +17,9 @@ export function Hero() {
               {computePower.badge}
             </div>
             <ValidationBadge compact />
+            <div className="inline-flex items-center border border-white/15 bg-white/[0.02] px-3 py-1 text-[9px] tracking-[0.15em] text-white/50">
+              {siteConfig.heroCreatorBadge}
+            </div>
           </div>
 
           <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
@@ -34,9 +38,7 @@ export function Hero() {
           </p>
 
           <p className="max-w-lg text-xs leading-relaxed tracking-wide text-white/40">
-            The independent computer for digital employees — OpenClaw under the
-            hood, Flight Command on day one. Not a Mac running someone
-            else&apos;s subscription.
+            {setupClaim}
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">

@@ -1,6 +1,12 @@
 import { track } from "@vercel/analytics";
 
-export type PreorderLocation = "hero" | "header" | "mobile-sticky";
+export type PreorderLocation =
+  | "hero"
+  | "header"
+  | "mobile-sticky"
+  | "compare"
+  | "persona"
+  | "pricing";
 
 export type ScrollDepth = 25 | 50 | 75 | 100;
 

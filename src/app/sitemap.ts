@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
+import { comparePages } from "@/lib/compare-pages";
 import { siteConfig } from "@/lib/config";
+import { personaPages } from "@/lib/persona-pages";
 
 const staticRoutes = [
   "/pricing",
@@ -8,6 +10,9 @@ const staticRoutes = [
   "/press",
   "/privacy",
   "/terms",
+  "/compare",
+  ...comparePages.map((page) => `/compare/${page.slug}`),
+  ...personaPages.map((page) => `/for/${page.slug}`),
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -24,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteConfig.siteUrl}${path}`,
       lastModified,
       changeFrequency: "monthly" as const,
-      priority: 0.6,
+      priority: path.startsWith("/compare") || path.startsWith("/for") ? 0.7 : 0.6,
     })),
   ];
 }

@@ -20,6 +20,13 @@
 - Pricing (UMA tiers + compute ladder): https://curxor.ai/pricing
 - Architecture (MS-S1 validation status): https://curxor.ai/architecture
 - Changelog: https://curxor.ai/changelog
+- Compare hub: https://curxor.ai/compare
+- Persona: https://curxor.ai/for/traders · https://curxor.ai/for/creators · https://curxor.ai/for/agencies
+- vs ClawBox: https://curxor.ai/compare/clawbox
+- vs Perplexity PC: https://curxor.ai/compare/perplexity-personal-computer
+- vs MIKY: https://curxor.ai/compare/miky
+- vs Mac Studio + Ollama: https://curxor.ai/compare/mac-studio-ollama
+- vs NemoClaw: https://curxor.ai/compare/nemoclaw
 - Open Graph image: https://curxor.ai/opengraph-image
 - Sitemap: https://curxor.ai/sitemap.xml
 

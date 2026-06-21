@@ -1,3 +1,8 @@
+import { CreatorFlowGallery } from "@/components/CreatorFlowGallery";
+import { PersonaCards } from "@/components/PersonaCards";
+import { PriceIncludes } from "@/components/PriceIncludes";
+import { TcoSection } from "@/components/TcoSection";
+import { TrustStrip } from "@/components/TrustStrip";
 import { AppEcosystem } from "@/components/AppEcosystem";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ComputePower } from "@/components/ComputePower";
@@ -18,14 +23,19 @@ export default function Home() {
       <div className="pointer-events-none fixed inset-0 grid-industrial opacity-40" />
       <Header />
       <Hero />
-      <ComputePower />
-      <CreateToEarn />
-      <DayOneHub />
+      <TrustStrip />
       <ScreenshotGallery />
-      <PricingPreview />
+      <PersonaCards />
       <ComparisonTable />
-      <SpecMatrix />
+      <ComputePower />
+      <DayOneHub />
       <AppEcosystem />
+      <PricingPreview />
+      <PriceIncludes />
+      <SpecMatrix />
+      <TcoSection />
+      <CreatorFlowGallery />
+      <CreateToEarn />
       <Faq />
       <Footer />
       <MobileStickyCta />

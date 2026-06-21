@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.3.0",
+    "date": "2026-06-21",
+    "channel": "stable",
+    "highlights": [
+      "Creator Claw day-one launch — Go Live checklist, 5-step Creation Wizard (media → pre-flight → best-time schedule), and strict ready semantics",
+      "Multi-platform publish desk — 10 live bridges, bridge health, publish recovery, approval + Telegram/Slack operators",
+      "Closed-loop growth — engage inbox, analytics recommendations, content planner, library, and campaigns (Standard/Expert)",
+      "dashboard_bootstrap API — single-load Creator workspace; 61 smoke + 12 user-flow QA checks"
+    ]
+  },
+  {
     "version": "0.2.0",
     "date": "2026-06-20",
     "channel": "stable",

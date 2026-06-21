@@ -20,6 +20,13 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [x] Changelog (`/changelog`) tied to `../curxor-os/version.json` via sync
 - [x] Press kit (`/press`) — boilerplate + fact sheet
 - [x] Claw taglines synced from `app-agent-catalog.ts` when sibling repo present
+- [x] Social profiles wired (footer, press, JSON-LD, llms.txt)
+- [x] Creator Claw demo (`08-creator-claw.png`) + creator flow gallery
+- [x] Trust strip (pre-order, ship window, support, terms link)
+- [x] Price-includes section + four-year TCO table
+- [x] Persona cards + `/for/traders` · `/for/creators` · `/for/agencies`
+- [x] Compare hub + five competitor pages under `/compare/*`
+- [x] Homepage reorder (demo → personas → compare first)
 
 ## Before marketing (one-time ops)
 
@@ -29,12 +36,14 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 
 - [x] Settings / user freedom copy (Claws toggle, optional frontier LLM, themes) — `src/lib/config.ts`
 - [x] Pricing / UMA tiers page (`/pricing`) — synced from `local-llm-catalog.ts`
-- [x] Demo screenshots in `public/demo/` (Home, Settings, Capital, Forge, Vital, Kin, unified inbox)
+- [x] Demo screenshots in `public/demo/` (Home through Creator Claw + creator flows)
 - [x] Changelog auto-append on version bump (`sync:appliance` + `data/changelog-entries.json`)
 - [x] Pricing compute ladder on `/pricing`
 - [x] MIKY / agent NAS FAQ + comparison row
 - [x] v0.2.0 marketing pass — messaging FAQ, architecture, agnostic wearables copy
 - [ ] Product photography in hero when MS-S1 batch is photographed
+- [ ] Flight Command walkthrough video (90s screen capture)
+- [ ] Customer testimonials / press logos when available
 
 ## Wait for **curxor-os + hardware**
 

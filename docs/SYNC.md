@@ -46,7 +46,7 @@ Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketi
 | Storefront today | Audit note |
 |------------------|------------|
 | Spec: "Sub-millisecond ZeroMQ telemetry" | Aspirational — **not validated** until MS-S1 MAX mesh benchmarks |
-| "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; Vital health bridges scaffold |
+| "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; agent runtime v0.2 with unified comms |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 
@@ -81,6 +81,8 @@ Safe marketing line (default local): *"Local inference by default — trades and
 
 Optional frontier LLMs (Settings → Intelligence, BYOK or OAuth): chat/planning only; does not change bridge egress rules. OpenAI supports OAuth PKCE sign-in; Google when `CURXOR_GOOGLE_OAUTH_CLIENT_ID` is configured on the appliance.
 
-**Claw Context Protocol (CCP):** On-appliance mesh topic `telemetry/claw_context` syncs health, family, work, and hardware context between Claws. See `../curxor-os/docs/guides/15-claw-context-protocol.md`.
+**Claw Context Protocol (CCP):** On-appliance mesh topic `telemetry/claw_context` syncs health, family, work, and hardware context between Claws. Channel conversations publish to `work/inbox.*` via the unified comms router. See `../curxor-os/docs/guides/15-claw-context-protocol.md` and `../curxor-os/docs/guides/18-agent-runtime.md`.
+
+**Agent runtime (v0.2):** OpenClaw-style workspace memory, skills, heartbeat daemon, and messaging gateways (Telegram, Slack, WhatsApp, iMessage). Dashboard chat and external channels share one router → CCP. Marketing line: *"Message your Claws from phone or desktop — every reply stays local, egress only through eno2."*
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`

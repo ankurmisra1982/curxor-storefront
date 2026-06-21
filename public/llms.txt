@@ -39,7 +39,7 @@
 - OpenClaw: free agent runtime — you supply hardware, skills, security, and integrations
 - ClawBox-class Jetson (~€549, 8GB): lightweight always-on assistants
 - NVIDIA NemoClaw: alpha governance layer for DIY OpenClaw on NVIDIA hardware
-- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 9 Claws + Forge on 64GB UMA
+- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 10 Claws + Forge on 64GB UMA; agent runtime v0.2 with unified messaging (Telegram, Slack, WhatsApp, iMessage) and CCP inbox
 
 ## vs MIKY / agent NAS boxes
 

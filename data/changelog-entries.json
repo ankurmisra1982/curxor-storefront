@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.2.0",
+    "date": "2026-06-20",
+    "channel": "stable",
+    "highlights": [
+      "Agent runtime v0.2 — workspace memory, skills, heartbeat scheduler, and multi-channel gateway",
+      "Unified communications — dashboard chat and external channels share one router synced to CCP",
+      "Messaging gateways — Telegram, Slack, WhatsApp Cloud API, and iMessage (BlueBubbles)",
+      "Kin channel handles map phone numbers to household profiles for family-aware replies",
+      "Garmin OAuth, live MCP handshake, and Playwright browser automation on eno2"
+    ]
+  },
+  {
     "version": "0.1.0",
     "date": "2026-06-19",
     "channel": "stable",

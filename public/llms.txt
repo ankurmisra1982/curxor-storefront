@@ -17,6 +17,7 @@
 ## Canonical URLs
 
 - Homepage: https://curxor.ai/
+- Creator Claw: https://curxor.ai/creator
 - Pricing (UMA tiers + compute ladder): https://curxor.ai/pricing
 - Architecture (MS-S1 validation status): https://curxor.ai/architecture
 - Changelog: https://curxor.ai/changelog

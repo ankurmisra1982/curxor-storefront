@@ -17,10 +17,10 @@ export function CreatorFlowGallery() {
             </h2>
           </div>
           <Link
-            href="/for/creators"
+            href="/creator"
             className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
           >
-            FULL CREATOR STORY →
+            FULL CREATOR PAGE →
           </Link>
         </div>
 

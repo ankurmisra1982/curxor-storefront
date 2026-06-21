@@ -5,8 +5,8 @@ import { useState } from "react";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 
 const navLinks = [
+  { href: "/creator", label: "CREATOR" },
   { href: "/for/traders", label: "TRADERS" },
-  { href: "/for/creators", label: "CREATORS" },
   { href: "/pricing", label: "PRICING" },
   { href: "/#demo", label: "DEMO" },
   { href: "/compare", label: "WHY CURXOR" },

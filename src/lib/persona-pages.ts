@@ -88,6 +88,7 @@ export const personaPages: PersonaPage[] = [
       "Approve-before-publish via dashboard, Telegram, or Slack operators",
     ],
     compareLinks: [
+      { href: "/creator", label: "Creator Claw tour" },
       { href: "/compare/clawbox", label: "vs ClawBox" },
       { href: "/compare/perplexity-personal-computer", label: "vs Perplexity PC" },
     ],

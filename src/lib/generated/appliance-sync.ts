@@ -3,19 +3,21 @@
 
 export const applianceVersion = "0.1.0" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-06-20T15:09:34.492Z" as const;
+export const applianceSyncedAt = "2026-06-21T01:09:40.358Z" as const;
 
 export const clawCategoryLabels = {
   "forge": "Create",
   "wealth": "Wealth & growth",
   "work": "Work & commerce",
-  "physical": "Signals & swarm"
+  "physical": "Signals & swarm",
+  "life": "Life & family"
 } as const;
 export const clawCategoryOrder = [
   "forge",
   "wealth",
   "work",
-  "physical"
+  "physical",
+  "life"
 ] as const;
 
 export const apps = [
@@ -73,7 +75,7 @@ export const apps = [
     "id": "signal-claw",
     "applianceId": "tesla-optimus-engine",
     "name": "Signal Claw",
-    "tagline": "Market and social signal ingestion agent",
+    "tagline": "Optimus robot + signal desk — deep user context via Claw Context Protocol",
     "description": "Ingest market feeds, social mentions, and news triggers — spin up agents the moment alpha appears.",
     "icon": "⊕",
     "category": "physical",
@@ -98,6 +100,26 @@ export const apps = [
     "icon": "⎔",
     "category": "physical",
     "categoryLabel": "Signals & swarm"
+  },
+  {
+    "id": "vital-claw",
+    "applianceId": "my-vital",
+    "name": "Vital Claw",
+    "tagline": "Longevity desk — vitals, labs, diet sync, and health protocol",
+    "description": "Longevity desk — wearable vitals, medical reports, diet and health app sync, and a personalized health protocol on your metal.",
+    "icon": "♡",
+    "category": "life",
+    "categoryLabel": "Life & family"
+  },
+  {
+    "id": "kin-claw",
+    "applianceId": "my-family",
+    "name": "Kin Claw",
+    "tagline": "Household profiles — devices, personalities, and shared context",
+    "description": "Family profiles — each member's devices, personality, and preferences sync through the Claw Context mesh.",
+    "icon": "⚘",
+    "category": "life",
+    "categoryLabel": "Life & family"
   }
 ] as const;
 

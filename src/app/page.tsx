@@ -8,6 +8,8 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { MobileStickyCta } from "@/components/MobileStickyCta";
+import { PricingPreview } from "@/components/PricingPreview";
+import { ScreenshotGallery } from "@/components/ScreenshotGallery";
 import { SpecMatrix } from "@/components/SpecMatrix";
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
       <ComputePower />
       <CreateToEarn />
       <DayOneHub />
+      <ScreenshotGallery />
+      <PricingPreview />
       <ComparisonTable />
       <SpecMatrix />
       <AppEcosystem />

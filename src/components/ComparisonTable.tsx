@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { comparisonOptions } from "@/lib/config";
 
 export function ComparisonTable() {
@@ -61,6 +63,15 @@ export function ComparisonTable() {
               </ul>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10">
+          <Link
+            href="/pricing"
+            className="inline-flex items-center gap-2 border border-neon-purple/50 px-5 py-3 text-xs tracking-[0.2em] text-neon-purple transition-colors hover:bg-neon-purple/10"
+          >
+            SEE UMA TIERS <span>→</span>
+          </Link>
         </div>
       </div>
     </section>

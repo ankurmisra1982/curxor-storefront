@@ -63,6 +63,18 @@ Full naming table: [SYNC.md](SYNC.md)
 
 Full mesh/digital table: [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md)
 
+## Flight Command Settings (`/settings`)
+
+| Tab | Capability |
+|-----|------------|
+| Claws | Enable/disable OOTB modules (Forge always on) |
+| Intelligence | `local` / `frontier` / `auto`; Ollama model; OpenAI (OAuth PKCE or API key), Anthropic, Google (OAuth when configured), Cursor, OpenRouter |
+| Appearance | Simple/Expert, light/dark/system, accent schemes (CurXor, Ocean, Amber, Mono) |
+
+Persistence: `/etc/curxor/user-settings.json`, `/etc/curxor/llm-credentials.json` (0600), `/etc/curxor/provider-link-sessions.json`.
+
+OAuth: OpenAI uses PKCE (Codex-compatible public client). Google OAuth optional via `CURXOR_GOOGLE_OAUTH_CLIENT_ID`. Tokens stored on-appliance with refresh support.
+
 ## Digital tools (appliance engine)
 
 - `capital.execute_trade` → Alpaca paper (bridge)
@@ -73,6 +85,6 @@ Full mesh/digital table: [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md)
 Appliance: **0.1.0** (`../curxor-os/version.json`)  
 Storefront: **0.1.0** (`package.json`)
 
-## Screenshots (when hardware arrives)
+## Screenshots
 
-Capture from appliance `:3080` for storefront — list in prior audit; until then 3D hero + Flight Command mockups.
+Capture with `pillar-4-dashboard/scripts/capture-demo-screenshots.mjs` → `docs/demo-pack/screenshots/`. Copy to storefront `public/demo/` for GTM.

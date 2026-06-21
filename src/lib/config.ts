@@ -71,7 +71,7 @@ export const dayOneSteps = [
   },
   {
     title: "3 · Local by default",
-    body: "Reasoning runs on your box. Optional frontier LLMs (your API key) in Settings. Trades and posts egress only through eno2.",
+    body: "Reasoning runs on your box. Optional frontier LLMs in Settings — OAuth sign-in for OpenAI or your own API keys. Trades and posts egress only through eno2.",
   },
   {
     title: "4 · Make it yours",
@@ -169,12 +169,12 @@ export const faqItems = [
   {
     question: "Are there monthly fees or API costs?",
     answer:
-      "CurXor charges $3,999 once for the hardware — no monthly appliance fee and no per-token billing from us. All included Claws run local models by default. If you optionally connect OpenAI, Anthropic, Google, Cursor, or OpenRouter in Settings, those providers bill your account directly (bring your own key).",
+      "CurXor charges $3,999 once for the hardware — no monthly appliance fee and no per-token billing from us. All included Claws run local models by default. If you optionally connect OpenAI (OAuth or API key), Anthropic, Google, Cursor, or OpenRouter in Settings, those providers bill your account directly.",
   },
   {
     question: "Can I use GPT, Claude, or other cloud models?",
     answer:
-      "Yes, optionally. Settings → Intelligence lets you stay local-only, use frontier models only, or auto-fallback. Trades and social posts still egress only through eno2 bridges — cloud LLMs are for chat and planning when you choose them.",
+      "Yes, optionally. Settings → Intelligence lets you stay local-only, use frontier models only, or auto-fallback. OpenAI supports OAuth sign-in (ChatGPT subscription) or API keys; other providers accept API keys or guided subscription linking. Trades and social posts still egress only through eno2 bridges — cloud LLMs are for chat and planning when you choose them.",
   },
   {
     question: "When does it ship?",

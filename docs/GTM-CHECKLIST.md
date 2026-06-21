@@ -24,7 +24,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 ## Build next (this repo)
 
 - [x] Settings / user freedom copy (Claws toggle, optional frontier LLM, themes) — `src/lib/config.ts`
-- [ ] Pricing / UMA tiers page (Economy / Balanced / Performance)
+- [x] Pricing / UMA tiers page (`/pricing`) — synced from `local-llm-catalog.ts`
 - [ ] Demo screenshots in `public/demo/` (source: `../curxor-os/docs/demo-pack/`)
 - [ ] Changelog auto-append on version bump (script, not manual edits)
 

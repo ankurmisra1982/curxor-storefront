@@ -75,6 +75,8 @@ Appliance tools (engine, not LLM):
 - `capital.execute_trade` → Alpaca paper via Python bridge
 - `content.publish_post` → X API via Python bridge
 
-Safe marketing line: *"Your LLM never talks to the internet — dedicated bridges handle trades and posts on eno2."*
+Safe marketing line (default local): *"Local inference by default — trades and posts egress only through eno2 bridges."*
+
+Optional frontier LLMs (Settings → Intelligence, BYOK or OAuth): chat/planning only; does not change bridge egress rules. OpenAI supports OAuth PKCE sign-in; Google when `CURXOR_GOOGLE_OAUTH_CLIENT_ID` is configured on the appliance.
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`

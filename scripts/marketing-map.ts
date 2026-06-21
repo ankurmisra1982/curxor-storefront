@@ -4,6 +4,7 @@ export const CLAW_CATEGORY_LABELS = {
   wealth: "Wealth & growth",
   work: "Work & commerce",
   physical: "Signals & swarm",
+  life: "Life & family",
 } as const;
 
 export type ClawCategoryId = keyof typeof CLAW_CATEGORY_LABELS;
@@ -57,6 +58,18 @@ export const MARKETING_BY_APPLIANCE_ID = {
     sortOrder: 7,
     category: "physical",
   },
+  "my-vital": {
+    storefrontId: "vital-claw",
+    icon: "♡",
+    sortOrder: 8,
+    category: "life",
+  },
+  "my-family": {
+    storefrontId: "kin-claw",
+    icon: "⚘",
+    sortOrder: 9,
+    category: "life",
+  },
 } as const satisfies Record<
   string,
   {
@@ -74,4 +87,5 @@ export const CATEGORY_DISPLAY_ORDER: ClawCategoryId[] = [
   "wealth",
   "work",
   "physical",
+  "life",
 ];

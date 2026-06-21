@@ -93,7 +93,7 @@ The Forge is the viral loop: buyers become operators who mint more Claws.
 
 ---
 
-## Slide 6 — Eight Claws (Digital Employees)
+## Slide 6 — Ten Claws (Digital Employees)
 
 | Claw | Function |
 |------|----------|
@@ -105,6 +105,8 @@ The Forge is the viral loop: buyers become operators who mint more Claws.
 | **Signal Claw** | Feed triggers & alert thresholds |
 | **Swarm Claw** | Orchestrate parallel Claw workloads |
 | **Engage Claw** | Community & DM engagement demos |
+| **Vital Claw** | Wearables, labs, longevity protocol |
+| **Kin Claw** | Household profiles, devices, personalities |
 
 Each workspace: agent console (chat + skills + activity). Trades and posts require explicit skill tap — LLM never calls the internet directly.
 
@@ -114,7 +116,7 @@ Each workspace: agent console (chat + skills + activity). Trades and posts requi
 
 ```
 eno1 (10.0.0.1) — Flight Command :3080 · captive portal · operators
-  └─ Pillar 4 — FRE · 8 Claws · Forge · SSE · local LLM client
+  └─ Pillar 4 — FRE · 10 Claws · Forge · CCP mesh · SSE · local LLM client
   └─ Pillar 1 — Ollama/vLLM @ 127.0.0.1:11434
   └─ Pillar 2 — Vision → inference → motor_out / digital_out
 

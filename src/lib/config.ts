@@ -74,7 +74,7 @@ export const clawPickStackLabel = `${clawVerticalCount} Claws + The Forge · pic
 export const dayOneSteps = [
   {
     title: "1 · Pick your Claws",
-    body: "Enable the digital employees you want on day one — Capital, Creator, Outreach, and more. Add or remove anytime in Settings.",
+    body: "Enable the digital employees you want on day one — Capital, Vital, Kin, Outreach, and more. Add or remove anytime in Settings.",
   },
   {
     title: "2 · Chat or tap",
@@ -117,6 +117,7 @@ export const specColumns = [
     items: [
       "Home hub — pick a Claw, chat or tap skills",
       "Settings — enable Claws, intelligence, themes",
+      "Claw Context mesh — Vital, Kin, Optimus share context",
       "Simple/Expert UI · light/dark · four accent schemes",
       "The Forge — describe it, deploy it, earn",
       "Alpaca · X · CRM bridges on eno2 only",

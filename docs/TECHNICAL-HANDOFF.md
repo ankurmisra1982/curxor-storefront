@@ -48,6 +48,8 @@ Ten Claw workspaces (9 verticals + The Forge) synced from `../curxor-os/pillar-4
 | `signal-claw` | `tesla-optimus-engine` | Signal Claw |
 | `swarm-claw` | `robotaxi-fleet-manager` | Swarm Claw |
 | `engage-claw` | `claw-cafe` | Engage Claw |
+| `vital-claw` | `my-vital` | Vital Claw |
+| `kin-claw` | `my-family` | Kin Claw |
 
 Full naming table: [SYNC.md](SYNC.md)
 
@@ -74,6 +76,17 @@ Full mesh/digital table: [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md)
 Persistence: `/etc/curxor/user-settings.json`, `/etc/curxor/llm-credentials.json` (0600), `/etc/curxor/provider-link-sessions.json`.
 
 OAuth: OpenAI uses PKCE (Codex-compatible public client). Google OAuth optional via `CURXOR_GOOGLE_OAUTH_CLIENT_ID`. Tokens stored on-appliance with refresh support.
+
+## Claw Context Protocol
+
+| Topic | Detail |
+|-------|--------|
+| Mesh topic | `telemetry/claw_context` |
+| Vital Claw | `/my-vital` — wearables, labs, longevity protocol |
+| Kin Claw | `/my-family` — household profiles, devices, personalities |
+| Optimus | Signal Claw subscribes to personal, health, work, family, hardware scopes |
+
+Persistence: `/etc/curxor/claw-context.json`, `/etc/curxor/family-profiles.json`, `/etc/curxor/vital-health.json`
 
 ## Digital tools (appliance engine)
 

@@ -34,6 +34,8 @@ Appliance IDs and routes are stable. Display names pivot to the **Digital Wealth
 | `tesla-optimus-engine` | Signal Claw | `/optimus` | SIG |
 | `robotaxi-fleet-manager` | Swarm Claw | `/robotaxi` | SWARM |
 | `claw-cafe` | Engage Claw | `/claw-cafe` | ENG |
+| `my-vital` | Vital Claw | `/my-vital` | VIT |
+| `my-family` | Kin Claw | `/my-family` | KIN |
 
 Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketing-map.ts` for URLs and section anchors. Names and descriptions always come from `ootb-apps.ts`.
 
@@ -44,7 +46,7 @@ Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketi
 | Storefront today | Audit note |
 |------------------|------------|
 | Spec: "Sub-millisecond ZeroMQ telemetry" | Aspirational — **not validated** until MS-S1 MAX mesh benchmarks |
-| "Nine Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; many modules use mock data until integrations land |
+| "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; Vital health bridges scaffold |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 
@@ -78,5 +80,7 @@ Appliance tools (engine, not LLM):
 Safe marketing line (default local): *"Local inference by default — trades and posts egress only through eno2 bridges."*
 
 Optional frontier LLMs (Settings → Intelligence, BYOK or OAuth): chat/planning only; does not change bridge egress rules. OpenAI supports OAuth PKCE sign-in; Google when `CURXOR_GOOGLE_OAUTH_CLIENT_ID` is configured on the appliance.
+
+**Claw Context Protocol (CCP):** On-appliance mesh topic `telemetry/claw_context` syncs health, family, work, and hardware context between Claws. See `../curxor-os/docs/guides/15-claw-context-protocol.md`.
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`

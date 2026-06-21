@@ -193,19 +193,19 @@ COMPETITIVE ANGLE
 No competitor ships a natural-language Claw factory on localhost with immediate engine deployment.
 
 TRANSITION
-Forge mints custom Claws; we also ship eight digital employees out of the box.""",
+Forge mints custom Claws; we also ship ten digital employees out of the box.""",
     ),
     (
-        "Eight Claws — digital employees OOTB",
+        "Ten Claws — digital employees OOTB",
         [
             "The Forge · Capital · Creator · Outreach · Arbitrage",
-            "Signal · Swarm · Engage",
+            "Signal · Swarm · Engage · Vital · Kin",
             "",
             "Each workspace: chat + skills + activity feed",
             "Trades/posts via explicit skill → bridge — LLM never hits internet directly",
         ],
         """PRODUCT DEPTH (60 sec — table optional in live demo)
-Read the roster confidently; investors should hear "complete suite," not "eight random apps."
+Read the roster confidently; investors should hear "complete suite," not "ten random apps."
 
 THE ROSTER
 • The Forge — mint custom Claws
@@ -216,6 +216,8 @@ THE ROSTER
 • Signal Claw — feed triggers, alert thresholds
 • Swarm Claw — parallel Claw orchestration
 • Engage Claw — community and DM engagement demos
+• Vital Claw — wearables, labs, longevity protocol
+• Kin Claw — household profiles, devices, personalities
 
 SECURITY MODEL (important for enterprise)
 Each workspace is an agent console. Trades and posts require an explicit skill tap — the LLM does not call the internet directly. Outbound is skill → mesh → Python bridge on eno2 only.

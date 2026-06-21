@@ -1,6 +1,6 @@
 # CurXor — Investor Pitch Deck
 
-**Version:** 0.1.0 · **Date:** June 2026  
+**Version:** 0.2.0 · **Date:** June 2026  
 **Category:** Sovereign Agent Appliance  
 **Tagline:** Mint Autonomous Employees on Bare Metal.
 
@@ -71,10 +71,10 @@ CurXor OS is a **four-pillar edge stack** on MINISFORUM MS-S1 MAX:
 
 | Repo | Purpose | Status |
 |------|---------|--------|
-| **curxor-os** | Appliance software (`/opt/curxor/`, systemd, OTA) | v0.1.0 · CI green · 14/14 QA smoke |
+| **curxor-os** | Appliance software (`/opt/curxor/`, systemd, OTA) | v0.2.0 · 54 QA checks |
 | **curxor storefront** | GTM at curxor.ai (Stripe, Resend, synced catalog) | Live pre-order · holding for hardware |
 
-**Honest guardrail:** Software scaffold is complete. MS-S1 MAX on-device validation and golden image freeze are gating items — blocked on hardware receipt, not vapor.
+**Honest guardrail:** Agent runtime v0.2 and unified comms ship in software. MS-S1 MAX on-device validation and golden image freeze are gating items — blocked on hardware receipt, not vapor.
 
 ---
 
@@ -206,7 +206,7 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 
 | Metric | Value |
 |--------|-------|
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | QA smoke | 14/14 |
 | Pre-order | Live |
 
@@ -216,7 +216,7 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 
 | Phase | Milestones |
 |-------|------------|
-| **Now (v0.1.0)** | Software scaffold · GTM live · CI green · QA smoke |
+| **Now (v0.2.0)** | Agent runtime · unified comms · 54 QA checks · GTM build mode |
 | **Next 90 days** | MS-S1 MAX validation · golden image · production OTA |
 | **H2 2026** | Customer pilots · Engage demo unit · case studies |
 | **2027+** | Fleet OTA · partner bridges · enterprise eno2 policies |
@@ -244,7 +244,7 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 
 | Area | Status |
 |------|--------|
-| Software scaffold v0.1.0 | Complete, CI-green |
+| Software v0.2.0 | Agent runtime, channels, 54 QA checks |
 | Flight Command + 8 Claws + Forge | Rich UI; many workspaces use mock data |
 | Local LLM (engine + dashboard) | Code complete; needs Ollama on appliance |
 | Digital bridges (Alpaca/X) | Coded; needs `digital.env` credentials |

@@ -8,7 +8,9 @@
 - Price: $3,999 USD (one-time pre-order, no monthly API fees)
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
-- Software: CurXor OS with 9 Claw verticals + The Forge (enable any combination in Settings)
+- Software: CurXor OS 0.2+ with 9 Claw verticals + The Forge (enable any combination in Settings)
+- Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
+- Health: Vital Claw syncs wearables and health apps via OAuth you authorize — not locked to one device brand
 - Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI
 - Pre-order: https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00
 
@@ -39,12 +41,12 @@
 - OpenClaw: free agent runtime — you supply hardware, skills, security, and integrations
 - ClawBox-class Jetson (~€549, 8GB): lightweight always-on assistants
 - NVIDIA NemoClaw: alpha governance layer for DIY OpenClaw on NVIDIA hardware
-- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 10 Claws + Forge on 64GB UMA; agent runtime v0.2 with unified messaging (Telegram, Slack, WhatsApp, iMessage) and CCP inbox
+- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 10 Claws + Forge on 64GB UMA; agent runtime v0.2 with unified messaging (Telegram, Slack, WhatsApp, iMessage) and CCP inbox; wearables and health integrations user-configured
 
 ## vs MIKY / agent NAS boxes
 
 - MIKY-class and Minisforum NAS-style boxes: independent computers for agents — messaging, calendar, general automation
-- CurXor: same independence narrative with 64GB UMA, 126 TOPS, wealth/work/life Claws (Capital, Vital, Kin), eno1/eno2 kill switch, The Forge
+- CurXor: same independence narrative with 64GB UMA, 126 TOPS, wealth/work/life Claws (Capital, Vital, Kin), messaging gateways, eno1/eno2 kill switch, The Forge to customize anything
 
 ## Contact
 

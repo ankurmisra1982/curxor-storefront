@@ -1,6 +1,6 @@
 # CurXor Storefront — Feature & Function (GTM)
 
-**Version:** synced to curxor-os **0.1.0** · **URL:** https://curxor.ai  
+**Version:** synced to curxor-os **0.2.0** · **URL:** https://curxor.ai  
 **Appliance doc:** [curxor-os/docs/FEATURE-FUNCTION.md](../../curxor-os/docs/FEATURE-FUNCTION.md)
 
 ---
@@ -27,7 +27,9 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 | **Compute section** | 126 TOPS · 64GB UMA · cloud vs CurXor comparison |
 | **Create-to-Earn** | 4-step Forge loop + example prompt |
 | **Spec matrix** | Compute / Network / Claw Engine columns |
-| **App ecosystem** | 8 Claws from `appliance-sync.ts` · mobile carousel |
+| **App ecosystem** | 10 Claws from `appliance-sync.ts` · mobile carousel |
+| **Trust pages** | `/privacy`, `/terms`, `/architecture`, `/changelog`, `/press`, `/pricing` |
+| **Unified comms copy** | FAQ + spec matrix — Telegram, Slack, WhatsApp, iMessage; wearables user-configured |
 | **Stripe CTA** | `NEXT_PUBLIC_STRIPE_CHECKOUT_URL` Payment Link |
 | **Email API** | `POST /api/subscribe` → Resend segment + welcome mail |
 | **OG image** | `/opengraph-image` |

@@ -29,6 +29,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [x] Changelog auto-append on version bump (`sync:appliance` + `data/changelog-entries.json`)
 - [x] Pricing compute ladder on `/pricing`
 - [x] MIKY / agent NAS FAQ + comparison row
+- [x] v0.2.0 marketing pass — messaging FAQ, architecture, agnostic wearables copy
 - [ ] Product photography in hero when MS-S1 batch is photographed
 
 ## Wait for **curxor-os + hardware**

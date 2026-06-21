@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LegalDocument, LegalSection } from "@/components/LegalDocument";
 import { SiteShell } from "@/components/SiteShell";
 import { legalUpdated } from "@/lib/legal";
-import { clawRosterLabel, siteConfig } from "@/lib/config";
+import { applianceVersion, clawRosterLabel, siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: `Terms & Disclaimers — ${siteConfig.name}`,
@@ -45,10 +45,10 @@ export default function TermsPage() {
 
         <LegalSection title="Software maturity">
           <p>
-            CurXor OS 0.1.0 ships with {clawRosterLabel}. Some integrations use
-            mock or stub data until you connect real bridges (Alpaca, X, CRM,
-            wearables, etc.). Features described on the marketing site reflect
-            product direction — verify behavior on your unit.
+            CurXor OS {applianceVersion} ships with {clawRosterLabel}. Some integrations use
+            mock or stub data until you connect real bridges (brokers, social, CRM,
+            wearables, messaging gateways, etc.). Features described on the marketing site
+            reflect product direction — verify behavior on your unit.
           </p>
         </LegalSection>
 

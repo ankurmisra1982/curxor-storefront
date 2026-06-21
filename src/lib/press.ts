@@ -1,8 +1,8 @@
-import { clawRosterLabel, siteConfig } from "./config";
+import { applianceVersion, clawRosterLabel, siteConfig } from "./config";
 
 export const pressKit = {
   headline: "Mint AI Employees on Bare Metal.",
-  boilerplate: `CurXor Systems builds sovereign AI appliances that run digital employees — called Claws — on local hardware with zero monthly API fees. The CurXor Edge Nexus ships with 126 TOPS NPU, 64GB unified memory, CurXor OS, and ${clawRosterLabel} spanning wealth, work, signals, and life & family — trading, content, outreach, longevity, and household context. Pre-order at curxor.ai for $3,999.`,
+  boilerplate: `CurXor Systems builds sovereign AI appliances that run digital employees — called Claws — on local hardware with zero monthly API fees. The CurXor Edge Nexus ships with 126 TOPS NPU, 64GB unified memory, CurXor OS, and ${clawRosterLabel} spanning wealth, work, signals, and life & family. Message Claws from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Pre-order at curxor.ai for $3,999.`,
   founderQuote:
     "ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.",
   contactEmail: "hello@curxor.ai",
@@ -13,7 +13,7 @@ export const pressKit = {
     { label: "Networking", value: "Dual 10GbE — eno1 Command · eno2 Egress" },
     {
       label: "Software",
-      value: `CurXor OS 0.1.0 — Flight Command + ${clawRosterLabel}`,
+      value: `CurXor OS ${applianceVersion} — Flight Command + ${clawRosterLabel}`,
     },
     {
       label: "Claw roster",

@@ -3,7 +3,7 @@
 export const changelogMeta = {
   version: "0.2.0" as const,
   channel: "stable" as const,
-  syncedAt: "2026-06-21T03:21:44.059Z" as const,
+  syncedAt: "2026-06-21T03:42:14.322Z" as const,
 } as const;
 
 export const changelogEntries = [
@@ -13,10 +13,12 @@ export const changelogEntries = [
     "channel": "stable",
     "highlights": [
       "Agent runtime v0.2 — workspace memory, skills, heartbeat scheduler, and multi-channel gateway",
-      "Unified communications — dashboard chat and external channels share one router synced to CCP",
-      "Messaging gateways — Telegram, Slack, WhatsApp Cloud API, and iMessage (BlueBubbles)",
-      "Kin channel handles map phone numbers to household profiles for family-aware replies",
-      "Garmin OAuth, live MCP handshake, and Playwright browser automation on eno2"
+      "Unified communications — Flight Command chat and external channels share one router synced to CCP",
+      "Messaging gateways — Telegram, Slack, WhatsApp, and iMessage; unified inbox on Home and Outreach Claw",
+      "Kin channel handles map external senders to household profiles for family-aware replies",
+      "Wearables and health devices connect via user-configured OAuth — you pick the vendors in Settings",
+      "MCP tool protocol and browser automation on eno2 — extensible, not locked to one stack",
+      "54 automated QA checks — smoke, user flows, typecheck, and production build"
     ]
   },
   {

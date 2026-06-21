@@ -78,7 +78,7 @@ export const dayOneSteps = [
   },
   {
     title: "2 · Chat or tap",
-    body: "Ask in plain language, or tap a skill button when you know the action. No coding required.",
+    body: "Ask in Flight Command, or reply from Telegram, Slack, WhatsApp, or iMessage — same Claw, same local router. Tap skill buttons when you know the action.",
   },
   {
     title: "3 · Local by default",
@@ -116,10 +116,11 @@ export const specColumns = [
     label: "CLAW ENGINE",
     items: [
       "Home hub — pick a Claw, chat or tap skills",
-      "Settings — enable Claws, intelligence, themes",
+      "Unified inbox — dashboard + Telegram · Slack · WhatsApp · iMessage",
+      "Settings — enable Claws, channels, intelligence, themes",
       "Claw Context mesh — Vital, Kin, Optimus share context",
-      "Simple/Expert UI · light/dark · four accent schemes",
-      "The Forge — describe it, deploy it, earn",
+      "Wearables & health apps — user-configured OAuth, any vendor you authorize",
+      "The Forge — describe it, deploy it, customize anything",
       "Alpaca · X · CRM bridges on eno2 only",
     ],
   },
@@ -169,7 +170,7 @@ export const faqItems = [
   },
   {
     question: "What is included for $3,999?",
-    answer: `The CurXor Edge Nexus appliance, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.`,
+    answer: `The CurXor Edge Nexus appliance, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, optional messaging gateways (Telegram, Slack, WhatsApp, iMessage), local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.`,
   },
   {
     question: "Do I need to code to use CurXor?",
@@ -192,6 +193,16 @@ export const faqItems = [
       "CurXor is available for pre-order now. Pre-order customers receive launch updates by email as production batches are scheduled. Subscribe on curxor.ai or follow @curxorai on X for ship-date announcements.",
   },
   {
+    question: "Can I message my Claws from Telegram, WhatsApp, or Slack?",
+    answer:
+      "Yes. CurXor OS routes dashboard chat and external messaging through one local channel router synced to the Claw Context inbox. Connect the gateways you want in Settings — Telegram, Slack, WhatsApp, iMessage, and more. Reasoning stays on your appliance; outbound actions still egress only through eno2 when a Claw needs the internet.",
+  },
+  {
+    question: "Can Vital Claw sync with my smartwatch or health apps?",
+    answer:
+      "Yes — on your terms. Vital Claw is built for wearables, labs, and diet data, but you choose which devices and health apps to authorize via OAuth in Settings. CurXor does not lock you to one watch brand or one health platform; configure the integrations that match your household.",
+  },
+  {
     question: "Can I disconnect my agents from the internet?",
     answer:
       "Yes. eno1 is Command (Flight Command UI). eno2 is Egress for outbound agent actions. Unplug eno2 to kill outbound Claws instantly. Keep intelligence on local-only in Settings for fully offline reasoning.",
@@ -199,7 +210,7 @@ export const faqItems = [
   {
     question: "How is CurXor different from DIY OpenClaw on a Mac mini or mini PC?",
     answer:
-      "OpenClaw is the open-source agent runtime — free, but you supply the hardware, install the stack, wire skills and bridges, and harden security yourself. CurXor ships CurXor OS on appliance hardware: Flight Command, nine Claw verticals plus The Forge, Settings, eno1/eno2 networking, and OTA updates. You get a turnkey independent computer, not a weekend integration project.",
+      `OpenClaw is the open-source agent runtime — free, but you supply the hardware, install the stack, wire skills and bridges, and harden security yourself. CurXor ships CurXor OS on appliance hardware: Flight Command, ${clawRosterLabel}, Settings, eno1/eno2 networking, messaging gateways, and OTA updates. You get a turnkey independent computer, not a weekend integration project.`,
   },
   {
     question: "How is CurXor different from ClawBox or other Jetson OpenClaw boxes?",
@@ -219,7 +230,7 @@ export const faqItems = [
   {
     question: "How is CurXor different from MIKY or other “independent computer for agents” NAS boxes?",
     answer:
-      "MIKY-class and Minisforum NAS-style boxes target always-on agent hosts with bundled messaging and calendar skills — great for general automation. CurXor is purpose-built for serious local inference (64GB UMA, 126 TOPS) plus curated wealth, work, and life Claws (Capital, Vital, Kin, and more), dual-port eno1/eno2 isolation, and The Forge on the same appliance. Same independence narrative — different compute class and vertical depth.",
+      "MIKY-class and Minisforum NAS-style boxes target always-on agent hosts with bundled messaging and calendar skills — great for general automation. CurXor matches the independence story and adds serious local inference (64GB UMA, 126 TOPS), wealth/work/life Claws, Telegram/Slack/WhatsApp/iMessage gateways, dual-port eno1/eno2 isolation, and The Forge to customize anything — not a fixed skill bundle.",
   },
   {
     question: "Where are your privacy policy and trading disclaimers?",
@@ -308,8 +319,9 @@ export const comparisonOptions = [
     highlights: [
       "126 TOPS · 64GB UMA included",
       clawPickStackLabel,
+      "Telegram · Slack · WhatsApp · iMessage gateways",
       "OpenClaw engine · turnkey Flight Command OS",
-      "eno2 kill switch for agents",
+      "eno2 kill switch · user-configured integrations",
       "Zero CurXor API fees",
     ],
     negative: false,

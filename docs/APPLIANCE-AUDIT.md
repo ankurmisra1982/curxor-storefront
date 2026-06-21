@@ -1,7 +1,7 @@
 # CurXor OS — Full Appliance Audit (Holding Pattern)
 
 **Audit date:** June 2026  
-**Version:** `0.1.0` (`../curxor-os/version.json`)  
+**Version:** `0.2.0` (`../curxor-os/version.json`)  
 **Hardware status:** MS-S1 MAX not yet received — **no on-device validation**  
 **GTM site:** This repo (`curxor storefront`) — landing + pre-order live; see [SYNC.md](SYNC.md)
 
@@ -24,19 +24,21 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Pillar 1 Compute | ✅ Scaffold + scripts | Ollama default, vLLM experimental; needs gfx1151 proof |
 | Pillar 2 Engine | ✅ Functional design | Physical + digital tools; vision-throttled LLM loop |
 | Pillar 3 Telemetry | ✅ Complete | Dual ZMQ proxy + digital bridges in `curxor-broker-stack` |
-| Pillar 4 Dashboard | ✅ Rich UI | 8 OOTB apps, FRE, claw wizard, SSE telemetry, OTA terminal |
-| **Storefront (this repo)** | ✅ Landing v1 | Hero, spec matrix, 8 Claws + Forge, Stripe, email API |
+| Pillar 4 Dashboard | ✅ Rich UI | 10 OOTB apps, FRE, unified inbox, agent runtime v0.2, OTA terminal |
+| **Storefront (this repo)** | ✅ Landing v1 | Hero, spec matrix, 10 Claws + Forge, Stripe, email API |
 | Networking | ✅ Documented | eno1 captive `10.0.0.1` · eno2 mesh `10.77.0.1` |
 | OTA | ✅ Complete | Backup, SHA256, rollback, cron, System Health log stream |
 | Digital layer | ⚠️ Scaffold | Bridges coded; requires `/etc/curxor/digital.env` + live APIs |
 | Hardware validation | ❌ Blocked | No ROCm/UMA/mesh benchmarks on target SKU |
 | Reproducible builds | ⚠️ Gap | No committed `pnpm-lock.yaml` in pillar 2/4 |
 | Security hardening | ⚠️ Partial | Dashboard on `0.0.0.0:3080`; APIs unauthenticated (LAN/captive OK) |
-| Tests / CI | ❌ Missing | No automated test suite |
+| Tests / CI | ✅ Local QA | 54 checks — smoke, user flows, typecheck, production build (`qa-smoke.mjs`) |
+| Agent runtime | ✅ v0.2 | Workspace memory, skills, heartbeat, channel router → CCP inbox |
+| Messaging gateways | ✅ v0.2 | Telegram, Slack, WhatsApp, iMessage — user-configured in Settings |
 
 ---
 
-## OOTB apps (8) — appliance routes
+## OOTB apps (10) — appliance routes
 
 | App | Route | Display name | Maturity |
 |-----|-------|--------------|----------|
@@ -48,6 +50,8 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Signal Claw | `/optimus` | Signal Claw | Demo signal canvas |
 | Swarm Claw | `/robotaxi` | Swarm Claw | Mock swarm grid |
 | Engage Claw | `/claw-cafe` | Engage Claw | Vision grid (live when mesh feeds) |
+| Vital Claw | `/my-vital` | Vital Claw | Longevity desk + user-configured wearables OAuth |
+| Kin Claw | `/my-family` | Kin Claw | Household profiles + channel handle routing |
 
 ---
 

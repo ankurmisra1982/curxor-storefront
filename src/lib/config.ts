@@ -32,6 +32,47 @@ export const siteConfig = {
   emailEndpoint: "/api/subscribe",
 };
 
+export const socialProfiles = [
+  {
+    id: "x",
+    label: "X",
+    handle: "@curxorai",
+    url: "https://x.com/curxorai",
+  },
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    handle: "CurXor Systems",
+    url: "https://www.linkedin.com/in/curxor-systems-222648418/",
+  },
+  {
+    id: "facebook",
+    label: "Facebook",
+    handle: "CurXor",
+    url: "https://www.facebook.com/profile.php?id=61590859873651",
+  },
+  {
+    id: "instagram",
+    label: "Instagram",
+    handle: "@curxorsystems",
+    url: "https://www.instagram.com/curxorsystems/",
+  },
+  {
+    id: "tiktok",
+    label: "TikTok",
+    handle: "@curxorai",
+    url: "https://www.tiktok.com/@curxorai",
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    handle: "@curxorai",
+    url: "https://www.youtube.com/@curxorai",
+  },
+] as const;
+
+export const socialSameAs = socialProfiles.map((profile) => profile.url);
+
 export const computePower = {
   badge: "126 TOPS · 64GB UMA · RYZEN AI MAX+ 395",
   headline: "The Powerhouse",

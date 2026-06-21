@@ -51,5 +51,11 @@
 ## Contact
 
 - Website: https://curxor.ai
+- Email: hello@curxor.ai
 - X: https://x.com/curxorai (@curxorai)
+- LinkedIn: https://www.linkedin.com/in/curxor-systems-222648418/
+- Facebook: https://www.facebook.com/profile.php?id=61590859873651
+- Instagram: https://www.instagram.com/curxorsystems/ (@curxorsystems)
+- TikTok: https://www.tiktok.com/@curxorai (@curxorai)
+- YouTube: https://www.youtube.com/@curxorai (@curxorai)
 - Email list: POST https://curxor.ai/api/subscribe

@@ -1,4 +1,9 @@
-import { applianceVersion, clawRosterLabel, siteConfig } from "./config";
+import {
+  applianceVersion,
+  clawRosterLabel,
+  siteConfig,
+  socialProfiles,
+} from "./config";
 
 export const pressKit = {
   headline: "Mint AI Employees on Bare Metal.",
@@ -21,7 +26,10 @@ export const pressKit = {
         "Capital · Creator · Outreach · Arbitrage · Signal · Swarm · Engage · Vital · Kin · The Forge",
     },
     { label: "Website", value: siteConfig.siteUrl },
-    { label: "Social", value: siteConfig.twitterHandle },
+    {
+      label: "Social",
+      value: socialProfiles.map((p) => `${p.label} (${p.handle})`).join(" · "),
+    },
   ],
   assets: [
     { label: "Logo mark (PNG)", path: "/favicon.svg", note: "SVG favicon — PNG in docs/assets for decks" },

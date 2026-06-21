@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { trackEmailSubscribe } from "@/lib/analytics";
+import { SocialLinks } from "@/components/SocialLinks";
 import { siteConfig } from "@/lib/config";
 import { footerLinks } from "@/lib/legal";
 
@@ -75,21 +76,16 @@ export function Footer() {
             )}
             {status === "error" && (
               <p className="mt-3 text-xs text-white/50">
-                Something went wrong. Try again or reach us on X.
+                Something went wrong. Try again or reach us on social.
               </p>
             )}
           </div>
 
           <div className="flex flex-col items-start md:items-end">
-            <a
-              href={siteConfig.twitterUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mb-8 inline-flex items-center gap-2 text-xs tracking-widest text-white/60 transition-colors hover:text-neon-purple"
-            >
-              <span className="text-neon-purple">𝕏</span>
-              {siteConfig.twitterHandle}
-            </a>
+            <SocialLinks
+              className="mb-8 flex flex-wrap justify-start gap-x-4 gap-y-2 md:justify-end"
+              linkClassName="text-[10px] tracking-widest text-white/40 transition-colors hover:text-neon-purple"
+            />
 
             <div className="text-right">
               <p className="text-2xl font-bold tracking-tight text-white/90">

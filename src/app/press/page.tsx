@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SocialLinks } from "@/components/SocialLinks";
 import { SiteShell } from "@/components/SiteShell";
-import { pressKit } from "@/lib/press";
 import { siteConfig } from "@/lib/config";
+import { pressKit } from "@/lib/press";
 
 export const metadata: Metadata = {
   title: `Press Kit — ${siteConfig.name}`,
@@ -91,24 +92,22 @@ export default function PressPage() {
         </section>
 
         <section className="mt-12 text-sm text-white/50">
-          <p>
-            Contact:{" "}
-            <a
-              href={`mailto:${pressKit.contactEmail}`}
-              className="text-neon-purple hover:underline"
-            >
-              {pressKit.contactEmail}
-            </a>{" "}
-            ·{" "}
-            <a
-              href={siteConfig.twitterUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-neon-purple hover:underline"
-            >
-              {siteConfig.twitterHandle}
-            </a>
-          </p>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-2">
+            <span>
+              Contact:{" "}
+              <a
+                href={`mailto:${pressKit.contactEmail}`}
+                className="text-neon-purple hover:underline"
+              >
+                {pressKit.contactEmail}
+              </a>
+            </span>
+            <span aria-hidden="true">·</span>
+            <SocialLinks
+              className="inline-flex flex-wrap gap-x-3 gap-y-1"
+              linkClassName="text-neon-purple hover:underline"
+            />
+          </div>
           <p className="mt-8">
             <Link href="/" className="text-neon-purple hover:underline">
               ← Back to pre-order

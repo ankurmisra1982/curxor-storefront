@@ -1,4 +1,4 @@
-import { faqItems, siteConfig } from "@/lib/config";
+import { faqItems, siteConfig, socialSameAs } from "@/lib/config";
 
 export function JsonLd() {
   const productSchema = {
@@ -55,7 +55,7 @@ export function JsonLd() {
     "@type": "Organization",
     name: "CurXor Systems",
     url: siteConfig.siteUrl,
-    sameAs: [siteConfig.twitterUrl],
+    sameAs: socialSameAs,
   };
 
   return (

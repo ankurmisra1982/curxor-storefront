@@ -25,7 +25,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 
 - [x] Settings / user freedom copy (Claws toggle, optional frontier LLM, themes) — `src/lib/config.ts`
 - [x] Pricing / UMA tiers page (`/pricing`) — synced from `local-llm-catalog.ts`
-- [x] Demo screenshots in `public/demo/` (Home, Settings, Capital Claw, Forge)
+- [x] Demo screenshots in `public/demo/` (Home, Settings, Capital, Forge, Vital, Kin)
 - [ ] Changelog auto-append on version bump (script, not manual edits)
 
 ## Wait for **curxor-os + hardware**

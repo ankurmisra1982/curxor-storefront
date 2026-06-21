@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const CLAW_CHIPS = [
   { icon: "↗", label: "Capital" },
-  { icon: "✚", label: "Forge" },
   { icon: "♡", label: "Vital" },
+  { icon: "⚘", label: "Kin" },
 ] as const;
 
 export function HeroProductVisual() {

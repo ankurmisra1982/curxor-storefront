@@ -10,7 +10,7 @@ const SHOTS = [
   {
     src: "/demo/02-settings.png",
     title: "Settings",
-            body: "Claws, local/frontier intelligence, OAuth sign-in for OpenAI, light or dark mode, and accent themes live in one place.",
+    body: "Claws, local/frontier intelligence, OAuth sign-in for OpenAI, light or dark mode, and accent themes live in one place.",
   },
   {
     src: "/demo/03-capital-claw.png",
@@ -21,6 +21,16 @@ const SHOTS = [
     src: "/demo/04-forge.png",
     title: "The Forge",
     body: "Describe a new digital employee in plain language and deploy it from the appliance itself.",
+  },
+  {
+    src: "/demo/05-vital-claw.png",
+    title: "Vital Claw",
+    body: "Longevity desk — wearable vitals, medical reports, diet sync, and a local health protocol on your metal.",
+  },
+  {
+    src: "/demo/06-kin-claw.png",
+    title: "Kin Claw",
+    body: "Household profiles — each member's devices, preferences, and shared context through the Claw Context mesh.",
   },
 ] as const;
 
@@ -37,13 +47,13 @@ export function ScreenshotGallery() {
               Real Screens From the Appliance UI
             </h2>
           </div>
-          <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            No concept art here. These shots come from the running dashboard: Home,
-            Settings, Capital, and The Forge.
+          <p className="max-w-md text-xs leading-relaxed tracking-wide text-white/40">
+            No concept art — live dashboard captures across wealth, create, and
+            life &amp; family verticals.
           </p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {SHOTS.map((shot) => (
             <article key={shot.src} className="border-industrial bg-black p-4">
               <div className="overflow-hidden border border-white/10">
@@ -58,7 +68,9 @@ export function ScreenshotGallery() {
               <h3 className="mt-4 text-sm font-bold tracking-wide text-white/90">
                 {shot.title}
               </h3>
-              <p className="mt-2 text-xs leading-relaxed text-white/50">{shot.body}</p>
+              <p className="mt-2 text-xs leading-relaxed text-white/50">
+                {shot.body}
+              </p>
             </article>
           ))}
         </div>

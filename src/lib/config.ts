@@ -217,6 +217,11 @@ export const faqItems = [
       "Perplexity Personal Computer is agent software on your Mac — often a Mac mini on the Perplexity Max plan (~$200/month) — that orchestrates frontier models via Perplexity's cloud. CurXor is a dedicated appliance: local inference on 64GB UMA, pre-built Claw verticals, Settings to pick your stack, and an eno2 kill switch. You pay $3,999 once instead of ~$2,400/year in subscriptions, and your prompts and playbooks stay on your metal by default.",
   },
   {
+    question: "How is CurXor different from MIKY or other “independent computer for agents” NAS boxes?",
+    answer:
+      "MIKY-class and Minisforum NAS-style boxes target always-on agent hosts with bundled messaging and calendar skills — great for general automation. CurXor is purpose-built for serious local inference (64GB UMA, 126 TOPS) plus curated wealth, work, and life Claws (Capital, Vital, Kin, and more), dual-port eno1/eno2 isolation, and The Forge on the same appliance. Same independence narrative — different compute class and vertical depth.",
+  },
+  {
     question: "Where are your privacy policy and trading disclaimers?",
     answer:
       "Privacy policy: curxor.ai/privacy. Terms, pre-order conditions, and Capital Claw trading disclaimers: curxor.ai/terms.",
@@ -281,6 +286,18 @@ export const comparisonOptions = [
       "Great for light assistants",
       "Optional cloud model plans",
       "Not built for 64GB local models",
+    ],
+    negative: true,
+  },
+  {
+    id: "miky",
+    label: "MIKY / AGENT NAS",
+    price: "Varies",
+    highlights: [
+      "Independent computer for agents",
+      "Messaging & calendar automation",
+      "General skills — not wealth/life verticals",
+      "Compute class varies by SKU",
     ],
     negative: true,
   },

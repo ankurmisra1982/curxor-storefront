@@ -6,6 +6,7 @@ import {
   CLAW_CATEGORY_LABELS,
   MARKETING_BY_APPLIANCE_ID,
 } from "./marketing-map";
+import { syncChangelog } from "./sync-changelog";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const storefrontRoot = path.join(__dirname, "..");
@@ -208,6 +209,7 @@ async function main() {
   );
   console.log(`→ ${path.relative(storefrontRoot, outputPath)}`);
   console.log(`→ ${path.relative(storefrontRoot, pricingOutputPath)}`);
+  syncChangelog();
 }
 
 main().catch((error) => {

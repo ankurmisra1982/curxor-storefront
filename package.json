@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "sync:appliance": "tsx scripts/sync-appliance.ts",
+    "sync:changelog": "tsx scripts/sync-changelog.ts",
     "predev": "npm run sync:appliance",
     "prebuild": "npm run sync:appliance",
     "dev": "next dev",

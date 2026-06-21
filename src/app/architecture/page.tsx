@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
+import { ValidationBadge } from "@/components/ValidationBadge";
 import { architectureContent } from "@/lib/architecture";
 import { siteConfig } from "@/lib/config";
 
@@ -76,6 +77,15 @@ export default function ArchitecturePage() {
                 {line}
               </li>
             ))}
+          </ul>
+        </div>
+
+        <div id="validation" className="mt-16 scroll-mt-24">
+          <ValidationBadge />
+          <ul className="mt-6 space-y-2 border border-white/10 bg-black/30 p-6 text-xs leading-relaxed text-white/45">
+            <li>· ROCm / UMA / mesh latency benchmarks — publish when MS-S1 MAX silicon is validated</li>
+            <li>· Factory USB / cloud-init install video — ships with production hardware</li>
+            <li>· Operator PDF bundle — export from CurXor OS <code className="text-white/50">docs/scripts/export-guides-pdf.sh</code></li>
           </ul>
         </div>
 

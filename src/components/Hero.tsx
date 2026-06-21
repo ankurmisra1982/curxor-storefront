@@ -3,15 +3,19 @@
 import { computePower, siteConfig } from "@/lib/config";
 import { HeroProductVisual } from "@/components/HeroProductVisual";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
+import { ValidationBadge } from "@/components/ValidationBadge";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen pt-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
         <div className="space-y-8">
-          <div className="inline-flex items-center gap-2 border border-neon-purple/30 bg-neon-purple/5 px-3 py-1 text-[10px] tracking-[0.2em] text-neon-purple">
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-neon-purple" />
-            {computePower.badge}
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="inline-flex items-center gap-2 border border-neon-purple/30 bg-neon-purple/5 px-3 py-1 text-[10px] tracking-[0.2em] text-neon-purple">
+              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-neon-purple" />
+              {computePower.badge}
+            </div>
+            <ValidationBadge compact />
           </div>
 
           <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">

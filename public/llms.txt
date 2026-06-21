@@ -15,8 +15,9 @@
 ## Canonical URLs
 
 - Homepage: https://curxor.ai/
-- Pricing (UMA tiers): https://curxor.ai/pricing
-- Architecture: https://curxor.ai/architecture
+- Pricing (UMA tiers + compute ladder): https://curxor.ai/pricing
+- Architecture (MS-S1 validation status): https://curxor.ai/architecture
+- Changelog: https://curxor.ai/changelog
 - Open Graph image: https://curxor.ai/opengraph-image
 - Sitemap: https://curxor.ai/sitemap.xml
 
@@ -39,6 +40,11 @@
 - ClawBox-class Jetson (~€549, 8GB): lightweight always-on assistants
 - NVIDIA NemoClaw: alpha governance layer for DIY OpenClaw on NVIDIA hardware
 - CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 9 Claws + Forge on 64GB UMA
+
+## vs MIKY / agent NAS boxes
+
+- MIKY-class and Minisforum NAS-style boxes: independent computers for agents — messaging, calendar, general automation
+- CurXor: same independence narrative with 64GB UMA, 126 TOPS, wealth/work/life Claws (Capital, Vital, Kin), eno1/eno2 kill switch, The Forge
 
 ## Contact
 

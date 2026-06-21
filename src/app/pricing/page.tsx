@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { ComputeLadder } from "@/components/ComputeLadder";
 import { SiteShell } from "@/components/SiteShell";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 import { pricingModels, pricingTiers } from "@/lib/generated/pricing-sync";
@@ -49,6 +50,8 @@ export default function PricingPage() {
             SEE FLIGHT COMMAND
           </Link>
         </div>
+
+        <ComputeLadder />
 
         <div className="mt-14 grid gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
           {pricingTiers.map((tier) => {

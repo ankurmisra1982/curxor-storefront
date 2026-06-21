@@ -64,8 +64,10 @@ export default function ChangelogPage() {
         <p className="mt-16 text-xs text-white/40">
           When CurXor OS bumps{" "}
           <code className="text-white/50">version.json</code>, run{" "}
-          <code className="text-white/50">npm run sync:appliance</code> on the
-          storefront.{" "}
+          <code className="text-white/50">npm run sync:appliance</code> — changelog
+          entries auto-sync from{" "}
+          <code className="text-white/50">data/changelog-entries.json</code> and{" "}
+          <code className="text-white/50">curxor-os/release-notes.json</code>.{" "}
           <Link href="/" className="text-neon-purple hover:underline">
             ← Back to home
           </Link>

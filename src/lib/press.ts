@@ -4,6 +4,8 @@ import {
   siteConfig,
   socialProfiles,
 } from "./config";
+
+export const pressKit = {
   headline: "Mint AI Employees on Bare Metal.",
   boilerplate: `CurXor Systems builds sovereign AI appliances that run digital employees — called Claws — on local hardware with zero monthly API fees. The CurXor Edge Nexus ships with 126 TOPS NPU, 64GB unified memory, CurXor OS, and ${clawRosterLabel} spanning wealth, work, signals, and life & family. Message Claws from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Pre-order at curxor.ai for $3,999.`,
   founderQuote:
@@ -34,8 +36,8 @@ import {
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
     { label: "Flight Command demo", path: "/#demo", note: "Home, Settings, Capital, Forge, Vital, Kin, Creator Claw, unified inbox" },
     { label: "Outreach Claw tour", path: "/outreach", note: "Demo tour path, Go Live, pipeline, sequences, Tier B analytics" },
-    { label: "Capital Claw tour", path: "/capital", note: "Walkthrough video, Setup Wizard, Go Live, rule engine, demo tour" },
-    { label: "Creator Claw tour", path: "/creator", note: "Walkthrough video, wizard steps, Go Live, publish bridges" },
+    { label: "Capital Claw tour", path: "/capital", note: "Flight Command screenshots, Setup Wizard, Go Live, rule engine, demo tour" },
+    { label: "Creator Claw tour", path: "/creator", note: "Flight Command screenshots, wizard steps, Go Live, publish bridges" },
     { label: "Install video", path: "/architecture#validation", note: "Coming with production hardware batch" },
     { label: "Operator PDF", path: "/architecture#validation", note: "Exported from CurXor OS guides when hardware ships" },
   ],

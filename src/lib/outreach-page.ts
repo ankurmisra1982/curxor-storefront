@@ -80,3 +80,9 @@ export const outreachWalkthroughCaption =
   "Flight Command captures — Outreach Claw Go Live, demo tour path, pipeline, sequences, and analytics on CurXor OS " +
   applianceVersion +
   ".";
+
+export const outreachDemoHero = {
+  src: "/demo/07-unified-inbox.png",
+  alt: "Outreach Claw desk — Go Live, pipeline, and sequences",
+  caption: outreachWalkthroughCaption,
+} as const;

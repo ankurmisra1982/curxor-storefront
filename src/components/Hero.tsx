@@ -1,14 +1,13 @@
 "use client";
 
 import { computePower, siteConfig } from "@/lib/config";
-import { setupClaim } from "@/lib/marketing";
 import { HeroProductVisual } from "@/components/HeroProductVisual";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 import { ValidationBadge } from "@/components/ValidationBadge";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen pt-24">
+    <section className="relative min-h-[90vh] pt-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
         <div className="space-y-8">
           <div className="flex flex-wrap items-center gap-2">
@@ -23,22 +22,19 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Mint AI Employees on{" "}
-            <span className="text-neon-purple text-glow-purple">
-              Bare Metal.
-            </span>
+            {siteConfig.viralHook}
           </h1>
 
-          <p className="text-xl font-bold leading-snug text-white/90 sm:text-2xl">
-            {siteConfig.viralHook}
+          <p className="text-2xl font-bold leading-snug text-white/90 sm:text-3xl">
+            Mint AI employees on{" "}
+            <span className="text-neon-purple text-glow-purple">bare metal.</span>
           </p>
 
-          <p className="max-w-xl text-sm leading-relaxed tracking-wide text-white/60 sm:text-base">
+          <p className="max-w-xl text-sm leading-relaxed text-white/55 sm:text-base">
             {siteConfig.tagline}
           </p>
-
-          <p className="max-w-lg text-xs leading-relaxed tracking-wide text-white/40">
-            {setupClaim}
+          <p className="text-xs tracking-wide text-white/35">
+            {siteConfig.heroSubtext}
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -52,10 +48,10 @@ export function Hero() {
               </span>
             </TrackedPreorderLink>
             <a
-              href="#demo"
+              href="#operators"
               className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/50 hover:text-neon-purple"
             >
-              SEE UI DEMO
+              MEET OPERATORS
             </a>
           </div>
 

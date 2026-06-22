@@ -2,16 +2,19 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { ClawDemoHero } from "@/components/ClawDemoHero";
+import { OperatorQuote } from "@/components/OperatorQuote";
 import { SiteShell } from "@/components/SiteShell";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
+import { getOperator } from "@/lib/claw-operators";
 import { applianceVersion, siteConfig } from "@/lib/config";
 import {
+  outreachDemoHero,
   outreachDemoTourSteps,
   outreachFlowShots,
   outreachGoLiveChecks,
   outreachPageMeta,
   outreachTierBFeatures,
-  outreachWalkthroughCaption,
 } from "@/lib/outreach-page";
 
 export const metadata: Metadata = {
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
 };
 
 export default function OutreachPage() {
+  const cleo = getOperator("cleo");
+
   return (
     <SiteShell>
       <div className="mx-auto max-w-6xl px-6 py-16">
@@ -56,14 +61,22 @@ export default function OutreachPage() {
           </Link>
         </div>
 
+        {cleo ? (
+          <section className="mt-10">
+            <OperatorQuote operator={cleo} />
+          </section>
+        ) : null}
+
+        <section className="mt-14">
+          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+            FLIGHT COMMAND
+          </p>
+          <ClawDemoHero {...outreachDemoHero} />
+        </section>
+
         <section className="mt-16">
           <p className="mb-6 text-[10px] tracking-[0.25em] text-neon-purple">
             DEMO TOUR PATH
-          </p>
-          <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">
-            One button on Go Live — demo lead, A/B sequence, activate, and
-            simulated send without SMTP. Same demo-first semantics as Capital
-            and Creator Claw.
           </p>
           <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-5">
             {outreachDemoTourSteps.map((item) => (
@@ -124,18 +137,13 @@ export default function OutreachPage() {
             ))}
           </div>
           <p className="mt-4 text-xs text-white/40">
-            Local inference for day briefs, sequence drafts, and reply intent.
-            Outbound mail egresses only through SMTP on eno2 — demo mode
-            simulates sends until you configure digital.env.
+            Sequences draft locally. Mail egresses only through SMTP on eno2.
           </p>
         </section>
 
         <section className="mt-16">
-          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+          <p className="mb-8 text-[10px] tracking-[0.25em] text-white/35">
             FLIGHT COMMAND SCREENS
-          </p>
-          <p className="mb-8 max-w-2xl text-xs leading-relaxed text-white/40">
-            {outreachWalkthroughCaption}
           </p>
           <div className="grid gap-6 sm:grid-cols-2">
             {outreachFlowShots.map((shot) => (
@@ -160,28 +168,26 @@ export default function OutreachPage() {
           </div>
         </section>
 
-        <section className="mt-16 border border-neon-purple/30 bg-neon-purple/[0.03] p-8">
+        <section className="mt-14 border border-neon-purple/30 bg-neon-purple/[0.03] p-6 sm:p-8">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             BEGINNER · STANDARD · EXPERT
           </p>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/70">
-            Beginner surfaces Go Live and demo tour first — simulated sends
-            without SMTP. Standard unlocks sequences panel, outbound queue,
-            outreach analytics, and unified comms desk. Expert adds mail index
-            reply-intent tagging and recovery flows.
+            Demo tour first — simulated sends without SMTP. Unlock sequences,
+            analytics, and reply intent as you graduate.
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
               href="/for/agencies"
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              AGENCY PERSONA STORY →
+              MEET CLEO →
             </Link>
             <Link
-              href="/#demo"
+              href="/#operators"
               className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
             >
-              ALL FLIGHT COMMAND DEMOS →
+              ALL OPERATORS →
             </Link>
           </div>
         </section>

@@ -1,10 +1,9 @@
 import { applianceVersion } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
 
-export const creatorWalkthrough = {
-  src: "/demo/creator-walkthrough.webm",
-  poster: "/demo/08-creator-claw.png",
-  durationLabel: "~90 sec",
+export const creatorDemoHero = {
+  src: "/demo/08-creator-claw.png",
+  alt: "Creator Claw desk — Go Live checklist and content queue",
   caption:
     "Live Flight Command capture — Creator Claw Go Live, demo tour, queue, wizard, bridge health, and calendar on CurXor OS " +
     applianceVersion +

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { socialProofLine, supportEmail, trustSignals } from "@/lib/marketing";
+import { socialProofLine, trustSignals } from "@/lib/marketing";
 
 export function TrustStrip() {
   return (
@@ -33,14 +33,8 @@ export function TrustStrip() {
             </div>
           ))}
         </div>
-        <p className="mt-4 border-t border-white/10 pt-4 text-center text-[10px] tracking-wide text-white/35">
-          {socialProofLine} · Questions?{" "}
-          <a
-            href={`mailto:${supportEmail}`}
-            className="text-neon-purple/80 hover:text-neon-purple"
-          >
-            {supportEmail}
-          </a>
+        <p className="mt-3 border-t border-white/10 pt-3 text-center text-[10px] text-white/30">
+          {socialProofLine}
         </p>
       </div>
     </section>

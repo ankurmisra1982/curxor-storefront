@@ -9,13 +9,10 @@ export function DayOneHub() {
             FLIGHT COMMAND · DAY ONE
           </p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Your digital employees, on your metal
+            Flight Command, day one
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-white/50">
-            CurXor OS ships with a Home hub — grouped Claw workspaces, plain-language
-            chat, and one-tap skill buttons. Simple mode for day one; Expert mode when
-            you want telemetry. Settings lets you add Claws, connect optional frontier
-            LLMs with your own keys, and personalize themes.
+          <p className="mt-3 text-sm text-white/45">
+            Home hub · grouped Claws · chat + skills · Settings when you want more.
           </p>
         </div>
 

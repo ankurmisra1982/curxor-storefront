@@ -1,15 +1,36 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+
 import {
   apps,
-  applianceVersion,
-  clawRosterLabel,
   clawCategoryOrder,
   type StorefrontApp,
 } from "@/lib/config";
 
-export function AppEcosystem() {
+const FEATURED_CLAW_IDS = [
+  "my-capital",
+  "my-content-creator",
+  "my-work",
+  "claw-forge",
+  "my-vital",
+  "my-family",
+] as const;
+
+type AppEcosystemProps = {
+  variant?: "full" | "featured";
+};
+
+export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
+  const featuredApps = useMemo(
+    () =>
+      FEATURED_CLAW_IDS.map((id) => apps.find((app) => app.applianceId === id)).filter(
+        (app): app is StorefrontApp => Boolean(app)
+      ),
+    []
+  );
+
   const groupedApps = useMemo(() => {
     return clawCategoryOrder.map((categoryId) => ({
       categoryId,
@@ -32,6 +53,8 @@ export function AppEcosystem() {
   }, [flatApps.length]);
 
   useEffect(() => {
+    if (variant === "featured") return;
+
     let timer: ReturnType<typeof setInterval> | undefined;
 
     function start() {
@@ -53,7 +76,44 @@ export function AppEcosystem() {
       stop();
       document.removeEventListener("visibilitychange", onVisibilityChange);
     };
-  }, [next]);
+  }, [next, variant]);
+
+  if (variant === "featured") {
+    return (
+      <section id="apps" className="relative border-t border-white/10 py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
+                THE STACK
+              </p>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                Claw verticals + The Forge
+              </h2>
+            </div>
+            <p className="max-w-sm text-xs text-white/40">
+              Enable your crew in Settings. Mint infinite custom Claws from The Forge.
+            </p>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredApps.map((app) => (
+              <AppCard key={app.id} app={app} compact />
+            ))}
+          </div>
+
+          <div className="mt-8">
+            <Link
+              href="/architecture"
+              className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
+            >
+              FULL ARCHITECTURE + ROSTER →
+            </Link>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="apps" className="relative border-t border-white/10 py-24">
@@ -68,9 +128,7 @@ export function AppEcosystem() {
             </h2>
           </div>
           <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            126 TOPS running {clawRosterLabel} — grouped like Flight Command
-            nav. Enable your stack in Settings; mint infinite custom Claws from
-            The Forge.
+            126 TOPS running your stack — grouped like Flight Command nav.
           </p>
         </div>
 
@@ -152,18 +210,20 @@ export function AppEcosystem() {
 function AppCard({
   app,
   featured = false,
+  compact = false,
 }: {
   app: StorefrontApp;
   featured?: boolean;
+  compact?: boolean;
 }) {
   return (
     <article
       className={`group relative flex flex-col border-industrial bg-black transition-all hover:border-neon-purple/40 ${
-        featured ? "p-8" : "p-6"
+        featured ? "p-8" : compact ? "p-5" : "p-6"
       }`}
     >
-      <div className="mb-4 flex items-start justify-between gap-3">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-white/10 text-xl text-neon-purple transition-colors group-hover:border-neon-purple/50 group-hover:shadow-[0_0_16px_rgba(191,90,242,0.2)]">
+      <div className="mb-3 flex items-start justify-between gap-3">
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-white/10 text-lg text-neon-purple transition-colors group-hover:border-neon-purple/50">
           {app.icon}
         </div>
         <span className="text-[10px] tracking-widest text-white/25">
@@ -171,19 +231,17 @@ function AppCard({
         </span>
       </div>
 
-      <h3 className="mb-2 text-sm font-bold tracking-wide">{app.name}</h3>
+      <h3 className="mb-1 text-sm font-bold tracking-wide">{app.name}</h3>
 
-      <p className="mb-3 text-[11px] font-medium leading-relaxed text-neon-purple/80">
+      <p className="text-[11px] font-medium leading-relaxed text-neon-purple/80">
         {app.tagline}
       </p>
 
-      <p className="flex-1 text-xs leading-relaxed text-white/50">
-        {app.description}
-      </p>
-
-      <div className="mt-6 text-[10px] tracking-widest text-white/20">
-        BUNDLED // v{applianceVersion}
-      </div>
+      {!compact ? (
+        <p className="mt-2 flex-1 text-xs leading-relaxed text-white/50">
+          {app.description}
+        </p>
+      ) : null}
     </article>
   );
 }

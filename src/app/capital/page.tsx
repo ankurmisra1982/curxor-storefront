@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { CapitalWalkthroughVideo } from "@/components/CapitalWalkthroughVideo";
+import { ClawDemoHero } from "@/components/ClawDemoHero";
+import { OperatorQuote } from "@/components/OperatorQuote";
 import { SiteShell } from "@/components/SiteShell";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
+import { getOperator } from "@/lib/claw-operators";
 import {
+  capitalDemoHero,
   capitalEgressPaths,
   capitalFlowShots,
   capitalGoLiveChecks,
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
 };
 
 export default function CapitalPage() {
+  const alpha = getOperator("alpha");
+
   return (
     <SiteShell>
       <div className="mx-auto max-w-6xl px-6 py-16">
@@ -56,11 +61,17 @@ export default function CapitalPage() {
           </Link>
         </div>
 
+        {alpha ? (
+          <section className="mt-10">
+            <OperatorQuote operator={alpha} />
+          </section>
+        ) : null}
+
         <section className="mt-14">
           <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
-            WALKTHROUGH
+            FLIGHT COMMAND
           </p>
-          <CapitalWalkthroughVideo />
+          <ClawDemoHero {...capitalDemoHero} />
         </section>
 
         <section className="mt-16">
@@ -126,9 +137,8 @@ export default function CapitalPage() {
             ))}
           </div>
           <p className="mt-4 text-xs text-white/40">
-            Local inference for rules, research, and NL portfolio Q&A. Outbound
-            trades egress only through digital bridges — demo mode needs no keys;
-            Webull/E*TRADE/Robinhood MCP workers are scaffolded infrastructure.
+            Local inference for rules and research. Outbound trades egress only
+            through digital bridges on eno2.
           </p>
         </section>
 
@@ -159,29 +169,26 @@ export default function CapitalPage() {
           </div>
         </section>
 
-        <section className="mt-16 border border-neon-purple/30 bg-neon-purple/[0.03] p-8">
+        <section className="mt-14 border border-neon-purple/30 bg-neon-purple/[0.03] p-6 sm:p-8">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             BEGINNER · STANDARD · EXPERT
           </p>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/70">
-            Beginner surfaces Go Live, Setup Wizard, and demo tour first.
-            Standard unlocks Analytics tab, walk-forward backtest, and portfolio
-            health CTAs. Expert adds pilots marketplace, tax lots beta, and MCP
-            agent preview — same appliance, progressive disclosure in Settings →
-            Appearance.
+            Go Live and demo tour first. Unlock analytics, backtest, and MCP
+            pilots as you graduate — same appliance, progressive disclosure.
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
               href="/for/traders"
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              TRADER PERSONA STORY →
+              MEET ALPHA →
             </Link>
             <Link
-              href="/#demo"
+              href="/#operators"
               className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
             >
-              ALL FLIGHT COMMAND DEMOS →
+              ALL OPERATORS →
             </Link>
           </div>
         </section>

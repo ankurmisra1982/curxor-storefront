@@ -19,11 +19,11 @@ export const siteConfig = {
   computeHook:
     "126 TOPS NPU · 64GB unified memory · outpaces most cloud API tiers.",
   tagline:
-    "A sovereign 64GB compute appliance that runs an infinite swarm of digital Claws — trade, create, scrape, and scale 24/7 without sending your strategies to OpenAI.",
+    "Mint digital Claws on sovereign hardware — trade, create, and outbound without shipping your playbook to the cloud.",
   heroSubtext:
-    "The independent computer for digital employees — 126 TOPS local inference, dual 10GbE, and strategies that stay on your metal.",
+    "126 TOPS local inference · dual 10GbE · eno2 kill switch · $0 CurXor API fees.",
   heroCreatorBadge:
-    "Creator Claw v0.3 — 5-step wizard · Go Live · 10 publish bridges",
+    "Capital · Creator · Outreach — demo tour day one",
   preOrderPrice: "$3,999",
   preOrderPriceUsd: 3999,
   stripeCheckoutUrl:

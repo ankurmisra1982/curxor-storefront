@@ -1,10 +1,9 @@
 import { applianceVersion } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
 
-export const capitalWalkthrough = {
-  src: "/demo/capital-walkthrough.webm",
-  poster: "/demo/03-capital-claw.png",
-  durationLabel: "~90 sec",
+export const capitalDemoHero = {
+  src: "/demo/03-capital-claw.png",
+  alt: "Capital Claw desk — Go Live, rule engine, and portfolio panels",
   caption:
     "Live Flight Command capture — Capital Claw Go Live, rule engine, demo tour, and portfolio desk on CurXor OS " +
     applianceVersion +

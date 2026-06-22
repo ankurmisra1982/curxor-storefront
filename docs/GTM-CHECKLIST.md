@@ -27,7 +27,8 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [x] Persona cards + `/for/traders` · `/for/creators` · `/for/agencies`
 - [x] Compare hub + five competitor pages under `/compare/*`
 - [x] Homepage reorder (demo → personas → compare first)
-- [x] `/creator` landing page + Flight Command walkthrough video
+- [x] `/creator` landing page + Flight Command demo screenshots
+- [x] `/capital` + `/outreach` Claw landing pages
 
 ## Before marketing (one-time ops)
 
@@ -44,6 +45,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [x] MIKY / agent NAS FAQ + comparison row
 - [x] v0.2.0 marketing pass — messaging FAQ, architecture, agnostic wearables copy
 - [ ] Product photography in hero when MS-S1 batch is photographed
+- [ ] Claw walkthrough videos (replace screenshot heroes on `/capital` and `/creator` when re-recorded from Flight Command)
 - [ ] Customer testimonials / press logos when available
 
 ## Wait for **curxor-os + hardware**

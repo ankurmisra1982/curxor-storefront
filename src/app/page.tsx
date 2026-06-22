@@ -1,23 +1,16 @@
-import { CapitalFlowGallery } from "@/components/CapitalFlowGallery";
-import { CreatorFlowGallery } from "@/components/CreatorFlowGallery";
-import { OutreachFlowGallery } from "@/components/OutreachFlowGallery";
-import { PersonaCards } from "@/components/PersonaCards";
-import { PriceIncludes } from "@/components/PriceIncludes";
-import { TcoSection } from "@/components/TcoSection";
-import { TrustStrip } from "@/components/TrustStrip";
 import { AppEcosystem } from "@/components/AppEcosystem";
 import { ComparisonTable } from "@/components/ComparisonTable";
-import { ComputePower } from "@/components/ComputePower";
 import { CreateToEarn } from "@/components/CreateToEarn";
-import { DayOneHub } from "@/components/DayOneHub";
 import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { HowItWorks } from "@/components/HowItWorks";
+import { MeetTheOperators } from "@/components/MeetTheOperators";
 import { MobileStickyCta } from "@/components/MobileStickyCta";
 import { PricingPreview } from "@/components/PricingPreview";
 import { ScreenshotGallery } from "@/components/ScreenshotGallery";
-import { SpecMatrix } from "@/components/SpecMatrix";
+import { TrustStrip } from "@/components/TrustStrip";
 
 export default function Home() {
   return (
@@ -26,19 +19,12 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustStrip />
+      <MeetTheOperators />
+      <HowItWorks />
       <ScreenshotGallery />
-      <PersonaCards />
       <ComparisonTable />
-      <ComputePower />
-      <DayOneHub />
-      <AppEcosystem />
+      <AppEcosystem variant="featured" />
       <PricingPreview />
-      <PriceIncludes />
-      <SpecMatrix />
-      <TcoSection />
-      <CreatorFlowGallery />
-      <CapitalFlowGallery />
-      <OutreachFlowGallery />
       <CreateToEarn />
       <Faq />
       <Footer />

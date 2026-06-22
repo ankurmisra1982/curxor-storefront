@@ -8,7 +8,7 @@ const navLinks = [
   { href: "/capital", label: "CAPITAL" },
   { href: "/creator", label: "CREATOR" },
   { href: "/outreach", label: "OUTREACH" },
-  { href: "/for/traders", label: "TRADERS" },
+  { href: "/#operators", label: "OPERATORS" },
   { href: "/pricing", label: "PRICING" },
   { href: "/#demo", label: "DEMO" },
   { href: "/compare", label: "WHY CURXOR" },

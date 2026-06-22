@@ -21,7 +21,7 @@ export const personaPages: PersonaPage[] = [
       "Capital Claw on sovereign hardware — local inference, Alpaca bridge on eno2, alpha that stays on your metal.",
     eyebrow: "FOR TRADERS",
     headline: "Your alpha stays on bare metal.",
-    lead: "Stop renting inference and leaking playbooks to cloud APIs. Capital Claw runs on localhost — paper and live paths egress only through eno2 when you configure Alpaca.",
+    lead: "Stop renting inference and leaking playbooks to cloud APIs. Capital Claw v0.3 runs on localhost — demo desk day one, paper via Alpaca on eno2 when you configure keys.",
     painPoints: [
       "$500+/mo API tokens for agentic trading research",
       "Strategies and prompts stored on someone else's servers",
@@ -30,7 +30,7 @@ export const personaPages: PersonaPage[] = [
     claws: [
       {
         name: "Capital Claw",
-        body: "Paper-trading workspace, portfolio readouts, and bridge-ready execution receipts — local evaluation first.",
+        body: "Go Live checklist, Setup Wizard, rule engine, demo tour, portfolio health, and execute_now — paper receipts on eno2 when Alpaca is configured.",
       },
       {
         name: "Signal Claw",
@@ -44,11 +44,12 @@ export const personaPages: PersonaPage[] = [
     demoSrc: "/demo/03-capital-claw.png",
     demoAlt: "Capital Claw workspace",
     outcomes: [
-      "Local LLM planning without per-token CurXor fees",
-      "Alpaca paper/live via Python bridge on eno2 only",
+      "Demo desk day one — no broker keys required to explore rules and simulated fills",
+      "Paper trading via Alpaca bridge on eno2 when you exit demo and add credentials",
       "Unplug eno2 to halt outbound trades instantly",
     ],
     compareLinks: [
+      { href: "/capital", label: "Capital Claw tour" },
       { href: "/compare/mac-studio-ollama", label: "vs Mac Studio + Ollama" },
       { href: "/compare/perplexity-personal-computer", label: "vs Perplexity PC" },
     ],
@@ -100,7 +101,7 @@ export const personaPages: PersonaPage[] = [
       "Outreach Claw plus unified inbox — scrape, sequence, CRM, and message clients from one sovereign appliance.",
     eyebrow: "FOR AGENCIES",
     headline: "Outbound that never sleeps — on your metal.",
-    lead: "Outreach Claw handles lead workflows locally. Unified inbox routes Telegram, Slack, WhatsApp, iMessage, and dashboard chat through one router synced to the Claw Context mesh.",
+    lead: "Outreach Claw v0.3.1 adds sequences, CSV import, A/B subjects, reply intent tagging, and send policy — plus unified inbox on the same appliance.",
     painPoints: [
       "Stack of CRM, sequencer, and AI SaaS tools",
       "Client data scattered across cloud vendors",
@@ -109,7 +110,7 @@ export const personaPages: PersonaPage[] = [
     claws: [
       {
         name: "Outreach Claw",
-        body: "Lead scraping, cold sequences, and CRM follow-ups — work Claw workspace with skill buttons.",
+        body: "Go Live checklist, pipeline, sequences, outbound queue, CSV import, and SMTP send via eno2 when configured.",
       },
       {
         name: "Arbitrage Claw",
@@ -121,7 +122,7 @@ export const personaPages: PersonaPage[] = [
       },
     ],
     demoSrc: "/demo/07-unified-inbox.png",
-    demoAlt: "Unified comms inbox",
+    demoAlt: "Outreach Claw desk — Go Live, pipeline, sequences",
     outcomes: [
       "One appliance per client stack — or segmented Claws in Settings",
       "Messaging gateways you configure — not a fixed vendor bundle",

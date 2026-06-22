@@ -1,7 +1,7 @@
 # CurXor OS — Full Appliance Audit (Holding Pattern)
 
 **Audit date:** June 2026  
-**Version:** `0.3.0` (`../curxor-os/version.json`)  
+**Version:** `0.3.4` (`../curxor-os/version.json`)  
 **Hardware status:** MS-S1 MAX not yet received — **no on-device validation**  
 **GTM site:** This repo (`curxor storefront`) — landing + pre-order live; see [SYNC.md](SYNC.md)
 
@@ -32,7 +32,7 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Hardware validation | ❌ Blocked | No ROCm/UMA/mesh benchmarks on target SKU |
 | Reproducible builds | ⚠️ Gap | No committed `pnpm-lock.yaml` in pillar 2/4 |
 | Security hardening | ⚠️ Partial | Dashboard on `0.0.0.0:3080`; APIs unauthenticated (LAN/captive OK) |
-| Tests / CI | ✅ Local QA | 61 smoke + 12 user-flow checks — typecheck, production build (`qa-smoke.mjs`, `qa-user-flows.mjs`) |
+| Tests / CI | ✅ Local QA | 122 smoke + 17 user-flow checks — typecheck, production build (`qa-smoke.mjs`, `qa-user-flows.mjs`) |
 | Agent runtime | ✅ v0.2 | Workspace memory, skills, heartbeat, channel router → CCP inbox |
 | Messaging gateways | ✅ v0.2 | Telegram, Slack, WhatsApp, iMessage — user-configured in Settings |
 

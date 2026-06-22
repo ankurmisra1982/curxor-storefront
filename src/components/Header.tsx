@@ -5,6 +5,7 @@ import { useState } from "react";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 
 const navLinks = [
+  { href: "/capital", label: "CAPITAL" },
   { href: "/creator", label: "CREATOR" },
   { href: "/for/traders", label: "TRADERS" },
   { href: "/pricing", label: "PRICING" },

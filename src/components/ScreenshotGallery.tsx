@@ -15,7 +15,8 @@ const SHOTS = [
   {
     src: "/demo/03-capital-claw.png",
     title: "Capital Claw",
-    body: "Paper-trading workspace with read-only portfolio status and live bridge-ready execution receipts.",
+    body: "Capital Claw v0.3 — Go Live desk, rule engine, demo tour, paper path, and EXIT-DEMO scaffold. Live brokers when you add keys on eno2.",
+    href: "/capital",
   },
   {
     src: "/demo/04-forge.png",
@@ -34,13 +35,15 @@ const SHOTS = [
   },
   {
     src: "/demo/07-unified-inbox.png",
-    title: "Unified inbox",
-    body: "Telegram, Slack, WhatsApp, iMessage, and dashboard chat — one router on your appliance, synced to the Claw Context mesh.",
+    title: "Outreach Claw",
+    body: "Outreach Claw v0.3.1 — Go Live checklist, lead pipeline, sequences, CSV import, A/B subjects, and send policy on eno2.",
+    href: "/for/agencies",
   },
   {
     src: "/demo/08-creator-claw.png",
     title: "Creator Claw",
     body: "Creator Claw v0.3 — Go Live panel, 5-step Creation Wizard path, queue, and strict bridge-ready semantics.",
+    href: "/creator",
   },
 ] as const;
 
@@ -81,6 +84,14 @@ export function ScreenshotGallery() {
               <p className="mt-2 text-xs leading-relaxed text-white/50">
                 {shot.body}
               </p>
+              {"href" in shot && shot.href ? (
+                <Link
+                  href={shot.href}
+                  className="mt-3 inline-block text-[10px] tracking-[0.2em] text-neon-purple hover:underline"
+                >
+                  DEEP DIVE →
+                </Link>
+              ) : null}
             </article>
           ))}
         </div>

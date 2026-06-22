@@ -4,6 +4,7 @@ import { siteConfig } from "@/lib/config";
 import { personaPages } from "@/lib/persona-pages";
 
 const staticRoutes = [
+  "/capital",
   "/creator",
   "/pricing",
   "/architecture",

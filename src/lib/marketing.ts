@@ -3,6 +3,7 @@ import {
   clawRosterLabel,
   siteConfig,
 } from "@/lib/config";
+import { clawHeadlines } from "@/lib/claw-headlines";
 
 export const supportEmail = "hello@curxor.ai";
 
@@ -30,7 +31,7 @@ export const trustSignals = [
   },
 ] as const;
 
-export const socialProofLine = `CurXor OS ${applianceVersion} · 122 smoke + 17 user-flow QA checks · MS-S1 MAX validation in progress`;
+export const socialProofLine = `CurXor OS ${applianceVersion} · 124 smoke + 17 user-flow QA checks · MS-S1 MAX validation in progress`;
 
 export const setupClaim =
   "Flight Command on day one — pick Claws in Settings, chat or tap skills. Live bridges need your credentials on eno2.";
@@ -69,28 +70,31 @@ export const personaCards = [
     id: "traders",
     eyebrow: "WEALTH",
     title: "Algo traders & operators",
-    body: "Capital Claw on localhost — paper and live paths via Alpaca on eno2 only. Alpha stays on your metal.",
+    body: clawHeadlines.capital.personaCard,
     claw: "Capital Claw",
     href: "/for/traders",
     demo: "/demo/03-capital-claw.png",
+    tourHref: "/capital",
   },
   {
     id: "creators",
     eyebrow: "GROWTH",
     title: "Creators & indie hackers",
-    body: "Creator Claw v0.3 — 5-step Creation Wizard, Go Live checklist, and 10 publish bridges. Draft locally, egress on eno2 only.",
+    body: clawHeadlines.creator.personaCard,
     claw: "Creator Claw",
     href: "/for/creators",
     demo: "/demo/08-creator-claw.png",
+    tourHref: "/creator",
   },
   {
     id: "agencies",
     eyebrow: "WORK",
     title: "Agencies & outbound teams",
-    body: "Outreach Claw v0.3.1 — sequences, CSV import, A/B subjects, reply intent, and send policy on eno2.",
+    body: clawHeadlines.outreach.personaCard,
     claw: "Outreach Claw",
     href: "/for/agencies",
     demo: "/demo/07-unified-inbox.png",
+    tourHref: "/outreach",
   },
 ] as const;
 
@@ -139,7 +143,7 @@ export const creatorFlowShots = [
   {
     src: "/demo/creator/09-go-live-checklist.png",
     title: "Go Live checklist",
-    body: "Day-one onboarding — channels, bridges, public media URL, first scheduled post.",
+    body: "Day-one onboarding — demo tour, channels, bridges, and first scheduled post.",
   },
   {
     src: "/demo/creator/10-content-calendar.png",

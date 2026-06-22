@@ -1,5 +1,6 @@
 import { CapitalFlowGallery } from "@/components/CapitalFlowGallery";
 import { CreatorFlowGallery } from "@/components/CreatorFlowGallery";
+import { OutreachFlowGallery } from "@/components/OutreachFlowGallery";
 import { PersonaCards } from "@/components/PersonaCards";
 import { PriceIncludes } from "@/components/PriceIncludes";
 import { TcoSection } from "@/components/TcoSection";
@@ -37,6 +38,7 @@ export default function Home() {
       <TcoSection />
       <CreatorFlowGallery />
       <CapitalFlowGallery />
+      <OutreachFlowGallery />
       <CreateToEarn />
       <Faq />
       <Footer />

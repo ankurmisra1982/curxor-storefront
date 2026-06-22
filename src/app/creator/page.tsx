@@ -6,6 +6,7 @@ import { CreatorWalkthroughVideo } from "@/components/CreatorWalkthroughVideo";
 import { SiteShell } from "@/components/SiteShell";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 import {
+  creatorDemoTourSteps,
   creatorFlowShots,
   creatorGoLiveChecks,
   creatorPageMeta,
@@ -34,11 +35,11 @@ export default function CreatorPage() {
           CREATOR CLAW · CURXOR OS {applianceVersion}
         </p>
         <h1 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-          Draft locally. Publish on{" "}
-          <span className="text-neon-purple">eno2 only.</span>
+          {creatorPageMeta.hero}{" "}
+          <span className="text-neon-purple">{creatorPageMeta.accent}</span>
         </h1>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
-          {creatorPageMeta.description}
+          {creatorPageMeta.oneLiner}
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
@@ -61,6 +62,30 @@ export default function CreatorPage() {
             WALKTHROUGH
           </p>
           <CreatorWalkthroughVideo />
+        </section>
+
+        <section className="mt-16">
+          <p className="mb-6 text-[10px] tracking-[0.25em] text-neon-purple">
+            DEMO TOUR PATH
+          </p>
+          <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">
+            One button on Go Live — draft, pre-flight, schedule, and simulated
+            publish without OAuth. Same strict checklist semantics as Capital
+            Claw demo tour.
+          </p>
+          <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-5">
+            {creatorDemoTourSteps.map((item) => (
+              <article key={item.step} className="bg-black p-6">
+                <p className="text-[10px] tracking-[0.3em] text-neon-purple">
+                  STEP {item.step}
+                </p>
+                <h2 className="mt-3 text-sm font-bold">{item.title}</h2>
+                <p className="mt-2 text-xs leading-relaxed text-white/50">
+                  {item.body}
+                </p>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section className="mt-16">
@@ -101,8 +126,8 @@ export default function CreatorPage() {
           </div>
           <div className="overflow-hidden border border-white/10">
             <Image
-              src="/demo/08-creator-claw.png"
-              alt="Creator Claw Go Live panel"
+              src="/demo/creator/09-go-live-checklist.png"
+              alt="Creator Claw Go Live panel with demo tour"
               width={1440}
               height={900}
               className="h-auto w-full"
@@ -163,10 +188,11 @@ export default function CreatorPage() {
             BEGINNER · STANDARD · EXPERT
           </p>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/70">
-            Beginner surfaces Go Live and the Creation Wizard first. Standard
-            unlocks calendar, engage inbox, and bridge health depth. Expert adds
-            planner, campaigns, library, and metrics rules — same appliance,
-            progressive disclosure in Settings → Appearance.
+            Beginner surfaces Go Live and demo tour first — one session to a
+            scheduled post without bridges. Standard unlocks calendar, engage
+            inbox, and bridge health depth. Expert adds planner, campaigns,
+            library, and metrics rules — same appliance, progressive disclosure
+            in Settings → Appearance.
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <Link

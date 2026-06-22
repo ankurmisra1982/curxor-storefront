@@ -35,6 +35,7 @@ export const pressKit = {
     { label: "Logo mark (PNG)", path: "/favicon.svg", note: "SVG favicon — PNG in docs/assets for decks" },
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
     { label: "Flight Command demo", path: "/#demo", note: "Home, Settings, Capital, Forge, Vital, Kin, Creator Claw, unified inbox" },
+    { label: "Outreach Claw tour", path: "/outreach", note: "Demo tour path, Go Live, pipeline, sequences, Tier B analytics" },
     { label: "Capital Claw tour", path: "/capital", note: "Walkthrough video, Setup Wizard, Go Live, rule engine, demo tour" },
     { label: "Creator Claw tour", path: "/creator", note: "Walkthrough video, wizard steps, Go Live, publish bridges" },
     { label: "Install video", path: "/architecture#validation", note: "Coming with production hardware batch" },

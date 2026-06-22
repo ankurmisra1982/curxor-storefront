@@ -36,8 +36,8 @@ const SHOTS = [
   {
     src: "/demo/07-unified-inbox.png",
     title: "Outreach Claw",
-    body: "Outreach Claw v0.3.1 — Go Live checklist, lead pipeline, sequences, CSV import, A/B subjects, and send policy on eno2.",
-    href: "/for/agencies",
+    body: "Outreach Claw — demo tour, Go Live checklist, lead pipeline, sequences, CSV import, A/B subjects, and send policy on eno2.",
+    href: "/outreach",
   },
   {
     src: "/demo/08-creator-claw.png",

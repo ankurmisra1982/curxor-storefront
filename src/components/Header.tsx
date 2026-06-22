@@ -7,6 +7,7 @@ import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 const navLinks = [
   { href: "/capital", label: "CAPITAL" },
   { href: "/creator", label: "CREATOR" },
+  { href: "/outreach", label: "OUTREACH" },
   { href: "/for/traders", label: "TRADERS" },
   { href: "/pricing", label: "PRICING" },
   { href: "/#demo", label: "DEMO" },

@@ -1,4 +1,5 @@
 import { applianceVersion } from "@/lib/config";
+import { clawHeadlines } from "@/lib/claw-headlines";
 
 export const capitalWalkthrough = {
   src: "/demo/capital-walkthrough.webm",
@@ -82,5 +83,6 @@ export const capitalFlowShots = [
 export const capitalPageMeta = {
   title: "Capital Claw — Sovereign Trading Desk",
   description:
-    "Capital Claw on CurXor OS — Setup Wizard, Go Live checklist, rule engine, demo tour, and paper path via Alpaca on eno2. Demo desk day one; broker keys when you exit demo.",
+    "Capital Claw on CurXor OS — Setup Wizard, Go Live checklist, one-click demo tour, rule engine, and paper path via Alpaca on eno2. Demo desk day one; broker keys when you exit demo.",
+  ...clawHeadlines.capital,
 } as const;

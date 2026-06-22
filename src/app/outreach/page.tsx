@@ -2,43 +2,43 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { CapitalWalkthroughVideo } from "@/components/CapitalWalkthroughVideo";
 import { SiteShell } from "@/components/SiteShell";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
-import {
-  capitalEgressPaths,
-  capitalFlowShots,
-  capitalGoLiveChecks,
-  capitalPageMeta,
-  capitalSetupSteps,
-} from "@/lib/capital-page";
 import { applianceVersion, siteConfig } from "@/lib/config";
+import {
+  outreachDemoTourSteps,
+  outreachFlowShots,
+  outreachGoLiveChecks,
+  outreachPageMeta,
+  outreachTierBFeatures,
+  outreachWalkthroughCaption,
+} from "@/lib/outreach-page";
 
 export const metadata: Metadata = {
-  title: `${capitalPageMeta.title} — ${siteConfig.name}`,
-  description: capitalPageMeta.description,
-  alternates: { canonical: "/capital" },
+  title: `${outreachPageMeta.title} — ${siteConfig.name}`,
+  description: outreachPageMeta.description,
+  alternates: { canonical: "/outreach" },
   openGraph: {
-    title: capitalPageMeta.title,
-    description: capitalPageMeta.description,
-    url: `${siteConfig.siteUrl}/capital`,
-    images: [{ url: `${siteConfig.siteUrl}/demo/03-capital-claw.png` }],
+    title: outreachPageMeta.title,
+    description: outreachPageMeta.description,
+    url: `${siteConfig.siteUrl}/outreach`,
+    images: [{ url: `${siteConfig.siteUrl}/demo/07-unified-inbox.png` }],
   },
 };
 
-export default function CapitalPage() {
+export default function OutreachPage() {
   return (
     <SiteShell>
       <div className="mx-auto max-w-6xl px-6 py-16">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-          CAPITAL CLAW · CURXOR OS {applianceVersion}
+          OUTREACH CLAW · CURXOR OS {applianceVersion}
         </p>
         <h1 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-          {capitalPageMeta.hero}{" "}
-          <span className="text-neon-purple">{capitalPageMeta.accent}</span>
+          {outreachPageMeta.hero}{" "}
+          <span className="text-neon-purple">{outreachPageMeta.accent}</span>
         </h1>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
-          {capitalPageMeta.oneLiner}
+          {outreachPageMeta.oneLiner}
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
@@ -49,26 +49,24 @@ export default function CapitalPage() {
             PRE-ORDER {siteConfig.preOrderPrice}
           </TrackedPreorderLink>
           <Link
-            href="/compare/mac-studio-ollama"
+            href="/compare/miky"
             className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 hover:text-neon-purple"
           >
-            VS MAC STUDIO + OLLAMA →
+            VS MIKY →
           </Link>
         </div>
 
-        <section className="mt-14">
-          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
-            WALKTHROUGH
-          </p>
-          <CapitalWalkthroughVideo />
-        </section>
-
         <section className="mt-16">
           <p className="mb-6 text-[10px] tracking-[0.25em] text-neon-purple">
-            SETUP WIZARD PATH
+            DEMO TOUR PATH
+          </p>
+          <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">
+            One button on Go Live — demo lead, A/B sequence, activate, and
+            simulated send without SMTP. Same demo-first semantics as Capital
+            and Creator Claw.
           </p>
           <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-5">
-            {capitalSetupSteps.map((item) => (
+            {outreachDemoTourSteps.map((item) => (
               <article key={item.step} className="bg-black p-6">
                 <p className="text-[10px] tracking-[0.3em] text-neon-purple">
                   STEP {item.step}
@@ -88,7 +86,7 @@ export default function CapitalPage() {
               GO LIVE CHECKLIST
             </p>
             <ul className="mt-6 space-y-4">
-              {capitalGoLiveChecks.map((item) => (
+              {outreachGoLiveChecks.map((item) => (
                 <li
                   key={item}
                   className="flex items-start gap-3 text-xs leading-relaxed text-white/55"
@@ -101,8 +99,8 @@ export default function CapitalPage() {
           </div>
           <div className="overflow-hidden border border-white/10">
             <Image
-              src="/demo/capital/19-capital-go-live.png"
-              alt="Capital Claw Go Live panel"
+              src="/demo/outreach/20-go-live.png"
+              alt="Outreach Claw Go Live panel with demo tour"
               width={1440}
               height={900}
               className="h-auto w-full"
@@ -113,31 +111,34 @@ export default function CapitalPage() {
 
         <section className="mt-16">
           <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
-            EGRESS PATHS ON ENO2
+            TIER B · SHIPPED ON APPLIANCE
           </p>
           <div className="flex flex-wrap gap-2">
-            {capitalEgressPaths.map((path) => (
+            {outreachTierBFeatures.map((feature) => (
               <span
-                key={path}
+                key={feature}
                 className="border border-white/10 px-3 py-2 text-[10px] tracking-widest text-white/50"
               >
-                {path.toUpperCase()}
+                {feature.toUpperCase()}
               </span>
             ))}
           </div>
           <p className="mt-4 text-xs text-white/40">
-            Local inference for rules, research, and NL portfolio Q&A. Outbound
-            trades egress only through digital bridges — demo mode needs no keys;
-            Webull/E*TRADE/Robinhood MCP workers are scaffolded infrastructure.
+            Local inference for day briefs, sequence drafts, and reply intent.
+            Outbound mail egresses only through SMTP on eno2 — demo mode
+            simulates sends until you configure digital.env.
           </p>
         </section>
 
         <section className="mt-16">
-          <p className="mb-8 text-[10px] tracking-[0.25em] text-neon-purple">
+          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
             FLIGHT COMMAND SCREENS
           </p>
+          <p className="mb-8 max-w-2xl text-xs leading-relaxed text-white/40">
+            {outreachWalkthroughCaption}
+          </p>
           <div className="grid gap-6 sm:grid-cols-2">
-            {capitalFlowShots.map((shot) => (
+            {outreachFlowShots.map((shot) => (
               <article key={shot.src} className="border-industrial bg-black p-4">
                 <div className="overflow-hidden border border-white/10">
                   <Image
@@ -164,18 +165,17 @@ export default function CapitalPage() {
             BEGINNER · STANDARD · EXPERT
           </p>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/70">
-            Beginner surfaces Go Live, Setup Wizard, and demo tour first.
-            Standard unlocks Analytics tab, walk-forward backtest, and portfolio
-            health CTAs. Expert adds pilots marketplace, tax lots beta, and MCP
-            agent preview — same appliance, progressive disclosure in Settings →
-            Appearance.
+            Beginner surfaces Go Live and demo tour first — simulated sends
+            without SMTP. Standard unlocks sequences panel, outbound queue,
+            outreach analytics, and unified comms desk. Expert adds mail index
+            reply-intent tagging and recovery flows.
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
-              href="/for/traders"
+              href="/for/agencies"
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              TRADER PERSONA STORY →
+              AGENCY PERSONA STORY →
             </Link>
             <Link
               href="/#demo"

@@ -21,7 +21,7 @@ export const personaPages: PersonaPage[] = [
       "Capital Claw on sovereign hardware — local inference, Alpaca bridge on eno2, alpha that stays on your metal.",
     eyebrow: "FOR TRADERS",
     headline: "Your alpha stays on bare metal.",
-    lead: "Stop renting inference and leaking playbooks to cloud APIs. Capital Claw v0.3 runs on localhost — demo desk day one, paper via Alpaca on eno2 when you configure keys.",
+    lead: "Capital Claw runs a one-click demo tour — armed rule, simulated fill, Go Live progress without broker keys. Paper via Alpaca on eno2 when you exit demo.",
     painPoints: [
       "$500+/mo API tokens for agentic trading research",
       "Strategies and prompts stored on someone else's servers",
@@ -58,10 +58,10 @@ export const personaPages: PersonaPage[] = [
     slug: "creators",
     title: "CurXor for Creators",
     metaDescription:
-      "Creator Claw — draft, adapt, and publish across TikTok, Instagram, YouTube, and X. Local inference, eno2 bridges only.",
+      "Creator Claw — one-click demo tour, 5-step Creation Wizard, Go Live checklist, and 10 publish bridges. Local inference, eno2 egress only.",
     eyebrow: "FOR CREATORS",
-    headline: "Draft locally. Publish on eno2 only.",
-    lead: "Creator Claw v0.3 is a sovereign social operator — 5-step Creation Wizard, Go Live checklist with strict bridge-ready semantics, 10 live publish bridges, and closed-loop engage → analytics → planner growth.",
+    headline: "Go Live in one session.",
+    lead: "Creator Claw runs a one-click demo tour — draft, pre-flight, schedule, and simulated publish without OAuth. Full 5-step Creation Wizard, 10 live publish bridges, and closed-loop engage → analytics when you scale.",
     painPoints: [
       "Token rent on every draft and rewrite",
       "Platform lock-in on cloud schedulers",
@@ -70,7 +70,7 @@ export const personaPages: PersonaPage[] = [
     claws: [
       {
         name: "Creator Claw",
-        body: "5-step Creation Wizard, Go Live checklist, bridge health, publish recovery, and 10 live platform bridges on eno2.",
+        body: "Demo tour, 5-step Creation Wizard, Go Live checklist, bridge health, publish recovery, and 10 live platform bridges on eno2.",
       },
       {
         name: "Engage Claw",
@@ -84,8 +84,8 @@ export const personaPages: PersonaPage[] = [
     demoSrc: "/demo/08-creator-claw.png",
     demoAlt: "Creator Claw Go Live and queue",
     outcomes: [
-      "5-step Creation Wizard with pre-flight and learned best-time scheduling",
-      "10 live publish bridges with Go Live strict-ready semantics",
+      "One-click demo tour to scheduled post — simulated publish counts toward Go Live",
+      "10 live publish bridges with strict ready semantics when you connect OAuth",
       "Approve-before-publish via dashboard, Telegram, or Slack operators",
     ],
     compareLinks: [
@@ -98,10 +98,10 @@ export const personaPages: PersonaPage[] = [
     slug: "agencies",
     title: "CurXor for Agencies & Outbound Teams",
     metaDescription:
-      "Outreach Claw plus unified inbox — scrape, sequence, CRM, and message clients from one sovereign appliance.",
+      "Outreach Claw — demo tour, sequences, CSV import, A/B subjects, reply intent, and send policy on sovereign hardware.",
     eyebrow: "FOR AGENCIES",
-    headline: "Outbound that never sleeps — on your metal.",
-    lead: "Outreach Claw v0.3.1 adds sequences, CSV import, A/B subjects, reply intent tagging, and send policy — plus unified inbox on the same appliance.",
+    headline: "Pipeline to send — one desk.",
+    lead: "Outreach Claw runs a one-click demo tour — demo lead, A/B sequence, activate, and simulated send without SMTP. Tier B adds CSV import, reply intent, send policy, and open/reply analytics on the same appliance.",
     painPoints: [
       "Stack of CRM, sequencer, and AI SaaS tools",
       "Client data scattered across cloud vendors",
@@ -110,7 +110,7 @@ export const personaPages: PersonaPage[] = [
     claws: [
       {
         name: "Outreach Claw",
-        body: "Go Live checklist, pipeline, sequences, outbound queue, CSV import, and SMTP send via eno2 when configured.",
+        body: "Demo tour, Go Live checklist, pipeline, sequences, outbound queue, CSV import, and SMTP send via eno2 when configured.",
       },
       {
         name: "Arbitrage Claw",
@@ -124,11 +124,12 @@ export const personaPages: PersonaPage[] = [
     demoSrc: "/demo/07-unified-inbox.png",
     demoAlt: "Outreach Claw desk — Go Live, pipeline, sequences",
     outcomes: [
-      "One appliance per client stack — or segmented Claws in Settings",
-      "Messaging gateways you configure — not a fixed vendor bundle",
+      "Demo tour to simulated send — no SMTP required on day one",
+      "A/B subjects, CSV import, pause-on-reply, and send policy on-appliance",
       "eno2 unplug stops outbound while local inference continues",
     ],
     compareLinks: [
+      { href: "/outreach", label: "Outreach Claw tour" },
       { href: "/compare/miky", label: "vs MIKY" },
       { href: "/compare/nemoclaw", label: "vs NemoClaw" },
     ],

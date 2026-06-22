@@ -56,6 +56,14 @@ export function PersonaCards() {
                 >
                   LEARN MORE →
                 </Link>
+                {"tourHref" in card && card.tourHref ? (
+                  <Link
+                    href={card.tourHref}
+                    className="mt-3 inline-flex text-[10px] tracking-[0.2em] text-white/40 transition-colors hover:text-neon-purple"
+                  >
+                    CLAW TOUR →
+                  </Link>
+                ) : null}
               </div>
             </article>
           ))}

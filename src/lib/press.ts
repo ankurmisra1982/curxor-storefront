@@ -4,13 +4,11 @@ import {
   siteConfig,
   socialProfiles,
 } from "./config";
-
-export const pressKit = {
   headline: "Mint AI Employees on Bare Metal.",
   boilerplate: `CurXor Systems builds sovereign AI appliances that run digital employees — called Claws — on local hardware with zero monthly API fees. The CurXor Edge Nexus ships with 126 TOPS NPU, 64GB unified memory, CurXor OS, and ${clawRosterLabel} spanning wealth, work, signals, and life & family. Message Claws from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Pre-order at curxor.ai for $3,999.`,
   founderQuote:
     "ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.",
-  contactEmail: "hello@curxor.ai",
+  contactEmail: siteConfig.contactEmail,
   facts: [
     { label: "Product", value: "CurXor Edge Nexus" },
     { label: "Price", value: "$3,999 pre-order (one-time hardware)" },

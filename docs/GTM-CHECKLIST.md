@@ -31,6 +31,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 
 ## Before marketing (one-time ops)
 
+- [ ] **Contact email (GTM phase)** — pre-marketing uses `curxorsystems@gmail.com` in `siteConfig.contactEmail`. At GTM launch, revert to **`hello@curxor.ai`**, confirm Resend domain + inbox routing, and update `llms.txt` Contact line.
 - [ ] **Resend on Vercel** — verify `curxor.ai` in Resend → create Segment → set `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `RESEND_FROM_EMAIL` on Vercel Production → redeploy → test `POST /api/subscribe` returns `{"ok":true}`
 
 ## Build next (this repo)
@@ -65,6 +66,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 | `../curxor-os/pillar-4-dashboard/lib/app-agent-catalog.ts` | `npm run sync:appliance` → taglines |
 | `../curxor-os/docs/guides/13-universal-ui-design.md` | Settings tab copy, FAQ frontier LLM answers |
 | `../curxor-os/pillar-4-dashboard/lib/local-llm-catalog.ts` | Future UMA tiers page |
+| `siteConfig.contactEmail` | Trust strip, press, privacy/terms, llms.txt — **GTM: revert to hello@curxor.ai** |
 
 ## Copy guardrails
 

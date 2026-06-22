@@ -27,7 +27,7 @@ export default function TermsPage() {
             until fulfillment — we will communicate material changes by email.
           </p>
           <p>
-            Questions before or after pre-order: hello@curxor.ai. Full pre-order
+            Questions before or after pre-order: {siteConfig.contactEmail}. Full pre-order
             policy, support expectations, and refund handling are updated here as
             production batches are finalized.
           </p>
@@ -75,7 +75,7 @@ export default function TermsPage() {
 
         <LegalSection title="Contact">
           <p>
-            Questions: {siteConfig.twitterHandle} on X or hello@curxor.ai.
+            Questions: {siteConfig.twitterHandle} on X or {siteConfig.contactEmail}.
           </p>
         </LegalSection>
       </LegalDocument>

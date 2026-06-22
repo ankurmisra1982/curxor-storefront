@@ -5,7 +5,7 @@ import {
 } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
 
-export const supportEmail = "hello@curxor.ai";
+export const supportEmail = siteConfig.contactEmail;
 
 export const trustSignals = [
   {

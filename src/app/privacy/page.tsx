@@ -65,7 +65,7 @@ export default function PrivacyPage() {
 
         <LegalSection title="Contact">
           <p>
-            Questions: {siteConfig.twitterHandle} on X or hello@curxor.ai.
+            Questions: {siteConfig.twitterHandle} on X or {siteConfig.contactEmail}.
           </p>
         </LegalSection>
       </LegalDocument>

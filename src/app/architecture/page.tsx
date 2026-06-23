@@ -4,7 +4,9 @@ import { SiteShell } from "@/components/SiteShell";
 import { InfoTip } from "@/components/InfoTip";
 import { ValidationBadge } from "@/components/ValidationBadge";
 import { architectureContent } from "@/lib/architecture";
-import { siteConfig } from "@/lib/config";
+import { gtmTierLegend } from "@/lib/claw-gtm-tiers";
+import { qaMetricsLine } from "@/lib/qa-metrics";
+import { siteConfig, applianceVersion } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: `Architecture — ${siteConfig.name}`,
@@ -82,6 +84,26 @@ export default function ArchitecturePage() {
           </ul>
         </div>
 
+        <div className="mt-16">
+          <h2 className="mb-2 text-xs font-bold tracking-[0.3em] text-neon-purple">
+            CLAW DEPTH TIERS
+          </h2>
+          <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">
+            CurXor OS {applianceVersion} — {qaMetricsLine}. Every OOTB Claw carries an
+            honest depth label on the storefront and in Flight Command.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {gtmTierLegend.map((tier) => (
+              <div key={tier.id} className="border-industrial bg-black p-6">
+                <h3 className="text-sm font-bold tracking-wide text-neon-purple/90">
+                  {tier.label}
+                </h3>
+                <p className="mt-3 text-xs leading-relaxed text-white/50">{tier.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div id="validation" className="mt-16 scroll-mt-24">
           <ValidationBadge />
           <ul className="mt-6 space-y-2 border border-white/10 bg-black/30 p-6 text-xs leading-relaxed text-white/45">
@@ -111,8 +133,8 @@ export default function ArchitecturePage() {
           Operator documentation lives in CurXor OS under{" "}
           <code className="text-white/50">docs/guides/02-architecture.md</code>.
           {" "}
-          <Link href="/" className="text-neon-purple hover:underline">
-            ← Back to pre-order
+          <Link href="/#subscribe" className="text-neon-purple hover:underline">
+            ← Join waitlist
           </Link>
         </p>
       </div>

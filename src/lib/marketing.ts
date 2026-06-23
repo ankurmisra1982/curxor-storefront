@@ -4,6 +4,7 @@ import {
   siteConfig,
 } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
+import { qaMetricsLine } from "@/lib/qa-metrics";
 
 export const supportEmail = siteConfig.contactEmail;
 
@@ -31,7 +32,7 @@ export const trustSignals = [
   },
 ] as const;
 
-export const socialProofLine = `CurXor OS ${applianceVersion} · 124 smoke + 17 user-flow QA checks · MS-S1 MAX validation in progress`;
+export const socialProofLine = `CurXor OS ${applianceVersion} · ${qaMetricsLine} · MS-S1 MAX validation in progress`;
 
 export const setupClaim =
   "Flight Command on day one — pick Claws in Settings, chat or tap skills. Live bridges need your credentials on eno2.";

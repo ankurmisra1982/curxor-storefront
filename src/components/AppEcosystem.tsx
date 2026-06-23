@@ -8,6 +8,7 @@ import {
   clawCategoryOrder,
   type StorefrontApp,
 } from "@/lib/config";
+import { gtmTierBadgeClass, gtmTierLegend } from "@/lib/claw-gtm-tiers";
 
 const FEATURED_CLAW_IDS = [
   "my-capital",
@@ -128,8 +129,23 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
             </h2>
           </div>
           <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
-            126 TOPS running your stack — grouped like Flight Command nav.
+            126 TOPS running your stack — grouped like Flight Command nav. Depth labels:
+            Flagship · Forge · Cafe · Preview.
           </p>
+        </div>
+
+        <div className="mb-10 hidden flex-wrap gap-3 sm:flex">
+          {gtmTierLegend.map((tier) => (
+            <div
+              key={tier.id}
+              className="max-w-xs border border-white/10 bg-black/40 px-4 py-3"
+            >
+              <p className="text-[10px] font-bold tracking-[0.2em] text-neon-purple">
+                {tier.label.toUpperCase()}
+              </p>
+              <p className="mt-1 text-[11px] leading-relaxed text-white/45">{tier.body}</p>
+            </div>
+          ))}
         </div>
 
         <div className="hidden space-y-14 sm:block">
@@ -226,8 +242,10 @@ function AppCard({
         <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-white/10 text-lg text-neon-purple transition-colors group-hover:border-neon-purple/50">
           {app.icon}
         </div>
-        <span className="text-[10px] tracking-widest text-white/25">
-          {app.categoryLabel}
+        <span
+          className={`shrink-0 border px-2 py-0.5 text-[9px] tracking-[0.15em] ${gtmTierBadgeClass(app.gtmTier)}`}
+        >
+          {app.gtmTierLabel.toUpperCase()}
         </span>
       </div>
 

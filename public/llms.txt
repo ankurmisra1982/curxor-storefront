@@ -6,13 +6,22 @@
 
 - Name: CurXor Edge Nexus
 - Price: $3,999 USD (one-time pre-order, no monthly API fees)
+- Primary CTA: Join waitlist at https://curxor.ai/#subscribe
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
-- Software: CurXor OS 0.3.5 with 9 Claw verticals + The Forge (enable any combination in Settings)
+- Software: CurXor OS 0.8.2 with 9 Claw verticals + The Forge (enable any combination in Settings)
+- QA: 181 smoke + 40 user-flow checks in curxor-os (local qa:local suite)
+- Hardware validation: MS-S1 MAX silicon benchmarks in progress — no public bench log until green
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
-- Health: Vital Claw syncs wearables and health apps via OAuth you authorize — not locked to one device brand
 - Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI
-- Pre-order: https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00
+- Pre-order (secondary): https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00
+
+## Claw depth tiers (honest labels)
+
+- Flagship: Capital Claw, Creator Claw, Outreach Claw — demo-ready desks, Go Live paths, eno2 bridges
+- Forge: The Forge — natural-language agent factory
+- Cafe: Engage Claw route — cross-Claw growth home (XP, streaks, ascension from real activity)
+- Preview: Arbitrage, Signal, Swarm, Vital, Kin — working shells; local data OK; production depth ships later
 
 ## Canonical URLs
 
@@ -21,7 +30,7 @@
 - Capital Claw: https://curxor.ai/capital
 - Creator Claw: https://curxor.ai/creator
 - Pricing (UMA tiers + compute ladder): https://curxor.ai/pricing
-- Architecture (MS-S1 validation status): https://curxor.ai/architecture
+- Architecture (MS-S1 validation status + claw tiers): https://curxor.ai/architecture
 - Changelog: https://curxor.ai/changelog
 - Compare hub: https://curxor.ai/compare
 - Persona: https://curxor.ai/for/traders · https://curxor.ai/for/creators · https://curxor.ai/for/agencies
@@ -36,11 +45,12 @@
 ## Key differentiators vs Mac Studio + Ollama
 
 - Turnkey agent platform (not DIY inference only)
-- Bundled Claws: Capital, Creator, Outreach, Arbitrage, Signal, Swarm, Engage, Vital, Kin, The Forge
-- Creator Claw v0.3: demo tour (draft → preflight → schedule → simulated publish), 5-step Creation Wizard, Go Live checklist, 10 publish bridges, engage loop, planner/campaigns (Standard/Expert)
-- Capital Claw v0.3: demo tour, Go Live desk, rule engine, paper path via Alpaca on eno2; EXIT-DEMO scaffold; broker MCP workers scaffolded
-- Outreach Claw v0.3.1: demo tour (lead → A/B sequence → simulated send), sequences, CSV import, A/B subjects, reply intent, send policy, outbound analytics
-- Life & family: Vital Claw (longevity desk), Kin Claw (household profiles)
+- Bundled Claws with honest depth tiers — Flagship · Forge · Cafe · Preview
+- Capital Claw (Flagship): demo tour, Go Live desk, rule engine, paper/live Alpaca on eno2
+- Creator Claw (Flagship): Creation Wizard, Go Live, publish bridges, engage loop, planner/analytics
+- Outreach Claw (Flagship): L1–L3 persona levels, sequences, deliverability, approval flows, analytics
+- Claw Cafe (Cafe tier): cross-Claw XP and ascension — reads real Flagship events
+- Preview modules: Arbitrage, Signal, Swarm, Vital, Kin — honest preview shells, no fake Go Live
 - Physical eno2 kill switch for outbound agents
 - Zero per-token cloud API fees
 
@@ -54,12 +64,12 @@
 - OpenClaw: free agent runtime — you supply hardware, skills, security, and integrations
 - ClawBox-class Jetson (~€549, 8GB): lightweight always-on assistants
 - NVIDIA NemoClaw: alpha governance layer for DIY OpenClaw on NVIDIA hardware
-- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 10 Claws + Forge on 64GB UMA; agent runtime v0.2 with unified messaging (Telegram, Slack, WhatsApp, iMessage) and CCP inbox; wearables and health integrations user-configured
+- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 10 Claws + Forge on 64GB UMA; unified messaging (Telegram, Slack, WhatsApp, iMessage) and CCP inbox; wearables user-configured
 
 ## vs MIKY / agent NAS boxes
 
 - MIKY-class and Minisforum NAS-style boxes: independent computers for agents — messaging, calendar, general automation
-- CurXor: same independence narrative with 64GB UMA, 126 TOPS, wealth/work/life Claws (Capital, Vital, Kin), messaging gateways, eno1/eno2 kill switch, The Forge to customize anything
+- CurXor: same independence narrative with 64GB UMA, 126 TOPS, wealth/work/life Claws, messaging gateways, eno1/eno2 kill switch, The Forge to customize anything
 
 ## Contact
 

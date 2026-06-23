@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import {
   CATEGORY_DISPLAY_ORDER,
   CLAW_CATEGORY_LABELS,
+  GTM_TIER_LABELS,
   MARKETING_BY_APPLIANCE_ID,
 } from "./marketing-map";
 import { syncChangelog } from "./sync-changelog";
@@ -123,6 +124,8 @@ function buildGeneratedSource(
     icon: string;
     category: string;
     categoryLabel: string;
+    gtmTier: string;
+    gtmTierLabel: string;
   }>,
   version: VersionFile
 ): string {
@@ -190,6 +193,8 @@ async function main() {
         icon: marketing.icon,
         category: marketing.category,
         categoryLabel: CLAW_CATEGORY_LABELS[marketing.category],
+        gtmTier: marketing.gtmTier,
+        gtmTierLabel: GTM_TIER_LABELS[marketing.gtmTier],
         sortOrder: marketing.sortOrder ?? 999,
       };
     })

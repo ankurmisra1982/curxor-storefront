@@ -247,14 +247,29 @@ export const faqItems = [
       "Yes. CurXor OS routes dashboard chat and external messaging through one local channel router synced to the Claw Context inbox. Connect the gateways you want in Settings — Telegram, Slack, WhatsApp, iMessage, and more. Reasoning stays on your appliance; outbound actions still egress only through eno2 when a Claw needs the internet.",
   },
   {
+    question: "What do Flagship, Forge, Cafe, and Preview mean?",
+    answer:
+      "Honest depth labels on every Claw. Flagship desks (Capital, Creator, Outreach) are demo-ready with Go Live paths and eno2 bridges. The Forge mints custom agents in natural language. Cafe is the cross-Claw growth home — XP, streaks, and ascension from real activity. Preview modules (Arbitrage, Signal, Swarm, Vital, Kin) are working shells with local data — not fake production pipelines.",
+  },
+  {
     question: "What does Creator Claw do on day one?",
     answer:
-      "Creator Claw v0.3 is a sovereign social operator: a 5-step Creation Wizard (channel → draft → media → pre-flight → best-time schedule), Go Live checklist with strict bridge-ready semantics, 10 live publish bridges on eno2, bridge health, publish recovery, and optional approve-before-publish via dashboard, Telegram, or Slack. Beginner mode surfaces wizard and Go Live first; Standard and Expert unlock planner, campaigns, and analytics.",
+      "Creator Claw is a Flagship desk: 5-step Creation Wizard, Go Live checklist, publish bridges on eno2, engage loop, and planner/analytics at Standard and Expert levels. Demo tour runs day one; live posts need your credentials on eno2.",
+  },
+  {
+    question: "What does Capital Claw do on day one?",
+    answer:
+      "Capital Claw is a Flagship desk: demo tour, Go Live checklist, rule engine, paper trading via Alpaca on eno2, and Capital Alpha analytics. Live broker credentials stay on your appliance — we do not hold your keys in the cloud.",
+  },
+  {
+    question: "What does Outreach Claw do on day one?",
+    answer:
+      "Outreach Claw is a Flagship desk: persona levels L1–L3, sequences, CSV import, deliverability checks, approval flows, and outbound analytics. Demo tour simulates sends until you connect mail and CRM bridges on eno2.",
   },
   {
     question: "Can Vital Claw sync with my smartwatch or health apps?",
     answer:
-      "Yes — on your terms. Vital Claw is built for wearables, labs, and diet data, but you choose which devices and health apps to authorize via OAuth in Settings. CurXor does not lock you to one watch brand or one health platform; configure the integrations that match your household.",
+      "Vital Claw is a Preview module today — Longevity Lab, literature RAG, and clinician export work on-box. Wearable and lab PDF bridges connect via OAuth you authorize in Settings when eno2 validation completes. CurXor does not lock you to one watch brand.",
   },
   {
     question: "Can I disconnect my agents from the internet?",

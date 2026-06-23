@@ -3,7 +3,7 @@
 
 export const applianceVersion = "0.8.2" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-06-23T21:43:39.625Z" as const;
+export const applianceSyncedAt = "2026-06-23T21:59:23.402Z" as const;
 
 export const clawCategoryLabels = {
   "forge": "Create",
@@ -29,7 +29,9 @@ export const apps = [
     "description": "Prompt the local LLM to forge a custom Claw for your niche hustle — wire it to eno2 and deploy in one session.",
     "icon": "✚",
     "category": "forge",
-    "categoryLabel": "Create"
+    "categoryLabel": "Create",
+    "gtmTier": "forge",
+    "gtmTierLabel": "Forge"
   },
   {
     "id": "capital-claw",
@@ -39,7 +41,9 @@ export const apps = [
     "description": "Algorithmic trading, crypto sniping, and automated portfolio rebalancing — your alpha stays on bare metal.",
     "icon": "↗",
     "category": "wealth",
-    "categoryLabel": "Wealth & growth"
+    "categoryLabel": "Wealth & growth",
+    "gtmTier": "flagship",
+    "gtmTierLabel": "Flagship"
   },
   {
     "id": "creator-claw",
@@ -49,7 +53,9 @@ export const apps = [
     "description": "Draft, adapt, and publish across social channels — video pipelines, engage inbox, calendar, and digital bridges on eno2 with zero API rent.",
     "icon": "✦",
     "category": "wealth",
-    "categoryLabel": "Wealth & growth"
+    "categoryLabel": "Wealth & growth",
+    "gtmTier": "flagship",
+    "gtmTierLabel": "Flagship"
   },
   {
     "id": "outreach-claw",
@@ -59,7 +65,9 @@ export const apps = [
     "description": "Lead scraping, personalized cold email sequencing, and CRM follow-ups — outbound that never sleeps.",
     "icon": "⌘",
     "category": "work",
-    "categoryLabel": "Work & commerce"
+    "categoryLabel": "Work & commerce",
+    "gtmTier": "flagship",
+    "gtmTierLabel": "Flagship"
   },
   {
     "id": "arbitrage-claw",
@@ -69,7 +77,9 @@ export const apps = [
     "description": "E-commerce price scraping, margin alerts, and automated dropshipping fulfillment — find spread, act instantly.",
     "icon": "◈",
     "category": "work",
-    "categoryLabel": "Work & commerce"
+    "categoryLabel": "Work & commerce",
+    "gtmTier": "preview",
+    "gtmTierLabel": "Preview"
   },
   {
     "id": "signal-claw",
@@ -79,7 +89,9 @@ export const apps = [
     "description": "Humanoid home hub — teach house rules, pass knowledge, and relate before your robot arrives. More robot types later.",
     "icon": "⊕",
     "category": "physical",
-    "categoryLabel": "Signals & swarm"
+    "categoryLabel": "Signals & swarm",
+    "gtmTier": "preview",
+    "gtmTierLabel": "Preview"
   },
   {
     "id": "swarm-claw",
@@ -89,7 +101,9 @@ export const apps = [
     "description": "Orchestrate digital Claws today — preview path to operating many Tesla Robotaxis as an autonomous fleet from sovereign metal.",
     "icon": "◎",
     "category": "physical",
-    "categoryLabel": "Signals & swarm"
+    "categoryLabel": "Signals & swarm",
+    "gtmTier": "preview",
+    "gtmTierLabel": "Preview"
   },
   {
     "id": "engage-claw",
@@ -99,7 +113,9 @@ export const apps = [
     "description": "Auto-replies, DM triage, and community thread engagement on X and LinkedIn — grow audience while you sleep.",
     "icon": "⎔",
     "category": "physical",
-    "categoryLabel": "Signals & swarm"
+    "categoryLabel": "Signals & swarm",
+    "gtmTier": "cafe",
+    "gtmTierLabel": "Cafe"
   },
   {
     "id": "vital-claw",
@@ -109,7 +125,9 @@ export const apps = [
     "description": "Longevity desk — wearables, labs, expert Q&A preview (Sinclair, Blueprint), and a personalized health protocol on your metal.",
     "icon": "♡",
     "category": "life",
-    "categoryLabel": "Life & family"
+    "categoryLabel": "Life & family",
+    "gtmTier": "preview",
+    "gtmTierLabel": "Preview"
   },
   {
     "id": "kin-claw",
@@ -119,7 +137,9 @@ export const apps = [
     "description": "Household identity layer — partner, kids, and guests get their own context so Optimus and Vital personalize per person, not per box.",
     "icon": "⚘",
     "category": "life",
-    "categoryLabel": "Life & family"
+    "categoryLabel": "Life & family",
+    "gtmTier": "preview",
+    "gtmTierLabel": "Preview"
   }
 ] as const;
 

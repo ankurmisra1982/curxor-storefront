@@ -18,7 +18,7 @@ export const architectureContent = {
       name: "Engine",
       path: "pillar-2-engine/",
       role: "OpenClaw agent loop — workspace memory, skills, heartbeat scheduler, and channel gateway.",
-      detail: "Capital, Creator, Outreach, and Forge Claws execute via dedicated bridges. Dashboard chat and Telegram, Slack, WhatsApp, or iMessage share one router synced to CCP — you configure which gateways to enable.",
+      detail: "Capital, Creator, Outreach, and Forge Claws execute via dedicated bridges. Claw Cafe tracks cross-Claw growth from real operator events. Dashboard chat and Telegram, Slack, WhatsApp, or iMessage share one router synced to CCP — you configure which gateways to enable.",
     },
     {
       id: "telemetry",

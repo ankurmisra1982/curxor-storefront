@@ -1,3 +1,5 @@
+import { InfoTip } from "@/components/InfoTip";
+
 const RUNGS = [
   {
     id: "jetson",
@@ -35,9 +37,12 @@ export function ComputeLadder() {
             Same always-on idea. Different memory class.
           </h2>
         </div>
-        <p className="max-w-sm text-xs leading-relaxed text-white/40">
-          UMA tiers below are model budgets on CurXor hardware — not separate
-          products.
+        <p className="flex max-w-sm items-start gap-1.5 text-xs leading-relaxed text-white/40">
+          <span>
+            UMA tiers below are model budgets on CurXor hardware — not separate
+            products.
+          </span>
+          <InfoTip tipId="umaTiers" className="mt-0.5 shrink-0" />
         </p>
       </div>
 

@@ -98,43 +98,72 @@ export const personaCards = [
   },
 ] as const;
 
-export const tcoComparison = {
-  headline: "Four-year total cost",
+/** Homepage: one tight cloud-rent vs buy-once hook — no multi-row TCO grid. */
+export const homepageCostHook = {
+  eyebrow: "CLOUD RENT VS OWN THE BOX",
+  headline: "Breakeven in ~8 months",
   subhead:
-    "CurXor is a capital expense once. Cloud orchestration and assistant subscriptions compound every month.",
+    "Heavy cloud API spend compounds every month. CurXor is a one-time capital expense on your metal.",
+  cloud: {
+    label: "Cloud API stack",
+    monthly: "$500+/mo",
+    fourYear: "~$24,000+ over 4 years",
+    note: "Per-token billing · data leaves your network",
+  },
+  curxor: {
+    label: "CurXor Edge Nexus",
+    upfront: "$3,999 once",
+    monthly: "$0/mo CurXor fees",
+    note: "Optional BYOK only",
+  },
+  breakeven: {
+    math: "$3,999 ÷ $500/mo ≈ 8 months",
+    detail: "Illustrative — your API burn varies by workload",
+  },
+  honesty:
+    "Estimates for planning only. Power, tax, BYOK, and broker fees not included unless noted.",
+} as const;
+
+/** Full illustrative matrix for /compare and deep-dive pages — not homepage. */
+export const tcoScenarios = {
+  headline: "Illustrative spend scenarios",
+  subhead:
+    "Planning estimates across different compute classes and buyer profiles. No single “winner” column — compare like with like.",
+  methodology:
+    "Illustrative only — not quotes. USD rows exclude tax; ClawBox row in EUR. CurXor four-year uses hardware only (~$3,999); add ~$12/mo power (~$576 over 4y) for a loaded estimate (~$4,575). Perplexity uses Max tier (~$200/mo) per FAQ. ClawBox is 8GB assistant class — not a 64GB UMA peer. BYOK, broker, and subscription tier changes not modeled.",
   rows: [
+    {
+      id: "cloud-api",
+      label: "Heavy operator — cloud API",
+      upfront: "$0",
+      monthly: "$500+/mo",
+      fourYear: "~$24,000+",
+      note: "Per-token billing · orchestration in vendor cloud · data egress",
+    },
     {
       id: "curxor",
       label: "CurXor Edge Nexus",
       upfront: "$3,999",
       monthly: "$0 CurXor fees",
-      fourYear: "~$4,050",
-      note: "Hardware + ~$12/mo power · optional BYOK only",
+      fourYear: "~$3,999",
+      note: "Hardware only in headline · ~$12/mo power → ~$4,575 over 4y · optional BYOK",
       highlight: true,
     },
     {
       id: "perplexity",
-      label: "Perplexity Pro + Mac mini",
+      label: "Perplexity Max + Mac mini",
       upfront: "~$499 Mac",
-      monthly: "$20/mo Pro",
-      fourYear: "~$1,459+",
-      note: "Orchestration in the cloud · heavy workflows burn credits",
+      monthly: "~$200/mo Max",
+      fourYear: "~$10,099+",
+      note: "Frontier models orchestrated in Perplexity cloud · Mac for 24/7 runs",
     },
     {
-      id: "clawbox-max",
-      label: "ClawBox + Max tier",
+      id: "clawbox",
+      label: "Light assistant — ClawBox",
       upfront: "~€549",
-      monthly: "€49/mo Max",
+      monthly: "€49/mo Max (optional)",
       fourYear: "~€2,901",
-      note: "8GB assistant class · frontier models via subscription",
-    },
-    {
-      id: "cloud-api",
-      label: "Cloud API stack",
-      upfront: "$0",
-      monthly: "$500+/mo",
-      fourYear: "$24,000+",
-      note: "Per-token billing · data leaves your network",
+      note: "8GB assistant class · different compute tier — not a 64GB UMA peer",
     },
   ],
 } as const;

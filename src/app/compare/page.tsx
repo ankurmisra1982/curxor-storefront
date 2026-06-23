@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { SiteShell } from "@/components/SiteShell";
+import { TcoSection } from "@/components/TcoSection";
 import { comparePages } from "@/lib/compare-pages";
 import { siteConfig } from "@/lib/config";
 
@@ -47,12 +48,14 @@ export default function CompareHubPage() {
             </li>
           ))}
         </ul>
+      </div>
 
-        <p className="mt-12">
-          <Link href="/#compare" className="text-sm text-neon-purple hover:underline">
-            ← Back to homepage comparison
-          </Link>
-        </p>
+      <TcoSection />
+
+      <div className="mx-auto max-w-5xl px-6 pb-16">
+        <Link href="/#compare" className="text-sm text-neon-purple hover:underline">
+          ← Back to homepage comparison
+        </Link>
       </div>
     </SiteShell>
   );

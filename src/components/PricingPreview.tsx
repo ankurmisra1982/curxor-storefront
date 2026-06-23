@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { InfoTip } from "@/components/InfoTip";
 import { pricingTiers } from "@/lib/generated/pricing-sync";
 
 export function PricingPreview() {
@@ -11,8 +12,9 @@ export function PricingPreview() {
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
               LOCAL MODEL BUDGETS
             </p>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="flex flex-wrap items-center gap-2 text-3xl font-bold tracking-tight sm:text-4xl">
               Same hardware. Your UMA tier.
+              <InfoTip tipId="umaTiers" className="mt-1" />
             </h2>
           </div>
           <p className="max-w-sm text-xs text-white/40">

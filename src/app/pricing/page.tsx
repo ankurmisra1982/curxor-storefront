@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { ComputeLadder } from "@/components/ComputeLadder";
+import { InfoTip } from "@/components/InfoTip";
 import { SiteShell } from "@/components/SiteShell";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 import { pricingModels, pricingTiers } from "@/lib/generated/pricing-sync";
@@ -26,8 +27,9 @@ export default function PricingPage() {
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           PRICING
         </p>
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="flex flex-wrap items-center gap-2 text-3xl font-bold tracking-tight sm:text-4xl">
           One Hardware Price. Multiple Local Model Budgets.
+          <InfoTip tipId="umaTiers" className="mt-1" />
         </h1>
         <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/50">
           CurXor is <span className="text-white/80">{siteConfig.preOrderPrice}</span>{" "}
@@ -87,12 +89,29 @@ export default function PricingPage() {
           })}
         </div>
 
+        <div className="mt-14 border-industrial bg-black p-6 sm:p-8">
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">
+            BEYOND HARDWARE
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-white/60">
+            CurXor is a capital expense once — compare cloud rent, assistant
+            subscriptions, and other paths with visible assumptions on the{" "}
+            <Link href="/compare#tco" className="text-neon-purple hover:underline">
+              illustrative spend scenarios
+            </Link>{" "}
+            table.
+          </p>
+        </div>
+
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           <div className="border-industrial bg-black p-6">
             <p className="text-[10px] tracking-[0.25em] text-neon-purple">WHAT CHANGES</p>
-            <p className="mt-3 text-sm leading-relaxed text-white/60">
-              Model quality, vision depth, and whether you budget enough UMA for VLA
-              workloads.
+            <p className="mt-3 flex flex-wrap items-center gap-1.5 text-sm leading-relaxed text-white/60">
+              <span>
+                Model quality, vision depth, and whether you budget enough UMA for VLA
+                workloads.
+              </span>
+              <InfoTip tipId="vla" className="shrink-0" />
             </p>
           </div>
           <div className="border-industrial bg-black p-6">

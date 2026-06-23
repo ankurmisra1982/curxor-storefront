@@ -3,7 +3,7 @@ import path from "node:path";
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/config";
 
-export const alt = "CurXor — Mint AI Employees on Bare Metal";
+export const alt = "CurXor — Mint Autonomous Employees on Bare Metal";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const runtime = "nodejs";
@@ -74,17 +74,7 @@ export default async function Image() {
                 letterSpacing: "-0.03em",
               }}
             >
-              Mint AI Employees on Bare Metal.
-            </div>
-            <div
-              style={{
-                display: "flex",
-                fontSize: 22,
-                color: "#BF5AF2",
-                letterSpacing: "0.02em",
-              }}
-            >
-              {siteConfig.viralHook}
+              {siteConfig.heroHeadline}
             </div>
             <div
               style={{
@@ -94,7 +84,17 @@ export default async function Image() {
                 lineHeight: 1.4,
               }}
             >
-              Flight Command · 64GB UMA · eno2 kill switch · $3,999 once
+              {siteConfig.heroSubhead}
+            </div>
+            <div
+              style={{
+                display: "flex",
+                fontSize: 14,
+                color: "#BF5AF2",
+                letterSpacing: "0.02em",
+              }}
+            >
+              {siteConfig.viralHook}
             </div>
           </div>
 

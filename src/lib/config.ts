@@ -16,6 +16,9 @@ export const siteConfig = {
   ],
   ogTagline: "126 TOPS · 64GB UMA · $0/mo API · $3,999 once",
   viralHook: "ChatGPT bills per token. CurXor bills once.",
+  heroHeadline: "Mint autonomous employees on bare metal.",
+  heroSubhead:
+    "Stop paying monthly API fees. Run Capital, Creator, and Outreach Claws on sovereign hardware — $3,999 once · $0/mo CurXor API.",
   computeHook:
     "126 TOPS NPU · 64GB unified memory · outpaces most cloud API tiers.",
   tagline:

@@ -39,21 +39,27 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <Link
+            href="/#subscribe"
+            className="border border-neon-purple bg-neon-purple/10 px-4 py-2 font-bold text-neon-purple transition-all hover:bg-neon-purple/20 hover:shadow-[0_0_20px_rgba(191,90,242,0.3)]"
+          >
+            JOIN WAITLIST
+          </Link>
           <TrackedPreorderLink
             location="header"
-            className="border border-neon-purple/50 px-4 py-2 text-neon-purple transition-all hover:bg-neon-purple/10 hover:shadow-[0_0_20px_rgba(191,90,242,0.3)]"
+            className="text-white/45 transition-colors hover:text-neon-purple"
           >
             PRE-ORDER
           </TrackedPreorderLink>
         </nav>
 
         <div className="flex items-center gap-3 lg:hidden">
-          <TrackedPreorderLink
-            location="header"
-            className="border border-neon-purple/50 px-3 py-2 text-[10px] tracking-widest text-neon-purple"
+          <Link
+            href="/#subscribe"
+            className="border border-neon-purple/50 px-3 py-2 text-[10px] font-bold tracking-widest text-neon-purple"
           >
-            PRE-ORDER
-          </TrackedPreorderLink>
+            WAITLIST
+          </Link>
           <button
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
@@ -79,6 +85,20 @@ export function Header() {
                 {link.label}
               </a>
             ))}
+            <Link
+              href="/#subscribe"
+              onClick={() => setOpen(false)}
+              className="font-bold text-neon-purple transition-colors hover:text-neon-glow"
+            >
+              JOIN WAITLIST
+            </Link>
+            <TrackedPreorderLink
+              location="header"
+              className="text-white/45 transition-colors hover:text-neon-purple"
+              onClick={() => setOpen(false)}
+            >
+              PRE-ORDER
+            </TrackedPreorderLink>
           </div>
         </nav>
       )}

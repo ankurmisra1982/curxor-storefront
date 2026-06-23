@@ -1,4 +1,5 @@
-import { tcoComparison } from "@/lib/marketing";
+import { InfoTip } from "@/components/InfoTip";
+import { tcoScenarios } from "@/lib/marketing";
 
 export function TcoSection() {
   return (
@@ -8,11 +9,12 @@ export function TcoSection() {
           <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
             TOTAL COST
           </p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            {tcoComparison.headline}
+          <h2 className="flex flex-wrap items-center gap-2 text-3xl font-bold tracking-tight sm:text-4xl">
+            {tcoScenarios.headline}
+            <InfoTip tipId="illustrativeSpend" className="mt-1" />
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-white/50">
-            {tcoComparison.subhead}
+            {tcoScenarios.subhead}
           </p>
         </div>
 
@@ -20,7 +22,7 @@ export function TcoSection() {
           <table className="w-full min-w-[640px] border-collapse text-left text-xs">
             <thead>
               <tr className="border-b border-white/10 text-[10px] tracking-[0.2em] text-white/35">
-                <th className="py-4 pr-4 font-normal">OPTION</th>
+                <th className="py-4 pr-4 font-normal">SCENARIO</th>
                 <th className="py-4 pr-4 font-normal">UPFRONT</th>
                 <th className="py-4 pr-4 font-normal">MONTHLY</th>
                 <th className="py-4 pr-4 font-normal">~4 YEARS</th>
@@ -28,7 +30,7 @@ export function TcoSection() {
               </tr>
             </thead>
             <tbody>
-              {tcoComparison.rows.map((row) => (
+              {tcoScenarios.rows.map((row) => (
                 <tr
                   key={row.id}
                   className={`border-b border-white/10 ${
@@ -59,8 +61,7 @@ export function TcoSection() {
         </div>
 
         <p className="mt-6 text-[10px] leading-relaxed text-white/30">
-          Estimates for planning only — power, tax, and optional BYOK not included.
-          See competitor pages for methodology.
+          {tcoScenarios.methodology}
         </p>
       </div>
     </section>

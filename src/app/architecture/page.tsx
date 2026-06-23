@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
+import { InfoTip } from "@/components/InfoTip";
 import { ValidationBadge } from "@/components/ValidationBadge";
 import { architectureContent } from "@/lib/architecture";
 import { siteConfig } from "@/lib/config";
@@ -48,8 +49,9 @@ export default function ArchitecturePage() {
         </div>
 
         <div className="mt-16">
-          <h2 className="mb-8 text-xs font-bold tracking-[0.3em] text-neon-purple">
+          <h2 className="mb-8 flex items-center gap-2 text-xs font-bold tracking-[0.3em] text-neon-purple">
             DUAL-PORT ISOLATION
+            <InfoTip tipId="dualPort" />
           </h2>
           <div className="grid gap-4 md:grid-cols-2">
             {ports.map((port) => (

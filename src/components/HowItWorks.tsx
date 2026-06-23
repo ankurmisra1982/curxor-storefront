@@ -1,3 +1,5 @@
+import { InfoTip } from "@/components/InfoTip";
+
 const beats = [
   {
     step: "01",
@@ -35,8 +37,9 @@ export function HowItWorks() {
               <p className="text-[10px] tracking-[0.3em] text-neon-purple">
                 {beat.step}
               </p>
-              <h3 className="mt-2 text-sm font-bold tracking-wide text-white/90">
+              <h3 className="mt-2 flex items-center gap-1.5 text-sm font-bold tracking-wide text-white/90">
                 {beat.title}
+                {beat.step === "03" ? <InfoTip tipId="eno2" /> : null}
               </h3>
               <p className="mt-2 text-xs leading-relaxed text-white/45">
                 {beat.body}

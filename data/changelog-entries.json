@@ -1,5 +1,45 @@
 [
   {
+    "version": "0.8.2",
+    "date": "2026-06-23",
+    "channel": "stable",
+    "highlights": [
+      "Build Plane BP2 — OS event bus with emitOsEvent() for forge.claw_minted, go_live.failed, ota.available, eno2.down",
+      "Signed outbound webhooks to Cursor Automations / n8n when Build Plane overlay enabled",
+      "GET/POST /api/build/events event log, OTA/eno2 poll, Go Live failure hooks across flagship desks"
+    ]
+  },
+  {
+    "version": "0.8.1",
+    "date": "2026-06-23",
+    "channel": "stable",
+    "highlights": [
+      "Claw Cafe C10 — walk-state approval bubbles, approval= deep links into Capital/Work/Creator desks, tuned Cafe SSE/poll intervals",
+      "Build Plane BP1 — inbound MCP at /api/build/mcp with five read-only tools (build status, CCP summary, Cafe snapshot, Forge fleet, desk status)",
+      "Bridge read policy + network path tags for outbound MCP gating; Settings connect instructions in Build Plane panel"
+    ]
+  },
+  {
+    "version": "0.6.5",
+    "date": "2026-06-23",
+    "channel": "stable",
+    "highlights": [
+      "Forged capital-desk v2 — per-desk capital-queue.json, watchlist research, IF/THEN rules, arm_rule server skills, and L4-capital demo tour",
+      "Fleet lifecycle F11 — archive claw, island→framework promote, batch fleet export, Fleet tab actions",
+      "Cafe + CCP F12 — per-mint Cafe attribution, archive walk-out, publishForgedDeskContext on FRE mesh opt-in",
+      "GTM F14 — island mint + import round-trip + forged assist E2E in QA; scorecard refresh; FEATURE-FUNCTION honest modes copy; tagged v0.6.5"
+    ]
+  },
+  {
+    "version": "0.5.1",
+    "date": "2026-06-22",
+    "channel": "stable",
+    "highlights": [
+      "CurXor OS 0.5.1 — synced from version.json",
+      "Add release highlights in data/changelog-entries.json or curxor-os/release-notes.json"
+    ]
+  },
+  {
     "version": "0.3.6",
     "date": "2026-06-22",
     "channel": "stable",

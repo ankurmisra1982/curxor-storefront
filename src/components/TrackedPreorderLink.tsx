@@ -8,12 +8,14 @@ type TrackedPreorderLinkProps = {
   location: PreorderLocation;
   className?: string;
   children: React.ReactNode;
+  onClick?: () => void;
 };
 
 export function TrackedPreorderLink({
   location,
   className,
   children,
+  onClick,
 }: TrackedPreorderLinkProps) {
   return (
     <Link
@@ -21,7 +23,10 @@ export function TrackedPreorderLink({
       target="_blank"
       rel="noopener noreferrer"
       className={className}
-      onClick={() => trackPreorderClick(location)}
+      onClick={() => {
+        trackPreorderClick(location);
+        onClick?.();
+      }}
     >
       {children}
     </Link>

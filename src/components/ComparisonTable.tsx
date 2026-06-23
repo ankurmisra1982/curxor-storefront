@@ -1,7 +1,8 @@
 import Link from "next/link";
 
+import { InfoTip } from "@/components/InfoTip";
 import { comparisonOptions } from "@/lib/config";
-import { tcoComparison } from "@/lib/marketing";
+import { homepageCostHook } from "@/lib/marketing";
 
 const homepageCompetitorIds = ["cloud", "perplexity", "diy"] as const;
 
@@ -75,38 +76,57 @@ export function ComparisonTable() {
           </div>
         </div>
 
-        <div className="mt-10">
-          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
-            {tcoComparison.headline.toUpperCase()}
+        <div className="mt-10 border border-white/10 bg-black p-6 sm:p-8">
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">
+            {homepageCostHook.eyebrow}
           </p>
-          <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-            {tcoComparison.rows.map((row) => (
-              <div
-                key={row.id}
-                className={`bg-black p-4 ${
-                  "highlight" in row && row.highlight
-                    ? "ring-1 ring-inset ring-neon-purple/30"
-                    : ""
-                }`}
-              >
-                <p className="text-[10px] tracking-widest text-white/35">
-                  {row.label}
-                </p>
-                <p
-                  className={`mt-2 text-lg font-bold ${
-                    "highlight" in row && row.highlight
-                      ? "text-neon-purple"
-                      : "text-white/70"
-                  }`}
-                >
-                  {row.fourYear}
-                </p>
-                <p className="mt-1 text-[10px] text-white/40">
-                  {row.upfront} upfront · {row.monthly}
-                </p>
-              </div>
-            ))}
+          <h3 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
+            {homepageCostHook.headline}
+          </h3>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/50">
+            {homepageCostHook.subhead}
+          </p>
+
+          <div className="mt-8 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2">
+            <div className="bg-black p-5">
+              <p className="text-[10px] tracking-widest text-white/35">
+                {homepageCostHook.cloud.label}
+              </p>
+              <p className="mt-2 text-xl font-bold text-white/70">
+                {homepageCostHook.cloud.monthly}
+              </p>
+              <p className="mt-1 text-xs text-white/45">
+                {homepageCostHook.cloud.fourYear}
+              </p>
+              <p className="mt-2 text-[10px] text-white/35">
+                {homepageCostHook.cloud.note}
+              </p>
+            </div>
+            <div className="bg-black p-5 ring-1 ring-inset ring-neon-purple/30">
+              <p className="text-[10px] tracking-widest text-neon-purple/80">
+                {homepageCostHook.curxor.label}
+              </p>
+              <p className="mt-2 text-xl font-bold text-neon-purple">
+                {homepageCostHook.curxor.upfront}
+              </p>
+              <p className="mt-1 text-xs text-white/55">
+                {homepageCostHook.curxor.monthly} · {homepageCostHook.curxor.note}
+              </p>
+            </div>
           </div>
+
+          <p className="mt-6 text-sm text-white/60">
+            <span className="font-bold text-white/80">
+              {homepageCostHook.breakeven.math}
+            </span>
+            <span className="text-white/40">
+              {" "}
+              — {homepageCostHook.breakeven.detail}
+            </span>
+          </p>
+          <p className="mt-3 text-[10px] leading-relaxed text-white/30">
+            {homepageCostHook.honesty}
+          </p>
         </div>
 
         <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -116,12 +136,15 @@ export function ComparisonTable() {
           >
             ALL COMPARISONS <span>→</span>
           </Link>
-          <Link
-            href="/pricing"
-            className="text-xs tracking-widest text-white/35 transition-colors hover:text-neon-purple"
-          >
-            UMA TIERS →
-          </Link>
+          <span className="inline-flex items-center gap-1.5">
+            <Link
+              href="/pricing"
+              className="text-xs tracking-widest text-white/35 transition-colors hover:text-neon-purple"
+            >
+              UMA TIERS →
+            </Link>
+            <InfoTip tipId="umaTiers" />
+          </span>
         </div>
       </div>
     </section>

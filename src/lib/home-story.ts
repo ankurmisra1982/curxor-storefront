@@ -45,18 +45,6 @@ export const actTwoStory = {
   cafeProof: {
     title: "Claw Cafe — growth home on your desk",
     body: "Pixel room, ascension XP, and streaks tied to real Flagship activity — Capital rules, Creator publishes, Outreach sends. Proof from Flight Command, not a rebrand.",
-    captures: [
-      {
-        src: "/demo/cafe/19-pixel-room.png",
-        alt: "Claw Cafe pixel room — patrons react to operator activity",
-        caption: "Pixel room",
-      },
-      {
-        src: "/demo/cafe/18-ascension-tab.png",
-        alt: "Claw Cafe ascension panel — cross-Claw XP",
-        caption: "Ascension",
-      },
-    ],
   },
   evolutionTease:
     "Ascends with you — same appliance, deeper desks over time. No subscription tier names on the tin.",

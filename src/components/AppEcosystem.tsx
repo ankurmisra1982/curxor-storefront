@@ -10,6 +10,13 @@ import {
 } from "@/lib/config";
 import { gtmTierBadgeClass, gtmTierLegend } from "@/lib/claw-gtm-tiers";
 
+const CLAW_PAGE_HREFS: Partial<Record<string, string>> = {
+  "capital-claw": "/capital",
+  "creator-claw": "/creator",
+  "outreach-claw": "/outreach",
+  "signal-claw": "/signal",
+};
+
 const FEATURED_CLAW_IDS = [
   "my-capital",
   "my-content-creator",
@@ -232,12 +239,9 @@ function AppCard({
   featured?: boolean;
   compact?: boolean;
 }) {
-  return (
-    <article
-      className={`group relative flex flex-col border-industrial bg-black transition-all hover:border-neon-purple/40 ${
-        featured ? "p-8" : compact ? "p-5" : "p-6"
-      }`}
-    >
+  const href = CLAW_PAGE_HREFS[app.id];
+  const inner = (
+    <>
       <div className="mb-3 flex items-start justify-between gap-3">
         <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-white/10 text-lg text-neon-purple transition-colors group-hover:border-neon-purple/50">
           {app.icon}
@@ -260,6 +264,35 @@ function AppCard({
           {app.description}
         </p>
       ) : null}
+
+      {href ? (
+        <p className="mt-4 text-[10px] tracking-[0.2em] text-neon-purple/70 transition-colors group-hover:text-neon-purple">
+          LEARN MORE →
+        </p>
+      ) : null}
+    </>
+  );
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className={`group relative flex flex-col border-industrial bg-black transition-all hover:border-neon-purple/40 ${
+          featured ? "p-8" : compact ? "p-5" : "p-6"
+        }`}
+      >
+        {inner}
+      </Link>
+    );
+  }
+
+  return (
+    <article
+      className={`group relative flex flex-col border-industrial bg-black transition-all hover:border-neon-purple/40 ${
+        featured ? "p-8" : compact ? "p-5" : "p-6"
+      }`}
+    >
+      {inner}
     </article>
   );
 }

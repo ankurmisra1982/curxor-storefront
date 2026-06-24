@@ -102,8 +102,8 @@ The Forge is the viral loop: buyers become operators who mint more Claws.
 | **Creator Claw** | Content pipeline — X bridge on eno2 |
 | **Outreach Claw** | Outbound sequences & CRM-style desk |
 | **Arbitrage Claw** | Margin watch & fulfillment ops |
-| **Signal Claw** | Feed triggers & alert thresholds |
-| **Swarm Claw** | Orchestrate parallel Claw workloads |
+| **Signal Claw** | The Neural Link — humanoid preview today; every AI device class (glance, VR, robot, home, fleet) on sovereign metal tomorrow |
+| **Swarm Claw** | Robotaxi fleet preview — autonomous fleet horizon from sovereign metal |
 | **Engage Claw** | Community & DM engagement demos |
 | **Vital Claw** | Wearables, labs, longevity protocol |
 | **Kin Claw** | Household profiles, devices, personalities |

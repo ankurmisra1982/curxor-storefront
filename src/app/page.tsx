@@ -9,6 +9,7 @@ import { HorizonSection } from "@/components/HorizonSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { MeetTheOperators } from "@/components/MeetTheOperators";
 import { MobileStickyCta } from "@/components/MobileStickyCta";
+import { NeuralLinkTeaser } from "@/components/NeuralLinkTeaser";
 import { PricingPreview } from "@/components/PricingPreview";
 import { ScreenshotGallery } from "@/components/ScreenshotGallery";
 import { TrustStrip } from "@/components/TrustStrip";
@@ -23,6 +24,7 @@ export default function Home() {
       <TrustStrip />
       <WhatYouBuySection />
       <HowItWorks />
+      <NeuralLinkTeaser />
       <ScreenshotGallery />
       <MeetTheOperators />
       <HorizonSection />

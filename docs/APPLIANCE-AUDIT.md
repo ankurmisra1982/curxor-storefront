@@ -47,7 +47,7 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Creator Claw | `/my-content` | Creator Claw | v0.3 day-one — 5-step wizard, Go Live, 10 bridges, engage loop, bootstrap API |
 | Outreach Claw | `/my-work` | Outreach Claw | Mock outbound / CRM UI |
 | Arbitrage Claw | `/my-shop` | Arbitrage Claw | Mock margin / fulfillment UI |
-| Signal Claw | `/optimus` | Signal Claw | Demo signal canvas |
+| Signal Claw | `/optimus` | Signal Claw | Humanoid Home Hub preview · Neural Link horizon (glance, VR, fleet) |
 | Swarm Claw | `/robotaxi` | Swarm Claw | Mock swarm grid |
 | Engage Claw | `/claw-cafe` | Engage Claw | Vision grid (live when mesh feeds) |
 | Vital Claw | `/my-vital` | Vital Claw | Longevity desk + user-configured wearables OAuth |

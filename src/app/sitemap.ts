@@ -7,6 +7,7 @@ const staticRoutes = [
   "/outreach",
   "/capital",
   "/creator",
+  "/signal",
   "/pricing",
   "/architecture",
   "/changelog",

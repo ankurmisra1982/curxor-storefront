@@ -29,6 +29,7 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 | **Spec matrix** | Compute / Network / Claw Engine columns |
 | **App ecosystem** | 10 Claws from `appliance-sync.ts` · mobile carousel |
 | **Trust pages** | `/privacy`, `/terms`, `/architecture`, `/changelog`, `/press`, `/pricing` |
+| **Claw landings** | `/capital`, `/creator`, `/outreach`, `/signal` (Neural Link horizon visual) |
 | **Unified comms copy** | FAQ + spec matrix — Telegram, Slack, WhatsApp, iMessage; wearables user-configured |
 | **Stripe CTA** | `NEXT_PUBLIC_STRIPE_CHECKOUT_URL` Payment Link |
 | **Email API** | `POST /api/subscribe` → Resend segment + welcome mail |

@@ -31,4 +31,50 @@
   .text-glow-purple {
     text-shadow: 0 0 20px rgba(191, 90, 242, 0.6);
   }
+
+  .signal-drift {
+    animation: signal-drift linear infinite;
+  }
+
+  .signal-pulse-purple {
+    animation: signal-pulse 2.4s ease-in-out infinite;
+  }
+
+  .signal-pulse-amber {
+    animation: signal-pulse 2.4s ease-in-out infinite 1.2s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .signal-drift,
+    .signal-pulse-purple,
+    .signal-pulse-amber {
+      animation: none;
+    }
+  }
+}
+
+@keyframes signal-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(6px, -8px) rotate(2deg);
+  }
+  50% {
+    transform: translate(-4px, 4px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(8px, 2px) rotate(1deg);
+  }
+}
+
+@keyframes signal-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
 }

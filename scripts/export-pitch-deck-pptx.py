@@ -213,8 +213,8 @@ THE ROSTER
 • Creator Claw — content pipeline, X bridge on eno2
 • Outreach Claw — outbound sequences, CRM-style desk
 • Arbitrage Claw — margin watch, fulfillment ops
-• Signal Claw — feed triggers, alert thresholds
-• Swarm Claw — parallel Claw orchestration
+• Signal Claw — The Neural Link: humanoid preview; device hub for glance, VR, robot, home, fleet
+• Swarm Claw — robotaxi fleet preview from sovereign metal
 • Engage Claw — community and DM engagement demos
 • Vital Claw — wearables, labs, longevity protocol
 • Kin Claw — household profiles, devices, personalities

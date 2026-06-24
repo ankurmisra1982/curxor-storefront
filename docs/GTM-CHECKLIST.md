@@ -30,6 +30,8 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [x] Homepage reorder (demo → personas → compare first)
 - [x] `/creator` landing page + Flight Command demo screenshots
 - [x] `/capital` + `/outreach` Claw landing pages
+- [x] `/signal` — Signal Claw · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
+- [ ] **Next Interface film** (Program GTM-FILM) — FILM1 desk loop at G2 · full reveal FILM3 at G4 · see `../curxor-os/docs/curxor-os/FUTURE-ROADMAP.md`
 
 ## Before marketing (one-time ops)
 

@@ -18,7 +18,11 @@ export const metadata: Metadata = {
   title: siteConfig.pageTitle,
   description: siteConfig.metaDescription,
   keywords: [...siteConfig.keywords],
-  icons: { icon: "/favicon.svg" },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/brand/curxor-mark-512.png",
+  },
   alternates: {
     canonical: "/",
   },

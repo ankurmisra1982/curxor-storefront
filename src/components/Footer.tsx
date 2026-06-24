@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CurXorLogo } from "@/components/brand/CurXorLogo";
 import { SocialLinks } from "@/components/SocialLinks";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { footerLinks } from "@/lib/legal";
@@ -33,9 +34,12 @@ export function Footer() {
             />
 
             <div className="text-right">
-              <p className="text-2xl font-bold tracking-tight text-white/90">
-                126 TOPS. $0 API. Infinite Claws.
-              </p>
+              <div className="flex flex-col items-start md:items-end">
+                <CurXorLogo variant="wordmark" className="h-6 opacity-90" />
+                <p className="mt-4 text-2xl font-bold tracking-tight text-white/90">
+                  126 TOPS. $0 API. Infinite Claws.
+                </p>
+              </div>
               <nav
                 aria-label="Legal and resources"
                 className="mt-6 flex flex-wrap justify-start gap-x-4 gap-y-2 md:justify-end"

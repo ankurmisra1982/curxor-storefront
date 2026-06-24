@@ -1,10 +1,11 @@
-import { faqItems, siteConfig, socialSameAs } from "@/lib/config";
+import { faqItems, productIdentity, siteConfig, socialSameAs } from "@/lib/config";
 
 export function JsonLd() {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "CurXor Edge Nexus",
+    name: productIdentity.boxName,
+    alternateName: ["CurXor", productIdentity.boxDescriptor],
     description: siteConfig.metaDescription,
     brand: {
       "@type": "Brand",

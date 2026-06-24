@@ -9,13 +9,15 @@ export const contentType = "image/png";
 export const runtime = "nodejs";
 
 export default async function Image() {
-  const [fontRegular, fontBold, screenshot] = await Promise.all([
+  const [fontRegular, fontBold, screenshot, lockupSvg] = await Promise.all([
     loadGoogleFont("JetBrains+Mono", 400),
     loadGoogleFont("JetBrains+Mono", 700),
     readFile(path.join(process.cwd(), "public/demo/01-home.png")),
+    readFile(path.join(process.cwd(), "public/brand/curxor-lockup.svg")),
   ]);
 
   const screenshotSrc = `data:image/png;base64,${screenshot.toString("base64")}`;
+  const lockupSrc = `data:image/svg+xml;base64,${lockupSvg.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -41,26 +43,9 @@ export default async function Image() {
             padding: "48px 56px",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <div
-              style={{
-                width: 12,
-                height: 12,
-                borderRadius: 999,
-                backgroundColor: "#BF5AF2",
-                boxShadow: "0 0 18px rgba(191,90,242,0.9)",
-              }}
-            />
-            <div
-              style={{
-                display: "flex",
-                fontSize: 20,
-                letterSpacing: "0.35em",
-                fontWeight: 700,
-              }}
-            >
-              CURXOR
-            </div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element -- Satori OG renderer requires img */}
+            <img src={lockupSrc} alt="" width={300} height={86} />
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>

@@ -1,4 +1,12 @@
-const PIXEL_TILES = [
+type PixelTile = {
+  label: string;
+  color: string;
+  active: boolean;
+  featured?: boolean;
+  player?: boolean;
+};
+
+const PIXEL_TILES: PixelTile[] = [
   { label: "CAP", color: "border-emerald-400/40 bg-emerald-500/10", active: true },
   { label: "CRE", color: "border-neon-purple/40 bg-neon-purple/10", active: true },
   { label: "OUT", color: "border-sky-400/40 bg-sky-500/10", active: false },
@@ -8,7 +16,7 @@ const PIXEL_TILES = [
   { label: "VIT", color: "border-rose-400/30 bg-rose-500/10", active: false },
   { label: "KIN", color: "border-violet-400/30 bg-violet-500/10", active: false },
   { label: "YOU", color: "border-cyan-400/50 bg-cyan-500/15", active: true, player: true },
-] as const;
+];
 
 const ASCENSION_EVENTS = [
   { claw: "Capital", event: "Rule fired · +120 XP", time: "2m" },

@@ -3,7 +3,7 @@
 export const changelogMeta = {
   version: "0.9.1" as const,
   channel: "stable" as const,
-  syncedAt: "2026-06-24T02:53:50.219Z" as const,
+  syncedAt: "2026-06-24T07:22:42.627Z" as const,
 } as const;
 
 export const changelogEntries = [

@@ -1,20 +1,31 @@
 import Link from "next/link";
 
+import { CurXorLogo } from "@/components/brand/CurXorLogo";
+import { productIdentity } from "@/lib/config";
+
 type ValidationBadgeProps = {
   className?: string;
   compact?: boolean;
 };
 
-/** Pre-hardware badge — honest, not loud. */
+const BADGE_SRC = "/brand/curxor-hardware-badge.svg";
+
+/** curXor chassis badge — the box name, not just a logo mark. */
 export function ValidationBadge({ className = "", compact = false }: ValidationBadgeProps) {
   if (compact) {
     return (
       <Link
         href="/architecture#validation"
-        className={`inline-flex items-center gap-2 border border-white/15 bg-white/[0.02] px-2.5 py-1 text-[9px] tracking-[0.15em] text-white/45 transition-colors hover:border-neon-purple/40 hover:text-neon-purple/80 ${className}`}
+        className={`inline-flex items-center border border-white/15 bg-black/80 px-2 py-1 transition-colors hover:border-neon-purple/40 ${className}`}
+        aria-label={`${productIdentity.boxName} — MS-S1 MAX validation in progress`}
       >
-        <span className="h-1 w-1 rounded-full bg-amber-400/80" />
-        MS-S1 MAX · VALIDATION IN PROGRESS
+        {/* eslint-disable-next-line @next/next/no-img-element -- synced chassis badge SVG */}
+        <img
+          src={BADGE_SRC}
+          alt={`${productIdentity.boxName} — name on the box`}
+          className="h-4 w-auto"
+          decoding="async"
+        />
       </Link>
     );
   }
@@ -23,19 +34,28 @@ export function ValidationBadge({ className = "", compact = false }: ValidationB
     <Link
       href="/architecture#validation"
       className={`group block border border-white/10 bg-black/50 p-5 transition-colors hover:border-neon-purple/30 ${className}`}
+      aria-label={`${productIdentity.boxName} — MS-S1 MAX validation in progress`}
     >
-      <div className="flex items-start gap-3">
-        <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-amber-400/90 shadow-[0_0_8px_rgba(251,191,36,0.35)]" />
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+        {/* eslint-disable-next-line @next/next/no-img-element -- synced chassis badge SVG */}
+        <img
+          src={BADGE_SRC}
+          alt={`${productIdentity.boxName} — name on the chassis`}
+          className="h-8 w-auto shrink-0"
+          decoding="async"
+        />
         <div>
-          <p className="text-[10px] tracking-[0.25em] text-white/40">
-            HARDWARE VALIDATION
-          </p>
-          <p className="mt-1 text-sm font-bold text-white/85">
-            Built for MINISFORUM MS-S1 MAX class
+          <p className="text-[10px] tracking-[0.25em] text-white/40">THE BOX</p>
+          <div className="mt-2 flex items-center gap-3">
+            <CurXorLogo variant="wordmark" className="h-5 opacity-95" />
+          </div>
+          <p className="mt-2 text-sm font-bold text-white/85">
+            {productIdentity.chassisNote}
           </p>
           <p className="mt-2 text-xs leading-relaxed text-white/45 group-hover:text-white/55">
-            ROCm, UMA, and mesh benchmarks run when production silicon lands.
-            We publish validated numbers — not marketing guesses.
+            Built for MINISFORUM MS-S1 MAX class silicon. ROCm, UMA, and mesh
+            benchmarks run when production units land — we publish validated
+            numbers, not marketing guesses.
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@ export const siteConfig = {
   siteUrl: "https://curxor.ai",
   pageTitle: "CurXor — 126 TOPS · 64GB UMA AI Powerhouse | $0/mo API",
   metaDescription:
-    "Sovereign AI hardware with 126 TOPS NPU and 64GB unified memory. Run local LLM agents on bare metal — $3,999 once, zero monthly API fees.",
+    "curXor — sovereign 64GB AI box with 126 TOPS NPU. Mint autonomous employees on bare metal — $3,999 once, zero monthly API fees.",
   keywords: [
     "sovereign AI hardware",
     "local LLM appliance",
@@ -18,7 +18,7 @@ export const siteConfig = {
   viralHook: "ChatGPT bills per token. CurXor bills once.",
   heroHeadline: "Mint autonomous employees on bare metal.",
   heroSubhead:
-    "Stop paying monthly API fees. Run Capital, Creator, and Outreach Claws on sovereign hardware — $3,999 once · $0/mo CurXor API.",
+    "Stop paying monthly API fees. Run Capital, Creator, and Outreach Claws on a curXor box — $3,999 once · $0/mo CurXor API.",
   computeHook:
     "126 TOPS NPU · 64GB unified memory · outpaces most cloud API tiers.",
   tagline:
@@ -38,6 +38,15 @@ export const siteConfig = {
   /** Public contact — hello@curxor.ai (Resend domain verified on curxor.ai). */
   contactEmail: "hello@curxor.ai",
 };
+
+/** curXor is the chassis name — same wordmark as the MS-S1 badge / logo lockup. */
+export const productIdentity = {
+  boxName: "curXor",
+  boxDescriptor: "64GB sovereign appliance",
+  companyName: "CurXor Systems",
+  osName: "CurXor OS",
+  chassisNote: "Name on the box — badge ships on production MS-S1 units",
+} as const;
 
 export const socialProfiles = [
   {
@@ -210,7 +219,7 @@ export const shareLines = [
 export const faqItems = [
   {
     question: "What is CurXor?",
-    answer: `CurXor is a sovereign 64GB AI compute appliance with 126 TOPS NPU. It runs CurXor OS — ${clawRosterLabel}. Enable the Claws you want, chat in plain language, and scale 24/7 with local inference by default.`,
+    answer: `curXor is the sovereign AI box — 64GB compute with 126 TOPS NPU on your desk. CurXor Systems builds the hardware and CurXor OS: ${clawRosterLabel}. Enable the Claws you want, chat in plain language, and scale 24/7 with local inference by default.`,
   },
   {
     question: "How is CurXor different from a Mac Studio plus Ollama?",
@@ -219,7 +228,7 @@ export const faqItems = [
   },
   {
     question: "What is included for $3,999?",
-    answer: `The CurXor Edge Nexus appliance, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, optional messaging gateways (Telegram, Slack, WhatsApp, iMessage), local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.`,
+    answer: `The curXor box, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, optional messaging gateways (Telegram, Slack, WhatsApp, iMessage), local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.`,
   },
   {
     question: "Do I need to code to use CurXor?",
@@ -383,7 +392,7 @@ export const comparisonOptions = [
   },
   {
     id: "curxor",
-    label: "CURXOR NEXUS",
+    label: "curXor",
     price: "$3,999 once",
     highlights: [
       "126 TOPS · 64GB UMA included",

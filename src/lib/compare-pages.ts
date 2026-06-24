@@ -1,4 +1,4 @@
-import { clawRosterLabel, siteConfig } from "@/lib/config";
+import { clawRosterLabel, productIdentity, siteConfig } from "@/lib/config";
 
 export type CompareRow = {
   label: string;
@@ -25,7 +25,7 @@ export const comparePages: ComparePage[] = [
     slug: "clawbox",
     title: "CurXor vs ClawBox",
     metaDescription:
-      "Compare CurXor Edge Nexus (64GB UMA, 126 TOPS, ten Claws) with ClawBox (€549 Jetson assistant, 8GB, messaging bots).",
+      `Compare ${productIdentity.boxName} (64GB UMA, 126 TOPS, ten Claws) with ClawBox (€549 Jetson assistant, 8GB, messaging bots).`,
     eyebrow: "COMPARE · LIGHT ASSISTANT",
     headline: "ClawBox is a desk assistant. CurXor is an employee appliance.",
     lead: "ClawBox (~€549) is an excellent always-on OpenClaw box for Telegram, WhatsApp, and light automations. CurXor targets a different buyer: 64GB local inference, wealth/work/life Claws, and dual-port egress control.",
@@ -61,7 +61,7 @@ export const comparePages: ComparePage[] = [
     whoShouldBuyCurxor:
       "Choose CurXor if you want turnkey Claws, 64GB local models, eno2 egress isolation, and zero CurXor subscription fees.",
     rows: [
-      { label: "Hardware", them: "Your Mac / Mac mini (~$499+)", curxor: "CurXor Edge Nexus included" },
+      { label: "Hardware", them: "Your Mac / Mac mini (~$499+)", curxor: `${productIdentity.boxName} included` },
       { label: "Subscription", them: "$20/mo Pro · $200/mo Max tier", curxor: "$0/mo CurXor fees" },
       { label: "Inference default", them: "Cloud-orchestrated frontier models", curxor: "Local LLM on 64GB UMA" },
       { label: "Wealth / trading", them: "General automation", curxor: "Capital Claw · Alpaca bridge on eno2" },

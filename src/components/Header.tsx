@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { CurXorLogo } from "@/components/brand/CurXorLogo";
 import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 
 const navLinks = [
@@ -23,10 +24,8 @@ export function Header() {
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="group flex items-center gap-3">
-          <span className="inline-block h-2 w-2 bg-neon-purple shadow-[0_0_8px_#BF5AF2]" />
-          <span className="text-sm font-bold tracking-[0.3em] text-white">
-            CURXOR
-          </span>
+          <CurXorLogo variant="mark" className="h-7 w-7 sm:hidden" />
+          <CurXorLogo variant="lockup" className="hidden h-7 sm:block" />
         </Link>
 
         <nav className="hidden items-center gap-5 text-xs tracking-widest text-white/60 xl:flex">

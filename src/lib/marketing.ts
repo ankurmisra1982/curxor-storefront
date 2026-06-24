@@ -1,6 +1,7 @@
 import {
   applianceVersion,
   clawRosterLabel,
+  productIdentity,
   siteConfig,
 } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
@@ -43,7 +44,7 @@ export const priceIncludes = {
     "MS-S1 MAX class silicon is the engine. CurXor ships the crew — OS, Claws, comms, and OTA on day one.",
   items: [
     {
-      title: "64GB UMA appliance",
+      title: `${productIdentity.boxName} · 64GB UMA`,
       body: "AMD Ryzen AI Max+ 395 · 126 TOPS NPU · dual 10GbE · eno1 Command · eno2 Egress kill switch",
     },
     {
@@ -112,7 +113,7 @@ export const homepageCostHook = {
     note: "Per-token billing · data leaves your network",
   },
   curxor: {
-    label: "CurXor Edge Nexus",
+    label: productIdentity.boxName,
     upfront: "$3,999 once",
     monthly: "$0/mo CurXor fees",
     note: "Optional BYOK only",
@@ -143,7 +144,7 @@ export const tcoScenarios = {
     },
     {
       id: "curxor",
-      label: "CurXor Edge Nexus",
+      label: productIdentity.boxName,
       upfront: "$3,999",
       monthly: "$0 CurXor fees",
       fourYear: "~$3,999",

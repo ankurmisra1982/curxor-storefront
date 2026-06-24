@@ -1,5 +1,7 @@
 "use client";
 
+import { CurXorLogo } from "@/components/brand/CurXorLogo";
+import { productIdentity } from "@/lib/config";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { ContactShadows, OrbitControls } from "@react-three/drei";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -130,9 +132,12 @@ function HardwareSceneFallback() {
   return (
     <div className="relative flex min-h-[320px] flex-col items-center justify-center gap-4 sm:min-h-[420px]">
       <p className="text-3xl font-bold text-neon-purple">126 TOPS</p>
-      <p className="text-[10px] tracking-[0.3em] text-white/30">
-        CURXOR NEXUS // 64GB UMA
-      </p>
+      <div className="flex flex-col items-center gap-2">
+        <CurXorLogo variant="wordmark" className="h-6 opacity-90" />
+        <p className="text-[10px] tracking-[0.3em] text-white/30">
+          {productIdentity.boxDescriptor.toUpperCase()}
+        </p>
+      </div>
     </div>
   );
 }
@@ -166,7 +171,7 @@ export function HardwareScene() {
 
       <div className="relative flex h-full min-h-[320px] flex-col border-industrial bg-black sm:min-h-[420px]">
         <div className="flex items-center justify-between border-b border-white/10 px-4 py-2 text-[10px] tracking-widest text-white/40">
-          <span>RENDER // CURXOR-NEXUS-V1</span>
+          <span>RENDER // {productIdentity.boxName.toUpperCase()}-V1</span>
           <span className="text-neon-purple">● LIVE</span>
         </div>
 

@@ -4,7 +4,8 @@
 
 ## Product
 
-- Name: CurXor Edge Nexus
+- Name: curXor (chassis name on every box)
+- Company: CurXor Systems
 - Price: $3,999 USD (one-time pre-order, no monthly API fees)
 - Primary CTA: Join waitlist at https://curxor.ai/#subscribe
 - Homepage story: Act I (Flagship + Forge) · Meet the Operators (X-ready share lines) · Act II horizon tease + Cafe proof

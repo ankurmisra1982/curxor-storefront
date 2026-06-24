@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" fill="none" role="img" aria-label="CurXor mark">
+  <title>CurXor mark</title>
+  <g transform="translate(65, 65)">
+                      <g transform="scale(1.2)">
+                          <rect x="-22" y="-22" width="44" height="44" rx="8" transform="rotate(45) translate(8, 8)" fill="#BF5AF2"/>
+                          <rect x="-22" y="-22" width="44" height="44" rx="8" transform="rotate(45)" fill="#FFFFFF"/>
+                      </g>
+                  </g>
+</svg>

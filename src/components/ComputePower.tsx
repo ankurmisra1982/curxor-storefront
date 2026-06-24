@@ -1,4 +1,5 @@
 import { computePower, siteConfig } from "@/lib/config";
+import { CurXorLogo } from "@/components/brand/CurXorLogo";
 
 export function ComputePower() {
   return (
@@ -51,9 +52,9 @@ export function ComputePower() {
               <p className="mb-6 text-sm text-white/40 line-through decoration-white/20">
                 {row.cloud}
               </p>
-              <p className="mb-2 text-[10px] tracking-[0.25em] text-neon-purple">
-                CURXOR NEXUS
-              </p>
+              <div className="mb-2 flex items-center">
+                <CurXorLogo variant="wordmark" className="h-5" />
+              </div>
               <p className="text-sm font-bold text-white/90">{row.curxor}</p>
             </div>
           ))}

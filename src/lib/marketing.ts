@@ -100,32 +100,6 @@ export const personaCards = [
   },
 ] as const;
 
-/** Homepage: one tight cloud-rent vs buy-once hook — no multi-row TCO grid. */
-export const homepageCostHook = {
-  eyebrow: "CLOUD RENT VS OWN THE BOX",
-  headline: "Breakeven in ~8 months",
-  subhead:
-    "Heavy cloud API spend compounds every month. CurXor is a one-time capital expense on your metal.",
-  cloud: {
-    label: "Cloud API stack",
-    monthly: "$500+/mo",
-    fourYear: "~$24,000+ over 4 years",
-    note: "Per-token billing · data leaves your network",
-  },
-  curxor: {
-    label: productIdentity.boxName,
-    upfront: "$3,999 once",
-    monthly: "$0/mo CurXor fees",
-    note: "Optional BYOK only",
-  },
-  breakeven: {
-    math: "$3,999 ÷ $500/mo ≈ 8 months",
-    detail: "Illustrative — your API burn varies by workload",
-  },
-  honesty:
-    "Estimates for planning only. Power, tax, BYOK, and broker fees not included unless noted.",
-} as const;
-
 /** Full illustrative matrix for /compare and deep-dive pages — not homepage. */
 export const tcoScenarios = {
   headline: "Illustrative spend scenarios",

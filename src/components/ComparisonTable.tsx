@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import { InfoTip } from "@/components/InfoTip";
 import { comparisonOptions } from "@/lib/config";
-import { homepageCostHook } from "@/lib/marketing";
 
 const homepageCompetitorIds = ["cloud", "perplexity", "diy"] as const;
 
@@ -39,7 +38,7 @@ export function ComparisonTable() {
             </h2>
           </div>
           <p className="max-w-sm text-xs text-white/40">
-            Pay once. Own the silicon. Keep your playbook on metal.
+            Rent inference forever — or own it once on your desk.
           </p>
         </div>
 
@@ -61,6 +60,9 @@ export function ComparisonTable() {
               <p className="mt-2 text-3xl font-bold text-neon-purple">
                 {curxor.price}
               </p>
+              <p className="mt-1 text-xs text-white/50">
+                $0/mo CurXor API · optional BYOK only
+              </p>
             </div>
             <ul className="grid flex-1 gap-3 sm:grid-cols-2">
               {curxor.highlights.map((highlight) => (
@@ -74,59 +76,6 @@ export function ComparisonTable() {
               ))}
             </ul>
           </div>
-        </div>
-
-        <div className="mt-10 border border-white/10 bg-black p-6 sm:p-8">
-          <p className="text-[10px] tracking-[0.25em] text-neon-purple">
-            {homepageCostHook.eyebrow}
-          </p>
-          <h3 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
-            {homepageCostHook.headline}
-          </h3>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/50">
-            {homepageCostHook.subhead}
-          </p>
-
-          <div className="mt-8 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2">
-            <div className="bg-black p-5">
-              <p className="text-[10px] tracking-widest text-white/35">
-                {homepageCostHook.cloud.label}
-              </p>
-              <p className="mt-2 text-xl font-bold text-white/70">
-                {homepageCostHook.cloud.monthly}
-              </p>
-              <p className="mt-1 text-xs text-white/45">
-                {homepageCostHook.cloud.fourYear}
-              </p>
-              <p className="mt-2 text-[10px] text-white/35">
-                {homepageCostHook.cloud.note}
-              </p>
-            </div>
-            <div className="bg-black p-5 ring-1 ring-inset ring-neon-purple/30">
-              <p className="text-[10px] tracking-widest text-neon-purple/80">
-                {homepageCostHook.curxor.label}
-              </p>
-              <p className="mt-2 text-xl font-bold text-neon-purple">
-                {homepageCostHook.curxor.upfront}
-              </p>
-              <p className="mt-1 text-xs text-white/55">
-                {homepageCostHook.curxor.monthly} · {homepageCostHook.curxor.note}
-              </p>
-            </div>
-          </div>
-
-          <p className="mt-6 text-sm text-white/60">
-            <span className="font-bold text-white/80">
-              {homepageCostHook.breakeven.math}
-            </span>
-            <span className="text-white/40">
-              {" "}
-              — {homepageCostHook.breakeven.detail}
-            </span>
-          </p>
-          <p className="mt-3 text-[10px] leading-relaxed text-white/30">
-            {homepageCostHook.honesty}
-          </p>
         </div>
 
         <div className="mt-8 flex flex-wrap items-center gap-4">

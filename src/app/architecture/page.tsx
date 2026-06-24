@@ -85,7 +85,7 @@ export default function ArchitecturePage() {
         </div>
 
         <div className="mt-16">
-          <h2 className="mb-2 text-xs font-bold tracking-[0.3em] text-neon-purple">
+          <h2 id="claw-tiers" className="mb-2 scroll-mt-24 text-xs font-bold tracking-[0.3em] text-neon-purple">
             CLAW DEPTH TIERS
           </h2>
           <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">

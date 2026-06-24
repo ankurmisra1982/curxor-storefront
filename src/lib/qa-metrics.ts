@@ -1,6 +1,6 @@
 /** Matches curxor-os qa-smoke.mjs + qa-user-flows.mjs — update when suites grow. */
 export const qaMetrics = {
-  smokeChecks: 181,
+  smokeChecks: 180,
   userFlowChecks: 40,
 } as const;
 

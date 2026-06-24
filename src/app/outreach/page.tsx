@@ -4,8 +4,9 @@ import Link from "next/link";
 
 import { ClawDemoHero } from "@/components/ClawDemoHero";
 import { OperatorQuote } from "@/components/OperatorQuote";
+import { ShareOnX } from "@/components/ShareOnX";
 import { SiteShell } from "@/components/SiteShell";
-import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
+import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { getOperator } from "@/lib/claw-operators";
 import { applianceVersion, siteConfig } from "@/lib/config";
 import {
@@ -46,19 +47,13 @@ export default function OutreachPage() {
           {outreachPageMeta.oneLiner}
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
-          <TrackedPreorderLink
-            location="persona"
-            className="inline-flex bg-neon-purple px-6 py-4 text-xs font-bold tracking-[0.2em] text-black"
-          >
-            PRE-ORDER {siteConfig.preOrderPrice}
-          </TrackedPreorderLink>
-          <Link
-            href="/compare/miky"
-            className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 hover:text-neon-purple"
-          >
-            VS MIKY →
-          </Link>
+        <div className="mt-8 space-y-4">
+          <SubscribeFirstCtas
+            preorderLocation="persona"
+            secondaryHref="/compare/miky"
+            secondaryLabel="vs MIKY"
+          />
+          {cleo ? <ShareOnX text={cleo.shareLine} label="CLEO ON X" /> : null}
         </div>
 
         {cleo ? (

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { SiteShell } from "@/components/SiteShell";
+import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { TcoSection } from "@/components/TcoSection";
 import { comparePages } from "@/lib/compare-pages";
 import { siteConfig } from "@/lib/config";
@@ -25,8 +26,16 @@ export default function CompareHubPage() {
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
           Honest comparisons against the alternatives buyers actually evaluate —
           light assistants, cloud orchestration, independent computers, DIY
-          inference, and governance stacks.
+          inference, and governance stacks. Pair with{" "}
+          <Link href="/#operators" className="text-neon-purple hover:underline">
+            operator stories
+          </Link>{" "}
+          for X and outreach threads.
         </p>
+
+        <div className="mt-8">
+          <SubscribeFirstCtas preorderLocation="compare" secondaryHref="/#demo" secondaryLabel="See Flight Command" />
+        </div>
 
         <ul className="mt-12 space-y-4">
           {comparePages.map((page) => (

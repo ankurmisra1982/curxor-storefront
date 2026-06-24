@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
+import { ShareOnX } from "@/components/ShareOnX";
+import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import type { ComparePage } from "@/lib/compare-pages";
 import { comparePages } from "@/lib/compare-pages";
 import { siteConfig } from "@/lib/config";
@@ -18,19 +19,16 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
         {page.lead}
       </p>
 
-      <div className="mt-8 flex flex-wrap gap-4">
-        <TrackedPreorderLink
-          location="compare"
-          className="inline-flex bg-neon-purple px-6 py-4 text-xs font-bold tracking-[0.2em] text-black"
-        >
-          PRE-ORDER {siteConfig.preOrderPrice}
-        </TrackedPreorderLink>
-        <Link
-          href="/#demo"
-          className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 hover:text-neon-purple"
-        >
-          SEE FLIGHT COMMAND
-        </Link>
+      <div className="mt-8 space-y-4">
+        <SubscribeFirstCtas
+          preorderLocation="compare"
+          secondaryHref="/#operators"
+          secondaryLabel="Meet operators"
+        />
+        <ShareOnX
+          text={`${page.headline} — ${siteConfig.heroHeadline} ${siteConfig.siteUrl}`}
+          label="SHARE COMPARISON"
+        />
       </div>
 
       <p className="mt-10 text-sm leading-relaxed text-white/55">

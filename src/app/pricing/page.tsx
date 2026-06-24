@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ComputeLadder } from "@/components/ComputeLadder";
 import { InfoTip } from "@/components/InfoTip";
 import { SiteShell } from "@/components/SiteShell";
-import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
+import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { pricingModels, pricingTiers } from "@/lib/generated/pricing-sync";
 import { siteConfig } from "@/lib/config";
 
@@ -38,19 +38,12 @@ export default function PricingPage() {
           64 GB system.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
-          <TrackedPreorderLink
-            location="hero"
-            className="inline-flex items-center gap-2 bg-neon-purple px-6 py-4 text-xs font-bold tracking-[0.2em] text-black"
-          >
-            PRE-ORDER {siteConfig.preOrderPrice}
-          </TrackedPreorderLink>
-          <Link
-            href="/#demo"
-            className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 hover:border-neon-purple/50 hover:text-neon-purple"
-          >
-            SEE FLIGHT COMMAND
-          </Link>
+        <div className="mt-8">
+          <SubscribeFirstCtas
+            preorderLocation="pricing"
+            secondaryHref="/#demo"
+            secondaryLabel="See Flight Command"
+          />
         </div>
 
         <ComputeLadder />

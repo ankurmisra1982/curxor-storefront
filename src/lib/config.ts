@@ -35,8 +35,8 @@ export const siteConfig = {
   twitterUrl: "https://x.com/curxorai",
   twitterHandle: "@curxorai",
   emailEndpoint: "/api/subscribe",
-  /** Pre-marketing inbox — revert to hello@curxor.ai at GTM (see docs/GTM-CHECKLIST.md). */
-  contactEmail: "curxorsystems@gmail.com",
+  /** Public contact — hello@curxor.ai (Resend domain verified on curxor.ai). */
+  contactEmail: "hello@curxor.ai",
 };
 
 export const socialProfiles = [

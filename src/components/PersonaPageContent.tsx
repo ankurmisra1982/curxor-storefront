@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { OperatorQuote } from "@/components/OperatorQuote";
-import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
+import { ShareOnX } from "@/components/ShareOnX";
+import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { getOperatorByPersonaSlug } from "@/lib/claw-operators";
-import { siteConfig } from "@/lib/config";
 import type { PersonaPage } from "@/lib/persona-pages";
 
 export function PersonaPageContent({ page }: { page: PersonaPage }) {
@@ -23,33 +23,18 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
       </p>
 
       {operator ? (
-        <div className="mt-8">
+        <div className="mt-8 space-y-4">
           <OperatorQuote operator={operator} />
+          <ShareOnX text={operator.shareLine} label="PASTE FOR X" />
         </div>
       ) : null}
 
-      <div className="mt-8 flex flex-wrap gap-4">
-        <TrackedPreorderLink
-          location="persona"
-          className="inline-flex bg-neon-purple px-6 py-4 text-xs font-bold tracking-[0.2em] text-black"
-        >
-          PRE-ORDER {siteConfig.preOrderPrice}
-        </TrackedPreorderLink>
-        {operator ? (
-          <Link
-            href={operator.tourHref}
-            className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 hover:text-neon-purple"
-          >
-            {operator.claw.split(" ")[0].toUpperCase()} TOUR →
-          </Link>
-        ) : (
-          <Link
-            href="/#operators"
-            className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 hover:text-neon-purple"
-          >
-            MEET OPERATORS
-          </Link>
-        )}
+      <div className="mt-8">
+        <SubscribeFirstCtas
+          preorderLocation="persona"
+          secondaryHref={operator?.tourHref ?? "/#operators"}
+          secondaryLabel={operator ? `${operator.claw.split(" ")[0]} tour` : "Meet operators"}
+        />
       </div>
 
       <div className="mt-12 overflow-hidden border border-white/10">

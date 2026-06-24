@@ -70,9 +70,9 @@ export const clawOperators: ClawOperator[] = [
 
 export const operatorsSection = {
   eyebrow: "MEET YOUR OPERATORS",
-  headline: "Digital employees with names.",
+  headline: "Digital employees with names — built for X threads and operator DMs.",
   subhead:
-    "Claws on your metal — demo tour day one. Pull eno2 when you need the kill switch.",
+    "Three composite stories for pre-marketing outreach. Each maps to a Flagship desk, a persona page, and a paste-ready share line. Pull eno2 when you need the kill switch.",
 } as const;
 
 export function getOperator(id: ClawOperator["id"]): ClawOperator | undefined {

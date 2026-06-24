@@ -5,12 +5,14 @@ import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { HorizonSection } from "@/components/HorizonSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { MeetTheOperators } from "@/components/MeetTheOperators";
 import { MobileStickyCta } from "@/components/MobileStickyCta";
 import { PricingPreview } from "@/components/PricingPreview";
 import { ScreenshotGallery } from "@/components/ScreenshotGallery";
 import { TrustStrip } from "@/components/TrustStrip";
+import { WhatYouBuySection } from "@/components/WhatYouBuySection";
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustStrip />
+      <WhatYouBuySection />
       <MeetTheOperators />
       <HowItWorks />
+      <HorizonSection />
       <ScreenshotGallery />
       <ComparisonTable />
       <AppEcosystem variant="featured" />

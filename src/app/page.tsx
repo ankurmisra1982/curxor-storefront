@@ -22,10 +22,10 @@ export default function Home() {
       <Hero />
       <TrustStrip />
       <WhatYouBuySection />
-      <MeetTheOperators />
       <HowItWorks />
-      <HorizonSection />
       <ScreenshotGallery />
+      <MeetTheOperators />
+      <HorizonSection />
       <ComparisonTable />
       <AppEcosystem variant="featured" />
       <PricingPreview />

@@ -13,7 +13,7 @@ const DRIFT_DEVICES = [
 
 function DeviceSilhouette({ id }: { id: (typeof DRIFT_DEVICES)[number]["id"] }) {
   const stroke = "currentColor";
-  const common = { fill: "none", stroke, strokeWidth: 1.2, opacity: 0.55 };
+  const common = { fill: "none", stroke, strokeWidth: 1.2, opacity: 0.9 };
 
   switch (id) {
     case "pin":
@@ -79,7 +79,7 @@ export function SignalHorizonVisual() {
           {DRIFT_DEVICES.map((device) => (
             <div
               key={device.id}
-              className="signal-drift absolute text-white/25 motion-reduce:opacity-40"
+              className="signal-drift absolute text-white/55 motion-reduce:opacity-70 sm:text-white/60"
               style={{
                 left: device.x,
                 top: device.y,
@@ -90,16 +90,16 @@ export function SignalHorizonVisual() {
               <svg viewBox="0 0 40 36" className="h-10 w-10 sm:h-12 sm:w-12" aria-hidden>
                 <DeviceSilhouette id={device.id} />
               </svg>
-              <span className="mt-1 block text-center text-[7px] tracking-[0.25em] text-white/20">
+              <span className="mt-1 block text-center text-[7px] tracking-[0.25em] text-white/50">
                 {device.label}
               </span>
             </div>
           ))}
         </div>
 
-        {/* Void question — legible on dark grid; still secondary to desk orchestrator below */}
+        {/* Void question */}
         <div className="pointer-events-none absolute left-0 right-0 top-[38%] text-center">
-          <p className="text-[9px] font-medium tracking-[0.35em] text-white/55 sm:text-[10px] sm:text-white/60 [text-shadow:0_0_20px_rgba(0,0,0,0.85)]">
+          <p className="text-[9px] tracking-[0.35em] text-white/20 sm:text-[10px]">
             WHAT IS THE NEXT INTERFACE?
           </p>
         </div>

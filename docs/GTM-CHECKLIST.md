@@ -4,7 +4,8 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 
 ## Done in **curxor storefront** ✅
 
-- [x] Landing page hero (*Mint AI Employees on Bare Metal.*)
+- [x] Wave 0–2 — subscribe-first sitewide, category hero (*Mint autonomous employees on bare metal*), Act I/II story arc, operator composites, trust strip
+- [x] Landing page hero (*Mint autonomous employees on bare metal.*)
 - [x] Spec sheet matrix (Compute / Network / Claw Engine)
 - [x] Ten Claw workspaces (9 verticals + The Forge) grouped by category + mobile carousel
 - [x] Day One hub section (Home / chat / stay local / Settings)
@@ -32,14 +33,15 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 
 ## Before marketing (one-time ops)
 
-- [ ] **Contact email (GTM phase)** — pre-marketing uses `curxorsystems@gmail.com` in `siteConfig.contactEmail`. At GTM launch, revert to **`hello@curxor.ai`**, confirm Resend domain + inbox routing, and update `llms.txt` Contact line.
-- [ ] **Resend on Vercel** — verify `curxor.ai` in Resend → create Segment → set `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `RESEND_FROM_EMAIL` on Vercel Production → redeploy → test `POST /api/subscribe` returns `{"ok":true}`
+- [x] **Contact email** — `hello@curxor.ai` in `siteConfig.contactEmail`; Resend domain verified on curxor.ai
+- [ ] **Resend on Vercel** — verify `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `RESEND_FROM_EMAIL` on Vercel Production if subscribe smoke test fails → redeploy → test `POST /api/subscribe` returns `{"ok":true}`
 
 ## Build next (this repo)
 
 - [x] Settings / user freedom copy (Claws toggle, optional frontier LLM, themes) — `src/lib/config.ts`
 - [x] Pricing / UMA tiers page (`/pricing`) — synced from `local-llm-catalog.ts`
 - [x] Demo screenshots in `public/demo/` (Home through Creator Claw + creator flows)
+- [x] Cafe captures in `public/demo/cafe/` (Wave A — dev Flight Command UI; not MS-S1 verified)
 - [x] Changelog auto-append on version bump (`sync:appliance` + `data/changelog-entries.json`)
 - [x] Pricing compute ladder on `/pricing`
 - [x] MIKY / agent NAS FAQ + comparison row
@@ -68,7 +70,7 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 | `../curxor-os/pillar-4-dashboard/lib/app-agent-catalog.ts` | `npm run sync:appliance` → taglines |
 | `../curxor-os/docs/guides/13-universal-ui-design.md` | Settings tab copy, FAQ frontier LLM answers |
 | `../curxor-os/pillar-4-dashboard/lib/local-llm-catalog.ts` | Future UMA tiers page |
-| `siteConfig.contactEmail` | Trust strip, press, privacy/terms, llms.txt — **GTM: revert to hello@curxor.ai** |
+| `siteConfig.contactEmail` | Trust strip, press, privacy/terms, llms.txt — **hello@curxor.ai** |
 
 ## Copy guardrails
 

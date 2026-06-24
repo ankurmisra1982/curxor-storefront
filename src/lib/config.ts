@@ -188,13 +188,13 @@ export const createToEarnSteps = [
   },
   {
     step: "03",
-    title: "Deploy 24/7",
-    body: "Your Claw hits the swarm instantly — trading, scraping, creating while you sleep.",
+    title: "Run on your schedule",
+    body: "Claws keep working on your appliance — rules, outreach, and drafts while you step away.",
   },
   {
     step: "04",
-    title: "ROI in 30 days",
-    body: "Five leads a week. Trades at 3am. The box pays for itself — then prints.",
+    title: "Compound on metal",
+    body: "Illustrative outcomes vary by desk and bridges — Capital rules, Creator publishes, Outreach sequences on your terms.",
   },
 ] as const;
 

@@ -1,12 +1,22 @@
 [
   {
+    "version": "0.9.1",
+    "date": "2026-06-23",
+    "channel": "stable",
+    "highlights": [
+      "Claw Cafe — ascension XP and pixel room react to real Capital, Creator, and Outreach activity on your appliance",
+      "Cross-Claw growth and level-up moments tied to Flagship desks — not a cloud leaderboard",
+      "Flagship desk and Cafe polish ahead of MS-S1 hardware validation"
+    ]
+  },
+  {
     "version": "0.9.0",
     "date": "2026-06-24",
     "channel": "stable",
     "highlights": [
-      "Build Plane BP3 — remote worker setup wizard at /api/build/worker with 6-step MS-S1 devbox guide",
-      "TCP SSH probe, host config, MCP/SSH tunnel copy commands, delegation queue schema scaffold",
-      "BuildPlaneWorkerWizard in Settings for phone-control path on eno1"
+      "Settings remote-worker setup — guided path for a second dev machine on your LAN",
+      "SSH connectivity checks and host configuration from Flight Command",
+      "Operator tooling polish ahead of MS-S1 hardware validation"
     ]
   },
   {
@@ -14,9 +24,9 @@
     "date": "2026-06-23",
     "channel": "stable",
     "highlights": [
-      "Build Plane BP2 — OS event bus with emitOsEvent() for forge.claw_minted, go_live.failed, ota.available, eno2.down",
-      "Signed outbound webhooks to Cursor Automations / n8n when Build Plane overlay enabled",
-      "GET/POST /api/build/events event log, OTA/eno2 poll, Go Live failure hooks across flagship desks"
+      "OS event bus — Forge mints, Go Live failures, OTA availability, and eno2 status surfaced in Flight Command",
+      "Outbound webhooks for operator automations when enabled in Settings",
+      "Go Live failure hooks across Capital, Creator, and Outreach desks"
     ]
   },
   {
@@ -24,9 +34,9 @@
     "date": "2026-06-23",
     "channel": "stable",
     "highlights": [
-      "Claw Cafe C10 — walk-state approval bubbles, approval= deep links into Capital/Work/Creator desks, tuned Cafe SSE/poll intervals",
-      "Build Plane BP1 — inbound MCP at /api/build/mcp with five read-only tools (build status, CCP summary, Cafe snapshot, Forge fleet, desk status)",
-      "Bridge read policy + network path tags for outbound MCP gating; Settings connect instructions in Build Plane panel"
+      "Claw Cafe C10 — walk-state approval bubbles with deep links into Capital, Work, and Creator desks",
+      "Cafe live updates tuned for smoother pixel room and ascension panel refresh",
+      "Settings connect instructions for remote operator workflows"
     ]
   },
   {

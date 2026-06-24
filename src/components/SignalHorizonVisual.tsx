@@ -97,9 +97,9 @@ export function SignalHorizonVisual() {
           ))}
         </div>
 
-        {/* Void question */}
+        {/* Void question — legible on dark grid; still secondary to desk orchestrator below */}
         <div className="pointer-events-none absolute left-0 right-0 top-[38%] text-center">
-          <p className="text-[9px] tracking-[0.35em] text-white/20 sm:text-[10px]">
+          <p className="text-[9px] font-medium tracking-[0.35em] text-white/55 sm:text-[10px] sm:text-white/60 [text-shadow:0_0_20px_rgba(0,0,0,0.85)]">
             WHAT IS THE NEXT INTERFACE?
           </p>
         </div>

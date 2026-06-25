@@ -86,3 +86,22 @@ Optional frontier LLMs (Settings → Intelligence, BYOK or OAuth): chat/planning
 **Agent runtime (v0.2):** OpenClaw-style workspace memory, skills, heartbeat daemon, and messaging gateways (Telegram, Slack, WhatsApp, iMessage). Dashboard chat and external channels share one router → CCP. Marketing line: *"Message your Claws from phone or desktop — every reply stays local, egress only through eno2."*
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`
+
+## Loop positioning (GTM narrative)
+
+Buyer-facing framing for **work · memory · trust loops** — how CurXor differs from chat subscriptions without dev-tooling jargon.
+
+| Doc | Purpose |
+|-----|---------|
+| [LOOP-POSITIONING.md](LOOP-POSITIONING.md) | Hero candidates · three-loop section · comparison block · paste-ready paragraph |
+| [PRODUCT-POSITIONING.md](PRODUCT-POSITIONING.md) | Category · personas · differentiators (add loop #7–9 when L1 ships) |
+
+**Appliance roadmap gaps:** `../curxor-os/docs/curxor-os/FUTURE-ROADMAP.md` — IDEA-G11 (storefront hero) · G12 (trust graphic) · G13 (`/for-builders`) · F12 (activity feed) · F13 (frontier spend caps).
+
+**Marketing lines (safe today):**
+
+- *"Your Claws don't reset when you close the tab — they keep checking, routing, and reacting on your metal."*
+- *"Every Claw remembers who you are, what you approved, and what happened last week — on your server, not in a vendor's cloud."*
+- *"Autonomy with boundaries — you stay the principal; the box earns delegation over time."*
+
+**Sync rule:** When a flagship Go Live checklist or Cafe ascension gate changes in `curxor-os`, skim LOOP-POSITIONING § flagship proof points before the next storefront deploy.

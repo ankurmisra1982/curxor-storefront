@@ -32,6 +32,9 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [x] `/capital` + `/outreach` Claw landing pages
 - [x] `/signal` — Signal Claw · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
 - [ ] **Next Interface film** (Program GTM-FILM) — FILM1 desk loop at G2 · full reveal FILM3 at G4 · see `../curxor-os/docs/curxor-os/FUTURE-ROADMAP.md`
+- [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **G3** after hardware captures
+- [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · G3
+- [ ] **`/for-builders`** (IDEA-G13) — Build Plane power-user page · not main hero · G3+
 
 ## Before marketing (one-time ops)
 

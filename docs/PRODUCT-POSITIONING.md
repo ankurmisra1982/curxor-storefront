@@ -12,7 +12,7 @@ Aligned with live storefront copy in `src/lib/config.ts`, `Hero.tsx`, and `Creat
 
 | Surface | Copy |
 |---------|------|
-| Hero | **Mint Autonomous Employees on Bare Metal.** |
+| Hero | **Mint autonomous employees on bare metal.** (control — locked pre-G3) |
 | Subhead | *Stop paying monthly cloud API fees and handing your proprietary strategies to OpenAI.* |
 | Pitch | 64GB UMA · infinite local Claws · one-time hardware |
 | Footer | *Sovereign metal. Infinite Claws.* |
@@ -36,6 +36,11 @@ Aligned with live storefront copy in `src/lib/config.ts`, `Hero.tsx`, and `Creat
 4. **Digital employees OOTB** — Capital, Creator, Outreach, Arbitrage + specialty modules
 5. **Alpha stays on metal** — strategies, prompts, and data never leave the appliance
 6. **OTA golden image** — flash once, iterate locally, ship updates with rollback
+7. **Three loops baked in** — work, memory, and trust are OS primitives (not chat plugins) — see [LOOP-POSITIONING.md](LOOP-POSITIONING.md)
+8. **Specialists, not one assistant** — 9 verticals + The Forge; shared context only with consent
+9. **Cafe as living mirror** — pixel room reacts to real operator activity (G3 captures on hardware)
+
+Full loop narrative, hero A/B, and comparison vs chat SaaS: **[LOOP-POSITIONING.md](LOOP-POSITIONING.md)**.
 
 ## Clawbot verticals (storefront ↔ appliance)
 

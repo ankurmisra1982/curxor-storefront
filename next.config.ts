@@ -2,6 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  outputFileTracingIncludes: {
+    "/opengraph-image": [
+      "./public/demo/01-home.png",
+      "./public/brand/curxor-lockup.svg",
+    ],
+  },
   async redirects() {
     return [
       {

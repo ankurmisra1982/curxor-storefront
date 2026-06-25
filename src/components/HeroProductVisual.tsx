@@ -38,6 +38,8 @@ export function HeroProductVisual() {
               alt="CurXor Flight Command Home hub with grouped Claw workspaces"
               width={1024}
               height={640}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={80}
               priority
               className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
             />

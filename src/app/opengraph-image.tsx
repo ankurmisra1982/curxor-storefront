@@ -12,8 +12,8 @@ export default async function Image() {
   const [fontRegular, fontBold, screenshot, lockupSvg] = await Promise.all([
     loadGoogleFont("JetBrains+Mono", 400),
     loadGoogleFont("JetBrains+Mono", 700),
-    readFile(path.join(process.cwd(), "public/demo/01-home.png")),
-    readFile(path.join(process.cwd(), "public/brand/curxor-lockup.svg")),
+    readPublicAsset("demo/01-home.png"),
+    readPublicAsset("brand/curxor-lockup.svg"),
   ]);
 
   const screenshotSrc = `data:image/png;base64,${screenshot.toString("base64")}`;
@@ -164,6 +164,19 @@ export default async function Image() {
       ],
     }
   );
+}
+
+async function readPublicAsset(relativePath: string) {
+  const absolutePath = path.join(process.cwd(), "public", relativePath);
+  try {
+    return await readFile(absolutePath);
+  } catch {
+    const response = await fetch(new URL(`/${relativePath}`, siteConfig.siteUrl));
+    if (!response.ok) {
+      throw new Error(`Failed to load public asset: ${relativePath}`);
+    }
+    return Buffer.from(await response.arrayBuffer());
+  }
 }
 
 async function loadGoogleFont(family: string, weight: number) {

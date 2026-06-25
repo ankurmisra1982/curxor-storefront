@@ -52,6 +52,11 @@ MS-S1 MAX in transit — use this to prioritize GTM work in **this repo**.
 - [ ] Claw walkthrough videos (replace screenshot heroes on `/capital` and `/creator` when re-recorded from Flight Command)
 - [ ] Customer testimonials / press logos when available
 
+## Roadmap (parked — no action)
+
+- [ ] **CurXor Pro 128 ($4,999)** — second hardware tier on `/pricing` only (not hero). Standard 64 ($3,999) stays flagship GTM. Copy source: `../curxor-os/docs/curxor-os/MS-S1-128GB-UNBOX-CHEATSHEET.md` (Storefront copy block). **Triggers before ship:** 128 GB SKU unbox + ROCm verify; second Stripe checkout or SKU selector; FAQ “64 vs 128?”; keep first-boot install (~2–4 hr) fine print; no 70B-class hard claims until bench green. **CEO gates:** pricing-page-only vs pre-order live; waitlist vs Stripe for Pro.
+- [ ] **Patron Link (Program MO)** — mobile companion PWA on appliance (`/m`), not App Store. **Primary storefront home:** `/signal` device-class card (`patron_mobile`) + optional FAQ “mobile app?” when gated. **Not:** hero, pre-order, or `/mobile` landing. Copy source: `../curxor-os/docs/curxor-os/MOBILE-PATRON-LINK.md`. **Say:** confirm/brief from phone · LAN pair · sovereign tokens on box. **Don’t say:** full mobile app · CurXor cloud push · App Store day one. **Triggers:** G3 (MO0 teaser + captures) · G4 (MO1 approvals demo · How it works mention). **Distinct from today:** Telegram/Slack/WhatsApp/iMessage gateways (already FAQ). Kiosk + Build Plane phone paths = ops only, not GTM.
+
 ## Wait for **curxor-os + hardware**
 
 - [ ] ROCm / UMA / mesh benchmarks (publish validated latency numbers)

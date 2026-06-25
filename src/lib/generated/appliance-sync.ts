@@ -3,7 +3,7 @@
 
 export const applianceVersion = "0.9.1" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-06-24T16:46:37.586Z" as const;
+export const applianceSyncedAt = "2026-06-25T06:40:44.468Z" as const;
 
 export const clawCategoryLabels = {
   "forge": "Create",

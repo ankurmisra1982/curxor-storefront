@@ -103,7 +103,7 @@ Nine Claw verticals + The Forge — synced from `../curxor-os/pillar-4-dashboard
 | `claw-forge` | `claw-forge` | The Forge | Forge |
 | `capital-claw` | `my-capital` | Capital Claw | Flagship |
 | `creator-claw` | `my-content-creator` | Creator Claw | Flagship |
-| `outreach-claw` | `my-work` | Work Claw | Flagship |
+| `outreach-claw` | `my-work` | Outreach Claw | Flagship |
 | `arbitrage-claw` | `my-shop` | Arbitrage Claw | Preview |
 | `signal-claw` | `tesla-optimus-engine` | Signal Claw | Preview |
 | `swarm-claw` | `robotaxi-fleet-manager` | Swarm Claw | Preview |

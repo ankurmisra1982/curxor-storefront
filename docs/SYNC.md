@@ -39,6 +39,8 @@ Appliance IDs and routes are stable. Display names pivot to the **Digital Wealth
 
 Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketing-map.ts` for URLs and section anchors. Names and descriptions always come from `ootb-apps.ts`.
 
+**Naming lock:** Appliance ID `my-work` → display **Outreach Claw** on storefront and Flight Command (route `/my-work`, slug `outreach-claw`, nav short `OUT`). Do not surface “Work Claw” in buyer-facing copy.
+
 **Sync rule:** When adding an appliance app, update `ootb-apps.ts`, extend `marketing-map.ts` with slug/icon/sortOrder, then run `npm run sync:appliance`.
 
 ## Copy guardrails (storefront vs audit)
@@ -46,7 +48,7 @@ Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketi
 | Storefront today | Audit note |
 |------------------|------------|
 | Spec: "Sub-millisecond ZeroMQ telemetry" | Aspirational — **not validated** until MS-S1 MAX mesh benchmarks |
-| "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; agent runtime v0.2 with unified comms |
+| "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; agent runtime + unified comms (OS 0.9.1) |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 | Cafe kicker: "venture out" | **eno2 bridges + Go Live + Cafe walk-out to desks** — not cloud LLM egress · see [PRODUCT-POSITIONING.md](PRODUCT-POSITIONING.md) § Act II · Cafe band |
@@ -84,7 +86,7 @@ Optional frontier LLMs (Settings → Intelligence, BYOK or OAuth): chat/planning
 
 **Claw Context Protocol (CCP):** On-appliance mesh topic `telemetry/claw_context` syncs health, family, work, and hardware context between Claws. Channel conversations publish to `work/inbox.*` via the unified comms router. See `../curxor-os/docs/guides/15-claw-context-protocol.md` and `../curxor-os/docs/guides/18-agent-runtime.md`.
 
-**Agent runtime (v0.2):** OpenClaw-style workspace memory, skills, heartbeat daemon, and messaging gateways (Telegram, Slack, WhatsApp, iMessage). Dashboard chat and external channels share one router → CCP. Marketing line: *"Message your Claws from phone or desktop — every reply stays local, egress only through eno2."*
+**Agent runtime (OS 0.9.1):** OpenClaw-style workspace memory, skills, heartbeat daemon, MCP servers, Build Plane delegation queue, and messaging gateways (Telegram, Slack, WhatsApp, iMessage). Dashboard chat and external channels share one router → CCP. Marketing line: *"Message your Claws from phone or desktop — every reply stays local, egress only through eno2."*
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`
 

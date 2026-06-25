@@ -3,7 +3,7 @@
 
 export const applianceVersion = "0.9.1" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-06-25T06:40:44.468Z" as const;
+export const applianceSyncedAt = "2026-06-25T17:32:31.699Z" as const;
 
 export const clawCategoryLabels = {
   "forge": "Create",
@@ -60,7 +60,7 @@ export const apps = [
   {
     "id": "outreach-claw",
     "applianceId": "my-work",
-    "name": "Work Claw",
+    "name": "Outreach Claw",
     "tagline": "Daily coordination desk — leads, sequences, CRM",
     "description": "Lead scraping, personalized cold email sequencing, and CRM follow-ups — outbound that never sleeps.",
     "icon": "⌘",

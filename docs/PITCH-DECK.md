@@ -1,6 +1,6 @@
 # CurXor — Investor Pitch Deck
 
-**Version:** 0.2.0 · **Date:** June 2026  
+**Version:** 0.9.1 · **Date:** June 2026  
 **Category:** Sovereign Agent Appliance  
 **Tagline:** Mint Autonomous Employees on Bare Metal.
 
@@ -71,10 +71,10 @@ CurXor OS is a **four-pillar edge stack** on MINISFORUM MS-S1 MAX:
 
 | Repo | Purpose | Status |
 |------|---------|--------|
-| **curxor-os** | Appliance software (`/opt/curxor/`, systemd, OTA) | v0.2.0 · 54 QA checks |
+| **curxor-os** | Appliance software (`/opt/curxor/`, systemd, OTA) | v0.9.1 · ~176 smoke + ~40 user-flow QA |
 | **curxor storefront** | GTM at curxor.ai (Stripe, Resend, synced catalog) | Live pre-order · holding for hardware |
 
-**Honest guardrail:** Agent runtime v0.2 and unified comms ship in software. MS-S1 MAX on-device validation and golden image freeze are gating items — blocked on hardware receipt, not vapor.
+**Honest guardrail:** Agent runtime, unified comms, and Build Plane BP4 ship in software (0.9.1). MS-S1 MAX on-device validation and golden image freeze are gating items — blocked on hardware receipt, not vapor.
 
 ---
 
@@ -206,8 +206,8 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 
 | Metric | Value |
 |--------|-------|
-| Version | 0.2.0 |
-| QA smoke | 14/14 |
+| Version | 0.9.1 |
+| QA (`qa:local`) | ~176 smoke · ~40 user flows |
 | Pre-order | Live |
 
 ---
@@ -216,7 +216,7 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 
 | Phase | Milestones |
 |-------|------------|
-| **Now (v0.2.0)** | Agent runtime · unified comms · 54 QA checks · GTM build mode |
+| **Now (v0.9.1)** | Agent runtime · unified comms · Build Plane BP4 · ~216 QA checks · GTM live |
 | **Next 90 days** | MS-S1 MAX validation · golden image · production OTA |
 | **H2 2026** | Customer pilots · Engage demo unit · case studies |
 | **2027+** | Fleet OTA · partner bridges · enterprise eno2 policies |
@@ -244,7 +244,7 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 
 | Area | Status |
 |------|--------|
-| Software v0.2.0 | Agent runtime, channels, 54 QA checks |
+| Software v0.9.1 | Agent runtime, channels, MCP, Build Plane · ~176 smoke + ~40 user flows |
 | Flight Command + 8 Claws + Forge | Rich UI; many workspaces use mock data |
 | Local LLM (engine + dashboard) | Code complete; needs Ollama on appliance |
 | Digital bridges (Alpaca/X) | Coded; needs `digital.env` credentials |

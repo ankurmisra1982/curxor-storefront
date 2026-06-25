@@ -34,11 +34,11 @@ BRAND = {
     "font_sans": "Segoe UI",
     "font_mono": "Consolas",
     "site": "curxor.ai",
-    "version": "v0.2.0 · June 2026",
+    "version": "v0.9.1 · June 2026",
 }
 
 APPENDIX_ROWS = [
-    ("Software v0.2.0", "Agent runtime · 54 QA checks"),
+    ("Software v0.9.1", "Agent runtime · ~176 smoke + ~40 user flows"),
     ("Flight Command + 8 Claws + Forge", "Rich UI · some mock workspace data"),
     ("Local LLM (engine + dashboard)", "Code complete · needs Ollama on appliance"),
     ("Digital bridges (Alpaca / X)", "Coded · needs digital.env credentials"),
@@ -140,7 +140,7 @@ We ship this as two repos today — appliance plus GTM — with one customer pro
     (
         "Two repos · one promise",
         [
-            "curxor-os — appliance: /opt/curxor/, systemd, OTA · v0.2.0 · 54 QA checks",
+            "curxor-os — appliance: /opt/curxor/, systemd, OTA · v0.9.1 · ~216 QA checks",
             "curxor storefront — GTM: curxor.ai, Stripe, Resend, synced Claw catalog",
             "",
             "Honest status: software scaffold complete.",
@@ -151,7 +151,7 @@ This slide builds trust. Do not oversell hardware readiness.
 
 CURXOR-OS
 • Installs to /opt/curxor/ under systemd target.
-• v0.2.0 stable — agent runtime, unified comms, fifty-four QA checks passing.
+• v0.9.1 stable — agent runtime, unified comms, Build Plane BP4, ~176 smoke + ~40 user flows in qa:local.
 • Four pillars wired: compute, engine, mesh, dashboard.
 
 STOREFRONT
@@ -377,7 +377,7 @@ What is actually shipped today vs what is gated on hardware.""",
             "Shipped: 4-pillar install · Flight Command · 8 Claws + Forge · local LLM · mesh · OTA · storefront",
             "Pending: MS-S1 MAX ROCm/UMA · mesh benchmarks · golden image · signed OTA",
             "",
-            "v0.2.0 · 54 QA checks · Pre-order live",
+            "v0.9.1 · ~216 QA checks · Pre-order live",
         ],
         """PROOF POINTS (60 sec — be precise)
 Split shipped software from hardware gates again — repetition builds credibility.
@@ -396,7 +396,7 @@ PENDING (hardware track)
 • Production OTA artifacts + signed releases
 
 METRICS ON SLIDE
-v0.2.0 · 54 QA checks · pre-order live — say each number out loud.
+v0.9.1 · ~176 smoke + ~40 user flows · pre-order live — say each number out loud.
 
 TRANSITION
 Here is how we close the hardware gate and scale.""",
@@ -404,7 +404,7 @@ Here is how we close the hardware gate and scale.""",
     (
         "Roadmap",
         [
-            "Now (v0.2.0): agent runtime · unified comms · 54 QA · build mode",
+            "Now (v0.9.1): agent runtime · unified comms · Build Plane BP4 · ~216 QA · GTM live",
             "Next 90 days: MS-S1 MAX validation · golden image · production OTA",
             "H2 2026: customer pilots · Engage demo unit · case studies",
             "2027+: fleet OTA · partner bridges · enterprise eno2 policies",

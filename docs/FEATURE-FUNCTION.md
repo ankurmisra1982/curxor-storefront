@@ -1,6 +1,6 @@
 # CurXor Storefront — Feature & Function (GTM)
 
-**Version:** synced to curxor-os **0.2.0** · **URL:** https://curxor.ai  
+**Version:** synced to curxor-os **0.9.1** · **URL:** https://curxor.ai  
 **Appliance doc:** [curxor-os/docs/FEATURE-FUNCTION.md](../../curxor-os/docs/FEATURE-FUNCTION.md)
 
 ---
@@ -22,7 +22,7 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 
 | Feature | Implementation |
 |---------|----------------|
-| **Hero** | “Mint AI Employees on Bare Metal” · $3,999 · viral hook |
+| **Hero** | “Mint autonomous employees on bare metal.” · $3,999 · viral hook |
 | **3D scene** | R3F Nexus mesh (`HardwareScene.tsx`) |
 | **Compute section** | 126 TOPS · 64GB UMA · cloud vs CurXor comparison |
 | **Create-to-Earn** | 4-step Forge loop + example prompt |

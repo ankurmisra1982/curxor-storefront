@@ -15,11 +15,14 @@ export function SubscribeForm({ variant = "default", className = "" }: Subscribe
     "idle"
   );
 
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     if (!email) return;
 
     setStatus("loading");
+    setErrorMessage(null);
     try {
       const res = await fetch(siteConfig.emailEndpoint, {
         method: "POST",
@@ -27,12 +30,27 @@ export function SubscribeForm({ variant = "default", className = "" }: Subscribe
         body: JSON.stringify({ email }),
       });
 
-      if (!res.ok) throw new Error("Subscribe failed");
+      if (!res.ok) {
+        const payload = (await res.json().catch(() => null)) as
+          | { error?: string }
+          | null;
+        throw new Error(payload?.error ?? "Subscribe failed");
+      }
       trackEmailSubscribe();
       setStatus("success");
       setEmail("");
-    } catch {
+    } catch (error) {
       setStatus("error");
+      if (
+        error instanceof Error &&
+        error.message === "Email service is not configured"
+      ) {
+        setErrorMessage(
+          "Waitlist signup is temporarily offline. Email hello@curxor.ai and we'll add you."
+        );
+      } else {
+        setErrorMessage("Something went wrong. Try again or reach us on social.");
+      }
     }
   }
 
@@ -79,7 +97,7 @@ export function SubscribeForm({ variant = "default", className = "" }: Subscribe
       )}
       {status === "error" && (
         <p className="mt-3 text-xs text-white/50">
-          Something went wrong. Try again or reach us on social.
+          {errorMessage ?? "Something went wrong. Try again or reach us on social."}
         </p>
       )}
     </div>

@@ -16,7 +16,10 @@ export function HorizonSection() {
 
         <div className="mt-12 border border-amber-400/15 bg-black/40 p-6 sm:p-8">
           <p className="text-[10px] tracking-[0.25em] text-amber-200/70">CAFE TIER · PROOF</p>
-          <h3 className="mt-2 text-lg font-bold tracking-wide text-white/90">{cafeProof.title}</h3>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-amber-100/75">
+            {cafeProof.kicker}
+          </p>
+          <h3 className="mt-4 text-lg font-bold tracking-wide text-white/90">{cafeProof.title}</h3>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/50">{cafeProof.body}</p>
 
           <CafeClawVisual />

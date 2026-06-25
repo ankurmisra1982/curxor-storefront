@@ -49,6 +49,7 @@ Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketi
 | "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; agent runtime v0.2 with unified comms |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
+| Cafe kicker: "venture out" | **eno2 bridges + Go Live + Cafe walk-out to desks** — not cloud LLM egress · see [PRODUCT-POSITIONING.md](PRODUCT-POSITIONING.md) § Act II · Cafe band |
 
 See [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md) § Mock / stub and Words to avoid.
 

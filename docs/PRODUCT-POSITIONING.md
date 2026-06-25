@@ -16,7 +16,33 @@ Aligned with live storefront copy in `src/lib/config.ts`, `Hero.tsx`, and `Creat
 | Subhead | *Stop paying monthly cloud API fees and handing your proprietary strategies to OpenAI.* |
 | Pitch | 64GB UMA · infinite local Claws · one-time hardware |
 | Footer | *Sovereign metal. Infinite Claws.* |
+| Act II headline | **The box grows with you on metal.** |
+| Cafe band kicker | *Your Claws live on your metal. When you're ready, they can venture out.* |
 | Price anchor | **$3,999** one-time |
+
+## Act II · Cafe band (`HorizonSection` / `home-story.ts`)
+
+**Placement:** Amber Cafe proof block on homepage — kicker above *Claw Cafe — growth home on your desk*, not hero, not tier names, no bench claims.
+
+**Stack (top → bottom):**
+
+1. Cafe kicker (line A — CEO approved)
+2. Cafe title + pixel-room proof body
+3. Concept preview disclaimer (Flight Command capture on appliance)
+
+**Evolution tease (separate slot):** *Ascends with you — same appliance, deeper desks over time.* Abstract only — no Sprout→Infinity tier names on site.
+
+### “Venture out” — CTO sync (canonical meaning)
+
+Storefront **“venture out”** means outbound **operator-approved** action — **not** cloud LLM inference or vendor-hosted agent runtime.
+
+| Includes | Excludes |
+|----------|----------|
+| eno2 bridges (Alpaca, publish, CRM webhooks) after Go Live | Prompts or model weights sent to OpenAI / frontier APIs by default |
+| Channel gateways you enable (Telegram, Slack, WhatsApp, iMessage) | “Runs in the cloud” or SaaS agent hosting |
+| Cafe walk-out → Flagship desks (approval bubbles, deep links into Capital / Creator / Outreach) | Autonomous outbound with no Go Live or approval gates |
+
+**Buyer-safe paraphrase:** Brain stays on metal; hands reach out through bridges you wire and gates you pass.
 
 ## Target buyer personas
 

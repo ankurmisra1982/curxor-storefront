@@ -43,6 +43,8 @@ export const actTwoStory = {
   subhead:
     "Your Claws earn cross-app momentum on the appliance — not in a cloud leaderboard. One warm line today; validated bench numbers when silicon is green.",
   cafeProof: {
+    kicker:
+      "Your Claws live on your metal. When you're ready, they can venture out.",
     title: "Claw Cafe — growth home on your desk",
     body: "Pixel room, ascension XP, and streaks tied to real Flagship activity — Capital rules, Creator publishes, Outreach sends. Proof from Flight Command, not a rebrand.",
   },

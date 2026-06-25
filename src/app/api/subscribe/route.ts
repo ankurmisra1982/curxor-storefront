@@ -3,7 +3,17 @@ import { isValidEmail, subscribeEmail } from "@/lib/email";
 
 export async function POST(request: Request) {
   try {
-    const { email } = await request.json();
+    let body: unknown;
+    try {
+      body = await request.json();
+    } catch {
+      return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
+    }
+
+    const email =
+      body && typeof body === "object" && "email" in body
+        ? (body as { email?: unknown }).email
+        : undefined;
 
     if (!email || typeof email !== "string" || !isValidEmail(email)) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });

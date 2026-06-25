@@ -80,12 +80,13 @@ export async function subscribeEmail(rawEmail: string): Promise<void> {
     }
   }
 
-  const resend = new Resend(apiKey);
-  await resend.emails.send({
-    from: fromEmail,
-    to: email,
-    subject: "You're on the CurXor launch list",
-    html: `
+  try {
+    const resend = new Resend(apiKey);
+    await resend.emails.send({
+      from: fromEmail,
+      to: email,
+      subject: "You're on the CurXor launch list",
+      html: `
       <div style="font-family: monospace; background: #000; color: #fff; padding: 32px;">
         <p style="color: #BF5AF2; letter-spacing: 0.2em; font-size: 12px;">CURXOR SYSTEMS</p>
         <h1 style="font-size: 24px; font-weight: 700;">You're on the list.</h1>
@@ -98,5 +99,9 @@ export async function subscribeEmail(rawEmail: string): Promise<void> {
         </p>
       </div>
     `,
-  });
+    });
+  } catch (error) {
+    // Contact is on the list — don't fail signup if the welcome email bounces.
+    console.warn("[subscribe] welcome email failed:", error);
+  }
 }

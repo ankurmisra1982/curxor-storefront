@@ -22,7 +22,7 @@
                 
                 <!-- Custom X Graphic — centered between r and o -->
                 <g transform="translate(350, 45)">
-                    <g transform="translate(20, 0)">
+                    <g transform="translate(16, 0)">
                     <!-- Left-to-Right Double Bar (X.com brutalist influence) -->
                     <path d="M 10 0 L 55 100 L 30 100 L -15 0 Z" fill="#BF5AF2"/>
                     <path d="M 40 0 L 85 100 L 60 100 L 15 0 Z" fill="#BF5AF2"/>

@@ -8,16 +8,21 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const runtime = "nodejs";
 
+/** Flight Command screenshot aspect (1440×900); Satori requires explicit img height — not `auto`. */
+const SCREENSHOT_WIDTH = 620;
+const SCREENSHOT_HEIGHT = 388;
+
 export default async function Image() {
-  const [fontRegular, fontBold, screenshot, lockupSvg] = await Promise.all([
+  const [fontRegular, fontBold, screenshot, lockupPng] = await Promise.all([
     loadGoogleFont("JetBrains+Mono", 400),
     loadGoogleFont("JetBrains+Mono", 700),
     readPublicAsset("demo/01-home.png"),
-    readPublicAsset("brand/curxor-lockup.svg"),
+    // Raster lockup — Satori ignores `<text>` inside inline SVG (only paths/rects render).
+    readPublicAsset("brand/curxor-hardware-badge.png"),
   ]);
 
   const screenshotSrc = `data:image/png;base64,${screenshot.toString("base64")}`;
-  const lockupSrc = `data:image/svg+xml;base64,${lockupSvg.toString("base64")}`;
+  const lockupSrc = `data:image/png;base64,${lockupPng.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -45,7 +50,13 @@ export default async function Image() {
         >
           <div style={{ display: "flex", alignItems: "center" }}>
             {/* eslint-disable-next-line @next/next/no-img-element -- Satori OG renderer requires img */}
-            <img src={lockupSrc} alt="" width={280} height={80} />
+            <img
+              src={lockupSrc}
+              alt=""
+              width={252}
+              height={72}
+              style={{ display: "flex" }}
+            />
           </div>
 
           <div
@@ -139,13 +150,12 @@ export default async function Image() {
             <img
               src={screenshotSrc}
               alt=""
-              width={620}
-              height={388}
+              width={SCREENSHOT_WIDTH}
+              height={SCREENSHOT_HEIGHT}
               style={{
                 display: "flex",
-                width: "100%",
-                height: "auto",
-                objectFit: "cover",
+                width: SCREENSHOT_WIDTH,
+                height: SCREENSHOT_HEIGHT,
               }}
             />
           </div>

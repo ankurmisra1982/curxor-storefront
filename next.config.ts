@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/opengraph-image": [
       "./public/demo/01-home.png",
-      "./public/brand/curxor-lockup.svg",
+      "./public/brand/curxor-hardware-badge.png",
     ],
   },
   async redirects() {

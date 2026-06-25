@@ -3,7 +3,7 @@ export const siteConfig = {
   siteUrl: "https://curxor.ai",
   pageTitle: "CurXor — 126 TOPS · 64GB UMA AI Powerhouse | $0/mo API",
   metaDescription:
-    "curXor — sovereign 64GB AI box with 126 TOPS NPU. Mint autonomous employees on bare metal — $3,999 once, zero monthly API fees.",
+    "Mint autonomous employees on bare metal. Sovereign 64GB box · 126 TOPS NPU · $3,999 once · $0/mo API. Join the waitlist.",
   keywords: [
     "sovereign AI hardware",
     "local LLM appliance",

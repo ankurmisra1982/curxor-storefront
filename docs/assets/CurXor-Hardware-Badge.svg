@@ -22,7 +22,7 @@
                 
                 <!-- Custom X Graphic — centered between r and o -->
                 <g transform="translate(350, 45)">
-                    <g transform="translate(34, 0)">
+                    <g transform="translate(27, 0)">
                     <!-- Left-to-Right Double Bar (X.com brutalist influence) -->
                     <path d="M 10 0 L 55 100 L 30 100 L -15 0 Z" fill="#BF5AF2"/>
                     <path d="M 40 0 L 85 100 L 60 100 L 15 0 Z" fill="#BF5AF2"/>
@@ -33,10 +33,10 @@
                 </g>
 
                 <!-- Text: or -->
-                <text x="474" y="140" font-family="JetBrains Mono, monospace" font-size="110" font-weight="800" fill="#ffffff" letter-spacing="-5">or</text>
+                <text x="479" y="140" font-family="JetBrains Mono, monospace" font-size="110" font-weight="800" fill="#ffffff" letter-spacing="-5">or</text>
 
                 <!-- Cursor Terminal Caret -->
-                <rect x="612" y="65" width="12" height="75" fill="#BF5AF2">
+                <rect x="618" y="65" width="12" height="75" fill="#BF5AF2">
                     <!-- Note: The animation will pulse in the browser, but render solid when sent to a sticker printer -->
                     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
                 </rect>

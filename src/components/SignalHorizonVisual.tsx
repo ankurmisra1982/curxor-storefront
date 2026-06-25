@@ -67,7 +67,7 @@ function DeviceSilhouette({ id }: { id: (typeof DRIFT_DEVICES)[number]["id"] }) 
   }
 }
 
-export function SignalHorizonVisual() {
+export function SignalHorizonVisual({ compact = false }: { compact?: boolean }) {
   return (
     <figure className="border border-white/10 bg-black">
       <div className="relative aspect-[16/10] overflow-hidden bg-[#030304]">
@@ -176,12 +176,20 @@ export function SignalHorizonVisual() {
         </div>
       </div>
 
-      <figcaption className="space-y-2 px-4 py-3">
-        <p className="text-[10px] tracking-[0.25em] text-neon-purple">{signalHorizonCopy.eyebrow}</p>
-        <p className="text-sm font-medium text-white/80">{signalHorizonCopy.headline}</p>
-        <p className="text-xs leading-relaxed text-white/45">{signalHorizonCopy.subhead}</p>
-        <p className="text-[10px] italic tracking-wide text-white/25">{signalHorizonCopy.conceptLabel}</p>
-      </figcaption>
+      {compact ? (
+        <figcaption className="px-4 py-2">
+          <p className="text-[10px] italic tracking-wide text-white/25">
+            {signalHorizonCopy.conceptLabel}
+          </p>
+        </figcaption>
+      ) : (
+        <figcaption className="space-y-2 px-4 py-3">
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">{signalHorizonCopy.eyebrow}</p>
+          <p className="text-sm font-medium text-white/80">{signalHorizonCopy.headline}</p>
+          <p className="text-xs leading-relaxed text-white/45">{signalHorizonCopy.subhead}</p>
+          <p className="text-[10px] italic tracking-wide text-white/25">{signalHorizonCopy.conceptLabel}</p>
+        </figcaption>
+      )}
     </figure>
   );
 }

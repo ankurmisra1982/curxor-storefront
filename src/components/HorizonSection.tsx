@@ -16,13 +16,17 @@ export function HorizonSection() {
 
         <div className="mt-12 border border-amber-400/15 bg-black/40 p-6 sm:p-8">
           <p className="text-[10px] tracking-[0.25em] text-amber-200/70">CAFE TIER · PROOF</p>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-amber-100/75">
-            {cafeProof.kicker}
-          </p>
-          <h3 className="mt-4 text-lg font-bold tracking-wide text-white/90">{cafeProof.title}</h3>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/50">{cafeProof.body}</p>
+          <blockquote className="mt-3 max-w-xl border-l-2 border-amber-400/30 pl-4">
+            <p className="text-sm italic leading-relaxed tracking-wide text-amber-200/80 sm:text-[15px]">
+              {cafeProof.kicker}
+            </p>
+          </blockquote>
+          <h3 className="mt-5 text-lg font-bold tracking-wide text-white/90">{cafeProof.title}</h3>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-white/50">{cafeProof.body}</p>
 
-          <CafeClawVisual />
+          <div className="mt-8">
+            <CafeClawVisual />
+          </div>
           <p className="mt-4 text-[10px] italic tracking-wide text-white/25">
             Concept preview — real Flight Command Cafe UI ships on appliance.
           </p>

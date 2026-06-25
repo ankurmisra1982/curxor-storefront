@@ -39,21 +39,31 @@ export default async function Image() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            width: 520,
-            padding: "48px 56px",
+            width: 540,
+            padding: "44px 52px",
           }}
         >
           <div style={{ display: "flex", alignItems: "center" }}>
             {/* eslint-disable-next-line @next/next/no-img-element -- Satori OG renderer requires img */}
-            <img src={lockupSrc} alt="" width={300} height={86} />
+            <img src={lockupSrc} alt="" width={280} height={80} />
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 28,
+              flex: 1,
+              justifyContent: "center",
+              paddingTop: 8,
+              paddingBottom: 8,
+            }}
+          >
             <div
               style={{
                 display: "flex",
                 flexWrap: "wrap",
-                fontSize: 44,
+                fontSize: 48,
                 lineHeight: 1.05,
                 fontWeight: 700,
                 letterSpacing: "-0.03em",
@@ -64,19 +74,11 @@ export default async function Image() {
             <div
               style={{
                 display: "flex",
-                fontSize: 16,
-                color: "rgba(255,255,255,0.55)",
-                lineHeight: 1.4,
-              }}
-            >
-              {siteConfig.heroSubhead}
-            </div>
-            <div
-              style={{
-                display: "flex",
-                fontSize: 14,
-                color: "#BF5AF2",
-                letterSpacing: "0.02em",
+                flexWrap: "wrap",
+                fontSize: 22,
+                lineHeight: 1.35,
+                fontWeight: 400,
+                color: "rgba(255,255,255,0.62)",
               }}
             >
               {siteConfig.viralHook}
@@ -87,15 +89,19 @@ export default async function Image() {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 16,
-              fontSize: 14,
-              letterSpacing: "0.18em",
+              gap: 18,
+              fontSize: 13,
+              letterSpacing: "0.16em",
               color: "rgba(255,255,255,0.35)",
             }}
           >
-            <span style={{ display: "flex", color: "#BF5AF2" }}>126 TOPS</span>
+            <span style={{ display: "flex", color: "#BF5AF2" }}>
+              {siteConfig.preOrderPrice} once
+            </span>
             <span style={{ display: "flex" }}>$0/mo API</span>
-            <span style={{ display: "flex" }}>curxor.ai</span>
+            <span style={{ display: "flex", color: "#BF5AF2" }}>
+              JOIN WAITLIST
+            </span>
           </div>
         </div>
 

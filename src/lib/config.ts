@@ -20,7 +20,7 @@ export const siteConfig = {
   heroSubhead:
     "Stop paying monthly API fees. Run Capital, Creator, and Outreach Claws on a curXor box — $3,999 once · $0/mo CurXor API.",
   computeHook:
-    "126 TOPS NPU · 64GB unified memory · outpaces most cloud API tiers.",
+    "126 TOPS local NPU — validated bench numbers pending MS-S1 MAX",
   tagline:
     "Mint digital Claws on sovereign hardware — trade, create, and outbound without shipping your playbook to the cloud.",
   heroSubtext:
@@ -103,7 +103,7 @@ export const computePower = {
   comparison: [
     { cloud: "$500+/mo in API tokens", curxor: "$3,999 — pay once" },
     { cloud: "Your prompts → OpenAI", curxor: "Your alpha → your metal" },
-    { cloud: "Rate limits & downtime", curxor: "Infinite local inference" },
+    { cloud: "Rate limits & downtime", curxor: "Local inference on your UMA budget" },
   ],
 } as const;
 
@@ -155,7 +155,7 @@ export const specColumns = [
     items: [
       "AMD Ryzen AI Max+ 395 — flagship edge silicon",
       "64GB LPDDR5X UMA — run massive models locally",
-      "126 TOPS NPU — outpaces most cloud API tiers",
+      "126 TOPS local NPU — validated bench numbers pending MS-S1 MAX",
       "Zero per-token billing. Ever.",
     ],
   },

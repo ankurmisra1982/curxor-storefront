@@ -95,7 +95,7 @@ export async function subscribeEmail(rawEmail: string): Promise<void> {
           for the sovereign Clawbot appliance — mint autonomous employees on bare metal.
         </p>
         <p style="color: #666; font-size: 12px; margin-top: 32px;">
-          126 TOPS. $0 API. Infinite Claws. · <a href="https://curxor.ai" style="color: #BF5AF2;">curxor.ai</a>
+          126 TOPS. $0 API. The Forge mints the rest. · <a href="https://curxor.ai" style="color: #BF5AF2;">curxor.ai</a>
         </p>
       </div>
     `,

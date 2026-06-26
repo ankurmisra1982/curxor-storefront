@@ -6,6 +6,7 @@ export const footerLinks = [
   { href: "/creator", label: "Creator Claw" },
   { href: "/for/traders", label: "For traders" },
   { href: "/for/agencies", label: "For agencies" },
+  { href: "/for/creators", label: "For creators" },
   { href: "/compare", label: "Compare" },
   { href: "/pricing", label: "Pricing" },
   { href: "/architecture", label: "Architecture" },

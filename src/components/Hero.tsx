@@ -30,7 +30,7 @@ export function Hero() {
 
     <section className="relative min-h-[90vh] pt-24">
 
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:items-start lg:py-24">
 
         <div className="space-y-8">
 
@@ -162,7 +162,9 @@ export function Hero() {
 
 
 
-        <HeroProductVisual />
+        <div className="relative lg:pt-1">
+          <HeroProductVisual />
+        </div>
 
       </div>
 

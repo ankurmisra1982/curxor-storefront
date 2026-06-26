@@ -37,7 +37,7 @@ export function Footer() {
               <div className="flex flex-col items-start md:items-end">
                 <CurXorLogo variant="wordmark" className="h-6 opacity-90" />
                 <p className="mt-4 text-2xl font-bold tracking-tight text-white/90">
-                  126 TOPS. $0 API. Infinite Claws.
+                  126 TOPS. $0 API. The Forge mints the rest.
                 </p>
               </div>
               <nav

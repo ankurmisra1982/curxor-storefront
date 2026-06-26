@@ -14,6 +14,8 @@ const navLinks = [
   { href: "/#demo", label: "DEMO" },
   { href: "/compare", label: "WHY CURXOR" },
   { href: "/architecture", label: "STACK" },
+  { href: "/press", label: "PRESS" },
+  { href: "/changelog", label: "CHANGELOG" },
   { href: "/#faq", label: "FAQ" },
 ];
 

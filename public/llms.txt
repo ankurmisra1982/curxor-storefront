@@ -11,8 +11,8 @@
 - Homepage story: Act I (Flagship + Forge) · Meet the Operators (X-ready share lines) · Act II horizon tease + Cafe proof
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
-- Software: CurXor OS 0.9.0 with 9 Claw verticals + The Forge (enable any combination in Settings)
-- QA: 180 smoke + 40 user-flow checks in curxor-os (local qa:local suite)
+- Software: CurXor OS 0.9.1 with 9 Claw verticals + The Forge (enable any combination in Settings)
+- QA: 180 smoke + 40 user-flow checks in curxor-os (qa:local suite)
 - Hardware validation: MS-S1 MAX silicon benchmarks in progress — no public bench log until green
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
 - Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI
@@ -34,6 +34,7 @@
 - Pricing (UMA tiers + compute ladder): https://curxor.ai/pricing
 - Architecture (MS-S1 validation status + claw tiers): https://curxor.ai/architecture
 - Changelog: https://curxor.ai/changelog
+- Press (investors & media): https://curxor.ai/press
 - Compare hub: https://curxor.ai/compare
 - Persona: https://curxor.ai/for/traders · https://curxor.ai/for/creators · https://curxor.ai/for/agencies
 - vs ClawBox: https://curxor.ai/compare/clawbox
@@ -77,6 +78,7 @@
 
 - Website: https://curxor.ai
 - Email: hello@curxor.ai
+- Investor deck: available on request via hello@curxor.ai
 - X: https://x.com/curxorai (@curxorai)
 - LinkedIn: https://www.linkedin.com/in/curxor-systems-222648418/
 - Facebook: https://www.facebook.com/profile.php?id=61590859873651

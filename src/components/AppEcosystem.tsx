@@ -100,7 +100,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
               </h2>
             </div>
             <p className="max-w-sm text-xs text-white/40">
-              Enable your crew in Settings. Mint infinite custom Claws from The Forge.
+              Enable your crew in Settings. Mint custom Claws from The Forge.
             </p>
           </div>
 

@@ -9,7 +9,15 @@ const CLAW_CHIPS = [
 
 export function HeroProductVisual() {
   return (
-    <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
+    <div className="relative mx-auto w-full max-w-lg origin-top lg:max-w-none lg:scale-[1.1]">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -inset-8 -z-10 overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_45%,rgba(191,90,242,0.1),transparent_70%)]" />
+        <div className="absolute inset-0 grid-industrial opacity-25" />
+      </div>
+
       <div className="absolute -inset-3 border border-neon-purple/25 bg-neon-purple/[0.02]" />
       <div className="absolute -inset-6 border border-white/5" />
 

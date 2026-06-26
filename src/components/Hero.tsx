@@ -80,11 +80,15 @@ export function Hero() {
 
 
 
-          <div className="space-y-4 pt-2">
+          <div className="space-y-4 pt-2 lg:hidden">
 
             <SubscribeForm variant="hero" />
 
-            <div className="flex flex-wrap items-center gap-4">
+          </div>
+
+
+
+          <div className="flex flex-wrap items-center gap-4 pt-2 lg:pt-0">
 
               <TrackedPreorderLink
 
@@ -111,8 +115,6 @@ export function Hero() {
               </a>
 
             </div>
-
-          </div>
 
 
 
@@ -162,8 +164,12 @@ export function Hero() {
 
 
 
-        <div className="relative lg:pt-1">
+        <div className="relative flex flex-col lg:pt-1">
           <HeroProductVisual />
+
+          <div className="mt-8 hidden w-full lg:block">
+            <SubscribeForm variant="hero" className="[&_form]:max-w-none" />
+          </div>
         </div>
 
       </div>

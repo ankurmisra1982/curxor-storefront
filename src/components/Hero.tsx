@@ -66,9 +66,9 @@ export function Hero() {
 
   return (
 
-    <section className="relative min-h-[90vh] pt-24">
+    <section className="relative min-h-[90vh] pt-20">
 
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:items-stretch lg:py-24">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 pt-8 lg:grid-cols-2 lg:items-stretch lg:pb-24 lg:pt-10">
 
         <div className="flex flex-col gap-8">
 

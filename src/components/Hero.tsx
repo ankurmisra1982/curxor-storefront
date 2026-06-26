@@ -24,15 +24,53 @@ const statTipByLabel: Partial<Record<string, BuyerTipId>> = {
 
 
 
+function HeroSecondaryCtas() {
+
+  return (
+
+    <div className="flex flex-wrap items-center gap-4">
+
+      <TrackedPreorderLink
+
+        location="hero"
+
+        className="text-xs tracking-[0.2em] text-white/50 transition-colors hover:text-neon-purple"
+
+      >
+
+        Pre-order · {siteConfig.preOrderPrice} →
+
+      </TrackedPreorderLink>
+
+      <a
+
+        href="#operators"
+
+        className="border-industrial px-6 py-3 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/50 hover:text-neon-purple"
+
+      >
+
+        MEET OPERATORS
+
+      </a>
+
+    </div>
+
+  );
+
+}
+
+
+
 export function Hero() {
 
   return (
 
     <section className="relative min-h-[90vh] pt-24">
 
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:items-start lg:py-24">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:items-stretch lg:py-24">
 
-        <div className="space-y-8">
+        <div className="flex flex-col gap-8">
 
           <div className="flex flex-wrap items-center gap-2">
 
@@ -84,37 +122,9 @@ export function Hero() {
 
             <SubscribeForm variant="hero" />
 
+            <HeroSecondaryCtas />
+
           </div>
-
-
-
-          <div className="flex flex-wrap items-center gap-4 pt-2 lg:pt-0">
-
-              <TrackedPreorderLink
-
-                location="hero"
-
-                className="text-xs tracking-[0.2em] text-white/50 transition-colors hover:text-neon-purple"
-
-              >
-
-                Pre-order · {siteConfig.preOrderPrice} →
-
-              </TrackedPreorderLink>
-
-              <a
-
-                href="#operators"
-
-                className="border-industrial px-6 py-3 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/50 hover:text-neon-purple"
-
-              >
-
-                MEET OPERATORS
-
-              </a>
-
-            </div>
 
 
 
@@ -122,7 +132,7 @@ export function Hero() {
 
 
 
-          <div className="grid grid-cols-2 gap-4 pt-2 sm:flex sm:gap-8">
+          <div className="mt-auto grid grid-cols-2 gap-4 pt-2 sm:flex sm:gap-8">
 
             {computePower.stats.slice(0, 4).map((stat, i) => (
 
@@ -164,11 +174,12 @@ export function Hero() {
 
 
 
-        <div className="relative flex flex-col lg:pt-1">
+        <div className="relative flex min-h-0 flex-col lg:pt-1">
           <HeroProductVisual />
 
-          <div className="mt-8 hidden w-full lg:block">
+          <div className="mt-auto hidden w-full flex-col gap-4 pt-10 lg:flex">
             <SubscribeForm variant="hero" className="[&_form]:max-w-none" />
+            <HeroSecondaryCtas />
           </div>
         </div>
 

@@ -9,7 +9,7 @@ const CLAW_CHIPS = [
 
 export function HeroProductVisual() {
   return (
-    <div className="relative mx-auto w-full max-w-lg origin-top lg:max-w-none lg:scale-[1.1]">
+    <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
       <div
         aria-hidden
         className="pointer-events-none absolute -inset-8 -z-10 overflow-hidden"

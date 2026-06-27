@@ -67,7 +67,13 @@ function DeviceSilhouette({ id }: { id: (typeof DRIFT_DEVICES)[number]["id"] }) 
   }
 }
 
-export function SignalHorizonVisual({ compact = false }: { compact?: boolean }) {
+export function SignalHorizonVisual({
+  compact = false,
+  showVoidQuestion = true,
+}: {
+  compact?: boolean;
+  showVoidQuestion?: boolean;
+}) {
   return (
     <figure className="border border-white/10 bg-black">
       <div className="relative aspect-[16/10] overflow-hidden bg-[#030304]">
@@ -97,12 +103,14 @@ export function SignalHorizonVisual({ compact = false }: { compact?: boolean }) 
           ))}
         </div>
 
-        {/* Void question */}
-        <div className="pointer-events-none absolute left-0 right-0 top-[38%] text-center">
-          <p className="text-[9px] tracking-[0.35em] text-white/20 sm:text-[10px]">
-            WHAT IS THE NEXT INTERFACE?
-          </p>
-        </div>
+        {/* Void question — omit on /signal where H1 already asks it */}
+        {showVoidQuestion ? (
+          <div className="pointer-events-none absolute left-0 right-0 top-[38%] text-center">
+            <p className="text-[9px] tracking-[0.35em] text-white/20 sm:text-[10px]">
+              WHAT IS THE NEXT INTERFACE?
+            </p>
+          </div>
+        ) : null}
 
         {/* Desk + orchestrator */}
         <div className="absolute inset-x-0 bottom-0 px-4 pb-4 pt-16 sm:px-8 sm:pb-6">

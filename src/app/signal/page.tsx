@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { SignalHorizonVisual } from "@/components/SignalHorizonVisual";
+import { SignalOptimusPreview } from "@/components/SignalOptimusPreview";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import {
   signalDeviceClasses,
   signalHonesty,
+  signalHorizonCopy,
   signalHubName,
   signalPageHero,
   signalPageMeta,
@@ -28,28 +30,34 @@ export const metadata: Metadata = {
 export default function SignalPage() {
   return (
     <SiteShell>
-      <div className="mx-auto max-w-6xl px-6 py-16">
-        <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-          SIGNAL CLAW · {signalHubName.toUpperCase()} · PREVIEW · CURXOR OS {applianceVersion}
-        </p>
-        <h1 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-          {signalPageHero.hero}{" "}
-          <span className="text-neon-purple">{signalPageHero.accent}</span>
-        </h1>
-        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
-          {signalPageHero.oneLiner}
-        </p>
+      <div className="mx-auto max-w-7xl px-6 py-16">
+        <section>
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
+            <div>
+              <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
+                SIGNAL CLAW · {signalHubName.toUpperCase()} · PREVIEW · CURXOR OS {applianceVersion}
+              </p>
+              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+                {signalPageHero.hero}{" "}
+                <span className="text-neon-purple">{signalPageHero.accent}</span>
+              </h1>
+              <p className="mt-4 text-sm leading-relaxed text-white/50">{signalPageHero.oneLiner}</p>
+              <p className="mt-6 text-base font-medium text-white/80">{signalHorizonCopy.headline}</p>
+              <p className="mt-2 text-sm leading-relaxed text-white/45">{signalHorizonCopy.subhead}</p>
+            </div>
 
-        <div className="mt-8">
-          <SubscribeFirstCtas
-            preorderLocation="persona"
-            secondaryHref="/architecture#dual-port"
-            secondaryLabel="Dual-port architecture"
-          />
-        </div>
+            <div className="min-w-0">
+              <SignalHorizonVisual compact showVoidQuestion={false} />
+            </div>
+          </div>
 
-        <section className="mt-14">
-          <SignalHorizonVisual />
+          <div className="mt-10">
+            <SubscribeFirstCtas
+              preorderLocation="persona"
+              secondaryHref="/architecture#dual-port"
+              secondaryLabel="Dual-port architecture"
+            />
+          </div>
         </section>
 
         <section className="mt-16">
@@ -75,7 +83,7 @@ export default function SignalPage() {
           <p className="mb-6 text-[10px] tracking-[0.25em] text-white/35">
             SHIPPED TODAY · HUMANOID HOME HUB
           </p>
-          <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
             {signalTodayTabs.map((item) => (
               <article key={item.tab} className="bg-black p-5">
                 <p className="text-[10px] tracking-[0.3em] text-neon-purple">{item.tab}</p>
@@ -94,15 +102,7 @@ export default function SignalPage() {
               TIER C PREVIEW
             </span>
           </div>
-          <video
-            className="h-auto w-full"
-            controls
-            playsInline
-            preload="metadata"
-            poster="/demo/01-home.png"
-          >
-            <source src="/demo/optimus-walkthrough.webm" type="video/webm" />
-          </video>
+          <SignalOptimusPreview />
           <p className="px-4 py-3 text-xs leading-relaxed text-white/45">
             Pair wizard and mesh preview on appliance — live humanoid motion hardware-gated.
           </p>
@@ -139,7 +139,7 @@ export default function SignalPage() {
 
         <p className="mt-12">
           <Link href="/" className="text-sm text-neon-purple hover:underline">
-            ← Back to pre-order
+            ← Back to home
           </Link>
         </p>
       </div>

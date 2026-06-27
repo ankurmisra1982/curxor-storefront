@@ -112,16 +112,6 @@ export function Hero() {
 
 
 
-          {siteConfig.heroAccent ? (
-            <p className="text-sm italic text-white/40">
-              <Link href="/signal" className="transition-colors hover:text-white/55">
-                {siteConfig.heroAccent}
-              </Link>
-            </p>
-          ) : null}
-
-
-
           <p className="text-xs tracking-wide text-white/35">
 
             {siteConfig.heroSubtext}
@@ -189,7 +179,15 @@ export function Hero() {
         <div className="relative flex min-h-0 flex-col lg:pt-1">
           <HeroProductVisual />
 
-          <div className="mt-auto hidden w-full flex-col gap-4 pt-10 lg:flex">
+          {siteConfig.heroAccent ? (
+            <p className="mt-3 text-center text-sm italic text-white/40 sm:mt-4 lg:text-right">
+              <Link href="/signal" className="transition-colors hover:text-white/55">
+                {siteConfig.heroAccent}
+              </Link>
+            </p>
+          ) : null}
+
+          <div className="mt-auto hidden w-full flex-col gap-4 pt-5 lg:flex lg:pt-6">
             <SubscribeForm variant="hero" className="[&_form]:max-w-none" />
             <HeroSecondaryCtas />
           </div>

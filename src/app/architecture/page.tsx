@@ -133,6 +133,12 @@ export default function ArchitecturePage() {
           Operator documentation lives in CurXor OS under{" "}
           <code className="text-white/50">docs/guides/02-architecture.md</code>.
           {" "}
+          Open-weight tier profiles (Standard · Pro 128 · Studio) evolve with the frontier — see{" "}
+          <Link href="/pricing#compute-ladder" className="text-neon-purple hover:underline">
+            compare tiers
+          </Link>
+          .
+          {" "}
           <Link href="/#subscribe" className="text-neon-purple hover:underline">
             ← Join waitlist
           </Link>

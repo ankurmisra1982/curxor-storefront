@@ -123,6 +123,16 @@ export const pressKit = {
     headline: "Diligence path",
     links: [
       {
+        href: "/pricing#compute-ladder",
+        label: "Compare tiers",
+        why: "Standard · Pro 128 · CurXor Studio — honest open-weight ladder",
+      },
+      {
+        href: "/press#compute-ladder",
+        label: "Compute ladder (press)",
+        why: "Open-weight frontier copy blocks for media",
+      },
+      {
         href: "/architecture#validation",
         label: "Architecture",
         why: "Four pillars, eno1/eno2, claw tiers, MS-S1 validation",

@@ -10,7 +10,7 @@ export const architectureContent = {
       name: "Compute",
       path: "pillar-1-compute/",
       role: "ROCm Docker inference — Ollama and vLLM on localhost. Cloud URLs rejected at startup.",
-      detail: "64GB UMA runs massive models without sending prompts to OpenAI.",
+      detail: "64GB UMA runs open-weight models sized for each tier profile — CurXor OS evolves with the frontier on metal you own.",
     },
     {
       id: "engine",
@@ -60,5 +60,6 @@ export const architectureContent = {
     "Network isolation — eno1 (operators) and eno2 (egress) are separate concerns",
     "User-configured integrations — Claws and channels you enable, not a preset vendor bundle",
     "OTA golden image — flash once, iterate locally, rollback on failure",
+    "Open-weight tier profiles — Standard, Pro 128, and Studio each run the best models their memory allows; update the stack without rebuying the story",
   ],
 } as const;

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { ComputeLadder } from "@/components/ComputeLadder";
+import { OpenWeightTierCompare } from "@/components/OpenWeightTierCompare";
 import { InfoTip } from "@/components/InfoTip";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
@@ -44,6 +45,10 @@ export default function PricingPage() {
             secondaryHref="/#demo"
             secondaryLabel="See Flight Command"
           />
+        </div>
+
+        <div className="mt-8">
+          <OpenWeightTierCompare variant="pricing" />
         </div>
 
         <ComputeLadder />

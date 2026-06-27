@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { OpenWeightTierCompare } from "@/components/OpenWeightTierCompare";
 import { SocialLinks } from "@/components/SocialLinks";
 import { SiteShell } from "@/components/SiteShell";
 import { siteConfig } from "@/lib/config";
@@ -106,6 +107,10 @@ export default function PressPage() {
             {pressKit.founders.technicalCoFounderLine}
           </p>
         </IndustrialSection>
+
+        <div className="mt-8">
+          <OpenWeightTierCompare variant="press" />
+        </div>
 
         <section className="mt-8">
           <SectionEyebrow>{pressKit.traction.headline.toUpperCase()}</SectionEyebrow>
@@ -326,6 +331,12 @@ export default function PressPage() {
               className="text-neon-purple hover:underline"
             >
               Architecture & validation
+            </Link>
+            <Link
+              href="/pricing#compute-ladder"
+              className="text-neon-purple hover:underline"
+            >
+              Compare tiers
             </Link>
             <a href={investorDeckMailto} className="text-neon-purple hover:underline">
               Request investor deck

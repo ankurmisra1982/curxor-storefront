@@ -19,6 +19,7 @@ export const siteConfig = {
   heroHeadline: "Mint autonomous employees on bare metal.",
   heroSubhead:
     "Stop paying monthly API fees. Run Capital, Creator, and Outreach Claws on a curXor box — $3,999 once · $0/mo CurXor API.",
+  heroAccent: "The orchestrator on your desk.",
   computeHook:
     "126 TOPS local NPU — validated bench numbers pending MS-S1 MAX",
   tagline:

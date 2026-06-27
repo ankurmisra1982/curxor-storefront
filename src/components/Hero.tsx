@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { computePower, siteConfig } from "@/lib/config";
 
 import { HeroProductVisual } from "@/components/HeroProductVisual";
@@ -107,6 +109,16 @@ export function Hero() {
             {siteConfig.heroSubhead}
 
           </p>
+
+
+
+          {siteConfig.heroAccent ? (
+            <p className="text-sm italic text-white/40">
+              <Link href="/signal" className="transition-colors hover:text-white/55">
+                {siteConfig.heroAccent}
+              </Link>
+            </p>
+          ) : null}
 
 
 

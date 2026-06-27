@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
+import { WhatIsThisStrip } from "@/components/WhatIsThisStrip";
 
 const WhatYouBuySection = dynamic(() =>
   import("@/components/WhatYouBuySection").then((m) => ({ default: m.WhatYouBuySection }))
@@ -50,6 +51,7 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustStrip />
+      <WhatIsThisStrip />
       <WhatYouBuySection />
       <HowItWorks />
       <NeuralLinkTeaser />

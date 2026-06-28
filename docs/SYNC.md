@@ -2,6 +2,8 @@
 
 Keep storefront copy aligned with `curxor-os` as both repos evolve.
 
+**Latest cross-repo status:** [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md) (Jun 28, 2026 — MS-S1 unboxed, G1 in progress).
+
 ## Automatic sync (preferred)
 
 From the storefront repo (with `../curxor-os` present):

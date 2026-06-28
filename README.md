@@ -2,7 +2,7 @@
 
 GTM site and marketing workspace for **CurXor OS** — sovereign edge appliance on the MINISFORUM MS-S1 MAX.
 
-> **Holding pattern:** MS-S1 MAX not yet on hand. Appliance engineering: [`../curxor-os/`](../curxor-os/). This repo is **landing page, pre-order, and GTM docs**.
+> **Hardware:** MS-S1 MAX unboxed **2026-06-28** — G1 golden path in progress (FRE green; eno cables + verify pending). Appliance: [`../curxor-os/`](../curxor-os/). This repo is **landing page, pre-order, and GTM docs**. Status: [docs/CTO-STATUS-REPORT.md](docs/CTO-STATUS-REPORT.md).
 
 ## Site (this repo)
 
@@ -25,6 +25,7 @@ GTM site and marketing workspace for **CurXor OS** — sovereign edge appliance 
 | [Feature & function (appliance)](../../curxor-os/docs/FEATURE-FUNCTION.md) | Full product scope, maturity, API catalog |
 | [Feature & function (storefront)](docs/FEATURE-FUNCTION.md) | GTM site capabilities |
 | [Marketing ↔ appliance sync](docs/SYNC.md) | Canonical Claw naming + sync from `ootb-apps.ts` |
+| [CTO status report](docs/CTO-STATUS-REPORT.md) | Cross-repo gate status · GTM do/don't · updated after appliance milestones |
 | [Pitch deck (markdown)](docs/PITCH-DECK.md) | 15-slide investor narrative + appendix |
 | [Pitch deck (PowerPoint)](docs/CurXor-Pitch-Deck-Speaker-Notes.pptx) | Branded `.pptx` with speaker notes — `npm run export:pitch-deck` |
 

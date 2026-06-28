@@ -14,7 +14,7 @@
 
 **The box is real. G1 is not closed.**
 
-MS-S1 MAX unboxed **2026-06-28**. Ubuntu installed, `install-all.sh` ran, Ollama pulled `moondream:1.8b` + `qwen3:8b`, FRE completed (Capital / Creator / Work), Flight Command live at `http://192.168.86.211:3080`.
+MS-S1 MAX unboxed **2026-06-28**. Ubuntu installed, `install-all.sh` ran, Ollama pulled `moondream:1.8b` + `qwen3:8b`, FRE completed (Capital / Creator / Work), Flight Command live at `http://192.168.86.211:3080` (browser). SSH: **`ssh curxor`**.
 
 **G1 (on-device golden path) is still open:** eno1/eno2 cabling pending, `verify-unbox-day.sh --post-models` not run, full flagship click-through incomplete.
 
@@ -75,7 +75,8 @@ Software on dev and partially validated on box:
 | Field | Value |
 |-------|--------|
 | Hostname | `curxor` |
-| LAN IP | `192.168.86.211` (DHCP — may change) |
+| LAN IP | `192.168.86.211` (router DHCP; update `HostName` in `~/.ssh/config` if it changes) |
+| SSH | **`ssh curxor`** (founder laptop) |
 | SKU | Standard 64 GB · UMA 48 GB |
 | Inference | Ollama ROCm · `moondream:1.8b` · `qwen3:8b` |
 

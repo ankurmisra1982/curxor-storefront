@@ -3,7 +3,7 @@
 export const changelogMeta = {
   version: "0.9.1" as const,
   channel: "stable" as const,
-  syncedAt: "2026-06-28T06:57:41.392Z" as const,
+  syncedAt: "2026-06-28T07:07:29.898Z" as const,
 } as const;
 
 export const changelogEntries = [
@@ -14,7 +14,8 @@ export const changelogEntries = [
     "highlights": [
       "Claw Cafe — ascension XP and pixel room react to real Capital, Creator, and Outreach activity on your appliance",
       "Cross-Claw growth and level-up moments tied to Flagship desks — not a cloud leaderboard",
-      "Flagship desk and Cafe polish ahead of MS-S1 hardware validation"
+      "MS-S1 MAX unboxed 2026-06-28 — CurXor OS 0.9.1, FRE (Capital, Creator, Work), and Ollama ROCm inference validated on Standard 64 (moondream:1.8b + qwen3:8b)",
+      "G1 golden path in progress — eno1/eno2 mesh/captive scripts, verify-unbox-day.sh, and flagship smoke pending; pre-v1.0.0, no production OTA until G1 closes"
     ]
   },
   {
@@ -24,7 +25,7 @@ export const changelogEntries = [
     "highlights": [
       "Settings remote-worker setup — guided path for a second dev machine on your LAN",
       "SSH connectivity checks and host configuration from Flight Command",
-      "Operator tooling polish ahead of MS-S1 hardware validation"
+      "Operator tooling polish before on-device golden path (G1)"
     ]
   },
   {

@@ -29,7 +29,8 @@ export default function ChangelogPage() {
             month: "long",
             day: "numeric",
           })}
-          .
+          . MS-S1 MAX unboxed 2026-06-28 — FRE and local inference validated on box;
+          G1 golden path (eno mesh, verify script) still open.
         </p>
 
         <div className="mt-12 space-y-12">

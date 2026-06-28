@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function LegalDocument({
   eyebrow,
   title,
@@ -21,6 +23,11 @@ export function LegalDocument({
       <div className="prose-legal mt-12 space-y-8 text-sm leading-relaxed text-white/70">
         {children}
       </div>
+      <p className="mt-12">
+        <Link href="/" className="text-sm text-neon-purple hover:underline">
+          ← Back to home
+        </Link>
+      </p>
     </article>
   );
 }

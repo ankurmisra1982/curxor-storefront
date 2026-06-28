@@ -6,7 +6,8 @@ export type PreorderLocation =
   | "mobile-sticky"
   | "compare"
   | "persona"
-  | "pricing";
+  | "pricing"
+  | "architecture";
 
 export type ScrollDepth = 25 | 50 | 75 | 100;
 

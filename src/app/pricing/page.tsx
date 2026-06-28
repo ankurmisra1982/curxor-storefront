@@ -127,6 +127,12 @@ export default function PricingPage() {
             </p>
           </div>
         </div>
+
+        <p className="mt-12">
+          <Link href="/" className="text-sm text-neon-purple hover:underline">
+            ← Back to home
+          </Link>
+        </p>
       </div>
     </SiteShell>
   );

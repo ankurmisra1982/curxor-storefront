@@ -59,7 +59,7 @@ export default function PressPage() {
 
   return (
     <SiteShell>
-      <div className="mx-auto max-w-3xl px-6 py-16">
+      <div className="mx-auto max-w-4xl px-6 py-16">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           {pageIntro.eyebrow}
         </p>

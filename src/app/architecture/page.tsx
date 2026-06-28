@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
 import { InfoTip } from "@/components/InfoTip";
+import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { ValidationBadge } from "@/components/ValidationBadge";
 import { architectureContent } from "@/lib/architecture";
 import { gtmTierLegend } from "@/lib/claw-gtm-tiers";
@@ -21,7 +22,7 @@ export default function ArchitecturePage() {
 
   return (
     <SiteShell>
-      <div className="mx-auto max-w-5xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 py-16">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           {eyebrow}
         </p>
@@ -29,6 +30,14 @@ export default function ArchitecturePage() {
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
           {lead}
         </p>
+
+        <div className="mt-8">
+          <SubscribeFirstCtas
+            preorderLocation="architecture"
+            secondaryHref="/pricing#compute-ladder"
+            secondaryLabel="Compare tiers"
+          />
+        </div>
 
         <div className="mt-16 grid gap-px border border-white/10 bg-white/10 md:grid-cols-2">
           {pillars.map((pillar) => (
@@ -138,9 +147,11 @@ export default function ArchitecturePage() {
             compare tiers
           </Link>
           .
-          {" "}
-          <Link href="/#subscribe" className="text-neon-purple hover:underline">
-            ← Join waitlist
+        </p>
+
+        <p className="mt-6">
+          <Link href="/" className="text-sm text-neon-purple hover:underline">
+            ← Back to home
           </Link>
         </p>
       </div>

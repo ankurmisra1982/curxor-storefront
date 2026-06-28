@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/config";
 
 export function ComparePageContent({ page }: { page: ComparePage }) {
   return (
-    <div className="mx-auto max-w-5xl px-6 py-16">
+    <div className="mx-auto max-w-6xl px-6 py-16">
       <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
         {page.eyebrow}
       </p>
@@ -95,6 +95,12 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
       </section>
 
       <p className="mt-12">
+        <Link href="/compare" className="text-sm text-neon-purple hover:underline">
+          ← All comparisons
+        </Link>
+      </p>
+
+      <p className="mt-4">
         <Link href="/" className="text-sm text-neon-purple hover:underline">
           ← Back to home
         </Link>

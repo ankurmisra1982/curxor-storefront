@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 export default function SignalPage() {
   return (
     <SiteShell>
-      <div className="mx-auto max-w-7xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 py-16">
         <section>
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
             <div>

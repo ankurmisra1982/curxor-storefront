@@ -4,7 +4,7 @@ import { tcoScenarios } from "@/lib/marketing";
 export function TcoSection() {
   return (
     <section id="tco" className="relative border-t border-white/10 py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <div className="mb-12 max-w-2xl">
           <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
             TOTAL COST

@@ -16,7 +16,7 @@ export const metadata = {
 export default function CompareHubPage() {
   return (
     <SiteShell>
-      <div className="mx-auto max-w-5xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 py-16">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           WHY CURXOR
         </p>
@@ -61,9 +61,9 @@ export default function CompareHubPage() {
 
       <TcoSection />
 
-      <div className="mx-auto max-w-5xl px-6 pb-16">
-        <Link href="/#compare" className="text-sm text-neon-purple hover:underline">
-          ← Back to homepage comparison
+      <div className="mx-auto max-w-6xl px-6 pb-16">
+        <Link href="/" className="text-sm text-neon-purple hover:underline">
+          ← Back to home
         </Link>
       </div>
     </SiteShell>

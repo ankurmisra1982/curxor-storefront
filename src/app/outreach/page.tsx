@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: outreachPageMeta.title,
     description: outreachPageMeta.description,
     url: `${siteConfig.siteUrl}/outreach`,
-    images: [{ url: `${siteConfig.siteUrl}/demo/07-unified-inbox.png` }],
+    images: [{ url: `${siteConfig.siteUrl}/demo/outreach/21-pipeline.png` }],
   },
 };
 
@@ -73,7 +73,7 @@ export default function OutreachPage() {
           <p className="mb-6 text-[10px] tracking-[0.25em] text-neon-purple">
             DEMO TOUR PATH
           </p>
-          <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
             {outreachDemoTourSteps.map((item) => (
               <article key={item.step} className="bg-black p-6">
                 <p className="text-[10px] tracking-[0.3em] text-neon-purple">
@@ -137,7 +137,7 @@ export default function OutreachPage() {
         </section>
 
         <section className="mt-16">
-          <p className="mb-8 text-[10px] tracking-[0.25em] text-white/35">
+          <p className="mb-8 text-[10px] tracking-[0.25em] text-neon-purple">
             FLIGHT COMMAND SCREENS
           </p>
           <div className="grid gap-6 sm:grid-cols-2">
@@ -189,7 +189,7 @@ export default function OutreachPage() {
 
         <p className="mt-12">
           <Link href="/" className="text-sm text-neon-purple hover:underline">
-            ← Back to pre-order
+            ← Back to home
           </Link>
         </p>
       </div>

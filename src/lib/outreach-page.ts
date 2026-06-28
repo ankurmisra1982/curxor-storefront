@@ -48,9 +48,9 @@ export const outreachTierBFeatures = [
 
 export const outreachFlowShots = [
   {
-    src: "/demo/outreach/20-go-live.png",
-    title: "Go Live checklist",
-    body: "Demo-ready without SMTP — strict progress toward first outbound send.",
+    src: "/demo/outreach/24-l1-start-home.png",
+    title: "Outreach home",
+    body: "Desk overview — pipeline, sequences, and demo tour entry on day one.",
   },
   {
     src: "/demo/outreach/21-pipeline.png",
@@ -82,7 +82,7 @@ export const outreachWalkthroughCaption =
   ".";
 
 export const outreachDemoHero = {
-  src: "/demo/07-unified-inbox.png",
+  src: "/demo/outreach/21-pipeline.png",
   alt: "Outreach Claw desk — Go Live, pipeline, and sequences",
   caption: outreachWalkthroughCaption,
 } as const;

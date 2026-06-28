@@ -146,9 +146,9 @@ export const tcoScenarios = {
 
 export const creatorFlowShots = [
   {
-    src: "/demo/creator/09-go-live-checklist.png",
-    title: "Go Live checklist",
-    body: "Day-one onboarding — demo tour, channels, bridges, and first scheduled post.",
+    src: "/demo/creator/16-content-planner.png",
+    title: "Content planner",
+    body: "Queue, slots, and platform mix — plan a week without leaving the desk.",
   },
   {
     src: "/demo/creator/10-content-calendar.png",

@@ -58,9 +58,9 @@ export const capitalEgressPaths = [
 
 export const capitalFlowShots = [
   {
-    src: "/demo/capital/19-capital-go-live.png",
-    title: "Go Live checklist",
-    body: "Demo vs paper path — strict ready semantics before you exit demo mode.",
+    src: "/demo/capital/20-capital-alpha-tab.png",
+    title: "Alpha tab",
+    body: "Portfolio health, movers, and intel digest — Standard+ desk depth.",
   },
   {
     src: "/demo/capital/17-setup-wizard.png",
@@ -71,11 +71,6 @@ export const capitalFlowShots = [
     src: "/demo/capital/18-analytics-tab.png",
     title: "Analytics tab",
     body: "Standard+ scorecard, walk-forward backtest, and NL portfolio Q&A.",
-  },
-  {
-    src: "/demo/03-capital-claw.png",
-    title: "Capital desk",
-    body: "Trade · Research · Risk · Agents tabs — 27 panels with rule engine and demo tour.",
   },
 ] as const;
 

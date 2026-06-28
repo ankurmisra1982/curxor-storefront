@@ -11,7 +11,7 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
   const operator = getOperatorByPersonaSlug(page.slug);
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-16">
+    <div className="mx-auto max-w-6xl px-6 py-16">
       <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
         {page.eyebrow}
       </p>
@@ -22,13 +22,6 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
         {page.lead}
       </p>
 
-      {operator ? (
-        <div className="mt-8 space-y-4">
-          <OperatorQuote operator={operator} />
-          <ShareOnX text={operator.shareLine} label="PASTE FOR X" />
-        </div>
-      ) : null}
-
       <div className="mt-8">
         <SubscribeFirstCtas
           preorderLocation="persona"
@@ -36,6 +29,13 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
           secondaryLabel={operator ? `${operator.claw.split(" ")[0]} tour` : "Meet operators"}
         />
       </div>
+
+      {operator ? (
+        <div className="mt-8 space-y-4">
+          <OperatorQuote operator={operator} />
+          <ShareOnX text={operator.shareLine} label="PASTE FOR X" />
+        </div>
+      ) : null}
 
       <div className="mt-12 overflow-hidden border border-white/10">
         <Image

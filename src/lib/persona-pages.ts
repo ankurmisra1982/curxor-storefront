@@ -104,7 +104,7 @@ export const personaPages: PersonaPage[] = [
         body: "White-label a vertical Claw for a client niche.",
       },
     ],
-    demoSrc: "/demo/07-unified-inbox.png",
+    demoSrc: "/demo/outreach/21-pipeline.png",
     demoAlt: "Outreach Claw desk — Go Live, pipeline, sequences",
     outcomes: [
       "Demo tour to simulated send — no SMTP on day one",

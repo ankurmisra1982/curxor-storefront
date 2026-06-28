@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { CurXorLogo } from "@/components/brand/CurXorLogo";
+import { hardwareValidation } from "@/lib/architecture";
 import { productIdentity } from "@/lib/config";
 
 type ValidationBadgeProps = {
@@ -17,7 +18,7 @@ export function ValidationBadge({ className = "", compact = false }: ValidationB
       <Link
         href="/architecture#validation"
         className={`inline-flex items-center border border-white/15 bg-black/80 px-2 py-1 transition-colors hover:border-neon-purple/40 ${className}`}
-        aria-label={`${productIdentity.boxName} — MS-S1 MAX validation in progress`}
+        aria-label={hardwareValidation.badgeAriaLabel}
       >
         {/* eslint-disable-next-line @next/next/no-img-element -- synced chassis badge SVG */}
         <img
@@ -34,7 +35,7 @@ export function ValidationBadge({ className = "", compact = false }: ValidationB
     <Link
       href="/architecture#validation"
       className={`group block border border-white/10 bg-black/50 p-5 transition-colors hover:border-neon-purple/30 ${className}`}
-      aria-label={`${productIdentity.boxName} — MS-S1 MAX validation in progress`}
+      aria-label={hardwareValidation.badgeAriaLabel}
     >
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
         {/* eslint-disable-next-line @next/next/no-img-element -- synced chassis badge SVG */}
@@ -53,9 +54,7 @@ export function ValidationBadge({ className = "", compact = false }: ValidationB
             {productIdentity.chassisNote}
           </p>
           <p className="mt-2 text-xs leading-relaxed text-white/45 group-hover:text-white/55">
-            Built for MINISFORUM MS-S1 MAX class silicon. ROCm, UMA, and mesh
-            benchmarks run when production units land — we publish validated
-            numbers, not marketing guesses.
+            {hardwareValidation.badgeSummary}
           </p>
         </div>
       </div>

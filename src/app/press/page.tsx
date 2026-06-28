@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { OpenWeightTierCompare } from "@/components/OpenWeightTierCompare";
 import { SocialLinks } from "@/components/SocialLinks";
 import { SiteShell } from "@/components/SiteShell";
+import { changelogEntries, changelogMeta } from "@/lib/changelog";
 import { siteConfig } from "@/lib/config";
 import { investorDeckMailto, pressKit } from "@/lib/press";
 
@@ -56,6 +57,7 @@ function IndustrialSection({
 
 export default function PressPage() {
   const { pageIntro } = pressKit;
+  const recentChangelog = changelogEntries.slice(0, pressKit.changelog.showCount);
 
   return (
     <SiteShell>
@@ -141,6 +143,56 @@ export default function PressPage() {
             </Link>
             .
           </p>
+        </section>
+
+        <section className="mt-8">
+          <SectionEyebrow>{pressKit.changelog.headline.toUpperCase()}</SectionEyebrow>
+          <p className="mt-4 text-sm text-white/50">
+            {pressKit.changelog.lead}{" "}
+            <Link
+              href={pressKit.changelog.link.href}
+              className="text-neon-purple hover:underline"
+            >
+              {pressKit.changelog.link.label}
+            </Link>
+            . Current appliance:{" "}
+            <span className="text-white/70">v{changelogMeta.version}</span> (
+            {changelogMeta.channel}) · last sync{" "}
+            {new Date(changelogMeta.syncedAt).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+            .
+          </p>
+          <div className="mt-6 space-y-6">
+            {recentChangelog.map((entry) => (
+              <article
+                key={entry.version}
+                className="border border-white/10 bg-black px-6 py-5"
+              >
+                <div className="flex flex-wrap items-baseline gap-3">
+                  <h3 className="text-base font-bold tracking-tight">
+                    v{entry.version}
+                  </h3>
+                  <span className="text-[10px] tracking-widest text-white/30">
+                    {entry.date} · {entry.channel}
+                  </span>
+                </div>
+                <ul className="mt-4 space-y-2">
+                  {entry.highlights.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 text-sm leading-relaxed text-white/70"
+                    >
+                      <span className="mt-2 h-1 w-1 shrink-0 bg-neon-purple/60" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
         </section>
 
         <IndustrialSection>

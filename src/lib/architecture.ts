@@ -1,3 +1,39 @@
+/** MS-S1 unbox day + G1 gate — shared by ValidationBadge and /architecture#validation. */
+export const hardwareValidation = {
+  unboxDate: "2026-06-28",
+  badgeAriaLabel: "curXor — MS-S1 unboxed · G1 golden path in progress",
+  badgeSummary:
+    "MS-S1 MAX unboxed Jun 28, 2026. CurXor OS 0.9.1, FRE, and local inference validated on Standard 64. G1 golden path open — eno mesh, verify script, and published benchmarks after G1 closes.",
+  computeBenchNote:
+    "126 TOPS local NPU — ROCm inference validated on Standard 64; mesh benchmarks pending eno2 wiring (G1)",
+  telemetryNote:
+    "Low-latency local mesh — eno2 wiring and benchmarks pending G1 close (not validated on box yet)",
+  doneOnBox: {
+    eyebrow: "DONE ON BOX",
+    items: [
+      "Ubuntu 24.04 install · UMA 48 GB · CurXor OS 0.9.1 on MS-S1 MAX Standard 64",
+      "Ollama ROCm live — moondream:1.8b + qwen3:8b (Standard 64 stack)",
+      "FRE complete — Capital, Creator, Work · Flight Command live on bare metal",
+    ],
+  },
+  g1InProgress: {
+    eyebrow: "G1 IN PROGRESS",
+    items: [
+      "eno1/eno2 cabling + captive portal / mesh scripts",
+      "verify-unbox-day.sh --post-models",
+      "Full flagship smoke test + on-box qa confirmation",
+    ],
+  },
+  afterG1: {
+    eyebrow: "AFTER G1 / G2",
+    items: [
+      "Published mesh latency benchmarks — not marketing guesses",
+      "Factory USB + production OTA artifact (pre-v1.0.0 today)",
+      "Storefront demo re-capture from box IP (G3)",
+    ],
+  },
+} as const;
+
 export const architectureContent = {
   eyebrow: "SOVEREIGN STACK",
   title: "Four Pillars. Two Ports. Zero Cloud Rent.",
@@ -26,7 +62,7 @@ export const architectureContent = {
       name: "Telemetry",
       path: "pillar-3-telemetry/",
       role: "ZeroMQ XSUB/XPUB mesh broker for vision, motor, and swarm signals.",
-      detail: "Low-latency local mesh — benchmark numbers pending MS-S1 MAX validation.",
+      detail: hardwareValidation.telemetryNote,
     },
     {
       id: "dashboard",

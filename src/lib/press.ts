@@ -28,8 +28,8 @@ export const pressKit = {
 
   investorIntro: {
     eyebrow: "COMPANY",
-    headline: "Sovereign agent appliance — software shipped, hardware validating.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. CurXor OS v0.9.1 ships Flight Command, ten Claw workspaces, and The Forge agent factory today. MS-S1 MAX silicon validation and golden-image manufacturing are the current gating items — blocked on hardware receipt, not vapor.",
+    headline: "Sovereign agent appliance — on bare metal, G1 golden path in progress.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28: CurXor OS v0.9.1, FRE (Capital, Creator, Work), and local inference (moondream:1.8b + qwen3:8b on ROCm) are validated on Standard 64. G1 is open — eno1/eno2 mesh, verify script, flagship smoke — before v1.0.0, production OTA, or published mesh benchmarks.",
   },
 
   founders: {
@@ -43,7 +43,7 @@ export const pressKit = {
       },
     ],
     technicalCoFounderLine:
-      "Appliance software, MS-S1 validation, and production OTA are led by a technical co-founder — details shared in diligence conversations.",
+      "Appliance software, G1 hardware validation, and production OTA are led by a technical co-founder — details shared in diligence conversations.",
   },
 
   traction: {
@@ -52,17 +52,27 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "CurXor OS **0.9.1** — four-pillar stack, Flight Command UI, 10 Claws + The Forge",
+          "MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **0.9.1**, Ollama ROCm on Standard 64 (moondream:1.8b + qwen3:8b)",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Flagship desks demo-ready — Capital, Creator, Outreach (Go Live paths, eno2 bridges)",
+          "**FRE green** on bare metal — Capital, Creator, Work provisioned · Flight Command live on box",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Agent runtime, unified comms gateways, Build Plane BP4 in software",
+          "CurXor OS **0.9.1** — four-pillar stack, Flight Command UI, 10 Claws + The Forge, Claw Cafe ascension tied to Flagship desks",
+      },
+      {
+        status: "Shipped" as const,
+        milestone:
+          "Flagship desks demo-ready — Capital, Creator, Outreach (Go Live paths, eno2 bridges; storefront screenshots are dev/seed until G3 re-capture)",
+      },
+      {
+        status: "Shipped" as const,
+        milestone:
+          "Agent runtime, unified comms gateways, Build Plane BP4 delegation queue in software",
       },
       {
         status: "Shipped" as const,
@@ -72,23 +82,24 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "Storefront live at curxor.ai — Stripe pre-order, Resend waitlist, appliance sync",
+          "Storefront GTM at curxor.ai — category-first hero, compare hub, compute ladder, press kit, Resend waitlist + Stripe pre-order",
       },
       {
         status: "In progress" as const,
-        milestone: "MS-S1 MAX on-device ROCm / UMA / mesh benchmarks",
+        milestone:
+          "**G1 golden path** — eno1/eno2 mesh + captive scripts, `verify-unbox-day.sh`, full flagship smoke on box",
       },
       {
         status: "Pending" as const,
-        milestone: "Golden image freeze, factory USB, production OTA artifact",
+        milestone: "Published mesh benchmarks, golden image freeze, factory USB, production OTA (G2 — pre-v1.0.0 today)",
       },
       {
         status: "Pending" as const,
-        milestone: "Customer pilots, case studies, Engage demo unit",
+        milestone: "Customer pilots, case studies, Engage demo unit, box-IP demo re-capture (G3)",
       },
     ],
     footnote:
-      "Flight Command screenshots on curxor.ai are live OS captures — not concept art. Many workspaces use demo data until operators connect their own bridges and credentials. See Terms — Software maturity.",
+      "Flight Command screenshots on curxor.ai are dev/seed Flight Command UI captures — not concept art, but not yet re-captured from the unboxed unit (G3). Many workspaces use demo data until operators connect their own bridges and credentials. See Terms — Software maturity.",
     footnoteLink: { href: "/terms", label: "Terms — Software maturity" },
   },
 
@@ -114,10 +125,18 @@ export const pressKit = {
   whyCurXor: [
     "Category creation — independent computer for digital employees, not DIY Ollama or SaaS agents",
     "Sovereignty story — eno1 command · eno2 egress only · physical kill switch",
-    "Software-led proof — OS, UI, and QA shipped before first production silicon batch",
+    "Software-led proof — FRE + local inference on unboxed MS-S1 before G1 closes golden path",
     "Honest depth tiers — Flagship · Forge · Cafe · Preview on every Claw",
     "Viral loop — The Forge mints custom Claws without per-token billing",
   ],
+
+  changelog: {
+    headline: "Recent releases",
+    lead: "CurXor OS ship velocity — synced from appliance. Full history at",
+    link: { href: "/changelog", label: "/changelog" },
+    /** How many version blocks to surface on press (newest first). */
+    showCount: 3,
+  },
 
   diligencePath: {
     headline: "Diligence path",
@@ -135,7 +154,7 @@ export const pressKit = {
       {
         href: "/architecture#validation",
         label: "Architecture",
-        why: "Four pillars, eno1/eno2, claw tiers, MS-S1 validation",
+        why: "Four pillars, eno1/eno2, claw tiers, MS-S1 G1 validation status",
       },
       {
         href: "/changelog",
@@ -168,9 +187,9 @@ export const pressKit = {
   focusAsk: {
     headline: "Use of focus / capital",
     bullets: [
-      "Complete MS-S1 MAX validation + golden image",
+      "Close G1 golden path — eno mesh, verify script, flagship smoke",
+      "Golden image + production OTA pipeline (G2)",
       "first 100 units",
-      "production OTA pipeline",
       "field engineer for support and factory flash",
     ],
     contactCta:
@@ -187,7 +206,7 @@ export const pressKit = {
   },
 
   maturityDisclaimer:
-    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs until MS-S1 validation publishes verified numbers. Capital Claw supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier Claws are working shells with local data — production depth ships on the appliance roadmap.",
+    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs until G1 closes and published mesh benchmarks are verified. MS-S1 unboxed Jun 28, 2026 — FRE and local inference validated on Standard 64; eno2 mesh and captive portal are not validated yet. Capital Claw supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier Claws are working shells with local data — production depth ships on the appliance roadmap.",
 
   facts: [
     { label: "Company", value: "CurXor Systems" },
@@ -211,8 +230,14 @@ export const pressKit = {
       value: "180 smoke + 40 user-flow checks (curxor-os qa:local)",
     },
     {
+      label: "Hardware",
+      value:
+        "MS-S1 MAX Standard 64 — unboxed 2026-06-28 · UMA 48 GB · FRE + ROCm inference validated on box",
+    },
+    {
       label: "Validation",
-      value: "MS-S1 MAX benchmarks in progress — see /architecture#validation",
+      value:
+        "G1 in progress — eno mesh/captive + verify script pending · see /architecture#validation",
     },
     {
       label: "Claw roster",
@@ -261,11 +286,11 @@ export const pressKit = {
       note: "Text-only — tight spaces, dark backgrounds",
     },
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
-    { label: "Flight Command demo", path: "/#demo", note: "Home, Settings, Capital, Forge, Vital, Kin, Creator Claw, unified inbox" },
-    { label: "Outreach Claw tour", path: "/outreach", note: "Demo tour path, Go Live, pipeline, sequences, Tier B analytics" },
-    { label: "Capital Claw tour", path: "/capital", note: "Flight Command screenshots, Setup Wizard, Go Live, rule engine, demo tour" },
-    { label: "Creator Claw tour", path: "/creator", note: "Flight Command screenshots, wizard steps, Go Live, publish bridges" },
-    { label: "Install video", path: "/architecture#validation", note: "Coming with production hardware batch" },
-    { label: "Operator PDF", path: "/architecture#validation", note: "Exported from CurXor OS guides when hardware ships" },
+    { label: "Flight Command demo", path: "/#demo", note: "Dev/seed Flight Command captures — G3 re-capture from box IP planned" },
+    { label: "Outreach Claw tour", path: "/outreach", note: "Demo tour path, Go Live, pipeline, sequences — dev/seed screenshots" },
+    { label: "Capital Claw tour", path: "/capital", note: "Flight Command screenshots, Setup Wizard, Go Live — dev/seed until G3" },
+    { label: "Creator Claw tour", path: "/creator", note: "Flight Command screenshots, wizard steps, Go Live — dev/seed until G3" },
+    { label: "Install video", path: "/architecture#validation", note: "After G1/G2 — factory USB production batch" },
+    { label: "Operator PDF", path: "/architecture#validation", note: "After G1/G2 — export from CurXor OS guides" },
   ],
 } as const;

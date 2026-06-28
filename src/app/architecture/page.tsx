@@ -4,7 +4,7 @@ import { SiteShell } from "@/components/SiteShell";
 import { InfoTip } from "@/components/InfoTip";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { ValidationBadge } from "@/components/ValidationBadge";
-import { architectureContent } from "@/lib/architecture";
+import { architectureContent, hardwareValidation } from "@/lib/architecture";
 import { gtmTierLegend } from "@/lib/claw-gtm-tiers";
 import { qaMetricsLine } from "@/lib/qa-metrics";
 import { siteConfig, applianceVersion } from "@/lib/config";
@@ -114,12 +114,43 @@ export default function ArchitecturePage() {
         </div>
 
         <div id="validation" className="mt-16 scroll-mt-24">
+          <h2 className="mb-6 text-xs font-bold tracking-[0.3em] text-neon-purple">
+            MS-S1 VALIDATION · G1
+          </h2>
           <ValidationBadge />
-          <ul className="mt-6 space-y-2 border border-white/10 bg-black/30 p-6 text-xs leading-relaxed text-white/45">
-            <li>· ROCm / UMA / mesh latency benchmarks — publish when MS-S1 MAX silicon is validated</li>
-            <li>· Factory USB / cloud-init install video — ships with production hardware</li>
-            <li>· Operator PDF bundle — export from CurXor OS <code className="text-white/50">docs/scripts/export-guides-pdf.sh</code></li>
-          </ul>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            {(
+              [
+                ["doneOnBox", "text-neon-purple"] as const,
+                ["g1InProgress", "text-amber-400"] as const,
+                ["afterG1", "text-white/40"] as const,
+              ] as const
+            ).map(([key, statusClass]) => {
+              const block = hardwareValidation[key];
+              return (
+                <div key={key} className="border border-white/10 bg-black/30 p-6">
+                  <p
+                    className={`text-[10px] font-bold tracking-widest ${statusClass}`}
+                  >
+                    {block.eyebrow}
+                  </p>
+                  <ul className="mt-4 space-y-2 text-xs leading-relaxed text-white/55">
+                    {block.items.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span className="mt-1.5 h-1 w-1 shrink-0 bg-current opacity-60" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+          <p className="mt-4 text-xs leading-relaxed text-white/40">
+            Unboxed {hardwareValidation.unboxDate}. Demo screenshots on curxor.ai are
+            dev/seed Flight Command captures — honest re-capture from box IP waits for
+            G3. Operator PDF exports after G1/G2 production artifacts.
+          </p>
         </div>
 
         <div className="mt-16">

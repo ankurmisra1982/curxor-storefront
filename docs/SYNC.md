@@ -92,6 +92,24 @@ Optional frontier LLMs (Settings → Intelligence, BYOK or OAuth): chat/planning
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`
 
+## Symphony model (GTM · live)
+
+Homepage **`#symphony`** section — `SymphonySection` · `src/lib/symphony-metaphor.ts`
+
+**Payoff:** *The symphony plays.*
+
+| Role | Metaphor |
+|------|----------|
+| Operator | Composer / principal |
+| CurXor desk | Conductor + orchestrator |
+| Claws | Orchestra / sections |
+| Signal | Acoustic reach |
+| Claw Cafe | The hall |
+
+**Headline:** *One desk conducts. The symphony plays.*
+
+Appliance JSON: `../curxor-os/docs/founder/profile.json` → `dreamState.symphony`
+
 ## Loop positioning (GTM narrative)
 
 Buyer-facing framing for **work · memory · trust loops** — how CurXor differs from chat subscriptions without dev-tooling jargon.
@@ -110,3 +128,20 @@ Buyer-facing framing for **work · memory · trust loops** — how CurXor differ
 - *"Autonomy with boundaries — you stay the principal; the box earns delegation over time."*
 
 **Sync rule:** When a flagship Go Live checklist or Cafe ascension gate changes in `curxor-os`, skim LOOP-POSITIONING § flagship proof points before the next storefront deploy.
+
+## Dream state + naming (vision tier)
+
+Category north star and **Claw vs orchestrator** naming lock — not the cold-traffic hero until G4.
+
+| Doc | Purpose |
+|-----|---------|
+| [DREAM-STATE-OVERVIEW.md](DREAM-STATE-OVERVIEW.md) | Vision hero · three acts · naming guardrails · storefront routes |
+| `src/lib/dream-state.ts` | Typed copy for `/signal`, deck, press |
+| `../curxor-os/docs/curxor-os/DREAM-STATE-OVERVIEW.md` | Appliance canonical spec |
+| `../curxor-os/docs/founder/profile.json` → `dreamState` | Structured JSON source |
+
+**Naming lock (Jun 2026):** **Conducts** = GTM layer-4 verb (homepage accent). **Orchestrator** = essay/deck noun. **Claw** = each vertical employee. Never “ten orchestrators on your desk.” Cold traffic leads with *digital employees* or *AI agents* before *Claws*.
+
+**GTM accent:** *Interfaces drift. Your desk conducts.*
+
+**Essay one-liner:** *CurXor is the orchestrator on your desk. Claws are the team it runs.*

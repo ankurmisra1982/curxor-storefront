@@ -18,12 +18,13 @@ export const siteConfig = {
   viralHook: "ChatGPT bills per token. CurXor bills once.",
   heroHeadline: "Mint autonomous employees on bare metal.",
   heroSubhead:
-    "Stop paying monthly API fees. Run Capital, Creator, and Outreach Claws on a curXor box — $3,999 once · $0/mo CurXor API.",
-  heroAccent: "The orchestrator on your desk.",
+    "Stop paying monthly API fees. Run Capital, Creator, and Outreach Claws on a desk that conducts — $3,999 once · $0/mo CurXor API.",
+  /** Layer 4 · links to /signal. Conductor verb — pairs with orchestrator in essays/deck. */
+  heroAccent: "Interfaces drift. Your desk conducts.",
   computeHook:
     "126 TOPS local NPU — ROCm inference validated on Standard 64; mesh benchmarks after G1",
   tagline:
-    "Mint digital Claws on sovereign hardware — trade, create, and outbound without shipping your playbook to the cloud.",
+    "One desk conducts your orchestra of Claws — trade, create, and outbound without shipping your playbook to the cloud.",
   heroSubtext:
     "126 TOPS local inference · dual 10GbE · eno2 kill switch · $0 CurXor API fees.",
   heroCreatorBadge:

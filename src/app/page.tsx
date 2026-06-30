@@ -4,6 +4,10 @@ import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
 import { WhatIsThisStrip } from "@/components/WhatIsThisStrip";
 
+const SymphonySection = dynamic(() =>
+  import("@/components/SymphonySection").then((m) => ({ default: m.SymphonySection }))
+);
+
 const WhatYouBuySection = dynamic(() =>
   import("@/components/WhatYouBuySection").then((m) => ({ default: m.WhatYouBuySection }))
 );
@@ -52,6 +56,7 @@ export default function Home() {
       <Hero />
       <TrustStrip />
       <WhatIsThisStrip />
+      <SymphonySection />
       <WhatYouBuySection />
       <HowItWorks />
       <NeuralLinkTeaser />

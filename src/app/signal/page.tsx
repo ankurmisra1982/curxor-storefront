@@ -15,6 +15,8 @@ import {
   signalTodayTabs,
 } from "@/lib/signal-page";
 import { applianceVersion, siteConfig } from "@/lib/config";
+import { dreamStateNaming, dreamStateThesisAccents } from "@/lib/dream-state";
+import { symphonyPayoff, symphonySection } from "@/lib/symphony-metaphor";
 
 export const metadata: Metadata = {
   title: `${signalPageMeta.title} — ${siteConfig.name}`,
@@ -44,6 +46,9 @@ export default function SignalPage() {
               <p className="mt-4 text-sm leading-relaxed text-white/50">{signalPageHero.oneLiner}</p>
               <p className="mt-6 text-base font-medium text-white/80">{signalHorizonCopy.headline}</p>
               <p className="mt-2 text-sm leading-relaxed text-white/45">{signalHorizonCopy.subhead}</p>
+              <p className="mt-6 border-l-2 border-neon-purple/40 pl-4 text-sm font-medium text-white/70">
+                {dreamStateNaming.essayOneLiner}
+              </p>
             </div>
 
             <div className="min-w-0">
@@ -105,6 +110,26 @@ export default function SignalPage() {
           <SignalOptimusPreview />
           <p className="px-4 py-3 text-xs leading-relaxed text-white/45">
             Pair wizard and mesh preview on appliance — live humanoid motion hardware-gated.
+          </p>
+        </section>
+
+        <section className="mt-16 border border-white/10 bg-black p-6 sm:p-8">
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">THE SYMPHONY MODEL</p>
+          <p className="mt-4 text-lg font-medium text-white/85">{symphonySection.headline}</p>
+          <p className="mt-3 text-sm italic text-neon-purple/90">{symphonyPayoff}</p>
+          <p className="mt-3 text-xs leading-relaxed text-white/45">{dreamStateNaming.symphonyBridgeLine}</p>
+        </section>
+
+        <section className="mt-16 border border-white/10 bg-black p-6 sm:p-8">
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">DREAM STATE · THESIS</p>
+          <p className="mt-4 text-lg font-medium text-white/85">{dreamStateThesisAccents[0]}</p>
+          <p className="mt-3 text-xs leading-relaxed text-white/45">
+            Vision tier — custom CurXor hardware and fully sovereign OS post-investment. Today we
+            ship on MS-S1-class metal. See{" "}
+            <Link href="/architecture" className="text-neon-purple hover:underline">
+              architecture
+            </Link>{" "}
+            for what is live now.
           </p>
         </section>
 

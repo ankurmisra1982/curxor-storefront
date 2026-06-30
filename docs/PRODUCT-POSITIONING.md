@@ -13,12 +13,10 @@ Aligned with live storefront copy in `src/lib/config.ts`, `Hero.tsx`, and `Creat
 | Surface | Copy |
 |---------|------|
 | Hero | **Mint autonomous employees on bare metal.** (control — locked pre-G3) |
-| Subhead | *Stop paying monthly cloud API fees and handing your proprietary strategies to OpenAI.* |
-| Pitch | 64GB UMA · infinite local Claws · one-time hardware |
-| Footer | *Sovereign metal. Infinite Claws.* |
-| Act II headline | **The box grows with you on metal.** |
-| Cafe band kicker | *Your Claws live on your metal. When you're ready, they can venture out.* |
-| Price anchor | **$3,999** one-time |
+| Subhead | *…Run Claws on a desk that conducts…* |
+| GTM accent (live) | **Interfaces drift. Your desk conducts.** → `/signal` |
+| Symphony section | **One desk conducts. The symphony plays.** · payoff: *The symphony plays.* |
+| Thesis (essay/deck) | *The next interface isn't a device. It's the orchestrator on your desk.* |
 
 ## Act II · Cafe band (`HorizonSection` / `home-story.ts`)
 
@@ -67,6 +65,30 @@ Storefront **“venture out”** means outbound **operator-approved** action —
 9. **Cafe as living mirror** — pixel room reacts to real operator activity (G3 captures on hardware)
 
 Full loop narrative, hero A/B, and comparison vs chat SaaS: **[LOOP-POSITIONING.md](LOOP-POSITIONING.md)**.
+
+## Dream state (vision tier · not main hero until G4)
+
+End-state category copy and **naming lock** live in **[DREAM-STATE-OVERVIEW.md](DREAM-STATE-OVERVIEW.md)** and **`src/lib/dream-state.ts`**.
+
+| Surface | Copy |
+|---------|------|
+| Dream H1 | **Designed around you. Owned by you.** |
+| GTM H1 (live) | **Mint autonomous employees on bare metal.** |
+| Thesis accent | *The next interface isn't a device. It's the orchestrator on your desk.* |
+
+## Naming lock — Claw vs orchestrator (Jun 2026)
+
+| Term | Storefront use |
+|------|----------------|
+| **Orchestrator** | Desk / system thesis — `heroAccent`, `/signal`, footer, deck |
+| **Claw** | Product noun — app names, Forge, Cafe; gloss with *agents* on cold surfaces |
+| **Employees / agents** | Hero, FAQ, compare — plain English first |
+
+**Essay one-liner:** *CurXor is the orchestrator on your desk. Claws are the team it runs.*
+
+**GTM conductor accent (live):** *Interfaces drift. Your desk conducts.*
+
+**Do not:** rename to orchestrators per agent · say “ten orchestrators” · use *Claw* alone above the fold without gloss.
 
 ## Clawbot verticals (storefront ↔ appliance)
 

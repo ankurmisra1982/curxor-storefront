@@ -2,9 +2,9 @@
 
 export const actOneStory = {
   eyebrow: "ACT I · WHAT YOU BUY",
-  headline: "Flagship desks. One Forge. Your metal.",
+  headline: "Flagship sections. One Forge. Your metal.",
   subhead:
-    "Capital, Creator, and Outreach ship demo-ready on day one. The Forge mints anything else you describe — all local, egress only on eno2.",
+    "Capital, Creator, and Outreach ship demo-ready on day one — sections of your orchestra. The Forge mints anything else you describe. All local; egress only on eno2.",
   flagships: [
     {
       claw: "Capital Claw",
@@ -38,15 +38,15 @@ export const actOneStory = {
 } as const;
 
 export const actTwoStory = {
-  eyebrow: "ACT II · THE HORIZON",
+  eyebrow: "ACT II · THE HALL",
   headline: "The box grows with you on metal.",
   subhead:
-    "Your Claws earn cross-app momentum on the appliance — not in a cloud leaderboard. One warm line today; validated bench numbers when silicon is green.",
+    "Your orchestra earns cross-app momentum on the appliance — not in a cloud leaderboard. The symphony plays while you live your life.",
   cafeProof: {
     kicker:
-      "Your Claws live on your metal. When you're ready, they can venture out.",
-    title: "Claw Cafe — growth home on your desk",
-    body: "Pixel room, ascension XP, and streaks tied to real Flagship activity — Capital rules, Creator publishes, Outreach sends. Proof from Flight Command, not a rebrand.",
+      "Your Claws live on your metal. Your desk conducts when they're ready to venture out.",
+    title: "Claw Cafe — the hall on your desk",
+    body: "Where the ensemble has presence — pixel room, ascension XP, and streaks tied to real Flagship activity. Capital rules, Creator publishes, Outreach sends. Proof from Flight Command, not a rebrand.",
   },
   evolutionTease:
     "Ascends with you — same appliance, deeper desks over time. No subscription tier names on the tin.",

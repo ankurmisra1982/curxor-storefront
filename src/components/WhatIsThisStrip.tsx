@@ -1,20 +1,10 @@
-const columns = [
-  {
-    title: "The box",
-    body: "A MINISFORUM MS-S1-class appliance. Plug into your network. You own the hardware.",
-  },
-  {
-    title: "CurXor OS",
-    body: "Agents, inference, and control stay on your metal — not a cloud subscription.",
-  },
-  {
-    title: "Ten Claws",
-    body: "Autonomous digital employees — capital, content, outreach, and more. Mint more in The Forge.",
-  },
-] as const;
+import { symphonyWhatIsThis } from "@/lib/symphony-metaphor";
 
-const stripFooter =
-  "Outbound trades and posts only when you wire them. Unplug egress — agents keep thinking.";
+const columns = [
+  symphonyWhatIsThis.box,
+  symphonyWhatIsThis.os,
+  symphonyWhatIsThis.claws,
+] as const;
 
 export function WhatIsThisStrip() {
   return (
@@ -31,7 +21,9 @@ export function WhatIsThisStrip() {
           ))}
         </div>
 
-        <p className="mt-8 border-t border-white/10 pt-6 text-xs text-white/40">{stripFooter}</p>
+        <p className="mt-8 border-t border-white/10 pt-6 text-xs text-white/40">
+          {symphonyWhatIsThis.footer}
+        </p>
       </div>
     </section>
   );

@@ -23,6 +23,8 @@ This doc translates that architecture into **storefront-safe language**. No dev-
 | Agent orchestration | **Operating system for autonomous work** |
 | Prompt engineering | **Work, memory, and trust loops** |
 | SaaS subscription | **Pay once · $0/mo API · your box remembers** |
+| Devices without a hub | **Your desk conducts** — Claws play · Signal reaches the room |
+| Chat = one assistant | **An orchestra on your metal** — *The symphony plays.* |
 
 ---
 

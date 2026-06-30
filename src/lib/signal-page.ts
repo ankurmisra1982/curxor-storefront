@@ -20,7 +20,7 @@ export const signalHorizonCopy = {
   eyebrow: "THE NEURAL LINK",
   headline: "Interfaces drift. Your desk conducts.",
   subhead:
-    "Pins orbit. Headsets float. Robots wait. The orchestrator was never on your face — it sits on your desk, with two ethernet ports and a policy you own.",
+    "Pins orbit. Headsets float. Robots wait. The conductor was never on your face — it sits on your desk, with two ethernet ports and a policy you own.",
   conceptLabel:
     "Concept illustration — device archetypes only, not product endorsements. Full film ships at product reveal (G4).",
 } as const;

@@ -2,6 +2,9 @@ import Link from "next/link";
 
 import { SignalHorizonVisual } from "@/components/SignalHorizonVisual";
 import { signalHorizonCopy, signalHubName } from "@/lib/signal-page";
+import { symphonyRoles } from "@/lib/symphony-metaphor";
+
+const signalRole = symphonyRoles.find((r) => r.id === "signal");
 
 export function NeuralLinkTeaser() {
   return (
@@ -28,7 +31,9 @@ export function NeuralLinkTeaser() {
               {signalHorizonCopy.subhead}
             </p>
             <p className="mt-3 text-xs italic text-white/35">
-              Humanoid preview on appliance today — glance, VR, and fleet classes on the roadmap.
+              {signalRole
+                ? `${signalRole.metaphor} — ${signalRole.body} Humanoid preview on appliance today.`
+                : "Humanoid preview on appliance today — glance, VR, and fleet classes on the roadmap."}
             </p>
 
             <Link

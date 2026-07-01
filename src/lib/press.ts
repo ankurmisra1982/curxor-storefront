@@ -77,12 +77,12 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**180** smoke + **40** user-flow QA checks in curxor-os (`qa:local` suite)",
+          "**184** smoke + **40** user-flow QA checks in curxor-os (`qa:local` suite)",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Storefront GTM at curxor.ai — category-first hero, compare hub, compute ladder, press kit, Resend waitlist + Stripe pre-order",
+          "Storefront GTM at curxor.ai — symphony model, investor press kit, Waves A–E polish, G1 mirror across validation surfaces, Resend waitlist + Stripe pre-order",
       },
       {
         status: "Shipped" as const,
@@ -226,7 +226,7 @@ export const pressKit = {
     },
     {
       label: "QA",
-      value: "180 smoke + 40 user-flow checks (curxor-os qa:local)",
+      value: "184 smoke + 40 user-flow checks (curxor-os qa:local)",
     },
     {
       label: "Hardware",

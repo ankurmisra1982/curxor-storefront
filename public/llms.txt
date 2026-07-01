@@ -8,11 +8,11 @@
 - Company: CurXor Systems
 - Price: $3,999 USD (one-time pre-order, no monthly API fees)
 - Primary CTA: Join waitlist at https://curxor.ai/#subscribe
-- Homepage story: Act I (Flagship + Forge) · Meet the Operators (X-ready share lines) · Act II horizon tease + Cafe proof
+- Homepage story: Act I (Flagship + Forge) · Symphony (#symphony conductor metaphor) · Meet the Operators · Act II horizon tease + Cafe proof
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
 - Software: CurXor OS 0.9.1 with 9 Claw verticals + The Forge (enable any combination in Settings)
-- QA: 180 smoke + 40 user-flow checks in curxor-os (qa:local suite)
+- QA: 184 smoke + 40 user-flow checks in curxor-os (qa:local suite)
 - Hardware validation: G1 golden path closed Jun 29 — dual-port topology verified on MS-S1 MAX; published mesh benchmarks pending
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
 - Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI

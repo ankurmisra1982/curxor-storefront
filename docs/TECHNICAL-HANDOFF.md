@@ -2,7 +2,7 @@
 
 Copy-paste facts for storefront, datasheets, and pitch decks. **Source of truth:** `../curxor-os/` (version, appliance behavior) + `src/lib/config.ts` + `src/lib/generated/appliance-sync.ts` (synced storefront surface).
 
-Last refreshed: June 28, 2026 · Appliance **0.9.1** · **G1 in progress** (MS-S1 unboxed, FRE green) — [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)
+Last refreshed: July 1, 2026 · Appliance **0.9.1** · **G1 closed** (Jun 29 verify + smile PASS; captive portal + mesh on box) — [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)
 
 ---
 
@@ -26,7 +26,7 @@ Last refreshed: June 28, 2026 · Appliance **0.9.1** · **G1 in progress** (MS-S
 | `/pricing` | Standard 64 flagship ($3,999) + compute ladder; Pro 128 parked until SKU ships |
 | `/signal` | Signal Claw · **The Neural Link** — device-class horizon (glance, VR, robot, fleet, home, ambient); preview honesty; subscribe-first CTAs |
 | `/capital` · `/creator` · `/outreach` | Flagship Claw landing pages |
-| `/architecture` | Four pillars + eno1/eno2 + validation badge (soft pre-hardware) |
+| `/architecture` | Four pillars + eno1/eno2 + validation badge (G1 closed on MS-S1; mesh benchmarks pending) |
 | Personas | `/for/traders` · `/for/creators` · `/for/agencies` |
 | Compare hub | `/compare/*` competitor pages |
 
@@ -90,7 +90,7 @@ Pro 128 operator path: `../curxor-os/docs/curxor-os/MS-S1-128GB-UNBOX-CHEATSHEET
 **SPINE:** Dual 10GbE · local mesh telemetry · offline-sovereign  
 **OS:** CurXor OS · captive portal · OpenClaw-style agent runtime
 
-Use *“low-latency local mesh; benchmarks pending”* — not “sub-millisecond ZeroMQ” until MS-S1 validation green. **No public bench log** during MS-S1 validation holding pattern.
+Use *“low-latency local mesh; benchmarks pending”* — not “sub-millisecond ZeroMQ” until published on-box numbers land. G1 golden path closed Jun 29; topology verified on MS-S1 — latency marketing waits on benchmark publication.
 
 ---
 
@@ -236,10 +236,10 @@ Details: `../curxor-os/docs/guides/12-digital-action-layer.md`
 
 | Suite | Count (0.9.1 scripts) |
 |-------|----------------------|
-| Smoke (`qa-smoke.mjs`) | **~176** API checks |
-| User flows (`qa-user-flows.mjs`) | **~40** end-to-end flows |
+| Smoke (`qa-smoke.mjs`) | **184** API checks |
+| User flows (`qa-user-flows.mjs`) | **40** end-to-end flows |
 
-**Hardware validation:** MS-S1 MAX in holding pattern — no on-device ROCm/UMA/mesh benchmarks published. Storefront validation badge is soft pre-hardware state.
+**Hardware validation:** G1 golden path **closed** Jun 29 on MS-S1 Standard 64 — FRE, ROCm inference, captive portal, and EGRESS mesh verified on box. **Published mesh latency benchmarks** still pending; storefront badge reflects G1 complete, not sub-ms claims.
 
 **Storefront:** `npm run qa` = lint + build.
 
@@ -266,7 +266,7 @@ When appliance bumps: run `npm run sync:appliance`, refresh this doc, update cha
 | Capture script | `../curxor-os/pillar-4-dashboard/scripts/capture-demo-screenshots.mjs` → `docs/demo-pack/screenshots/` |
 | Storefront `public/demo/` | Home through Creator + creator flows — **dev captures** |
 | `public/demo/cafe/` | **Wave A** — dev Flight Command UI; **not MS-S1 verified** |
-| Product photography / MS-S1 bench captures | **Pending** — do not claim production screenshots until captured on hardware |
+| Product photography / MS-S1 box-IP captures | **G3 pending** — G1 closed on box; re-capture `public/demo/` from `10.0.0.1:3080` before claiming production screenshots |
 | Next Interface film (GTM-FILM) | Program scoped — G2/G4 gates in `../curxor-os/docs/curxor-os/FUTURE-ROADMAP.md` |
 
 Copy captured assets to storefront `public/demo/` for GTM. Label dev captures honestly in decks.

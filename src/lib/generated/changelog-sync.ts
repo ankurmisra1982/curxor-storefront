@@ -3,19 +3,24 @@
 export const changelogMeta = {
   version: "0.9.1" as const,
   channel: "stable" as const,
-  syncedAt: "2026-06-30T04:57:09.115Z" as const,
+  syncedAt: "2026-07-01T14:08:20.040Z" as const,
 } as const;
 
 export const changelogEntries = [
   {
     "version": "0.9.1",
-    "date": "2026-06-23",
+    "date": "2026-06-29",
     "channel": "stable",
     "highlights": [
       "Claw Cafe — ascension XP and pixel room react to real Capital, Creator, and Outreach activity on your appliance",
       "Cross-Claw growth and level-up moments tied to Flagship desks — not a cloud leaderboard",
       "MS-S1 MAX unboxed 2026-06-28 — CurXor OS 0.9.1, FRE (Capital, Creator, Work), and Ollama ROCm inference validated on Standard 64 (moondream:1.8b + qwen3:8b)",
-      "G1 golden path in progress — eno1/eno2 mesh/captive scripts, verify-unbox-day.sh, and flagship smoke pending; pre-v1.0.0, no production OTA until G1 closes"
+      "G1 golden path closed 2026-06-29 — eno1/eno2 captive portal + EGRESS mesh wired on box, verify-unbox-day.sh PASS, smile test PASS, telemetry broker active on 10.77.0.1; pre-v1.0.0, production OTA is G2",
+      "184 smoke + 40 user-flow QA checks in curxor-os (qa:local suite)",
+      "Storefront G1 mirror — validation badge, trust strip, architecture, press kit, and changelog aligned to golden path close on curxor.ai",
+      "Symphony GTM model — homepage #symphony section, conductor metaphor, conducts accent line",
+      "Storefront UX waves A–E — mega-menu nav, claw tour grids, persona parity, conversion width, press layout polish",
+      "Investor press landing — compute ladder, diligence path, traction milestones, open-weight tier compare"
     ]
   },
   {

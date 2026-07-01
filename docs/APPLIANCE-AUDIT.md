@@ -1,8 +1,8 @@
 # CurXor OS — Full Appliance Audit
 
-**Audit date:** June 2026 (matrix below) · **Hardware update:** Jun 28, 2026 — see [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)  
+**Audit date:** June 2026 (matrix below) · **Hardware update:** Jul 1, 2026 — see [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)  
 **Version:** `0.9.1` (`../curxor-os/version.json`)  
-**Hardware status:** MS-S1 MAX **unboxed** — FRE + inference **validated**; G1 **in progress** (eno mesh/captive + verify script pending)  
+**Hardware status:** MS-S1 MAX **unboxed** — **G1 closed** (Jun 29): FRE, inference, captive portal, EGRESS mesh, verify script, smile test validated on box  
 **GTM site:** This repo (`curxor storefront`) — landing + pre-order live; see [SYNC.md](SYNC.md)
 
 ---
@@ -12,7 +12,7 @@
 CurXor OS is a **coherent, installable appliance stack** with documentation, OTA, captive portal, and a polished Flight Command UI. Architecture is intentionally **sovereign**: inference and agent reasoning stay on localhost; only dedicated Python **digital bridges** perform outbound HTTPS (Alpaca paper, X API).
 
 **Ready for GTM narrative and demo storytelling now.**  
-**Partial hardware validation (Jun 28):** ROCm inference + FRE on MS-S1 Standard 64. **Not yet ready** for production customer shipments until G1 closes (dual-NIC mesh, captive portal, verify script, smile test).
+**Hardware validation (G1 closed Jun 29):** ROCm inference, FRE, dual-port topology (COMMAND captive + EGRESS mesh), verify script, and smile test on MS-S1 Standard 64. **Not yet ready** for production customer shipments until G2 (v1.0.0 tag, signed OTA, factory USB).
 
 ---
 
@@ -29,7 +29,7 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Networking | ✅ Documented | eno1 captive `10.0.0.1` · eno2 mesh `10.77.0.1` |
 | OTA | ✅ Complete | Backup, SHA256, rollback, cron, System Health log stream |
 | Digital layer | ⚠️ Scaffold | Bridges coded; requires `/etc/curxor/digital.env` + live APIs |
-| Hardware validation | ⚠️ In progress | MS-S1 unboxed Jun 28 — ROCm + FRE green; G1 open (eno mesh, verify script) · [CTO-STATUS-REPORT.md](../../curxor%20storefront/docs/CTO-STATUS-REPORT.md) |
+| Hardware validation | ✅ G1 closed | MS-S1 unboxed Jun 28 — G1 closed Jun 29: ROCm + FRE + captive/mesh + verify + smile on box · published mesh benchmarks pending · [CTO-STATUS-REPORT.md](../../curxor%20storefront/docs/CTO-STATUS-REPORT.md) |
 | Reproducible builds | ⚠️ Gap | No committed `pnpm-lock.yaml` in pillar 2/4 |
 | Security hardening | ⚠️ Partial | Dashboard on `0.0.0.0:3080`; APIs unauthenticated (LAN/captive OK) |
 | Tests / CI | ✅ Local QA | ~176 smoke + ~40 user-flow checks — `npm run qa:local` (`qa-smoke.mjs`, `qa-user-flows.mjs`) |

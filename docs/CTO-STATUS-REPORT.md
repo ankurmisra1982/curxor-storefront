@@ -27,7 +27,7 @@ Flight Command home: **`http://10.0.0.1:3080/home`** (COMMAND port · captive). 
 | Gate | Meaning | Status | Storefront impact |
 |------|---------|--------|-------------------|
 | **G0** | Dev `pre-unbox:gate` green | **Green** (last pass Jun 27) | Safe to deploy copy synced to 0.9.1 |
-| **G1** | On-device golden path | **Green** (closed Jun 29) | Flip validation badge · update trust strip · stop saying "G1 in progress" |
+| **G1** | On-device golden path | **Green** (closed Jun 29) | P0 mirror done — merge PR #3 when ready |
 | **G2** | v1.0.0 + signed OTA | **Open** — next engineering gate | Changelog stays 0.9.1 until tag; no "production OTA ready" |
 | **G3** | Appliance demo captures from box IP | **Unblocked** — not started on storefront | Re-capture `public/demo/` · first honest box screenshots |
 | **G4** | Operator UAT smile at scale | Blocked on G2/G3 | Tier C go-live, rebrand, fundraise polish |
@@ -225,25 +225,19 @@ G1 passed. **curxor-os** is bug-fix + G2 release work until v1.0.0 tags. Do not 
 
 ---
 
-## Doc drift (storefront must clear in P0 wave)
+## Doc drift (P0 cleared Jul 1 — remaining)
 
-| Doc / file | Issue |
+| Doc / file | Status |
 |------------|--------|
-| `src/lib/architecture.ts` | Still `G1 IN PROGRESS` — **flip** |
-| `src/lib/marketing.ts` | Trust strip says G1 in progress |
-| `src/lib/press.ts` | Press kit stale |
-| `docs/GTM-CHECKLIST.md` | G1 unchecked · header stale |
-| `README.md` | "G1 in progress" |
-| `docs/APPLIANCE-AUDIT.md` | "G1 in progress" |
-| `docs/TECHNICAL-HANDOFF.md` | Jun 28 header |
-| `docs/SYNC.md` | Jun 28 status line |
-| `data/changelog-entries.json` | G1-in-progress bullet on latest entry |
+| P0 mirror (`src/`, press, changelog, GTM docs) | **Cleared** — G1 closed copy live on `sync/g1-green-mirror-p0` (PR #3 open; prod deployed from branch) |
+| `docs/TECHNICAL-HANDOFF.md` | **Cleared** — holding-pattern language removed Jul 1 |
+| `docs/CTO-STATUS-REPORT.md` | This section updated post-P0 |
 
 **Appliance-side (CTO repo, not storefront P0):**
 
 | Doc | Issue |
 |-----|--------|
-| `curxor-os` FUTURE-ROADMAP | Confirm G1 line reflects Jun 29 close |
+| `curxor-os` FUTURE-ROADMAP | Gate table still says G1 blocked — flip to G1 green, G2 current |
 
 ---
 
@@ -259,7 +253,7 @@ Unbox field log and network pitfall fixes landed in `curxor-os`. Storefront `ver
 
 **Hardware:** Phase change from "closing golden path" to **"golden path closed."** Proof: verify PASS, smile PASS, captive + mesh on real COMMAND/EGRESS cabling.
 
-**Gap:** Storefront is **~3 days stale** on G1. G2 (OTA/tag) and G3 (box captures) are the next gates — not more G1 work.
+**Gap:** Storefront buyer copy mirrors G1. **G2** (OTA/tag) and **G3** (box-IP demo captures) are the next gates — not more G1 mirror work.
 
 **Discipline:** Topology verified ≠ benchmark marketing. Pre-order and G1-close narrative are fine. Sub-ms telemetry, production OTA, LinkedIn flip, and hero photography still wait.
 

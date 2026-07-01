@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
 import { changelogEntries, changelogMeta } from "@/lib/changelog";
 import { siteConfig } from "@/lib/config";
+import { qaMetricsLine } from "@/lib/qa-metrics";
 
 export const metadata: Metadata = {
   title: `Changelog — ${siteConfig.name}`,
@@ -29,8 +30,9 @@ export default function ChangelogPage() {
             month: "long",
             day: "numeric",
           })}
-          . MS-S1 MAX unboxed 2026-06-28 — G1 golden path closed Jun 29 (verify
-          script + smile test PASS; COMMAND captive portal + EGRESS mesh live on box).
+          . {qaMetricsLine} in curxor-os. MS-S1 MAX unboxed 2026-06-28 — G1 golden
+          path closed Jun 29 (verify script + smile test PASS; COMMAND captive portal
+          + EGRESS mesh live on box).
         </p>
 
         <div className="mt-12 space-y-12">

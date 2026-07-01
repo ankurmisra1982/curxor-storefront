@@ -1,10 +1,10 @@
 # CTO Status Report — CurXor OS ↔ Storefront Sync
 
-> **As of:** June 28, 2026  
-> **Source:** `../curxor-os/` full inspection (Vision & Strategy room)  
+> **As of:** July 1, 2026  
+> **Source:** `../curxor-os/docs/curxor-os/UNBOX-FIELD-LOG.md` (golden path **COMPLETE 2026-06-29**)  
 > **Audience:** Storefront GTM, copy, deploy decisions  
 > **Appliance version:** `0.9.1` stable (pre-v1.0.0)  
-> **Refresh:** After G1 closes or major appliance milestone — mirror updates here when `curxor-os` gate state changes
+> **Refresh:** After gate changes or major appliance milestone — **this file is canonical**; storefront mirrors from here
 
 **Related:** [SYNC.md](SYNC.md) · [GTM-CHECKLIST.md](GTM-CHECKLIST.md) · [TECHNICAL-HANDOFF.md](TECHNICAL-HANDOFF.md) · `../curxor-os/docs/curxor-os/UNBOX-FIELD-LOG.md`
 
@@ -12,13 +12,13 @@
 
 ## Headline (storefront-relevant)
 
-**The box is real. G1 is not closed.**
+**G1 is closed. G2 and G3 are next.**
 
-MS-S1 MAX unboxed **2026-06-28**. Ubuntu installed, `install-all.sh` ran, Ollama pulled `moondream:1.8b` + `qwen3:8b`, FRE completed (Capital / Creator / Work), Flight Command live at `http://192.168.86.211:3080` (browser). SSH: **`ssh curxor`**.
+MS-S1 MAX unboxed **2026-06-28**. Golden path **closed 2026-06-29**: COMMAND/EGRESS cabled, captive portal + mesh scripts run, `verify-unbox-day.sh --post-models` **PASS** (0 failures, 4 warnings), smile test **PASS**, telemetry broker **active** on mesh.
 
-**G1 (on-device golden path) is still open:** eno1/eno2 cabling pending, `verify-unbox-day.sh --post-models` not run, full flagship click-through incomplete.
+Flight Command home: **`http://10.0.0.1:3080/home`** (COMMAND port · captive). SSH: **`ssh ankur@10.0.0.1`** (laptop `10.0.0.2/24` on COMMAND cable).
 
-Until G1 closes: **no v1.0.0, no production OTA, no real-hardware hero screenshots on storefront, LinkedIn stays stealth.**
+**Still blocked until later gates:** v1.0.0 tag, signed production OTA, published mesh latency benchmarks, box-IP demo re-capture on storefront (G3), hero product photography, LinkedIn brochure flip (needs honest box screenshot first).
 
 ---
 
@@ -27,71 +27,106 @@ Until G1 closes: **no v1.0.0, no production OTA, no real-hardware hero screensho
 | Gate | Meaning | Status | Storefront impact |
 |------|---------|--------|-------------------|
 | **G0** | Dev `pre-unbox:gate` green | **Green** (last pass Jun 27) | Safe to deploy copy synced to 0.9.1 |
-| **G1** | On-device golden path | **In progress** — FRE done; network + verify open | Do **not** claim mesh/captive/telemetry validated |
-| **G2** | v1.0.0 + signed OTA | Blocked on G1 | Changelog stays 0.9.1 until tag |
-| **G3** | Appliance demo captures | Blocked | Loop homepage (IDEA-G11), trust graphic (G12), real hero photo |
-| **G4** | Operator UAT smile | Blocked | Tier C go-live, rebrand, fundraise polish |
+| **G1** | On-device golden path | **Green** (closed Jun 29) | Flip validation badge · update trust strip · stop saying "G1 in progress" |
+| **G2** | v1.0.0 + signed OTA | **Open** — next engineering gate | Changelog stays 0.9.1 until tag; no "production OTA ready" |
+| **G3** | Appliance demo captures from box IP | **Unblocked** — not started on storefront | Re-capture `public/demo/` · first honest box screenshots |
+| **G4** | Operator UAT smile at scale | Blocked on G2/G3 | Tier C go-live, rebrand, fundraise polish |
 
 ---
 
 ## What shipped on appliance (0.9.1 — do not oversell gaps)
 
-Software on dev and partially validated on box:
+Validated on box (Jun 28–29):
 
 | Area | Shipped | Storefront-safe line |
 |------|---------|----------------------|
 | 10 Claw routes + Forge | UI + agent runtime | *Ten Claw workspaces + The Forge — enable any combination in Settings* |
 | Build Plane BP0–BP4 | Settings overlay, delegation list | *Build Plane overlay for power users* — not hero until G3 `/for-builders` |
 | Patron Ask CH0–CH5 | FAB, `/ask`, mobile `/m/ask` | *Ask your patron from desktop or phone on your LAN* — not App Store |
-| Claw Cafe C4–C13 | Pixel room, ascension | Dev captures OK; label *Flight Command UI* not *MS-S1 verified* until G3 |
+| Claw Cafe C4–C13 | Pixel room, ascension | Dev captures OK until G3; then label *Flight Command on MS-S1* after box re-capture |
 | Mobile Patron Link | `/m` PWA shell | Park on `/signal` card only — see GTM-CHECKLIST |
-| Local inference | Ollama ROCm on box | *Local inference on your metal* — validated for 2 models on Standard 64 |
+| Local inference | Ollama ROCm on box | *Local inference on your metal* — validated: `moondream:1.8b` + `qwen3:8b` on Standard 64 |
+| COMMAND captive portal | `10.0.0.1` · dnsmasq + iptables | *Command port captive portal* — validated on box (G1) |
+| EGRESS mesh + telemetry | `10.77.0.1` · broker `9100–9201` | *Dual-port topology live on hardware* — **not** sub-ms benchmarks until published |
 | CI / smoke | 184 smoke + checklists | Internal — not a marketing claim |
 
-**Not shipped / not validated on hardware:**
+**Not shipped / not validated (GTM rules unchanged):**
 
 | Gap | GTM rule |
 |-----|----------|
-| eno1/eno2 captive + mesh | Do **not** claim sub-ms telemetry or live mesh benchmarks |
-| Pillar 3 ZMQ broker on eno2 | *Low-latency local mesh; benchmarks pending* |
-| Production OTA URL | Pre-order OK; OTA install readiness separate |
+| Published mesh latency numbers | Do **not** claim sub-millisecond ZeroMQ telemetry — wiring validated, benchmarks not published |
+| Production OTA URL | Pre-order OK; OTA install readiness is G2 |
 | Tier C live bridges | Honest Coming Soon / preview — see APPLIANCE-AUDIT |
-| Real box screenshots in `public/demo/` | Still dev/seed captures — re-capture at G3 (IDEA-A04) |
+| Real box screenshots in `public/demo/` | Still dev/seed captures — **G3 action** (IDEA-A04) |
+| v1.0.0 release tag | Stay on 0.9.1 in badges until G2 |
 
 ---
 
-## Hardware session scorecard (2026-06-28)
+## Hardware session scorecard
 
-| Done | Pending |
-|------|---------|
-| BIOS UMA 48 GB | eno1/eno2 cable + captive/mesh scripts |
-| Ubuntu 24.04 · hostname `curxor` | `verify-unbox-day.sh --post-models` |
-| `install-all.sh` + model pull | Full flagship smile test |
-| FRE green (Capital, Creator, Work) | On-box qa-smoke confirmation |
-| Dashboard :3080 live | Appliance screenshot re-capture for storefront |
+### Done (G1 closed)
 
-**Box quick reference:**
+| Item | Detail |
+|------|--------|
+| BIOS UMA 48 GB | `gpuHeapGb: 48` confirmed on dashboard |
+| Ubuntu 24.04.4 · hostname `curxor` | Standard 64 GB SKU |
+| `install-all.sh` + model pull | Ollama ROCm · `moondream:1.8b` · `qwen3:8b` |
+| FRE green | Capital, Creator, Work (`my-capital`, `my-content-creator`, `my-work`) |
+| COMMAND + EGRESS cabling | See interface map below |
+| Captive portal + mesh scripts | `setup-captive-portal.sh` + mesh on verified ifaces |
+| `verify-unbox-day.sh --post-models` | **PASS** — 0 failures, 4 warnings |
+| Smile test | **PASS** |
+| Telemetry broker | `curxor-telemetry-broker` active · `10.77.0.1:9100–9201` listening |
+
+### Pending (G2 / G3 / G4)
+
+| Item | Gate |
+|------|------|
+| v1.0.0 tag + signed OTA | G2 |
+| Re-capture `public/demo/` from `10.0.0.1:3080` | G3 |
+| Published mesh latency benchmarks | After G1 — honest numbers only |
+| On-box qa-smoke in CI artifact trail | Ops hygiene |
+| Hero product photography | G3+ |
+| Factory USB / operator PDF | G2/G4 |
+
+**Box quick reference (current ops — not bootstrap DHCP):**
 
 | Field | Value |
 |-------|--------|
 | Hostname | `curxor` |
-| LAN IP | `192.168.86.211` (router DHCP; update `HostName` in `~/.ssh/config` if it changes) |
-| SSH | **`ssh curxor`** (founder laptop) |
+| User | `ankur` |
+| COMMAND (CurXor name) | `enp98s0` @ **`10.0.0.1/24`** |
+| EGRESS / mesh (CurXor name) | `enp97s0` @ **`10.77.0.1/24`** |
+| Dashboard | `http://10.0.0.1:3080/home` |
+| SSH | `ssh ankur@10.0.0.1` (laptop static `10.0.0.2/24`, gateway blank) |
 | SKU | Standard 64 GB · UMA 48 GB |
 | Inference | Ollama ROCm · `moondream:1.8b` · `qwen3:8b` |
 
-Install used USB LAN dongle (`enp97s0`) — fine for bootstrap; product network model needs built-in COMMAND/EGRESS ports.
+**Naming note for GTM:** Buyer-facing copy may keep **eno1 · COMMAND** / **eno2 · EGRESS** as product port names. On MS-S1 MAX Linux ifaces are **`enp98s0`** / **`enp97s0`** — do not put kernel names on the homepage; ops docs and this report use both.
+
+**Obsolete:** `192.168.86.211` was USB dongle → router DHCP during first install only. Do not reference on storefront.
 
 ---
 
 ## Four-pillar deployment reality
 
-| Pillar | Dev | On box |
-|--------|-----|--------|
-| P1 Compute | — | Ollama ROCm live |
-| P2 Engine | CI green | systemd installed, unverified |
-| P3 Telemetry | Mock in QA | **Blocked** — no eno2 |
-| P4 Dashboard | `qa:local` green | Live, FRE done |
+| Pillar | Dev | On box (post-G1) |
+|--------|-----|------------------|
+| P1 Compute | CI green | Ollama ROCm live · models pulled |
+| P2 Engine | CI green | systemd installed · FRE validated |
+| P3 Telemetry | Mock in QA | **Live** — broker on `10.77.0.1:9100–9201` |
+| P4 Dashboard | `qa:local` green | Live · FRE done · `/api/setup/status` OK |
+
+**Verify snapshot (2026-06-29):**
+
+```text
+verify-unbox-day.sh --post-models : PASS (0 failures, 4 warnings)
+  Warnings: rocm-smi, curxor-compute/engine not installed (Ollama Docker OK)
+curxor-telemetry-broker : active
+10.77.0.1:9100-9201     : listening
+Ollama                  : qwen3:8b, moondream:1.8b
+Dashboard               : /api/setup/status OK, gpuHeapGb 48
+```
 
 ---
 
@@ -99,91 +134,134 @@ Install used USB LAN dongle (`enp97s0`) — fine for bootstrap; product network 
 
 | Channel | Mode | Action now |
 |---------|------|------------|
-| **X @ankurmisra** | Public | OK: unbox milestone, FRE green, honest build notes |
-| **X @curxorai** | Public | OK: ship log; wait for box screenshots until G1/G3 |
-| **LinkedIn** | Stealth | **No flip** until G1 + real Flight Command screenshot from box IP |
-| **curxor.ai** | Live | Loop doc shipped; **homepage loop section still G3** |
-| **Demo pack** | Dev captures | Git shows updated PNGs — still mostly seed, not box IP |
+| **X @ankurmisra** | Public | OK: G1 close thread, captive/mesh proof, honest pitfalls (Windows COMMAND cable, CRLF) |
+| **X @curxorai** | Public | OK: ship log; prefer box-IP screenshots once G3 capture lands |
+| **LinkedIn** | Stealth | **Still hold** until first honest Flight Command screenshot from box IP in `public/demo/` — G1 alone is not enough for brochure flip |
+| **curxor.ai** | Live | **Mirror G1 green** — validation badge, trust strip, press kit, changelog intro |
+| **Demo pack** | Dev captures | G3: replace seed PNGs with `10.0.0.1:3080` captures |
 
-### Safe to say today (X / product account)
+### Safe to say today (storefront / X / product account)
 
-- Box unboxed; CurXor OS 0.9.1 installed on MS-S1 MAX Standard 64
-- FRE completed; Capital, Creator, Work provisioned
-- Local inference running (Qwen3 8B + Moondream on ROCm)
+- MS-S1 MAX unboxed; CurXor OS 0.9.1 on Standard 64
+- G1 golden path **closed** — verify script + smile test pass
+- FRE complete; Capital, Creator, Work provisioned
+- Local inference on ROCm (`qwen3:8b`, `moondream:1.8b`)
+- Dual-port topology **wired and verified** on hardware (COMMAND captive + EGRESS mesh)
+- Telemetry broker **running** on mesh — topology proof, not latency marketing
 
-### Do not say yet (storefront / ads / hero)
+### Do not say yet
 
-- Captive portal or eno2 mesh **validated**
-- Sub-millisecond ZeroMQ telemetry
-- Production OTA or factory USB ready
+- **Sub-millisecond** or published mesh latency benchmarks
+- Production OTA or factory USB **ready for customers**
 - Hero/product photography from real unit (until G3 capture)
-- LinkedIn product brochure mode
+- LinkedIn product brochure mode (until box screenshot in demo pack)
+- v1.0.0 / "shipping firmware" (G2)
+- Evolution tier names (Sprout→Infinity) on site
+- Public bench log during validation week (stay quiet until green)
 
 ---
 
-## Storefront priority stack (synced with appliance)
+## Storefront priority stack (canonical — mirror in build chat)
 
-### P0 — Blocked on appliance G1 (no storefront code required)
+### P0 — G1 mirror (storefront code **required now**)
 
-Appliance team closes: eno cables → captive/mesh scripts → `verify-unbox-day.sh --post-models` → smile test.
+Single wave: align all buyer-facing surfaces to this doc. **Do not** change homepage hero spine or add loop section in this wave.
 
-### P1 — After G1 green (storefront actions)
+| File / surface | Action |
+|----------------|--------|
+| `src/lib/architecture.ts` | Flip `hardwareValidation`: G1 items → done; telemetry/mesh → wired, benchmarks pending; update badge copy |
+| `src/lib/marketing.ts` | `socialProofLine` → G1 closed wording |
+| `src/lib/press.ts` | Press kit headline, fact sheet, disclaimers, milestones |
+| `src/app/changelog/page.tsx` | Intro paragraph |
+| `data/changelog-entries.json` | Latest entry bullet for G1 close (then `npm run sync:appliance`) |
+| `docs/GTM-CHECKLIST.md` | Check G1 closed; update header |
+| `docs/SYNC.md` | Status line date + G1 green |
+| `docs/TECHNICAL-HANDOFF.md` | Header refresh |
+| `docs/APPLIANCE-AUDIT.md` | Hardware validation row + executive summary |
+| `README.md` | Hardware status line |
+| `public/llms.txt` | Validation line if present |
 
-| Action | Gate | Doc |
-|--------|------|-----|
-| Re-capture `public/demo/` from box IP | G3 min · G1 for first honest shot | IDEA-A04 |
-| LinkedIn stealth exit | G1 | `../curxor-os/docs/founder/STEALTH-MODE.md` |
-| Update validation badge on `/architecture` | G1 | soft → hardware-validated copy |
-| Loop homepage section | G3 | [LOOP-POSITIONING.md](LOOP-POSITIONING.md) |
-| Trust loop graphic | G3 | IDEA-G12 |
-| `/for-builders` page | G3+ | IDEA-G13 |
+**Copy guardrails for P0:**
 
-### P2 — Narrative now (copy only, no deploy blockers)
+- Say **G1 closed** / **golden path complete** / **dual-port topology verified on box**
+- Say mesh telemetry broker is **live on hardware** — benchmarks **pending publication**
+- Keep **eno1/eno2** in buyer copy; no `enp98s0` on marketing pages
+- Keep pre-v1.0.0 and no production OTA claims
 
-- Founder X: unbox thread — layer 1–2 hook, not orchestrator-only cold traffic
-- Keep LinkedIn quiet per stealth policy
-- Run `npm run sync:appliance` after any `version.json` bump
+### P1 — G3 capture sprint (after P0 deploy)
+
+| Action | Doc |
+|--------|-----|
+| Re-capture `public/demo/` from `http://10.0.0.1:3080` | IDEA-A04 |
+| Update demo section labels: *Flight Command on MS-S1* where appropriate | GTM-CHECKLIST |
+| LinkedIn stealth exit review | `../curxor-os/docs/founder/STEALTH-MODE.md` |
+| Hero product photo when batch shot | GTM-CHECKLIST |
+
+### P2 — Parked (G3+)
+
+| Action | Gate |
+|--------|------|
+| Loop homepage section | G3 · [LOOP-POSITIONING.md](LOOP-POSITIONING.md) |
+| Trust loop graphic | G3 · IDEA-G12 |
+| `/for-builders` page | G3+ · IDEA-G13 |
+
+### P3 — Ops (parallel, not copy)
+
+- Verify Resend env on Vercel Production; smoke `POST /api/subscribe`
+- Run `npm run sync:appliance` after changelog JSON edit
+- `npm run qa` before deploy
 
 ---
 
 ## Build freeze (appliance → affects GTM timing)
 
-Until G1 passes, **curxor-os** is bug-fix only. Do not expect:
+G1 passed. **curxor-os** is bug-fix + G2 release work until v1.0.0 tags. Do not expect on storefront before G3 captures:
 
 - BP5 Cursor OAuth / live worker (G2)
 - Inter-Claw Handshakes HS (G2)
 - Firecrawl bridge FC (G2)
 - Tier C live bridges (G4)
-- Storefront loop hero UI before G3 captures
+- Loop hero UI (G3)
 
 ---
 
-## Doc drift to fix (cross-repo)
+## Doc drift (storefront must clear in P0 wave)
+
+| Doc / file | Issue |
+|------------|--------|
+| `src/lib/architecture.ts` | Still `G1 IN PROGRESS` — **flip** |
+| `src/lib/marketing.ts` | Trust strip says G1 in progress |
+| `src/lib/press.ts` | Press kit stale |
+| `docs/GTM-CHECKLIST.md` | G1 unchecked · header stale |
+| `README.md` | "G1 in progress" |
+| `docs/APPLIANCE-AUDIT.md` | "G1 in progress" |
+| `docs/TECHNICAL-HANDOFF.md` | Jun 28 header |
+| `docs/SYNC.md` | Jun 28 status line |
+| `data/changelog-entries.json` | G1-in-progress bullet on latest entry |
+
+**Appliance-side (CTO repo, not storefront P0):**
 
 | Doc | Issue |
 |-----|--------|
-| Storefront `README.md` | Was "holding pattern / hardware pending" — **update to G1 in progress** |
-| Storefront `APPLIANCE-AUDIT.md` | Header still "not yet received" — **superseded by this report until audit refresh** |
-| Storefront `GTM-CHECKLIST.md` | "MS-S1 in transit" — **update** |
-| `curxor-os` FUTURE-ROADMAP | Line 42 still "G1 blocked until session" — session started Jun 28 |
+| `curxor-os` FUTURE-ROADMAP | Confirm G1 line reflects Jun 29 close |
 
 ---
 
 ## Working tree note (appliance repo)
 
-Large uncommitted surface in `curxor-os`: unbox log, compute hardening, demo screenshots, dev-qa `forged-exit-demo-*` pollution. Storefront sync unaffected until `version.json` or `ootb-apps.ts` changes.
+Unbox field log and network pitfall fixes landed in `curxor-os`. Storefront `version.json` sync unchanged at **0.9.1**. No `ootb-apps.ts` changes required for P0.
 
 ---
 
 ## Bottom line for GTM
 
-**Software:** 0.9.1 is real product depth. G0 solid. Patron Ask and Build Plane UI exceed typical appliance buyer expectations for day one.
+**Software:** 0.9.1 is real product depth. G0 + **G1 green**. Four pillars live on box including P3 broker.
 
-**Hardware:** FRE on bare metal with local inference is the proof point. Phase change from "waiting for box" to "closing golden path."
+**Hardware:** Phase change from "closing golden path" to **"golden path closed."** Proof: verify PASS, smile PASS, captive + mesh on real COMMAND/EGRESS cabling.
 
-**Gap:** Network topology (eno1/eno2), verify script, and smile test block G1 → G2 → G3 storefront assets (real photos, loop section, validation copy).
+**Gap:** Storefront is **~3 days stale** on G1. G2 (OTA/tag) and G3 (box captures) are the next gates — not more G1 work.
 
-**Discipline:** Do not let storefront get ahead of G1 on mesh/captive/OTA claims. Pre-order and narrative on X are fine; hero photography and LinkedIn flip wait for honest captures.
+**Discipline:** Topology verified ≠ benchmark marketing. Pre-order and G1-close narrative are fine. Sub-ms telemetry, production OTA, LinkedIn flip, and hero photography still wait.
 
 ---
 
@@ -191,4 +269,5 @@ Large uncommitted surface in `curxor-os`: unbox log, compute hardening, demo scr
 
 | Date | Change |
 |------|--------|
-| 2026-06-28 | Initial sync from curxor-os CTO inspection — MS-S1 unbox day, G1 in progress |
+| 2026-06-28 | Initial sync — MS-S1 unbox day, G1 in progress |
+| 2026-07-01 | **G1 closed** per UNBOX-FIELD-LOG (Jun 29 verify + smile PASS); box ops → `10.0.0.1`; storefront P0 mirror stack defined |

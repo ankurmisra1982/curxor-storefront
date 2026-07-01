@@ -1,34 +1,39 @@
 /** MS-S1 unbox day + G1 gate — shared by ValidationBadge and /architecture#validation. */
 export const hardwareValidation = {
   unboxDate: "2026-06-28",
-  badgeAriaLabel: "curXor — MS-S1 unboxed · G1 golden path in progress",
+  g1ClosedDate: "2026-06-29",
+  badgeAriaLabel: "curXor — MS-S1 unboxed · G1 golden path closed",
   badgeSummary:
-    "MS-S1 MAX unboxed Jun 28, 2026. CurXor OS 0.9.1, FRE, and local inference validated on Standard 64. G1 golden path open — eno mesh, verify script, and published benchmarks after G1 closes.",
+    "MS-S1 MAX unboxed Jun 28, 2026. G1 golden path closed Jun 29 — verify script and smile test PASS. CurXor OS 0.9.1, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
   computeBenchNote:
-    "126 TOPS local NPU — ROCm inference validated on Standard 64; mesh benchmarks pending eno2 wiring (G1)",
+    "126 TOPS local NPU — ROCm inference validated on Standard 64 (moondream:1.8b, qwen3:8b); published mesh benchmarks pending",
   telemetryNote:
-    "Low-latency local mesh — eno2 wiring and benchmarks pending G1 close (not validated on box yet)",
+    "Telemetry broker live on mesh (10.77.0.1:9100–9201) — dual-port topology verified on box; published latency numbers pending",
   doneOnBox: {
     eyebrow: "DONE ON BOX",
     items: [
       "Ubuntu 24.04 install · UMA 48 GB · CurXor OS 0.9.1 on MS-S1 MAX Standard 64",
       "Ollama ROCm live — moondream:1.8b + qwen3:8b (Standard 64 stack)",
       "FRE complete — Capital, Creator, Work · Flight Command live on bare metal",
+      "eno1/eno2 cabling — COMMAND captive portal + EGRESS mesh scripts on verified ports",
+      "verify-unbox-day.sh --post-models — PASS (0 failures, 4 warnings)",
+      "Smile test — PASS",
+      "Telemetry broker active on mesh — 10.77.0.1:9100–9201",
     ],
   },
-  g1InProgress: {
-    eyebrow: "G1 IN PROGRESS",
+  g1Closed: {
+    eyebrow: "G1 CLOSED",
     items: [
-      "eno1/eno2 cabling + captive portal / mesh scripts",
-      "verify-unbox-day.sh --post-models",
-      "Full flagship smoke test + on-box qa confirmation",
+      "Golden path complete — closed Jun 29, 2026",
+      "Dual-port topology verified on MS-S1 MAX hardware",
+      "COMMAND captive portal + EGRESS mesh live on box",
     ],
   },
   afterG1: {
-    eyebrow: "AFTER G1 / G2",
+    eyebrow: "G2 / G3 NEXT",
     items: [
       "Published mesh latency benchmarks — not marketing guesses",
-      "Factory USB + production OTA artifact (pre-v1.0.0 today)",
+      "v1.0.0 tag + factory USB + production OTA artifact (pre-v1.0.0 today)",
       "Storefront demo re-capture from box IP (G3)",
     ],
   },

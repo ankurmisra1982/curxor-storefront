@@ -33,7 +33,7 @@ export const trustSignals = [
   },
 ] as const;
 
-export const socialProofLine = `CurXor OS ${applianceVersion} · ${qaMetricsLine} · MS-S1 unboxed · G1 golden path in progress`;
+export const socialProofLine = `CurXor OS ${applianceVersion} · ${qaMetricsLine} · MS-S1 unboxed · G1 golden path closed`;
 
 export const setupClaim =
   "Flight Command on day one — pick Claws in Settings, chat or tap skills. Live bridges need your credentials on eno2.";

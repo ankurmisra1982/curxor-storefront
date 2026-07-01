@@ -122,7 +122,7 @@ export default function ArchitecturePage() {
             {(
               [
                 ["doneOnBox", "text-neon-purple"] as const,
-                ["g1InProgress", "text-amber-400"] as const,
+                ["g1Closed", "text-neon-purple"] as const,
                 ["afterG1", "text-white/40"] as const,
               ] as const
             ).map(([key, statusClass]) => {
@@ -149,7 +149,7 @@ export default function ArchitecturePage() {
           <p className="mt-4 text-xs leading-relaxed text-white/40">
             Unboxed {hardwareValidation.unboxDate}. Demo screenshots on curxor.ai are
             dev/seed Flight Command captures — honest re-capture from box IP waits for
-            G3. Operator PDF exports after G1/G2 production artifacts.
+            G3. Operator PDF exports after G2 production artifacts.
           </p>
         </div>
 

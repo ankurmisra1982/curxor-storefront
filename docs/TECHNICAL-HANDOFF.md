@@ -2,7 +2,7 @@
 
 Copy-paste facts for storefront, datasheets, and pitch decks. **Source of truth:** `../curxor-os/` (version, appliance behavior) + `src/lib/config.ts` + `src/lib/generated/appliance-sync.ts` (synced storefront surface).
 
-Last refreshed: June 28, 2026 · Appliance **0.9.1** · **G1 in progress** (MS-S1 unboxed, FRE green) — [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)
+Last refreshed: July 1, 2026 · Appliance **0.9.1** · **G1 closed** (Jun 29 verify + smile PASS; captive portal + mesh on box) — [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)
 
 ---
 

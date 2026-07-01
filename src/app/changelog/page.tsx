@@ -29,8 +29,8 @@ export default function ChangelogPage() {
             month: "long",
             day: "numeric",
           })}
-          . MS-S1 MAX unboxed 2026-06-28 — FRE and local inference validated on box;
-          G1 golden path (eno mesh, verify script) still open.
+          . MS-S1 MAX unboxed 2026-06-28 — G1 golden path closed Jun 29 (verify
+          script + smile test PASS; COMMAND captive portal + EGRESS mesh live on box).
         </p>
 
         <div className="mt-12 space-y-12">

@@ -1,6 +1,6 @@
 # GTM Checklist — Storefront vs Appliance
 
-MS-S1 MAX **unboxed 2026-06-28** — G1 in progress (FRE green; eno cables + verify pending). See [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md). Use this to prioritize GTM work in **this repo**.
+MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verify + smile PASS; captive portal + mesh on box). See [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md). Use this to prioritize GTM work in **this repo**.
 
 ## Done in **curxor storefront** ✅
 
@@ -63,9 +63,9 @@ MS-S1 MAX **unboxed 2026-06-28** — G1 in progress (FRE green; eno cables + ver
 ## Wait for **curxor-os + hardware**
 
 - [x] MS-S1 MAX received and base install (Jun 28 — FRE green, models pulled)
-- [ ] G1 golden path closed (eno cables, captive/mesh, `verify-unbox-day.sh`, smile test)
-- [ ] ROCm / UMA / mesh benchmarks (publish validated latency numbers)
-- [x] MS-S1 MAX validation badge (soft pre-hardware state — hero + `/architecture#validation`) — **flip copy after G1**
+- [x] G1 golden path closed (eno cables, captive/mesh, `verify-unbox-day.sh`, smile test) — validation badge flipped in P0 mirror wave
+- [ ] Published mesh latency benchmarks (topology verified on box; numbers pending)
+- [x] MS-S1 MAX validation badge (hero + `/architecture#validation`) — G1 closed copy live
 - [ ] Factory USB / cloud-init install video
 - [ ] PDF operator guide (`../curxor-os/docs/scripts/export-guides-pdf.sh`)
 - [ ] Live demo unit (Engage Claw + captive portal)

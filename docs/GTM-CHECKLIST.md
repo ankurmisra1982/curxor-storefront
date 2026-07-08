@@ -35,6 +35,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 - [x] **Hero film v5.1 script + comp plates** (G3 · `46f9257`) — [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/` · Figma proto linked
 - [x] **Hero film UI** — `/signal` category section + film tabs · `/press` downloads
 - [x] **Hero film MP4** — badge vision (~61s) + Act I product (~90s) on /signal · investor proof on /press
+- [x] **Align kickoff** — [STOREFRONT-ALIGN-KICKOFF.md](STOREFRONT-ALIGN-KICKOFF.md) for post-deploy verification chat
 - [x] **Track C deploy (STORE-C-DEPLOY)** — sync/g1-green-mirror-p0 → main · G3 assets on prod · category film labeled ~90s Act I alias
 - [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **deferred post-fundraise (G11)**
 - [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · **deferred post-fundraise (G12)**

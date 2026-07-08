@@ -8,6 +8,8 @@ export type NavGroup = {
   id: string;
   label: string;
   items: NavLink[];
+  /** Muted link under items — e.g. full roster with Preview-tier Claws. */
+  footer?: NavLink;
 };
 
 /** Primary header IA — changelog lives in footer only; Signal via hero accent, not nav. */
@@ -20,6 +22,11 @@ export const navGroups: NavGroup[] = [
       { href: "/creator", label: "Creator Claw", description: "Content & growth loops" },
       { href: "/outreach", label: "Outreach Claw", description: "Pipeline & sequences" },
     ],
+    footer: {
+      href: "/#apps",
+      label: "Full roster →",
+      description: "Flagship · Forge · Cafe · Preview",
+    },
   },
   {
     id: "why",

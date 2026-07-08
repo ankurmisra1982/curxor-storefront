@@ -124,6 +124,17 @@ export function Header() {
                           </li>
                         ))}
                       </ul>
+                      {group.footer ? (
+                        <div className="mt-4 border-t border-white/10 pt-3">
+                          <NavLinkItem
+                            href={group.footer.href}
+                            label={group.footer.label}
+                            description={group.footer.description}
+                            onNavigate={() => setOpenGroup(null)}
+                            className="text-white/45 hover:text-neon-purple [&_span:first-child]:font-normal [&_span:first-child]:text-white/45"
+                          />
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                 ) : null}
@@ -206,6 +217,17 @@ export function Header() {
                           />
                         </li>
                       ))}
+                      {group.footer ? (
+                        <li className="border-t border-white/10 pt-3">
+                          <NavLinkItem
+                            href={group.footer.href}
+                            label={group.footer.label}
+                            description={group.footer.description}
+                            onNavigate={closeMobileMenu}
+                            className="text-white/45 hover:text-neon-purple [&_span:first-child]:font-normal [&_span:first-child]:text-white/45"
+                          />
+                        </li>
+                      ) : null}
                     </ul>
                   ) : null}
                 </div>

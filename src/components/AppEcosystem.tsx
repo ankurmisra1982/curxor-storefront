@@ -88,7 +88,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
 
   if (variant === "featured") {
     return (
-      <section id="apps" className="relative border-t border-white/10 py-16 sm:py-20">
+      <section id="apps" className="relative scroll-mt-24 border-t border-white/10 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>

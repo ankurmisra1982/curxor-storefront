@@ -306,9 +306,19 @@ export const pressKit = {
       note: "Text-only — tight spaces, dark backgrounds",
     },
     {
-      label: "Category hero film",
+      label: "Category vision film (~61s MP4)",
+      path: categoryFilmAssets.heroCategoryBadge,
+      note: "Badge comp + hero VO · XOR wake · dream-state category cut",
+    },
+    {
+      label: "Product proof film (~90s MP4)",
+      path: categoryFilmAssets.heroCategory,
+      note: "Act I cut · hero-category-v1 (= g3-inception-reel-v1 alias)",
+    },
+    {
+      label: "Category film (/signal)",
       path: "/signal#category-film",
-      note: "Act I cut ~90s · hero-category-v1 (= g3-inception-reel-v1 alias) · full badge+payoff v2 post-validation",
+      note: "Both cuts embedded · vision default tab",
     },
     {
       label: "G3 investor proof (~3 min MP4)",

@@ -34,7 +34,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 - [x] `/signal` — Signal Claw · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
 - [x] **Hero film v5.1 script + comp plates** (G3 · `46f9257`) — [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/` · Figma proto linked
 - [x] **Hero film UI** — `/signal` category section + film tabs · `/press` downloads
-- [x] **Hero film MP4** — hero-category-v1 on /signal · inception reel alternate · investor proof on /press
+- [x] **Hero film MP4** — badge vision (~61s) + Act I product (~90s) on /signal · investor proof on /press
 - [x] **Track C deploy (STORE-C-DEPLOY)** — sync/g1-green-mirror-p0 → main · G3 assets on prod · category film labeled ~90s Act I alias
 - [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **deferred post-fundraise (G11)**
 - [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · **deferred post-fundraise (G12)**
@@ -52,7 +52,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 | G11 | Three-loop homepage section ([LOOP-POSITIONING.md](LOOP-POSITIONING.md)) | Post-fundraise · homepage H1 unchanged |
 | G12 | Trust loop graphic (Go Live + approval strip) | Post-fundraise |
 | G13 | `/for-builders` page (Build Plane) | G3+ · not conversion-critical |
-| HERO-v2 | Full hero-category merge (Layer A badge + Layer C payoff) | Post-close film chat |
+| HERO-v2 | Live Layer A badge shoot + full 90s A+B+C merge | Post-validation film chat |
 | Product photography | MS-S1 batch hero | Hardware shoot gate |
 | Claw walkthrough re-record | Replace old webm on `/capital` `/creator` | Post-G3 box session |
 

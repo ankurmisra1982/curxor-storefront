@@ -79,6 +79,11 @@ if (copyFile(
 )) copied++;
 
 if (copyFile(
+  path.join(packRoot, "master-film", "hero", "hero-category-badge-v1.mp4"),
+  path.join(demoRoot, "hero-category-badge-v1.mp4")
+)) copied++;
+
+if (copyFile(
   path.join(packRoot, "master-film", "hero", "hero-deck-loop-v1.mp4"),
   path.join(demoRoot, "hero-deck-loop-v1.mp4")
 )) copied++;
@@ -98,6 +103,9 @@ if (fs.existsSync(heroFilmDir)) {
   fs.mkdirSync(pressDir, { recursive: true });
   const zipEntries = [
     ...fs.readdirSync(heroFilmDir).filter((f) => f.endsWith(".png")).map((f) => path.join(heroFilmDir, f)),
+    ...(fs.existsSync(path.join(demoRoot, "hero-category-badge-v1.mp4"))
+      ? [path.join(demoRoot, "hero-category-badge-v1.mp4")]
+      : []),
     ...(fs.existsSync(metricsCard) ? [metricsCard] : []),
   ];
   if (zipEntries.length > 0) {

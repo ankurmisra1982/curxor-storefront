@@ -1,268 +1,241 @@
 # CurXor — Investor Pitch Deck
 
-**Version:** 1.0.3 · **Date:** July 2026  
-**Category:** Sovereign Agent Appliance  
-**Tagline:** Mint Autonomous Employees on Bare Metal.
+**Version:** 1.1.0 · **Date:** July 8, 2026  
+**Category:** Sovereign operator desk  
+**Format:** 10 slides (Fundraise Track D · Wave D2)  
+**Companion memo:** `curxor-os/docs/founder/INVESTOR-MEMO.md`
 
 ### PowerPoint export (speaker notes)
 
 - **File:** `docs/CurXor-Pitch-Deck-Speaker-Notes.pptx` — regenerate after edits
 - **Regenerate:** `npm run export:pitch-deck` (or `python scripts/export-pitch-deck-pptx.py`)
 - **Python deps:** `pip install -r scripts/requirements-pitch-deck.txt`
-- **Logo asset:** `docs/assets/curxor-logo-mark.png` (generated from favicon palette)
-- **Site diligence:** [curxor.ai/press](https://curxor.ai/press) — traction table matches Slide 12
+- **Logo asset:** `docs/assets/curxor-logo-mark.png`
+- **Site diligence:** [curxor.ai/press](https://curxor.ai/press)
+
+### Live proof assets (embed / handout)
+
+| Asset | URL |
+|-------|-----|
+| Storefront | https://curxor.ai |
+| Category film | https://curxor.ai/signal#category-film |
+| Category vision (~61s) | https://curxor.ai/demo/hero-category-badge-v1.mp4 |
+| Inception reel (~90s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
+| Investor proof (~3 min) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |
+| Press kit | https://curxor.ai/press |
+| Essay | https://x.com/ankurmisra/status/2070024704925077702 |
+| Origin thread | https://x.com/ankurmisra/status/2067473753924129162 |
+
+**Disk pack:** `curxor-os/docs/demo-pack/investor-pack/` (screenshots + desk strips)
 
 ---
 
 ## Slide 1 — Title
 
-**CurXor OS**  
-Your AI team. On a box you own.
+**CurXor**
 
-| Metric | Value |
-|--------|-------|
-| Price | **$3,999** once |
-| Recurring API | **$0/mo** |
-| Local NPU | 126 TOPS |
-| Unified memory | 64 GB UMA |
+> A sovereign AI system on your desk — with digital employees that run wealth, creation, and work on metal you own.
 
-> ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.
+| | |
+|--|--|
+| Raise | **$3M seed SAFE** · 18 months · 5 people max |
+| Price | **$3,999** once · **$0/mo** operate-plane API |
+| Stage | Proof-ready · pre-revenue · G1/G2/G3 green |
+| Founder | Ankur Misra · Founder & CEO |
 
----
+**Visuals:** Box / Flight Command still · link inception reel in speaker notes footer.
 
-## Slide 2 — Problem
-
-### The cloud tax on autonomous work
-
-**For operators**
-- Algo traders, creators, and outbound teams pay **$500+/mo** in API tokens.
-- Proprietary prompts, playbooks, and strategies leave the building via third-party LLM APIs.
-- CRM, content schedulers, and trading wrappers compress margin without sovereignty.
-
-**For the market**
-- Edge AI hardware (126 TOPS on desk) is finally real — but buyers still run cloud agents.
-- DIY Linux + Ollama lacks agent orchestration, egress control, OTA, and operator UX.
+**Speaker notes:** Open with the hybrid hero — not "personal cloud," not "another chat tab." Sovereignty investors hear owned metal + no API rent. Product investors hear Capital · Creator · Work · Forge · Cafe. Close the title with the ask amount so the room knows the meeting purpose. Offer live LAN demo (`:3080`) as the best next step — not a cloud account.
 
 ---
 
-## Slide 3 — Solution
+## Slide 2 — Founder story
 
-### CurXor: appliance, not another SaaS
+### Jun 18 → Jul 8 · 20 days · 182 commits
 
-CurXor OS is a **four-pillar edge stack** on MINISFORUM MS-S1 MAX:
+| When | What |
+|------|------|
+| **Jun 18** | Named CurXor in public — origin thread |
+| **Jun 19** | First commit — Claw OS skeleton on laptop |
+| **Week 1** | Four flagship Claws + Forge + agent runtime |
+| **Week 2** | Validation hardware unboxed · Cafe · Build Plane |
+| **Week 3** | `v1.0.0` → `v1.0.3` · G1/G2/G3 closed · film pack |
 
-| Pillar | Role |
-|--------|------|
-| **Pillar 1 — Compute** | Ollama/vLLM on `127.0.0.1` only |
-| **Pillar 2 — Engine** | Vision → inference → motor/digital outputs |
-| **Pillar 3 — Mesh** | ZMQ broker on eno2; Alpaca + X bridges |
-| **Pillar 4 — Flight Command** | FRE, 10 Claws, Forge, SSE telemetry |
+**Velocity:** `0.1.0` → `v1.0.3` · **239** smoke · **38 tok/s** local on validated metal.
 
-**Four customer promises:**
-1. **Local LLM** — inference never leaves localhost
-2. **Digital employees** — five flagship Claws day one + full roster on metal
-3. **Kill switch** — eno1 command · eno2 egress only · unplug stops agents
-4. **The Forge** — describe a Claw → deploy on-box in one session
+**Speaker notes:** This is the J-Cal / TWIST slide. Velocity + specificity beat adjectives. Jun 18 was public commitment; Jun 19 was build. Hardware validation is Act I proof plane — the product is the CurXor box + CurXor OS, not a mini-PC story. Do not claim SpaceX/Cursor partnership. Point to inception reel (~90s) if they want film; live box if they want truth.
 
 ---
 
-## Slide 4 — Product
+## Slide 3 — Why now
 
-### Two repos · one promise
+### People want deeper AI. Setup and product shape stop them.
 
-| Repo | Purpose | Status |
-|------|---------|--------|
-| **curxor-os** | Appliance software (`/opt/curxor/`, systemd, OTA) | v1.0.3 · 239 smoke + 40 user-flow QA |
-| **curxor storefront** | GTM at curxor.ai (Stripe, Resend, synced catalog) | Live pre-order · investor press kit |
+1. **Aspiration** — Culture says use AI; operators already open the tab daily and stall after drafts/polish.
+2. **Setup** — Always-on workflows still mean repos, keys, scripts, five tabs — weekend projects that die when life happens.
+3. **Product shape** — Market offers chat subscriptions, cloud agents with rent, home-cloud infra, or light assistant boxes. Nobody ships **vertical digital employees OOTB** on metal you own.
+4. **Desk-ready compute** — Local inference on operator-grade UMA is finally real. Edge no longer requires a rack or a research weekend.
 
-**Honest guardrail:** Five flagship Claws ship with G3 demo depth. Five preview-tier Claws are labeled Coming Soon in Flight Command. Live broker fills and outbound sends require operator-configured bridges on eno2 (G4).
-
----
-
-## Slide 5 — The Forge (Crown Jewel)
-
-**Mint custom operators** without per-token billing.
-
-| Step | Action |
-|------|--------|
-| 1 | Describe niche (text, photo, or live vision) |
-| 2 | Local LLM recommends model stack by UMA budget tier |
-| 3 | One tap forges Claw profile → engine |
-| 4 | Claw runs on your metal under your egress policy |
-
-The Forge is the viral loop: buyers become operators who mint more Claws.
+**Speaker notes:** Grammar gap is one symptom — lead with the holistic stall: want more AI, told to use it, can't set it up or stay on. Cloud rent and DIY are both failures of product shape. Our wedge is the appliance that closes chat → always-on team without assembly.
 
 ---
 
-## Slide 6 — Ten Claws (Digital Employees)
+## Slide 4 — What we build
 
-| Claw | Function | Depth |
-|------|----------|-------|
-| **Capital Claw** | Algo trading & rules — Alpaca bridge on eno2 | Flagship |
-| **Creator Claw** | Content pipeline — X bridge on eno2 | Flagship |
-| **Outreach Claw** | Outbound sequences & CRM-style desk | Flagship |
-| **The Forge** | Mint custom Claws from natural language | Forge |
-| **Signal Claw** | Neural Link — humanoid preview tier | Preview |
-| **Swarm · Vital · Kin · Arbitrage · Engage** | Fleet, health, household, margin, inbox | Preview / roadmap |
+### The CurXor box · CurXor OS · digital employees
 
-Each workspace: agent console (chat + skills + activity). Trades and posts require explicit skill tap — LLM never calls the internet directly.
-
----
-
-## Slide 7 — Sovereign Architecture
-
-```
-eno1 (10.0.0.1) — Flight Command :3080 · captive portal · operators
-  └─ Pillar 4 — FRE · 10 Claws · Forge · CCP mesh · SSE · local LLM client
-  └─ Pillar 1 — Ollama/vLLM @ 127.0.0.1:11434
-  └─ Pillar 2 — Vision → inference → motor_out / digital_out
-
-eno2 (10.77.0.1) — ZMQ mesh · Alpaca + X bridges only
-  └─ Pull cable = kill outbound agents
-```
-
-| Mesh | Ports |
-|------|-------|
-| Vision | 9100 / 9101 |
-| Motor | 9200 / 9201 |
-| Digital bridge | eno2 only |
-
-**G1 closed (2026-06-29):** eno1/eno2 captive portal + EGRESS mesh verified on MS-S1.
-
----
-
-## Slide 8 — Hardware
-
-### MINISFORUM MS-S1 MAX
-
-| Spec | Value |
-|------|-------|
-| CPU / NPU | Ryzen AI Max+ 395 |
-| NPU inference | **126 TOPS** |
-| Memory | 64 GB UMA |
-| GPU heap (BIOS carve) | ~48 GB |
-| Network | Dual 10GbE |
-| Stack | ROCm gfx1151 |
-| Unboxed | **2026-06-28** |
-
-Not a PC — sovereign inference + agent stack on your desk. UMA carve-out in BIOS is the primary lever for running 7B–35B models alongside the agent stack.
-
----
-
-## Slide 9 — Business Model
-
-### Hardware (now)
-- **$3,999** MS-S1 MAX bundle — one-time purchase
-- CurXor OS pre-flash path included
-- Stripe pre-order live on curxor.ai
-- No CurXor subscription for local inference or bundled Claws
-
-### Expansion (future)
-- OTA channel subscriptions (optional)
-- Partner bridge marketplace
-- Enterprise fleet with eno2 policy packs
-- White-label Forge for agencies
-
-**Wedge math:** Power users spending **$500+/mo** on cloud agents can offset hardware in under 8 months vs API burn alone — illustrative; see curxor.ai/compare#tco.
-
----
-
-## Slide 10 — Target Buyers
-
-| Segment | Operator story | CurXor answer |
-|---------|----------------|---------------|
-| Algo trader / crypto operator | **Jordan** — rules on metal | Capital Claw on localhost |
-| Creator / indie hacker | **Sam** — draft local, ship on signal | Creator Claw, $0/mo inference |
-| Outbound / agency | **Alex** — pipeline on one appliance | Outreach Claw on-box |
-| Sovereignty-maximalist | Alpha exfil to cloud LLMs | Pull eno2 = kill switch |
-
----
-
-## Slide 11 — Why CurXor Wins
-
-| vs | CurXor advantage |
-|----|------------------|
-| **DIY Ollama box** | FRE, Forge, mesh, OTA, bridges — complete stack |
-| **SaaS agents** | Alpha stays local; outbound is skill → bridge, not LLM → internet |
-| **Cloud-only tiers** | 126 TOPS on desk for 24/7 workloads without rate limits |
-| **NAS agent hosts** | 64GB UMA + wealth/work/life Claws + physical kill switch |
-| **Security story** | Two-port architecture enterprises understand |
-
----
-
-## Slide 12 — Traction
-
-*Mirrors [curxor.ai/press](https://curxor.ai/press) traction table.*
-
-### Shipped
-- MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **v1.0.3**, Ollama ROCm on Standard 64 (qwen3:8b · 38 tok/s)
-- **FRE green** on bare metal — Capital, Creator, Work provisioned · Flight Command live on box
-- CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, 10 Claws + The Forge, Claw Cafe ascension tied to Flagship desks
-- **G3 demo captures closed** (2026-07-08) — inception reel, investor proof, desk strips, 8-screenshot pack — [curxor.ai/#demo](https://curxor.ai/#demo)
-- Agent runtime, unified comms gateways, Build Plane BP4 delegation queue in software
-- **239** smoke + **40** user-flow QA checks in curxor-os (`qa:local` suite)
-- Storefront GTM at curxor.ai — symphony model, investor press kit, Resend waitlist + Stripe pre-order
-- **G1 golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, `verify-unbox-day.sh` PASS
-
-### Pending
-- Ops Wave 1 live bridges on box · first external operator UAT (G4)
-- Published mesh benchmarks, production OTA fleet artifact
-
-| Metric | Value |
-|--------|-------|
-| OS version | **v1.0.3** |
-| QA (`qa:local`) | **239** smoke · **40** user flows |
-| Stage | Bootstrapped · selectively meeting angels/seed |
-| Pre-order | Live |
-
----
-
-## Slide 13 — Roadmap
-
-| Phase | Milestones |
+| Layer | What ships |
 |-------|------------|
-| **Now (v1.0.3)** | G1/G2/G3 closed on MS-S1 · G3 investor pack · storefront GTM live |
-| **Next 90 days** | G4 external UAT · live bridges · production OTA fleet artifact |
-| **H2 2026** | Customer pilots · case studies · published mesh benchmarks |
-| **2027+** | Fleet OTA · partner bridges · enterprise eno2 policies |
+| **Hardware** | CurXor desk appliance (Act I validated on MS-S1-class metal) |
+| **OS** | Four-pillar CurXor OS — compute · engine · mesh · Flight Command |
+| **Ten Claws** | Capital · Creator · Work (Outreach) · Forge · Cafe + honest previews |
+| **Forge** | Mint custom Claws in natural language — on-box |
+| **Cafe** | Inter-Claw ceremony and proof — living mirror of operator activity |
+| **Boundary** | Local cognition · egress you wire and can unplug |
+
+**Speaker notes:** Say "CurXor box" first — MS-S1 is validation hardware, not the brand. Flagship depth is Capital / Creator / Work + Forge; five other Claws are honest Coming Soon. Forge + Cafe are moat, not day-one sell alone. Show desk strip stills if screen sharing.
 
 ---
 
-## Slide 14 — The Ask
+## Slide 5 — Stack proof
 
-### Stage
-Bootstrapped and selectively meeting aligned angels and seed investors.
+### Not a mock demo account
 
-### Use of funds / focus
-- v1.0.0 tag + golden image + production OTA pipeline (G2 fleet artifact)
-- First 100 customer units
-- Field engineer for support and factory flash at scale
+| Proof | Evidence |
+|-------|----------|
+| Golden path | G1 on device · Jul 1 |
+| Golden release | G2 · `v1.0.0`–`v1.0.3` |
+| Demo / film pack | G3 closed · Jul 8 |
+| QA | **239** smoke · G3 capture unit green |
+| Inference | qwen3:8b · **38 tok/s** · 4.56 / 64 GB |
+| Live site | [curxor.ai](https://curxor.ai) · G3 stills · `/signal` · press kit |
 
-### Contact
-- **Site:** [curxor.ai](https://curxor.ai) · **Press:** [curxor.ai/press](https://curxor.ai/press)
-- **Email:** hello@curxor.ai
-- **X:** @curxorai
-- **Deck:** Email hello@curxor.ai — subject "Investor inquiry — CurXor"
+**Visuals:** `07-system-health-toks.png` · `01-home.png` · inception reel link.
 
-> Sovereign metal. Mint the rest. One invoice.
-
----
-
-## Appendix — Maturity & Disclaimers
-
-| Area | Status |
-|------|--------|
-| Software v1.0.3 | FRE, Flight Command, 10 Claws + Forge on MS-S1 Standard 64 |
-| Five flagship Claws | G3 demo depth — Capital paper, Creator queue, Work pipeline |
-| Five preview Claws | Honest Coming Soon surfaces in Flight Command |
-| Local LLM | qwen3:8b · 38 tok/s ROCm validated on box |
-| Digital bridges (Alpaca/X) | Coded; needs operator `digital.env` credentials on eno2 |
-| MS-S1 MAX hardware | **Unboxed 2026-06-28** — G1/G2/G3 closed Jul 8 |
-| Published mesh benchmarks | Not yet — topology verified, not sub-ms marketing |
-| Production OTA fleet artifact | G4 / G2 fleet freeze pending |
-
-**No guaranteed returns.** Capital Claw supports paper and live trading via Alpaca; performance depends on operator strategy. Creator and Outreach outbound actions require explicit operator approval via skills.
+**Speaker notes:** Lead with metrics cite card. Four pillars are real systemd on box. Paper Capital on camera — say it out loud. Live broker/social fills are founder-keyed / G4 — do not claim fleet fills. Offer LAN demo: Flight Command on `:3080`.
 
 ---
 
-*Sources: `curxor-os` appliance sync · `src/lib/press.ts` · curxor.ai/press traction table*
+## Slide 6 — Competition
+
+### Operator desk — not home cloud, not assistant box
+
+| Alternative | Why it falls short | CurXor wedge |
+|-------------|-------------------|--------------|
+| Personal cloud / home server | Self-hosted apps, not vertical outcomes | Digital employees for trades, content, outreach |
+| DIY agent kits | 200 hours assembly · no egress product | Plug in · mint Claws · run |
+| Light assistant appliances | Chat/messaging · limited compute | Operator-grade UMA · Flagship desks |
+| SaaS / cloud agents | API rent · their retention · no outbound product | Local cognition · controlled egress |
+
+**Speaker notes:** No named competitors in the leave-behind. Verbally you can contrast home-cloud Kickstarter energy vs operator outcomes, or €549 assistant boxes vs $3,999 depth. Biggest cultural competitor is free agent runtime + Mac Mini — counter is complete OS + desks + kill switch + 200 hours back. Never Abacus. Never breadth theater.
+
+---
+
+## Slide 7 — Business model
+
+### Current · evolving
+
+**Today**
+
+- **$3,999** once · CurXor box + CurXor OS + ten Claws + Forge
+- **$0/mo** operate-plane API · frontier LLM = BYOK optional
+- Pre-order live · **pre-revenue by design** (proof-first)
+
+**Where it grows** (same sovereignty thesis)
+
+| Vector | Direction |
+|--------|-----------|
+| Compute tiers | Standard 64 → Pro 128 ($4,999) → Studio (post-traction custom) |
+| Claw depth | Flagship now · additional OOTB unlock as depth matures |
+| Forge mint | Custom Claws without a new subscription per workflow |
+| Optional services | BYOK · bridges · additive tools — never required to run the desk |
+
+**Speaker notes:** Hardware is the anchor. Software evolves via OTA on metal you own. We are not building another rent trap — reject mandatory monthly tiers as the default story. Act I validates; Act II is CurXor-designed hardware post-investment.
+
+---
+
+## Slide 8 — PMF honesty
+
+### Proof-ready · not traction-ready
+
+| Tier | What we say |
+|------|-------------|
+| **Green** | G1/G2/G3 on validated metal · v1.0.3 · 239 smoke · G3 film pack |
+| **Yellow** | Flagship demos dogfooded · paper/sim on camera · ~61s vision + ~90s product films live |
+| **Red** | Paying fleet / ARR · live broker/social fills · custom CurXor hardware (Act II) |
+
+**During the raise:** warm intros · design partners · first external operator UAT (G4) — not fake logos.
+
+**Speaker notes:** Pre-revenue and solo founder are facts — say them. Agent-assisted build loop explains velocity without inventing a team slide. Capital is paper on camera. Bridges founder-keyed until Ops Wave 1. This honesty is the credibility product at $3,999.
+
+---
+
+## Slide 9 — Use of funds
+
+### $3M seed SAFE · 18 months · ≤5 people
+
+| Use | % |
+|-----|---|
+| People (engineering · design · ops) | **45%** |
+| Act II hardware exploration (CurXor-designed desk) | **30%** |
+| Onboarding / GTM | **10%** |
+| Ops / buffer | **15%** |
+
+**Act I** — prove stack on validated appliance metal.  
+**Act II** — own the metal · CurXor-branded desk post-investment.
+
+**Speaker notes:** Headcount cap is intentional. 30% hardware exploration is the dream-state path — custom box after proof, not before. Onboarding/GTM buys G4 smiles and design partners, not paid vanity growth.
+
+---
+
+## Slide 10 — Ask + links
+
+### Warm conversations · live box demo
+
+**Ask:** Warm intros to aligned seed angels / funds who care about sovereign compute and operator products.
+
+**Best next step:** Live demo on your LAN — Flight Command `:3080` on metal you can touch. Not a cloud sandbox.
+
+| Asset | Link |
+|-------|------|
+| Storefront | https://curxor.ai |
+| Category film | https://curxor.ai/signal#category-film |
+| Inception reel | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
+| Investor proof | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |
+| Press | https://curxor.ai/press |
+| Essay | https://x.com/ankurmisra/status/2070024704925077702 |
+| Contact | ankur@curxor.ai · @ankurmisra |
+
+**Speaker notes:** No cold deck spam. No public "we're raising" on X. Leave the inception reel for async; insist on live box when they engage. Closing line: sovereign metal · digital employees · one invoice.
+
+---
+
+## Appendix — Metrics cite card
+
+```
+Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA BIOS
+OS: Ubuntu 24.04 · CurXor OS v1.0.3
+Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
+RAM in use: 4.56 / 64 GB · UMA 7.1%
+Dashboard: Flight Command on LAN :3080
+QA: 239 smoke · G3 capture unit green
+Pricing: $3,999 once · $0/mo operate-plane API
+Stage: G1/G2/G3 green · pre-revenue · solo founder
+Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · G3 closed Jul 8
+```
+
+## Appendix — Honesty matrix (say out loud)
+
+| Claim | Tier | Wording |
+|-------|------|---------|
+| G1/G2/G3 on MS-S1 | Green | Validated on target hardware |
+| v1.0.3 · 239 smoke | Green | CI-green appliance |
+| Capital/Creator/Work demos | Yellow | Flagship dogfooded · paper/sim on camera |
+| Paying fleet / ARR | Red | Pre-revenue · pre-order live |
+| Live broker/social fills | Red | Founder-keyed · approval gate |
+| Custom CurXor hardware | Red | Act II · post-raise |
+| Full category hero | Yellow | ~61s vision (badge comp) + ~90s product live · live badge shoot open |
+
+---
+
+*Sources: INVESTOR-MEMO.md · BUILD-REPORT.md · SEED-FUNDRAISE-PROGRAM.md · investor-pack · MARKET-ALIGNMENT-REPORT-2026-07-08.md*

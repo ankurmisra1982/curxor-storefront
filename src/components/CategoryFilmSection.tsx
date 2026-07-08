@@ -10,7 +10,7 @@ import {
   heroFilmLinks,
 } from "@/lib/g3-demo";
 
-type FilmId = "category" | "inception";
+type FilmId = "badge" | "product";
 
 const FILMS: {
   id: FilmId;
@@ -20,23 +20,23 @@ const FILMS: {
   ariaLabel: string;
 }[] = [
   {
-    id: "category",
-    label: "Category hero · ~90s · Act I",
-    src: categoryFilmAssets.heroCategory,
-    chyron: "ACT I CATEGORY CUT · ~90s · G3",
-    ariaLabel: "G3 category hero film — Act I cut, one desk conducts",
+    id: "badge",
+    label: "Category vision · ~61s",
+    src: categoryFilmAssets.heroCategoryBadge,
+    chyron: "CATEGORY VISION · ~61s · BADGE + VO",
+    ariaLabel: "CurXor category vision film — XOR wake, morning routine, dream-state comps",
   },
   {
-    id: "inception",
-    label: "Inception reel · same cut",
-    src: categoryFilmAssets.inceptionReel,
-    chyron: "INCEPTION REEL · ~90s · G3",
-    ariaLabel: "G3 inception reel — same Act I cut, alternate tab label",
+    id: "product",
+    label: "Product proof · ~90s",
+    src: categoryFilmAssets.heroCategory,
+    chyron: "ACT I PRODUCT CUT · ~90s · G3",
+    ariaLabel: "G3 Act I product film — onboarding through three flagship Claws",
   },
 ];
 
 export function CategoryFilmSection() {
-  const [activeFilm, setActiveFilm] = useState<FilmId>("category");
+  const [activeFilm, setActiveFilm] = useState<FilmId>("badge");
 
   const film = FILMS.find((item) => item.id === activeFilm) ?? FILMS[0];
 
@@ -46,9 +46,10 @@ export function CategoryFilmSection() {
         <p className="text-[10px] tracking-[0.25em] text-neon-purple">CATEGORY FILM · VISION TIER</p>
         <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">One desk conducts.</h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/50">
-          Act I category cut (~90s) · command-only · Layer B on metal. Dream-state payoff for
-          investors and /signal — not cold-traffic homepage hero until G4 rebrand. Full
-          dream-state category hero (badge + payoff cards) ships v2 post-hardware validation.
+          Two cuts on metal: <strong className="font-normal text-white/70">~61s vision</strong> (badge
+          comp · XOR wake · dream-state story) and <strong className="font-normal text-white/70">~90s
+          product proof</strong> (onboarding + three Claws). Not cold-traffic homepage hero until G4.
+          Badge beat is Figma comp — live Patron Badge ships post-hardware validation.
         </p>
       </div>
 
@@ -95,26 +96,24 @@ export function CategoryFilmSection() {
             className="hidden border border-white/10 lg:block"
           />
           <p className="mt-4 text-xs leading-relaxed text-amber-200/75">
-            Command mode · processed on your appliance. This cut is Act I only — badge + payoff
-            cards ship v2 post-hardware validation.
+            Command mode · processed on your appliance. Vision cut uses comp badge + practice Capital on
+            box. Live badge shoot and full 90s A+B+C merge remain post-validation.
           </p>
           <p className="mt-2 text-[10px] text-white/35">{g3Honesty.deskCapture}</p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a
-              href={heroFilmLinks.figmaProto}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={categoryFilmAssets.heroCategoryBadge}
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              OPEN FIGMA PROTO →
+              DIRECT MP4 (61s) →
             </a>
             <a
-              href={heroFilmLinks.beatSheet}
+              href={heroFilmLinks.figmaProto}
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
             >
-              BEAT SHEET →
+              OPEN FIGMA PROTO →
             </a>
             <Link
               href="/press"

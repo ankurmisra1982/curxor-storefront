@@ -18,7 +18,9 @@ export const g3DeskStrips = {
 } as const;
 
 export const categoryFilmAssets = {
-  /** ~90s Act I category cut — alias of g3-inception-reel-v1 (Layer B only). */
+  /** ~61s dream-state category cut — badge comp + hero VO (XOR wake). */
+  heroCategoryBadge: "/demo/hero-category-badge-v1.mp4",
+  /** ~90s Act I product cut — alias of g3-inception-reel-v1 (Layer B only). */
   heroCategory: "/demo/hero-category-v1.mp4",
   inceptionReel: "/demo/investor/g3-inception-reel-v1.mp4",
   investorProof: "/demo/investor/g3-investor-proof-v1.mp4",

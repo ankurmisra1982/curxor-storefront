@@ -34,458 +34,238 @@ BRAND = {
     "font_sans": "Segoe UI",
     "font_mono": "Consolas",
     "site": "curxor.ai",
-    "version": "v0.9.1 · June 2026",
+    "version": "v1.1.0 · July 2026",
 }
 
 APPENDIX_ROWS = [
-    ("Software v0.9.1", "Agent runtime · ~176 smoke + ~40 user flows"),
-    ("Flight Command + 8 Claws + Forge", "Rich UI · some mock workspace data"),
-    ("Local LLM (engine + dashboard)", "Code complete · needs Ollama on appliance"),
-    ("Digital bridges (Alpaca / X)", "Coded · needs digital.env credentials"),
-    ("MS-S1 MAX hardware validation", "Blocked · unit not received"),
-    ("Golden image / production OTA", "Not done"),
+    ("Software v1.0.3", "G1/G2/G3 green · 239 smoke · 40 user flows"),
+    ("Flagship Claws + Forge + Cafe", "G3 demo depth · Capital paper on camera"),
+    ("Local LLM (ROCm on box)", "qwen3:8b · 38 tok/s · validated Jul 2026"),
+    ("Digital bridges (Alpaca / X)", "Coded · founder-keyed until Ops Wave 1"),
+    ("MS-S1 MAX validation", "Unboxed · G1–G3 closed · Act I proof plane"),
+    ("Custom CurXor hardware", "Act II · post-raise"),
 ]
 
 APPENDIX_DISCLAIMERS = [
     "No guaranteed returns — Capital Claw performance is strategy-dependent.",
     "Creator posts require explicit operator skill approval before bridge egress.",
-    "Paper trading available; live trades via Alpaca on eno2 only when configured.",
+    "Paper trading on camera; live trades via Alpaca on eno2 only when configured.",
 ]
 
-# (slide_title, bullets, speaker_notes)
+# (slide_title, bullets, speaker_notes) — 10 slides · Fundraise D2 · Jul 2026
 SLIDES: list[tuple[str, list[str], str]] = [
     (
-        "CurXor OS",
+        "CurXor",
         [
-            "Mint Autonomous Employees on Bare Metal.",
+            "A sovereign AI system on your desk — with digital employees",
+            "that run wealth, creation, and work on metal you own.",
             "",
-            "$3,999 once  ·  $0/mo API  ·  126 TOPS  ·  64 GB UMA",
-            "",
-            "ChatGPT bills per token. CurXor bills once.",
+            "$3M seed SAFE · 18 mo · 5 people max",
+            "$3,999 once · $0/mo operate-plane API · proof-ready · pre-revenue",
         ],
         """OPENING (30–45 sec)
-Pause on the title. This is not another AI wrapper — it is a sovereign agent appliance.
+Hybrid hero — not personal cloud, not another chat tab.
 
-KEY MESSAGE
-CurXor OS mints autonomous digital employees on bare metal. One hardware purchase replaces recurring API rent for operators who run agents 24/7.
+REGISTERS
+• Sovereignty investors: owned metal · no API rent · egress boundary · MS-S1 proof.
+• Product investors: Capital · Creator · Work · Forge · Cafe · desk orchestrator.
 
-WALK THROUGH METRICS
-• $3,999 — MS-S1 MAX bundle, one invoice, no subscription required for inference.
-• $0/mo API — local Ollama/vLLM on localhost; you own the compute.
-• 126 TOPS — Ryzen AI Max+ NPU on desk, not rate-limited cloud tiers.
-• 64 GB UMA — unified memory for 7B–35B models alongside the agent stack.
+METRICS
+• Raise: $3M seed SAFE · 18 months · ≤5 people.
+• Price: $3,999 once · $0/mo operate plane.
+• Stage: G1/G2/G3 green · pre-revenue · solo founder.
 
-TAGLINE (say it slowly)
-"ChatGPT bills per token. CurXor bills once. Alpha stays on your metal."
-
-TRANSITION
-Before we show the product, let me frame the problem every power user already feels.""",
+CLOSE TITLE
+Best next step is live LAN demo on :3080 — not a cloud sandbox.
+Proof: curxor.ai/demo/investor/g3-inception-reel-v1.mp4""",
     ),
     (
-        "The cloud tax on autonomous work",
+        "Founder story — 20 days",
         [
-            "Operators pay $500+/mo in API tokens — and leak strategy to cloud LLMs.",
-            "SaaS stacks (CRM, schedulers, trading wrappers) compress margin without sovereignty.",
+            "Jun 18 — named CurXor in public · origin thread",
+            "Jun 19 — first commit · Claw OS on laptop",
+            "Week 1 — four flagship Claws + Forge + agent runtime",
+            "Week 2 — validation hardware unboxed · Cafe · Build Plane",
+            "Week 3 — v1.0.0→v1.0.3 · G1/G2/G3 · film pack",
             "",
-            "Edge NPU hardware is real — but no one ships a complete sovereign agent stack.",
-            "DIY Linux + Ollama lacks orchestration, egress control, OTA, and operator UX.",
+            "182 commits · 239 smoke · 38 tok/s on validated metal",
         ],
-        """FRAMING (45 sec)
-Name the pain before the product. Investors and buyers both know AI is expensive — we quantify it.
+        """J-CAL / VELOCITY (45 sec)
+Specificity beats adjectives.
 
-FOR OPERATORS
-• Algo traders, creators, outbound teams: $500+/mo is conservative for serious agent use.
-• Every prompt, playbook, and strategy sent to OpenAI/Anthropic is alpha leaving the building.
-• Layer on CRM, content tools, trading SaaS — margin compression with zero sovereignty.
+ARC
+• Jun 18 public commitment → Jun 19 build start.
+• MS-S1 is Act I validation metal — product is CurXor box + CurXor OS.
+• Do not claim SpaceX/Cursor partnership.
 
-FOR THE MARKET
-• 126 TOPS on a desk is new — MS-S1 MAX class hardware is finally here.
-• Yet buyers still default to cloud agents because integration is hard.
-• DIY Ollama-in-a-box is not an agent fleet: no FRE, no Forge, no mesh kill switch, no OTA.
-
-OBJECTION PREP
-"If local models are good enough now, why not just run Ollama?" — Because operators need employees, not a chat window. CurXor ships the full stack.
-
-TRANSITION
-CurXor is the appliance answer — not SaaS, not a science project.""",
+OFFER
+Inception reel (~90s) for async; live box for truth.""",
     ),
     (
-        "CurXor: appliance, not another SaaS",
+        "Why now",
         [
-            "Four-pillar edge stack on MINISFORUM MS-S1 MAX:",
-            "P1 Compute · P2 Engine · P3 Mesh · P4 Flight Command",
-            "",
-            "Local LLM (127.0.0.1 only) · 8 Claws + The Forge",
-            "Kill switch: eno1 command · eno2 egress · unplug stops agents",
-            "Create-to-Earn: describe a Claw → deploy on-box in one session",
+            "Aspiration — culture says use AI; operators stall after drafts/polish",
+            "Setup — always-on still means repos, keys, scripts, five tabs",
+            "Product shape — chat rent · cloud agents · home cloud · light boxes",
+            "Nobody ships vertical digital employees OOTB on metal you own",
+            "Desk-ready compute — local inference on operator-grade UMA is real",
         ],
-        """PRODUCT DEFINITION (60 sec)
-CurXor OS is pre-integrated software on fixed hardware — an appliance, not a dev kit.
+        """PROBLEM (45 sec)
+Grammar gap is a symptom — lead holistic: want more AI, told to use it, cannot set up or stay on.
 
-FOUR PILLARS (briefly — do not get lost in engineering)
-• Pillar 1 Compute: Ollama/vLLM bound to 127.0.0.1 — rejected if not localhost.
-• Pillar 2 Engine: vision → inference → motor_out / digital_out pipeline.
-• Pillar 3 Mesh: ZMQ broker on eno2; Alpaca and X bridges for trades and posts only there.
-• Pillar 4 Flight Command: FRE provisioning, eight Claws, Forge, SSE telemetry, dashboard.
-
-FOUR CUSTOMER PROMISES (these are the slide headlines investors remember)
-1. Local LLM — inference never leaves the box.
-2. Digital employees — eight OOTB Claws plus The Forge factory.
-3. Kill switch — eno1 is command plane; eno2 is egress; pull the cable, agents stop outbound.
-4. Create-to-Earn — natural language → forged Claw → earning on metal in one session.
-
-TRANSITION
-We ship this as two repos today — appliance plus GTM — with one customer promise.""",
+MARKET FAILURES
+Cloud rent and DIY are both product-shape failures.
+Wedge: appliance that closes chat → always-on team without assembly.""",
     ),
     (
-        "Two repos · one promise",
+        "What we build",
         [
-            "curxor-os — appliance: /opt/curxor/, systemd, OTA · v0.9.1 · ~216 QA checks",
-            "curxor storefront — GTM: curxor.ai, Stripe, Resend, synced Claw catalog",
-            "",
-            "Honest status: software scaffold complete.",
-            "Gating: MS-S1 MAX validation + golden image (hardware receipt pending).",
+            "CurXor box + CurXor OS (validated on MS-S1-class metal)",
+            "Four pillars — compute · engine · mesh · Flight Command",
+            "Ten Claws — Capital · Creator · Work · Forge · Cafe + honest previews",
+            "Forge — mint custom Claws on-box · Cafe — inter-Claw proof",
+            "Local cognition · egress you wire and can unplug",
         ],
-        """TRACTION HONESTY (45 sec — credibility slide)
-This slide builds trust. Do not oversell hardware readiness.
+        """PRODUCT (60 sec)
+Say "CurXor box" first — MS-S1 is validation, not brand.
 
-CURXOR-OS
-• Installs to /opt/curxor/ under systemd target.
-• v0.9.1 stable — agent runtime, unified comms, Build Plane BP4, ~176 smoke + ~40 user flows in qa:local.
-• Four pillars wired: compute, engine, mesh, dashboard.
-
-STOREFRONT
-• curxor.ai live with Stripe pre-order and Resend email capture.
-• Claw catalog synced from appliance source of truth (ootb-apps.ts).
-
-GUARDRAIL (say explicitly)
-Software scaffold is complete. MS-S1 MAX on-device ROCm/UMA validation and golden image freeze are the current gates — we are blocked on hardware receipt, not on engineering vapor.
-
-WHY THIS MATTERS TO INVESTORS
-We are not asking you to fund a slide deck. The GTM surface is live; the software ships; the risk is manufacturing validation, which is bounded and schedulable.
-
-TRANSITION
-The crown jewel of the product story is The Forge.""",
+DEPTH
+Flagship: Capital / Creator / Work + Forge.
+Five other Claws: honest Coming Soon.
+Forge + Cafe are moat — not the cold sell alone.""",
     ),
     (
-        "The Forge — Create-to-Earn",
+        "Stack proof",
         [
-            "1. Describe niche (text, photo, or live vision)",
-            "2. Local LLM recommends stack by UMA budget tier",
-            "3. One tap forges Claw profile → engine",
-            "4. Claw earns 24/7 on your metal",
-            "",
-            "Viral loop: buyers become operators who mint more Claws.",
+            "G1 golden path · Jul 1 — on device",
+            "G2 golden release · v1.0.0–v1.0.3",
+            "G3 film pack · Jul 8 — inception · investor proof · desk strips",
+            "239 smoke · qwen3:8b · 38 tok/s · 4.56/64 GB",
+            "curxor.ai live — G3 stills · /signal · press kit",
         ],
-        """DEMO MOMENT (60 sec — show enthusiasm here)
-The Forge is where CurXor stops being hardware and becomes a platform loop.
+        """PROOF (60 sec)
+Lead with metrics cite card. Four pillars are systemd on box.
 
-WALK THE FOUR STEPS
-1. Operator describes intent — niche, workflow, even a photo or camera feed for vision context.
-2. Local LLM recommends model stack tier based on UMA budget — no cloud provisioning API.
-3. One tap writes Claw profile and applies to the engine — deploy on-box.
-4. Claw runs 24/7: trade, create, outreach, arbitrage — whatever was forged.
+HONESTY
+• Paper Capital on camera — say out loud.
+• Live broker/social fills founder-keyed / G4 — do not claim fleet fills.
+• Offer LAN demo: Flight Command :3080.
 
-CREATE-TO-EARN NARRATIVE
-This is our viral mechanic: every buyer can mint specialized digital employees without per-token billing. Agencies white-label this later; indie hackers mint capital and creator Claws day one.
-
-COMPETITIVE ANGLE
-No competitor ships a natural-language Claw factory on localhost with immediate engine deployment.
-
-TRANSITION
-Forge mints custom Claws; we also ship ten digital employees out of the box.""",
+VISUALS
+07-system-health-toks.png · 01-home.png · inception reel.""",
     ),
     (
-        "Ten Claws — digital employees OOTB",
+        "Competition",
         [
-            "The Forge · Capital · Creator · Outreach · Arbitrage",
-            "Signal · Swarm · Engage · Vital · Kin",
+            "Personal cloud / home server → apps, not vertical outcomes",
+            "DIY agent kits → 200 hours assembly · no egress product",
+            "Light assistant appliances → chat/messaging · limited compute",
+            "SaaS / cloud agents → API rent · their retention",
             "",
-            "Each workspace: chat + skills + activity feed",
-            "Trades/posts via explicit skill → bridge — LLM never hits internet directly",
-        ],
-        """PRODUCT DEPTH (60 sec — table optional in live demo)
-Read the roster confidently; investors should hear "complete suite," not "ten random apps."
-
-THE ROSTER
-• The Forge — mint custom Claws
-• Capital Claw — algo rules, Alpaca bridge on eno2
-• Creator Claw — content pipeline, X bridge on eno2
-• Outreach Claw — outbound sequences, CRM-style desk
-• Arbitrage Claw — margin watch, fulfillment ops
-• Signal Claw — The Neural Link: humanoid preview; device hub for glance, VR, robot, home, fleet
-• Swarm Claw — robotaxi fleet preview from sovereign metal
-• Engage Claw — community and DM engagement demos
-• Vital Claw — wearables, labs, longevity protocol
-• Kin Claw — household profiles, devices, personalities
-
-SECURITY MODEL (important for enterprise)
-Each workspace is an agent console. Trades and posts require an explicit skill tap — the LLM does not call the internet directly. Outbound is skill → mesh → Python bridge on eno2 only.
-
-TRANSITION
-This product architecture is deliberately sovereign — two network ports, two trust zones.""",
-    ),
-    (
-        "Sovereign architecture",
-        [
-            "eno1 (10.0.0.1) — Flight Command :3080 · FRE · Claws · Forge · LLM client",
-            "P1 Ollama @ 127.0.0.1:11434 · P2 Engine · P4 Dashboard",
-            "",
-            "eno2 (10.77.0.1) — ZMQ mesh · Alpaca + X bridges only",
-            "Pull eno2 cable = kill outbound agents",
-            "",
-            "Vision 9100/9101 · Motor 9200/9201",
-        ],
-        """ARCHITECTURE (60 sec — draw on whiteboard if room allows)
-This slide separates CurXor from "AI PC" marketing.
-
-ENO1 — COMMAND PLANE
-• Flight Command dashboard on 10.0.0.1:3080
-• Captive portal for operators
-• FRE, eight Claws, Forge, SSE telemetry
-• Local LLM client talks to Pillar 1 on localhost only
-
-ENO2 — EGRESS PLANE
-• ZMQ mesh broker
-• Digital bridges: Alpaca (trades), X (posts)
-• Physical kill switch story: unplug eno2, outbound agents stop
-
-MESH PORTS
-Vision 9100/9101, Motor 9200/9201 — robotics path remains in stack for Engage demos and future hardware Claws.
-
-ENTERPRISE HOOK
-CISOs understand two-port segmentation better than "we promise not to exfiltrate."
-
-TRANSITION
-All of this runs on a specific hardware powerhouse — not generic x86.""",
-    ),
-    (
-        "MINISFORUM MS-S1 MAX",
-        [
-            "Ryzen AI Max+ 395 · 126 TOPS NPU · 64 GB UMA",
-            "~48 GB GPU heap (BIOS carve) · Dual 10GbE · ROCm gfx1151",
-            "",
-            "Not a PC — local inference appliance for 7B–35B + agent stack",
-        ],
-        """HARDWARE (45 sec)
-Anchor the software story in silicon.
-
-SPECS (hit the numbers)
-• Ryzen AI Max+ 395 — CPU + NPU integrated
-• 126 TOPS NPU inference — desk-scale, 24/7 workloads
-• 64 GB unified memory — shared CPU/GPU/NPU pool
-• ~48 GB GPU heap via BIOS carve — primary lever for large models
-• Dual 10GbE — eno1/eno2 separation at wire speed
-• ROCm gfx1151 — validated path pending unit receipt
-
-POSITIONING LINE
-"Not a PC — a money printer with local inference." Use if audience is operator-heavy; soften for institutional investors.
-
-BIOS STORY
-UMA carve-out is how we run 7B–35B models alongside the agent engine without cloud burst pricing.
-
-TRANSITION
-Hardware is $3,999 once — let me walk the business model.""",
-    ),
-    (
-        "Business model",
-        [
-            "Now: $3,999 MS-S1 MAX bundle · CurXor OS pre-flash · Stripe pre-order live",
-            "",
-            "Future: OTA subscriptions · bridge marketplace · enterprise eno2 policies · white-label Forge",
-            "",
-            "Wedge: eliminate $6k+/yr API burn — payback < 8 months for power users",
-        ],
-        """ECONOMICS (60 sec)
-Lead with hardware revenue clarity; expansion is optional upside.
-
-HARDWARE NOW
-• $3,999 one-time — bundle includes CurXor OS flash path
-• Stripe pre-order live on curxor.ai
-• No required monthly API fee — this is the wedge vs ChatGPT Teams + agent SaaS stacks
-
-EXPANSION (do not over-weight — mention as optionality)
-• OTA channel subscriptions
-• Partner bridge marketplace (new egress integrations)
-• Enterprise fleet with eno2 policy packs
-• White-label Forge for agencies
-
-WEDGE MATH
-Power users burning $500+/mo in tokens = $6k+/yr. At $3,999 hardware, payback under eight months on API savings alone — before counting SaaS CRM/scheduler replacements.
-
-TRANSITION
-Who buys this first? Five personas we are already messaging on the storefront.""",
-    ),
-    (
-        "Target buyers",
-        [
-            "Algo trader → Capital Claw on localhost (API fees + leakage)",
-            "Creator / indie hacker → Creator Claw, $0/mo inference",
-            "Outbound / agency → Outreach Claw on-box",
-            "E-com / arbitrage → Arbitrage Claw",
-            "Sovereignty-maximalist → pull eno2 = kill switch",
-        ],
-        """GO-TO-MARKET (45 sec)
-Tie each segment to a Claw — makes the suite tangible.
-
-PERSONA → PAIN → ANSWER
-• Algo trader: API fees and strategy leakage → Capital Claw, localhost rules, Alpaca on eno2 only when skill invoked.
-• Creator: token rent and lock-in → Creator Claw, local inference, X bridge on explicit post skill.
-• Outbound/agency: CRM + lead SaaS stack → Outreach Claw on-box.
-• E-com/arbitrage: margin tools + fulfillment SaaS → Arbitrage Claw.
-• Sovereignty-maximalist: alpha exfil fear → physical eno2 kill switch narrative.
-
-SALES MOTION
-Storefront captures pre-orders; first units ship to operators who already feel the cloud tax — not hobbyists.
-
-TRANSITION
-Why we win against DIY and SaaS incumbents.""",
-    ),
-    (
-        "Why CurXor wins",
-        [
-            "vs DIY Ollama box → FRE, Forge, mesh, OTA, bridges",
-            "vs SaaS agents → alpha local; skill → bridge, not LLM → internet",
-            "vs cloud tiers → 126 TOPS desk beats rate limits for 24/7",
-            "vs robotics novelty → Digital Wealth: Claws as employees, ROI language",
-            "vs security slides → two-port architecture + physical kill switch",
+            "CurXor = operator desk with digital employees + kill switch",
         ],
         """COMPETITIVE (45 sec)
-Five rows — pick three based on audience.
+No named competitors on the leave-behind.
 
-DIY OLLAMA
-Complete stack beats parts bin: FRE provisioning, Forge factory, mesh, OTA, digital bridges.
+CULTURAL THREAT
+Free agent runtime + Mac Mini — counter is complete OS + desks + kill switch + 200 hours back.
 
-SAAS AGENTS
-Alpha stays local. Outbound is explicit skill → bridge — auditable, not prompt injection to the open web.
-
-CLOUD TIERS
-24/7 agent workloads hit rate limits and token meters. Desk NPU runs flat once hardware is paid.
-
-DIGITAL WEALTH PIVOT
-We sell digital employees with ROI language — not robotics novelty. "Mint employees" resonates with traders and creators.
-
-SECURITY
-Two-port architecture with physical kill switch — enterprises understand unplugging egress.
-
-TRANSITION
-What is actually shipped today vs what is gated on hardware.""",
+NEVER
+Abacus · partnership cosplay · breadth theater · "100x" without box data.""",
     ),
     (
-        "Traction & validation",
+        "Business model — current · evolving",
         [
-            "Shipped: 4-pillar install · Flight Command · 8 Claws + Forge · local LLM · mesh · OTA · storefront",
-            "Pending: MS-S1 MAX ROCm/UMA · mesh benchmarks · golden image · signed OTA",
+            "Today: $3,999 once · $0/mo operate API · ten Claws + Forge · BYOK optional",
+            "Pre-order live · pre-revenue by design (proof-first)",
             "",
-            "v0.9.1 · ~216 QA checks · Pre-order live",
+            "Grows: Standard→Pro 128→Studio · Claw unlocks · Forge mint · additive bridges",
+            "Hardware anchor · OTA on metal you own — not another rent trap",
         ],
-        """PROOF POINTS (60 sec — be precise)
-Split shipped software from hardware gates again — repetition builds credibility.
+        """ECONOMICS (60 sec)
+Hardware is the anchor. Software evolves OTA.
 
-SHIPPED
-• Four-pillar install path and systemd target
-• Flight Command UI with eight Claws and Forge
-• Local LLM wired: engine + Forge + Creator/Capital dashboard chat
-• Mesh publish, digital bridges, OTA daemon
-• Storefront live, appliance catalog sync, CI on both repos
+REJECT
+Mandatory monthly tiers as the default story (assistant-box pattern).
 
-PENDING (hardware track)
-• MS-S1 MAX ROCm/UMA proof on gfx1151
-• End-to-end mesh latency benchmarks
-• Golden image freeze + factory USB
-• Production OTA artifacts + signed releases
-
-METRICS ON SLIDE
-v0.9.1 · ~176 smoke + ~40 user flows · pre-order live — say each number out loud.
-
-TRANSITION
-Here is how we close the hardware gate and scale.""",
+ACTS
+Act I validates on appliance metal.
+Act II CurXor-designed hardware post-investment.""",
     ),
     (
-        "Roadmap",
+        "PMF honesty",
         [
-            "Now (v0.9.1): agent runtime · unified comms · Build Plane BP4 · ~216 QA · GTM live",
-            "Next 90 days: MS-S1 MAX validation · golden image · production OTA",
-            "H2 2026: customer pilots · Engage demo unit · case studies",
-            "2027+: fleet OTA · partner bridges · enterprise eno2 policies",
+            "Green — G1/G2/G3 · v1.0.3 · 239 smoke · G3 film pack",
+            "Yellow — Flagship dogfooded · paper/sim on camera · hero Act I live",
+            "Red — ARR · live fills · custom CurXor hardware (Act II)",
+            "",
+            "Proof-ready now · traction-ready after G4 external UAT",
         ],
-        """ROADMAP (45 sec)
-Show bounded near-term milestones — investors fund execution, not dreams.
-
-NOW
-Software scaffold and GTM surface — done.
-
-NEXT 90 DAYS (funding-sensitive)
-MS-S1 MAX validation, golden image, production OTA pipeline — this is what hardware receipt unblocks.
-
-H2 2026
-Customer pilots, Engage demo unit for community use case, publish case studies with real operator ROI.
-
-2027+
-Fleet OTA at scale, partner bridge marketplace, enterprise eno2 policy packs.
-
-TRANSITION
-What we are asking for and how to reach us.""",
+        """HONESTY (45 sec)
+Pre-revenue and solo founder are facts — say them.
+Agent-assisted build explains velocity without inventing a team slide.
+Design partners during the raise — not fake logos.""",
     ),
     (
-        "The ask",
+        "Use of funds — $3M seed",
         [
-            "Fund: MS-S1 MAX validation · golden image run · first 100 units · production OTA",
-            "Hire: field engineer for appliance support + factory flash at scale",
+            "People (eng · design · ops) — 45%",
+            "Act II hardware exploration — 30%",
+            "Onboarding / GTM — 10%",
+            "Ops / buffer — 15%",
             "",
-            "curxor.ai · @curxorai · Stripe pre-order on site",
+            "18 months · ≤5 people · prove Act I · own metal in Act II",
+        ],
+        """FUNDS (45 sec)
+Headcount cap is intentional.
+30% hardware exploration = dream-state custom box after proof, not before.
+GTM buys G4 smiles and design partners — not paid vanity growth.""",
+    ),
+    (
+        "Ask + links",
+        [
+            "Warm intros · live box demo on LAN :3080",
+            "curxor.ai · /signal · press · inception reel · investor proof",
+            "Essay + origin thread · ankur@curxor.ai · @ankurmisra",
             "",
-            "Sovereign metal. Infinite Claws. One invoice.",
+            "No cold spam · no public raise posts · sovereign metal · one invoice",
         ],
         """CLOSE (60 sec)
-Be direct on use of funds; end with the tagline.
+Warm conversations only.
+Leave inception reel for async; insist on live box when they engage.
+Closing: sovereign metal · digital employees · one invoice.
 
-USE OF FUNDS
-• Complete MS-S1 MAX validation on real silicon
-• Golden image manufacturing run
-• First one hundred customer units
-• Production OTA pipeline with signed releases
-• Field engineer for appliance support and factory flash at scale
-
-CONTACT
-curxor.ai · @curxorai · Stripe checkout live for pre-order
-
-CLOSING LINE (pause)
-"Sovereign metal. Infinite Claws. One invoice."
-
-TRANSITION
-If Q&A gets technical or skeptical, advance to the appendix slide — maturity matrix and legal guardrails.""",
+LINKS
+https://curxor.ai
+https://curxor.ai/signal#category-film
+https://curxor.ai/demo/hero-category-badge-v1.mp4
+https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4
+https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4
+https://curxor.ai/press""",
     ),
 ]
 
-APPENDIX_NOTES = """APPENDIX / Q&A SLIDE (keep in deck — do not present unless asked)
-Use this slide when investors ask "what is real today?" or "what are the risks?"
+APPENDIX_NOTES = """APPENDIX / Q&A (present only if asked)
 
-MATURITY TABLE — walk row by row
-• Software scaffold: complete, CI green — this is shipped code, not mockups only.
-• Flight Command + Claws: rich UI; some workspace data is demo/mock until operator credentials loaded.
-• Local LLM: code complete; requires Ollama deployed on appliance (Pillar 1).
-• Digital bridges: Alpaca/X coded; operator supplies digital.env credentials.
-• Hardware validation: blocked on MS-S1 MAX unit receipt — bounded, schedulable risk.
-• Golden image / OTA: not done — funded by current raise.
+MATURITY
+• v1.0.3 appliance green — G1/G2/G3 closed Jul 8.
+• Flagship desks: Capital paper, Creator queue, Work pipeline on camera.
+• Bridges: coded; Ops Wave 1 keys founder-gated.
+• Custom CurXor hardware: Act II post-raise.
 
-DISCLAIMERS (read if financial or trading questions arise)
-• No guaranteed returns. Capital Claw supports paper and live via Alpaca; outcomes depend on operator strategy.
-• Creator posts require explicit skill approval — no autonomous posting without operator tap.
-• Pre-order is live; ship dates tied to hardware validation milestone.
+DISCLAIMERS
+• No guaranteed returns. Capital paper/live via Alpaca — strategy-dependent.
+• Posts require operator approval skill — no autonomous publish.
 
-COMMON QUESTIONS
-Q: "Is this just Ollama on a PC?"
-A: FRE + Forge + mesh kill switch + OTA + eight Claws + bridges — integrated appliance, not a dev kit.
+COMMON Q
+Q: Just Ollama on a PC?
+A: Flight Command + ten Claws + Forge + Cafe + eno2 kill switch + OTA — appliance product.
 
-Q: "Why pre-order before hardware validation?"
-A: GTM tests demand; software ships today; validation is the gated milestone we are fundraising to close.
-
-Q: "Mock data?"
-A: UI scaffold is production code; live data requires operator bridge credentials on eno2.
+Q: Why $3,999 vs €549 boxes?
+A: Operator desks + 64GB UMA + depth — filter for buyers who run Capital/Creator/Work, not chat bots.
 
 TIMING
-Main deck: 12–15 min. Appendix: 2–3 min when needed. Total with Q&A: 20–25 min."""
+Main deck ~10–12 min. Appendix 2–3 min. Q&A to 20–25."""
 
 
 def rgb(name: str) -> RGBColor:

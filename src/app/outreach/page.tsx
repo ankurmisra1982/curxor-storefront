@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 export default function OutreachPage() {
-  const cleo = getOperator("cleo");
+  const alex = getOperator("alex");
 
   return (
     <SiteShell>
@@ -55,12 +55,12 @@ export default function OutreachPage() {
             secondaryHref="/compare/miky"
             secondaryLabel="vs MIKY"
           />
-          {cleo ? <ShareOnX text={cleo.shareLine} label="CLEO ON X" /> : null}
+          {alex ? <ShareOnX text={alex.shareLine} label="ALEX ON X" /> : null}
         </div>
 
-        {cleo ? (
+        {alex ? (
           <section className="mt-10">
-            <OperatorQuote operator={cleo} />
+            <OperatorQuote operator={alex} />
           </section>
         ) : null}
 

@@ -26,11 +26,23 @@ const beats = [
 export function HowItWorks() {
   return (
     <section
-      id="day-one"
-      aria-label="How CurXor works"
-      className="border-t border-white/10 bg-white/[0.02] py-12 sm:py-14"
+      id="how-it-works"
+      aria-labelledby="how-it-works-heading"
+      className="scroll-mt-24 border-t border-white/10 bg-white/[0.02] py-14 sm:py-16"
     >
       <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-8 max-w-2xl">
+          <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">HOW IT WORKS</p>
+          <h2
+            id="how-it-works-heading"
+            className="text-2xl font-bold tracking-tight sm:text-3xl"
+          >
+            Day one on your desk
+          </h2>
+          <p className="mt-2 text-sm text-white/45">
+            Pick Claws, chat or tap, stay local — pull eno2 when you want outbound cold.
+          </p>
+        </div>
         <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {beats.map((beat) => (
             <article key={beat.step} className="bg-black px-5 py-6 sm:px-6">

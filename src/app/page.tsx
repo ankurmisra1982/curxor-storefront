@@ -7,10 +7,6 @@ import { WhatIsThisStrip } from "@/components/WhatIsThisStrip";
 const PersonaGrid = dynamic(() =>
   import("@/components/PersonaGrid").then((m) => ({ default: m.PersonaGrid }))
 );
-const WhoItsForSection = dynamic(() =>
-  import("@/components/WhoItsForSection").then((m) => ({ default: m.WhoItsForSection }))
-);
-
 const HowItWorks = dynamic(() =>
   import("@/components/HowItWorks").then((m) => ({ default: m.HowItWorks }))
 );
@@ -35,9 +31,6 @@ const AppEcosystem = dynamic(() =>
 const PricingPreview = dynamic(() =>
   import("@/components/PricingPreview").then((m) => ({ default: m.PricingPreview }))
 );
-const CreateToEarn = dynamic(() =>
-  import("@/components/CreateToEarn").then((m) => ({ default: m.CreateToEarn }))
-);
 const Faq = dynamic(() =>
   import("@/components/Faq").then((m) => ({ default: m.Faq }))
 );
@@ -55,18 +48,16 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustStrip />
-      <WhoItsForSection />
       <WhatIsThisStrip />
+      <HowItWorks />
+      <ScreenshotGallery />
       <PersonaGrid />
       <SymphonySection />
-      <HowItWorks />
       <NeuralLinkTeaser />
-      <ScreenshotGallery />
       <HorizonSection />
       <ComparisonTable />
       <AppEcosystem variant="featured" />
       <PricingPreview />
-      <CreateToEarn />
       <Faq />
       <Footer />
       <MobileStickyCta />

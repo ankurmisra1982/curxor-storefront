@@ -16,7 +16,7 @@ export default async function Image() {
   const [fontRegular, fontBold, screenshot, lockupPng] = await Promise.all([
     loadGoogleFont("JetBrains+Mono", 400),
     loadGoogleFont("JetBrains+Mono", 700),
-    readPublicAsset("demo/01-home.png"),
+    readPublicAsset("demo/g3/01-home.png"),
     // Raster lockup — Satori ignores `<text>` inside inline SVG (only paths/rects render).
     readPublicAsset("brand/curxor-hardware-badge.png"),
   ]);

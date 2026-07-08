@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 export default function CreatorPage() {
-  const jules = getOperator("jules");
+  const sam = getOperator("sam");
 
   return (
     <SiteShell>
@@ -55,12 +55,12 @@ export default function CreatorPage() {
             secondaryHref="/compare/clawbox"
             secondaryLabel="vs ClawBox"
           />
-          {jules ? <ShareOnX text={jules.shareLine} label="JULES ON X" /> : null}
+          {sam ? <ShareOnX text={sam.shareLine} label="SAM ON X" /> : null}
         </div>
 
-        {jules ? (
+        {sam ? (
           <section className="mt-10">
-            <OperatorQuote operator={jules} />
+            <OperatorQuote operator={sam} />
           </section>
         ) : null}
 

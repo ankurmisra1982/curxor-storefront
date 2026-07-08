@@ -1,22 +1,23 @@
 # CurXor — Investor Pitch Deck
 
-**Version:** 0.9.1 · **Date:** June 2026  
+**Version:** 1.0.3 · **Date:** July 2026  
 **Category:** Sovereign Agent Appliance  
 **Tagline:** Mint Autonomous Employees on Bare Metal.
 
 ### PowerPoint export (speaker notes)
 
-- **File:** `docs/CurXor-Pitch-Deck-Speaker-Notes.pptx` — 15 slides (14 + appendix), branded, notes on every slide
+- **File:** `docs/CurXor-Pitch-Deck-Speaker-Notes.pptx` — regenerate after edits
 - **Regenerate:** `npm run export:pitch-deck` (or `python scripts/export-pitch-deck-pptx.py`)
 - **Python deps:** `pip install -r scripts/requirements-pitch-deck.txt`
 - **Logo asset:** `docs/assets/curxor-logo-mark.png` (generated from favicon palette)
+- **Site diligence:** [curxor.ai/press](https://curxor.ai/press) — traction table matches Slide 12
 
 ---
 
 ## Slide 1 — Title
 
 **CurXor OS**  
-Mint Autonomous Employees on Bare Metal.
+Mint autonomous employees. On a box you own.
 
 | Metric | Value |
 |--------|-------|
@@ -25,7 +26,7 @@ Mint Autonomous Employees on Bare Metal.
 | Local NPU | 126 TOPS |
 | Unified memory | 64 GB UMA |
 
-> ChatGPT bills per token. CurXor bills once. Alpha stays on your metal.
+> ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.
 
 ---
 
@@ -55,13 +56,13 @@ CurXor OS is a **four-pillar edge stack** on MINISFORUM MS-S1 MAX:
 | **Pillar 1 — Compute** | Ollama/vLLM on `127.0.0.1` only |
 | **Pillar 2 — Engine** | Vision → inference → motor/digital outputs |
 | **Pillar 3 — Mesh** | ZMQ broker on eno2; Alpaca + X bridges |
-| **Pillar 4 — Flight Command** | FRE, 8 Claws, Forge, SSE telemetry |
+| **Pillar 4 — Flight Command** | FRE, 10 Claws, Forge, SSE telemetry |
 
 **Four customer promises:**
 1. **Local LLM** — inference never leaves localhost
-2. **Digital employees** — 8 OOTB Claws + The Forge factory
+2. **Digital employees** — five flagship Claws day one + full roster on metal
 3. **Kill switch** — eno1 command · eno2 egress only · unplug stops agents
-4. **Create-to-Earn** — describe a Claw → deploy on-box in one session
+4. **The Forge** — describe a Claw → deploy on-box in one session
 
 ---
 
@@ -71,23 +72,23 @@ CurXor OS is a **four-pillar edge stack** on MINISFORUM MS-S1 MAX:
 
 | Repo | Purpose | Status |
 |------|---------|--------|
-| **curxor-os** | Appliance software (`/opt/curxor/`, systemd, OTA) | v0.9.1 · ~176 smoke + ~40 user-flow QA |
-| **curxor storefront** | GTM at curxor.ai (Stripe, Resend, synced catalog) | Live pre-order · holding for hardware |
+| **curxor-os** | Appliance software (`/opt/curxor/`, systemd, OTA) | v1.0.3 · 239 smoke + 40 user-flow QA |
+| **curxor storefront** | GTM at curxor.ai (Stripe, Resend, synced catalog) | Live pre-order · investor press kit |
 
-**Honest guardrail:** Agent runtime, unified comms, and Build Plane BP4 ship in software (0.9.1). MS-S1 MAX on-device validation and golden image freeze are gating items — blocked on hardware receipt, not vapor.
+**Honest guardrail:** Five flagship Claws ship with G3 demo depth. Five preview-tier Claws are labeled Coming Soon in Flight Command. Live broker fills and outbound sends require operator-configured bridges on eno2 (G4).
 
 ---
 
 ## Slide 5 — The Forge (Crown Jewel)
 
-**Create-to-Earn:** operators mint specialized digital employees without per-token billing.
+**Mint custom operators** without per-token billing.
 
 | Step | Action |
 |------|--------|
 | 1 | Describe niche (text, photo, or live vision) |
 | 2 | Local LLM recommends model stack by UMA budget tier |
 | 3 | One tap forges Claw profile → engine |
-| 4 | Claw earns 24/7 on your metal |
+| 4 | Claw runs on your metal under your egress policy |
 
 The Forge is the viral loop: buyers become operators who mint more Claws.
 
@@ -95,18 +96,14 @@ The Forge is the viral loop: buyers become operators who mint more Claws.
 
 ## Slide 6 — Ten Claws (Digital Employees)
 
-| Claw | Function |
-|------|----------|
-| **The Forge** | Mint custom Claws from natural language |
-| **Capital Claw** | Algo trading & rules — Alpaca bridge on eno2 |
-| **Creator Claw** | Content pipeline — X bridge on eno2 |
-| **Outreach Claw** | Outbound sequences & CRM-style desk |
-| **Arbitrage Claw** | Margin watch & fulfillment ops |
-| **Signal Claw** | The Neural Link — humanoid preview today; every AI device class (glance, VR, robot, home, fleet) on sovereign metal tomorrow |
-| **Swarm Claw** | Robotaxi fleet preview — autonomous fleet horizon from sovereign metal |
-| **Engage Claw** | Community & DM engagement demos |
-| **Vital Claw** | Wearables, labs, longevity protocol |
-| **Kin Claw** | Household profiles, devices, personalities |
+| Claw | Function | Depth |
+|------|----------|-------|
+| **Capital Claw** | Algo trading & rules — Alpaca bridge on eno2 | Flagship |
+| **Creator Claw** | Content pipeline — X bridge on eno2 | Flagship |
+| **Outreach Claw** | Outbound sequences & CRM-style desk | Flagship |
+| **The Forge** | Mint custom Claws from natural language | Forge |
+| **Signal Claw** | Neural Link — humanoid preview tier | Preview |
+| **Swarm · Vital · Kin · Arbitrage · Engage** | Fleet, health, household, margin, inbox | Preview / roadmap |
 
 Each workspace: agent console (chat + skills + activity). Trades and posts require explicit skill tap — LLM never calls the internet directly.
 
@@ -130,6 +127,8 @@ eno2 (10.77.0.1) — ZMQ mesh · Alpaca + X bridges only
 | Motor | 9200 / 9201 |
 | Digital bridge | eno2 only |
 
+**G1 closed (2026-06-29):** eno1/eno2 captive portal + EGRESS mesh verified on MS-S1.
+
 ---
 
 ## Slide 8 — Hardware
@@ -144,8 +143,9 @@ eno2 (10.77.0.1) — ZMQ mesh · Alpaca + X bridges only
 | GPU heap (BIOS carve) | ~48 GB |
 | Network | Dual 10GbE |
 | Stack | ROCm gfx1151 |
+| Unboxed | **2026-06-28** |
 
-Not a PC — a money printer with local inference. UMA carve-out in BIOS is the primary lever for running 7B–35B models alongside the agent stack.
+Not a PC — sovereign inference + agent stack on your desk. UMA carve-out in BIOS is the primary lever for running 7B–35B models alongside the agent stack.
 
 ---
 
@@ -155,6 +155,7 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 - **$3,999** MS-S1 MAX bundle — one-time purchase
 - CurXor OS pre-flash path included
 - Stripe pre-order live on curxor.ai
+- No CurXor subscription for local inference or bundled Claws
 
 ### Expansion (future)
 - OTA channel subscriptions (optional)
@@ -162,18 +163,17 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 - Enterprise fleet with eno2 policy packs
 - White-label Forge for agencies
 
-**Wedge math:** Eliminate **$6k+/yr** API burn for power users — payback in under 8 months vs cloud agents alone.
+**Wedge math:** Power users spending **$500+/mo** on cloud agents can offset hardware in under 8 months vs API burn alone — illustrative; see curxor.ai/compare#tco.
 
 ---
 
 ## Slide 10 — Target Buyers
 
-| Segment | Pain | CurXor answer |
-|---------|------|---------------|
-| Algo trader / crypto operator | API fees + strategy leakage | Capital Claw on localhost |
-| Creator / indie hacker | Token rent + platform lock-in | Creator Claw, $0/mo inference |
-| Outbound / agency | CRM + lead SaaS stack | Outreach Claw on-box |
-| E-com / arbitrage | Margin tools + fulfillment SaaS | Arbitrage Claw |
+| Segment | Operator story | CurXor answer |
+|---------|----------------|---------------|
+| Algo trader / crypto operator | **Jordan** — rules on metal | Capital Claw on localhost |
+| Creator / indie hacker | **Sam** — draft local, ship on signal | Creator Claw, $0/mo inference |
+| Outbound / agency | **Alex** — pipeline on one appliance | Outreach Claw on-box |
 | Sovereignty-maximalist | Alpha exfil to cloud LLMs | Pull eno2 = kill switch |
 
 ---
@@ -184,30 +184,35 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 |----|------------------|
 | **DIY Ollama box** | FRE, Forge, mesh, OTA, bridges — complete stack |
 | **SaaS agents** | Alpha stays local; outbound is skill → bridge, not LLM → internet |
-| **Cloud-only tiers** | 126 TOPS on desk beats rate limits for 24/7 workloads |
-| **Robotics novelty** | Digital Wealth pivot — Claws as employees, ROI language buyers use |
-| **Security story** | Two-port architecture with physical kill switch enterprises understand |
+| **Cloud-only tiers** | 126 TOPS on desk for 24/7 workloads without rate limits |
+| **NAS agent hosts** | 64GB UMA + wealth/work/life Claws + physical kill switch |
+| **Security story** | Two-port architecture enterprises understand |
 
 ---
 
 ## Slide 12 — Traction
 
-### Shipped (software)
-- Four-pillar install · Flight Command UI · 8 Claws + Forge
-- Local LLM: engine + Forge + Creator/Capital chat
-- Mesh publish · digital bridges · OTA daemon
-- Storefront live · appliance sync · CI on both pillars
+*Mirrors [curxor.ai/press](https://curxor.ai/press) traction table.*
 
-### Pending (hardware)
-- MS-S1 MAX ROCm/UMA proof on gfx1151
-- End-to-end mesh latency benchmarks
-- Golden image freeze + factory USB
-- Production OTA artifact + signed releases
+### Shipped
+- MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **v1.0.3**, Ollama ROCm on Standard 64 (qwen3:8b · 38 tok/s)
+- **FRE green** on bare metal — Capital, Creator, Work provisioned · Flight Command live on box
+- CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, 10 Claws + The Forge, Claw Cafe ascension tied to Flagship desks
+- **G3 demo captures closed** (2026-07-08) — inception reel, investor proof, desk strips, 8-screenshot pack — [curxor.ai/#demo](https://curxor.ai/#demo)
+- Agent runtime, unified comms gateways, Build Plane BP4 delegation queue in software
+- **239** smoke + **40** user-flow QA checks in curxor-os (`qa:local` suite)
+- Storefront GTM at curxor.ai — symphony model, investor press kit, Resend waitlist + Stripe pre-order
+- **G1 golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, `verify-unbox-day.sh` PASS
+
+### Pending
+- Ops Wave 1 live bridges on box · first external operator UAT (G4)
+- Published mesh benchmarks, production OTA fleet artifact
 
 | Metric | Value |
 |--------|-------|
-| Version | 0.9.1 |
-| QA (`qa:local`) | ~176 smoke · ~40 user flows |
+| OS version | **v1.0.3** |
+| QA (`qa:local`) | **239** smoke · **40** user flows |
+| Stage | Bootstrapped · selectively meeting angels/seed |
 | Pre-order | Live |
 
 ---
@@ -216,27 +221,30 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 
 | Phase | Milestones |
 |-------|------------|
-| **Now (v0.9.1)** | Agent runtime · unified comms · Build Plane BP4 · ~216 QA checks · GTM live |
-| **Next 90 days** | MS-S1 MAX validation · golden image · production OTA |
-| **H2 2026** | Customer pilots · Engage demo unit · case studies |
+| **Now (v1.0.3)** | G1/G2/G3 closed on MS-S1 · G3 investor pack · storefront GTM live |
+| **Next 90 days** | G4 external UAT · live bridges · production OTA fleet artifact |
+| **H2 2026** | Customer pilots · case studies · published mesh benchmarks |
 | **2027+** | Fleet OTA · partner bridges · enterprise eno2 policies |
 
 ---
 
 ## Slide 14 — The Ask
 
+### Stage
+Bootstrapped and selectively meeting aligned angels and seed investors.
+
 ### Use of funds / focus
-- Complete MS-S1 MAX validation and golden image manufacturing run
+- v1.0.0 tag + golden image + production OTA pipeline (G2 fleet artifact)
 - First 100 customer units
-- Production OTA pipeline
-- Field engineer for appliance support and factory flash at scale
+- Field engineer for support and factory flash at scale
 
 ### Contact
-- **Site:** [curxor.ai](https://curxor.ai)
+- **Site:** [curxor.ai](https://curxor.ai) · **Press:** [curxor.ai/press](https://curxor.ai/press)
+- **Email:** hello@curxor.ai
 - **X:** @curxorai
-- **Pre-order:** Stripe checkout on site
+- **Deck:** Email hello@curxor.ai — subject "Investor inquiry — CurXor"
 
-> Sovereign metal. Infinite Claws. One invoice.
+> Sovereign metal. Mint the rest. One invoice.
 
 ---
 
@@ -244,15 +252,17 @@ Not a PC — a money printer with local inference. UMA carve-out in BIOS is the 
 
 | Area | Status |
 |------|--------|
-| Software v0.9.1 | Agent runtime, channels, MCP, Build Plane · ~176 smoke + ~40 user flows |
-| Flight Command + 8 Claws + Forge | Rich UI; many workspaces use mock data |
-| Local LLM (engine + dashboard) | Code complete; needs Ollama on appliance |
-| Digital bridges (Alpaca/X) | Coded; needs `digital.env` credentials |
-| MS-S1 MAX hardware validation | **Blocked** — unit not received |
-| Golden image / production OTA | Not done |
+| Software v1.0.3 | FRE, Flight Command, 10 Claws + Forge on MS-S1 Standard 64 |
+| Five flagship Claws | G3 demo depth — Capital paper, Creator queue, Work pipeline |
+| Five preview Claws | Honest Coming Soon surfaces in Flight Command |
+| Local LLM | qwen3:8b · 38 tok/s ROCm validated on box |
+| Digital bridges (Alpaca/X) | Coded; needs operator `digital.env` credentials on eno2 |
+| MS-S1 MAX hardware | **Unboxed 2026-06-28** — G1/G2/G3 closed Jul 8 |
+| Published mesh benchmarks | Not yet — topology verified, not sub-ms marketing |
+| Production OTA fleet artifact | G4 / G2 fleet freeze pending |
 
-**No guaranteed returns.** Capital Claw supports paper and live trading via Alpaca; performance depends on operator strategy. Creator Claw posts require explicit operator approval via skills.
+**No guaranteed returns.** Capital Claw supports paper and live trading via Alpaca; performance depends on operator strategy. Creator and Outreach outbound actions require explicit operator approval via skills.
 
 ---
 
-*Sources: `curxor-os/docs/FEATURE-FUNCTION.md` · `curxor storefront/docs/PRODUCT-POSITIONING.md`*
+*Sources: `curxor-os` appliance sync · `src/lib/press.ts` · curxor.ai/press traction table*

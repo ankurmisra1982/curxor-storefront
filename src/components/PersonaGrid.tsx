@@ -2,25 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ShareOnX } from "@/components/ShareOnX";
-import { homepagePersonas } from "@/lib/persona-blocks";
+import { clawOperators, operatorsSection } from "@/lib/claw-operators";
 
 export function PersonaGrid() {
   return (
-    <section id="personas" className="relative border-t border-white/10 py-20 sm:py-28">
+    <section id="operators" className="relative scroll-mt-24 border-t border-white/10 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 max-w-2xl">
-          <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">MEET YOUR OPERATORS</p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
-            Alex, Sam, and Jordan
+          <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
+            {operatorsSection.eyebrow}
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            {operatorsSection.headline}
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-white/45">
-            Composite operator stories — the grammar gap in human terms. Not paid endorsements;
-            product proof in the desk tour below.
+            {operatorsSection.subhead}
           </p>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          {homepagePersonas.map((persona) => (
+          {clawOperators.map((persona) => (
             <article
               key={persona.id}
               className="group flex flex-col border-industrial bg-black transition-colors hover:border-neon-purple/25"

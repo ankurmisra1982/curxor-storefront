@@ -4,7 +4,6 @@ import {
   productIdentity,
   siteConfig,
 } from "@/lib/config";
-import { clawHeadlines } from "@/lib/claw-headlines";
 import { g3Screenshots } from "@/lib/g3-demo";
 import { qaMetricsLine } from "@/lib/qa-metrics";
 
@@ -36,9 +35,6 @@ export const trustSignals = [
 
 export const socialProofLine = `CurXor OS v${applianceVersion} · ${qaMetricsLine} · MS-S1 golden path · G3 captures closed`;
 
-export const setupClaim =
-  "Flight Command on day one — pick Claws in Settings, chat or tap skills. Live bridges need your credentials on eno2.";
-
 export const priceIncludes = {
   headline: "What $3,999 includes",
   subhead:
@@ -67,39 +63,6 @@ export const priceIncludes = {
     note: "No CurXor OS, Claws, bridges, or Flight Command — weeks of DIY integration",
   },
 } as const;
-
-export const personaCards = [
-  {
-    id: "traders",
-    eyebrow: "WEALTH",
-    title: "Algo traders & operators",
-    body: clawHeadlines.capital.personaCard,
-    claw: "Capital Claw",
-    href: "/for/traders",
-    demo: "/demo/03-capital-claw.png",
-    tourHref: "/capital",
-  },
-  {
-    id: "creators",
-    eyebrow: "GROWTH",
-    title: "Creators & indie hackers",
-    body: clawHeadlines.creator.personaCard,
-    claw: "Creator Claw",
-    href: "/for/creators",
-    demo: "/demo/08-creator-claw.png",
-    tourHref: "/creator",
-  },
-  {
-    id: "agencies",
-    eyebrow: "WORK",
-    title: "Agencies & outbound teams",
-    body: clawHeadlines.outreach.personaCard,
-    claw: "Outreach Claw",
-    href: "/for/agencies",
-    demo: "/demo/07-unified-inbox.png",
-    tourHref: "/outreach",
-  },
-] as const;
 
 /** Full illustrative matrix for /compare and deep-dive pages — not homepage. */
 export const tcoScenarios = {

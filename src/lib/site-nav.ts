@@ -41,6 +41,7 @@ export const navGroups: NavGroup[] = [
 ];
 
 export const navTopLinks: NavLink[] = [
+  { href: "/press", label: "PRESS" },
   { href: "/pricing", label: "PRICING" },
   { href: "/#faq", label: "FAQ" },
 ];

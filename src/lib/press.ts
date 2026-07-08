@@ -22,7 +22,7 @@ export const investorDeckMailto =
   "mailto:hello@curxor.ai?subject=Investor%20inquiry%20%E2%80%94%20CurXor";
 
 export const pressKit = {
-  headline: "Your AI team. On a box you own.",
+  headline: "Mint autonomous employees. On a box you own.",
   boilerplate: `${productIdentity.companyName} builds sovereign AI appliances that run digital employees — called Claws — on local hardware with zero monthly API fees. ${productIdentity.boxName} is the chassis name on every box — 126 TOPS NPU, 64GB unified memory, ${productIdentity.osName}, and ${clawRosterLabel} spanning wealth, work, signals, and life & family. Message Claws from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Pre-order at curxor.ai for $3,999.`,
   founderQuote:
     "ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.",
@@ -80,6 +80,7 @@ export const pressKit = {
         status: "Shipped" as const,
         milestone:
           "**G3 demo captures closed** (2026-07-08) — inception reel, investor proof, desk strips, 8-screenshot pack on MS-S1",
+        href: "/#demo",
       },
       {
         status: "Shipped" as const,
@@ -153,6 +154,11 @@ export const pressKit = {
   diligencePath: {
     headline: "Diligence path",
     links: [
+      {
+        href: "/#demo",
+        label: "G3 desk gallery",
+        why: "MS-S1 Flight Command captures — Capital paper · Creator queue · Work pipeline",
+      },
       {
         href: "/pricing#compute-ladder",
         label: "Compare tiers",

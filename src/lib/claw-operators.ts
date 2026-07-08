@@ -1,15 +1,19 @@
+import { g3Screenshots } from "@/lib/g3-demo";
+
 /** Fictional operator personas — pre-launch storytelling, not customer testimonials. */
 export type ClawOperator = {
-  id: "alpha" | "jules" | "cleo";
+  id: "alex" | "sam" | "jordan";
   name: string;
   role: string;
   claw: string;
   eyebrow: string;
-  /** Homepage / social — punchy, shareable */
+  title: string;
   quote: string;
-  /** One line under name on cards */
   hook: string;
-  /** X / LinkedIn paste */
+  body: string;
+  claws: string;
+  cta: string;
+  ctaHref: string;
   shareLine: string;
   tourHref: string;
   personaHref: string;
@@ -19,60 +23,75 @@ export type ClawOperator = {
 
 export const clawOperators: ClawOperator[] = [
   {
-    id: "alpha",
-    name: "Alpha",
-    role: "Solo quant · Austin",
-    claw: "Capital Claw",
-    eyebrow: "WEALTH",
-    hook: "Rules on metal. No API invoice.",
-    quote:
-      "I stopped renting alpha from the cloud. Capital Claw backtests on localhost — arms on my desk, fills on eno2, or nowhere if I pull the plug.",
-    shareLine:
-      "My edge doesn't file an API invoice. Capital Claw on bare metal. @curxorai",
-    tourHref: "/capital",
-    personaHref: "/for/traders",
-    demo: "/demo/03-capital-claw.png",
-    glyph: "α",
-  },
-  {
-    id: "jules",
-    name: "Jules",
-    role: "Indie creator · Berlin",
-    claw: "Creator Claw",
-    eyebrow: "GROWTH",
-    hook: "Draft local. Ship on your signal.",
-    quote:
-      "Draft at 2am. Schedule at 8. Creator Claw never ships my hooks to OpenAI — eno2 posts only when I tap go.",
-    shareLine:
-      "Scheduler cancelled. Creator Claw runs the tour on my metal. @curxorai",
-    tourHref: "/creator",
-    personaHref: "/for/creators",
-    demo: "/demo/08-creator-claw.png",
-    glyph: "J",
-  },
-  {
-    id: "cleo",
-    name: "Cleo",
+    id: "alex",
+    name: "Alex",
     role: "Agency founder · NYC",
     claw: "Outreach Claw",
-    eyebrow: "WORK",
-    hook: "Pipeline runs while you sleep.",
+    eyebrow: "WORK · L2–L3",
+    title: "The solo operator",
+    hook: "Pipeline on metal. Pull eno2 when you need cold.",
     quote:
       "Twelve clients, one appliance. Outreach Claw pauses sequences on reply before I pour coffee — no HubSpot rent, no token meter.",
+    body: "Run Outreach sequences, Creator pipelines, and Capital rules from one desk. Local inference. Outbound on egress you control.",
+    claws: "Outreach · Creator · Capital",
+    cta: "See how it works",
+    ctaHref: "#how-it-works",
     shareLine:
       "Unplug eno2, outbound stops cold. That's the whole pitch. @curxorai",
     tourHref: "/outreach",
     personaHref: "/for/agencies",
-    demo: "/demo/07-unified-inbox.png",
-    glyph: "C",
+    demo: g3Screenshots.workPipeline,
+    glyph: "A",
+  },
+  {
+    id: "sam",
+    name: "Sam",
+    role: "Indie creator · Berlin",
+    claw: "Creator Claw",
+    eyebrow: "GROWTH · L2–L3",
+    title: "The creator who ships",
+    hook: "Draft local. Ship on your signal.",
+    quote:
+      "Draft at 2am. Schedule at 8. Creator Claw never ships my hooks to OpenAI — eno2 posts only when I tap go.",
+    body: "Draft, adapt, and schedule across channels. Creator Claw runs on your metal; publishes through egress when you approve.",
+    claws: "Creator · Claw Cafe",
+    cta: "See Creator workflow",
+    ctaHref: "/creator",
+    shareLine:
+      "Scheduler cancelled. Creator Claw runs the tour on my metal. @curxorai",
+    tourHref: "/creator",
+    personaHref: "/for/creators",
+    demo: g3Screenshots.creatorQueue,
+    glyph: "S",
+  },
+  {
+    id: "jordan",
+    name: "Jordan",
+    role: "Solo quant · Austin",
+    claw: "Capital Claw",
+    eyebrow: "WEALTH · L2–L4",
+    title: "The rules-first builder",
+    hook: "Rules on metal. No API invoice.",
+    quote:
+      "I stopped renting alpha from the cloud. Capital Claw backtests on localhost — arms on my desk, fills on eno2, or nowhere if I pull the plug.",
+    body: "Capital Claw runs rules-bound desk workflows on bare metal. Paper trading when configured; live bridges are yours to wire.",
+    claws: "Capital",
+    cta: "See Capital desk",
+    ctaHref: "/capital",
+    shareLine:
+      "My edge doesn't file an API invoice. Capital Claw on bare metal. @curxorai",
+    tourHref: "/capital",
+    personaHref: "/for/traders",
+    demo: g3Screenshots.capitalPaper,
+    glyph: "J",
   },
 ] as const;
 
 export const operatorsSection = {
   eyebrow: "MEET YOUR OPERATORS",
-  headline: "Digital employees with names — built for X threads and operator DMs.",
+  headline: "Alex, Sam, and Jordan",
   subhead:
-    "Three composite stories for pre-marketing outreach. Each maps to a Flagship desk, a persona page, and a paste-ready share line. Pull eno2 when you need the kill switch.",
+    "Composite operator stories — the grammar gap in human terms. Not paid endorsements; product proof in the desk tour above.",
 } as const;
 
 export function getOperator(id: ClawOperator["id"]): ClawOperator | undefined {
@@ -83,9 +102,9 @@ export function getOperatorByPersonaSlug(
   slug: string
 ): ClawOperator | undefined {
   const map: Record<string, ClawOperator["id"]> = {
-    traders: "alpha",
-    creators: "jules",
-    agencies: "cleo",
+    traders: "jordan",
+    creators: "sam",
+    agencies: "alex",
   };
   const id = map[slug];
   return id ? getOperator(id) : undefined;

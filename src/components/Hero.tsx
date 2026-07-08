@@ -27,39 +27,28 @@ const statTipByLabel: Partial<Record<string, BuyerTipId>> = {
 
 
 function HeroSecondaryCtas() {
-
   return (
-
     <div className="flex flex-wrap items-center gap-4">
-
       <TrackedPreorderLink
-
         location="hero"
-
         className="text-xs tracking-[0.2em] text-white/50 transition-colors hover:text-neon-purple"
-
       >
-
         Pre-order · {siteConfig.preOrderPrice} →
-
       </TrackedPreorderLink>
-
-      <a
-
-        href="#how-it-works"
-
-        className="border-industrial px-6 py-3 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/50 hover:text-neon-purple"
-
+      <Link
+        href="/press"
+        className="text-xs tracking-[0.2em] text-white/50 transition-colors hover:text-neon-purple"
       >
-
+        Press kit →
+      </Link>
+      <a
+        href="#how-it-works"
+        className="border-industrial px-6 py-3 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/50 hover:text-neon-purple"
+      >
         SEE HOW IT WORKS
-
       </a>
-
     </div>
-
   );
-
 }
 
 

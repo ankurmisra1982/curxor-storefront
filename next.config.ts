@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   outputFileTracingIncludes: {
     "/opengraph-image": [
-      "./public/demo/01-home.png",
+      "./public/demo/g3/01-home.png",
       "./public/brand/curxor-hardware-badge.png",
     ],
   },

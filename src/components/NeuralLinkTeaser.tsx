@@ -32,8 +32,8 @@ export function NeuralLinkTeaser() {
             </p>
             <p className="mt-3 text-xs italic text-white/35">
               {signalRole
-                ? `${signalRole.metaphor} — ${signalRole.body} Humanoid preview on appliance today.`
-                : "Humanoid preview on appliance today — glance, VR, and fleet classes on the roadmap."}
+                ? `${signalRole.metaphor} — ${signalRole.body} Preview-tier humanoid surfaces on appliance — not day-one integration.`
+                : "Preview-tier humanoid surfaces on appliance — glance, VR, and fleet classes on the roadmap."}
             </p>
 
             <Link

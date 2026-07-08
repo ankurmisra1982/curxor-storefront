@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "CurXor",
   siteUrl: "https://curxor.ai",
-  pageTitle: "CurXor — Your AI team on a box you own",
+  pageTitle: "CurXor — Mint autonomous employees on a box you own",
   metaDescription:
-    "Desk appliance + CurXor OS. Ten autonomous AI agents, local inference, $3,999 once, $0/mo API rent. Pre-order the sovereign AI desk.",
+    "Desk appliance + CurXor OS. Mint autonomous employees on bare metal — five flagship Claws day one, local inference, $3,999 once, $0/mo API rent.",
   keywords: [
     "sovereign AI hardware",
     "local LLM appliance",
@@ -16,9 +16,9 @@ export const siteConfig = {
   ],
   ogTagline: "126 TOPS · 64GB UMA · $0/mo API · $3,999 once",
   viralHook: "ChatGPT bills per token. CurXor bills once.",
-  heroHeadline: "Your AI team. On a box you own.",
+  heroHeadline: "Mint autonomous employees. On a box you own.",
   heroSubhead:
-    "CurXor is a desk appliance with CurXor OS — ten autonomous AI agents, local inference, and a command dashboard on your network. $3,999 once · $0/mo API for the operate plane.",
+    "CurXor is a desk appliance with CurXor OS — five flagship Claws day one, local inference, and a command dashboard on your network. $3,999 once · $0/mo API for the operate plane.",
   /** Layer 4 · links to /signal. Conductor verb — pairs with orchestrator in essays/deck. */
   heroAccent: "Interfaces drift. Your desk conducts.",
   computeHook:
@@ -95,7 +95,7 @@ export const computePower = {
   badge: "126 TOPS · 64GB UMA · RYZEN AI MAX+ 395",
   headline: "The Powerhouse",
   subhead:
-    "More NPU than most data-center racks. Sitting on your desk. Running your Claws while you sleep.",
+    "126 TOPS NPU on your desk — validated on Standard 64. Mesh benchmarks after G1 publish.",
   stats: [
     { value: "126", unit: "TOPS", label: "NPU INFERENCE" },
     { value: "64", unit: "GB", label: "LPDDR5X UMA" },
@@ -129,88 +129,6 @@ export const clawVerticalCount = syncedApps.filter(
 export const clawRosterLabel = `${clawVerticalCount} Claw verticals + The Forge`;
 
 export const clawPickStackLabel = `${clawVerticalCount} Claws + The Forge · pick your stack`;
-
-export const dayOneSteps = [
-  {
-    title: "1 · Pick your Claws",
-    body: "Enable the digital employees you want on day one — Capital, Creator, Vital, Kin, Outreach, and more. Add or remove anytime in Settings.",
-  },
-  {
-    title: "2 · Chat or tap",
-    body: "Ask in Flight Command, or reply from Telegram, Slack, WhatsApp, or iMessage — same Claw, same local router. Tap skill buttons when you know the action.",
-  },
-  {
-    title: "3 · Local by default",
-    body: "Reasoning runs on your box. Optional frontier LLMs in Settings — OAuth sign-in for OpenAI or your own API keys. Trades and posts egress only through eno2.",
-  },
-  {
-    title: "4 · Make it yours",
-    body: "Settings → Appearance: Beginner, Standard, or Expert experience levels, light/dark, and accent themes (CurXor, Ocean, Amber, Mono).",
-  },
-] as const;
-
-export const specColumns = [
-  {
-    id: "compute",
-    label: "POWERHOUSE COMPUTE",
-    featured: true,
-    items: [
-      "AMD Ryzen AI Max+ 395 — flagship edge silicon",
-      "64GB LPDDR5X UMA — run massive models locally",
-      "126 TOPS local NPU — ROCm inference validated Standard 64; mesh benchmarks pending eno2 (G1)",
-      "Zero per-token billing. Ever.",
-    ],
-  },
-  {
-    id: "network",
-    label: "NETWORK",
-    items: [
-      "Dual 10GbE — eno1 Command · eno2 Egress",
-      "Unplug eno2 → kill every outbound agent",
-      "Flight Command UI firewalled from the internet",
-    ],
-  },
-  {
-    id: "engine",
-    label: "CLAW ENGINE",
-    items: [
-      "Home hub — pick a Claw, chat or tap skills",
-      "Creator Claw — 5-step Creation Wizard, Go Live checklist, 10 publish bridges, engage loop",
-      "Unified inbox — dashboard + Telegram · Slack · WhatsApp · iMessage",
-      "Settings — enable Claws, channels, intelligence, themes",
-      "Claw Context mesh — Vital, Kin, Optimus share context",
-      "Wearables & health apps — user-configured OAuth, any vendor you authorize",
-      "The Forge — describe it, deploy it, customize anything",
-      "Alpaca · social publish · CRM bridges on eno2 only",
-    ],
-  },
-] as const;
-
-export const createToEarnSteps = [
-  {
-    step: "01",
-    title: "Buy the powerhouse",
-    body: "$3,999 once. 126 TOPS. 64GB UMA. No subscriptions. No token meter. Own the silicon.",
-  },
-  {
-    step: "02",
-    title: "Forge your Claw",
-    body: "One sentence in The Forge → local LLM compiles a custom agent wired to eno2 egress.",
-  },
-  {
-    step: "03",
-    title: "Run on your schedule",
-    body: "Claws keep working on your appliance — rules, outreach, and drafts while you step away.",
-  },
-  {
-    step: "04",
-    title: "Compound on metal",
-    body: "Illustrative outcomes vary by desk and bridges — Capital rules, Creator publishes, Outreach sequences on your terms.",
-  },
-] as const;
-
-export const forgeExamplePrompt =
-  "Create a Claw that monitors Twitter for 'need a new website', drafts a pitch from their bio, and drops it in my Outbox.";
 
 export const shareLines = [
   "126 TOPS on my desk. $0 to OpenAI.",

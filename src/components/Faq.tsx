@@ -13,7 +13,7 @@ export function Faq() {
     : faqItems.slice(0, FAQ_PREVIEW_COUNT);
 
   return (
-    <section id="faq" className="relative border-t border-white/10 py-16 sm:py-20">
+    <section id="faq" className="relative scroll-mt-24 border-t border-white/10 py-16 sm:py-20">
       <div className="mx-auto max-w-3xl px-6">
         <div className="mb-10 text-center">
           <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">

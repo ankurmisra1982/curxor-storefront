@@ -6,7 +6,7 @@ export const actOneStory = {
   eyebrow: "ACT I · WHAT YOU BUY",
   headline: "Three Claws you'll run in week one",
   subhead:
-    "CurXor ships ten Claws and The Forge. Capital, Creator, and Outreach are your buy decision — production-grade G3 demo depth, local context, egress you control.",
+    "CurXor ships ten Claws and The Forge. Capital, Creator, and Outreach are your buy decision — G3 demo depth on MS-S1 metal, local context, egress you control.",
   flagships: [
     {
       claw: "Capital Claw",
@@ -25,7 +25,7 @@ export const actOneStory = {
     {
       claw: "Outreach Claw",
       tier: "Flagship",
-      body: "Pipeline, sequences, deliverability — outbound that doesn't sleep.",
+      body: "Pipeline, sequences, deliverability — outbound when bridges are wired.",
       href: "/outreach",
       demo: g3Screenshots.workPipeline,
     },

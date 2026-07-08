@@ -128,7 +128,13 @@ export default function PressPage() {
                   {row.status.toUpperCase()}
                 </span>
                 <p className="text-sm text-white/80">
-                  {renderInlineBold(row.milestone)}
+                  {"href" in row && row.href ? (
+                    <Link href={row.href} className="text-neon-purple hover:underline">
+                      {renderInlineBold(row.milestone)}
+                    </Link>
+                  ) : (
+                    renderInlineBold(row.milestone)
+                  )}
                 </p>
               </div>
             ))}

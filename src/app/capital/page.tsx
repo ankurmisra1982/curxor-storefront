@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 export default function CapitalPage() {
-  const alpha = getOperator("alpha");
+  const jordan = getOperator("jordan");
 
   return (
     <SiteShell>
@@ -55,12 +55,12 @@ export default function CapitalPage() {
             secondaryHref="/compare/mac-studio-ollama"
             secondaryLabel="vs Mac Studio + Ollama"
           />
-          {alpha ? <ShareOnX text={alpha.shareLine} label="ALPHA ON X" /> : null}
+          {jordan ? <ShareOnX text={jordan.shareLine} label="JORDAN ON X" /> : null}
         </div>
 
-        {alpha ? (
+        {jordan ? (
           <section className="mt-10">
-            <OperatorQuote operator={alpha} />
+            <OperatorQuote operator={jordan} />
           </section>
         ) : null}
 

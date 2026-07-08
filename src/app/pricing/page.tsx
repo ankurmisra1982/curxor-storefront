@@ -6,6 +6,7 @@ import { OpenWeightTierCompare } from "@/components/OpenWeightTierCompare";
 import { InfoTip } from "@/components/InfoTip";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
+import { pricingEvolutionBlurb } from "@/lib/compute-ladder";
 import { pricingModels, pricingTiers } from "@/lib/generated/pricing-sync";
 import { siteConfig } from "@/lib/config";
 
@@ -52,6 +53,20 @@ export default function PricingPage() {
         </div>
 
         <ComputeLadder />
+
+        <div className="mt-14 border-industrial bg-black p-6 sm:p-8">
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">
+            {pricingEvolutionBlurb.eyebrow}
+          </p>
+          {pricingEvolutionBlurb.paragraphs.map((paragraph) => (
+            <p
+              key={paragraph.slice(0, 40)}
+              className="mt-3 text-sm leading-relaxed text-white/60 first:mt-3"
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
 
         <div className="mt-14 grid gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
           {pricingTiers.map((tier) => {

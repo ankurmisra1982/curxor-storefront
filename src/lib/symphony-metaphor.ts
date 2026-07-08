@@ -56,8 +56,8 @@ export const symphonySection = {
 
 export const symphonyWhatIsThis = {
   box: {
-    title: "The box",
-    body: "A MINISFORUM MS-S1-class appliance. Plug into your network. You own the hardware.",
+    title: "The CurXor box",
+    body: "The CurXor box — a desk appliance you own. Act I validated on MS-S1-class metal. Plug into your network.",
   },
   os: {
     title: "CurXor OS",

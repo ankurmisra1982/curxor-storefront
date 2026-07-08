@@ -25,6 +25,7 @@ export const siteConfig = {
     "126 TOPS local NPU — ROCm inference validated on Standard 64; mesh benchmarks after G1",
   tagline:
     "One desk conducts your orchestra of Claws — trade, create, and outbound without shipping your playbook to the cloud.",
+  heroDemoLine: "Demo tour day one — not a weekend project.",
   heroSubtext:
     "126 TOPS local inference · dual 10GbE · eno2 kill switch · $0 CurXor API fees.",
   heroCreatorBadge:

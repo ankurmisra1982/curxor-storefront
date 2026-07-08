@@ -99,7 +99,11 @@ export function Hero() {
 
           </p>
 
+          <p className="text-sm italic text-white/45">
 
+            {siteConfig.heroDemoLine}
+
+          </p>
 
           <p className="text-xs tracking-wide text-white/35">
 

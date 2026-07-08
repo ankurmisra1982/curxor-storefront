@@ -242,6 +242,13 @@ export default function PressPage() {
         </IndustrialSection>
 
         <IndustrialSection>
+          <SectionEyebrow>VS MARKET</SectionEyebrow>
+          <p className="mt-4 text-sm leading-relaxed text-white/70">
+            {pressKit.vsMarket}
+          </p>
+        </IndustrialSection>
+
+        <IndustrialSection>
           <SectionEyebrow>WHY CURXOR</SectionEyebrow>
           <ul className="mt-4 list-inside list-disc space-y-2 text-sm text-white/70">
             {pressKit.whyCurXor.map((item) => (

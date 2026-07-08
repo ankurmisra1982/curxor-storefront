@@ -135,6 +135,9 @@ export const pressKit = {
     wedgeNoteSuffix: "for methodology.",
   },
 
+  vsMarket:
+    "The market splits between chat tabs, cloud agents with monthly rent, self-hosted home clouds, and lightweight assistant appliances. CurXor is the operator desk category: vertical digital employees for wealth, creation, and work — outcomes on metal you own, not another app store or messaging bot. Hardware is the anchor; software evolves OTA without mandatory API rent.",
+
   whyCurXor: [
     "Category creation — independent computer for digital employees, not DIY Ollama or SaaS agents",
     "Sovereignty story — eno1 command · eno2 egress only · physical kill switch",

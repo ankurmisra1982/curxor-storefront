@@ -21,6 +21,16 @@ export const openWeightComputeLadder = {
   },
 } as const;
 
+/** Pricing page — evolving business model (INVESTOR-MEMO § Business model) */
+export const pricingEvolutionBlurb = {
+  eyebrow: "EVOLVING MODEL",
+  paragraphs: [
+    "Hardware purchase is the anchor — $3,999 once, $0/mo operate-plane API on the appliance. CurXor does not bill per token for local inference or bundled Claws.",
+    "CurXor OS evolves on metal you already own via OTA: compute tiers from Standard to Pro 128 to CurXor Studio as open weights advance, Claw depth unlocks as flagship desks mature, and The Forge lets you mint custom operators without a new subscription per workflow.",
+    "Frontier models and bridge connectors stay optional BYOK — additive, never required to run the desk. We are not building another API rent trap.",
+  ],
+} as const;
+
 export const hardwareTierCompare = {
   columns: [
     {

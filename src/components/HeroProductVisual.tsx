@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { g3Screenshots } from "@/lib/g3-demo";
+
 const CLAW_CHIPS = [
   { icon: "↗", label: "Capital" },
   { icon: "♡", label: "Vital" },
@@ -42,7 +44,7 @@ export function HeroProductVisual() {
         <Link href="#demo" className="group block">
           <div className="relative overflow-hidden">
             <Image
-              src="/demo/01-home.png"
+              src={g3Screenshots.home}
               alt="CurXor Flight Command Home hub with grouped Claw workspaces"
               width={1024}
               height={640}

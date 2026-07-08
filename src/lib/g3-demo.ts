@@ -18,7 +18,7 @@ export const g3DeskStrips = {
 } as const;
 
 export const categoryFilmAssets = {
-  /** ~61s category hero — primary on /signal (sync from curxor-os master-film/hero). */
+  /** ~90s Act I category cut — alias of g3-inception-reel-v1 (Layer B only). */
   heroCategory: "/demo/hero-category-v1.mp4",
   inceptionReel: "/demo/investor/g3-inception-reel-v1.mp4",
   investorProof: "/demo/investor/g3-investor-proof-v1.mp4",

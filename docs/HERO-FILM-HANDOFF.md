@@ -54,10 +54,12 @@ Copy-Item ..\curxor-os\docs\gtm\hero-film-figma\exports\*.png public\demo\hero-f
 ```
 ☑ /signal — Category film section + category/inception film tabs
 ☑ /press — comp plate downloads + investor proof MP4 + script ref
-☑ hero-category-v1.mp4 — synced to public/demo/
+☑ hero-category-v1.mp4 — synced to public/demo/ (~90s · Act I alias = g3-inception-reel-v1)
+☑ CategoryFilmSection — tab/chyron ~90s Act I · not ~61s badge film · v2 deferred post-validation
 ☑ G3 /home capture — _capture-home.png → g3/01-home.png
 ☐ Deck — insert payoff frame or 15s loop when cut
 ☐ Do NOT swap homepage H1 until G4
+☐ HERO-v2 — full Layer A badge + Layer C payoff merge (post-close film chat)
 ```
 
 ---

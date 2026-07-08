@@ -35,6 +35,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 - [x] **Hero film v5.1 script + comp plates** (G3 · `46f9257`) — [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/` · Figma proto linked
 - [x] **Hero film UI** — `/signal` category section + film tabs · `/press` downloads
 - [x] **Hero film MP4** — hero-category-v1 on /signal · inception reel alternate · investor proof on /press
+- [x] **Track C deploy (STORE-C-DEPLOY)** — sync/g1-green-mirror-p0 → main · G3 assets on prod · category film labeled ~90s Act I alias
 - [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **deferred post-fundraise (G11)**
 - [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · **deferred post-fundraise (G12)**
 - [ ] **`/for-builders`** (IDEA-G13) — Build Plane power-user page · not main hero · **deferred post-fundraise (G13)**
@@ -42,7 +43,18 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 ## Before marketing (one-time ops)
 
 - [x] **Contact email** — `hello@curxor.ai` in `siteConfig.contactEmail`; Resend domain verified on curxor.ai
-- [ ] **Resend on Vercel** — verify `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `RESEND_FROM_EMAIL` on Vercel Production if subscribe smoke test fails → redeploy → test `POST /api/subscribe` returns `{"ok":true}`
+- [ ] **Resend on Vercel** — verify `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `RESEND_FROM_EMAIL` on Vercel Production if subscribe smoke test fails → redeploy → test `POST /api/subscribe` returns `{"ok":true}` · **check after Track C deploy**
+
+## Deferred post-fundraise (do not build pre-close)
+
+| ID | Item | Why defer |
+|----|------|-----------|
+| G11 | Three-loop homepage section ([LOOP-POSITIONING.md](LOOP-POSITIONING.md)) | Post-fundraise · homepage H1 unchanged |
+| G12 | Trust loop graphic (Go Live + approval strip) | Post-fundraise |
+| G13 | `/for-builders` page (Build Plane) | G3+ · not conversion-critical |
+| HERO-v2 | Full hero-category merge (Layer A badge + Layer C payoff) | Post-close film chat |
+| Product photography | MS-S1 batch hero | Hardware shoot gate |
+| Claw walkthrough re-record | Replace old webm on `/capital` `/creator` | Post-G3 box session |
 
 ## Build next (this repo)
 
@@ -97,6 +109,12 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 
 See [SYNC.md](SYNC.md) and [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md).
+
+## Track C deploy log
+
+| Date | Commit | Notes |
+|------|--------|-------|
+| 2026-07-08 | _pending merge_ | STORE-C-DEPLOY — sync/g1-green-mirror-p0 → main · prod smoke after Vercel green |
 
 ## Reference docs in curxor-os
 

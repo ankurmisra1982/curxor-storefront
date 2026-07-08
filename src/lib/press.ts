@@ -299,7 +299,7 @@ export const pressKit = {
     {
       label: "Category hero film",
       path: "/signal#category-film",
-      note: "Script locked v5.1 · hero-category-v1 primary · inception reel alternate",
+      note: "Act I cut ~90s · hero-category-v1 (= g3-inception-reel-v1 alias) · full badge+payoff v2 post-validation",
     },
     {
       label: "G3 investor proof (~3 min MP4)",

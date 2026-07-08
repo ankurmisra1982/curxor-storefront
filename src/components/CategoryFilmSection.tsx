@@ -21,17 +21,17 @@ const FILMS: {
 }[] = [
   {
     id: "category",
-    label: "Category hero · ~61s",
+    label: "Category hero · ~90s · Act I",
     src: categoryFilmAssets.heroCategory,
-    chyron: "CATEGORY HERO · ~61s · G3",
-    ariaLabel: "G3 category hero film — one desk conducts",
+    chyron: "ACT I CATEGORY CUT · ~90s · G3",
+    ariaLabel: "G3 category hero film — Act I cut, one desk conducts",
   },
   {
     id: "inception",
-    label: "Inception reel · ~90s",
+    label: "Inception reel · same cut",
     src: categoryFilmAssets.inceptionReel,
     chyron: "INCEPTION REEL · ~90s · G3",
-    ariaLabel: "G3 inception reel — velocity proof alternate cut",
+    ariaLabel: "G3 inception reel — same Act I cut, alternate tab label",
   },
 ];
 
@@ -46,8 +46,9 @@ export function CategoryFilmSection() {
         <p className="text-[10px] tracking-[0.25em] text-neon-purple">CATEGORY FILM · VISION TIER</p>
         <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">One desk conducts.</h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/50">
-          Category hero (~61s) · Alex · Patron Badge · command-only. Dream-state payoff for
-          investors and /signal — not cold-traffic homepage hero until G4 rebrand.
+          Act I category cut (~90s) · command-only · Layer B on metal. Dream-state payoff for
+          investors and /signal — not cold-traffic homepage hero until G4 rebrand. Full
+          dream-state category hero (badge + payoff cards) ships v2 post-hardware validation.
         </p>
       </div>
 
@@ -94,8 +95,8 @@ export function CategoryFilmSection() {
             className="hidden border border-white/10 lg:block"
           />
           <p className="mt-4 text-xs leading-relaxed text-amber-200/75">
-            Command mode · processed on your appliance. Badge and full film ship post hardware
-            validation.
+            Command mode · processed on your appliance. This cut is Act I only — badge + payoff
+            cards ship v2 post-hardware validation.
           </p>
           <p className="mt-2 text-[10px] text-white/35">{g3Honesty.deskCapture}</p>
           <div className="mt-6 flex flex-wrap gap-4">

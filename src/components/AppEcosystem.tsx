@@ -112,10 +112,10 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
 
           <div className="mt-8">
             <Link
-              href="/architecture"
+              href="/architecture#claw-roster"
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              FULL ARCHITECTURE + ROSTER →
+              FULL ROSTER CHEAT SHEET →
             </Link>
           </div>
         </div>

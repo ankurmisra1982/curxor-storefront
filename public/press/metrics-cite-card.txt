@@ -1,0 +1,9 @@
+Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA BIOS
+OS: Ubuntu 24.04 · CurXor OS v1.0.3
+Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
+RAM in use: 4.56 / 64 GB · UMA 7.1%
+Dashboard: Flight Command on LAN :3080
+QA: 239 smoke · G3 capture unit green
+Pricing: $3,999 once · $0/mo operate-plane API
+Stage: G1/G2/G3 green · pre-revenue · solo founder
+Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · G3 closed Jul 8

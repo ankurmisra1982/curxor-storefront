@@ -144,4 +144,6 @@ Category north star and **Claw vs orchestrator** naming lock — not the cold-tr
 
 **GTM accent:** *Interfaces drift. Your desk conducts.*
 
+**Hero film v5.1 (G3 · `46f9257`):** Script + comp plates synced from `../curxor-os/docs/gtm/` → [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/`. **First surface:** `/signal` · **not** homepage until G4. Figma: [design](https://www.figma.com/design/HhHzIabz3i1HoCT8q8R8Gv/CurXor-Hero-Film-v5.1) · [proto](https://www.figma.com/proto/HhHzIabz3i1HoCT8q8R8Gv/CurXor-Hero-Film-v5.1?starting-point-node-id=3%3A13).
+
 **Essay one-liner:** *CurXor is the orchestrator on your desk. Claws are the team it runs.*

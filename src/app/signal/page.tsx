@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { CategoryFilmSection } from "@/components/CategoryFilmSection";
 import { SignalHorizonVisual } from "@/components/SignalHorizonVisual";
 import { SignalOptimusPreview } from "@/components/SignalOptimusPreview";
 import { SiteShell } from "@/components/SiteShell";
@@ -64,6 +65,8 @@ export default function SignalPage() {
             />
           </div>
         </section>
+
+        <CategoryFilmSection />
 
         <section className="mt-16">
           <p className="mb-6 text-[10px] tracking-[0.25em] text-neon-purple">

@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "CurXor",
   siteUrl: "https://curxor.ai",
-  pageTitle: "CurXor — 126 TOPS · 64GB UMA AI Powerhouse | $0/mo API",
+  pageTitle: "CurXor — Your AI team on a box you own",
   metaDescription:
-    "Mint autonomous employees on bare metal. Sovereign 64GB box · 126 TOPS NPU · $3,999 once · $0/mo API. Join the waitlist.",
+    "Desk appliance + CurXor OS. Ten autonomous AI agents, local inference, $3,999 once, $0/mo API rent. Pre-order the sovereign AI desk.",
   keywords: [
     "sovereign AI hardware",
     "local LLM appliance",
@@ -16,9 +16,9 @@ export const siteConfig = {
   ],
   ogTagline: "126 TOPS · 64GB UMA · $0/mo API · $3,999 once",
   viralHook: "ChatGPT bills per token. CurXor bills once.",
-  heroHeadline: "Mint autonomous employees on bare metal.",
+  heroHeadline: "Your AI team. On a box you own.",
   heroSubhead:
-    "Stop paying monthly API fees. Run Capital, Creator, and Outreach Claws on a desk that conducts — $3,999 once · $0/mo CurXor API.",
+    "CurXor is a desk appliance with CurXor OS — ten autonomous AI agents, local inference, and a command dashboard on your network. $3,999 once · $0/mo API for the operate plane.",
   /** Layer 4 · links to /signal. Conductor verb — pairs with orchestrator in essays/deck. */
   heroAccent: "Interfaces drift. Your desk conducts.",
   computeHook:
@@ -288,6 +288,16 @@ export const faqItems = [
       "Yes. eno1 is Command (Flight Command UI). eno2 is Egress for outbound agent actions. Unplug eno2 to kill outbound Claws instantly. Keep intelligence on local-only in Settings for fully offline reasoning.",
   },
   {
+    question: "OpenClaw vs CurXor — what's the difference?",
+    answer:
+      "OpenClaw is free, MIT-licensed agent runtime — you supply hardware, install the stack, wire skills and bridges, and harden security yourself. CurXor ships CurXor OS on appliance hardware: Flight Command, ten Claws + The Forge, Settings, eno1/eno2 networking, messaging gateways, and OTA updates. You get a turnkey independent computer with Capital, Creator, and Outreach depth — not a weekend integration project.",
+  },
+  {
+    question: "ClawBox vs CurXor — what's the difference?",
+    answer:
+      "ClawBox-class devices (~€549, 8GB RAM, ~15 tok/s local) are great for lightweight always-on assistants. CurXor targets operator-grade depth — 64GB UMA, 126 TOPS NPU, 38 tok/s on box — plus Capital, Creator, and Outreach Flagship desks, Claw Cafe, and The Forge. Same always-on idea; different compute class and product depth. Race on \"would you rather assemble or conduct?\" — not on €549 vs $3,999.",
+  },
+  {
     question: "How is CurXor different from DIY OpenClaw on a Mac mini or mini PC?",
     answer:
       `OpenClaw is the open-source agent runtime — free, but you supply the hardware, install the stack, wire skills and bridges, and harden security yourself. CurXor ships CurXor OS on appliance hardware: Flight Command, ${clawRosterLabel}, Settings, eno1/eno2 networking, messaging gateways, and OTA updates. You get a turnkey independent computer, not a weekend integration project.`,
@@ -316,6 +326,21 @@ export const faqItems = [
     question: "Where are your privacy policy and trading disclaimers?",
     answer:
       "Privacy policy: curxor.ai/privacy. Terms, pre-order conditions, and Capital Claw trading disclaimers: curxor.ai/terms.",
+  },
+  {
+    question: "Who is CurXor for?",
+    answer:
+      "Solo founders, consultants, and creator-operators who already use AI daily but want always-on workflows — outbound, content, and capital rules — on hardware they own. If you've never used AI, start with the chat tools first. If you're stitching five SaaS products and nothing stays on 24/7, you're our buyer.",
+  },
+  {
+    question: "Who is CurXor NOT for?",
+    answer:
+      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need all ten Claws production-complete on day one — five are honest Coming Soon previews.",
+  },
+  {
+    question: "Which Claws actually work today?",
+    answer:
+      "Outreach, Creator, Capital, and The Forge are flagship depth with exit-demo proof. Kin, Vital, Signal, Swarm, and Arbitrage include preview or Coming Soon surfaces — labeled honestly in Flight Command. Claw Cafe is the universal spatial home (pixel room, ascension); Engage is the Creator inbox tab.",
   },
 ] as const;
 

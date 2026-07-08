@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { DeskStripVideo } from "@/components/DeskStripVideo";
 import { ClawDemoHero } from "@/components/ClawDemoHero";
 import { OperatorQuote } from "@/components/OperatorQuote";
 import { ShareOnX } from "@/components/ShareOnX";
@@ -12,6 +13,7 @@ import { applianceVersion, siteConfig } from "@/lib/config";
 import {
   outreachDemoHero,
   outreachDemoTourSteps,
+  outreachDeskStrip,
   outreachFlowShots,
   outreachGoLiveChecks,
   outreachPageMeta,
@@ -67,6 +69,10 @@ export default function OutreachPage() {
             FLIGHT COMMAND
           </p>
           <ClawDemoHero {...outreachDemoHero} />
+        </section>
+
+        <section className="mt-10">
+          <DeskStripVideo {...outreachDeskStrip} />
         </section>
 
         <section className="mt-16">

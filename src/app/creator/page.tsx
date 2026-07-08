@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { DeskStripVideo } from "@/components/DeskStripVideo";
 import { ClawDemoHero } from "@/components/ClawDemoHero";
 import { OperatorQuote } from "@/components/OperatorQuote";
 import { ShareOnX } from "@/components/ShareOnX";
@@ -10,6 +11,7 @@ import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import {
   creatorDemoHero,
   creatorDemoTourSteps,
+  creatorDeskStrip,
   creatorFlowShots,
   creatorGoLiveChecks,
   creatorPageMeta,
@@ -67,6 +69,10 @@ export default function CreatorPage() {
             FLIGHT COMMAND
           </p>
           <ClawDemoHero {...creatorDemoHero} />
+        </section>
+
+        <section className="mt-10">
+          <DeskStripVideo {...creatorDeskStrip} />
         </section>
 
         <section className="mt-16">

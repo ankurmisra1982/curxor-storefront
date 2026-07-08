@@ -1,13 +1,11 @@
-import { applianceVersion } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
+import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
 export const creatorDemoHero = {
-  src: "/demo/08-creator-claw.png",
-  alt: "Creator Claw desk — Go Live checklist and content queue",
+  src: g3Screenshots.creatorQueue,
+  alt: "Creator Claw desk — Create queue and scheduled posts",
   caption:
-    "Live Flight Command capture — Creator Claw Go Live, demo tour, queue, wizard, bridge health, and calendar on CurXor OS " +
-    applianceVersion +
-    ".",
+    "G3 capture — Creator Claw Create queue on CurXor OS. Sovereign copy on metal; publishes through egress when you approve.",
 } as const;
 
 export const creatorDemoTourSteps = [
@@ -92,6 +90,13 @@ export const creatorPageMeta = {
   description:
     "Creator Claw on CurXor OS — one-click demo tour, 5-step Creation Wizard, Go Live checklist, 10 publish bridges on eno2, engage loop, and analytics. Draft locally, publish on your terms.",
   ...clawHeadlines.creator,
+} as const;
+
+export const creatorDeskStrip = {
+  src: g3DeskStrips.creator,
+  title: "Creator desk strip",
+  honestyLabel: g3Honesty.creatorPublish,
+  poster: g3Screenshots.creatorQueue,
 } as const;
 
 export { creatorFlowShots } from "@/lib/marketing";

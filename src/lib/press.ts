@@ -5,12 +5,24 @@ import {
   siteConfig,
   socialProfiles,
 } from "./config";
+import { categoryFilmAssets } from "./g3-demo";
+import { qaMetricsLine } from "./qa-metrics";
+
+export const metricsCiteCard = `Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA BIOS
+OS: Ubuntu 24.04 · CurXor OS v1.0.3
+Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
+RAM in use: 4.56 / 64 GB · UMA 7.1%
+Dashboard: Flight Command on LAN :3080
+QA: 239 smoke · G3 capture unit green
+Pricing: $3,999 once · $0/mo operate-plane API
+Stage: G1/G2/G3 green · pre-revenue · solo founder
+Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · G3 closed Jul 8`;
 
 export const investorDeckMailto =
   "mailto:hello@curxor.ai?subject=Investor%20inquiry%20%E2%80%94%20CurXor";
 
 export const pressKit = {
-  headline: "Mint AI Employees on Bare Metal.",
+  headline: "Your AI team. On a box you own.",
   boilerplate: `${productIdentity.companyName} builds sovereign AI appliances that run digital employees — called Claws — on local hardware with zero monthly API fees. ${productIdentity.boxName} is the chassis name on every box — 126 TOPS NPU, 64GB unified memory, ${productIdentity.osName}, and ${clawRosterLabel} spanning wealth, work, signals, and life & family. Message Claws from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Pre-order at curxor.ai for $3,999.`,
   founderQuote:
     "ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.",
@@ -28,8 +40,8 @@ export const pressKit = {
 
   investorIntro: {
     eyebrow: "COMPANY",
-    headline: "Sovereign agent appliance — on bare metal, G1 golden path closed.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; G1 golden path closed 2026-06-29: CurXor OS v0.9.1, FRE (Capital, Creator, Work), local inference (moondream:1.8b + qwen3:8b on ROCm), COMMAND captive portal, and EGRESS mesh validated on Standard 64. v1.0.0, production OTA, and published mesh benchmarks are G2.",
+    headline: "Sovereign agent appliance — G1/G2/G3 closed on MS-S1.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; G1 golden path closed 2026-06-29; G3 demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Work), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Ops Wave 1 live bridges and external operator UAT are G4.",
   },
 
   founders: {
@@ -52,7 +64,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **0.9.1**, Ollama ROCm on Standard 64 (moondream:1.8b + qwen3:8b)",
+          "MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **v1.0.3**, Ollama ROCm on Standard 64 (qwen3:8b · 38 tok/s)",
       },
       {
         status: "Shipped" as const,
@@ -62,12 +74,12 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "CurXor OS **0.9.1** — four-pillar stack, Flight Command UI, 10 Claws + The Forge, Claw Cafe ascension tied to Flagship desks",
+          "CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, 10 Claws + The Forge, Claw Cafe ascension tied to Flagship desks",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Flagship desks demo-ready — Capital, Creator, Outreach (Go Live paths, eno2 bridges; storefront screenshots are dev/seed until G3 re-capture)",
+          "**G3 demo captures closed** (2026-07-08) — inception reel, investor proof, desk strips, 8-screenshot pack on MS-S1",
       },
       {
         status: "Shipped" as const,
@@ -77,7 +89,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**184** smoke + **40** user-flow QA checks in curxor-os (`qa:local` suite)",
+          "**239** smoke + **40** user-flow QA checks in curxor-os (`qa:local` suite)",
       },
       {
         status: "Shipped" as const,
@@ -91,15 +103,15 @@ export const pressKit = {
       },
       {
         status: "Pending" as const,
-        milestone: "Published mesh benchmarks, golden image freeze, factory USB, production OTA (G2 — pre-v1.0.0 today)",
+        milestone: "Ops Wave 1 live bridges on box · first external operator UAT (G4)",
       },
       {
         status: "Pending" as const,
-        milestone: "Customer pilots, case studies, Engage demo unit, box-IP demo re-capture (G3)",
+        milestone: "Published mesh benchmarks, production OTA fleet artifact",
       },
     ],
     footnote:
-      "Flight Command screenshots on curxor.ai are dev/seed Flight Command UI captures — not concept art, but not yet re-captured from the unboxed unit (G3). Many workspaces use demo data until operators connect their own bridges and credentials. See Terms — Software maturity.",
+      "G3 captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Live broker fills and outbound sends require operator-configured bridges on eno2. See Terms — Software maturity.",
     footnoteLink: { href: "/terms", label: "Terms — Software maturity" },
   },
 
@@ -205,7 +217,7 @@ export const pressKit = {
   },
 
   maturityDisclaimer:
-    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — G1 closed Jun 29: FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64. Pre-v1.0.0 today; production OTA is G2. Capital Claw supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier Claws are working shells with local data — production depth ships on the appliance roadmap.",
+    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — G1/G2/G3 closed Jul 8: FRE, local inference, G3 investor pack, and desk strips validated on Standard 64. Capital Claw supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier Claws are working shells with local data — production depth ships on the appliance roadmap.",
 
   facts: [
     { label: "Company", value: "CurXor Systems" },
@@ -226,7 +238,7 @@ export const pressKit = {
     },
     {
       label: "QA",
-      value: "184 smoke + 40 user-flow checks (curxor-os qa:local)",
+      value: `${qaMetricsLine} (curxor-os qa:local)`,
     },
     {
       label: "Hardware",
@@ -241,7 +253,7 @@ export const pressKit = {
     {
       label: "Claw roster",
       value:
-        "Capital · Creator · Outreach · Arbitrage · Signal · Swarm · Engage · Vital · Kin · The Forge",
+        "Capital · Creator · Outreach · Arbitrage · Signal · Swarm · Vital · Kin · Learn · Gamer · Estate · Claw Cafe · The Forge (Engage inbox under Creator)",
     },
     { label: "Website", value: siteConfig.siteUrl },
     {
@@ -284,11 +296,36 @@ export const pressKit = {
       path: "/brand/curxor-wordmark.svg",
       note: "Text-only — tight spaces, dark backgrounds",
     },
+    {
+      label: "Category hero film",
+      path: "/signal#category-film",
+      note: "Script locked v5.1 · hero-category-v1 primary · inception reel alternate",
+    },
+    {
+      label: "G3 investor proof (~3 min MP4)",
+      path: categoryFilmAssets.investorProof,
+      note: "Desk montage with VO — diligence async follow-up",
+    },
+    {
+      label: "Pitch deck background loop (15s MP4)",
+      path: categoryFilmAssets.deckLoop,
+      note: "Silent Layer C loop — cold open → XOR → conductor glance → box pullback",
+    },
+    {
+      label: "G3 press kit (ZIP)",
+      path: "/press/curxor-press-kit-g3.zip",
+      note: "Hero film comp plates + metrics cite card",
+    },
+    {
+      label: "Hero film comp plates",
+      path: "/demo/hero-film/01-conductor-glance@2x.png",
+      note: "7× @2x PNGs in /demo/hero-film/",
+    },
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
-    { label: "Flight Command demo", path: "/#demo", note: "Dev/seed Flight Command captures — G3 re-capture from box IP planned" },
-    { label: "Outreach Claw tour", path: "/outreach", note: "Demo tour path, Go Live, pipeline, sequences — dev/seed screenshots" },
-    { label: "Capital Claw tour", path: "/capital", note: "Flight Command screenshots, Setup Wizard, Go Live — dev/seed until G3" },
-    { label: "Creator Claw tour", path: "/creator", note: "Flight Command screenshots, wizard steps, Go Live — dev/seed until G3" },
+    { label: "G3 desk gallery", path: "/#demo", note: "MS-S1 captures — Capital paper · Creator queue · Work pipeline" },
+    { label: "Outreach Claw tour", path: "/outreach", note: "G3 desk strip + pipeline capture" },
+    { label: "Capital Claw tour", path: "/capital", note: "G3 desk strip · Practice mode paper book" },
+    { label: "Creator Claw tour", path: "/creator", note: "G3 desk strip · publish approval frame" },
     { label: "Install video", path: "/architecture#validation", note: "After G2 — factory USB production batch" },
     { label: "Operator PDF", path: "/architecture#validation", note: "After G2 — export from CurXor OS guides" },
   ],

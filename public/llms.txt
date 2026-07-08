@@ -1,6 +1,6 @@
 # CurXor
 
-> Sovereign 64GB AI appliance. Mint autonomous digital employees on bare metal.
+> Sovereign 64GB AI appliance. Your AI team on a box you own.
 
 ## Product
 
@@ -8,12 +8,13 @@
 - Company: CurXor Systems
 - Price: $3,999 USD (one-time pre-order, no monthly API fees)
 - Primary CTA: Join waitlist at https://curxor.ai/#subscribe
-- Homepage story: Act I (Flagship + Forge) · Symphony (#symphony conductor metaphor) · Meet the Operators · Act II horizon tease + Cafe proof
-- Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU
+- Hero H1: Your AI team. On a box you own.
+- Homepage story: Who it's for · Persona grid (Alex/Sam/Jordan) · Symphony · G3 desk captures · Act II horizon
+- Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU · 38 tok/s qwen3:8b on box
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
-- Software: CurXor OS 0.9.1 with 9 Claw verticals + The Forge (enable any combination in Settings)
-- QA: 184 smoke + 40 user-flow checks in curxor-os (qa:local suite)
-- Hardware validation: G1 golden path closed Jun 29 — dual-port topology verified on MS-S1 MAX; published mesh benchmarks pending
+- Software: CurXor OS v1.0.3 with 10 Claw verticals + The Forge (enable any combination in Settings)
+- QA: 239 smoke + 40 user-flow checks in curxor-os (qa:local suite)
+- Hardware validation: G1/G2/G3 closed Jul 2026 — MS-S1 golden path; published mesh benchmarks pending
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
 - Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI
 - Pre-order (secondary): https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00

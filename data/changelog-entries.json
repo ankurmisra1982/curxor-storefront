@@ -1,5 +1,27 @@
 [
   {
+    "version": "1.0.3",
+    "date": "2026-07-08",
+    "channel": "stable",
+    "highlights": [
+      "G2 depth wave — Firecrawl bridge (FC1–FC3), SkillSpector CI gate (SS1–SS2), xAI Grok frontier provider (GK1)",
+      "Forge hygiene (FN1) — prune QA forged-app pollution from dev-qa seed and operate rail; registry smoke guardrails",
+      "Claw Cafe rebrand sign-off (G04) — locked copy per REBRAND-DECISION; Patron Hall subtitle",
+      "OS event bus hardening (BP2) — serialized log writes and atomic dedupe emits",
+      "Cafe feed fix — game demo tour awaits cafe ingest; chronological sort after XP silo sync (239 smoke green)",
+      "Box verified — qa:local + box-smoke + Capital handshake dogfood on MS-S1"
+    ]
+  },
+  {
+    "version": "1.0.1",
+    "date": "2026-07-03",
+    "channel": "stable",
+    "highlights": [
+      "CurXor OS 1.0.1 — synced from version.json",
+      "Add release highlights in data/changelog-entries.json or curxor-os/release-notes.json"
+    ]
+  },
+  {
     "version": "0.9.1",
     "date": "2026-06-29",
     "channel": "stable",

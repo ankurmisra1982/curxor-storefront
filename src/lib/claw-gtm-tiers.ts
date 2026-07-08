@@ -14,12 +14,12 @@ export const gtmTierLegend = [
   {
     id: "cafe",
     label: "Cafe",
-    body: "Cross-Claw growth home — XP, streaks, and ascension tied to real operator activity.",
+    body: "Claw Cafe — cross-Claw growth home: XP, ascension, and a pixel room tied to real operator activity.",
   },
   {
     id: "preview",
     label: "Preview",
-    body: "Honest shells for upcoming verticals — local data works; production depth ships later.",
+    body: "Eight honest scoped claws — local data and L1–L5 growth work; production depth ships after hardware validation.",
   },
 ] as const;
 

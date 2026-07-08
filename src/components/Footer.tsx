@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CurXorLogo } from "@/components/brand/CurXorLogo";
 import { SocialLinks } from "@/components/SocialLinks";
 import { SubscribeForm } from "@/components/SubscribeForm";
+import { socialProofLine } from "@/lib/marketing";
 import { footerLinks } from "@/lib/legal";
 
 export function Footer() {
@@ -54,6 +55,9 @@ export function Footer() {
                   </Link>
                 ))}
               </nav>
+              <p className="mt-4 text-[10px] tracking-[0.2em] text-white/35">
+                {socialProofLine}
+              </p>
               <p className="mt-4 text-[10px] tracking-[0.3em] text-white/30">
                 © {new Date().getFullYear()} CURXOR SYSTEMS
               </p>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ClawCheatSheetSection } from "@/components/ClawCheatSheetSection";
 import { SiteShell } from "@/components/SiteShell";
 import { InfoTip } from "@/components/InfoTip";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
@@ -112,6 +113,8 @@ export default function ArchitecturePage() {
             ))}
           </div>
         </div>
+
+        <ClawCheatSheetSection />
 
         <div id="validation" className="mt-16 scroll-mt-24">
           <h2 className="mb-6 text-xs font-bold tracking-[0.3em] text-neon-purple">

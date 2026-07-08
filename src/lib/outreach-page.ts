@@ -1,5 +1,19 @@
-import { applianceVersion } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
+import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
+
+export const outreachDemoHero = {
+  src: g3Screenshots.workPipeline,
+  alt: "Outreach Claw desk — pipeline and active sequences",
+  caption:
+    "G3 capture — Work pipeline on CurXor OS. UI and routing are real; outbound sends deferred until bridges are wired.",
+} as const;
+
+export const outreachDeskStrip = {
+  src: g3DeskStrips.work,
+  title: "Work desk strip",
+  honestyLabel: g3Honesty.workPipeline,
+  poster: g3Screenshots.workPipeline,
+} as const;
 
 export const outreachDemoTourSteps = [
   {
@@ -48,14 +62,9 @@ export const outreachTierBFeatures = [
 
 export const outreachFlowShots = [
   {
-    src: "/demo/outreach/24-l1-start-home.png",
-    title: "Outreach home",
-    body: "Desk overview — pipeline, sequences, and demo tour entry on day one.",
-  },
-  {
-    src: "/demo/outreach/21-pipeline.png",
+    src: g3Screenshots.workPipeline,
     title: "Lead pipeline",
-    body: "CRM stages, CSV import, and local store — no external CRM required.",
+    body: "CRM stages, active sequences, and local store — G3 capture from MS-S1.",
   },
   {
     src: "/demo/outreach/22-sequences.png",
@@ -74,15 +83,4 @@ export const outreachPageMeta = {
   description:
     "Outreach Claw on CurXor OS — demo tour, Go Live checklist, lead pipeline, sequences, CSV import, A/B subjects, reply intent, and send policy. Simulated sends day one; SMTP on eno2 when configured.",
   ...clawHeadlines.outreach,
-} as const;
-
-export const outreachWalkthroughCaption =
-  "Flight Command captures — Outreach Claw Go Live, demo tour path, pipeline, sequences, and analytics on CurXor OS " +
-  applianceVersion +
-  ".";
-
-export const outreachDemoHero = {
-  src: "/demo/outreach/21-pipeline.png",
-  alt: "Outreach Claw desk — Go Live, pipeline, and sequences",
-  caption: outreachWalkthroughCaption,
 } as const;

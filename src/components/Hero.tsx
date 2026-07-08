@@ -46,13 +46,13 @@ function HeroSecondaryCtas() {
 
       <a
 
-        href="#operators"
+        href="#how-it-works"
 
         className="border-industrial px-6 py-3 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/50 hover:text-neon-purple"
 
       >
 
-        MEET OPERATORS
+        SEE HOW IT WORKS
 
       </a>
 

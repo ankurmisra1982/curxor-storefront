@@ -4,7 +4,7 @@ export const hardwareValidation = {
   g1ClosedDate: "2026-06-29",
   badgeAriaLabel: "curXor — MS-S1 unboxed · G1 golden path closed",
   badgeSummary:
-    "MS-S1 MAX unboxed Jun 28, 2026. G1 golden path closed Jun 29 — verify script and smile test PASS. CurXor OS 0.9.1, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
+    "MS-S1 MAX unboxed Jun 28, 2026. G1 golden path closed Jun 29 — G2/G3 closed Jul 2026. CurXor OS v1.0.3, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
   computeBenchNote:
     "126 TOPS local NPU — ROCm inference validated on Standard 64 (moondream:1.8b, qwen3:8b); published mesh benchmarks pending",
   telemetryNote:
@@ -12,7 +12,7 @@ export const hardwareValidation = {
   doneOnBox: {
     eyebrow: "DONE ON BOX",
     items: [
-      "Ubuntu 24.04 install · UMA 48 GB · CurXor OS 0.9.1 on MS-S1 MAX Standard 64",
+      "Ubuntu 24.04 install · UMA 48 GB · CurXor OS v1.0.3 on MS-S1 MAX Standard 64",
       "Ollama ROCm live — moondream:1.8b + qwen3:8b (Standard 64 stack)",
       "FRE complete — Capital, Creator, Work · Flight Command live on bare metal",
       "eno1/eno2 cabling — COMMAND captive portal + EGRESS mesh scripts on verified ports",
@@ -30,11 +30,11 @@ export const hardwareValidation = {
     ],
   },
   afterG1: {
-    eyebrow: "G2 / G3 NEXT",
+    eyebrow: "G4 NEXT",
     items: [
       "Published mesh latency benchmarks — not marketing guesses",
-      "v1.0.0 tag + factory USB + production OTA artifact (pre-v1.0.0 today)",
-      "Storefront demo re-capture from box IP (G3)",
+      "Ops Wave 1 live bridges on box · first external operator UAT",
+      "Category hero 90s merge · production OTA fleet artifact",
     ],
   },
 } as const;

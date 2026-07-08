@@ -23,6 +23,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 - [x] Claw taglines synced from `app-agent-catalog.ts` when sibling repo present
 - [x] Social profiles wired (footer, press, JSON-LD, llms.txt)
 - [x] Creator Claw demo (`08-creator-claw.png`) + creator flow gallery
+- [x] Hero film comp plates (`public/demo/hero-film/*@2x.png`) — sync from `../curxor-os/docs/gtm/hero-film-figma/exports/`
 - [x] Trust strip (pre-order, ship window, support, terms link)
 - [x] Price-includes section + four-year TCO table
 - [x] Persona cards + `/for/traders` · `/for/creators` · `/for/agencies`
@@ -31,10 +32,12 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 - [x] `/creator` landing page + Flight Command demo screenshots
 - [x] `/capital` + `/outreach` Claw landing pages
 - [x] `/signal` — Signal Claw · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
-- [ ] **Next Interface film** (Program GTM-FILM) — FILM1 desk loop at G2 · full reveal FILM3 at G4 · see `../curxor-os/docs/curxor-os/FUTURE-ROADMAP.md`
-- [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **G3** after hardware captures
-- [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · G3
-- [ ] **`/for-builders`** (IDEA-G13) — Build Plane power-user page · not main hero · G3+
+- [x] **Hero film v5.1 script + comp plates** (G3 · `46f9257`) — [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/` · Figma proto linked
+- [x] **Hero film UI** — `/signal` category section + film tabs · `/press` downloads
+- [x] **Hero film MP4** — inception reel + investor proof on disk · hero-category-v1 path wired (merge pending curxor-os Layer A+B)
+- [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **deferred post-fundraise (G11)**
+- [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · **deferred post-fundraise (G12)**
+- [ ] **`/for-builders`** (IDEA-G13) — Build Plane power-user page · not main hero · **deferred post-fundraise (G13)**
 
 ## Before marketing (one-time ops)
 

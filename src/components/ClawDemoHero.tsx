@@ -7,7 +7,12 @@ export type ClawDemoHeroProps = {
   label?: string;
 };
 
-export function ClawDemoHero({ src, alt, caption, label = "FLIGHT COMMAND" }: ClawDemoHeroProps) {
+export function ClawDemoHero({
+  src,
+  alt,
+  caption,
+  label = "FLIGHT COMMAND · G3",
+}: ClawDemoHeroProps) {
   return (
     <figure className="border border-white/10 bg-black">
       <div className="overflow-hidden border-b border-white/10">
@@ -22,7 +27,7 @@ export function ClawDemoHero({ src, alt, caption, label = "FLIGHT COMMAND" }: Cl
       </div>
       <figcaption className="px-4 py-3 text-xs leading-relaxed text-white/45">
         <span className="text-[10px] tracking-[0.2em] text-neon-purple">
-          {label} · LIVE CAPTURE
+          {label}
         </span>
         <p className="mt-2">{caption}</p>
       </figcaption>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { actOneStory } from "@/lib/home-story";
 
 export function WhatYouBuySection() {
-  const { eyebrow, headline, subhead, flagships, forge } = actOneStory;
+  const { eyebrow, headline, subhead, flagships, forge, honestyFooter } = actOneStory;
 
   return (
     <section id="what-you-buy" className="relative border-t border-white/10 py-16 sm:py-20">
@@ -67,6 +67,10 @@ export function WhatYouBuySection() {
             </Link>
           </div>
         </article>
+
+        <p className="mt-6 text-center text-xs leading-relaxed text-white/40">
+          {honestyFooter}
+        </p>
       </div>
     </section>
   );

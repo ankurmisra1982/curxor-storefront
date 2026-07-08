@@ -1,31 +1,33 @@
 /** Wave 2 homepage narrative — Act I (buy) + Act II (horizon). */
 
+import { g3Screenshots } from "@/lib/g3-demo";
+
 export const actOneStory = {
   eyebrow: "ACT I · WHAT YOU BUY",
-  headline: "Flagship sections. One Forge. Your metal.",
+  headline: "Three Claws you'll run in week one",
   subhead:
-    "Capital, Creator, and Outreach ship demo-ready on day one — sections of your orchestra. The Forge mints anything else you describe. All local; egress only on eno2.",
+    "CurXor ships ten Claws and The Forge. Capital, Creator, and Outreach are your buy decision — production-grade G3 demo depth, local context, egress you control.",
   flagships: [
     {
       claw: "Capital Claw",
       tier: "Flagship",
-      body: "Demo tour · rules · paper path on eno2 · Go Live when Alpaca is yours.",
+      body: "Rules-bound wealth desk — paper to live when you wire bridges on eno2.",
       href: "/capital",
-      demo: "/demo/03-capital-claw.png",
+      demo: g3Screenshots.capitalPaper,
     },
     {
       claw: "Creator Claw",
       tier: "Flagship",
-      body: "Creation Wizard · Go Live · publish bridges · engage loop.",
+      body: "Draft, repurpose, schedule — publish through egress when you approve.",
       href: "/creator",
-      demo: "/demo/08-creator-claw.png",
+      demo: g3Screenshots.creatorQueue,
     },
     {
       claw: "Outreach Claw",
       tier: "Flagship",
-      body: "L1–L3 persona · sequences · deliverability · pause-on-reply.",
+      body: "Pipeline, sequences, deliverability — outbound that doesn't sleep.",
       href: "/outreach",
-      demo: "/demo/07-unified-inbox.png",
+      demo: g3Screenshots.workPipeline,
     },
   ],
   forge: {
@@ -35,6 +37,8 @@ export const actOneStory = {
     demo: "/demo/04-forge.png",
     href: "/architecture#claw-tiers",
   },
+  honestyFooter:
+    "Five additional Claws ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
 } as const;
 
 export const actTwoStory = {

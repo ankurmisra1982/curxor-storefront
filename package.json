@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "sync:appliance": "tsx scripts/sync-appliance.ts",
+    "sync:g3-assets": "tsx scripts/sync-g3-assets.ts",
     "sync:brand": "tsx scripts/sync-brand.ts",
     "sync:changelog": "tsx scripts/sync-changelog.ts",
     "predev": "npm run sync:appliance && npm run sync:brand",

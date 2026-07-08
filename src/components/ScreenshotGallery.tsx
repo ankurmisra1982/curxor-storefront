@@ -1,34 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { g3Honesty, g3Screenshots } from "@/lib/g3-demo";
+import { actOneStory } from "@/lib/home-story";
+
 const SHOTS = [
   {
-    src: "/demo/01-home.png",
+    src: g3Screenshots.home,
     title: "Home hub",
-    body: "Grouped Claws. Chat or tap skills. Settings when you want more.",
+    body: "Grouped Claws. Chat or tap skills. Interim Flight Command capture — G3 /home re-capture pending on box.",
+    honesty: "G3 _capture-home.png was Capital wizard — using pre-G3 home still until MS-S1 re-capture.",
   },
   {
-    src: "/demo/03-capital-claw.png",
+    src: g3Screenshots.capitalPaper,
     title: "Capital Claw",
-    body: "Demo tour · rules · simulated fills · Go Live without broker keys.",
+    body: "Practice mode · paper book. Rules and cafe proof on metal.",
     href: "/capital",
+    honesty: g3Honesty.capitalPractice,
   },
   {
-    src: "/demo/08-creator-claw.png",
+    src: g3Screenshots.creatorQueue,
     title: "Creator Claw",
-    body: "Draft local · schedule · simulated publish · 10 bridges when you scale.",
+    body: "Create queue · sovereign copy · schedule with approval gates.",
     href: "/creator",
   },
   {
-    src: "/demo/07-unified-inbox.png",
+    src: g3Screenshots.workPipeline,
     title: "Outreach Claw",
-    body: "Pipeline · A/B sequences · pause-on-reply · SMTP on eno2.",
+    body: "Pipeline · sequences · pause-on-reply. UI real; sends when bridges wired.",
     href: "/outreach",
+    honesty: g3Honesty.workPipeline,
   },
   {
-    src: "/demo/04-forge.png",
-    title: "The Forge",
-    body: "One prompt → custom Claw deployed on your appliance.",
+    src: g3Screenshots.cafeRuleFired,
+    title: "Claw Cafe proof",
+    body: "RULE FIRED from real Capital activity — not a cloud alert toy.",
   },
 ] as const;
 
@@ -39,14 +45,14 @@ export function ScreenshotGallery() {
         <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-              FLIGHT COMMAND
+              FLIGHT COMMAND · G3
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              See the desk
+              Three Claws you&apos;ll run in week one
             </h2>
           </div>
           <p className="max-w-sm text-xs text-white/40">
-            Live OS captures — not concept art.
+            G3 captures from MS-S1 metal — Capital, Creator, Outreach. {g3Honesty.deskCapture}
           </p>
         </div>
 
@@ -73,6 +79,11 @@ export function ScreenshotGallery() {
                   <p className="mt-1 text-xs leading-relaxed text-white/45">
                     {shot.body}
                   </p>
+                  {"honesty" in shot && shot.honesty ? (
+                    <p className="mt-2 text-[10px] leading-relaxed text-amber-200/70">
+                      {shot.honesty}
+                    </p>
+                  ) : null}
                 </div>
                 {"href" in shot && shot.href ? (
                   <Link
@@ -86,6 +97,10 @@ export function ScreenshotGallery() {
             </article>
           ))}
         </div>
+
+        <p className="mt-8 text-center text-xs leading-relaxed text-white/40">
+          {actOneStory.honestyFooter}
+        </p>
       </div>
     </section>
   );

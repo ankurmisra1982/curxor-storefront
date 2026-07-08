@@ -5,6 +5,7 @@ import {
   siteConfig,
 } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
+import { g3Screenshots } from "@/lib/g3-demo";
 import { qaMetricsLine } from "@/lib/qa-metrics";
 
 export const supportEmail = siteConfig.contactEmail;
@@ -33,7 +34,7 @@ export const trustSignals = [
   },
 ] as const;
 
-export const socialProofLine = `CurXor OS ${applianceVersion} · ${qaMetricsLine} · MS-S1 unboxed · G1 golden path closed`;
+export const socialProofLine = `CurXor OS v${applianceVersion} · ${qaMetricsLine} · MS-S1 golden path · G3 captures closed`;
 
 export const setupClaim =
   "Flight Command on day one — pick Claws in Settings, chat or tap skills. Live bridges need your credentials on eno2.";
@@ -145,6 +146,11 @@ export const tcoScenarios = {
 } as const;
 
 export const creatorFlowShots = [
+  {
+    src: g3Screenshots.creatorPublishApproval,
+    title: "Publish approval",
+    body: "Local inference drafts → operator approval before anything posts on egress.",
+  },
   {
     src: "/demo/creator/16-content-planner.png",
     title: "Content planner",

@@ -1,13 +1,12 @@
-import { applianceVersion } from "@/lib/config";
 import { clawHeadlines } from "@/lib/claw-headlines";
+import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
 export const capitalDemoHero = {
-  src: "/demo/03-capital-claw.png",
-  alt: "Capital Claw desk — Go Live, rule engine, and portfolio panels",
+  src: g3Screenshots.capitalPaper,
+  alt: "Capital Claw desk — paper book, rules, and portfolio panels",
   caption:
-    "Live Flight Command capture — Capital Claw Go Live, rule engine, demo tour, and portfolio desk on CurXor OS " +
-    applianceVersion +
-    ". Demo mode — no broker keys required.",
+    "G3 capture — Capital Claw paper book on CurXor OS. Practice mode — rules, log, and cafe proof are real on the appliance; live broker book not shown.",
+  label: "PRACTICE MODE · PAPER BOOK",
 } as const;
 
 export const capitalSetupSteps = [
@@ -58,21 +57,28 @@ export const capitalEgressPaths = [
 
 export const capitalFlowShots = [
   {
-    src: "/demo/capital/20-capital-alpha-tab.png",
-    title: "Alpha tab",
-    body: "Portfolio health, movers, and intel digest — Standard+ desk depth.",
+    src: g3Screenshots.cafeRuleFired,
+    title: "Cafe · RULE FIRED",
+    body: "Staged cafe proof from Capital activity — real UI path on MS-S1 metal.",
+  },
+  {
+    src: g3Screenshots.systemHealthToks,
+    title: "System Health · tok/s",
+    body: "38 tok/s qwen3:8b on box — local inference metrics from G3 capture.",
   },
   {
     src: "/demo/capital/17-setup-wizard.png",
     title: "Setup Wizard",
     body: "Risk → rule → arm → first fill in under a minute on day one.",
   },
-  {
-    src: "/demo/capital/18-analytics-tab.png",
-    title: "Analytics tab",
-    body: "Standard+ scorecard, walk-forward backtest, and NL portfolio Q&A.",
-  },
 ] as const;
+
+export const capitalDeskStrip = {
+  src: g3DeskStrips.capital,
+  title: "Capital desk strip",
+  honestyLabel: g3Honesty.capitalPractice,
+  poster: g3Screenshots.capitalPaper,
+} as const;
 
 export const capitalPageMeta = {
   title: "Capital Claw — Sovereign Trading Desk",

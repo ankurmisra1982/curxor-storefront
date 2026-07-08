@@ -4,13 +4,13 @@ import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
 import { WhatIsThisStrip } from "@/components/WhatIsThisStrip";
 
-const SymphonySection = dynamic(() =>
-  import("@/components/SymphonySection").then((m) => ({ default: m.SymphonySection }))
+const PersonaGrid = dynamic(() =>
+  import("@/components/PersonaGrid").then((m) => ({ default: m.PersonaGrid }))
+);
+const WhoItsForSection = dynamic(() =>
+  import("@/components/WhoItsForSection").then((m) => ({ default: m.WhoItsForSection }))
 );
 
-const WhatYouBuySection = dynamic(() =>
-  import("@/components/WhatYouBuySection").then((m) => ({ default: m.WhatYouBuySection }))
-);
 const HowItWorks = dynamic(() =>
   import("@/components/HowItWorks").then((m) => ({ default: m.HowItWorks }))
 );
@@ -20,8 +20,8 @@ const NeuralLinkTeaser = dynamic(() =>
 const ScreenshotGallery = dynamic(() =>
   import("@/components/ScreenshotGallery").then((m) => ({ default: m.ScreenshotGallery }))
 );
-const MeetTheOperators = dynamic(() =>
-  import("@/components/MeetTheOperators").then((m) => ({ default: m.MeetTheOperators }))
+const SymphonySection = dynamic(() =>
+  import("@/components/SymphonySection").then((m) => ({ default: m.SymphonySection }))
 );
 const HorizonSection = dynamic(() =>
   import("@/components/HorizonSection").then((m) => ({ default: m.HorizonSection }))
@@ -55,13 +55,13 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustStrip />
+      <WhoItsForSection />
       <WhatIsThisStrip />
+      <PersonaGrid />
       <SymphonySection />
-      <WhatYouBuySection />
       <HowItWorks />
       <NeuralLinkTeaser />
       <ScreenshotGallery />
-      <MeetTheOperators />
       <HorizonSection />
       <ComparisonTable />
       <AppEcosystem variant="featured" />

@@ -43,7 +43,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 ## Before marketing (one-time ops)
 
 - [x] **Contact email** — `hello@curxor.ai` in `siteConfig.contactEmail`; Resend domain verified on curxor.ai
-- [ ] **Resend on Vercel** — verify `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `RESEND_FROM_EMAIL` on Vercel Production if subscribe smoke test fails → redeploy → test `POST /api/subscribe` returns `{"ok":true}` · **check after Track C deploy**
+- [x] **Resend on Vercel** — `POST /api/subscribe` prod smoke **green** (2026-07-08 · `{"ok":true}`)
 
 ## Deferred post-fundraise (do not build pre-close)
 
@@ -114,7 +114,7 @@ See [SYNC.md](SYNC.md) and [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md).
 
 | Date | Commit | Notes |
 |------|--------|-------|
-| 2026-07-08 | _pending merge_ | STORE-C-DEPLOY — sync/g1-green-mirror-p0 → main · prod smoke after Vercel green |
+| 2026-07-08 | `815e547` | STORE-C-DEPLOY closed · Vercel prod [READY](https://vercel.com/cur-xor/curxor-storefront/5vHpe6S45tiQMSvnggaLtStuemuk) · main branch · all asset smoke green |
 
 ## Reference docs in curxor-os
 

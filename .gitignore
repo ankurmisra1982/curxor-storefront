@@ -36,3 +36,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .vercel
+
+# pitch deck versioned exports (canonical: CurXor-Pitch-Deck-Speaker-Notes.pptx)
+docs/CurXor-Pitch-Deck-Speaker-Notes-v*.pptx

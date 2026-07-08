@@ -34,7 +34,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 - [x] `/signal` — Signal Claw · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
 - [x] **Hero film v5.1 script + comp plates** (G3 · `46f9257`) — [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/` · Figma proto linked
 - [x] **Hero film UI** — `/signal` category section + film tabs · `/press` downloads
-- [x] **Hero film MP4** — inception reel + investor proof on disk · hero-category-v1 path wired (merge pending curxor-os Layer A+B)
+- [x] **Hero film MP4** — hero-category-v1 on /signal · inception reel alternate · investor proof on /press
 - [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **deferred post-fundraise (G11)**
 - [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · **deferred post-fundraise (G12)**
 - [ ] **`/for-builders`** (IDEA-G13) — Build Plane power-user page · not main hero · **deferred post-fundraise (G13)**

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useState } from "react";
+import { useState } from "react";
 
 import {
   categoryFilmAssets,
@@ -37,16 +37,8 @@ const FILMS: {
 
 export function CategoryFilmSection() {
   const [activeFilm, setActiveFilm] = useState<FilmId>("category");
-  const [categoryMissing, setCategoryMissing] = useState(false);
 
   const film = FILMS.find((item) => item.id === activeFilm) ?? FILMS[0];
-
-  const handleVideoError = useCallback(() => {
-    if (activeFilm === "category") {
-      setCategoryMissing(true);
-      setActiveFilm("inception");
-    }
-  }, [activeFilm]);
 
   return (
     <section id="category-film" className="mt-16 border border-white/10 bg-black">
@@ -85,7 +77,6 @@ export function CategoryFilmSection() {
             preload="metadata"
             poster={categoryFilmAssets.conductorPlate}
             aria-label={film.ariaLabel}
-            onError={handleVideoError}
           >
             <source src={film.src} type="video/mp4" />
           </video>
@@ -106,12 +97,6 @@ export function CategoryFilmSection() {
             Command mode · processed on your appliance. Badge and full film ship post hardware
             validation.
           </p>
-          {categoryMissing ? (
-            <p className="mt-2 text-[10px] leading-relaxed text-amber-200/60">
-              Category hero MP4 pending curxor-os merge — showing inception reel until
-              hero-category-v1 syncs.
-            </p>
-          ) : null}
           <p className="mt-2 text-[10px] text-white/35">{g3Honesty.deskCapture}</p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a

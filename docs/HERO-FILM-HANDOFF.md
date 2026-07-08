@@ -54,20 +54,11 @@ Copy-Item ..\curxor-os\docs\gtm\hero-film-figma\exports\*.png public\demo\hero-f
 ```
 ☑ /signal — Category film section + category/inception film tabs
 ☑ /press — comp plate downloads + investor proof MP4 + script ref
+☑ hero-category-v1.mp4 — synced to public/demo/
+☑ G3 /home capture — _capture-home.png → g3/01-home.png
 ☐ Deck — insert payoff frame or 15s loop when cut
 ☐ Do NOT swap homepage H1 until G4
-☐ hero-category-v1.mp4 — merge open in curxor-os (Layer A badge + B/C composite)
-☐ G3 /home re-capture — _capture-home.png shows Capital wizard; interim still in gallery
 ```
-
----
-
-## Blockers (Track C close · Jul 8 2026)
-
-| Asset | Status | Action |
-|-------|--------|--------|
-| `hero-category-v1.mp4` | **Not on disk** in curxor-os | Master merge per `../curxor-os/docs/gtm/MASTER-FILM-ASSET.md` · sync path wired |
-| `g3/_capture-home.png` | **Wrong frame** (Capital wizard) | Re-capture `/home` on MS-S1 with `g3-capture-preset` · interim `01-home.png` from pre-G3 Flight Command |
 
 ---
 

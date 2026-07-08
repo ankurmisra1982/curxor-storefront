@@ -8,8 +8,7 @@ const SHOTS = [
   {
     src: g3Screenshots.home,
     title: "Home hub",
-    body: "Grouped Claws. Chat or tap skills. Interim Flight Command capture — G3 /home re-capture pending on box.",
-    honesty: "G3 _capture-home.png was Capital wizard — using pre-G3 home still until MS-S1 re-capture.",
+    body: "Grouped Claws. Chat or tap skills. G3 capture from MS-S1 box.",
   },
   {
     src: g3Screenshots.capitalPaper,

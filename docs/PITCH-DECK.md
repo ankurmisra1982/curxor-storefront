@@ -17,7 +17,7 @@
 ## Slide 1 — Title
 
 **CurXor OS**  
-Mint autonomous employees. On a box you own.
+Your AI team. On a box you own.
 
 | Metric | Value |
 |--------|-------|

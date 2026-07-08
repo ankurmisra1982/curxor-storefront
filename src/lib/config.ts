@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "CurXor",
   siteUrl: "https://curxor.ai",
-  pageTitle: "CurXor — Mint autonomous employees on a box you own",
+  pageTitle: "CurXor — Your AI team on a box you own",
   metaDescription:
     "Desk appliance + CurXor OS. Mint autonomous employees on bare metal — five flagship Claws day one, local inference, $3,999 once, $0/mo API rent.",
   keywords: [
@@ -16,7 +16,7 @@ export const siteConfig = {
   ],
   ogTagline: "126 TOPS · 64GB UMA · $0/mo API · $3,999 once",
   viralHook: "ChatGPT bills per token. CurXor bills once.",
-  heroHeadline: "Mint autonomous employees. On a box you own.",
+  heroHeadline: "Your AI team. On a box you own.",
   heroSubhead:
     "CurXor is a desk appliance with CurXor OS — five flagship Claws day one, local inference, and a command dashboard on your network. $3,999 once · $0/mo API for the operate plane.",
   /** Layer 4 · links to /signal. Conductor verb — pairs with orchestrator in essays/deck. */

@@ -3,7 +3,7 @@ import path from "node:path";
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/config";
 
-export const alt = "CurXor — Mint Autonomous Employees on Bare Metal";
+export const alt = "CurXor — Your AI team on a box you own";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const runtime = "nodejs";

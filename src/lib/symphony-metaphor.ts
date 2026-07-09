@@ -65,7 +65,7 @@ export const symphonyWhatIsThis = {
   },
   claws: {
     title: "Ten Claws",
-    body: "Your orchestra — five flagship operators day one, five preview tiers on the roadmap. Mint sections in The Forge.",
+    body: "Your orchestra of autonomous AI agents — capital, content, outreach, and more. Mint sections in The Forge.",
   },
   footer: "You compose the score. Unplug egress — the hall keeps thinking. The symphony plays on your metal.",
 } as const;

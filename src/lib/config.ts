@@ -18,7 +18,7 @@ export const siteConfig = {
   viralHook: "ChatGPT bills per token. CurXor bills once.",
   heroHeadline: "Your AI team. On a box you own.",
   heroSubhead:
-    "CurXor is a desk appliance with CurXor OS — five flagship Claws day one, local inference, and a command dashboard on your network. $3,999 once · $0/mo API for the operate plane.",
+    "CurXor is a desk appliance with CurXor OS — ten autonomous AI agents, local inference, and a command dashboard on your network. $3,999 once · $0/mo API for the operate plane.",
   /** Layer 4 · links to /signal. Conductor verb — pairs with orchestrator in essays/deck. */
   heroAccent: "Interfaces drift. Your desk conducts.",
   computeHook:
@@ -148,6 +148,16 @@ export const faqItems = [
       "A Mac Studio gives you inference hardware. CurXor gives you inference plus a complete agent platform: pre-built Claw workspaces, The Forge wizard, dual-port networking with an eno2 kill switch, digital bridges for trading and social, and a Settings hub to customize everything — ready on day one.",
   },
   {
+    question: "How is CurXor different from OpenClaw?",
+    answer:
+      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Work), The Forge, Claw Cafe, and an eno2 egress kill switch OOTB. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare.",
+  },
+  {
+    question: "How is CurXor different from a €549 assistant box?",
+    answer:
+      "€549-class boxes are chat and messaging appliances on light compute. CurXor is operator desk depth — 64GB UMA, flagship Claws, Forge, and Cafe. $3,999 is a filter for outcomes, not a race to assistant price. Compare: curxor.ai/compare/clawbox.",
+  },
+  {
     question: "What is included for $3,999?",
     answer: `The curXor box, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, optional messaging gateways (Telegram, Slack, WhatsApp, iMessage), local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.`,
   },
@@ -205,26 +215,6 @@ export const faqItems = [
     question: "Can I disconnect my agents from the internet?",
     answer:
       "Yes. eno1 is Command (Flight Command UI). eno2 is Egress for outbound agent actions. Unplug eno2 to kill outbound Claws instantly. Keep intelligence on local-only in Settings for fully offline reasoning.",
-  },
-  {
-    question: "OpenClaw vs CurXor — what's the difference?",
-    answer:
-      "OpenClaw is free, MIT-licensed agent runtime — you supply hardware, install the stack, wire skills and bridges, and harden security yourself. CurXor ships CurXor OS on appliance hardware: Flight Command, ten Claws + The Forge, Settings, eno1/eno2 networking, messaging gateways, and OTA updates. You get a turnkey independent computer with Capital, Creator, and Outreach depth — not a weekend integration project.",
-  },
-  {
-    question: "ClawBox vs CurXor — what's the difference?",
-    answer:
-      "ClawBox-class devices (~€549, 8GB RAM, ~15 tok/s local) are great for lightweight always-on assistants. CurXor targets operator-grade depth — 64GB UMA, 126 TOPS NPU, 38 tok/s on box — plus Capital, Creator, and Outreach Flagship desks, Claw Cafe, and The Forge. Same always-on idea; different compute class and product depth. Race on \"would you rather assemble or conduct?\" — not on €549 vs $3,999.",
-  },
-  {
-    question: "How is CurXor different from DIY OpenClaw on a Mac mini or mini PC?",
-    answer:
-      `OpenClaw is the open-source agent runtime — free, but you supply the hardware, install the stack, wire skills and bridges, and harden security yourself. CurXor ships CurXor OS on appliance hardware: Flight Command, ${clawRosterLabel}, Settings, eno1/eno2 networking, messaging gateways, and OTA updates. You get a turnkey independent computer, not a weekend integration project.`,
-  },
-  {
-    question: "How is CurXor different from ClawBox or other Jetson OpenClaw boxes?",
-    answer:
-      "ClawBox-class devices (~€549, 8GB RAM, ~67 TOPS) are great for lightweight always-on assistants and messaging bots. CurXor targets serious local inference — 64GB UMA, 126 TOPS NPU — plus wealth, work, and life Claws (Capital, Vital, Kin, and more). Same always-on idea, different compute class and product depth.",
   },
   {
     question: "How is CurXor different from NVIDIA NemoClaw?",

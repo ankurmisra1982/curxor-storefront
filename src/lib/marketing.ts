@@ -5,7 +5,7 @@ import {
   siteConfig,
 } from "@/lib/config";
 import { g3Screenshots } from "@/lib/g3-demo";
-import { qaMetricsLine } from "@/lib/qa-metrics";
+import { qaMetrics } from "@/lib/qa-metrics";
 
 export const supportEmail = siteConfig.contactEmail;
 
@@ -33,7 +33,7 @@ export const trustSignals = [
   },
 ] as const;
 
-export const socialProofLine = `CurXor OS v${applianceVersion} · ${qaMetricsLine} · MS-S1 golden path · G3 captures closed`;
+export const socialProofLine = `CurXor OS v${applianceVersion} · ${qaMetrics.smokeChecks} smoke · G1/G2/G3 closed`;
 
 export const priceIncludes = {
   headline: "What $3,999 includes",

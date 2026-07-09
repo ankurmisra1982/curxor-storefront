@@ -64,8 +64,8 @@ export const symphonyWhatIsThis = {
     body: "The desk that conducts — inference, agents, and control on your metal, not in a cloud subscription.",
   },
   claws: {
-    title: "Ten Claws",
-    body: "Your orchestra of autonomous AI agents — capital, content, outreach, and more. Mint sections in The Forge.",
+    title: "Your Claws",
+    body: "Capital, Creator, Outreach day one — plus The Forge and honest previews. Mint sections as you grow.",
   },
   footer: "You compose the score. Unplug egress — the hall keeps thinking. The symphony plays on your metal.",
 } as const;

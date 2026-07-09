@@ -88,7 +88,7 @@
 |-------|------------|
 | **Hardware** | CurXor desk appliance (Act I validated on MS-S1-class metal) |
 | **OS** | Four-pillar CurXor OS — compute · engine · mesh · Flight Command |
-| **Ten Claws** | Capital · Creator · Work (Outreach) · Forge · Cafe + honest previews |
+| **Claw roster** | Capital · Creator · Outreach (flagship) · Forge · Cafe + honest previews |
 | **Forge** | Mint custom Claws in natural language — on-box |
 | **Cafe** | Inter-Claw ceremony and proof — living mirror of operator activity |
 | **Boundary** | Local cognition · egress you wire and can unplug |
@@ -137,7 +137,7 @@
 
 **Today**
 
-- **$3,999** once · CurXor box + CurXor OS + ten Claws + Forge
+- **$3,999** once · CurXor box + CurXor OS + flagship Claws + Forge
 - **$0/mo** operate-plane API · frontier LLM = BYOK optional
 - Pre-order live · **pre-revenue by design** (proof-first)
 

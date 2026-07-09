@@ -74,7 +74,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, 10 Claws + The Forge, Claw Cafe ascension tied to Flagship desks",
+          "CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, 12 Claw verticals + The Forge, Claw Cafe ascension tied to Flagship desks",
       },
       {
         status: "Shipped" as const,

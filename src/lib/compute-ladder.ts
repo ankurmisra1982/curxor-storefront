@@ -6,7 +6,7 @@ export const openWeightComputeLadder = {
   subhead:
     "CurXor OS — mint autonomous employees on bare metal. Standard 64 GB today. Pro and CurXor Studio tomorrow. Same sovereignty. Stronger models as memory allows.",
   paragraph:
-    "CurXor is a sovereign AI appliance: ten digital employees, one local operating system, zero monthly inference rent on the operate plane. Today that starts on the MINISFORUM MS-S1 Max — 64 GB unified memory and a Qwen3 stack sized for real multi-Claw workloads. Open-weight AI keeps advancing; CurXor OS evolves with it through model catalogs and tier profiles, so you update the stack on hardware you own instead of rebuying the story every six months. Standard for flagship operators, Pro 128 for heavier local models, and CurXor Studio — post-traction custom compute built to CurXor OS specs — for the largest open-weight models when your work demands it. Optional frontier BYOK exists; the default is still mint on metal, not API rent.",
+    "CurXor is a sovereign AI appliance: flagship desks day one, one local operating system, zero monthly inference rent on the operate plane. Today that starts on the MINISFORUM MS-S1 Max — 64 GB unified memory and a Qwen3 stack sized for real multi-Claw workloads. Open-weight AI keeps advancing; CurXor OS evolves with it through model catalogs and tier profiles, so you update the stack on hardware you own instead of rebuying the story every six months. Standard for flagship operators, Pro 128 for heavier local models, and CurXor Studio — post-traction custom compute built to CurXor OS specs — for the largest open-weight models when your work demands it. Optional frontier BYOK exists; the default is still mint on metal, not API rent.",
   footnote:
     "$0/mo operate inference = local LLM on the appliance for the operate plane (chat, planning, Forge assist). Does not include optional third-party BYOK, trading/social bridges, or your power bill.",
   evidence: {
@@ -15,7 +15,7 @@ export const openWeightComputeLadder = {
     note: "Strix Halo / same silicon class evidence — directional, not a guarantee on your SKU until validated.",
   },
   pricingRoles: {
-    standard: "Flagship GTM — ten Claws · daily operate",
+    standard: "Flagship GTM — 3 desks demo-ready · daily operate",
     pro: "Power operators — heavier local models · dual hot-load",
     studio: "Horizon — largest open weights when memory demands it (no pre-order)",
   },

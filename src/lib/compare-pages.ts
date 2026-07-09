@@ -25,7 +25,7 @@ export const comparePages: ComparePage[] = [
     slug: "clawbox",
     title: "CurXor vs ClawBox",
     metaDescription:
-      `Compare ${productIdentity.boxName} (64GB UMA, 126 TOPS, ten Claws) with ClawBox (€549 Jetson assistant, 8GB, messaging bots).`,
+      `Compare ${productIdentity.boxName} (64GB UMA, 126 TOPS, flagship Claws + Forge) with ClawBox (€549 Jetson assistant, 8GB, messaging bots).`,
     eyebrow: "COMPARE · LIGHT ASSISTANT",
     headline: "ClawBox is a desk assistant. CurXor is an employee appliance.",
     lead: "ClawBox (~€549) is an excellent always-on OpenClaw box for Telegram, WhatsApp, and light automations. CurXor targets a different buyer: 64GB local inference, wealth/work/life Claws, and dual-port egress control.",
@@ -73,7 +73,7 @@ export const comparePages: ComparePage[] = [
     slug: "miky",
     title: "CurXor vs MIKY",
     metaDescription:
-      "Compare CurXor (64GB UMA, ten Claws, Flight Command) with MIKY independent computer for agents (~€490).",
+      "Compare CurXor (64GB UMA, flagship Claws, Flight Command) with MIKY independent computer for agents (~€490).",
     eyebrow: "COMPARE · INDEPENDENT COMPUTER",
     headline: "Same category. Different compute class.",
     lead: "MIKY and CurXor both sell an independent computer for AI agents — not a human-first PC. MIKY emphasizes mobile app control and secure-element trust at ~€490. CurXor adds 64GB UMA, dual 10GbE, and ten OOTB Claws.",

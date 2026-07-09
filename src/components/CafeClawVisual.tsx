@@ -34,9 +34,9 @@ function PixelRoomPanel() {
         <div className="relative flex h-full flex-col p-4 sm:p-5">
           <div className="flex items-center justify-between">
             <span className="text-[9px] tracking-[0.25em] text-amber-200/70">PIXEL ROOM</span>
-            <span className="flex items-center gap-1.5 text-[9px] tracking-widest text-white/35">
-              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399]" />
-              LIVE ON METAL
+            <span className="flex items-center gap-1.5 text-[9px] tracking-widest text-amber-200/50">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-400/70" />
+              CONCEPT PREVIEW
             </span>
           </div>
 

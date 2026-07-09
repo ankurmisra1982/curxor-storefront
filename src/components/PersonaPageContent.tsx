@@ -33,7 +33,15 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
       {operator ? (
         <div className="mt-8 space-y-4">
           <OperatorQuote operator={operator} />
-          <ShareOnX text={operator.shareLine} label="PASTE FOR X" />
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href={operator.tourHref}
+              className="border border-neon-purple/40 px-4 py-2 text-[10px] tracking-[0.2em] text-neon-purple transition-colors hover:bg-neon-purple/10"
+            >
+              {operator.claw.toUpperCase()} TOUR →
+            </Link>
+            <ShareOnX text={operator.shareLine} label="PASTE FOR X" />
+          </div>
         </div>
       ) : null}
 

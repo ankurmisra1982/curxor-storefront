@@ -60,6 +60,12 @@ export function PersonaGrid() {
                   >
                     TOUR →
                   </Link>
+                  <Link
+                    href={persona.personaHref}
+                    className="border border-white/10 px-3 py-2 text-[10px] tracking-[0.2em] text-white/40 transition-colors hover:text-white/70"
+                  >
+                    FOR YOU →
+                  </Link>
                   <ShareOnX text={persona.shareLine} />
                 </div>
               </div>

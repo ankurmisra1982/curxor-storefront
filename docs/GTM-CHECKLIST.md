@@ -9,7 +9,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] Spec sheet matrix (Compute / Network / Claw Engine)
 - [x] Ten Claw workspaces (9 verticals + The Forge) grouped by category + mobile carousel
 - [x] Day One hub section (Home / chat / stay local / Settings)
-- [x] 3D hardware scene (R3F) with perf deferrals
+- [x] Flight Command screenshot hero (R3F 3D scene retired — unused deps removed)
 - [x] Email capture (`/api/subscribe` + Resend)
 - [x] Stripe pre-order CTA + mobile sticky CTA
 - [x] X / Twitter link (`@curxorai`)

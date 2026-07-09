@@ -105,6 +105,12 @@ export function Hero() {
 
           </p>
 
+          <p className="text-xs tracking-wide text-neon-purple/70">
+
+            {siteConfig.heroHonestyLine}
+
+          </p>
+
           <p className="text-xs tracking-wide text-white/35">
 
             {siteConfig.heroSubtext}

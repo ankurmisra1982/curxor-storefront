@@ -3,7 +3,7 @@ export const siteConfig = {
   siteUrl: "https://curxor.ai",
   pageTitle: "CurXor — Your AI team on a box you own",
   metaDescription:
-    "Desk appliance + CurXor OS. Mint autonomous employees on bare metal — five flagship Claws day one, local inference, $3,999 once, $0/mo API rent.",
+    "Desk appliance + CurXor OS. Mint autonomous employees on bare metal — Capital, Creator, Outreach demo-ready day one, local inference, $3,999 once, $0/mo API rent.",
   keywords: [
     "sovereign AI hardware",
     "local LLM appliance",
@@ -18,7 +18,7 @@ export const siteConfig = {
   viralHook: "ChatGPT bills per token. CurXor bills once.",
   heroHeadline: "Your AI team. On a box you own.",
   heroSubhead:
-    "CurXor is a desk appliance with CurXor OS — ten autonomous AI agents, local inference, and a command dashboard on your network. $3,999 once · $0/mo API for the operate plane.",
+    "CurXor is a desk appliance with CurXor OS — Capital, Creator, and Outreach demo-ready on your metal, local inference, and a command dashboard on your network. $3,999 once · $0/mo API for the operate plane.",
   /** Layer 4 · links to /signal. Conductor verb — pairs with orchestrator in essays/deck. */
   heroAccent: "Interfaces drift. Your desk conducts.",
   computeHook:
@@ -26,6 +26,9 @@ export const siteConfig = {
   tagline:
     "One desk conducts your orchestra of Claws — trade, create, and outbound without shipping your playbook to the cloud.",
   heroDemoLine: "Demo tour day one — not a weekend project.",
+  /** Above-fold honesty — 3 flagships demo-ready; previews labeled; outbound until eno2 wired. */
+  heroHonestyLine:
+    "3 desks demo-ready · 8 previews labeled · simulated outbound until you wire eno2",
   heroSubtext:
     "126 TOPS local inference · dual 10GbE · eno2 kill switch · $0 CurXor API fees.",
   heroCreatorBadge:
@@ -244,7 +247,7 @@ export const faqItems = [
   {
     question: "Who is CurXor NOT for?",
     answer:
-      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need all ten Claws production-complete on day one — five are honest Coming Soon previews.",
+      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need every Claw production-complete on day one — eight are honest Coming Soon previews; Capital, Creator, and Outreach are the demo-ready desks.",
   },
   {
     question: "Which Claws actually work today?",

@@ -10,17 +10,11 @@ const PersonaGrid = dynamic(() =>
 const HowItWorks = dynamic(() =>
   import("@/components/HowItWorks").then((m) => ({ default: m.HowItWorks }))
 );
-const NeuralLinkTeaser = dynamic(() =>
-  import("@/components/NeuralLinkTeaser").then((m) => ({ default: m.NeuralLinkTeaser }))
-);
 const ScreenshotGallery = dynamic(() =>
   import("@/components/ScreenshotGallery").then((m) => ({ default: m.ScreenshotGallery }))
 );
-const SymphonySection = dynamic(() =>
-  import("@/components/SymphonySection").then((m) => ({ default: m.SymphonySection }))
-);
-const HorizonSection = dynamic(() =>
-  import("@/components/HorizonSection").then((m) => ({ default: m.HorizonSection }))
+const VisionBand = dynamic(() =>
+  import("@/components/VisionBand").then((m) => ({ default: m.VisionBand }))
 );
 const ComparisonTable = dynamic(() =>
   import("@/components/ComparisonTable").then((m) => ({ default: m.ComparisonTable }))
@@ -52,9 +46,7 @@ export default function Home() {
       <HowItWorks />
       <ScreenshotGallery />
       <PersonaGrid />
-      <SymphonySection />
-      <NeuralLinkTeaser />
-      <HorizonSection />
+      <VisionBand />
       <ComparisonTable />
       <AppEcosystem variant="featured" />
       <PricingPreview />

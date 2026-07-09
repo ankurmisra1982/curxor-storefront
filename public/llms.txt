@@ -12,7 +12,7 @@
 - Homepage story: Who it's for · Persona grid (Alex/Sam/Jordan) · Symphony · G3 desk captures · Act II horizon
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU · 38 tok/s qwen3:8b on box
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
-- Software: CurXor OS v1.0.3 with 10 Claw verticals + The Forge (enable any combination in Settings)
+- Software: CurXor OS v1.0.3 with 12 Claw verticals + The Forge (enable any combination in Settings)
 - QA: 239 smoke + 40 user-flow checks in curxor-os (qa:local suite)
 - Hardware validation: G1/G2/G3 closed Jul 2026 — MS-S1 golden path; published mesh benchmarks pending
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
@@ -68,7 +68,7 @@
 - OpenClaw: free agent runtime — you supply hardware, skills, security, and integrations
 - ClawBox-class Jetson (~€549, 8GB): lightweight always-on assistants
 - NVIDIA NemoClaw: alpha governance layer for DIY OpenClaw on NVIDIA hardware
-- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 10 Claws + Forge on 64GB UMA; unified messaging (Telegram, Slack, WhatsApp, iMessage) and CCP inbox; wearables user-configured
+- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 12 Claws + Forge on 64GB UMA; unified messaging (Telegram, Slack, WhatsApp, iMessage) and CCP inbox; wearables user-configured
 
 ## vs MIKY / agent NAS boxes
 

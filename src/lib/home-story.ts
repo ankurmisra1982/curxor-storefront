@@ -6,7 +6,7 @@ export const actOneStory = {
   eyebrow: "ACT I · WHAT YOU BUY",
   headline: "Three Claws you'll run in week one",
   subhead:
-    "CurXor ships ten Claws and The Forge. Capital, Creator, and Outreach are your buy decision — G3 demo depth on MS-S1 metal, local context, egress you control.",
+    "Day one: Capital, Creator, and Outreach — demo-ready on your metal. The Forge mints more. Eight more Claws ship as honest previews. G3 demo depth on MS-S1 metal, local context, egress you control.",
   flagships: [
     {
       claw: "Capital Claw",
@@ -38,7 +38,7 @@ export const actOneStory = {
     href: "/architecture#claw-tiers",
   },
   honestyFooter:
-    "Five additional Claws ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
+    "Eight additional Claws ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
 } as const;
 
 export const actTwoStory = {
@@ -54,4 +54,18 @@ export const actTwoStory = {
   },
   evolutionTease:
     "Ascends with you — same appliance, deeper desks over time. No subscription tier names on the tin.",
+} as const;
+
+/** Collapsed homepage vision band — Symphony + Signal + Cafe in one section. */
+export const visionBand = {
+  eyebrow: "VISION · ACT II",
+  headline: "One desk conducts. The symphony plays.",
+  subhead:
+    "Chat SaaS gives you one assistant. CurXor gives you an orchestra of Claws — a conductor on your desk, acoustic reach when you want it, and a hall where operators earn presence from real Flagship activity.",
+  signalTeaser:
+    "Signal Claw is a concept preview — interfaces drift; your desk conducts. Not day-one integration.",
+  cafeTeaser:
+    "Claw Cafe is the hall on your metal — XP and ascension tied to real Capital, Creator, and Outreach activity. Concept preview UI below.",
+  cafeDisclaimer:
+    "CONCEPT PREVIEW — Cafe UI ships on the appliance; not a live cloud leaderboard.",
 } as const;

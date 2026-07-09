@@ -2,7 +2,7 @@
 
 Keep storefront copy aligned with `curxor-os` as both repos evolve.
 
-**Latest cross-repo status:** [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md) (Jul 1, 2026 — G1 closed Jun 29; G2/G3 next).
+**Latest cross-repo status:** [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md) (Jul 8, 2026 — CurXor OS **v1.0.3** · G1/G2/G3 closed · G4 next).
 
 ## Automatic sync (preferred)
 
@@ -50,7 +50,7 @@ Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketi
 | Storefront today | Audit note |
 |------------------|------------|
 | Spec: "Sub-millisecond ZeroMQ telemetry" | Aspirational — **not validated** until MS-S1 MAX mesh benchmarks |
-| "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; agent runtime + unified comms (OS 0.9.1) |
+| "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; agent runtime + unified comms (OS 1.0.3) |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 | Cafe kicker: "venture out" | **eno2 bridges + Go Live + Cafe walk-out to desks** — not cloud LLM egress · see [PRODUCT-POSITIONING.md](PRODUCT-POSITIONING.md) § Act II · Cafe band |
@@ -88,7 +88,7 @@ Optional frontier LLMs (Settings → Intelligence, BYOK or OAuth): chat/planning
 
 **Claw Context Protocol (CCP):** On-appliance mesh topic `telemetry/claw_context` syncs health, family, work, and hardware context between Claws. Channel conversations publish to `work/inbox.*` via the unified comms router. See `../curxor-os/docs/guides/15-claw-context-protocol.md` and `../curxor-os/docs/guides/18-agent-runtime.md`.
 
-**Agent runtime (OS 0.9.1):** OpenClaw-style workspace memory, skills, heartbeat daemon, MCP servers, Build Plane delegation queue, and messaging gateways (Telegram, Slack, WhatsApp, iMessage). Dashboard chat and external channels share one router → CCP. Marketing line: *"Message your Claws from phone or desktop — every reply stays local, egress only through eno2."*
+**Agent runtime (OS 1.0.3):** OpenClaw-style workspace memory, skills, heartbeat daemon, MCP servers, Build Plane delegation queue, Firecrawl bridge, and messaging gateways (Telegram, Slack, WhatsApp, iMessage). Dashboard chat and external channels share one router → CCP. Marketing line: *"Message your Claws from phone or desktop — every reply stays local, egress only through eno2."*
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`
 

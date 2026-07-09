@@ -12,7 +12,7 @@
 
 | Tier | Main hero today? | H1 |
 |------|------------------|-----|
-| **GTM · Act I** | **Yes** | Mint autonomous employees on bare metal. (`config.ts`) |
+| **GTM · Act I** | **Yes** | Your AI team. On a box you own. (`siteConfig.heroHeadline`) · category in `metaDescription` |
 | **Dream state** | No until G4 | Designed around you. Owned by you. (`dream-state.ts`) |
 
 Dream-state copy ships on **`/signal`**, pitch deck, press kit, and founder content — not as the only cold-traffic headline.

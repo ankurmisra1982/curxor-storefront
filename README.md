@@ -2,7 +2,7 @@
 
 GTM site and marketing workspace for **CurXor OS** — sovereign edge appliance on the MINISFORUM MS-S1 MAX.
 
-> **Hardware:** MS-S1 MAX unboxed **2026-06-28** — **G1 golden path closed 2026-06-29** (verify + smile PASS; COMMAND captive portal + EGRESS mesh on box). Appliance: [`../curxor-os/`](../curxor-os/). This repo is **landing page, pre-order, and GTM docs**. Status: [docs/CTO-STATUS-REPORT.md](docs/CTO-STATUS-REPORT.md).
+> **Hardware:** MS-S1 MAX unboxed **2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS **v1.0.3** on Standard 64 (golden path Jun 29; G2 depth + G3 demo captures Jul 8). Appliance: [`../curxor-os/`](../curxor-os/). This repo is **landing page, pre-order, and GTM docs**. Status: [docs/CTO-STATUS-REPORT.md](docs/CTO-STATUS-REPORT.md).
 
 ## Site (this repo)
 

@@ -1,8 +1,8 @@
 # CurXor OS — Full Appliance Audit
 
-**Audit date:** June 2026 (matrix below) · **Hardware update:** Jul 1, 2026 — see [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)  
-**Version:** `0.9.1` (`../curxor-os/version.json`)  
-**Hardware status:** MS-S1 MAX **unboxed** — **G1 closed** (Jun 29): FRE, inference, captive portal, EGRESS mesh, verify script, smile test validated on box  
+**Audit date:** June 2026 (matrix below) · **Hardware update:** Jul 8, 2026 — see [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)  
+**Version:** `1.0.3` (`../curxor-os/version.json`)  
+**Hardware status:** MS-S1 MAX **unboxed** — **G1/G2/G3 closed Jul 2026**: golden path Jun 29; G2 depth wave (v1.0.3, FC bridge, SkillSpector); G3 demo captures on storefront Jul 8  
 **GTM site:** This repo (`curxor storefront`) — landing + pre-order live; see [SYNC.md](SYNC.md)
 
 ---
@@ -12,7 +12,7 @@
 CurXor OS is a **coherent, installable appliance stack** with documentation, OTA, captive portal, and a polished Flight Command UI. Architecture is intentionally **sovereign**: inference and agent reasoning stay on localhost; only dedicated Python **digital bridges** perform outbound HTTPS (Alpaca paper, X API).
 
 **Ready for GTM narrative and demo storytelling now.**  
-**Hardware validation (G1 closed Jun 29):** ROCm inference, FRE, dual-port topology (COMMAND captive + EGRESS mesh), verify script, and smile test on MS-S1 Standard 64. **Not yet ready** for production customer shipments until G2 (v1.0.0 tag, signed OTA, factory USB).
+**Hardware validation (G1/G2/G3 closed Jul 2026):** ROCm inference, FRE, dual-port topology, verify script, smile test, G2 depth wave (Firecrawl FC1–FC3, SkillSpector, handshakes), and G3 MS-S1 demo pack on curxor.ai. **Not yet ready** for fleet customer shipments until G4 (production OTA URL, factory USB, external operator UAT at scale).
 
 ---
 
@@ -29,10 +29,10 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Networking | ✅ Documented | eno1 captive `10.0.0.1` · eno2 mesh `10.77.0.1` |
 | OTA | ✅ Complete | Backup, SHA256, rollback, cron, System Health log stream |
 | Digital layer | ⚠️ Scaffold | Bridges coded; requires `/etc/curxor/digital.env` + live APIs |
-| Hardware validation | ✅ G1 closed | MS-S1 unboxed Jun 28 — G1 closed Jun 29: ROCm + FRE + captive/mesh + verify + smile on box · published mesh benchmarks pending · [CTO-STATUS-REPORT.md](../../curxor%20storefront/docs/CTO-STATUS-REPORT.md) |
+| Hardware validation | ✅ G1/G2/G3 closed | MS-S1 unboxed Jun 28 — G1 Jun 29 · G2 depth Jul 2026 (v1.0.3, FC bridge) · G3 storefront captures Jul 8 · published mesh benchmarks pending · Cafe Wave A dev captures not MS-S1 verified · [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md) |
 | Reproducible builds | ⚠️ Gap | No committed `pnpm-lock.yaml` in pillar 2/4 |
 | Security hardening | ⚠️ Partial | Dashboard on `0.0.0.0:3080`; APIs unauthenticated (LAN/captive OK) |
-| Tests / CI | ✅ Local QA | ~176 smoke + ~40 user-flow checks — `npm run qa:local` (`qa-smoke.mjs`, `qa-user-flows.mjs`) |
+| Tests / CI | ✅ Local QA | **239** smoke + **40** user-flow checks — `npm run qa:local` (`qa-smoke.mjs`, `qa-user-flows.mjs`) |
 | Agent runtime | ✅ Shipped | Workspace memory, skills, heartbeat, MCP, channel router → CCP inbox |
 | Messaging gateways | ✅ Shipped | Telegram, Slack, WhatsApp, iMessage — user-configured in Settings |
 
@@ -69,14 +69,15 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 
 ---
 
-## Known gaps (priority when hardware arrives)
+## Known gaps (post-G3)
 
-### P0 — First boot on MS-S1 MAX
+### P0 — G4 / fleet readiness
 
-1. BIOS UMA carve-out ~48 GB — `../curxor-os/docs/guides/10-ms-s1-max-hardware-bios.md`
-2. `verify-gpu.sh` + `deploy.sh --pull-models` on gfx1151
-3. Confirm eno1/eno2 naming matches scripts
-4. End-to-end: camera → vision SSE → engine → motor → dashboard matrix
+1. Production OTA release URL for customer fleet
+2. Factory USB / cloud-init install video + operator PDF export
+3. Published mesh latency benchmarks (topology verified; numbers pending)
+4. Product photography — MS-S1 batch hero shoot
+5. Cafe Wave A captures in `public/demo/cafe/` — dev Flight Command UI; replace with MS-S1 verified when re-captured
 
 ### P1 — Hardening
 
@@ -99,7 +100,9 @@ Bridges ──JSON──► digital_in :9101 ──► Dashboard SSE
 
 ---
 
-## First-boot checklist (when MS-S1 MAX arrives)
+## First-boot checklist (MS-S1 MAX — reference)
+
+Hardware unboxed **2026-06-28** · G1 closed **2026-06-29**. Retained for operators flashing new units:
 
 ```bash
 sudo rsync -a ../curxor-os/ /opt/curxor/
@@ -117,4 +120,4 @@ systemctl status curxor-os.target
 
 **Safe to market today:** sovereign edge positioning, four-pillar architecture, Flight Command UX, offline-first, claw wizard concept, OTA story, dual-LAN topology, digital bridge privacy model, **pre-order funnel (this repo)**.
 
-**Hold until hardware proof:** performance numbers, "works out of the box on MS-S1 MAX", vLLM/OpenVLA production claims, live trading/social unless demo keys configured.
+**Hold until G4 / fleet proof:** performance benchmark publication, factory OTA install story, live trading/social at scale unless operator BYOK configured, LinkedIn brochure flip (needs honest box hero photo).

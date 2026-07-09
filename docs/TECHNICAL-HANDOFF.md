@@ -2,7 +2,7 @@
 
 Copy-paste facts for storefront, datasheets, and pitch decks. **Source of truth:** `../curxor-os/` (version, appliance behavior) + `src/lib/config.ts` + `src/lib/generated/appliance-sync.ts` (synced storefront surface).
 
-Last refreshed: July 1, 2026 · Appliance **0.9.1** · **G1 closed** (Jun 29 verify + smile PASS; captive portal + mesh on box) — [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)
+Last refreshed: July 8, 2026 · Appliance **1.0.3** · **G1/G2/G3 closed** (golden path Jun 29; G2 depth + G3 demo captures Jul 8) — [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md)
 
 ---
 
@@ -22,11 +22,11 @@ Last refreshed: July 1, 2026 · Appliance **0.9.1** · **G1 closed** (Jun 29 ver
 
 | Surface | Purpose |
 |---------|---------|
-| `/` | Category hero — **“Mint autonomous employees on bare metal.”** (CEO lock — do not change `siteConfig.heroHeadline`) |
+| `/` | Ownership hero — **“Your AI team. On a box you own.”** (`siteConfig.heroHeadline` · CEO lock) · category spine in `metaDescription` |
 | `/pricing` | Standard 64 flagship ($3,999) + compute ladder; Pro 128 parked until SKU ships |
 | `/signal` | Signal Claw · **The Neural Link** — device-class horizon (glance, VR, robot, fleet, home, ambient); preview honesty; subscribe-first CTAs |
 | `/capital` · `/creator` · `/outreach` | Flagship Claw landing pages |
-| `/architecture` | Four pillars + eno1/eno2 + validation badge (G1 closed on MS-S1; mesh benchmarks pending) |
+| `/architecture` | Four pillars + eno1/eno2 + validation badge (G1/G2/G3 closed on MS-S1; mesh benchmarks pending) |
 | Personas | `/for/traders` · `/for/creators` · `/for/agencies` |
 | Compare hub | `/compare/*` competitor pages |
 
@@ -59,7 +59,8 @@ Canonical naming — full table in [SYNC.md](SYNC.md).
 | **Flight Command** / **Flight Command Desktop** | Pillar 4 dashboard UI on device (`:3080`) |
 | **Master Claw** | Sidebar agent shell + FRE wizard (appliance) |
 
-**Hero (locked):** *Mint autonomous employees on bare metal.* — `siteConfig.heroHeadline`
+**Hero H1 (locked):** *Your AI team. On a box you own.* — `siteConfig.heroHeadline`  
+**Category spine (locked):** *Mint autonomous employees on bare metal* — `siteConfig.metaDescription` · deck · pitch
 
 **Evolution tease (site-safe):** abstract only — *ascends with you* / grows on your metal. **Do not** use Sprout→Infinity tier names in marketing copy.
 
@@ -174,7 +175,7 @@ Full mesh/digital table: [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md)
 | Intelligence | `local` / `frontier` / `auto`; Ollama model; OpenAI (OAuth PKCE or API key), Anthropic, Google (OAuth when configured), Cursor, OpenRouter, Sakana Fugu |
 | Appearance | Simple/Expert, light/dark/system, accent schemes (CurXor, Ocean, Amber, Mono) |
 | Agent runtime | Workspace memory, skills, heartbeat scheduler, MCP servers |
-| Build Plane | Remote worker wizard, delegation queue (BP4 @ 0.9.1), MCP event bus |
+| Build Plane | Remote worker wizard, delegation queue (BP4 @ 1.0.3), MCP event bus |
 | Channels | Telegram, Slack, WhatsApp, iMessage gateways — unified inbox on Home |
 
 Persistence: `/etc/curxor/user-settings.json`, `/etc/curxor/llm-credentials.json` (0600), `/etc/curxor/provider-link-sessions.json`, `/etc/curxor/channels/`.
@@ -198,7 +199,7 @@ Guide: `../curxor-os/docs/guides/15-claw-context-protocol.md`
 
 ---
 
-## Agent runtime (CurXor OS 0.9.1)
+## Agent runtime (CurXor OS 1.0.3)
 
 OpenClaw-inspired patterns on sovereign metal — guide: `../curxor-os/docs/guides/18-agent-runtime.md`
 
@@ -210,7 +211,8 @@ OpenClaw-inspired patterns on sovereign metal — guide: `../curxor-os/docs/guid
 | Scheduler | Heartbeat daemon + cron (`curxor-scheduler.service`) |
 | MCP | Live JSON-RPC tool protocol + egress allowlist |
 | Browser automation | Headless fetch + Playwright on eno2 (user-configured) |
-| Build Plane | Delegation queue, worker wizard, Cafe Master AI suggest gate (0.9.1) |
+| Build Plane | Delegation queue, worker wizard, Cafe Master AI suggest gate (1.0.3) |
+| Firecrawl bridge | FC1–FC3 — scrape, enrich, seed from URL on Work/Creator desks (demo without BYOK) |
 | Wearables bridge | Garmin OAuth PKCE, Oura PAT, Apple Health export path |
 
 Persistence: `/etc/curxor/channels/`, `/etc/curxor/agent-workspace/`, `/etc/curxor/scheduler/jobs.json`
@@ -234,12 +236,12 @@ Details: `../curxor-os/docs/guides/12-digital-action-layer.md`
 
 **curxor-os** pillar-4-dashboard local QA (`npm run qa:local`):
 
-| Suite | Count (0.9.1 scripts) |
+| Suite | Count (1.0.3 scripts) |
 |-------|----------------------|
-| Smoke (`qa-smoke.mjs`) | **184** API checks |
+| Smoke (`qa-smoke.mjs`) | **239** API checks |
 | User flows (`qa-user-flows.mjs`) | **40** end-to-end flows |
 
-**Hardware validation:** G1 golden path **closed** Jun 29 on MS-S1 Standard 64 — FRE, ROCm inference, captive portal, and EGRESS mesh verified on box. **Published mesh latency benchmarks** still pending; storefront badge reflects G1 complete, not sub-ms claims.
+**Hardware validation:** G1 golden path **closed** Jun 29 · G2 depth wave **closed** Jul 2026 (v1.0.3, FC bridge, SkillSpector) · G3 demo captures **closed** Jul 8 on curxor.ai. **Published mesh latency benchmarks** still pending; storefront badge reflects gates closed, not sub-ms claims.
 
 **Storefront:** `npm run qa` = lint + build.
 
@@ -249,13 +251,13 @@ Details: `../curxor-os/docs/guides/12-digital-action-layer.md`
 
 | Artifact | Version | Source |
 |----------|---------|--------|
-| **Appliance (CurXor OS)** | **0.9.1** stable | `../curxor-os/version.json` → `appliance-sync.ts` |
+| **Appliance (CurXor OS)** | **1.0.3** stable | `../curxor-os/version.json` → `appliance-sync.ts` |
 | **Storefront package** | **0.1.0** | `package.json` (marketing semver — independent of OTA) |
 | **Last sync** | See `applianceSyncedAt` in `appliance-sync.ts` | `npm run sync:appliance` |
 
 When appliance bumps: run `npm run sync:appliance`, refresh this doc, update changelog via sync.
 
-0.9.1 highlights: Build Plane BP4 delegation queue UI; Cafe Master AI chamber suggest with confirm gate.
+1.0.3 highlights: Firecrawl bridge FC1–FC3; SkillSpector CI gate; Cafe rebrand sign-off; 239 smoke green; box verified on MS-S1 (`d5353fa`).
 
 ---
 
@@ -264,10 +266,11 @@ When appliance bumps: run `npm run sync:appliance`, refresh this doc, update cha
 | Asset | Status |
 |-------|--------|
 | Capture script | `../curxor-os/pillar-4-dashboard/scripts/capture-demo-screenshots.mjs` → `docs/demo-pack/screenshots/` |
-| Storefront `public/demo/` | Home through Creator + creator flows — **dev captures** |
+| Storefront `public/demo/g3/` | **G3 closed Jul 8** — 8 MS-S1 screenshots + 3 desk strips on curxor.ai |
+| Storefront `public/demo/investor/` | **G3 closed Jul 8** — inception reel, investor proof, category badge film |
 | `public/demo/cafe/` | **Wave A** — dev Flight Command UI; **not MS-S1 verified** |
-| Product photography / MS-S1 box-IP captures | **G3 pending** — G1 closed on box; re-capture `public/demo/` from `10.0.0.1:3080` before claiming production screenshots |
-| Next Interface film (GTM-FILM) | Program scoped — G2/G4 gates in `../curxor-os/docs/curxor-os/FUTURE-ROADMAP.md` |
+| Product photography / MS-S1 box hero | **G4 pending** — batch shoot when ready |
+| Next Interface film (GTM-FILM) | Category badge (~61s) + inception reel (~90s) live on `/signal` · full A+B+C merge deferred |
 
 Copy captured assets to storefront `public/demo/` for GTM. Label dev captures honestly in decks.
 

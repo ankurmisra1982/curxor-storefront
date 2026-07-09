@@ -28,16 +28,18 @@ This doc translates that architecture into **storefront-safe language**. No dev-
 
 ---
 
-## Hero candidates (G3 A/B only — locked until captures)
+## Hero (live · Jul 8 doc mirror)
 
-**CEO lock (pre-G3 / control):** Keep live hero — **“Mint autonomous employees on bare metal.”** Subscribe-first · category-first · no hero swap before G3.
+**Live H1 (CEO lock):** **Your AI team. On a box you own.** — `siteConfig.heroHeadline` · subscribe-first · no category film on cold homepage until G4.
+
+**Category spine:** *Mint autonomous employees on bare metal* — `metaDescription`, pitch deck, investor async. Not the cold-traffic H1.
 
 | Role | Copy |
 |------|------|
-| **Control (live · keep)** | **Mint autonomous employees on bare metal.** · *They keep working, remembering, and asking before they act.* |
-| **Challenger (G3 A/B only)** | **Stop renting chat. Run a team on your metal.** · *Not a chatbot. An operating system where work keeps moving between sessions.* |
+| **Control (live · keep)** | **Your AI team. On a box you own.** · *Five flagship Claws day one · local inference · $3,999 once.* |
+| **Challenger (G11 · post-fundraise)** | **Stop renting chat. Run a team on your metal.** · *Not a chatbot. An operating system where work keeps moving between sessions.* |
 
-Do not replace the control headline until G3 hardware captures land and CEO approves A/B. Loop section (three columns) can ship at G3 **below** hero without changing H1.
+Do not replace the control headline until G11 (post-fundraise). Loop section (three columns) is G11 — deferred.
 
 **Challenger sub (if tested):**
 

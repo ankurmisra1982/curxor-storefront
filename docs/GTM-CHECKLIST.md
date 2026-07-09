@@ -1,11 +1,11 @@
 # GTM Checklist — Storefront vs Appliance
 
-MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verify + smile PASS; captive portal + mesh on box). See [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md). Use this to prioritize GTM work in **this repo**.
+MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS **v1.0.3** (golden path Jun 29; G2 depth + G3 demo captures Jul 8). See [CTO-STATUS-REPORT.md](CTO-STATUS-REPORT.md). Use this to prioritize GTM work in **this repo**.
 
 ## Done in **curxor storefront** ✅
 
-- [x] Wave 0–2 — subscribe-first sitewide, category hero (*Mint autonomous employees on bare metal*), Act I/II story arc, operator composites, trust strip
-- [x] Landing page hero (*Mint autonomous employees on bare metal.*)
+- [x] Wave 0–2 — subscribe-first sitewide, ownership hero (*Your AI team. On a box you own.*), category spine in meta/deck, Act I/II story arc, operator composites, trust strip
+- [x] Landing page hero (*Your AI team. On a box you own.*) · category in `metaDescription`
 - [x] Spec sheet matrix (Compute / Network / Claw Engine)
 - [x] Ten Claw workspaces (9 verticals + The Forge) grouped by category + mobile carousel
 - [x] Day One hub section (Home / chat / stay local / Settings)
@@ -45,6 +45,8 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1 golden path closed 2026-06-29** (verif
 
 - [x] **Contact email** — `hello@curxor.ai` in `siteConfig.contactEmail`; Resend domain verified on curxor.ai
 - [x] **Resend on Vercel** — `POST /api/subscribe` prod smoke **green** (2026-07-08 · `{"ok":true}`)
+- [x] **Resend welcome email** — prod E2E delivery confirmed (2026-07-08)
+- [x] **Prod UAT** — 20 pages · 12 assets · subscribe POST · film tabs · press zip **green** (2026-07-08)
 
 ## Deferred post-fundraise (do not build pre-close)
 
@@ -116,6 +118,7 @@ See [SYNC.md](SYNC.md) and [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md).
 | Date | Commit | Notes |
 |------|--------|-------|
 | 2026-07-08 | `815e547` | STORE-C-DEPLOY closed · Vercel prod [READY](https://vercel.com/cur-xor/curxor-storefront/5vHpe6S45tiQMSvnggaLtStuemuk) · main branch · all asset smoke green |
+| 2026-07-08 | — | **Prod UAT green** — full page graph · films · press zip · subscribe E2E · doc mirror closed |
 
 ## Reference docs in curxor-os
 

@@ -12,8 +12,9 @@ Aligned with live storefront copy in `src/lib/config.ts`, `Hero.tsx`, and `Creat
 
 | Surface | Copy |
 |---------|------|
-| Hero | **Mint autonomous employees on bare metal.** (control — locked pre-G3) |
-| Subhead | *…Run Claws on a desk that conducts…* |
+| Hero H1 (live) | **Your AI team. On a box you own.** (`siteConfig.heroHeadline`) |
+| Category spine | *Mint autonomous employees on bare metal* — `metaDescription`, deck, pitch |
+| Subhead | Five flagship Claws day one · local inference · $3,999 once · $0/mo API |
 | GTM accent (live) | **Interfaces drift. Your desk conducts.** → `/signal` |
 | Symphony section | **One desk conducts. The symphony plays.** · payoff: *The symphony plays.* |
 | Thesis (essay/deck) | *The next interface isn't a device. It's the orchestrator on your desk.* |
@@ -73,7 +74,7 @@ End-state category copy and **naming lock** live in **[DREAM-STATE-OVERVIEW.md](
 | Surface | Copy |
 |---------|------|
 | Dream H1 | **Designed around you. Owned by you.** |
-| GTM H1 (live) | **Mint autonomous employees on bare metal.** |
+| GTM H1 (live) | **Your AI team. On a box you own.** |
 | Thesis accent | *The next interface isn't a device. It's the orchestrator on your desk.* |
 
 ## Naming lock — Claw vs orchestrator (Jun 2026)

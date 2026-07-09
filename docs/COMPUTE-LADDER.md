@@ -3,8 +3,8 @@
 > **Audience:** Storefront · press · investor deck · operator docs  
 > **Canonical OS spec:** [../curxor-os/docs/curxor-os/FUTURE-ROADMAP.md](../curxor-os/docs/curxor-os/FUTURE-ROADMAP.md) · IDEA-H05 · [../curxor-os/docs/guides/04-inference-compute.md](../curxor-os/docs/guides/04-inference-compute.md)  
 > **Live surfaces:** [curxor.ai/press](https://curxor.ai/press) · [curxor.ai/pricing](https://curxor.ai/pricing)  
-> **Related GTM:** [LOOP-POSITIONING.md](LOOP-POSITIONING.md) — work · memory · trust loops (hero control unchanged)  
-> **Last updated:** June 2026
+> **Related GTM:** [LOOP-POSITIONING.md](LOOP-POSITIONING.md) — work · memory · trust loops (G11 deferred post-fundraise)  
+> **Last updated:** July 2026
 
 ---
 

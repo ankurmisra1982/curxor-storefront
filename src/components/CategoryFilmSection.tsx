@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -53,81 +52,79 @@ export function CategoryFilmSection() {
         </p>
       </div>
 
-      <div className="grid gap-0 lg:grid-cols-[1.4fr_1fr]">
-        <div className="relative min-h-[240px] border-b border-white/10 lg:border-b-0 lg:border-r">
-          <div className="flex flex-wrap gap-2 border-b border-white/10 px-3 py-2">
-            {FILMS.map((item) => (
-              <button
-                key={item.id}
-                type="button"
-                onClick={() => setActiveFilm(item.id)}
-                className={`border px-2 py-1 text-[9px] tracking-widest transition-colors ${
-                  activeFilm === item.id
-                    ? "border-neon-purple/60 bg-neon-purple/10 text-neon-purple"
-                    : "border-white/15 text-white/45 hover:border-white/30 hover:text-white/70"
-                }`}
-              >
-                {item.label.toUpperCase()}
-              </button>
-            ))}
-          </div>
-          <video
-            key={film.src}
-            className="h-full w-full object-cover"
-            controls
-            playsInline
-            preload="metadata"
-            poster={categoryFilmAssets.conductorPlate}
-            aria-label={film.ariaLabel}
+      <div className="flex flex-wrap gap-2 border-b border-white/10 px-3 py-2">
+        {FILMS.map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            onClick={() => setActiveFilm(item.id)}
+            className={`border px-2 py-1 text-[9px] tracking-widest transition-colors ${
+              activeFilm === item.id
+                ? "border-neon-purple/60 bg-neon-purple/10 text-neon-purple"
+                : "border-white/15 text-white/45 hover:border-white/30 hover:text-white/70"
+            }`}
           >
-            <source src={film.src} type="video/mp4" />
-          </video>
-          <p className="absolute bottom-3 left-3 border border-white/20 bg-black/80 px-2 py-1 text-[9px] tracking-widest text-white/60">
-            {film.chyron}
-          </p>
-        </div>
+            {item.label.toUpperCase()}
+          </button>
+        ))}
+      </div>
 
-        <div className="flex flex-col justify-center p-6 sm:p-8">
-          <Image
-            src={categoryFilmAssets.conductorPlate}
-            alt="Conductor glance — hero film comp plate"
-            width={720}
-            height={450}
-            className="hidden border border-white/10 lg:block"
-          />
-          <p className="mt-4 text-xs leading-relaxed text-amber-200/75">
+      {/*
+        Film is 1440×900 dual-pane (phone | desktop). Full-width + intrinsic
+        aspect — never object-cover in a tall cell (that crops to the phone).
+      */}
+      <div className="relative border-b border-white/10 bg-black">
+        <video
+          key={film.src}
+          className="aspect-[16/10] h-auto w-full bg-black object-contain"
+          controls
+          playsInline
+          preload="metadata"
+          poster={categoryFilmAssets.conductorPlate}
+          aria-label={film.ariaLabel}
+        >
+          <source src={film.src} type="video/mp4" />
+        </video>
+        <p className="pointer-events-none absolute bottom-3 left-3 border border-white/20 bg-black/80 px-2 py-1 text-[9px] tracking-widest text-white/60">
+          {film.chyron}
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-4 p-6 sm:flex-row sm:items-end sm:justify-between sm:p-8">
+        <div className="max-w-xl">
+          <p className="text-xs leading-relaxed text-amber-200/75">
             Command mode · processed on your appliance. Vision cut uses comp badge + practice Capital on
             box. Live badge shoot (HERO-v2) and full 90s A+B+C merge remain open.
           </p>
           <p className="mt-2 text-[10px] text-white/35">{g3Honesty.deskCapture}</p>
-          <div className="mt-6 flex flex-wrap gap-4">
-            <a
-              href={categoryFilmAssets.inceptionReel}
-              className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
-            >
-              INCEPTION LEAD (~90s) →
-            </a>
-            <a
-              href={categoryFilmAssets.heroCategoryBadge}
-              className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
-            >
-              CATEGORY VISION (~61s) →
-            </a>
-            <a
-              href={heroFilmLinks.figmaProto}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
-            >
-              OPEN FIGMA PROTO →
-            </a>
-            <Link
-              href="/press"
-              className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
-            >
-              PRESS KIT →
-            </Link>
-          </div>
+        </div>
+        <div className="flex flex-wrap gap-4 sm:justify-end">
+          <a
+            href={categoryFilmAssets.inceptionReel}
+            className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
+          >
+            INCEPTION LEAD (~90s) →
+          </a>
+          <a
+            href={categoryFilmAssets.heroCategoryBadge}
+            className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
+          >
+            CATEGORY VISION (~61s) →
+          </a>
+          <a
+            href={heroFilmLinks.figmaProto}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
+          >
+            OPEN FIGMA PROTO →
+          </a>
+          <Link
+            href="/press"
+            className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
+          >
+            PRESS KIT →
+          </Link>
         </div>
       </div>
     </section>

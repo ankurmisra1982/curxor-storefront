@@ -48,8 +48,8 @@ export function CategoryFilmSection() {
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/50">
           Two cuts on metal: <strong className="font-normal text-white/70">~61s vision</strong> (badge
           comp · XOR wake · dream-state story) and <strong className="font-normal text-white/70">~90s
-          product proof</strong> (onboarding + three Claws). Not cold-traffic homepage hero until G4.
-          Badge beat is Figma comp — live Patron Badge ships post-hardware validation.
+          product proof</strong> (inception reel · onboarding + three Claws). Not cold-traffic homepage
+          hero until G4. Badge beat is Figma comp — live Patron Badge shoot (HERO-v2) still open.
         </p>
       </div>
 
@@ -97,15 +97,21 @@ export function CategoryFilmSection() {
           />
           <p className="mt-4 text-xs leading-relaxed text-amber-200/75">
             Command mode · processed on your appliance. Vision cut uses comp badge + practice Capital on
-            box. Live badge shoot and full 90s A+B+C merge remain post-validation.
+            box. Live badge shoot (HERO-v2) and full 90s A+B+C merge remain open.
           </p>
           <p className="mt-2 text-[10px] text-white/35">{g3Honesty.deskCapture}</p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a
+              href={categoryFilmAssets.inceptionReel}
+              className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
+            >
+              INCEPTION LEAD (~90s) →
+            </a>
+            <a
               href={categoryFilmAssets.heroCategoryBadge}
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              DIRECT MP4 (61s) →
+              CATEGORY VISION (~61s) →
             </a>
             <a
               href={heroFilmLinks.figmaProto}

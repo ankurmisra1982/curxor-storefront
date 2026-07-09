@@ -11,7 +11,7 @@ export const actOneStory = {
     {
       claw: "Capital Claw",
       tier: "Flagship",
-      body: "Rules-bound wealth desk — paper to live when you wire bridges on eno2.",
+      body: "Rules-bound wealth desk — paper book on camera; live broker only when you wire your own keys on eno2.",
       href: "/capital",
       demo: g3Screenshots.capitalPaper,
     },

@@ -32,9 +32,17 @@ export const hardwareValidation = {
   afterG1: {
     eyebrow: "G4 NEXT",
     items: [
+      "First external operator UAT — design-partner golden path without founder hand-holding",
       "Published mesh latency benchmarks — not marketing guesses",
-      "Ops Wave 1 live bridges on box · first external operator UAT",
       "Category hero 90s merge · production OTA fleet artifact",
+    ],
+  },
+  opsWave1: {
+    eyebrow: "OPS WAVE 1 · FOUNDER BOX",
+    items: [
+      "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
+      "Dogfood 7/7 Jul 9 — ops@ receipts · not a customer fleet · Capital stays paper",
+      "Live brokerage fills and autonomous publish fleets are not claimed",
     ],
   },
 } as const;

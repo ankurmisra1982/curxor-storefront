@@ -112,7 +112,7 @@
 
 **Visuals:** `07-system-health-toks.png` · `01-home.png` · inception reel link.
 
-**Speaker notes:** Lead with metrics cite card. Four pillars are real systemd on box. Paper Capital on camera — say it out loud. Live broker/social fills are founder-keyed / G4 — do not claim fleet fills. Offer LAN demo: Flight Command on `:3080`.
+**Speaker notes:** Lead with metrics cite card. Four pillars are real systemd on box. Paper Capital on camera — say it out loud. Ops Wave 1 priority bridges are green on the founder box (ops dogfood) — do not claim customer fleets or live brokerage fills. G4 = external UAT. Offer LAN demo: Flight Command on `:3080`.
 
 ---
 
@@ -166,7 +166,7 @@
 
 **During the raise:** warm intros · design partners · first external operator UAT (G4) — not fake logos.
 
-**Speaker notes:** Pre-revenue and solo founder are facts — say them. Agent-assisted build loop explains velocity without inventing a team slide. Capital is paper on camera. Bridges founder-keyed until Ops Wave 1. This honesty is the credibility product at $3,999.
+**Speaker notes:** Pre-revenue and solo founder are facts — say them. Agent-assisted build loop explains velocity without inventing a team slide. Capital is paper on camera. Ops Wave 1 is green on founder box — still not a customer fleet or live brokerage. This honesty is the credibility product at $3,999.
 
 ---
 

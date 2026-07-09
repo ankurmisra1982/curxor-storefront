@@ -73,8 +73,8 @@ export const clawOperators: ClawOperator[] = [
     title: "The rules-first builder",
     hook: "Rules on metal. No API invoice.",
     quote:
-      "I stopped renting alpha from the cloud. Capital Claw backtests on localhost — arms on my desk, fills on eno2, or nowhere if I pull the plug.",
-    body: "Capital Claw runs rules-bound desk workflows on bare metal. Paper trading when configured; live bridges are yours to wire.",
+      "I stopped renting alpha from the cloud. Capital Claw backtests on localhost — paper book on my desk, live only if I flip it, or nowhere if I pull the plug.",
+    body: "Capital Claw runs rules-bound desk workflows on bare metal. Paper book when Alpaca is configured; live fills only if you flip live and wire your own keys.",
     claws: "Capital",
     cta: "See Capital desk",
     ctaHref: "/capital",

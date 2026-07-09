@@ -22,7 +22,7 @@ export const siteConfig = {
   /** Layer 4 · links to /signal. Conductor verb — pairs with orchestrator in essays/deck. */
   heroAccent: "Interfaces drift. Your desk conducts.",
   computeHook:
-    "126 TOPS local NPU — ROCm inference validated on Standard 64; mesh benchmarks after G1",
+    "126 TOPS local NPU — ROCm inference validated on Standard 64; published mesh benchmarks pending",
   tagline:
     "One desk conducts your orchestra of Claws — trade, create, and outbound without shipping your playbook to the cloud.",
   heroDemoLine: "Demo tour day one — not a weekend project.",

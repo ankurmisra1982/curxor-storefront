@@ -39,6 +39,7 @@ export const g3Honesty = {
     "Practice mode · paper book — rules and cafe proof are real on the appliance; live broker book not shown.",
   creatorPublish:
     "Local inference drafts · operator approval before anything posts on egress.",
-  workPipeline: "UI and routing are real · outbound sends deferred until bridges are wired.",
+  workPipeline:
+    "UI and routing are real · outbound sends need operator-configured bridges on eno2 (ops Wave 1 proven on founder box — not a customer fleet).",
   deskCapture: "G3 capture · MS-S1 box · Jul 2026",
 } as const;

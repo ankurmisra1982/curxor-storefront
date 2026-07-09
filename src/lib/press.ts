@@ -15,8 +15,8 @@ RAM in use: 4.56 / 64 GB · UMA 7.1%
 Dashboard: Flight Command on LAN :3080
 QA: 239 smoke · G3 capture unit green
 Pricing: $3,999 once · $0/mo operate-plane API
-Stage: G1/G2/G3 green · pre-revenue · solo founder
-Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · G3 closed Jul 8`;
+Stage: G1/G2/G3 green · Ops Wave 1 priority green · G4 UAT open · pre-revenue · solo founder
+Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · G3 closed Jul 8 · Wave 1 dogfood 7/7 Jul 9`;
 
 export const investorDeckMailto =
   "mailto:hello@curxor.ai?subject=Investor%20inquiry%20%E2%80%94%20CurXor";
@@ -41,7 +41,7 @@ export const pressKit = {
   investorIntro: {
     eyebrow: "COMPANY",
     headline: "Sovereign agent appliance — G1/G2/G3 closed on MS-S1.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; G1 golden path closed 2026-06-29; G3 demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Work), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Ops Wave 1 live bridges and external operator UAT are G4.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; G1 golden path closed 2026-06-29; G3 demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Work), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Ops Wave 1 priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops dogfood receipts; Capital stays paper). G4 is first external operator UAT — not started. Not a customer fleet and not live brokerage fills.",
   },
 
   founders: {
@@ -103,8 +103,13 @@ export const pressKit = {
           "**G1 golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, `verify-unbox-day.sh` PASS, smile test PASS, telemetry broker on 10.77.0.1",
       },
       {
+        status: "Shipped" as const,
+        milestone:
+          "**Ops Wave 1 priority green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder box (dogfood 7/7; Capital paper-only)",
+      },
+      {
         status: "Pending" as const,
-        milestone: "Ops Wave 1 live bridges on box · first external operator UAT (G4)",
+        milestone: "First external operator UAT (G4) · design-partner smiles",
       },
       {
         status: "Pending" as const,
@@ -112,7 +117,7 @@ export const pressKit = {
       },
     ],
     footnote:
-      "G3 captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Live broker fills and outbound sends require operator-configured bridges on eno2. See Terms — Software maturity.",
+      "G3 captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Ops Wave 1 bridges are proven on the founder box with real receipts — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
     footnoteLink: { href: "/terms", label: "Terms — Software maturity" },
   },
 

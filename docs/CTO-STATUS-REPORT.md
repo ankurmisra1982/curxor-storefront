@@ -22,7 +22,7 @@ MS-S1 MAX unboxed **2026-06-28**. Golden path **closed 2026-06-29**: COMMAND/EGR
 
 Flight Command home: **`http://10.0.0.1:3080/home`** (COMMAND port · captive). SSH: **`ssh ankur@10.0.0.1`** (laptop `10.0.0.2/24` on COMMAND cable).
 
-**Still blocked until G4:** production OTA release URL for customer fleet, factory USB / operator PDF, published mesh latency benchmarks, MS-S1 batch product photography, LinkedIn brochure flip, Ops Wave 1 live bridges at scale, first external operator UAT.
+**Still blocked until G4:** production OTA release URL for customer fleet, factory USB / operator PDF, published mesh latency benchmarks, MS-S1 batch product photography, LinkedIn brochure flip, first external operator UAT. Ops Wave 1 priority is **green on founder box** (paper Capital) — not a customer fleet.
 
 ---
 
@@ -97,7 +97,7 @@ Validated on box (Jun 28–29 + Jul 2026 depth wave):
 | Production OTA release URL | G4 |
 | Factory USB / operator PDF | G4 |
 | Published mesh latency benchmarks | G4 |
-| Ops Wave 1 live bridges on box | G4 |
+| Ops Wave 1 priority bridges on founder box | ✓ Green Jul 8/9 · paper Capital · not fleet |
 | First external operator UAT | G4 |
 | MS-S1 batch product photography | G4 |
 | Cafe Wave A re-capture from box IP | G4 |
@@ -240,7 +240,7 @@ Buyer-facing surfaces aligned to this doc. Homepage hero spine unchanged.
 
 G1/G2/G3 passed. **curxor-os** is G4 fleet-readiness + operator UAT until production OTA URL ships. Do not expect on storefront before G4:
 
-- Ops Wave 1 live bridges at scale
+- Ops Wave 1 at customer-fleet scale (founder-box dogfood is green)
 - Factory USB production batch
 - LinkedIn brochure flip
 - Loop hero UI (G11)

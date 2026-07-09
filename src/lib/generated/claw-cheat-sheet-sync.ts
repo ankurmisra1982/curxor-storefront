@@ -5,7 +5,7 @@ export const clawCheatSheetMeta = {
   "version": 1,
   "updated": "2026-07-03",
   "summary": "13 OOTB surfaces on CurXor OS — 5 live (4 flagships + Cafe) + Forge + 8 scoped preview claws.",
-  "gtmLead": "Lead with Capital, Creator, Outreach, and The Forge for the $3,999 proof path. Cafe is the growth moat. Eight scoped claws are honest — L1–L5 works on-box; production depth ships after hardware validation.",
+  "gtmLead": "Lead with Capital, Creator, Outreach, and The Forge for the $3,999 proof path. Cafe is the growth moat. Eight scoped claws are honest — L1–L5 works on-box; production depth ships on the appliance roadmap (Tier C / Coming Soon).",
   "statusLabels": {
     "live": "Live",
     "scoped": "Scoped"

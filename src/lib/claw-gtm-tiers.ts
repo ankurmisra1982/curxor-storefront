@@ -19,7 +19,7 @@ export const gtmTierLegend = [
   {
     id: "preview",
     label: "Preview",
-    body: "Eight honest scoped claws — local data and L1–L5 growth work; production depth ships after hardware validation.",
+    body: "Eight honest scoped claws — local data and L1–L5 growth work; production depth ships on the appliance roadmap (Tier C / Coming Soon honesty).",
   },
 ] as const;
 

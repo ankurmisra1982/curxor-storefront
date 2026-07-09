@@ -118,14 +118,15 @@ export default function ArchitecturePage() {
 
         <div id="validation" className="mt-16 scroll-mt-24">
           <h2 className="mb-6 text-xs font-bold tracking-[0.3em] text-neon-purple">
-            MS-S1 VALIDATION · G1
+            MS-S1 VALIDATION · G1–G3
           </h2>
           <ValidationBadge />
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {(
               [
                 ["doneOnBox", "text-neon-purple"] as const,
                 ["g1Closed", "text-neon-purple"] as const,
+                ["opsWave1", "text-neon-purple"] as const,
                 ["afterG1", "text-white/40"] as const,
               ] as const
             ).map(([key, statusClass]) => {
@@ -150,9 +151,9 @@ export default function ArchitecturePage() {
             })}
           </div>
           <p className="mt-4 text-xs leading-relaxed text-white/40">
-            Unboxed {hardwareValidation.unboxDate}. Demo screenshots on curxor.ai are
-            dev/seed Flight Command captures — honest re-capture from box IP waits for
-            G3. Operator PDF exports after G2 production artifacts.
+            Unboxed {hardwareValidation.unboxDate}. G1–G3 closed on MS-S1 — G3 desk
+            captures and investor pack are live on curxor.ai. Ops Wave 1 is green on
+            the founder box (paper Capital). G4 = first external operator UAT.
           </p>
         </div>
 

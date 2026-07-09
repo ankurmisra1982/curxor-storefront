@@ -39,9 +39,9 @@ const SHOTS = [
 
 export function ScreenshotGallery() {
   return (
-    <section id="demo" className="relative scroll-mt-24 border-t border-white/10 py-16 sm:py-20">
+    <section id="demo" className="relative scroll-mt-24 border-t border-white/10 py-10 sm:py-12">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
               FLIGHT COMMAND · G3
@@ -55,7 +55,7 @@ export function ScreenshotGallery() {
           </p>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SHOTS.map((shot, index) => (
             <article
               key={shot.src}
@@ -97,7 +97,7 @@ export function ScreenshotGallery() {
           ))}
         </div>
 
-        <p className="mt-8 text-center text-xs leading-relaxed text-white/40">
+        <p className="mt-6 text-center text-xs leading-relaxed text-white/40">
           {actOneStory.honestyFooter}
         </p>
       </div>

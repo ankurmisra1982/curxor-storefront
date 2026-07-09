@@ -18,7 +18,7 @@ export function VisionBand() {
     <section
       id="vision"
       aria-labelledby="vision-heading"
-      className="relative border-t border-white/10 bg-black py-14 sm:py-20"
+      className="relative border-t border-white/10 bg-black py-12 sm:py-14"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-3xl">
@@ -27,18 +27,18 @@ export function VisionBand() {
           </p>
           <h2
             id="vision-heading"
-            className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl"
+            className="text-3xl font-bold tracking-tight sm:text-4xl"
           >
             {visionBand.headline}
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-white/50">
+          <p className="mt-3 text-sm leading-relaxed text-white/50">
             {visionBand.subhead}
           </p>
-          <p className="mt-3 text-xs italic text-white/35">{gtmConductorAccent}</p>
-          <p className="mt-2 text-xs italic text-white/30">{evolutionTease}</p>
+          <p className="mt-2 text-xs italic text-white/35">{gtmConductorAccent}</p>
+          <p className="mt-1 text-xs italic text-white/30">{evolutionTease}</p>
         </div>
 
-        <div className="mt-10 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-3">
+        <div className="mt-8 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-3">
           {roles.map((role) => (
             <article key={role.id} className="flex flex-col bg-black p-5 sm:p-6">
               <p className="text-[10px] tracking-[0.25em] text-neon-purple">
@@ -54,7 +54,7 @@ export function VisionBand() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-8 border border-neon-purple/20 bg-neon-purple/[0.03] p-6 sm:p-8 lg:grid-cols-2 lg:items-center">
+        <div className="mt-8 grid gap-6 border border-neon-purple/20 bg-neon-purple/[0.03] p-5 sm:p-6 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-[10px] tracking-[0.25em] text-neon-purple">
               SIGNAL · CONCEPT PREVIEW
@@ -74,11 +74,11 @@ export function VisionBand() {
           </div>
         </div>
 
-        <div className="mt-8 border border-amber-400/25 bg-black/40 p-6 sm:p-8">
+        <div className="mt-6 border border-amber-400/25 bg-black/40 p-5 sm:p-6">
           <p className="text-[10px] font-bold tracking-[0.25em] text-amber-200/90">
             {visionBand.cafeDisclaimer}
           </p>
-          <p className="mt-4 text-[10px] tracking-[0.25em] text-amber-200/60">
+          <p className="mt-3 text-[10px] tracking-[0.25em] text-amber-200/60">
             CAFE TIER · PROOF
           </p>
           <blockquote className="mt-3 max-w-xl border-l-2 border-amber-400/30 pl-4">
@@ -86,14 +86,14 @@ export function VisionBand() {
               {cafeProof.kicker}
             </p>
           </blockquote>
-          <h3 className="mt-5 text-lg font-bold tracking-wide text-white/90">
+          <h3 className="mt-4 text-lg font-bold tracking-wide text-white/90">
             {cafeProof.title}
           </h3>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-white/50">
             {cafeProof.body}
           </p>
-          <p className="mt-3 text-xs text-white/40">{visionBand.cafeTeaser}</p>
-          <div className="mt-8">
+          <p className="mt-2 text-xs text-white/40">{visionBand.cafeTeaser}</p>
+          <div className="mt-6">
             <CafeClawVisual />
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function OutreachPage() {
 
   return (
     <SiteShell>
-      <div className="mx-auto max-w-6xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 py-12 sm:py-14">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           OUTREACH CLAW · CURXOR OS {applianceVersion}
         </p>

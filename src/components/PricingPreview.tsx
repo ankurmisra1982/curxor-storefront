@@ -5,9 +5,9 @@ import { pricingTiers } from "@/lib/generated/pricing-sync";
 
 export function PricingPreview() {
   return (
-    <section id="pricing" className="relative border-t border-white/10 py-16 sm:py-20">
+    <section id="pricing" className="relative border-t border-white/10 py-12 sm:py-14">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
               LOCAL MODEL BUDGETS
@@ -24,7 +24,7 @@ export function PricingPreview() {
 
         <div className="grid gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
           {pricingTiers.map((tier) => (
-            <article key={tier.id} className="bg-black p-6 sm:p-8">
+            <article key={tier.id} className="bg-black p-5 sm:p-6">
               <p className="text-[10px] tracking-[0.25em] text-neon-purple">
                 {tier.label.toUpperCase()}
               </p>

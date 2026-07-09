@@ -6,9 +6,9 @@ import { clawOperators, operatorsSection } from "@/lib/claw-operators";
 
 export function PersonaGrid() {
   return (
-    <section id="operators" className="relative scroll-mt-24 border-t border-white/10 py-20 sm:py-28">
+    <section id="operators" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-12 max-w-2xl">
+        <div className="mb-8 max-w-2xl">
           <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
             {operatorsSection.eyebrow}
           </p>
@@ -73,7 +73,7 @@ export function PersonaGrid() {
           ))}
         </div>
 
-        <p className="mt-8 text-center text-[10px] text-white/30">
+        <p className="mt-6 text-center text-[10px] text-white/30">
           Composite operators — pre-launch storytelling, not paid endorsements.
         </p>
       </div>

@@ -16,7 +16,7 @@ export const metadata = {
 export default function CompareHubPage() {
   return (
     <SiteShell>
-      <div className="mx-auto max-w-6xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 py-12 sm:py-14">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           WHY CURXOR
         </p>

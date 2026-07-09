@@ -26,9 +26,9 @@ export function ComparisonTable() {
   if (!curxor) return null;
 
   return (
-    <section id="compare" className="relative border-t border-white/10 py-16 sm:py-20">
+    <section id="compare" className="relative border-t border-white/10 py-12 sm:py-14">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
               WHY CURXOR

@@ -9,10 +9,10 @@ const columns = [
 export function WhatIsThisStrip() {
   return (
     <section id="what-is-this" className="border-t border-white/10 bg-black/40">
-      <div className="mx-auto max-w-7xl px-6 py-10 sm:py-12">
-        <p className="mb-8 text-[10px] tracking-[0.3em] text-neon-purple">WHAT IS THIS?</p>
+      <div className="mx-auto max-w-7xl px-6 py-8 sm:py-10">
+        <p className="mb-6 text-[10px] tracking-[0.3em] text-neon-purple">WHAT IS THIS?</p>
 
-        <div className="grid gap-8 md:grid-cols-3 md:gap-6">
+        <div className="grid gap-6 md:grid-cols-3 md:gap-6">
           {columns.map((column) => (
             <div key={column.title}>
               <h2 className="text-sm font-bold tracking-wide text-white/90">{column.title}</h2>
@@ -21,7 +21,7 @@ export function WhatIsThisStrip() {
           ))}
         </div>
 
-        <p className="mt-8 border-t border-white/10 pt-6 text-xs text-white/40">
+        <p className="mt-6 border-t border-white/10 pt-5 text-xs text-white/40">
           {symphonyWhatIsThis.footer}
         </p>
       </div>

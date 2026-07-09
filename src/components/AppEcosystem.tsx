@@ -88,9 +88,9 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
 
   if (variant === "featured") {
     return (
-      <section id="apps" className="relative scroll-mt-24 border-t border-white/10 py-16 sm:py-20">
+      <section id="apps" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-14">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
                 THE STACK
@@ -110,7 +110,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
             ))}
           </div>
 
-          <div className="mt-8">
+          <div className="mt-6">
             <Link
               href="/architecture#claw-roster"
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
@@ -124,9 +124,9 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
   }
 
   return (
-    <section id="apps" className="relative border-t border-white/10 py-24">
+    <section id="apps" className="relative border-t border-white/10 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
               DIGITAL EMPLOYEES

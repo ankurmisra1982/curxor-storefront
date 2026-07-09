@@ -9,17 +9,17 @@ import { footerLinks } from "@/lib/legal";
 
 export function Footer() {
   return (
-    <footer id="subscribe" className="relative scroll-mt-24 border-t border-white/10 py-16">
+    <footer id="subscribe" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-14">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-12 md:grid-cols-2 md:items-start">
+        <div className="grid gap-8 md:grid-cols-2 md:items-start">
           <div>
-            <p className="mb-4 text-[10px] tracking-[0.3em] text-neon-purple">
+            <p className="mb-3 text-[10px] tracking-[0.3em] text-neon-purple">
               STAY IN ORBIT
             </p>
             <h3 className="mb-2 text-xl font-bold tracking-tight">
               Get launch updates
             </h3>
-            <p className="mb-6 max-w-sm text-xs leading-relaxed text-white/40">
+            <p className="mb-5 max-w-sm text-xs leading-relaxed text-white/40">
               Forge updates, Claw vertical drops, and pre-order availability —
               delivered to your inbox.
             </p>

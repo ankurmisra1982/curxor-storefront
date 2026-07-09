@@ -8,8 +8,8 @@ export function TrustStrip() {
       aria-label="Pre-order trust signals"
       className="border-b border-white/10 bg-black/60"
     >
-      <div className="mx-auto max-w-7xl px-6 py-4">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-6 py-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {trustSignals.map((signal) => (
             <div key={signal.label} className="min-w-0">
               <p className="text-[9px] tracking-[0.25em] text-white/35">

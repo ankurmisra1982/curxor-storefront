@@ -28,10 +28,10 @@ export function HowItWorks() {
     <section
       id="how-it-works"
       aria-labelledby="how-it-works-heading"
-      className="scroll-mt-24 border-t border-white/10 bg-white/[0.02] py-14 sm:py-16"
+      className="scroll-mt-24 border-t border-white/10 bg-white/[0.02] py-10 sm:py-12"
     >
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-8 max-w-2xl">
+        <div className="mb-6 max-w-2xl">
           <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">HOW IT WORKS</p>
           <h2
             id="how-it-works-heading"
@@ -45,7 +45,7 @@ export function HowItWorks() {
         </div>
         <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {beats.map((beat) => (
-            <article key={beat.step} className="bg-black px-5 py-6 sm:px-6">
+            <article key={beat.step} className="bg-black px-5 py-5 sm:px-6">
               <p className="text-[10px] tracking-[0.3em] text-neon-purple">
                 {beat.step}
               </p>

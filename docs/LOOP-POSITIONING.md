@@ -32,7 +32,9 @@ This doc translates that architecture into **storefront-safe language**. No dev-
 
 **Live H1 (CEO lock):** **Your AI team. On a box you own.** — `siteConfig.heroHeadline` · subscribe-first · no category film on cold homepage until G4.
 
-**Category spine:** *Mint autonomous employees on bare metal* — `metaDescription`, pitch deck, investor async. Not the cold-traffic H1.
+**Category spine:** *Mint autonomous employees on bare metal* — `metaDescription` / SEO only. **Not** the pitch-deck title.
+
+**Pitch / investor lead (locked):** *A sovereign AI system on your desk — with digital employees that run wealth, creation, and work on metal you own.* — `PITCH-DECK.md` · `INVESTOR-MEMO.md`. Mint stays off the deck title slide.
 
 | Role | Copy |
 |------|------|

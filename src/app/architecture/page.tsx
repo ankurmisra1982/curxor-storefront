@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ClawCheatSheetSection } from "@/components/ClawCheatSheetSection";
 import { SiteShell } from "@/components/SiteShell";
@@ -120,7 +121,22 @@ export default function ArchitecturePage() {
           <h2 className="mb-6 text-xs font-bold tracking-[0.3em] text-neon-purple">
             MS-S1 VALIDATION · G1–G3
           </h2>
-          <ValidationBadge />
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,14rem)] lg:items-start">
+            <ValidationBadge />
+            <figure className="border border-white/10 bg-black">
+              <Image
+                src={hardwareValidation.deskStill.src}
+                alt={hardwareValidation.deskStill.alt}
+                width={hardwareValidation.deskStill.width}
+                height={hardwareValidation.deskStill.height}
+                className="h-auto w-full"
+                sizes="(max-width: 1024px) 100vw, 14rem"
+              />
+              <figcaption className="border-t border-white/10 px-3 py-2 text-[10px] leading-relaxed tracking-wide text-white/35">
+                {hardwareValidation.deskStill.caption}
+              </figcaption>
+            </figure>
+          </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {(
               [

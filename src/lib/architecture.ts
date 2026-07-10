@@ -5,6 +5,16 @@ export const hardwareValidation = {
   badgeAriaLabel: "curXor — MS-S1 unboxed · G1 golden path closed",
   badgeSummary:
     "MS-S1 MAX unboxed Jun 28, 2026. G1 golden path closed Jun 29 — G2/G3 closed Jul 2026. CurXor OS v1.0.3, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
+  /** Founder-box desk still — proof, not product photography. */
+  deskStill: {
+    src: "/demo/hardware/ms-s1-desk-topdown.png",
+    alt: "MS-S1 MAX founder box on desk — top-down capture with curXor chassis badge",
+    caption: "Founder-box capture · MS-S1 MAX · not product photography",
+    width: 1024,
+    height: 1007,
+  },
+
+
   computeBenchNote:
     "126 TOPS local NPU — ROCm inference validated on Standard 64 (moondream:1.8b, qwen3:8b); published mesh benchmarks pending",
   telemetryNote:

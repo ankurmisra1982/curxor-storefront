@@ -9,6 +9,7 @@ export const footerLinks = [
   { href: "/for/creators", label: "For creators" },
   { href: "/compare", label: "Compare" },
   { href: "/pricing", label: "Pricing" },
+  { href: "/about", label: "About" },
   { href: "/architecture", label: "Architecture" },
   { href: "/changelog", label: "Changelog" },
   { href: "/press", label: "Press" },

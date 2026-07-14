@@ -6,11 +6,28 @@ import { SocialLinks } from "@/components/SocialLinks";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { socialProofLine } from "@/lib/marketing";
 import { footerLinks } from "@/lib/legal";
+import { missionVision } from "@/lib/mission-vision";
 
 export function Footer() {
+  const { shortPair } = missionVision;
+
   return (
     <footer id="subscribe" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-14">
       <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-10 max-w-2xl border-b border-white/10 pb-8">
+          <p className="text-xs leading-relaxed text-white/40">
+            <span className="text-white/55">Mission —</span> {shortPair.mission}
+          </p>
+          <p className="mt-2 text-xs leading-relaxed text-white/40">
+            <span className="text-white/55">Vision —</span> {shortPair.vision}
+          </p>
+          <Link
+            href="/about"
+            className="mt-4 inline-block text-[10px] tracking-[0.2em] text-neon-purple transition-colors hover:text-white/80"
+          >
+            ABOUT →
+          </Link>
+        </div>
         <div className="grid gap-8 md:grid-cols-2 md:items-start">
           <div>
             <p className="mb-3 text-[10px] tracking-[0.3em] text-neon-purple">

@@ -25,6 +25,11 @@ const AppEcosystem = dynamic(() =>
 const PricingPreview = dynamic(() =>
   import("@/components/PricingPreview").then((m) => ({ default: m.PricingPreview }))
 );
+const MissionVisionSection = dynamic(() =>
+  import("@/components/MissionVisionSection").then((m) => ({
+    default: m.MissionVisionSection,
+  }))
+);
 const Faq = dynamic(() =>
   import("@/components/Faq").then((m) => ({ default: m.Faq }))
 );
@@ -50,6 +55,7 @@ export default function Home() {
       <ComparisonTable />
       <AppEcosystem variant="featured" />
       <PricingPreview />
+      <MissionVisionSection />
       <Faq />
       <Footer />
       <MobileStickyCta />

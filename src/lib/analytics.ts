@@ -7,7 +7,8 @@ export type PreorderLocation =
   | "compare"
   | "persona"
   | "pricing"
-  | "architecture";
+  | "architecture"
+  | "about";
 
 export type ScrollDepth = 25 | 50 | 75 | 100;
 

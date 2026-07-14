@@ -5,14 +5,14 @@ import { missionVision } from "@/lib/mission-vision";
 type Variant = "home" | "about";
 
 /**
- * Mission & Vision — About / below pricing. Never the main hero H1.
+ * Mission, Vision & Purpose — About / below pricing. Never the main hero H1.
  */
 export function MissionVisionSection({
   variant = "home",
 }: {
   variant?: Variant;
 }) {
-  const { eyebrow, mission, vision, buyToday } = missionVision;
+  const { eyebrow, mission, vision, purpose, buyToday } = missionVision;
   const headingId =
     variant === "about" ? "about-mission-heading" : "mission-vision-heading";
 
@@ -32,14 +32,14 @@ export function MissionVisionSection({
               id={headingId}
               className="text-3xl font-bold tracking-tight sm:text-4xl"
             >
-              Mission &amp; Vision
+              Mission, Vision &amp; Purpose
             </h1>
           ) : (
             <h2
               id={headingId}
               className="text-3xl font-bold tracking-tight sm:text-4xl"
             >
-              Mission &amp; Vision
+              Mission, Vision &amp; Purpose
             </h2>
           )}
         </div>
@@ -61,6 +61,15 @@ export function MissionVisionSection({
               {vision.body}
             </p>
           </div>
+        </div>
+
+        <div className="mt-10 max-w-3xl">
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">
+            {purpose.label.toUpperCase()}
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-white/75 sm:text-lg">
+            {purpose.body}
+          </p>
         </div>
 
         <div className="mt-10 max-w-3xl border-t border-white/10 pt-8">

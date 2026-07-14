@@ -21,6 +21,9 @@ export function Footer() {
           <p className="mt-2 text-xs leading-relaxed text-white/40">
             <span className="text-white/55">Vision —</span> {shortPair.vision}
           </p>
+          <p className="mt-2 text-xs leading-relaxed text-white/40">
+            <span className="text-white/55">Purpose —</span> {shortPair.purpose}
+          </p>
           <Link
             href="/about"
             className="mt-4 inline-block text-[10px] tracking-[0.2em] text-neon-purple transition-colors hover:text-white/80"

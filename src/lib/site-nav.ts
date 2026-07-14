@@ -32,7 +32,7 @@ export const navGroups: NavGroup[] = [
     id: "why",
     label: "WHY CURXOR",
     items: [
-      { href: "/about", label: "Mission & Vision", description: "Principal · companion · ownable metal" },
+      { href: "/about", label: "Mission, Vision & Purpose", description: "Principal · companion · ownable metal" },
       { href: "/compare", label: "Compare alternatives", description: "Honest buyer tables" },
       { href: "/architecture", label: "Stack & architecture", description: "OS · ports · tiers" },
       { href: "/#operators", label: "Meet operators", description: "Persona stories on home" },

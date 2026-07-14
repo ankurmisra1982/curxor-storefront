@@ -10,7 +10,7 @@ import { siteConfig } from "@/lib/config";
 export const metadata: Metadata = {
   title: `About — ${siteConfig.name}`,
   description:
-    "CurXor mission and vision: make the operator the principal of their AI — companions on metal they own. Desk appliance with CurXor OS, $3,999 once.",
+    "CurXor mission, vision, and purpose: make the operator the principal of their AI — companions on metal they own. Desk appliance with CurXor OS, $3,999 once.",
   alternates: { canonical: "/about" },
 };
 
@@ -41,6 +41,9 @@ export default function AboutPage() {
         </p>
         <p className="mt-2 text-xs leading-relaxed text-white/40">
           <span className="text-white/55">Vision —</span> {shortPair.vision}
+        </p>
+        <p className="mt-2 text-xs leading-relaxed text-white/40">
+          <span className="text-white/55">Purpose —</span> {shortPair.purpose}
         </p>
         <p className="mt-8 text-xs text-white/35">
           Product story and pricing:{" "}

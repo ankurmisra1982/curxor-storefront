@@ -6,11 +6,26 @@ import { TcoSection } from "@/components/TcoSection";
 import { comparePages } from "@/lib/compare-pages";
 import { siteConfig } from "@/lib/config";
 
+const compareTitle = `Compare — ${siteConfig.name}`;
+const compareDescription =
+  "CurXor vs ClawBox, Perplexity Personal Computer, MIKY, Mac Studio + Ollama, and NVIDIA NemoClaw.";
+
 export const metadata = {
-  title: `Compare — ${siteConfig.name}`,
-  description:
-    "CurXor vs ClawBox, Perplexity Personal Computer, MIKY, Mac Studio + Ollama, and NVIDIA NemoClaw.",
+  title: compareTitle,
+  description: compareDescription,
   alternates: { canonical: "/compare" },
+  openGraph: {
+    title: compareTitle,
+    description: compareDescription,
+    url: `${siteConfig.siteUrl}/compare`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: compareTitle,
+    description: compareDescription,
+  },
 };
 
 export default function CompareHubPage() {

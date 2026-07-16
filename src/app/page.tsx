@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { JsonLd } from "@/components/JsonLd";
 import { TrustStrip } from "@/components/TrustStrip";
 import { WhatIsThisStrip } from "@/components/WhatIsThisStrip";
 
@@ -43,6 +44,7 @@ const MobileStickyCta = dynamic(() =>
 export default function Home() {
   return (
     <main className="relative">
+      <JsonLd product faq organization={false} />
       <div className="pointer-events-none fixed inset-0 grid-industrial opacity-40" />
       <Header />
       <Hero />

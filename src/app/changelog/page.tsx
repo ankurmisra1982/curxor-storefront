@@ -5,10 +5,26 @@ import { changelogEntries, changelogMeta } from "@/lib/changelog";
 import { siteConfig } from "@/lib/config";
 import { qaMetricsLine } from "@/lib/qa-metrics";
 
+const changelogTitle = `Changelog — ${siteConfig.name}`;
+const changelogDescription =
+  "CurXor OS and storefront release notes tied to appliance version.";
+
 export const metadata: Metadata = {
-  title: `Changelog — ${siteConfig.name}`,
-  description: "CurXor OS and storefront release notes tied to appliance version.",
+  title: changelogTitle,
+  description: changelogDescription,
   alternates: { canonical: "/changelog" },
+  openGraph: {
+    title: changelogTitle,
+    description: changelogDescription,
+    url: `${siteConfig.siteUrl}/changelog`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: changelogTitle,
+    description: changelogDescription,
+  },
 };
 
 export default function ChangelogPage() {

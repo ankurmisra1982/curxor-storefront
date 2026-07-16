@@ -7,11 +7,26 @@ import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { missionVision } from "@/lib/mission-vision";
 import { siteConfig } from "@/lib/config";
 
+const aboutTitle = `About — ${siteConfig.name}`;
+const aboutDescription =
+  "CurXor mission, vision, and purpose: make the operator the principal of their AI — companions on metal they own. Desk appliance with CurXor OS, $3,999 once.";
+
 export const metadata: Metadata = {
-  title: `About — ${siteConfig.name}`,
-  description:
-    "CurXor mission, vision, and purpose: make the operator the principal of their AI — companions on metal they own. Desk appliance with CurXor OS, $3,999 once.",
+  title: aboutTitle,
+  description: aboutDescription,
   alternates: { canonical: "/about" },
+  openGraph: {
+    title: aboutTitle,
+    description: aboutDescription,
+    url: `${siteConfig.siteUrl}/about`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: aboutTitle,
+    description: aboutDescription,
+  },
 };
 
 export default function AboutPage() {

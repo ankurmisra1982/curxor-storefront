@@ -1,6 +1,21 @@
 import { faqItems, productIdentity, siteConfig, socialSameAs } from "@/lib/config";
 
-export function JsonLd() {
+type JsonLdProps = {
+  /** Product + Offer — home and pricing only (not sitewide). */
+  product?: boolean;
+  /** FAQPage — homepage only (FAQ UI lives at /#faq). */
+  faq?: boolean;
+  /** Organization — safe sitewide. Default true. */
+  organization?: boolean;
+};
+
+export function JsonLd({
+  product = false,
+  faq = false,
+  organization = true,
+}: JsonLdProps) {
+  const waitlistOfferUrl = `${siteConfig.siteUrl}/#subscribe`;
+
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -16,7 +31,7 @@ export function JsonLd() {
     image: `${siteConfig.siteUrl}/opengraph-image`,
     offers: {
       "@type": "Offer",
-      url: siteConfig.stripeCheckoutUrl,
+      url: waitlistOfferUrl,
       priceCurrency: "USD",
       price: siteConfig.preOrderPriceUsd,
       availability: "https://schema.org/PreOrder",
@@ -61,18 +76,24 @@ export function JsonLd() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
+      {product ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+        />
+      ) : null}
+      {faq ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      ) : null}
+      {organization ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      ) : null}
     </>
   );
 }

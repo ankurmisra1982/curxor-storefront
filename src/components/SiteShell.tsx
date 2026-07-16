@@ -12,7 +12,7 @@ export function SiteShell({
     <div className={`relative min-h-screen ${className}`}>
       <div className="pointer-events-none fixed inset-0 grid-industrial opacity-40" />
       <Header />
-      <div className="relative pt-24">{children}</div>
+      <main className="relative pt-24">{children}</main>
       <Footer />
     </div>
   );

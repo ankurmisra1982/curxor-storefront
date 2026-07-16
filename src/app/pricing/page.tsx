@@ -4,17 +4,33 @@ import Link from "next/link";
 import { ComputeLadder } from "@/components/ComputeLadder";
 import { OpenWeightTierCompare } from "@/components/OpenWeightTierCompare";
 import { InfoTip } from "@/components/InfoTip";
+import { JsonLd } from "@/components/JsonLd";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { pricingEvolutionBlurb } from "@/lib/compute-ladder";
 import { pricingModels, pricingTiers } from "@/lib/generated/pricing-sync";
 import { siteConfig } from "@/lib/config";
 
+const pricingTitle = `Pricing — ${siteConfig.name}`;
+const pricingDescription =
+  "$3,999 once for the CurXor desk appliance — join the waitlist. Local UMA tiers (Economy, Balanced, Performance) on the same box. $0/mo CurXor API rent.";
+
 export const metadata: Metadata = {
-  title: `Pricing — ${siteConfig.name}`,
-  description:
-    "CurXor pricing and local UMA tiers: Economy, Balanced, and Performance model budgets on the same appliance.",
+  title: pricingTitle,
+  description: pricingDescription,
   alternates: { canonical: "/pricing" },
+  openGraph: {
+    title: pricingTitle,
+    description: pricingDescription,
+    url: `${siteConfig.siteUrl}/pricing`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pricingTitle,
+    description: pricingDescription,
+  },
 };
 
 function roleLabel(role: string): string {
@@ -25,6 +41,7 @@ function roleLabel(role: string): string {
 export default function PricingPage() {
   return (
     <SiteShell>
+      <JsonLd product organization={false} />
       <div className="mx-auto max-w-6xl px-6 py-12 sm:py-14">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           PRICING

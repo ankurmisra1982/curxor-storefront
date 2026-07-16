@@ -27,6 +27,13 @@ export const metadata: Metadata = {
     title: signalPageMeta.title,
     description: signalPageMeta.description,
     url: `${siteConfig.siteUrl}/signal`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: signalPageMeta.title,
+    description: signalPageMeta.description,
   },
 };
 

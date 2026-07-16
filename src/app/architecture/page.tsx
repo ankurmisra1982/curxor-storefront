@@ -11,11 +11,26 @@ import { gtmTierLegend } from "@/lib/claw-gtm-tiers";
 import { qaMetricsLine } from "@/lib/qa-metrics";
 import { siteConfig, applianceVersion } from "@/lib/config";
 
+const architectureTitle = `Architecture — ${siteConfig.name}`;
+const architectureDescription =
+  "Four-pillar sovereign stack: compute, engine, telemetry mesh, and Flight Command — with eno1 Command and eno2 Egress isolation.";
+
 export const metadata: Metadata = {
-  title: `Architecture — ${siteConfig.name}`,
-  description:
-    "Four-pillar sovereign stack: compute, engine, telemetry mesh, and Flight Command — with eno1 Command and eno2 Egress isolation.",
+  title: architectureTitle,
+  description: architectureDescription,
   alternates: { canonical: "/architecture" },
+  openGraph: {
+    title: architectureTitle,
+    description: architectureDescription,
+    url: `${siteConfig.siteUrl}/architecture`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: architectureTitle,
+    description: architectureDescription,
+  },
 };
 
 export default function ArchitecturePage() {

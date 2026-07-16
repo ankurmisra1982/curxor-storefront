@@ -28,7 +28,15 @@ export const metadata: Metadata = {
     title: capitalPageMeta.title,
     description: capitalPageMeta.description,
     url: `${siteConfig.siteUrl}/capital`,
+    siteName: siteConfig.name,
+    type: "website",
     images: [{ url: `${siteConfig.siteUrl}/demo/03-capital-claw.png` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: capitalPageMeta.title,
+    description: capitalPageMeta.description,
+    images: [`${siteConfig.siteUrl}/demo/03-capital-claw.png`],
   },
 };
 

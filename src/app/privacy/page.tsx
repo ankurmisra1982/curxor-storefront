@@ -4,11 +4,26 @@ import { SiteShell } from "@/components/SiteShell";
 import { legalUpdated } from "@/lib/legal";
 import { siteConfig } from "@/lib/config";
 
+const privacyTitle = `Privacy Policy — ${siteConfig.name}`;
+const privacyDescription =
+  "How CurXor handles email subscriptions, local inference privacy, and sovereign appliance data.";
+
 export const metadata: Metadata = {
-  title: `Privacy Policy — ${siteConfig.name}`,
-  description:
-    "How CurXor handles email subscriptions, local inference privacy, and sovereign appliance data.",
+  title: privacyTitle,
+  description: privacyDescription,
   alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: privacyTitle,
+    description: privacyDescription,
+    url: `${siteConfig.siteUrl}/privacy`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: privacyTitle,
+    description: privacyDescription,
+  },
 };
 
 export default function PrivacyPage() {

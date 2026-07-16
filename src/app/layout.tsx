@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={jetbrainsMono.variable}>
       <body className="min-h-screen overflow-x-hidden pb-20 md:pb-0">
-        <JsonLd />
+        <JsonLd organization />
         {children}
         <ScrollDepthTracker />
         <Analytics />

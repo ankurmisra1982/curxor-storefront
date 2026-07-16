@@ -28,7 +28,15 @@ export const metadata: Metadata = {
     title: outreachPageMeta.title,
     description: outreachPageMeta.description,
     url: `${siteConfig.siteUrl}/outreach`,
+    siteName: siteConfig.name,
+    type: "website",
     images: [{ url: `${siteConfig.siteUrl}/demo/outreach/21-pipeline.png` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: outreachPageMeta.title,
+    description: outreachPageMeta.description,
+    images: [`${siteConfig.siteUrl}/demo/outreach/21-pipeline.png`],
   },
 };
 

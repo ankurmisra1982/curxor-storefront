@@ -8,10 +8,26 @@ import { changelogEntries, changelogMeta } from "@/lib/changelog";
 import { siteConfig } from "@/lib/config";
 import { investorDeckMailto, pressKit } from "@/lib/press";
 
+const pressTitle = `Press Kit — ${siteConfig.name}`;
+const pressDescription =
+  "Boilerplate, facts, and assets for CurXor media and investor outreach.";
+
 export const metadata: Metadata = {
-  title: `Press Kit — ${siteConfig.name}`,
-  description: "Boilerplate, facts, and assets for CurXor media and investor outreach.",
+  title: pressTitle,
+  description: pressDescription,
   alternates: { canonical: "/press" },
+  openGraph: {
+    title: pressTitle,
+    description: pressDescription,
+    url: `${siteConfig.siteUrl}/press`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pressTitle,
+    description: pressDescription,
+  },
 };
 
 const statusStyles = {

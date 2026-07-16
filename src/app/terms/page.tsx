@@ -4,11 +4,26 @@ import { SiteShell } from "@/components/SiteShell";
 import { legalUpdated } from "@/lib/legal";
 import { applianceVersion, clawRosterLabel, siteConfig } from "@/lib/config";
 
+const termsTitle = `Terms & Disclaimers — ${siteConfig.name}`;
+const termsDescription =
+  "Pre-order terms, trading disclaimers, and limitations for CurXor hardware and Claw software.";
+
 export const metadata: Metadata = {
-  title: `Terms & Disclaimers — ${siteConfig.name}`,
-  description:
-    "Pre-order terms, trading disclaimers, and limitations for CurXor hardware and Claw software.",
+  title: termsTitle,
+  description: termsDescription,
   alternates: { canonical: "/terms" },
+  openGraph: {
+    title: termsTitle,
+    description: termsDescription,
+    url: `${siteConfig.siteUrl}/terms`,
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: termsTitle,
+    description: termsDescription,
+  },
 };
 
 export default function TermsPage() {

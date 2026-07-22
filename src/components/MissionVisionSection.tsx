@@ -6,13 +6,22 @@ type Variant = "home" | "about";
 
 /**
  * Mission, Vision & Purpose — About / below pricing. Never the main hero H1.
+ * Purpose horizon + pillars = dream-state / after-fundraise personal algorithm pattern.
  */
 export function MissionVisionSection({
   variant = "home",
 }: {
   variant?: Variant;
 }) {
-  const { eyebrow, mission, vision, purpose, buyToday } = missionVision;
+  const {
+    eyebrow,
+    mission,
+    vision,
+    purpose,
+    purposeHorizon,
+    purposePillars,
+    buyToday,
+  } = missionVision;
   const headingId =
     variant === "about" ? "about-mission-heading" : "mission-vision-heading";
 
@@ -69,6 +78,35 @@ export function MissionVisionSection({
           </p>
           <p className="mt-3 text-base leading-relaxed text-white/75 sm:text-lg">
             {purpose.body}
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-white/50">
+            {purpose.gloss}
+          </p>
+        </div>
+
+        <div className="mt-10 max-w-4xl rounded-sm border border-white/10 bg-white/[0.02] px-5 py-6 sm:px-6 sm:py-8">
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">
+            {purposeHorizon.label.toUpperCase()}
+          </p>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/55 sm:text-base">
+            {purposeHorizon.body}
+          </p>
+
+          <ul className="mt-7 grid gap-5 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
+            {purposePillars.map((pillar) => (
+              <li key={pillar.title}>
+                <p className="text-sm font-medium tracking-tight text-white/80">
+                  {pillar.title}
+                </p>
+                <p className="mt-1.5 text-sm leading-relaxed text-white/45">
+                  {pillar.body}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-7 border-t border-white/5 pt-5 text-[11px] tracking-[0.12em] text-white/35">
+            {purposeHorizon.honesty}
           </p>
         </div>
 

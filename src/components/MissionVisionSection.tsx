@@ -88,7 +88,7 @@ export function MissionVisionSection({
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             {purposeHorizon.label.toUpperCase()}
           </p>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/55 sm:text-base">
+          <p className="mt-3 text-sm leading-relaxed text-white/55 sm:text-base">
             {purposeHorizon.body}
           </p>
 

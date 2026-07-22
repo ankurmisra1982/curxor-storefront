@@ -84,7 +84,7 @@ export function MissionVisionSection({
           </p>
         </div>
 
-        <div className="mt-10 max-w-4xl rounded-sm border border-white/10 bg-white/[0.02] px-5 py-6 sm:px-6 sm:py-8">
+        <div className="mt-10 w-full rounded-sm border border-white/10 bg-white/[0.02] px-5 py-6 sm:px-6 sm:py-8">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             {purposeHorizon.label.toUpperCase()}
           </p>
@@ -92,7 +92,7 @@ export function MissionVisionSection({
             {purposeHorizon.body}
           </p>
 
-          <ul className="mt-7 grid gap-5 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
+          <ul className="mt-7 grid gap-5 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-6">
             {purposePillars.map((pillar) => (
               <li key={pillar.title}>
                 <p className="text-sm font-medium tracking-tight text-white/80">

@@ -13,10 +13,10 @@ OS: Ubuntu 24.04 · CurXor OS v1.0.3
 Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
 RAM in use: 4.56 / 64 GB · UMA 7.1%
 Dashboard: Flight Command on LAN :3080
-QA: 239 smoke · G3 capture unit green
+QA: 239 smoke · demo capture unit green
 Pricing: $3,999 once · $0/mo operate-plane API
-Stage: G1/G2/G3 green · Ops Wave 1 priority green · G4 UAT open · pre-revenue · solo founder
-Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · G3 closed Jul 8 · Wave 1 dogfood 7/7 Jul 9`;
+Stage: Working product on MS-S1 MAX · founder-box ops green · external UAT next · pre-revenue · solo founder
+Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · Wave 1 dogfood 7/7 Jul 9`;
 
 export const investorDeckMailto =
   "mailto:hello@curxor.ai?subject=Investor%20inquiry%20%E2%80%94%20CurXor";
@@ -40,8 +40,8 @@ export const pressKit = {
 
   investorIntro: {
     eyebrow: "COMPANY",
-    headline: "Sovereign agent appliance — G1/G2/G3 closed on MS-S1.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; G1 golden path closed 2026-06-29; G3 demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Work), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Ops Wave 1 priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops dogfood receipts; Capital stays paper). G4 is first external operator UAT — not started. Not a customer fleet and not live brokerage fills.",
+    headline: "Sovereign agent appliance — working product on real MS-S1 metal.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Work), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops dogfood receipts; Capital stays paper). Next: first external operator UAT — not started. Not a customer fleet and not live brokerage fills.",
   },
 
   founders: {
@@ -55,7 +55,7 @@ export const pressKit = {
       },
     ],
     technicalCoFounderLine:
-      "Appliance software, production OTA (G2), and factory artifacts are led by a technical co-founder — details shared in diligence conversations.",
+      "Appliance software, production OTA, and factory artifacts are led by a technical co-founder — details shared in diligence conversations.",
   },
 
   traction: {
@@ -95,21 +95,21 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "Storefront GTM at curxor.ai — symphony model, investor press kit, Waves A–E polish, G1 mirror across validation surfaces, Resend waitlist + Stripe pre-order",
+          "Storefront GTM at curxor.ai — symphony model, investor press kit, polish waves, validation surfaces mirrored, Resend waitlist + Stripe pre-order",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**G1 golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, `verify-unbox-day.sh` PASS, smile test PASS, telemetry broker on 10.77.0.1",
+          "**Golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, `verify-unbox-day.sh` PASS, smile test PASS, telemetry broker on 10.77.0.1",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**Ops Wave 1 priority green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder box (dogfood 7/7; Capital paper-only)",
+          "**Priority ops bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder box (dogfood 7/7; Capital paper-only)",
       },
       {
         status: "Pending" as const,
-        milestone: "First external operator UAT (G4) · design-partner smiles",
+        milestone: "First external operator UAT · design-partner smiles",
       },
       {
         status: "Pending" as const,
@@ -117,7 +117,7 @@ export const pressKit = {
       },
     ],
     footnote:
-      "G3 captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Ops Wave 1 bridges are proven on the founder box with real receipts — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
+      "Desk captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Priority bridges are proven on the founder box with real receipts — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
     footnoteLink: { href: "/terms", label: "Terms — Software maturity" },
   },
 
@@ -146,7 +146,7 @@ export const pressKit = {
   whyCurXor: [
     "Category creation — independent computer for digital employees, not DIY Ollama or SaaS agents",
     "Sovereignty story — eno1 command · eno2 egress only · physical kill switch",
-    "Software-led proof — FRE, local inference, and G1 golden path on unboxed MS-S1",
+    "Software-led proof — FRE, local inference, and golden path on unboxed MS-S1",
     "Honest depth tiers — Flagship · Forge · Cafe · Preview on every Claw",
     "Viral loop — The Forge mints custom Claws without per-token billing",
   ],
@@ -231,7 +231,7 @@ export const pressKit = {
   },
 
   maturityDisclaimer:
-    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — G1/G2/G3 closed Jul 8: FRE, local inference, G3 investor pack, and desk strips validated on Standard 64. Capital Claw supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier Claws are working shells with local data — production depth ships on the appliance roadmap.",
+    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — by Jul 8: FRE, local inference, investor proof pack, and desk strips validated on Standard 64. Capital Claw supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier Claws are working shells with local data — production depth ships on the appliance roadmap.",
 
   facts: [
     { label: "Company", value: "CurXor Systems" },

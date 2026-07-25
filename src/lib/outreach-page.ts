@@ -5,7 +5,7 @@ export const outreachDemoHero = {
   src: g3Screenshots.workPipeline,
   alt: "Outreach Claw desk — pipeline and active sequences",
   caption:
-    "G3 capture — Work pipeline on CurXor OS. UI and routing are real; outbound sends deferred until bridges are wired.",
+    "Demo capture — Work pipeline on CurXor OS. UI and routing are real; outbound sends deferred until bridges are wired.",
 } as const;
 
 export const outreachDeskStrip = {
@@ -64,7 +64,7 @@ export const outreachFlowShots = [
   {
     src: g3Screenshots.workPipeline,
     title: "Lead pipeline",
-    body: "CRM stages, active sequences, and local store — G3 capture from MS-S1.",
+    body: "CRM stages, active sequences, and local store — demo capture from MS-S1.",
   },
   {
     src: "/demo/outreach/22-sequences.png",

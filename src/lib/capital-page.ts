@@ -5,7 +5,7 @@ export const capitalDemoHero = {
   src: g3Screenshots.capitalPaper,
   alt: "Capital Claw desk — paper book, rules, and portfolio panels",
   caption:
-    "G3 capture — Capital Claw paper book on CurXor OS. Practice mode — rules, log, and cafe proof are real on the appliance; live broker book not shown.",
+    "Demo capture — Capital Claw paper book on CurXor OS. Practice mode — rules, log, and cafe proof are real on the appliance; live broker book not shown.",
   label: "PRACTICE MODE · PAPER BOOK",
 } as const;
 
@@ -64,7 +64,7 @@ export const capitalFlowShots = [
   {
     src: g3Screenshots.systemHealthToks,
     title: "System Health · tok/s",
-    body: "38 tok/s qwen3:8b on box — local inference metrics from G3 capture.",
+    body: "38 tok/s qwen3:8b on box — local inference metrics from demo capture.",
   },
   {
     src: "/demo/capital/17-setup-wizard.png",

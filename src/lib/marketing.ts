@@ -33,7 +33,7 @@ export const trustSignals = [
   },
 ] as const;
 
-export const socialProofLine = `CurXor OS v${applianceVersion} · ${qaMetrics.smokeChecks} smoke · G1/G2/G3 closed`;
+export const socialProofLine = `CurXor OS v${applianceVersion} · ${qaMetrics.smokeChecks} smoke · golden path on MS-S1`;
 
 export const priceIncludes = {
   headline: "What $3,999 includes",

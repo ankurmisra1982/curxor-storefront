@@ -46,7 +46,7 @@ export default function ChangelogPage() {
             month: "long",
             day: "numeric",
           })}
-          . {qaMetricsLine} in curxor-os. MS-S1 MAX unboxed 2026-06-28 — G1 golden
+          . {qaMetricsLine} in curxor-os. MS-S1 MAX unboxed 2026-06-28 — golden
           path closed Jun 29 (verify script + smile test PASS; COMMAND captive portal
           + EGRESS mesh live on box).
         </p>

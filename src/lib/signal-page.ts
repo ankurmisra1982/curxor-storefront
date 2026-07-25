@@ -22,7 +22,7 @@ export const signalHorizonCopy = {
   subhead:
     "Pins orbit. Headsets float. Robots wait. The conductor was never on your face — it sits on your desk, with two ethernet ports and a policy you own.",
   conceptLabel:
-    "Concept illustration — device archetypes only, not product endorsements. Full film ships at product reveal (G4).",
+    "Concept illustration — device archetypes only, not product endorsements. Full film lands with product reveal.",
 } as const;
 
 export const signalDeviceClasses = [

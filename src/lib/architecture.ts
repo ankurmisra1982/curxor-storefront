@@ -2,9 +2,9 @@
 export const hardwareValidation = {
   unboxDate: "2026-06-28",
   g1ClosedDate: "2026-06-29",
-  badgeAriaLabel: "curXor — MS-S1 unboxed · G1 golden path closed",
+  badgeAriaLabel: "curXor — MS-S1 unboxed · golden path closed",
   badgeSummary:
-    "MS-S1 MAX unboxed Jun 28, 2026. G1 golden path closed Jun 29 — G2/G3 closed Jul 2026. CurXor OS v1.0.3, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
+    "MS-S1 MAX unboxed Jun 28, 2026. Golden path closed Jun 29 — depth wave and demo captures closed Jul 2026. CurXor OS v1.0.3, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
   /** Founder-box desk still — proof, not product photography. */
   deskStill: {
     src: "/demo/hardware/ms-s1-desk-topdown.png",
@@ -32,7 +32,7 @@ export const hardwareValidation = {
     ],
   },
   g1Closed: {
-    eyebrow: "G1 CLOSED",
+    eyebrow: "GOLDEN PATH",
     items: [
       "Golden path complete — closed Jun 29, 2026",
       "Dual-port topology verified on MS-S1 MAX hardware",
@@ -40,7 +40,7 @@ export const hardwareValidation = {
     ],
   },
   afterG1: {
-    eyebrow: "G4 NEXT",
+    eyebrow: "NEXT UP",
     items: [
       "First external operator UAT — design-partner golden path without founder hand-holding",
       "Published mesh latency benchmarks — not marketing guesses",

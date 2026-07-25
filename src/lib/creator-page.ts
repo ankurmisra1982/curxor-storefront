@@ -5,7 +5,7 @@ export const creatorDemoHero = {
   src: g3Screenshots.creatorQueue,
   alt: "Creator Claw desk — Create queue and scheduled posts",
   caption:
-    "G3 capture — Creator Claw Create queue on CurXor OS. Sovereign copy on metal; publishes through egress when you approve.",
+    "Demo capture — Creator Claw Create queue on CurXor OS. Sovereign copy on metal; publishes through egress when you approve.",
 } as const;
 
 export const creatorDemoTourSteps = [

@@ -11,7 +11,7 @@ export function ClawDemoHero({
   src,
   alt,
   caption,
-  label = "FLIGHT COMMAND · G3",
+  label = "FLIGHT COMMAND · DEMO",
 }: ClawDemoHeroProps) {
   return (
     <figure className="border border-white/10 bg-black">

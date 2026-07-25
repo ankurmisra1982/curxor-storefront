@@ -8,7 +8,7 @@ const SHOTS = [
   {
     src: g3Screenshots.home,
     title: "Home hub",
-    body: "Grouped Claws. Chat or tap skills. G3 capture from MS-S1 box.",
+    body: "Grouped Claws. Chat or tap skills. Demo capture from MS-S1 box.",
   },
   {
     src: g3Screenshots.capitalPaper,
@@ -44,14 +44,15 @@ export function ScreenshotGallery() {
         <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-              FLIGHT COMMAND · G3
+              FLIGHT COMMAND · DEMO
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Three Claws you&apos;ll run in week one
             </h2>
           </div>
           <p className="max-w-sm text-xs text-white/40">
-            G3 captures from MS-S1 metal — Capital, Creator, Outreach. {g3Honesty.deskCapture}
+            Desk captures from MS-S1 metal — Capital, Creator, Outreach.{" "}
+            {g3Honesty.deskCapture}
           </p>
         </div>
 

@@ -182,9 +182,10 @@ export default function ArchitecturePage() {
             })}
           </div>
           <p className="mt-4 text-xs leading-relaxed text-white/40">
-            Unboxed {hardwareValidation.unboxDate}. G1–G3 closed on MS-S1 — G3 desk
-            captures and investor pack are live on curxor.ai. Ops Wave 1 is green on
-            the founder box (paper Capital). G4 = first external operator UAT.
+            Unboxed {hardwareValidation.unboxDate}. Golden path closed on MS-S1 —
+            desk captures and investor pack are live on curxor.ai. Priority ops
+            bridges are green on the founder box (paper Capital). Next: first
+            external operator UAT.
           </p>
         </div>
 

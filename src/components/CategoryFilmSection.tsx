@@ -24,7 +24,7 @@ const FILMS: {
     label: "Category vision",
     duration: "~61s",
     src: categoryFilmAssets.heroCategoryBadge,
-    caption: "Figma / comp vision · badge + VO · not live Patron Badge shoot",
+    caption: "Vision cut — concept comps + voiceover",
     ariaLabel:
       "CurXor category vision film — XOR wake, morning routine, dream-state comps",
   },
@@ -33,9 +33,9 @@ const FILMS: {
     label: "Product proof",
     duration: "~90s",
     src: categoryFilmAssets.heroCategory,
-    caption: "G3 Act I · onboarding through three flagship Claws",
+    caption: "Product demo — onboarding through three flagship Claws on real metal",
     ariaLabel:
-      "G3 Act I product film — onboarding through three flagship Claws",
+      "CurXor product proof film — onboarding through three flagship Claws on real metal",
   },
 ];
 
@@ -52,8 +52,8 @@ export function CategoryFilmSection() {
           Two cuts. Play either.
         </h2>
         <p className="mt-2 max-w-xl text-xs leading-relaxed text-white/45">
-          Vision = Figma/comp. Product = G3 Act I on metal. Not cold-traffic homepage
-          hero until G4.
+          Vision cut is concept. Product proof was captured on real MS-S1 metal —
+          onboarding through Capital, Creator, and Outreach.
         </p>
       </div>
 

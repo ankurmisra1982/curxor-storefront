@@ -4,7 +4,6 @@ import Link from "next/link";
 import { MissionVisionSection } from "@/components/MissionVisionSection";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
-import { missionVision } from "@/lib/mission-vision";
 import { siteConfig } from "@/lib/config";
 
 const aboutTitle = `About — ${siteConfig.name}`;
@@ -30,8 +29,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const { shortPair } = missionVision;
-
   return (
     <SiteShell>
       <div className="mx-auto max-w-7xl px-6 pt-4">
@@ -51,16 +48,7 @@ export default function AboutPage() {
       <MissionVisionSection variant="about" />
 
       <div className="mx-auto max-w-7xl border-t border-white/10 px-6 py-10">
-        <p className="text-xs leading-relaxed text-white/40">
-          <span className="text-white/55">Mission —</span> {shortPair.mission}
-        </p>
-        <p className="mt-2 text-xs leading-relaxed text-white/40">
-          <span className="text-white/55">Vision —</span> {shortPair.vision}
-        </p>
-        <p className="mt-2 text-xs leading-relaxed text-white/40">
-          <span className="text-white/55">Purpose —</span> {shortPair.purpose}
-        </p>
-        <p className="mt-8 text-xs text-white/35">
+        <p className="text-xs text-white/35">
           Product story and pricing:{" "}
           <Link href="/" className="text-neon-purple hover:underline">
             curxor.ai

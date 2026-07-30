@@ -36,7 +36,7 @@ export const personaPages: PersonaPage[] = [
         body: "Mint a custom strategy monitor in plain language — deploy in one session.",
       },
     ],
-    demoSrc: "/demo/03-capital-claw.png",
+    demoSrc: "/demo/03-capital.png",
     demoAlt: "Capital workspace",
     outcomes: [
       "Demo desk day one — no broker keys required",
@@ -70,7 +70,7 @@ export const personaPages: PersonaPage[] = [
         body: "Mint a custom content or research crewmate for your niche.",
       },
     ],
-    demoSrc: "/demo/08-creator-claw.png",
+    demoSrc: "/demo/08-creator.png",
     demoAlt: "Creator Go Live and queue",
     outcomes: [
       "One-click demo tour to scheduled post",

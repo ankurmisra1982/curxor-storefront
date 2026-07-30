@@ -22,7 +22,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] Press kit (`/press`) — boilerplate + fact sheet
 - [x] Crewmate taglines synced from `app-agent-catalog.ts` when sibling repo present
 - [x] Social profiles wired (footer, press, JSON-LD, llms.txt)
-- [x] Creator demo (`08-creator-claw.png`) + creator flow gallery
+- [x] Creator demo (`08-creator.png`) + creator flow gallery
 - [x] Hero film comp plates (`public/demo/hero-film/*@2x.png`) — sync from `../curxor-os/docs/gtm/hero-film-figma/exports/`
 - [x] Trust strip (pre-order, ship window, support, terms link)
 - [x] Price-includes section + four-year TCO table

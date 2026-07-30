@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     url: `${siteConfig.siteUrl}/creator`,
     siteName: siteConfig.name,
     type: "website",
-    images: [{ url: `${siteConfig.siteUrl}/demo/08-creator-claw.png` }],
+    images: [{ url: `${siteConfig.siteUrl}/demo/08-creator.png` }],
   },
   twitter: {
     card: "summary_large_image",
     title: creatorPageMeta.title,
     description: creatorPageMeta.description,
-    images: [`${siteConfig.siteUrl}/demo/08-creator-claw.png`],
+    images: [`${siteConfig.siteUrl}/demo/08-creator.png`],
   },
 };
 

@@ -16,6 +16,17 @@ const nextConfig: NextConfig = {
         destination: "https://curxor.ai/:path*",
         permanent: true,
       },
+      // Desk-crew rename — old *-claw still URLs
+      {
+        source: "/demo/03-capital-claw.png",
+        destination: "/demo/03-capital.png",
+        permanent: true,
+      },
+      {
+        source: "/demo/08-creator-claw.png",
+        destination: "/demo/08-creator.png",
+        permanent: true,
+      },
     ];
   },
   async headers() {

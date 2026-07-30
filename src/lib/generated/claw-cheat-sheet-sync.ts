@@ -29,7 +29,7 @@ export const clawCheatSheetEntries = [
     "oneLiner": "Mint custom crewmates on bare metal.",
     "bullets": [
       "Framework desk, Island engine profile, or SOUL/TOOLS import in one session",
-      "Five template packs → real /my-claw/[slug] forged desks",
+      "Five template packs → real forged desks on the appliance",
       "SkillSpector SS0 blocks malicious import bundles before provision",
       "L1–L5 Sketcher → Foundry · fleet, stacks, Go Live + demo tour"
     ]

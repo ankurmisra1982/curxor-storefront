@@ -19,7 +19,7 @@
 
 ### The Forge · `/forge`
 - Mint custom crewmates on bare metal
-- Framework / Island / Import · forged `/my-claw/[slug]` desks
+- Framework / Island / Import · forged desks on the appliance
 - SkillSpector SS0 blocks malicious bundles
 - L1–L5 Sketcher → Foundry
 

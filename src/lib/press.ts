@@ -23,7 +23,7 @@ export const investorDeckMailto =
 
 export const pressKit = {
   headline: "Your AI team. On a box you own.",
-  boilerplate: `${productIdentity.companyName} builds sovereign AI appliances that run digital employees — called Claws — on local hardware with zero monthly API fees. ${productIdentity.boxName} is the chassis name on every box — 126 TOPS NPU, 64GB unified memory, ${productIdentity.osName}, and ${clawRosterLabel} spanning wealth, work, signals, and life & family. Message Claws from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Pre-order at curxor.ai for $3,999.`,
+  boilerplate: `${productIdentity.companyName} builds sovereign AI appliances that run digital employees — a desk crew on local hardware — with zero monthly API fees. ${productIdentity.boxName} is the chassis name on every box — 126 TOPS NPU, 64GB unified memory, ${productIdentity.osName}, and ${clawRosterLabel} spanning wealth, work, signals, and life & family. Message your desk crew from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Pre-order at curxor.ai for $3,999.`,
   founderQuote:
     "ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.",
   contactEmail: siteConfig.contactEmail,
@@ -41,7 +41,7 @@ export const pressKit = {
   investorIntro: {
     eyebrow: "COMPANY",
     headline: "Sovereign agent appliance — working product on real MS-S1 metal.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs digital employees called Claws on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Work), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops dogfood receipts; Capital stays paper). Next: first external operator UAT — not started. Not a customer fleet and not live brokerage fills.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops dogfood receipts; Capital stays paper). Next: first external operator UAT — not started. Not a customer fleet and not live brokerage fills.",
   },
 
   founders: {
@@ -74,7 +74,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, 12 Claw verticals + The Forge, Claw Cafe ascension tied to Flagship desks",
+          "CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, twelve crewmate desks + The Forge, Crew Cafe ascension tied to Flagship desks",
       },
       {
         status: "Shipped" as const,
@@ -126,7 +126,7 @@ export const pressKit = {
     now: [
       "$3,999 one-time hardware (MS-S1 MAX class, CurXor OS pre-flash)",
       "Stripe pre-order at /pricing",
-      "No CurXor subscription for local inference or bundled Claws",
+      "No CurXor subscription for local inference or bundled crewmates",
     ],
     expansion: [
       "OTA channel subscriptions",
@@ -147,8 +147,8 @@ export const pressKit = {
     "Category creation — independent computer for digital employees, not DIY Ollama or SaaS agents",
     "Sovereignty story — eno1 command · eno2 egress only · physical kill switch",
     "Software-led proof — FRE, local inference, and golden path on unboxed MS-S1",
-    "Honest depth tiers — Flagship · Forge · Cafe · Preview on every Claw",
-    "Viral loop — The Forge mints custom Claws without per-token billing",
+    "Honest depth tiers — Flagship · Forge · Cafe · Preview on every crewmate",
+    "Viral loop — The Forge mints custom crewmates without per-token billing",
   ],
 
   changelog: {
@@ -231,7 +231,7 @@ export const pressKit = {
   },
 
   maturityDisclaimer:
-    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — by Jul 8: FRE, local inference, investor proof pack, and desk strips validated on Standard 64. Capital Claw supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier Claws are working shells with local data — production depth ships on the appliance roadmap.",
+    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — by Jul 8: FRE, local inference, investor proof pack, and desk strips validated on Standard 64. Capital supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier crewmates are working shells with local data — production depth ships on the appliance roadmap.",
 
   facts: [
     { label: "Company", value: "CurXor Systems" },
@@ -265,9 +265,9 @@ export const pressKit = {
         "G1 closed Jun 29 — dual-port topology verified · see /architecture#validation",
     },
     {
-      label: "Claw roster",
+      label: "Desk crew roster",
       value:
-        "Capital · Creator · Outreach · Arbitrage · Signal · Swarm · Vital · Kin · Learn · Gamer · Estate · Claw Cafe · The Forge (Engage inbox under Creator)",
+        "Capital · Creator · Outreach · Arbitrage · Signal · Swarm · Vital · Kin · Learn · Gamer · Estate · Crew Cafe · The Forge (Engage inbox under Creator)",
     },
     { label: "Website", value: siteConfig.siteUrl },
     {
@@ -347,9 +347,9 @@ export const pressKit = {
     },
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
     { label: "G3 desk gallery", path: "/#demo", note: "MS-S1 captures — Capital paper · Creator queue · Work pipeline" },
-    { label: "Outreach Claw tour", path: "/outreach", note: "G3 desk strip + pipeline capture" },
-    { label: "Capital Claw tour", path: "/capital", note: "G3 desk strip · Practice mode paper book" },
-    { label: "Creator Claw tour", path: "/creator", note: "G3 desk strip · publish approval frame" },
+    { label: "Outreach tour", path: "/outreach", note: "G3 desk strip + pipeline capture" },
+    { label: "Capital tour", path: "/capital", note: "G3 desk strip · Practice mode paper book" },
+    { label: "Creator tour", path: "/creator", note: "G3 desk strip · publish approval frame" },
     { label: "Install video", path: "/architecture#validation", note: "After G2 — factory USB production batch" },
     { label: "Operator PDF", path: "/architecture#validation", note: "After G2 — export from CurXor OS guides" },
   ],

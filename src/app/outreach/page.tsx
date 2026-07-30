@@ -122,7 +122,7 @@ export default function OutreachPage() {
           <div className="overflow-hidden border border-white/10">
             <Image
               src="/demo/outreach/20-go-live.png"
-              alt="Outreach Claw Go Live panel with demo tour"
+              alt="Outreach Go Live panel with demo tour"
               width={1440}
               height={900}
               className="h-auto w-full"

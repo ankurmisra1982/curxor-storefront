@@ -96,11 +96,11 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
                 THE STACK
               </p>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Claw verticals + The Forge
+                Desk crew + The Forge
               </h2>
             </div>
             <p className="max-w-sm text-xs text-white/40">
-              Enable your crew in Settings. Mint custom Claws from The Forge.
+              Enable your crew in Settings. Mint custom crewmates from The Forge.
             </p>
           </div>
 
@@ -132,7 +132,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
               DIGITAL EMPLOYEES
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Claw Verticals
+              Desk crew
             </h2>
           </div>
           <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
@@ -163,7 +163,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
                   {group.label}
                 </h3>
                 <span className="text-[10px] tracking-widest text-white/25">
-                  {group.apps.length} CLAW{group.apps.length === 1 ? "" : "S"}
+                  {group.apps.length} CREWMATE{group.apps.length === 1 ? "" : "S"}
                 </span>
               </div>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

@@ -26,7 +26,7 @@ export const missionVision = {
   /** Building toward — same section, not a new product SKU */
   purposeHorizon: {
     label: "Where Purpose goes",
-    body: "Today you buy the desk and the Claws that run on it. After we prove those jobs — and raise for the next era of the box — Purpose becomes something you feel: a personal algorithm on your metal that Claws compound with. Not another cloud that rents who you are.",
+    body: "Today you buy the desk and the desk crew that runs on it. After we prove those jobs — and raise for the next era of the box — Purpose becomes something you feel: a personal algorithm on your metal that your crewmates compound with. Not another cloud that rents who you are.",
     honesty: "Building toward. Act I proves the jobs first.",
   },
   /** Dream-state / after-fundraise moat pattern — plain English, no internal codes */
@@ -37,7 +37,7 @@ export const missionVision = {
     },
     {
       title: "Jobs that learn you",
-      body: "Claws don't stay blank forever — they mint and deepen under your approval so capital, creation, and outreach fit how you work.",
+      body: "Crewmates don't stay blank forever — they mint and deepen under your approval so capital, creation, and outreach fit how you work.",
     },
     {
       title: "Models come and go",

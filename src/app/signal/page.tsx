@@ -89,8 +89,8 @@ export default function SignalPage() {
             ))}
           </div>
           <p className="mt-4 text-xs text-white/40">
-            One Claw registers every AI-capable device — not a new Claw per gadget. Digital desks
-            think; Signal Claw connects the worn and embodied world to the same CCP, Kin, and Cafe.
+            One crewmate registers every AI-capable device — not a new crewmate per gadget. Digital desks
+            think; Signal connects the worn and embodied world to the same CCP, Kin, and Crew Cafe.
           </p>
         </section>
 

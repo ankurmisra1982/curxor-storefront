@@ -3,7 +3,7 @@ import { InfoTip } from "@/components/InfoTip";
 const beats = [
   {
     step: "01",
-    title: "Pick your Claws",
+    title: "Pick your desk crew",
     body: "Capital, Creator, Outreach — or the full stack. Change anytime in Settings.",
   },
   {
@@ -40,7 +40,7 @@ export function HowItWorks() {
             Day one on your desk
           </h2>
           <p className="mt-2 text-sm text-white/45">
-            Pick Claws, chat or tap, stay local — pull eno2 when you want outbound cold.
+            Pick your desk crew, chat or tap, stay local — pull eno2 when you want outbound cold.
           </p>
         </div>
         <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">

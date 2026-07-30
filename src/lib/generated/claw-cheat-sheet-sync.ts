@@ -4,8 +4,8 @@
 export const clawCheatSheetMeta = {
   "version": 1,
   "updated": "2026-07-09",
-  "summary": "13 OOTB surfaces on CurXor OS — 5 live (4 flagships + Cafe) + Forge + 8 scoped preview claws.",
-  "gtmLead": "Lead with Capital, Creator, Outreach, and The Forge for the $3,999 proof path. Cafe is the growth moat. Eight scoped claws are honest — L1–L5 works on-box; production depth ships on the appliance roadmap (Tier C / Coming Soon).",
+  "summary": "13 OOTB surfaces on CurXor OS — 5 live (4 flagships + Crew Cafe) + Forge + 8 scoped preview crewmates.",
+  "gtmLead": "Lead with Capital, Creator, Outreach, and The Forge for the $3,999 proof path. Crew Cafe is the growth moat. Eight scoped crewmates are honest — L1–L5 works on-box; production depth ships on the appliance roadmap (Tier C / Coming Soon).",
   "statusLabels": {
     "live": "Live",
     "scoped": "Scoped"
@@ -16,7 +16,7 @@ export const clawCheatSheetMeta = {
   },
   "gtmDoNotSay": [
     "Live Shopify fleet ops, clinical-grade Vital, accredited Learn, or paired Optimus today",
-    "All ten Claws are production-ready — say four flagships + Forge + honest scoped previews"
+    "All ten crewmates are production-ready — say four flagships + Forge + honest scoped previews"
   ]
 } as const;
 
@@ -26,7 +26,7 @@ export const clawCheatSheetEntries = [
     "status": "live",
     "scopedKind": null,
     "route": "/claw-forge",
-    "oneLiner": "Mint custom Claws on bare metal.",
+    "oneLiner": "Mint custom crewmates on bare metal.",
     "bullets": [
       "Framework desk, Island engine profile, or SOUL/TOOLS import in one session",
       "Five template packs → real /my-claw/[slug] forged desks",
@@ -80,9 +80,9 @@ export const clawCheatSheetEntries = [
     "route": "/claw-cafe",
     "oneLiner": "XP room and ascension mirror.",
     "bullets": [
-      "Pixel spatial room — characters react to real cross-Claw events",
+      "Pixel spatial room — characters react to real cross-crew events",
       "Dual progression — per-app L1–L5 + G1–G6 ascension (mythic or neutral)",
-      "Event bus ingests Work, Creator, Capital, Forge, Swarm, Vital, preview claws",
+      "Event bus ingests Work, Creator, Capital, Forge, Swarm, Vital, preview crewmates",
       "Play · Ascension · Progress · Host — not a full Engage/DM product"
     ]
   },
@@ -171,7 +171,7 @@ export const clawCheatSheetEntries = [
     "route": "/my-family",
     "oneLiner": "Who lives here + mesh identity.",
     "bullets": [
-      "Household profiles, devices registry, mesh share flags for other Claws",
+      "Household profiles, devices registry, mesh share flags for other crewmates",
       "Learn learner picker and Gamer squad read same Kin member IDs",
       "CCP family publish · L1–L5 Member → Elder",
       "Not live: live Optimus guest recognition — ships with Signal hardware"

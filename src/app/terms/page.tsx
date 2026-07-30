@@ -6,7 +6,7 @@ import { applianceVersion, clawRosterLabel, siteConfig } from "@/lib/config";
 
 const termsTitle = `Terms & Disclaimers — ${siteConfig.name}`;
 const termsDescription =
-  "Pre-order terms, trading disclaimers, and limitations for CurXor hardware and Claw software.";
+  "Pre-order terms, trading disclaimers, and limitations for CurXor hardware and CurXor OS crewmates.";
 
 export const metadata: Metadata = {
   title: termsTitle,
@@ -51,7 +51,7 @@ export default function TermsPage() {
         <LegalSection title="Not financial advice">
           <p>
             CurXor hardware and CurXor OS are technology products.{" "}
-            <strong className="text-white/90">Capital Claw</strong> and any
+            <strong className="text-white/90">Capital</strong> and any
             trading-related features are tools for automation — not investment
             advice, portfolio management, or a guarantee of returns.
           </p>
@@ -84,7 +84,7 @@ export default function TermsPage() {
           <p>
             To the maximum extent permitted by law, CurXor Systems is not liable for
             trading losses, data loss, downtime, or indirect damages arising from use
-            of the appliance or Claw agents. Use at your own risk.
+            of the appliance or crewmate agents. Use at your own risk.
           </p>
         </LegalSection>
 

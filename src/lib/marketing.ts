@@ -38,7 +38,7 @@ export const socialProofLine = `CurXor OS v${applianceVersion} · ${qaMetrics.sm
 export const priceIncludes = {
   headline: "What $3,999 includes",
   subhead:
-    "MS-S1 MAX class silicon is the engine. CurXor ships the crew — OS, Claws, comms, and OTA on day one.",
+    "MS-S1 MAX class silicon is the engine. CurXor ships the crew — OS, desk crew, comms, and OTA on day one.",
   items: [
     {
       title: `${productIdentity.boxName} · 64GB UMA`,
@@ -60,7 +60,7 @@ export const priceIncludes = {
   bareMetalAnchor: {
     label: "Bare MS-S1 MAX 64GB (hardware only)",
     price: "~$2,639",
-    note: "No CurXor OS, Claws, bridges, or Flight Command — weeks of DIY integration",
+    note: "No CurXor OS, desk crew, bridges, or Flight Command — weeks of DIY integration",
   },
 } as const;
 

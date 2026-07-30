@@ -8,7 +8,7 @@ export type BuyerTip = {
 export const buyerTips = {
   tops: {
     title: "TOPS (NPU speed)",
-    body: "Trillions of operations per second — a shorthand for how fast the on-box AI chip runs models. Higher means snappier Claws without cloud API calls.",
+    body: "Trillions of operations per second — a shorthand for how fast the on-box AI chip runs models. Higher means snappier crewmates without cloud API calls.",
   },
   uma: {
     title: "Unified memory (UMA)",
@@ -36,7 +36,7 @@ export const buyerTips = {
   },
   vla: {
     title: "VLA models",
-    body: "Vision-Language-Action — AI that reads a scene and plans actions. Optional at the Performance tier for manipulation-heavy workflows; most Claws do not need it.",
+    body: "Vision-Language-Action — AI that reads a scene and plans actions. Optional at the Performance tier for manipulation-heavy workflows; most crewmates do not need it.",
   },
   illustrativeSpend: {
     title: "Illustrative spend scenarios",

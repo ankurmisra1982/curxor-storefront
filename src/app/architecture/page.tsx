@@ -115,7 +115,7 @@ export default function ArchitecturePage() {
             CLAW DEPTH TIERS
           </h2>
           <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">
-            CurXor OS {applianceVersion} — {qaMetricsLine}. Every OOTB Claw carries an
+            CurXor OS {applianceVersion} — {qaMetricsLine}. Every OOTB crewmate carries an
             honest depth label on the storefront and in Flight Command.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">

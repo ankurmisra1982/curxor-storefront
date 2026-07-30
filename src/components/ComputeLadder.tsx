@@ -20,7 +20,7 @@ const RUNGS = [
     label: "CurXor Nexus",
     uma: "64 GB UMA",
     tops: "126 TOPS",
-    note: "Turnkey wealth · work · life Claws",
+    note: "Turnkey wealth · work · life crewmates",
     highlight: true,
   },
 ] as const;

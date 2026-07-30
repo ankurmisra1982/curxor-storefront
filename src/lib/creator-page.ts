@@ -3,16 +3,16 @@ import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
 export const creatorDemoHero = {
   src: g3Screenshots.creatorQueue,
-  alt: "Creator Claw desk — Create queue and scheduled posts",
+  alt: "Creator desk — Create queue and scheduled posts",
   caption:
-    "Demo capture — Creator Claw Create queue on CurXor OS. Sovereign copy on metal; publishes through egress when you approve.",
+    "Demo capture — Creator Create queue on CurXor OS. Sovereign copy on metal; publishes through egress when you approve.",
 } as const;
 
 export const creatorDemoTourSteps = [
   {
     step: "01",
     title: "FRE ready",
-    body: "Channels configured in Creator Claw FRE — demo tour picks your first platform automatically.",
+    body: "Channels configured in Creator FRE — demo tour picks your first platform automatically.",
   },
   {
     step: "02",
@@ -65,7 +65,7 @@ export const creatorWizardSteps = [
 ] as const;
 
 export const creatorGoLiveChecks = [
-  "Channels configured in Creator Claw FRE",
+  "Channels configured in Creator FRE",
   "Run demo tour for first scheduled post — simulated publish counts toward Go Live",
   "Publish bridges ready in Bridge Health when you exit demo (digital.env on eno2)",
   "Public media URL probe OK when IG/Pinterest/TikTok need asset URLs",
@@ -86,9 +86,9 @@ export const creatorPublishBridges = [
 ] as const;
 
 export const creatorPageMeta = {
-  title: "Creator Claw — Sovereign Social Operator",
+  title: "Creator — Sovereign Social Operator",
   description:
-    "Creator Claw on CurXor OS — one-click demo tour, 5-step Creation Wizard, Go Live checklist, 10 publish bridges on eno2, engage loop, and analytics. Draft locally, publish on your terms.",
+    "Creator on CurXor OS — one-click demo tour, 5-step Creation Wizard, Go Live checklist, 10 publish bridges on eno2, engage loop, and analytics. Draft locally, publish on your terms.",
   ...clawHeadlines.creator,
 } as const;
 

@@ -1,4 +1,4 @@
-/** Value prop headlines for best-in-class OOTB Claws — used on landing and persona pages. */
+/** Value prop headlines for best-in-class OOTB crewmates — used on landing and persona pages. */
 export const clawHeadlines = {
   capital: {
     hero: "Rules on localhost.",
@@ -6,7 +6,7 @@ export const clawHeadlines = {
     oneLiner:
       "Demo tour → armed rule → simulated fill. Paper via Alpaca when you exit demo — no token rent, no cloud playbook leak.",
     personaCard:
-      "Capital Claw — demo desk day one, rule engine, and Go Live tour. Paper on eno2 when you add keys.",
+      "Capital — demo desk day one, rule engine, and Go Live tour. Paper on eno2 when you add keys.",
   },
   creator: {
     hero: "Go Live in one session.",
@@ -14,7 +14,7 @@ export const clawHeadlines = {
     oneLiner:
       "One click runs draft → pre-flight → best-time schedule → simulated publish. Ten live bridges on eno2 when you connect OAuth.",
     personaCard:
-      "Creator Claw — demo tour, 5-step Creation Wizard, Go Live checklist, and 10 publish bridges on eno2.",
+      "Creator — demo tour, 5-step Creation Wizard, Go Live checklist, and 10 publish bridges on eno2.",
   },
   outreach: {
     hero: "Pipeline to send — one desk.",
@@ -22,7 +22,7 @@ export const clawHeadlines = {
     oneLiner:
       "Lead → A/B sequence → activate → simulated send without a CRM + sequencer SaaS stack. Pause-on-reply and send policy built in.",
     personaCard:
-      "Outreach Claw — demo tour, sequences, CSV import, A/B subjects, reply intent, and send policy on eno2.",
+      "Outreach — demo tour, sequences, CSV import, A/B subjects, reply intent, and send policy on eno2.",
   },
 } as const;
 

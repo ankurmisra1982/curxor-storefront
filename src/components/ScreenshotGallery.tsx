@@ -8,31 +8,31 @@ const SHOTS = [
   {
     src: g3Screenshots.home,
     title: "Home hub",
-    body: "Grouped Claws. Chat or tap skills. Demo capture from MS-S1 box.",
+    body: "Grouped desk crew. Chat or tap skills. Demo capture from MS-S1 box.",
   },
   {
     src: g3Screenshots.capitalPaper,
-    title: "Capital Claw",
+    title: "Capital",
     body: "Practice mode · paper book. Rules and cafe proof on metal.",
     href: "/capital",
     honesty: g3Honesty.capitalPractice,
   },
   {
     src: g3Screenshots.creatorQueue,
-    title: "Creator Claw",
+    title: "Creator",
     body: "Create queue · sovereign copy · schedule with approval gates.",
     href: "/creator",
   },
   {
     src: g3Screenshots.workPipeline,
-    title: "Outreach Claw",
+    title: "Outreach",
     body: "Pipeline · sequences · pause-on-reply. UI real; sends when bridges wired.",
     href: "/outreach",
     honesty: g3Honesty.workPipeline,
   },
   {
     src: g3Screenshots.cafeRuleFired,
-    title: "Claw Cafe proof",
+    title: "Crew Cafe proof",
     body: "RULE FIRED from real Capital activity — not a cloud alert toy.",
   },
 ] as const;
@@ -47,7 +47,7 @@ export function ScreenshotGallery() {
               FLIGHT COMMAND · DEMO
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Three Claws you&apos;ll run in week one
+              Three crewmates you&apos;ll run in week one
             </h2>
           </div>
           <p className="max-w-sm text-xs text-white/40">

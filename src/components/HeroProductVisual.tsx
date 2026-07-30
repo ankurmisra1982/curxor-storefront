@@ -45,7 +45,7 @@ export function HeroProductVisual() {
           <div className="relative overflow-hidden">
             <Image
               src={g3Screenshots.home}
-              alt="CurXor Flight Command Home hub with grouped Claw workspaces"
+              alt="CurXor Flight Command Home hub with grouped crewmate workspaces"
               width={1024}
               height={640}
               sizes="(max-width: 1024px) 100vw, 50vw"

@@ -66,7 +66,7 @@ export function VisionBand() {
               href="/signal"
               className="mt-5 inline-block text-xs tracking-[0.2em] text-neon-purple transition-colors hover:text-white/80"
             >
-              SEE SIGNAL CLAW →
+              SEE SIGNAL →
             </Link>
           </div>
           <div className="min-w-0">

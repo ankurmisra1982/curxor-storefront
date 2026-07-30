@@ -1,4 +1,4 @@
-# Claw Cheat Sheet — GTM + storefront handoff
+# Desk Crew Cheat Sheet — GTM + storefront handoff
 
 > **Machine source:** [claw-cheat-sheet.json](./claw-cheat-sheet.json) · synced to `curxor storefront` via `npm run sync:appliance`  
 > **Appliance canonical:** [ootb-apps.ts](../../pillar-4-dashboard/lib/ootb-apps.ts) · [TIER-C-PARITY.md](../curxor-os/TIER-C-PARITY.md)
@@ -9,7 +9,7 @@
 
 | Label | Meaning |
 |-------|---------|
-| **Live** | Flagship or Cafe depth — exit-demo / GTM proof path |
+| **Live** | Flagship or Crew Cafe depth — exit-demo / GTM proof path |
 | **Scoped · Under Construction** | Operate desk preview — L1–L5 on-box, production depth later |
 | **Scoped · Preview** | Universal shell (Kin, Signal) — hub/household, not employee desk |
 
@@ -18,29 +18,29 @@
 ## Live
 
 ### The Forge · `/claw-forge`
-- Mint custom Claws on bare metal
+- Mint custom crewmates on bare metal
 - Framework / Island / Import · forged `/my-claw/[slug]` desks
 - SkillSpector SS0 blocks malicious bundles
 - L1–L5 Sketcher → Foundry
 
-### Capital Claw · `/my-capital`
+### Capital · `/my-capital`
 - Rules + portfolio · paper/live Alpaca path
 - Broker bridges via eno2
 - Social alpha + approval flows
 - L1–L5 Learner → Principal
 
-### Creator Claw · `/my-content`
+### Creator · `/my-content`
 - Queue, calendar, publish, engage inbox
 - Digital bridges on eno2
 - L1–L5 Explorer → Studio
 
-### Outreach Claw · `/my-work`
+### Outreach · `/my-work`
 - Sequences, CRM desk, morning brief
 - Connector bridges · handshake to Capital/Creator
 - L1–L5 Explorer → Executive
 
-### Claw Cafe · `/claw-cafe`
-- Pixel room on real cross-Claw events
+### Crew Cafe · `/claw-cafe`
+- Pixel room on real cross-crew events
 - L1–L5 + G1–G6 ascension
 - Not full Engage/DM product
 
@@ -50,7 +50,7 @@
 
 ### Under Construction (operate desks)
 
-| Claw | Route | One-liner |
+| Lane | Route | One-liner |
 |------|-------|-----------|
 | Arbitrage | `/my-shop` | Multi-channel margin preview |
 | Vital | `/my-vital` | Longevity Lab + bridge preview |
@@ -61,7 +61,7 @@
 
 ### Preview (universal shell)
 
-| Claw | Route | One-liner |
+| Lane | Route | One-liner |
 |------|-------|-----------|
 | Kin | `/my-family` | Household identity hub |
 | Signal | `/optimus` | Humanoid Home Hub |
@@ -71,8 +71,8 @@
 ## GTM truth
 
 - **Lead with:** Capital, Creator, Outreach, The Forge
-- **Moat:** Claw Cafe (real event mirror)
-- **Do not say:** all Claws production-ready; live fleet/clinical/tutoring/robot today
+- **Moat:** Crew Cafe (real event mirror)
+- **Do not say:** all crewmates production-ready; live fleet/clinical/tutoring/robot today
 
 ---
 

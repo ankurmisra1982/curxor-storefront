@@ -122,7 +122,7 @@ export default function CapitalPage() {
           <div className="overflow-hidden border border-white/10">
             <Image
               src="/demo/capital/19-capital-go-live.png"
-              alt="Capital Claw Go Live panel"
+              alt="Capital Go Live panel"
               width={1440}
               height={900}
               className="h-auto w-full"

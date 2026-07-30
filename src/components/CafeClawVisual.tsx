@@ -122,7 +122,7 @@ function AscensionPanel() {
               />
             </div>
             <p className="mt-1.5 text-[9px] tracking-widest text-white/30">
-              {progress}% TO LVL {level + 1} · CROSS-CLAW MOMENTUM
+              {progress}% TO LVL {level + 1} · CROSS-CREW MOMENTUM
             </p>
           </div>
 

@@ -3,7 +3,7 @@ import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
 export const outreachDemoHero = {
   src: g3Screenshots.workPipeline,
-  alt: "Outreach Claw desk — pipeline and active sequences",
+  alt: "Outreach desk — pipeline and active sequences",
   caption:
     "Demo capture — Work pipeline on CurXor OS. UI and routing are real; outbound sends deferred until bridges are wired.",
 } as const;
@@ -79,8 +79,8 @@ export const outreachFlowShots = [
 ] as const;
 
 export const outreachPageMeta = {
-  title: "Outreach Claw — Sovereign Outbound Desk",
+  title: "Outreach — Sovereign Outbound Desk",
   description:
-    "Outreach Claw on CurXor OS — demo tour, Go Live checklist, lead pipeline, sequences, CSV import, A/B subjects, reply intent, and send policy. Simulated sends day one; SMTP on eno2 when configured.",
+    "Outreach on CurXor OS — demo tour, Go Live checklist, lead pipeline, sequences, CSV import, A/B subjects, reply intent, and send policy. Simulated sends day one; SMTP on eno2 when configured.",
   ...clawHeadlines.outreach,
 } as const;

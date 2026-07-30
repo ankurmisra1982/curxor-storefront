@@ -6,7 +6,7 @@ export const openWeightComputeLadder = {
   subhead:
     "CurXor OS — mint autonomous employees on bare metal. Standard 64 GB today. Pro and CurXor Studio tomorrow. Same sovereignty. Stronger models as memory allows.",
   paragraph:
-    "CurXor is a sovereign AI appliance: flagship desks day one, one local operating system, zero monthly inference rent on the operate plane. Today that starts on the MINISFORUM MS-S1 Max — 64 GB unified memory and a Qwen3 stack sized for real multi-Claw workloads. Open-weight AI keeps advancing; CurXor OS evolves with it through model catalogs and tier profiles, so you update the stack on hardware you own instead of rebuying the story every six months. Standard for flagship operators, Pro 128 for heavier local models, and CurXor Studio — post-traction custom compute built to CurXor OS specs — for the largest open-weight models when your work demands it. Optional frontier BYOK exists; the default is still mint on metal, not API rent.",
+    "CurXor is a sovereign AI appliance: flagship desks day one, one local operating system, zero monthly inference rent on the operate plane. Today that starts on the MINISFORUM MS-S1 Max — 64 GB unified memory and a Qwen3 stack sized for real multi-crewmate workloads. Open-weight AI keeps advancing; CurXor OS evolves with it through model catalogs and tier profiles, so you update the stack on hardware you own instead of rebuying the story every six months. Standard for flagship operators, Pro 128 for heavier local models, and CurXor Studio — post-traction custom compute built to CurXor OS specs — for the largest open-weight models when your work demands it. Optional frontier BYOK exists; the default is still mint on metal, not API rent.",
   footnote:
     "$0/mo operate inference = local LLM on the appliance for the operate plane (chat, planning, Forge assist). Does not include optional third-party BYOK, trading/social bridges, or your power bill.",
   evidence: {
@@ -25,8 +25,8 @@ export const openWeightComputeLadder = {
 export const pricingEvolutionBlurb = {
   eyebrow: "EVOLVING MODEL",
   paragraphs: [
-    "Hardware purchase is the anchor — $3,999 once, $0/mo operate-plane API on the appliance. CurXor does not bill per token for local inference or bundled Claws.",
-    "CurXor OS evolves on metal you already own via OTA: compute tiers from Standard to Pro 128 to CurXor Studio as open weights advance, Claw depth unlocks as flagship desks mature, and The Forge lets you mint custom operators without a new subscription per workflow.",
+    "Hardware purchase is the anchor — $3,999 once, $0/mo operate-plane API on the appliance. CurXor does not bill per token for local inference or bundled crewmates.",
+    "CurXor OS evolves on metal you already own via OTA: compute tiers from Standard to Pro 128 to CurXor Studio as open weights advance, crewmate depth unlocks as flagship desks mature, and The Forge lets you mint custom operators without a new subscription per workflow.",
     "Frontier models and bridge connectors stay optional BYOK — additive, never required to run the desk. We are not building another API rent trap.",
   ],
 } as const;

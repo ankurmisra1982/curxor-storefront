@@ -4,26 +4,26 @@ import { g3Screenshots } from "@/lib/g3-demo";
 
 export const actOneStory = {
   eyebrow: "ACT I · WHAT YOU BUY",
-  headline: "Three Claws you'll run in week one",
+  headline: "Three crewmates you'll run in week one",
   subhead:
-    "Day one: Capital, Creator, and Outreach — demo-ready on your metal. The Forge mints more. Eight more Claws ship as honest previews. G3 demo depth on MS-S1 metal, local context, egress you control.",
+    "Digital employees on your metal — a desk crew of ten plus The Forge. Capital, Creator, and Outreach are your buy decision — demo-ready on MS-S1 metal, local context, egress you control.",
   flagships: [
     {
-      claw: "Capital Claw",
+      claw: "Capital",
       tier: "Flagship",
       body: "Rules-bound wealth desk — paper book on camera; live broker only when you wire your own keys on eno2.",
       href: "/capital",
       demo: g3Screenshots.capitalPaper,
     },
     {
-      claw: "Creator Claw",
+      claw: "Creator",
       tier: "Flagship",
       body: "Draft, repurpose, schedule — publish through egress when you approve.",
       href: "/creator",
       demo: g3Screenshots.creatorQueue,
     },
     {
-      claw: "Outreach Claw",
+      claw: "Outreach",
       tier: "Flagship",
       body: "Pipeline, sequences, deliverability — outbound when bridges are wired.",
       href: "/outreach",
@@ -33,12 +33,12 @@ export const actOneStory = {
   forge: {
     claw: "The Forge",
     tier: "Forge",
-    body: "One sentence → custom Claw deployed on your appliance, wired to your egress policy.",
+    body: "One sentence → custom crewmate deployed on your appliance, wired to your egress policy.",
     demo: "/demo/04-forge.png",
     href: "/architecture#claw-tiers",
   },
   honestyFooter:
-    "Eight additional Claws ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
+    "Five additional crewmates ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
 } as const;
 
 export const actTwoStory = {
@@ -48,8 +48,8 @@ export const actTwoStory = {
     "Your orchestra earns cross-app momentum on the appliance — not in a cloud leaderboard. The symphony plays while you live your life.",
   cafeProof: {
     kicker:
-      "Your Claws live on your metal. Your desk conducts when they're ready to venture out.",
-    title: "Claw Cafe — the hall on your desk",
+      "Your desk crew lives on your metal. Your desk conducts when they're ready to venture out.",
+    title: "Crew Cafe — the hall on your desk",
     body: "Where the ensemble has presence — pixel room, ascension XP, and streaks tied to real Flagship activity. Capital rules, Creator publishes, Outreach sends. Proof from Flight Command, not a rebrand.",
   },
   evolutionTease:
@@ -61,11 +61,11 @@ export const visionBand = {
   eyebrow: "VISION · ACT II",
   headline: "One desk conducts. The symphony plays.",
   subhead:
-    "Chat SaaS gives you one assistant. CurXor gives you an orchestra of Claws — a conductor on your desk, acoustic reach when you want it, and a hall where operators earn presence from real Flagship activity.",
+    "Chat SaaS gives you one assistant. CurXor gives you a desk crew — a conductor on your desk, acoustic reach when you want it, and a hall where operators earn presence from real Flagship activity.",
   signalTeaser:
-    "Signal Claw is a concept preview — interfaces drift; your desk conducts. Not day-one integration.",
+    "Signal is a concept preview — interfaces drift; your desk conducts. Not day-one integration.",
   cafeTeaser:
-    "Claw Cafe is the hall on your metal — XP and ascension tied to real Capital, Creator, and Outreach activity. Concept preview UI below.",
+    "Crew Cafe is the hall on your metal — XP and ascension tied to real Capital, Creator, and Outreach activity. Concept preview UI below.",
   cafeDisclaimer:
     "CONCEPT PREVIEW — Cafe UI ships on the appliance; not a live cloud leaderboard.",
 } as const;

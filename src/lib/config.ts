@@ -24,7 +24,7 @@ export const siteConfig = {
   computeHook:
     "126 TOPS local NPU — ROCm inference validated on Standard 64; published mesh benchmarks pending",
   tagline:
-    "One desk conducts your orchestra of Claws — trade, create, and outbound without shipping your playbook to the cloud.",
+    "One desk conducts your desk crew — trade, create, and outbound without shipping your playbook to the cloud.",
   heroDemoLine: "Demo tour day one — not a weekend project.",
   /** Above-fold honesty — 3 flagships demo-ready; previews labeled; outbound until eno2 wired. */
   heroHonestyLine:
@@ -130,9 +130,9 @@ export const clawVerticalCount = syncedApps.filter(
   (app) => app.applianceId !== "claw-forge"
 ).length;
 
-export const clawRosterLabel = `${clawVerticalCount} Claw verticals + The Forge`;
+export const clawRosterLabel = `${clawVerticalCount} crewmates + The Forge`;
 
-export const clawPickStackLabel = `${clawVerticalCount} Claws + The Forge · pick your stack`;
+export const clawPickStackLabel = `${clawVerticalCount} crewmates + The Forge · pick your stack`;
 
 export const shareLines = [
   "126 TOPS on my desk. $0 to OpenAI.",
@@ -143,22 +143,22 @@ export const shareLines = [
 export const faqItems = [
   {
     question: "What is CurXor?",
-    answer: `curXor is the sovereign AI box — 64GB compute with 126 TOPS NPU on your desk. CurXor Systems builds the hardware and CurXor OS: ${clawRosterLabel}. Enable the Claws you want, chat in plain language, and scale 24/7 with local inference by default.`,
+    answer: `curXor is the sovereign AI box — 64GB compute with 126 TOPS NPU on your desk. CurXor Systems builds the hardware and CurXor OS: ${clawRosterLabel}. Enable the crewmates you want, chat in plain language, and scale 24/7 with local inference by default.`,
   },
   {
     question: "How is CurXor different from a Mac Studio plus Ollama?",
     answer:
-      "A Mac Studio gives you inference hardware. CurXor gives you inference plus a complete agent platform: pre-built Claw workspaces, The Forge wizard, dual-port networking with an eno2 kill switch, digital bridges for trading and social, and a Settings hub to customize everything — ready on day one.",
+      "A Mac Studio gives you inference hardware. CurXor gives you inference plus a complete agent platform: pre-built crewmate desks, The Forge wizard, dual-port networking with an eno2 kill switch, digital bridges for trading and social, and a Settings hub to customize everything — ready on day one.",
   },
   {
     question: "How is CurXor different from OpenClaw?",
     answer:
-      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Work), The Forge, Claw Cafe, and an eno2 egress kill switch OOTB. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare.",
+      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Outreach), The Forge, Crew Cafe, and an eno2 egress kill switch OOTB. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare.",
   },
   {
     question: "How is CurXor different from a €549 assistant box?",
     answer:
-      "€549-class boxes are chat and messaging appliances on light compute. CurXor is operator desk depth — 64GB UMA, flagship Claws, Forge, and Cafe. $3,999 is a filter for outcomes, not a race to assistant price. Compare: curxor.ai/compare/clawbox.",
+      "€549-class boxes are chat and messaging appliances on light compute. CurXor is operator desk depth — 64GB UMA, flagship crewmates, Forge, and Crew Cafe. $3,999 is a filter for outcomes, not a race to assistant price. Compare: curxor.ai/compare/clawbox.",
   },
   {
     question: "What is included for $3,999?",
@@ -167,12 +167,12 @@ export const faqItems = [
   {
     question: "Do I need to code to use CurXor?",
     answer:
-      "No. Each Claw opens a workspace with plain-language chat and skill buttons. Pick verticals in setup or Settings, describe what you want, and tap when you're ready. The Forge also uses natural language.",
+      "No. Each crewmate opens a workspace with plain-language chat and skill buttons. Pick lanes in setup or Settings, describe what you want, and tap when you're ready. The Forge also uses natural language.",
   },
   {
     question: "Are there monthly fees or API costs?",
     answer:
-      "CurXor charges $3,999 once for the hardware — no monthly appliance fee and no per-token billing from us. All included Claws run local models by default. If you optionally connect OpenAI (OAuth or API key), Anthropic, Google, Cursor, or OpenRouter in Settings, those providers bill your account directly.",
+      "CurXor charges $3,999 once for the hardware — no monthly appliance fee and no per-token billing from us. All included crewmates run local models by default. If you optionally connect OpenAI (OAuth or API key), Anthropic, Google, Cursor, or OpenRouter in Settings, those providers bill your account directly.",
   },
   {
     question: "Can I use GPT, Claude, or other cloud models?",
@@ -185,59 +185,59 @@ export const faqItems = [
       "CurXor is available for pre-order now. Pre-order customers receive launch updates by email as production batches are scheduled. Subscribe on curxor.ai or follow @curxorai on X for ship-date announcements.",
   },
   {
-    question: "Can I message my Claws from Telegram, WhatsApp, or Slack?",
+    question: "Can I message my desk crew from Telegram, WhatsApp, or Slack?",
     answer:
-      "Yes. CurXor OS routes dashboard chat and external messaging through one local channel router synced to the Claw Context inbox. Connect the gateways you want in Settings — Telegram, Slack, WhatsApp, iMessage, and more. Reasoning stays on your appliance; outbound actions still egress only through eno2 when a Claw needs the internet.",
+      "Yes. CurXor OS routes dashboard chat and external messaging through one local channel router synced to the crew context inbox. Connect the gateways you want in Settings — Telegram, Slack, WhatsApp, iMessage, and more. Reasoning stays on your appliance; outbound actions still egress only through eno2 when a crewmate needs the internet.",
   },
   {
     question: "What do Flagship, Forge, Cafe, and Preview mean?",
     answer:
-      "Honest depth labels on every Claw. Flagship desks (Capital, Creator, Outreach) are demo-ready with Go Live paths and eno2 bridges. The Forge mints custom agents in natural language. Cafe is the cross-Claw growth home — XP, streaks, and ascension from real activity. Preview modules (Arbitrage, Signal, Swarm, Vital, Kin) are working shells with local data — not fake production pipelines.",
+      "Honest depth labels on every crewmate. Flagship desks (Capital, Creator, Outreach) are demo-ready with Go Live paths and eno2 bridges. The Forge mints custom agents in natural language. Crew Cafe is the cross-crew growth home — XP, streaks, and ascension from real activity. Preview modules (Arbitrage, Signal, Swarm, Vital, Kin) are working shells with local data — not fake production pipelines.",
   },
   {
-    question: "What does Creator Claw do on day one?",
+    question: "What does Creator do on day one?",
     answer:
-      "Creator Claw is a Flagship desk: 5-step Creation Wizard, Go Live checklist, publish bridges on eno2, engage loop, and planner/analytics at Standard and Expert levels. Demo tour runs day one; live posts need your credentials on eno2.",
+      "Creator is a Flagship desk: 5-step Creation Wizard, Go Live checklist, publish bridges on eno2, engage loop, and planner/analytics at Standard and Expert levels. Demo tour runs day one; live posts need your credentials on eno2.",
   },
   {
-    question: "What does Capital Claw do on day one?",
+    question: "What does Capital do on day one?",
     answer:
-      "Capital Claw is a Flagship desk: demo tour, Go Live checklist, rule engine, paper trading via Alpaca on eno2, and Capital Alpha analytics. Live broker credentials stay on your appliance — we do not hold your keys in the cloud.",
+      "Capital is a Flagship desk: demo tour, Go Live checklist, rule engine, paper trading via Alpaca on eno2, and Capital Alpha analytics. Live broker credentials stay on your appliance — we do not hold your keys in the cloud.",
   },
   {
-    question: "What does Outreach Claw do on day one?",
+    question: "What does Outreach do on day one?",
     answer:
-      "Outreach Claw is a Flagship desk: persona levels L1–L3, sequences, CSV import, deliverability checks, approval flows, and outbound analytics. Demo tour simulates sends until you connect mail and CRM bridges on eno2.",
+      "Outreach is a Flagship desk: persona levels L1–L3, sequences, CSV import, deliverability checks, approval flows, and outbound analytics. Demo tour simulates sends until you connect mail and CRM bridges on eno2.",
   },
   {
-    question: "Can Vital Claw sync with my smartwatch or health apps?",
+    question: "Can Vital sync with my smartwatch or health apps?",
     answer:
-      "Vital Claw is a Preview module today — Longevity Lab, literature RAG, and clinician export work on-box. Wearable and lab PDF bridges connect via OAuth you authorize in Settings when eno2 validation completes. CurXor does not lock you to one watch brand.",
+      "Vital is a Preview module today — Longevity Lab, literature RAG, and clinician export work on-box. Wearable and lab PDF bridges connect via OAuth you authorize in Settings when eno2 validation completes. CurXor does not lock you to one watch brand.",
   },
   {
     question: "Can I disconnect my agents from the internet?",
     answer:
-      "Yes. eno1 is Command (Flight Command UI). eno2 is Egress for outbound agent actions. Unplug eno2 to kill outbound Claws instantly. Keep intelligence on local-only in Settings for fully offline reasoning.",
+      "Yes. eno1 is Command (Flight Command UI). eno2 is Egress for outbound agent actions. Unplug eno2 to kill outbound crewmates instantly. Keep intelligence on local-only in Settings for fully offline reasoning.",
   },
   {
     question: "How is CurXor different from NVIDIA NemoClaw?",
     answer:
-      "NemoClaw is an alpha governance layer for DIY OpenClaw deployments — sandboxing, policies, and model routing on hardware you bring. CurXor is a complete appliance product: curated OOTB Claws, local inference by default, optional frontier LLMs in Settings, and a physical eno2 egress kill switch — without assembling the stack yourself.",
+      "NemoClaw is an alpha governance layer for DIY OpenClaw deployments — sandboxing, policies, and model routing on hardware you bring. CurXor is a complete appliance product: curated OOTB crewmates, local inference by default, optional frontier LLMs in Settings, and a physical eno2 egress kill switch — without assembling the stack yourself.",
   },
   {
     question: "How is CurXor different from Perplexity Personal Computer?",
     answer:
-      "Perplexity Personal Computer is agent software on your Mac — often a Mac mini on the Perplexity Max plan (~$200/month) — that orchestrates frontier models via Perplexity's cloud. CurXor is a dedicated appliance: local inference on 64GB UMA, pre-built Claw verticals, Settings to pick your stack, and an eno2 kill switch. You pay $3,999 once instead of ~$2,400/year in subscriptions, and your prompts and playbooks stay on your metal by default.",
+      "Perplexity Personal Computer is agent software on your Mac — often a Mac mini on the Perplexity Max plan (~$200/month) — that orchestrates frontier models via Perplexity's cloud. CurXor is a dedicated appliance: local inference on 64GB UMA, pre-built crewmate desks, Settings to pick your stack, and an eno2 kill switch. You pay $3,999 once instead of ~$2,400/year in subscriptions, and your prompts and playbooks stay on your metal by default.",
   },
   {
     question: "How is CurXor different from MIKY or other “independent computer for agents” NAS boxes?",
     answer:
-      "MIKY-class and Minisforum NAS-style boxes target always-on agent hosts with bundled messaging and calendar skills — great for general automation. CurXor matches the independence story and adds serious local inference (64GB UMA, 126 TOPS), wealth/work/life Claws, Telegram/Slack/WhatsApp/iMessage gateways, dual-port eno1/eno2 isolation, and The Forge to customize anything — not a fixed skill bundle.",
+      "MIKY-class and Minisforum NAS-style boxes target always-on agent hosts with bundled messaging and calendar skills — great for general automation. CurXor matches the independence story and adds serious local inference (64GB UMA, 126 TOPS), wealth/work/life crewmates, Telegram/Slack/WhatsApp/iMessage gateways, dual-port eno1/eno2 isolation, and The Forge to customize anything — not a fixed skill bundle.",
   },
   {
     question: "Where are your privacy policy and trading disclaimers?",
     answer:
-      "Privacy policy: curxor.ai/privacy. Terms, pre-order conditions, and Capital Claw trading disclaimers: curxor.ai/terms.",
+      "Privacy policy: curxor.ai/privacy. Terms, pre-order conditions, and Capital trading disclaimers: curxor.ai/terms.",
   },
   {
     question: "Who is CurXor for?",
@@ -247,12 +247,12 @@ export const faqItems = [
   {
     question: "Who is CurXor NOT for?",
     answer:
-      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need every Claw production-complete on day one — eight are honest Coming Soon previews; Capital, Creator, and Outreach are the demo-ready desks.",
+      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need every crewmate production-complete on day one — five are honest Coming Soon previews; Capital, Creator, and Outreach are the demo-ready desks.",
   },
   {
-    question: "Which Claws actually work today?",
+    question: "Which crewmates actually work today?",
     answer:
-      "Outreach, Creator, Capital, and The Forge are flagship depth with exit-demo proof. Kin, Vital, Signal, Swarm, and Arbitrage include preview or Coming Soon surfaces — labeled honestly in Flight Command. Claw Cafe is the universal spatial home (pixel room, ascension); Engage is the Creator inbox tab.",
+      "Outreach, Creator, Capital, and The Forge are flagship depth with exit-demo proof. Kin, Vital, Signal, Swarm, and Arbitrage include preview or Coming Soon surfaces — labeled honestly in Flight Command. Crew Cafe is the universal spatial home (pixel room, ascension); Engage is the Creator inbox tab.",
   },
 ] as const;
 
@@ -289,7 +289,7 @@ export const comparisonOptions = [
       "~$2,400/yr on Max tier",
       "Frontier models orchestrated in the cloud",
       "You supply the Mac mini for 24/7 runs",
-      "General automation — no bundled Claws",
+      "General automation — no bundled crewmates",
     ],
     negative: true,
   },

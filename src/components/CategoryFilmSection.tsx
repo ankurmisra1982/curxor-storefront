@@ -33,9 +33,9 @@ const FILMS: {
     label: "Product proof",
     duration: "~90s",
     src: categoryFilmAssets.heroCategory,
-    caption: "Product demo — onboarding through three flagship Claws on real metal",
+    caption: "Product demo — onboarding through three flagship crewmates on real metal",
     ariaLabel:
-      "CurXor product proof film — onboarding through three flagship Claws on real metal",
+      "CurXor product proof film — onboarding through three flagship crewmates on real metal",
   },
 ];
 

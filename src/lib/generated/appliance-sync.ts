@@ -3,7 +3,7 @@
 
 export const applianceVersion = "1.0.3" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-07-09T04:37:20.529Z" as const;
+export const applianceSyncedAt = "2026-07-22T03:07:45.678Z" as const;
 
 export const clawCategoryLabels = {
   "forge": "Create",
@@ -25,8 +25,8 @@ export const apps = [
     "id": "claw-forge",
     "applianceId": "claw-forge",
     "name": "The Forge",
-    "tagline": "Agent factory — design and deploy new claw bots in natural language",
-    "description": "Prompt the local LLM to forge a custom Claw for your niche hustle — wire it to eno2 and deploy in one session.",
+    "tagline": "Agent factory — design and deploy new crewmates in natural language",
+    "description": "Prompt the local LLM to forge a custom crewmate for your niche hustle — wire it to eno2 and deploy in one session.",
     "icon": "✚",
     "category": "forge",
     "categoryLabel": "Create",
@@ -36,7 +36,7 @@ export const apps = [
   {
     "id": "capital-claw",
     "applianceId": "my-capital",
-    "name": "Capital Claw",
+    "name": "Capital",
     "tagline": "Rule-based investing agent — stocks, crypto, local evaluation",
     "description": "Algorithmic trading, crypto sniping, and automated portfolio rebalancing — your alpha stays on bare metal.",
     "icon": "↗",
@@ -48,7 +48,7 @@ export const apps = [
   {
     "id": "creator-claw",
     "applianceId": "my-content-creator",
-    "name": "Creator Claw",
+    "name": "Creator",
     "tagline": "Content pipeline — draft, create, adapt, publish",
     "description": "Draft, adapt, and publish across social channels — video pipelines, engage inbox, calendar, and digital bridges on eno2 with zero API rent.",
     "icon": "✦",
@@ -60,7 +60,7 @@ export const apps = [
   {
     "id": "outreach-claw",
     "applianceId": "my-work",
-    "name": "Outreach Claw",
+    "name": "Outreach",
     "tagline": "Daily coordination desk — leads, sequences, CRM",
     "description": "Lead scraping, personalized cold email sequencing, and CRM follow-ups — outbound that never sleeps.",
     "icon": "⌘",
@@ -72,7 +72,7 @@ export const apps = [
   {
     "id": "arbitrage-claw",
     "applianceId": "my-shop",
-    "name": "Arbitrage Claw",
+    "name": "Arbitrage",
     "tagline": "Sovereign multi-channel margin desk (preview showcase)",
     "description": "E-commerce price scraping, margin alerts, and automated dropshipping fulfillment — find spread, act instantly.",
     "icon": "◈",
@@ -84,7 +84,7 @@ export const apps = [
   {
     "id": "vital-claw",
     "applianceId": "my-vital",
-    "name": "Vital Claw",
+    "name": "Vital",
     "tagline": "Longevity desk — vitals, labs, longevity Q&A, and health protocol",
     "description": "Longevity desk — wearables, labs, expert Q&A preview (Sinclair, Blueprint), and a personalized health protocol on your metal.",
     "icon": "♡",
@@ -96,7 +96,7 @@ export const apps = [
   {
     "id": "learn-claw",
     "applianceId": "my-learn",
-    "name": "Learn Claw",
+    "name": "Learn",
     "tagline": "Tutor desk — Kin learner picker and curriculum preview",
     "description": "Tutor desk — pick a learner from Kin, track curriculum progress, and earn Cafe XP when depth ships. Preview shell only until G4+.",
     "icon": "◇",
@@ -108,7 +108,7 @@ export const apps = [
   {
     "id": "gamer-claw",
     "applianceId": "my-game",
-    "name": "Gamer Claw",
+    "name": "Gamer",
     "tagline": "Play · Stream · Make — sovereign play desk (preview)",
     "description": "Play · Stream · Make — one sovereign view for libraries, sessions, streams, and AI game studio. Games still run on your PC or console.",
     "icon": "▣",
@@ -120,7 +120,7 @@ export const apps = [
   {
     "id": "estate-claw",
     "applianceId": "my-estate",
-    "name": "Estate Claw",
+    "name": "Estate",
     "tagline": "Legal · Property · Tax — Legal lane production (ES1)",
     "description": "Legal · Property · Tax — one paperwork desk with three lanes. Preview vault only; no live filing or tax submission on-box.",
     "icon": "▤",
@@ -132,9 +132,9 @@ export const apps = [
   {
     "id": "swarm-claw",
     "applianceId": "robotaxi-fleet-manager",
-    "name": "Swarm Claw",
+    "name": "Swarm",
     "tagline": "Autonomous Robotaxi fleet operator (preview)",
-    "description": "Orchestrate digital Claws today — preview path to operating many Tesla Robotaxis as an autonomous fleet from sovereign metal.",
+    "description": "Orchestrate your desk crew today — preview path to operating many Tesla Robotaxis as an autonomous fleet from sovereign metal.",
     "icon": "◎",
     "category": "physical",
     "categoryLabel": "Signals & swarm",
@@ -144,9 +144,9 @@ export const apps = [
   {
     "id": "claw-cafe",
     "applianceId": "claw-cafe",
-    "name": "Claw Cafe",
-    "tagline": "Where your Claws live — pixel room, ascension, and handshakes",
-    "description": "Where your Claws live. Pixel room, ascension, handshakes, and cross-Claw celebrations. Engage inbox lives under Creator.",
+    "name": "Crew Cafe",
+    "tagline": "Where your desk crew lives — pixel room, ascension, and handshakes",
+    "description": "Where your desk crew lives. Pixel room, ascension, handshakes, and cross-crew celebrations. Engage inbox lives under Creator.",
     "icon": "⎔",
     "category": "physical",
     "categoryLabel": "Signals & swarm",
@@ -156,7 +156,7 @@ export const apps = [
   {
     "id": "signal-claw",
     "applianceId": "tesla-optimus-engine",
-    "name": "Signal Claw",
+    "name": "Signal",
     "tagline": "Humanoid home hub — teach, instruct, and relate before your robot arrives",
     "description": "Humanoid home hub — teach house rules, pass knowledge, and relate before your robot arrives. More robot types later.",
     "icon": "⊕",
@@ -170,7 +170,7 @@ export const apps = [
     "applianceId": "my-family",
     "name": "Kin",
     "tagline": "Household mapper — profiles, scopes, and devices for everyone in your home (preview)",
-    "description": "Kin — your household on the box. Always-on mapper for profiles, scopes, and devices so Signal, Vital, and every Claw know who is who.",
+    "description": "Kin — your household on the box. Always-on mapper for profiles, scopes, and devices so Signal, Vital, and every crewmate know who is who.",
     "icon": "⚘",
     "category": "life",
     "categoryLabel": "Life & family",

@@ -1,17 +1,17 @@
 /**
- * Symphony metaphor — locked Jun 2026.
+ * Symphony metaphor — locked Jun 2026 · desk crew rebrand Jul 2026.
  * Canonical spec: docs/DREAM-STATE-OVERVIEW.md · ../curxor-os/docs/curxor-os/DREAM-STATE-OVERVIEW.md
  */
 
 export const symphonyPayoff = "The symphony plays." as const;
 
 export const symphonyBridgeLine =
-  "The orchestrator on your desk — the conductor for your Claws." as const;
+  "The orchestrator on your desk — the conductor for your desk crew." as const;
 
 export const symphonyEssayLine =
-  "CurXor conducts on your desk. Claws are the orchestra." as const;
+  "CurXor is the orchestrator on your desk. Your desk crew is the team it runs." as const;
 
-/** Five roles — operator → desk → claws → signal → cafe */
+/** Five roles — operator → desk → desk crew → signal → cafe */
 export const symphonyRoles = [
   {
     id: "operator",
@@ -23,13 +23,13 @@ export const symphonyRoles = [
     id: "desk",
     label: "CurXor desk",
     metaphor: "Conductor + orchestrator",
-    body: "Same desk, two registers — conducts your Claws on metal you own.",
+    body: "Same desk, two registers — conducts your desk crew on metal you own.",
   },
   {
     id: "claws",
-    label: "Claws",
+    label: "Desk crew",
     metaphor: "Orchestra / sections",
-    body: "Specialists that play in parallel — capital, content, outreach, and more.",
+    body: "Digital employees on your metal — specialists that play in parallel: capital, content, outreach, and more.",
   },
   {
     id: "signal",
@@ -39,7 +39,7 @@ export const symphonyRoles = [
   },
   {
     id: "cafe",
-    label: "Claw Cafe",
+    label: "Crew Cafe",
     metaphor: "The hall",
     body: "Where the ensemble has presence — XP, ascension, real activity.",
   },
@@ -49,23 +49,23 @@ export const symphonySection = {
   eyebrow: "THE SYMPHONY MODEL",
   headline: "One desk conducts. The symphony plays.",
   subhead:
-    "Chat SaaS gives you one assistant. CurXor gives you an orchestra of Claws — a conductor on your desk, and a hall where your operators live.",
+    "Chat SaaS gives you one assistant. CurXor gives you a desk crew — a conductor on your desk, and a hall where your operators live.",
   payoff: symphonyPayoff,
   bridgeLine: symphonyBridgeLine,
 } as const;
 
 export const symphonyWhatIsThis = {
   box: {
-    title: "The CurXor box",
-    body: "The CurXor box — a desk appliance you own. Act I validated on MS-S1-class metal. Plug into your network.",
+    title: "The box",
+    body: "A MINISFORUM MS-S1-class appliance. Plug into your network. You own the hardware.",
   },
   os: {
     title: "CurXor OS",
-    body: "The desk that conducts — inference, agents, and control on your metal, not in a cloud subscription.",
+    body: "Agents, inference, and control stay on your metal — not a cloud subscription.",
   },
   claws: {
-    title: "Your Claws",
-    body: "Capital, Creator, Outreach day one — plus The Forge and honest previews. Mint sections as you grow.",
+    title: "Desk crew",
+    body: "Digital employees on your metal — a desk crew of ten. Capital, content, outreach, and more. Mint sections in The Forge.",
   },
   footer: "You compose the score. Unplug egress — the hall keeps thinking. The symphony plays on your metal.",
 } as const;

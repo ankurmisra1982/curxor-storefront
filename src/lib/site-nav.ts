@@ -8,7 +8,7 @@ export type NavGroup = {
   id: string;
   label: string;
   items: NavLink[];
-  /** Muted link under items — e.g. full roster with Preview-tier Claws. */
+  /** Muted link under items — e.g. full roster with Preview-tier crewmates. */
   footer?: NavLink;
 };
 
@@ -16,11 +16,11 @@ export type NavGroup = {
 export const navGroups: NavGroup[] = [
   {
     id: "claws",
-    label: "CLAWS",
+    label: "DESK CREW",
     items: [
-      { href: "/capital", label: "Capital Claw", description: "Sovereign trading desk" },
-      { href: "/creator", label: "Creator Claw", description: "Content & growth loops" },
-      { href: "/outreach", label: "Outreach Claw", description: "Pipeline & sequences" },
+      { href: "/capital", label: "Capital", description: "Sovereign trading desk" },
+      { href: "/creator", label: "Creator", description: "Content & growth loops" },
+      { href: "/outreach", label: "Outreach", description: "Pipeline & sequences" },
     ],
     footer: {
       href: "/#apps",

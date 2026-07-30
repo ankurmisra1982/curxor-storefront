@@ -122,7 +122,7 @@ export default function CreatorPage() {
           <div className="overflow-hidden border border-white/10">
             <Image
               src="/demo/creator/09-go-live-checklist.png"
-              alt="Creator Claw Go Live panel with demo tour"
+              alt="Creator Go Live panel with demo tour"
               width={1440}
               height={900}
               className="h-auto w-full"

@@ -77,7 +77,7 @@ export const architectureContent = {
       name: "Engine",
       path: "pillar-2-engine/",
       role: "OpenClaw agent loop — workspace memory, skills, heartbeat scheduler, and channel gateway.",
-      detail: "Capital, Creator, Outreach, and Forge Claws execute via dedicated bridges. Claw Cafe tracks cross-Claw growth from real operator events. Dashboard chat and Telegram, Slack, WhatsApp, or iMessage share one router synced to CCP — you configure which gateways to enable.",
+      detail: "Capital, Creator, Outreach, and Forge crewmates execute via dedicated bridges. Crew Cafe tracks cross-crew growth from real operator events. Dashboard chat and Telegram, Slack, WhatsApp, or iMessage share one router synced to CCP — you configure which gateways to enable.",
     },
     {
       id: "telemetry",
@@ -92,8 +92,8 @@ export const architectureContent = {
       number: "04",
       name: "Flight Command",
       path: "pillar-4-dashboard/",
-      role: "Next.js operator UI — Home hub, unified inbox, Claw workspaces, chat, and skill buttons.",
-      detail: "Settings controls Claws, intelligence, appearance, messaging gateways, and agent runtime — wearables and health apps connect via OAuth you authorize, not a fixed vendor list.",
+      role: "Next.js operator UI — Home hub, unified inbox, crewmate workspaces, chat, and skill buttons.",
+      detail: "Settings controls your desk crew, intelligence, appearance, messaging gateways, and agent runtime — wearables and health apps connect via OAuth you authorize, not a fixed vendor list.",
     },
   ],
   ports: [
@@ -105,7 +105,7 @@ export const architectureContent = {
     {
       id: "eno2",
       name: "eno2 · Egress Port",
-      body: "Outbound bridge lane for agent actions — Alpaca trades, X posts, CRM webhooks, browser automation. Unplug eno2 to kill every outbound Claw instantly while local inference keeps running.",
+      body: "Outbound bridge lane for agent actions — Alpaca trades, X posts, CRM webhooks, browser automation. Unplug eno2 to kill every outbound crewmate instantly while local inference keeps running.",
     },
   ],
   bridges: [
@@ -117,7 +117,7 @@ export const architectureContent = {
   principles: [
     "Sovereign edge — inference and agent control stay on localhost",
     "Network isolation — eno1 (operators) and eno2 (egress) are separate concerns",
-    "User-configured integrations — Claws and channels you enable, not a preset vendor bundle",
+    "User-configured integrations — crewmates and channels you enable, not a preset vendor bundle",
     "OTA golden image — flash once, iterate locally, rollback on failure",
     "Open-weight tier profiles — Standard, Pro 128, and Studio each run the best models their memory allows; update the stack without rebuying the story",
   ],

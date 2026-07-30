@@ -1,19 +1,19 @@
-/** Signal Claw GTM — Neural Link positioning (preview Tier C). */
+/** Signal GTM — Neural Link positioning (preview Tier C). */
 
 /** Provocative hub name — avoids collision with Signal messenger. */
 export const signalHubName = "The Neural Link" as const;
 
 export const signalPageMeta = {
-  title: "Signal Claw — The Neural Link",
+  title: "Signal — The Neural Link",
   description:
-    "Pins, headsets, robots, and taxis drift without a conductor. Signal Claw is CurXor's neural link — every AI device class, one orchestrator on your desk. Humanoid preview on appliance today.",
+    "Pins, headsets, robots, and taxis drift without a conductor. Signal is CurXor's neural link — every AI device class, one orchestrator on your desk. Humanoid preview on appliance today.",
 } as const;
 
 export const signalPageHero = {
   hero: "What is the next interface?",
   accent: "Wrong question.",
   oneLiner:
-    "Every wearable, room, and robot promises to replace the screen. None of them orchestrate your wealth, growth, and work on metal you own. Signal Claw is the neural link — humanoid today, every device class tomorrow.",
+    "Every wearable, room, and robot promises to replace the screen. None of them orchestrate your wealth, growth, and work on metal you own. Signal is the neural link — humanoid today, every device class tomorrow.",
 } as const;
 
 export const signalHorizonCopy = {
@@ -85,8 +85,8 @@ export const signalHonesty = [
   "Humanoid Home Hub preview is real in CurXor OS — five tabs, pair wizard, mesh demo.",
   "No live robot motion or device pairing beyond preview state in this release.",
   "Glasses, VR, smart home, and fleet classes are registry slots — Coming Soon, same Tier C honesty as Vital and KIN.",
-  "CurXor OS on your desk orchestrates; Signal Claw is how worn and embodied devices get context, policy, and egress.",
+  "CurXor OS on your desk orchestrates; Signal is how worn and embodied devices get context, policy, and egress.",
 ] as const;
 
 export const signalPitchLine =
-  "Signal Claw — The Neural Link: humanoid preview today; every AI device class on sovereign metal tomorrow.";
+  "Signal — The Neural Link: humanoid preview today; every AI device class on sovereign metal tomorrow.";

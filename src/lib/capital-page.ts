@@ -3,9 +3,9 @@ import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
 export const capitalDemoHero = {
   src: g3Screenshots.capitalPaper,
-  alt: "Capital Claw desk — paper book, rules, and portfolio panels",
+  alt: "Capital desk — paper book, rules, and portfolio panels",
   caption:
-    "Demo capture — Capital Claw paper book on CurXor OS. Practice mode — rules, log, and cafe proof are real on the appliance; live broker book not shown.",
+    "Demo capture — Capital paper book on CurXor OS. Practice mode — rules, log, and cafe proof are real on the appliance; live broker book not shown.",
   label: "PRACTICE MODE · PAPER BOOK",
 } as const;
 
@@ -81,8 +81,8 @@ export const capitalDeskStrip = {
 } as const;
 
 export const capitalPageMeta = {
-  title: "Capital Claw — Sovereign Trading Desk",
+  title: "Capital — Sovereign Trading Desk",
   description:
-    "Capital Claw on CurXor OS — Setup Wizard, Go Live checklist, one-click demo tour, rule engine, and paper path via Alpaca on eno2. Demo desk day one; broker keys when you exit demo.",
+    "Capital on CurXor OS — Setup Wizard, Go Live checklist, one-click demo tour, rule engine, and paper path via Alpaca on eno2. Demo desk day one; broker keys when you exit demo.",
   ...clawHeadlines.capital,
 } as const;

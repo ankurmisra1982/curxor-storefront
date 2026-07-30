@@ -13,8 +13,8 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 | In scope | Out of scope |
 |----------|--------------|
 | Landing, positioning, pre-order, investor press kit | Inference, mesh, engine runtime |
-| Email list (Resend) · prod UAT green Jul 8 | FRE, claw provisioning |
-| 10 Claw marketing cards + The Forge | Live trading / posting at scale |
+| Email list (Resend) · prod UAT green Jul 8 | FRE, crewmate provisioning |
+| Desk crew marketing cards + The Forge | Live trading / posting at scale |
 | G3 demo pack + category films on `/signal` | OTA fleet URL, captive portal install |
 | Appliance version badges (synced) | External operator UAT (G4) |
 
@@ -28,11 +28,11 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 | **3D scene** | R3F hardware scene (`HardwareScene.tsx`) |
 | **Symphony** | `#symphony` — conductor metaphor (`SymphonySection.tsx`) |
 | **G3 desk gallery** | MS-S1 captures in `public/demo/g3/` — homepage demo section |
-| **Spec matrix** | Compute / Network / Claw Engine columns |
-| **App ecosystem** | 10 Claws from `appliance-sync.ts` · mobile carousel |
+| **Spec matrix** | Compute / Network / OpenClaw Engine columns |
+| **App ecosystem** | Desk crew from `appliance-sync.ts` · mobile carousel |
 | **Category films** | `/signal#category-film` — vision ~61s default + product ~90s tab |
 | **Trust pages** | `/privacy`, `/terms`, `/architecture`, `/changelog`, `/press`, `/pricing` |
-| **Claw landings** | `/capital`, `/creator`, `/outreach`, `/signal` (Neural Link horizon) |
+| **Desk landings** | `/capital`, `/creator`, `/outreach`, `/signal` (Neural Link horizon) |
 | **Personas** | `/for/traders`, `/for/creators`, `/for/agencies` |
 | **Compare hub** | `/compare/*` — five competitor pages |
 | **Unified comms copy** | FAQ + spec matrix — Telegram, Slack, WhatsApp, iMessage |
@@ -45,22 +45,22 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 
 ---
 
-## Synced Claw catalog
+## Synced desk crew catalog
 
 Source: `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` via `npm run sync:appliance`
 
 | Storefront slug | Name | Appliance route |
 |-----------------|------|-----------------|
-| `claw-forge` | The Forge | `/claw-forge` |
+| `claw-forge` | The Forge | `/forge` |
 | `capital-claw` | Capital | `/my-capital` |
 | `creator-claw` | Creator | `/my-content` |
 | `outreach-claw` | Outreach | `/my-work` |
-| `arbitrage-claw` | Arbitrage Claw | `/my-shop` |
-| `signal-claw` | Signal Claw | `/optimus` |
-| `swarm-claw` | Swarm Claw | `/robotaxi` |
+| `arbitrage-claw` | Arbitrage | `/my-shop` |
+| `signal-claw` | Signal | `/optimus` |
+| `swarm-claw` | Swarm | `/robotaxi` |
 | `engage-claw` | Crew Cafe | `/crew-cafe` |
-| `vital-claw` | Vital Claw | `/my-vital` |
-| `kin-claw` | Kin Claw | `/my-family` |
+| `vital-claw` | Vital | `/my-vital` |
+| `kin-claw` | Kin | `/my-family` |
 
 ---
 
@@ -69,7 +69,7 @@ Source: `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` via `npm run sync:app
 | Item | Status |
 |------|--------|
 | MS-S1 batch product photography | G4 — hero uses composites + G3 desk strips |
-| Claw walkthrough re-record on `/capital` `/creator` | Post-G3 box session |
+| Desk walkthrough re-record on `/capital` `/creator` | Post-G3 box session |
 | Loop homepage section (G11) | Post-fundraise |
 | Trust loop graphic (G12) | Post-fundraise |
 | `/for-builders` (G13) | Post-fundraise |

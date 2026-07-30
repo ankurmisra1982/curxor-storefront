@@ -6,8 +6,8 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 
 - [x] Wave 0–2 — subscribe-first sitewide, ownership hero (*Your AI team. On a box you own.*), category spine in meta/deck, Act I/II story arc, operator composites, trust strip
 - [x] Landing page hero (*Your AI team. On a box you own.*) · category in `metaDescription`
-- [x] Spec sheet matrix (Compute / Network / Claw Engine)
-- [x] Ten Claw workspaces (9 verticals + The Forge) grouped by category + mobile carousel
+- [x] Spec sheet matrix (Compute / Network / OpenClaw Engine)
+- [x] Desk crew workspaces (9 verticals + The Forge) grouped by category + mobile carousel
 - [x] Day One hub section (Home / chat / stay local / Settings)
 - [x] Flight Command screenshot hero (R3F 3D scene retired — unused deps removed)
 - [x] Email capture (`/api/subscribe` + Resend)
@@ -20,9 +20,9 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] Privacy policy (`/privacy`) + terms & trading disclaimer (`/terms`)
 - [x] Changelog (`/changelog`) tied to `../curxor-os/version.json` via sync
 - [x] Press kit (`/press`) — boilerplate + fact sheet
-- [x] Claw taglines synced from `app-agent-catalog.ts` when sibling repo present
+- [x] Crewmate taglines synced from `app-agent-catalog.ts` when sibling repo present
 - [x] Social profiles wired (footer, press, JSON-LD, llms.txt)
-- [x] Creator Claw demo (`08-creator-claw.png`) + creator flow gallery
+- [x] Creator demo (`08-creator-claw.png`) + creator flow gallery
 - [x] Hero film comp plates (`public/demo/hero-film/*@2x.png`) — sync from `../curxor-os/docs/gtm/hero-film-figma/exports/`
 - [x] Trust strip (pre-order, ship window, support, terms link)
 - [x] Price-includes section + four-year TCO table
@@ -30,8 +30,8 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] Compare hub + five competitor pages under `/compare/*`
 - [x] Homepage reorder (demo → personas → compare first)
 - [x] `/creator` landing page + Flight Command demo screenshots
-- [x] `/capital` + `/outreach` Claw landing pages
-- [x] `/signal` — Signal Claw · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
+- [x] `/capital` + `/outreach` desk landing pages
+- [x] `/signal` — Signal · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
 - [x] **Hero film v5.1 script + comp plates** (G3 · `46f9257`) — [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/` · Figma proto linked
 - [x] **Hero film UI** — `/signal` category section + film tabs · `/press` downloads
 - [x] **Hero film MP4** — badge vision (~61s) + Act I product (~90s) on /signal · investor proof on /press
@@ -57,20 +57,20 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 | G13 | `/for-builders` page (Build Plane) | G3+ · not conversion-critical |
 | HERO-v2 | Live Layer A badge shoot + full 90s A+B+C merge | Post-validation film chat |
 | Product photography | MS-S1 batch hero | Hardware shoot gate |
-| Claw walkthrough re-record | Replace old webm on `/capital` `/creator` | Post-G3 box session |
+| Desk walkthrough re-record | Replace old webm on `/capital` `/creator` | Post-G3 box session |
 
 ## Build next (this repo)
 
-- [x] Settings / user freedom copy (Claws toggle, optional frontier LLM, themes) — `src/lib/config.ts`
+- [x] Settings / user freedom copy (desk crew toggle, optional frontier LLM, themes) — `src/lib/config.ts`
 - [x] Pricing / UMA tiers page (`/pricing`) — synced from `local-llm-catalog.ts`
-- [x] Demo screenshots in `public/demo/` (Home through Creator Claw + creator flows)
-- [x] Cafe captures in `public/demo/cafe/` (Wave A — dev Flight Command UI; not MS-S1 verified)
+- [x] Demo screenshots in `public/demo/` (Home through Creator + creator flows)
+- [x] Cafe captures in `public/demo/cafe/` (Crew Cafe — re-shot with desk-crew chrome when box preset allows)
 - [x] Changelog auto-append on version bump (`sync:appliance` + `data/changelog-entries.json`)
 - [x] Pricing compute ladder on `/pricing`
 - [x] MIKY / agent NAS FAQ + comparison row
 - [x] v0.2.0 marketing pass — messaging FAQ, architecture, agnostic wearables copy
 - [ ] Product photography in hero when MS-S1 batch is photographed
-- [ ] Claw walkthrough videos (replace screenshot heroes on `/capital` and `/creator` when re-recorded from Flight Command)
+- [ ] Desk walkthrough videos (replace screenshot heroes on `/capital` and `/creator` when re-recorded from Flight Command)
 - [ ] Customer testimonials / press logos when available
 
 ## Roadmap (parked — no action)
@@ -126,5 +126,5 @@ See [SYNC.md](SYNC.md) and [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md).
 |--------|-----|
 | `docs/guides/02-architecture.md` | Architecture page source |
 | `docs/guides/10-ms-s1-max-hardware-bios.md` | Hardware FAQ |
-| `docs/guides/12-digital-action-layer.md` | Capital Claw + privacy story |
+| `docs/guides/12-digital-action-layer.md` | Capital desk + privacy story |
 | `docs/quick-reference/operator-card.md` | Support download |

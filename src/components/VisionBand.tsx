@@ -1,18 +1,17 @@
 import Link from "next/link";
 
-import { CafeClawVisual } from "@/components/CafeClawVisual";
 import { SignalHorizonVisual } from "@/components/SignalHorizonVisual";
 import { gtmConductorAccent } from "@/lib/dream-state";
 import { actTwoStory, visionBand } from "@/lib/home-story";
 import { symphonyRoles } from "@/lib/symphony-metaphor";
 
 /**
- * Collapsed homepage vision band — Symphony roles + Signal tease + Cafe proof
- * in one section (pre-marketing diet vs three competing metaphor acts).
+ * Slim homepage vision band — symphony roles + Signal tease.
+ * Full Crew Cafe mock lives on /signal and appliance demos, not cold-traffic mid-page.
  */
 export function VisionBand() {
   const roles = symphonyRoles.filter((r) => r.id !== "signal" && r.id !== "cafe");
-  const { cafeProof, evolutionTease } = actTwoStory;
+  const { evolutionTease } = actTwoStory;
 
   return (
     <section
@@ -31,11 +30,11 @@ export function VisionBand() {
           >
             {visionBand.headline}
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-white/50">
+          <p className="mt-3 text-sm leading-relaxed text-white/60">
             {visionBand.subhead}
           </p>
-          <p className="mt-2 text-xs italic text-white/35">{gtmConductorAccent}</p>
-          <p className="mt-1 text-xs italic text-white/30">{evolutionTease}</p>
+          <p className="mt-2 text-xs italic text-white/55">{gtmConductorAccent}</p>
+          <p className="mt-1 text-xs italic text-white/50">{evolutionTease}</p>
         </div>
 
         <div className="mt-8 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-3">
@@ -47,7 +46,7 @@ export function VisionBand() {
               <p className="mt-2 text-xs font-bold tracking-wide text-white/85">
                 {role.metaphor}
               </p>
-              <p className="mt-3 flex-1 text-xs leading-relaxed text-white/45">
+              <p className="mt-3 flex-1 text-xs leading-relaxed text-white/55">
                 {role.body}
               </p>
             </article>
@@ -59,8 +58,11 @@ export function VisionBand() {
             <p className="text-[10px] tracking-[0.25em] text-neon-purple">
               SIGNAL · CONCEPT PREVIEW
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-white/55">
+            <p className="mt-3 text-sm leading-relaxed text-white/60">
               {visionBand.signalTeaser}
+            </p>
+            <p className="mt-3 text-xs leading-relaxed text-white/55">
+              {visionBand.cafeTeaser}
             </p>
             <Link
               href="/signal"
@@ -71,30 +73,6 @@ export function VisionBand() {
           </div>
           <div className="min-w-0">
             <SignalHorizonVisual compact />
-          </div>
-        </div>
-
-        <div className="mt-6 border border-amber-400/25 bg-black/40 p-5 sm:p-6">
-          <p className="text-[10px] font-bold tracking-[0.25em] text-amber-200/90">
-            {visionBand.cafeDisclaimer}
-          </p>
-          <p className="mt-3 text-[10px] tracking-[0.25em] text-amber-200/60">
-            CAFE TIER · PROOF
-          </p>
-          <blockquote className="mt-3 max-w-xl border-l-2 border-amber-400/30 pl-4">
-            <p className="text-sm italic leading-relaxed tracking-wide text-amber-200/80 sm:text-[15px]">
-              {cafeProof.kicker}
-            </p>
-          </blockquote>
-          <h3 className="mt-4 text-lg font-bold tracking-wide text-white/90">
-            {cafeProof.title}
-          </h3>
-          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-white/50">
-            {cafeProof.body}
-          </p>
-          <p className="mt-2 text-xs text-white/40">{visionBand.cafeTeaser}</p>
-          <div className="mt-6">
-            <CafeClawVisual />
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@ export function ComparisonTable() {
               Not another cloud bill
             </h2>
           </div>
-          <p className="max-w-sm text-xs text-white/40">
+          <p className="max-w-sm text-xs text-white/55">
             Rent inference forever — or own it once on your desk.
           </p>
         </div>
@@ -54,7 +54,7 @@ export function ComparisonTable() {
               <p className="text-[10px] tracking-[0.25em] text-neon-purple">
                 RECOMMENDED
               </p>
-              <p className="mt-1 text-[10px] tracking-[0.2em] text-white/30">
+              <p className="mt-1 text-[10px] tracking-[0.2em] text-white/50">
                 {curxor.label}
               </p>
               <p className="mt-2 text-3xl font-bold text-neon-purple">
@@ -88,7 +88,7 @@ export function ComparisonTable() {
           <span className="inline-flex items-center gap-1.5">
             <Link
               href="/pricing"
-              className="text-xs tracking-widest text-white/35 transition-colors hover:text-neon-purple"
+              className="text-xs tracking-widest text-white/55 transition-colors hover:text-neon-purple"
             >
               UMA TIERS →
             </Link>
@@ -109,7 +109,7 @@ function ComparisonCard({
 
   return (
     <div className="bg-black p-5 sm:p-6">
-      <p className="text-[10px] tracking-[0.25em] text-white/30">
+      <p className="text-[10px] tracking-[0.25em] text-white/50">
         {option.label}
       </p>
       <p className="mb-4 mt-1 text-xl font-bold text-white/50">{option.price}</p>
@@ -127,7 +127,7 @@ function ComparisonCard({
       {compareHref ? (
         <Link
           href={compareHref}
-          className="mt-4 inline-block text-[10px] tracking-widest text-white/35 transition-colors hover:text-neon-purple"
+          className="mt-4 inline-block text-[10px] tracking-widest text-white/55 transition-colors hover:text-neon-purple"
         >
           DEEP COMPARE →
         </Link>

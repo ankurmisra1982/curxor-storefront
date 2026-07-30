@@ -5,10 +5,10 @@ import { ComputeLadder } from "@/components/ComputeLadder";
 import { OpenWeightTierCompare } from "@/components/OpenWeightTierCompare";
 import { InfoTip } from "@/components/InfoTip";
 import { JsonLd } from "@/components/JsonLd";
+import { PricingModelMatrix } from "@/components/PricingModelMatrix";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { pricingEvolutionBlurb } from "@/lib/compute-ladder";
-import { pricingModels, pricingTiers } from "@/lib/generated/pricing-sync";
 import { siteConfig } from "@/lib/config";
 
 const pricingTitle = `Pricing — ${siteConfig.name}`;
@@ -33,11 +33,6 @@ export const metadata: Metadata = {
   },
 };
 
-function roleLabel(role: string): string {
-  if (role === "vla") return "vision + action";
-  return role;
-}
-
 export default function PricingPage() {
   return (
     <SiteShell>
@@ -50,7 +45,7 @@ export default function PricingPage() {
           One Hardware Price. Multiple Local Model Budgets.
           <InfoTip tipId="umaTiers" className="mt-1" />
         </h1>
-        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/50">
+        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/60">
           CurXor is <span className="text-white/80">{siteConfig.preOrderPrice}</span>{" "}
           once for the appliance. Economy, Balanced, and Performance are not SaaS
           plans; they are recommended UMA allocations for local models on the same
@@ -85,39 +80,7 @@ export default function PricingPage() {
           ))}
         </div>
 
-        <div className="mt-14 grid gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
-          {pricingTiers.map((tier) => {
-            const models = pricingModels.filter((model) =>
-              model.tiers.some((supportedTier) => supportedTier === tier.id),
-            );
-            return (
-              <article key={tier.id} className="bg-black p-8">
-                <p className="mb-3 text-[10px] tracking-[0.25em] text-neon-purple">
-                  {tier.label.toUpperCase()}
-                </p>
-                <h2 className="text-3xl font-bold text-white">{tier.umaCapGb} GB UMA</h2>
-                <p className="mt-3 text-sm leading-relaxed text-white/55">
-                  {tier.description}
-                </p>
-                <ul className="mt-8 space-y-4">
-                  {models.map((model) => (
-                    <li key={model.id} className="border-t border-white/10 pt-4">
-                      <div className="flex items-center justify-between gap-4">
-                        <span className="text-sm font-bold text-white/90">{model.name}</span>
-                        <span className="text-[10px] tracking-[0.25em] text-white/35">
-                          {model.tokensPerSec} TOK/S
-                        </span>
-                      </div>
-                      <p className="mt-2 text-xs leading-relaxed text-white/45">
-                        {roleLabel(model.role)} · {model.umaGb} GB UMA · {model.description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            );
-          })}
-        </div>
+        <PricingModelMatrix />
 
         <div className="mt-14 border-industrial bg-black p-6 sm:p-8">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">

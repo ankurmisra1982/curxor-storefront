@@ -17,7 +17,7 @@ export function PricingPreview() {
               <InfoTip tipId="umaTiers" className="mt-1" />
             </h2>
           </div>
-          <p className="max-w-sm text-xs text-white/40">
+          <p className="max-w-sm text-xs text-white/55">
             Assign how much of 64 GB goes to local models — not a subscription ladder.
           </p>
         </div>

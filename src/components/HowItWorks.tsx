@@ -39,7 +39,7 @@ export function HowItWorks() {
           >
             Day one on your desk
           </h2>
-          <p className="mt-2 text-sm text-white/45">
+          <p className="mt-2 text-sm text-white/60">
             Pick your desk crew, chat or tap, stay local — pull eno2 when you want outbound cold.
           </p>
         </div>
@@ -53,7 +53,7 @@ export function HowItWorks() {
                 {beat.title}
                 {beat.step === "03" ? <InfoTip tipId="eno2" /> : null}
               </h3>
-              <p className="mt-2 text-xs leading-relaxed text-white/45">
+              <p className="mt-2 text-xs leading-relaxed text-white/55">
                 {beat.body}
               </p>
             </article>

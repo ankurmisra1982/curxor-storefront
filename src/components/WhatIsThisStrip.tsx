@@ -16,12 +16,12 @@ export function WhatIsThisStrip() {
           {columns.map((column) => (
             <div key={column.title}>
               <h2 className="text-sm font-bold tracking-wide text-white/90">{column.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-white/50">{column.body}</p>
+              <p className="mt-2 text-sm leading-relaxed text-white/60">{column.body}</p>
             </div>
           ))}
         </div>
 
-        <p className="mt-6 border-t border-white/10 pt-5 text-xs text-white/40">
+        <p className="mt-6 border-t border-white/10 pt-5 text-xs text-white/55">
           {symphonyWhatIsThis.footer}
         </p>
       </div>

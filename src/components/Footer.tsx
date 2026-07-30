@@ -15,14 +15,14 @@ export function Footer() {
     <footer id="subscribe" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-14">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 max-w-2xl border-b border-white/10 pb-8">
-          <p className="text-xs leading-relaxed text-white/40">
-            <span className="text-white/55">Mission —</span> {shortPair.mission}
+          <p className="text-xs leading-relaxed text-white/55">
+            <span className="text-white/70">Mission —</span> {shortPair.mission}
           </p>
-          <p className="mt-2 text-xs leading-relaxed text-white/40">
-            <span className="text-white/55">Vision —</span> {shortPair.vision}
+          <p className="mt-2 text-xs leading-relaxed text-white/55">
+            <span className="text-white/70">Vision —</span> {shortPair.vision}
           </p>
-          <p className="mt-2 text-xs leading-relaxed text-white/40">
-            <span className="text-white/55">Purpose —</span> {shortPair.purpose}
+          <p className="mt-2 text-xs leading-relaxed text-white/55">
+            <span className="text-white/70">Purpose —</span> {shortPair.purpose}
           </p>
           <Link
             href="/about"
@@ -39,7 +39,7 @@ export function Footer() {
             <h3 className="mb-2 text-xl font-bold tracking-tight">
               Get launch updates
             </h3>
-            <p className="mb-5 max-w-sm text-xs leading-relaxed text-white/40">
+            <p className="mb-5 max-w-sm text-xs leading-relaxed text-white/55">
               Forge updates, desk crew drops, and pre-order availability —
               delivered to your inbox.
             </p>
@@ -51,7 +51,7 @@ export function Footer() {
           <div className="flex flex-col items-start md:items-end">
             <SocialLinks
               className="mb-8 flex flex-wrap justify-start gap-x-4 gap-y-2 md:justify-end"
-              linkClassName="text-[10px] tracking-widest text-white/40 transition-colors hover:text-neon-purple"
+              linkClassName="text-[10px] tracking-widest text-white/55 transition-colors hover:text-neon-purple"
             />
 
             <div className="text-right">
@@ -69,16 +69,16 @@ export function Footer() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-[10px] tracking-widest text-white/30 transition-colors hover:text-neon-purple"
+                    className="text-[10px] tracking-widest text-white/50 transition-colors hover:text-neon-purple"
                   >
                     {link.label.toUpperCase()}
                   </Link>
                 ))}
               </nav>
-              <p className="mt-4 text-[10px] tracking-[0.2em] text-white/35">
+              <p className="mt-4 text-[10px] tracking-[0.2em] text-white/50">
                 {socialProofLine}
               </p>
-              <p className="mt-4 text-[10px] tracking-[0.3em] text-white/30">
+              <p className="mt-4 text-[10px] tracking-[0.3em] text-white/50">
                 © {new Date().getFullYear()} CURXOR SYSTEMS
               </p>
             </div>

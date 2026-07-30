@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { HeroSpecStrip } from "@/components/HeroSpecStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { TrustStrip } from "@/components/TrustStrip";
 import { WhatIsThisStrip } from "@/components/WhatIsThisStrip";
@@ -20,16 +21,8 @@ const VisionBand = dynamic(() =>
 const ComparisonTable = dynamic(() =>
   import("@/components/ComparisonTable").then((m) => ({ default: m.ComparisonTable }))
 );
-const AppEcosystem = dynamic(() =>
-  import("@/components/AppEcosystem").then((m) => ({ default: m.AppEcosystem }))
-);
 const PricingPreview = dynamic(() =>
   import("@/components/PricingPreview").then((m) => ({ default: m.PricingPreview }))
-);
-const MissionVisionSection = dynamic(() =>
-  import("@/components/MissionVisionSection").then((m) => ({
-    default: m.MissionVisionSection,
-  }))
 );
 const Faq = dynamic(() =>
   import("@/components/Faq").then((m) => ({ default: m.Faq }))
@@ -48,6 +41,7 @@ export default function Home() {
       <div className="pointer-events-none fixed inset-0 grid-industrial opacity-40" />
       <Header />
       <Hero />
+      <HeroSpecStrip />
       <TrustStrip />
       <WhatIsThisStrip />
       <HowItWorks />
@@ -55,9 +49,7 @@ export default function Home() {
       <PersonaGrid />
       <VisionBand />
       <ComparisonTable />
-      <AppEcosystem variant="featured" />
       <PricingPreview />
-      <MissionVisionSection />
       <Faq />
       <Footer />
       <MobileStickyCta />

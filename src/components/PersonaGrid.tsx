@@ -15,7 +15,7 @@ export function PersonaGrid() {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {operatorsSection.headline}
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-white/45">
+          <p className="mt-4 text-sm leading-relaxed text-white/60">
             {operatorsSection.subhead}
           </p>
         </div>
@@ -42,11 +42,11 @@ export function PersonaGrid() {
               <div className="flex flex-1 flex-col p-5 sm:p-6">
                 <p className="text-[10px] tracking-[0.15em] text-neon-purple/80">{persona.eyebrow}</p>
                 <h3 className="mt-1 text-lg font-bold tracking-tight">{persona.title}</h3>
-                <p className="mt-1 text-[10px] tracking-widest text-white/35">{persona.claws}</p>
+                <p className="mt-1 text-[10px] tracking-widest text-white/55">{persona.claws}</p>
                 <blockquote className="mt-4 flex-1 text-base font-medium leading-relaxed text-white/85">
                   &ldquo;{persona.quote}&rdquo;
                 </blockquote>
-                <p className="mt-3 text-xs leading-relaxed text-white/45">{persona.body}</p>
+                <p className="mt-3 text-xs leading-relaxed text-white/55">{persona.body}</p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   <Link
                     href={persona.ctaHref}
@@ -62,7 +62,7 @@ export function PersonaGrid() {
                   </Link>
                   <Link
                     href={persona.personaHref}
-                    className="border border-white/10 px-3 py-2 text-[10px] tracking-[0.2em] text-white/40 transition-colors hover:text-white/70"
+                    className="border border-white/10 px-3 py-2 text-[10px] tracking-[0.2em] text-white/55 transition-colors hover:text-white/80"
                   >
                     FOR YOU →
                   </Link>
@@ -73,7 +73,7 @@ export function PersonaGrid() {
           ))}
         </div>
 
-        <p className="mt-6 text-center text-[10px] text-white/30">
+        <p className="mt-6 text-center text-[10px] text-white/50">
           Composite operators — pre-launch storytelling, not paid endorsements.
         </p>
       </div>

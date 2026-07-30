@@ -154,13 +154,13 @@ export function Header() {
 
           <Link
             href="/#subscribe"
-            className="ml-1 border border-neon-purple bg-neon-purple/10 px-3 py-2 font-bold text-neon-purple transition-all hover:bg-neon-purple/20 hover:shadow-[0_0_20px_rgba(191,90,242,0.3)] xl:px-4"
+            className="ml-2 border border-neon-purple bg-neon-purple/10 px-3 py-2 font-bold text-neon-purple transition-colors hover:bg-neon-purple/20 xl:ml-3 xl:px-4"
           >
             JOIN WAITLIST
           </Link>
           <TrackedPreorderLink
             location="header"
-            className="text-white/45 transition-colors hover:text-neon-purple"
+            className="ml-1 text-white/55 transition-colors hover:text-neon-purple"
           >
             PRE-ORDER
           </TrackedPreorderLink>

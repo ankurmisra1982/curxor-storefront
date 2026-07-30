@@ -8,14 +8,13 @@ const SHOTS = [
   {
     src: g3Screenshots.home,
     title: "Home hub",
-    body: "Grouped desk crew. Chat or tap skills. Demo capture from MS-S1 box.",
+    body: "Grouped desk crew. Chat or tap skills.",
   },
   {
     src: g3Screenshots.capitalPaper,
     title: "Capital",
-    body: "Practice mode · paper book. Rules and cafe proof on metal.",
+    body: g3Honesty.capitalPractice,
     href: "/capital",
-    honesty: g3Honesty.capitalPractice,
   },
   {
     src: g3Screenshots.creatorQueue,
@@ -26,14 +25,8 @@ const SHOTS = [
   {
     src: g3Screenshots.workPipeline,
     title: "Outreach",
-    body: "Pipeline · sequences · pause-on-reply. UI real; sends when bridges wired.",
+    body: g3Honesty.workPipeline,
     href: "/outreach",
-    honesty: g3Honesty.workPipeline,
-  },
-  {
-    src: g3Screenshots.cafeRuleFired,
-    title: "Crew Cafe proof",
-    body: "RULE FIRED from real Capital activity — not a cloud alert toy.",
   },
 ] as const;
 
@@ -50,20 +43,15 @@ export function ScreenshotGallery() {
               Three crewmates you&apos;ll run in week one
             </h2>
           </div>
-          <p className="max-w-sm text-xs text-white/40">
+          <p className="max-w-sm text-xs text-white/55">
             Desk captures from MS-S1 metal — Capital, Creator, Outreach.{" "}
             {g3Honesty.deskCapture}
           </p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {SHOTS.map((shot, index) => (
-            <article
-              key={shot.src}
-              className={`border-industrial bg-black p-3 ${
-                index === 0 ? "sm:col-span-2 lg:col-span-1" : ""
-              }`}
-            >
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {SHOTS.map((shot) => (
+            <article key={shot.src} className="border-industrial bg-black p-3">
               <div className="overflow-hidden border border-white/10">
                 <Image
                   src={shot.src}
@@ -76,14 +64,7 @@ export function ScreenshotGallery() {
               <div className="flex items-start justify-between gap-3 px-1 pt-3">
                 <div>
                   <h3 className="text-sm font-bold text-white/90">{shot.title}</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-white/45">
-                    {shot.body}
-                  </p>
-                  {"honesty" in shot && shot.honesty ? (
-                    <p className="mt-2 text-[10px] leading-relaxed text-amber-200/70">
-                      {shot.honesty}
-                    </p>
-                  ) : null}
+                  <p className="mt-1 text-xs leading-relaxed text-white/55">{shot.body}</p>
                 </div>
                 {"href" in shot && shot.href ? (
                   <Link
@@ -98,7 +79,7 @@ export function ScreenshotGallery() {
           ))}
         </div>
 
-        <p className="mt-6 text-center text-xs leading-relaxed text-white/40">
+        <p className="mt-6 text-center text-xs leading-relaxed text-white/55">
           {actOneStory.honestyFooter}
         </p>
       </div>

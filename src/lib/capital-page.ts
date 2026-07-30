@@ -4,8 +4,7 @@ import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 export const capitalDemoHero = {
   src: g3Screenshots.capitalPaper,
   alt: "Capital desk — paper book, rules, and portfolio panels",
-  caption:
-    "Demo capture — Capital paper book on CurXor OS. Practice mode — rules, log, and cafe proof are real on the appliance; live broker book not shown.",
+  caption: "Demo capture — Capital paper book on CurXor OS.",
   label: "PRACTICE MODE · PAPER BOOK",
 } as const;
 

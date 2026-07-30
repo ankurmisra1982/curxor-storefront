@@ -17,7 +17,7 @@
 
 ## Live
 
-### The Forge · `/claw-forge`
+### The Forge · `/forge`
 - Mint custom crewmates on bare metal
 - Framework / Island / Import · forged `/my-claw/[slug]` desks
 - SkillSpector SS0 blocks malicious bundles
@@ -39,7 +39,7 @@
 - Connector bridges · handshake to Capital/Creator
 - L1–L5 Explorer → Executive
 
-### Crew Cafe · `/claw-cafe`
+### Crew Cafe · `/crew-cafe`
 - Pixel room on real cross-crew events
 - L1–L5 + G1–G6 ascension
 - Not full Engage/DM product

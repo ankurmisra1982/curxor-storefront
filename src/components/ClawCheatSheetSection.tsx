@@ -29,7 +29,7 @@ export function ClawCheatSheetSection() {
   return (
     <div id="claw-roster" className="mt-16 scroll-mt-24">
       <h2 className="mb-2 text-xs font-bold tracking-[0.3em] text-neon-purple">
-        CLAW ROSTER CHEAT SHEET
+        DESK CREW ROSTER CHEAT SHEET
       </h2>
       <p className="mb-2 max-w-3xl text-xs leading-relaxed text-white/45">
         {clawCheatSheetMeta.summary} CurXor OS {applianceVersion} — synced from appliance

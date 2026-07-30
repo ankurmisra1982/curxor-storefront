@@ -6,13 +6,13 @@ export const pricingTiers = [
     "id": "economy",
     "label": "Economy",
     "umaCapGb": 20,
-    "description": "Minimal UMA footprint · moondream + qwen3:8b · single-claw kiosks"
+    "description": "Minimal UMA footprint · moondream + qwen3.5:9b · single-crewmate kiosks"
   },
   {
     "id": "balanced",
     "label": "Balanced",
     "umaCapGb": 36,
-    "description": "Recommended for most claws · qwen3-vl:8b + qwen3:14b"
+    "description": "Recommended for most crewmates · day-one moondream + qwen3.5:9b (VL/14b only if pulled)"
   },
   {
     "id": "performance",
@@ -28,7 +28,7 @@ export const pricingModels = [
     "role": "vision",
     "umaGb": 4,
     "tokensPerSec": 38,
-    "description": "Tiny vision-language for claw cameras and kiosks.",
+    "description": "Tiny vision-language for kiosk cameras and lane vision.",
     "tiers": [
       "economy",
       "balanced",
@@ -40,8 +40,8 @@ export const pricingModels = [
     "name": "Qwen3-VL 8B",
     "role": "vision",
     "umaGb": 8,
-    "tokensPerSec": 24,
-    "description": "Best UMA-fit spatial vision — 256K context, agentic scenes.",
+    "tokensPerSec": 38,
+    "description": "Optional stronger vision (~6 GB) — 256K context; keep moondream as day-one default (swap cost).",
     "tiers": [
       "balanced",
       "performance"
@@ -53,19 +53,44 @@ export const pricingModels = [
     "role": "vision",
     "umaGb": 12,
     "tokensPerSec": 22,
-    "description": "Legacy vision stack — prefer qwen3-vl:8b on new claws.",
+    "description": "Legacy vision stack — prefer qwen3-vl:8b on new crewmates.",
     "tiers": [
       "balanced",
       "performance"
     ]
   },
   {
+    "id": "qwen3.5:9b",
+    "name": "Qwen3.5 9B",
+    "role": "reasoning",
+    "umaGb": 7,
+    "tokensPerSec": 36,
+    "description": "Default agent backbone — tool-calling + thinking on gfx1151 UMA.",
+    "tiers": [
+      "economy",
+      "balanced",
+      "performance"
+    ]
+  },
+  {
+    "id": "qwen3.5:4b",
+    "name": "Qwen3.5 4B",
+    "role": "reasoning",
+    "umaGb": 4,
+    "tokensPerSec": 59,
+    "description": "Economy/fast reasoning — smaller UMA footprint when 9B is overkill.",
+    "tiers": [
+      "economy",
+      "balanced"
+    ]
+  },
+  {
     "id": "qwen3:8b",
-    "name": "Qwen3 8B",
+    "name": "Qwen3 8B (legacy)",
     "role": "reasoning",
     "umaGb": 6,
-    "tokensPerSec": 32,
-    "description": "Default agent backbone — tool-calling, fast on gfx1151 UMA.",
+    "tokensPerSec": 38,
+    "description": "Legacy reasoning stack — prefer qwen3.5:9b on new crewmates.",
     "tiers": [
       "economy",
       "balanced",
@@ -78,7 +103,7 @@ export const pricingModels = [
     "role": "reasoning",
     "umaGb": 8,
     "tokensPerSec": 30,
-    "description": "Legacy reasoning stack — prefer qwen3:8b on new claws.",
+    "description": "Legacy reasoning stack — prefer qwen3.5:9b on new crewmates.",
     "tiers": [
       "economy",
       "balanced",
@@ -91,7 +116,7 @@ export const pricingModels = [
     "role": "reasoning",
     "umaGb": 11,
     "tokensPerSec": 20,
-    "description": "Stronger multi-step planning for content and capital claws.",
+    "description": "Stronger multi-step planning for content and capital desks.",
     "tiers": [
       "balanced",
       "performance"
@@ -103,7 +128,7 @@ export const pricingModels = [
     "role": "reasoning",
     "umaGb": 16,
     "tokensPerSec": 18,
-    "description": "Legacy mid-size reasoning — prefer qwen3:14b on new claws.",
+    "description": "Legacy mid-size reasoning — prefer qwen3:14b on new crewmates.",
     "tiers": [
       "balanced",
       "performance"
@@ -170,7 +195,7 @@ export const pricingModels = [
     "role": "reasoning",
     "umaGb": 22,
     "tokensPerSec": 42,
-    "description": "Legacy MoE — prefer qwen3:30b on new claws.",
+    "description": "Legacy MoE — prefer qwen3:30b on new crewmates.",
     "tiers": [
       "performance"
     ]

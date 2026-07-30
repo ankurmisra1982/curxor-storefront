@@ -3,7 +3,7 @@
 export const changelogMeta = {
   version: "1.0.3" as const,
   channel: "stable" as const,
-  syncedAt: "2026-07-22T03:07:45.684Z" as const,
+  syncedAt: "2026-07-30T07:12:33.264Z" as const,
 } as const;
 
 export const changelogEntries = [
@@ -35,7 +35,7 @@ export const changelogEntries = [
     "channel": "stable",
     "highlights": [
       "Crew Cafe — ascension XP and pixel room react to real Capital, Creator, and Outreach activity on your appliance",
-      "cross-crew growth and level-up moments tied to Flagship desks — not a cloud leaderboard",
+      "Cross-crew growth and level-up moments tied to Flagship desks — not a cloud leaderboard",
       "MS-S1 MAX unboxed 2026-06-28 — CurXor OS 0.9.1, FRE (Capital, Creator, Work), and Ollama ROCm inference validated on Standard 64 (moondream:1.8b + qwen3:8b)",
       "G1 golden path closed 2026-06-29 — eno1/eno2 captive portal + EGRESS mesh wired on box, verify-unbox-day.sh PASS, smile test PASS, telemetry broker active on 10.77.0.1; pre-v1.0.0, production OTA is G2",
       "G1-era QA baseline on box (suite later grew to 239 smoke at v1.0.3)",
@@ -81,7 +81,7 @@ export const changelogEntries = [
     "channel": "stable",
     "highlights": [
       "Forged capital-desk v2 — per-desk capital-queue.json, watchlist research, IF/THEN rules, arm_rule server skills, and L4-capital demo tour",
-      "Fleet lifecycle F11 — archive claw, island→framework promote, batch fleet export, Fleet tab actions",
+      "Fleet lifecycle F11 — archive crewmate, island→framework promote, batch fleet export, Fleet tab actions",
       "Cafe + CCP F12 — per-mint Cafe attribution, archive walk-out, publishForgedDeskContext on FRE mesh opt-in",
       "GTM F14 — island mint + import round-trip + forged assist E2E in QA; scorecard refresh; FEATURE-FUNCTION honest modes copy; tagged v0.6.5"
     ]
@@ -113,7 +113,7 @@ export const changelogEntries = [
     "highlights": [
       "Creator demo sprint — run_demo_tour, demoReady Go Live, demo://local publish fallback, creator-checklist in qa:local",
       "Outreach demo parity — simulated SMTP send, skill refresh-only fix, work-checklist, STARTUP-GUIDE",
-      "three-flagship demo bar — Capital, Creator, Outreach share demo tour + checklist + STARTUP-GUIDE pattern",
+      "Three-desk demo bar — Capital, Creator, Outreach share demo tour + checklist + STARTUP-GUIDE pattern",
       "124 smoke + capital/creator/work checklists in qa:local; tagged v0.3.5"
     ]
   },
@@ -192,7 +192,7 @@ export const changelogEntries = [
     "date": "2026-06-19",
     "channel": "stable",
     "highlights": [
-      "CurXor OS 0.1.0 — Flight Command dashboard with Home hub and nine crewmate desks + The Forge",
+      "CurXor OS 0.1.0 — Flight Command dashboard with Home hub and nine crewmates + The Forge",
       "Life & family verticals — Vital (longevity desk) and Kin (household profiles)",
       "Simple/Expert UI modes, grouped crewmate navigation, Settings hub, and chat workspaces with skill buttons",
       "The Forge — natural-language agent factory wired to eno2 egress bridges",

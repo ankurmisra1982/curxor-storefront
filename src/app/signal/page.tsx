@@ -45,7 +45,7 @@ export default function SignalPage() {
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
             <div>
               <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-                SIGNAL CLAW · {signalHubName.toUpperCase()} · PREVIEW · CURXOR OS {applianceVersion}
+                SIGNAL · {signalHubName.toUpperCase()} · PREVIEW · CURXOR OS {applianceVersion}
               </p>
               <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
                 {signalPageHero.hero}{" "}
@@ -167,7 +167,7 @@ export default function SignalPage() {
               href="/#apps"
               className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
             >
-              ALL CLAWS →
+              FULL DESK CREW →
             </Link>
           </div>
         </section>

@@ -21,7 +21,7 @@ const FEATURED_CLAW_IDS = [
   "my-capital",
   "my-content-creator",
   "my-work",
-  "claw-forge",
+  "forge",
   "my-vital",
   "my-family",
 ] as const;

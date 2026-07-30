@@ -3,7 +3,7 @@
 
 export const applianceVersion = "1.0.3" as const;
 export const applianceChannel = "stable" as const;
-export const applianceSyncedAt = "2026-07-22T03:07:45.678Z" as const;
+export const applianceSyncedAt = "2026-07-30T07:11:39.677Z" as const;
 
 export const clawCategoryLabels = {
   "forge": "Create",
@@ -23,7 +23,7 @@ export const clawCategoryOrder = [
 export const apps = [
   {
     "id": "claw-forge",
-    "applianceId": "claw-forge",
+    "applianceId": "forge",
     "name": "The Forge",
     "tagline": "Agent factory — design and deploy new crewmates in natural language",
     "description": "Prompt the local LLM to forge a custom crewmate for your niche hustle — wire it to eno2 and deploy in one session.",
@@ -143,9 +143,9 @@ export const apps = [
   },
   {
     "id": "claw-cafe",
-    "applianceId": "claw-cafe",
+    "applianceId": "crew-cafe",
     "name": "Crew Cafe",
-    "tagline": "Where your desk crew lives — pixel room, ascension, and handshakes",
+    "tagline": "Where your desk crew live — pixel room, ascension, and handshakes",
     "description": "Where your desk crew lives. Pixel room, ascension, handshakes, and cross-crew celebrations. Engage inbox lives under Creator.",
     "icon": "⎔",
     "category": "physical",

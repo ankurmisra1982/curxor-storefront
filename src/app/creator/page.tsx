@@ -47,7 +47,7 @@ export default function CreatorPage() {
     <SiteShell>
       <div className="mx-auto max-w-6xl px-6 py-12 sm:py-14">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-          CREATOR CLAW · CURXOR OS {applianceVersion}
+          CREATOR · CURXOR OS {applianceVersion}
         </p>
         <h1 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
           {creatorPageMeta.hero}{" "}

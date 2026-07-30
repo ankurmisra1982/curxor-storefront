@@ -156,7 +156,7 @@ export function SignalHorizonVisual({
                 <div className="relative flex h-14 w-24 flex-col items-center justify-center border border-neon-purple/40 bg-[#080808] shadow-[0_0_24px_rgba(191,90,242,0.15)] sm:h-16 sm:w-28">
                   <div className="absolute inset-x-2 top-2 h-0.5 bg-neon-purple/60" />
                   <span className="text-[8px] font-bold tracking-[0.2em] text-white/70">NEXUS</span>
-                  <span className="mt-1 text-[7px] tracking-widest text-neon-purple/70">SIGNAL CLAW</span>
+                  <span className="mt-1 text-[7px] tracking-widest text-neon-purple/70">SIGNAL</span>
                   <div className="absolute bottom-2 flex gap-1">
                     <span className="h-1 w-1 rounded-full bg-neon-purple shadow-[0_0_6px_#BF5AF2]" />
                     <span className="h-1 w-1 rounded-full bg-amber-400/80" />

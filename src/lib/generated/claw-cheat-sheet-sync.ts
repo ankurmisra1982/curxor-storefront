@@ -22,10 +22,10 @@ export const clawCheatSheetMeta = {
 
 export const clawCheatSheetEntries = [
   {
-    "applianceId": "claw-forge",
+    "applianceId": "forge",
     "status": "live",
     "scopedKind": null,
-    "route": "/claw-forge",
+    "route": "/forge",
     "oneLiner": "Mint custom crewmates on bare metal.",
     "bullets": [
       "Framework desk, Island engine profile, or SOUL/TOOLS import in one session",
@@ -74,10 +74,10 @@ export const clawCheatSheetEntries = [
     ]
   },
   {
-    "applianceId": "claw-cafe",
+    "applianceId": "crew-cafe",
     "status": "live",
     "scopedKind": null,
-    "route": "/claw-cafe",
+    "route": "/crew-cafe",
     "oneLiner": "XP room and ascension mirror.",
     "bullets": [
       "Pixel spatial room — characters react to real cross-crew events",

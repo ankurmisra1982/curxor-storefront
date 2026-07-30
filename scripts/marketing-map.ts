@@ -21,7 +21,7 @@ export const CLAW_CATEGORY_LABELS = {
 export type ClawCategoryId = keyof typeof CLAW_CATEGORY_LABELS;
 
 export const MARKETING_BY_APPLIANCE_ID = {
-  "claw-forge": {
+  forge: {
     storefrontId: "claw-forge",
     icon: "✚",
     sortOrder: 0,
@@ -91,7 +91,7 @@ export const MARKETING_BY_APPLIANCE_ID = {
     category: "physical",
     gtmTier: "preview",
   },
-  "claw-cafe": {
+  "crew-cafe": {
     storefrontId: "claw-cafe",
     icon: "⎔",
     sortOrder: 10,

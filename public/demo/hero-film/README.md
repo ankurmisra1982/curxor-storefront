@@ -8,7 +8,7 @@ Category / investor hero film v5.1 — **not** the cold-traffic homepage hero.
 |------|------|
 | `01-conductor-glance@2x.png` | Conductor glance · money shot |
 | `02-badge-command@2x.png` | Patron Badge · XOR |
-| `03-forge-notification@2x.png` | Forge · Narrative Claw |
+| `03-forge-notification@2x.png` | Forge · Narrative crewmate |
 | `04-egress-push@2x.png` | Egress push |
 | `05-final-metal@2x.png` | Payoff · on your metal |
 | `06-final-mint@2x.png` | Payoff · mint / conduct |

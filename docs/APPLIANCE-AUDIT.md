@@ -49,7 +49,7 @@ CurXor OS is a **coherent, installable appliance stack** with documentation, OTA
 | Arbitrage Claw | `/my-shop` | Arbitrage Claw | Mock margin / fulfillment UI |
 | Signal Claw | `/optimus` | Signal Claw | Humanoid Home Hub preview · Neural Link horizon (glance, VR, fleet) |
 | Swarm Claw | `/robotaxi` | Swarm Claw | Mock swarm grid |
-| Engage Claw | `/claw-cafe` | Engage Claw | Vision grid (live when mesh feeds) |
+| Crew Cafe | `/crew-cafe` | Crew Cafe | Vision grid (live when mesh feeds) |
 | Vital Claw | `/my-vital` | Vital Claw | Longevity desk + user-configured wearables OAuth |
 | Kin Claw | `/my-family` | Kin Claw | Household profiles + channel handle routing |
 

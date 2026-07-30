@@ -58,7 +58,7 @@ Source: `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` via `npm run sync:app
 | `arbitrage-claw` | Arbitrage Claw | `/my-shop` |
 | `signal-claw` | Signal Claw | `/optimus` |
 | `swarm-claw` | Swarm Claw | `/robotaxi` |
-| `engage-claw` | Engage Claw | `/claw-cafe` |
+| `engage-claw` | Crew Cafe | `/crew-cafe` |
 | `vital-claw` | Vital Claw | `/my-vital` |
 | `kin-claw` | Kin Claw | `/my-family` |
 

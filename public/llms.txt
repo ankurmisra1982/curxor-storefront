@@ -12,28 +12,28 @@
 - Homepage story: Who it's for · Persona grid (Alex/Sam/Jordan) · Symphony · G3 desk captures · Act II horizon
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU · 38 tok/s qwen3:8b on box
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
-- Software: CurXor OS v1.0.3 with 12 Claw verticals + The Forge (enable any combination in Settings)
+- Software: CurXor OS v1.0.3 with a desk crew of digital employees + The Forge (enable any combination in Settings)
 - QA: 239 smoke + 40 user-flow checks in curxor-os (qa:local suite)
-- Hardware validation: G1/G2/G3 closed Jul 2026 — MS-S1 golden path; published mesh benchmarks pending
+- Hardware validation: working product on real MS-S1 MAX metal; published mesh benchmarks pending
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
 - Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI
 - Pre-order (secondary): https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00
 
-## Claw depth tiers (honest labels)
+## Desk crew depth tiers (honest labels)
 
-- Flagship: Capital Claw, Creator Claw, Outreach Claw — demo-ready desks, Go Live paths, eno2 bridges
-- Forge: The Forge — natural-language agent factory
-- Cafe: Engage Claw route — cross-Claw growth home (XP, streaks, ascension from real activity)
+- Flagship: Capital, Creator, Outreach — demo-ready desks, Go Live paths, eno2 bridges
+- Forge: The Forge — natural-language crewmate factory
+- Cafe: Crew Cafe — cross-crew growth home (XP, streaks, ascension from real activity)
 - Preview: Arbitrage, Signal, Swarm, Vital, Kin — working shells; local data OK; production depth ships later
 
 ## Canonical URLs
 
 - Homepage: https://curxor.ai/
-- Outreach Claw: https://curxor.ai/outreach
-- Capital Claw: https://curxor.ai/capital
-- Creator Claw: https://curxor.ai/creator
+- Outreach: https://curxor.ai/outreach
+- Capital: https://curxor.ai/capital
+- Creator: https://curxor.ai/creator
 - Pricing (UMA tiers + compute ladder): https://curxor.ai/pricing
-- Architecture (MS-S1 validation status + claw tiers): https://curxor.ai/architecture
+- Architecture (MS-S1 validation status + desk crew tiers): https://curxor.ai/architecture
 - Changelog: https://curxor.ai/changelog
 - Press (investors & media): https://curxor.ai/press
 - Compare hub: https://curxor.ai/compare
@@ -49,11 +49,11 @@
 ## Key differentiators vs Mac Studio + Ollama
 
 - Turnkey agent platform (not DIY inference only)
-- Bundled Claws with honest depth tiers — Flagship · Forge · Cafe · Preview
-- Capital Claw (Flagship): demo tour, Go Live desk, rule engine, paper/live Alpaca on eno2
-- Creator Claw (Flagship): Creation Wizard, Go Live, publish bridges, engage loop, planner/analytics
-- Outreach Claw (Flagship): L1–L3 persona levels, sequences, deliverability, approval flows, analytics
-- Claw Cafe (Cafe tier): cross-Claw XP and ascension — reads real Flagship events
+- Bundled desk crew with honest depth tiers — Flagship · Forge · Cafe · Preview
+- Capital (Flagship): demo tour, Go Live desk, rule engine, paper/live Alpaca on eno2
+- Creator (Flagship): Creation Wizard, Go Live, publish bridges, engage loop, planner/analytics
+- Outreach (Flagship): L1–L3 persona levels, sequences, deliverability, approval flows, analytics
+- Crew Cafe (Cafe tier): cross-crew XP and ascension — reads real Flagship events
 - Preview modules: Arbitrage, Signal, Swarm, Vital, Kin — honest preview shells, no fake Go Live
 - Physical eno2 kill switch for outbound agents
 - Zero per-token cloud API fees
@@ -61,19 +61,19 @@
 ## vs Perplexity Personal Computer
 
 - Perplexity Max (~$200/mo) orchestrates frontier models in the cloud on your Mac
-- CurXor: $3,999 once, local inference on appliance hardware, bundled Claw verticals, eno2 kill switch
+- CurXor: $3,999 once, local inference on appliance hardware, bundled desk crew verticals, eno2 kill switch
 
 ## vs OpenClaw DIY / ClawBox / NemoClaw
 
 - OpenClaw: free agent runtime — you supply hardware, skills, security, and integrations
 - ClawBox-class Jetson (~€549, 8GB): lightweight always-on assistants
 - NVIDIA NemoClaw: alpha governance layer for DIY OpenClaw on NVIDIA hardware
-- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + 12 Claws + Forge on 64GB UMA; unified messaging (Telegram, Slack, WhatsApp, iMessage) and CCP inbox; wearables user-configured
+- CurXor: turnkey independent computer — OpenClaw engine + Flight Command + desk crew + Forge on 64GB UMA; unified messaging (Telegram, Slack, WhatsApp, iMessage) and Crew Context inbox; wearables user-configured
 
 ## vs MIKY / agent NAS boxes
 
 - MIKY-class and Minisforum NAS-style boxes: independent computers for agents — messaging, calendar, general automation
-- CurXor: same independence narrative with 64GB UMA, 126 TOPS, wealth/work/life Claws, messaging gateways, eno1/eno2 kill switch, The Forge to customize anything
+- CurXor: same independence narrative with 64GB UMA, 126 TOPS, wealth/work/life crewmates, messaging gateways, eno1/eno2 kill switch, The Forge to customize anything
 
 ## Contact
 

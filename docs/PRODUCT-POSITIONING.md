@@ -21,7 +21,7 @@ Aligned with live storefront copy in `src/lib/config.ts`, `Hero.tsx`, and `Creat
 
 ## Act II · Cafe band (`HorizonSection` / `home-story.ts`)
 
-**Placement:** Amber Cafe proof block on homepage — kicker above *Claw Cafe — growth home on your desk*, not hero, not tier names, no bench claims.
+**Placement:** Amber Cafe proof block on homepage — kicker above *Crew Cafe — growth home on your desk*, not hero, not tier names, no bench claims.
 
 **Stack (top → bottom):**
 
@@ -47,9 +47,9 @@ Storefront **“venture out”** means outbound **operator-approved** action —
 
 | Persona | Pain | CurXor answer |
 |---------|------|---------------|
-| Algo trader / crypto operator | API fees + strategy leakage | Capital Claw on localhost; Alpaca egress on eno2 only |
-| Creator / indie hacker | Token rent + platform lock-in | Creator Claw; schedule posts without OpenAI bills |
-| Outbound / agency founder | Lead tools + CRM SaaS stack | Outreach Claw; scrape, sequence, CRM locally |
+| Algo trader / crypto operator | API fees + strategy leakage | Capital on localhost; Alpaca egress on eno2 only |
+| Creator / indie hacker | Token rent + platform lock-in | Creator; schedule posts without OpenAI bills |
+| Outbound / agency founder | Lead tools + CRM SaaS stack | Outreach; scrape, sequence, CRM locally |
 | E-com / arbitrage operator | Margin tools + fulfillment SaaS | Arbitrage Claw; price watch + ops on-box |
 | Sovereignty-maximalist | “My alpha is my moat” | Pull eno2 = kill switch; LLM never cloud-bound |
 
@@ -95,9 +95,9 @@ End-state category copy and **naming lock** live in **[DREAM-STATE-OVERVIEW.md](
 
 | Storefront name | Appliance ID | Role |
 |-----------------|--------------|------|
-| Capital Claw | `my-capital` | Trading, rebalancing, paper/live via bridge |
-| Creator Claw | `my-content-creator` | Content pipeline, X bridge |
-| Outreach Claw | `my-work` | Outbound, CRM, productivity |
+| Capital | `my-capital` | Trading, rebalancing, paper/live via bridge |
+| Creator | `my-content-creator` | Content pipeline, X bridge |
+| Outreach | `my-work` | Outbound, CRM, productivity |
 | Arbitrage Claw | `my-shop` | E-com ops, fulfillment |
 | The Forge | `claw-forge` | Custom agent factory |
 | Fleet / Optimus / Cafe | optional modules | Demos, mesh, events |

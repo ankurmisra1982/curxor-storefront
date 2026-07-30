@@ -97,32 +97,32 @@ Use *“low-latency local mesh; benchmarks pending”* — not “sub-millisecon
 
 ## OOTB apps — marketing IDs
 
-Nine Claw verticals + The Forge — synced from `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` into `src/lib/generated/appliance-sync.ts` via `npm run sync:appliance`:
+Desk crew verticals + The Forge — synced from `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` into `src/lib/generated/appliance-sync.ts` via `npm run sync:appliance`:
 
 | Storefront slug | Appliance ID | Display name | GTM tier |
 |-----------------|--------------|--------------|----------|
-| `claw-forge` | `claw-forge` | The Forge | Forge |
-| `capital-claw` | `my-capital` | Capital Claw | Flagship |
-| `creator-claw` | `my-content-creator` | Creator Claw | Flagship |
-| `outreach-claw` | `my-work` | Outreach Claw | Flagship |
-| `arbitrage-claw` | `my-shop` | Arbitrage Claw | Preview |
-| `signal-claw` | `tesla-optimus-engine` | Signal Claw | Preview |
-| `swarm-claw` | `robotaxi-fleet-manager` | Swarm Claw | Preview |
-| `engage-claw` | `claw-cafe` | Engage Claw | Cafe |
-| `vital-claw` | `my-vital` | Vital Claw | Preview |
-| `kin-claw` | `my-family` | Kin Claw | Preview |
+| `claw-forge` | `forge` | The Forge | Forge |
+| `capital-claw` | `my-capital` | Capital | Flagship |
+| `creator-claw` | `my-content-creator` | Creator | Flagship |
+| `outreach-claw` | `my-work` | Outreach | Flagship |
+| `arbitrage-claw` | `my-shop` | Arbitrage | Preview |
+| `signal-claw` | `tesla-optimus-engine` | Signal | Preview |
+| `swarm-claw` | `robotaxi-fleet-manager` | Swarm | Preview |
+| `engage-claw` | `crew-cafe` | Crew Cafe | Cafe |
+| `vital-claw` | `my-vital` | Vital | Preview |
+| `kin-claw` | `my-family` | Kin | Preview |
 
 Full naming table + sync rules: [SYNC.md](SYNC.md)
 
-### Engage Claw vs Claw Cafe
+### Crew Cafe (was Engage Claw / Claw Cafe)
 
 | Layer | Name |
 |-------|------|
-| Storefront + Flight Command nav | **Engage Claw** (slug `engage-claw`) |
-| Appliance ID + route | `claw-cafe` → `/claw-cafe` |
-| Growth / ascension subsystem (pixel room, XP, G-tiers) | **Claw Cafe** (appliance UI — e.g. pixel room aria-label) |
+| Storefront + Flight Command nav | **Crew Cafe** (slug `engage-claw` kept for URL stability) |
+| Appliance ID + route | `crew-cafe` → `/crew-cafe` (legacy `/claw-cafe` redirects) |
+| Growth / ascension subsystem (pixel room, XP, G-tiers) | **Crew Cafe** |
 
-Marketing line: *Engage Claw* for the desk module; *Claw Cafe* for the living mirror / ascension layer inside it. Do not conflate with a separate product SKU.
+Marketing line: *Crew Cafe* is the living mirror / ascension home for the desk crew. Do not use Claw Cafe or Engage Claw in public copy.
 
 ---
 

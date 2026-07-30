@@ -23,7 +23,7 @@ This doc translates that architecture into **storefront-safe language**. No dev-
 | Agent orchestration | **Operating system for autonomous work** |
 | Prompt engineering | **Work, memory, and trust loops** |
 | SaaS subscription | **Pay once · $0/mo API · your box remembers** |
-| Devices without a hub | **Your desk conducts** — Claws play · Signal reaches the room |
+| Devices without a hub | **Your desk conducts** — desk crew plays · Signal reaches the room |
 | Chat = one assistant | **An orchestra on your metal** — *The symphony plays.* |
 
 ---
@@ -38,7 +38,7 @@ This doc translates that architecture into **storefront-safe language**. No dev-
 
 | Role | Copy |
 |------|------|
-| **Control (live · keep)** | **Your AI team. On a box you own.** · *Five flagship Claws day one · local inference · $3,999 once.* |
+| **Control (live · keep)** | **Your AI team. On a box you own.** · *Flagship crewmates day one · local inference · $3,999 once.* |
 | **Challenger (G11 · post-fundraise)** | **Stop renting chat. Run a team on your metal.** · *Not a chatbot. An operating system where work keeps moving between sessions.* |
 
 Do not replace the control headline until G11 (post-fundraise). Loop section (three columns) is G11 — deferred.
@@ -57,31 +57,31 @@ Use as **“How CurXor works”** — three columns or a simple vertical story. 
 
 | Buyer line | Appliance proof (internal — don’t put filenames on landing) |
 |------------|--------------------------------------------------------------|
-| Scheduled checks on your schedule | Per-Claw heartbeat + system scheduler |
-| Replies when you message from phone | Channels gateway → correct Claw desk |
-| Cafe shows real activity, not fake banter | App events → pixel room · cross-Claw sync |
+| Scheduled checks on your schedule | Per-crewmate heartbeat + system scheduler |
+| Replies when you message from phone | Channels gateway → correct crewmate desk |
+| Cafe shows real activity, not fake banter | App events → pixel room · cross-crew sync |
 | Bridges only when you allow egress | eno2 digital action layer |
 
-**Safe marketing:** *“Your Claws don’t reset when you close the tab — they keep checking, routing, and reacting on your metal.”*
+**Safe marketing:** *“Your desk crew doesn’t reset when you close the tab — they keep checking, routing, and reacting on your metal.”*
 
 ### 2. Memory loop — *Nothing important lives in a chat that forgets*
 
 | Buyer line | Appliance proof |
 |------------|-----------------|
 | Strategies and history stay on the box | `/etc/curxor` operator data survives deploys |
-| Claws share context with permission | Claw Context Protocol mesh |
-| Each employee has identity and skills | Per-Claw workspace memory |
-| Your progress compounds over time | Claw Cafe ascension · L1–L5 growth per desk |
+| Crewmates share context with permission | Crew Context Protocol mesh |
+| Each employee has identity and skills | Per-crewmate workspace memory |
+| Your progress compounds over time | Crew Cafe ascension · L1–L5 growth per desk |
 
-**Safe marketing:** *“Every Claw remembers who you are, what you approved, and what happened last week — on your server, not in a vendor’s cloud.”*
+**Safe marketing:** *“Every crewmate remembers who you are, what you approved, and what happened last week — on your server, not in a vendor’s cloud.”*
 
 ### 3. Trust loop — *Autonomy earns its way in*
 
 | Buyer line | Appliance proof |
 |------------|-----------------|
-| Nothing goes live by accident | Go Live checklists per flagship Claw |
+| Nothing goes live by accident | Go Live checklists per flagship crewmate |
 | Money moves and posts need your OK | Approval strip · sovereign confirm |
-| Cross-Claw reads need consent | CCP consent matrix |
+| Cross-crew reads need consent | CCP consent matrix |
 | Pull the plug on outbound AI | eno2 egress · physical kill-switch story |
 
 **Safe marketing:** *“Autonomy with boundaries — you stay the principal; the box earns delegation over time.”*
@@ -124,7 +124,7 @@ Each operate Claw demonstrates one loop end-to-end in demo copy:
 | **Capital** | Rules → paper/live gate → trade approval |
 | **Creator** | Draft → publish checklist → outbound post |
 | **The Forge** | Mint → Cafe event → new desk |
-| **Claw Cafe** | Real activity → ascension → deeper OS unlocks |
+| **Crew Cafe** | Real activity → ascension → deeper OS unlocks |
 
 Tier C previews (Signal, Swarm, Vital depth, etc.) stay **Coming Soon** — do not claim loops you cannot demo on hardware.
 
@@ -140,7 +140,7 @@ Tier C previews (Signal, Swarm, Vital depth, etc.) stay **Coming Soon** — do n
 
 ## Paste-ready paragraph (About · Press · deck)
 
-> CurXor OS isn’t a chatbot you prompt and forget. It’s a sovereign appliance built around **work, memory, and trust loops**: specialized Claws that keep checking and acting on your schedule, persist everything that matters on your metal and the Claw Context mesh, and only go live on work that matters after **Go Live** checklists and your explicit approval. Ten digital employees, one Forge to mint more, and Claw Cafe as the living mirror of real use — pay once, run local inference by default, optional frontier keys when you choose. Autonomy that earns its way in, not autonomy that runs away.
+> CurXor OS isn’t a chatbot you prompt and forget. It’s a sovereign appliance built around **work, memory, and trust loops**: specialized crewmates that keep checking and acting on your schedule, persist everything that matters on your metal and the Crew Context mesh, and only go live on work that matters after **Go Live** checklists and your explicit approval. Ten digital employees, one Forge to mint more, and Crew Cafe as the living mirror of real use — pay once, run local inference by default, optional frontier keys when you choose. Autonomy that earns its way in, not autonomy that runs away.
 
 ---
 

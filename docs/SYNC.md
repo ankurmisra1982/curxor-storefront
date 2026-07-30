@@ -28,20 +28,20 @@ Appliance IDs and routes are stable. Display names pivot to the **Digital Wealth
 
 | Appliance ID | Display name | Route | Nav short |
 |--------------|--------------|-------|-----------|
-| `claw-forge` | The Forge | `/claw-forge` | FORGE |
-| `my-capital` | Capital Claw | `/my-capital` | CAP |
-| `my-content-creator` | Creator Claw | `/my-content` | CRE |
-| `my-work` | Outreach Claw | `/my-work` | OUT |
-| `my-shop` | Arbitrage Claw | `/my-shop` | ARB |
-| `tesla-optimus-engine` | Signal Claw | `/optimus` | SIG |
-| `robotaxi-fleet-manager` | Swarm Claw | `/robotaxi` | SWARM |
-| `claw-cafe` | Engage Claw | `/claw-cafe` | ENG |
-| `my-vital` | Vital Claw | `/my-vital` | VIT |
-| `my-family` | Kin Claw | `/my-family` | KIN |
+| `forge` | The Forge | `/forge` | FORGE |
+| `my-capital` | Capital | `/my-capital` | CAP |
+| `my-content-creator` | Creator | `/my-content` | CRE |
+| `my-work` | Outreach | `/my-work` | OUT |
+| `my-shop` | Arbitrage | `/my-shop` | ARB |
+| `tesla-optimus-engine` | Signal | `/optimus` | SIG |
+| `robotaxi-fleet-manager` | Swarm | `/robotaxi` | SWARM |
+| `crew-cafe` | Crew Cafe | `/crew-cafe` | CAFE |
+| `my-vital` | Vital | `/my-vital` | VIT |
+| `my-family` | Kin | `/my-family` | KIN |
 
-Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketing-map.ts` for URLs and section anchors. Names and descriptions always come from `ootb-apps.ts`.
+Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketing-map.ts` for URLs and section anchors. Display names and descriptions always come from `ootb-apps.ts` (desk crew lock — never Claw / Claws / Claw Cafe in public copy).
 
-**Naming lock:** Appliance ID `my-work` → display **Outreach Claw** on storefront and Flight Command (route `/my-work`, slug `outreach-claw`, nav short `OUT`). Do not surface “Work Claw” in buyer-facing copy.
+**Naming lock (2026-07-30):** gloss once = digital employee(s); collective = **desk crew**; singular = **crewmate**; Cafe = **Crew Cafe**. Appliance ID `my-work` → display **Outreach**. Dead in public: Claw / Claws / Claw Cafe. Keep OpenClaw / NemoClaw / ClawBox as third-party names.
 
 **Sync rule:** When adding an appliance app, update `ootb-apps.ts`, extend `marketing-map.ts` with slug/icon/sortOrder, then run `npm run sync:appliance`.
 
@@ -50,7 +50,7 @@ Storefront slugs (e.g. `capital-claw`, `outreach-claw`) live in `scripts/marketi
 | Storefront today | Audit note |
 |------------------|------------|
 | Spec: "Sub-millisecond ZeroMQ telemetry" | Aspirational — **not validated** until MS-S1 MAX mesh benchmarks |
-| "Ten Claw verticals + The Forge" | **UI shells ship**; enable any combination in Settings; agent runtime + unified comms (OS 1.0.3) |
+| "Desk crew + The Forge" | **UI shells ship**; enable any combination in Settings; agent runtime + unified comms (OS 1.0.3) |
 | "126 TOPS NPU" | Hardware spec — verify against MINISFORUM datasheet before ads |
 | Stripe pre-order | GTM OK — separate from appliance OTA/install readiness |
 | Cafe kicker: "venture out" | **eno2 bridges + Go Live + Cafe walk-out to desks** — not cloud LLM egress · see [PRODUCT-POSITIONING.md](PRODUCT-POSITIONING.md) § Act II · Cafe band |
@@ -75,7 +75,7 @@ Close enough for GTM; unify later if needed.
 4. Edit highlights in `data/changelog-entries.json` or `../curxor-os/release-notes.json` — `sync:appliance` regenerates changelog
 5. Run `npm run qa` and deploy storefront
 
-## Digital layer (Capital Claw + Creator Claw)
+## Digital layer (Capital + Creator)
 
 Appliance tools (engine, not LLM):
 
@@ -86,9 +86,9 @@ Safe marketing line (default local): *"Local inference by default — trades and
 
 Optional frontier LLMs (Settings → Intelligence, BYOK or OAuth): chat/planning only; does not change bridge egress rules. OpenAI supports OAuth PKCE sign-in; Google when `CURXOR_GOOGLE_OAUTH_CLIENT_ID` is configured on the appliance.
 
-**Claw Context Protocol (CCP):** On-appliance mesh topic `telemetry/claw_context` syncs health, family, work, and hardware context between Claws. Channel conversations publish to `work/inbox.*` via the unified comms router. See `../curxor-os/docs/guides/15-claw-context-protocol.md` and `../curxor-os/docs/guides/18-agent-runtime.md`.
+**Crew Context Protocol (CCP):** On-appliance mesh topic `telemetry/claw_context` (LEGACY key) syncs health, family, work, and hardware context between crewmates. Channel conversations publish to `work/inbox.*` via the unified comms router. See `../curxor-os/docs/guides/15-claw-context-protocol.md` and `../curxor-os/docs/guides/18-agent-runtime.md`.
 
-**Agent runtime (OS 1.0.3):** OpenClaw-style workspace memory, skills, heartbeat daemon, MCP servers, Build Plane delegation queue, Firecrawl bridge, and messaging gateways (Telegram, Slack, WhatsApp, iMessage). Dashboard chat and external channels share one router → CCP. Marketing line: *"Message your Claws from phone or desktop — every reply stays local, egress only through eno2."*
+**Agent runtime (OS 1.0.3):** OpenClaw-style workspace memory, skills, heartbeat daemon, MCP servers, Build Plane delegation queue, Firecrawl bridge, and messaging gateways (Telegram, Slack, WhatsApp, iMessage). Dashboard chat and external channels share one router → CCP. Marketing line: *"Message your desk crew from phone or desktop — every reply stays local, egress only through eno2."*
 
 Details: `../curxor-os/docs/guides/12-digital-action-layer.md`
 
@@ -102,9 +102,9 @@ Homepage **`#symphony`** section — `SymphonySection` · `src/lib/symphony-meta
 |------|----------|
 | Operator | Composer / principal |
 | CurXor desk | Conductor + orchestrator |
-| Claws | Orchestra / sections |
+| Desk crew | Orchestra / sections |
 | Signal | Acoustic reach |
-| Claw Cafe | The hall |
+| Crew Cafe | The hall |
 
 **Headline:** *One desk conducts. The symphony plays.*
 
@@ -140,7 +140,7 @@ Category north star and **Claw vs orchestrator** naming lock — not the cold-tr
 | `../curxor-os/docs/curxor-os/DREAM-STATE-OVERVIEW.md` | Appliance canonical spec |
 | `../curxor-os/docs/founder/profile.json` → `dreamState` | Structured JSON source |
 
-**Naming lock (Jun 2026):** **Conducts** = GTM layer-4 verb (homepage accent). **Orchestrator** = essay/deck noun. **Claw** = each vertical employee. Never “ten orchestrators on your desk.” Cold traffic leads with *digital employees* or *AI agents* before *Claws*.
+**Naming lock (Jul 2026):** **Conducts** = GTM layer-4 verb (homepage accent). **Orchestrator** = essay/deck noun. **Crewmate** = each vertical employee; **desk crew** = collective. Never “ten orchestrators on your desk.” Cold traffic leads with *digital employees* or *AI agents*, then *desk crew* / *crewmate*. Never Claw / Claws / Claw Cafe in public copy.
 
 **GTM accent:** *Interfaces drift. Your desk conducts.*
 

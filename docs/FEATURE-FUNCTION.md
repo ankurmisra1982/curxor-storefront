@@ -52,9 +52,9 @@ Source: `../curxor-os/pillar-4-dashboard/lib/ootb-apps.ts` via `npm run sync:app
 | Storefront slug | Name | Appliance route |
 |-----------------|------|-----------------|
 | `claw-forge` | The Forge | `/claw-forge` |
-| `capital-claw` | Capital Claw | `/my-capital` |
-| `creator-claw` | Creator Claw | `/my-content` |
-| `outreach-claw` | Outreach Claw | `/my-work` |
+| `capital-claw` | Capital | `/my-capital` |
+| `creator-claw` | Creator | `/my-content` |
+| `outreach-claw` | Outreach | `/my-work` |
 | `arbitrage-claw` | Arbitrage Claw | `/my-shop` |
 | `signal-claw` | Signal Claw | `/optimus` |
 | `swarm-claw` | Swarm Claw | `/robotaxi` |

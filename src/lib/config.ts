@@ -125,7 +125,7 @@ export {
 
 import { apps as syncedApps } from "./generated/appliance-sync";
 
-/** Claw workspaces excluding The Forge — synced from curxor-os ootb-apps. */
+/** Crewmate workspaces excluding The Forge — synced from curxor-os ootb-apps. */
 export const clawVerticalCount = syncedApps.filter(
   (app) => app.applianceId !== "forge"
 ).length;

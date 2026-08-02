@@ -1,5 +1,13 @@
 import { clawHeadlines } from "@/lib/claw-headlines";
-import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
+import { g3Honesty, g3Screenshots } from "@/lib/g3-demo";
+
+export const capitalWalkthrough = {
+  src: "/demo/capital-walkthrough.webm",
+  ariaLabel: "Play Capital desk walkthrough — paper book honesty",
+  label: "DESK CREW · CAPITAL WALKTHROUGH",
+  caption:
+    "Paper Capital honesty on the appliance — rules and Crew Cafe proof are real; live broker book not shown.",
+} as const;
 
 export const capitalDemoHero = {
   src: g3Screenshots.capitalPaper,
@@ -56,9 +64,14 @@ export const capitalEgressPaths = [
 
 export const capitalFlowShots = [
   {
-    src: g3Screenshots.cafeRuleFired,
-    title: "Cafe · RULE FIRED",
-    body: "Staged cafe proof from Capital activity — real UI path on MS-S1 metal.",
+    src: "/demo/cafe/18-ascension-tab.png",
+    title: "Crew Cafe · Ascension",
+    body: "Crew Cafe ascension tied to real Flagship activity — captured on MS-S1.",
+  },
+  {
+    src: "/demo/cafe/19-pixel-room.png",
+    title: "Crew Cafe · Pixel room",
+    body: "Ensemble presence on your metal — captured on MS-S1.",
   },
   {
     src: g3Screenshots.systemHealthToks,
@@ -72,12 +85,7 @@ export const capitalFlowShots = [
   },
 ] as const;
 
-export const capitalDeskStrip = {
-  src: g3DeskStrips.capital,
-  title: "Capital desk strip",
-  honestyLabel: g3Honesty.capitalPractice,
-  poster: g3Screenshots.capitalPaper,
-} as const;
+export const capitalHonesty = g3Honesty.capitalPractice;
 
 export const capitalPageMeta = {
   title: "Capital — Sovereign Trading Desk",

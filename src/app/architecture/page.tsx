@@ -134,9 +134,9 @@ export default function ArchitecturePage() {
 
         <div id="validation" className="mt-16 scroll-mt-24">
           <h2 className="mb-6 text-xs font-bold tracking-[0.3em] text-neon-purple">
-            MS-S1 VALIDATION · G1–G3
+            MS-S1 VALIDATION
           </h2>
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,14rem)] lg:items-start">
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,14rem)_minmax(0,14rem)] lg:items-start">
             <ValidationBadge />
             <figure className="border border-white/10 bg-black">
               <Image
@@ -149,6 +149,19 @@ export default function ArchitecturePage() {
               />
               <figcaption className="border-t border-white/10 px-3 py-2 text-[10px] leading-relaxed tracking-wide text-white/35">
                 {hardwareValidation.deskStill.caption}
+              </figcaption>
+            </figure>
+            <figure className="border border-white/10 bg-black">
+              <Image
+                src={hardwareValidation.brochureStill.src}
+                alt={hardwareValidation.brochureStill.alt}
+                width={hardwareValidation.brochureStill.width}
+                height={hardwareValidation.brochureStill.height}
+                className="h-auto w-full"
+                sizes="(max-width: 1024px) 100vw, 14rem"
+              />
+              <figcaption className="border-t border-white/10 px-3 py-2 text-[10px] leading-relaxed tracking-wide text-white/35">
+                {hardwareValidation.brochureStill.caption}
               </figcaption>
             </figure>
           </div>
@@ -184,8 +197,9 @@ export default function ArchitecturePage() {
           <p className="mt-4 text-xs leading-relaxed text-white/40">
             Unboxed {hardwareValidation.unboxDate}. Golden path closed on MS-S1 —
             desk captures and investor pack are live on curxor.ai. Priority ops
-            bridges are green on the founder box (paper Capital). Next: first
-            external operator UAT.
+            bridges are green on the founder box (paper Capital). Design partners
+            have completed remote golden-path sessions on the founder MS-S1 —
+            feedback is private; not a customer fleet.
           </p>
         </div>
 

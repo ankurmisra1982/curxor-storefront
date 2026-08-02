@@ -2,20 +2,18 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { DeskStripVideo } from "@/components/DeskStripVideo";
-import { ClawDemoHero } from "@/components/ClawDemoHero";
+import { DeskWalkthroughPreview } from "@/components/DeskWalkthroughPreview";
 import { OperatorQuote } from "@/components/OperatorQuote";
 import { ShareOnX } from "@/components/ShareOnX";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import {
-  creatorDemoHero,
   creatorDemoTourSteps,
-  creatorDeskStrip,
   creatorFlowShots,
   creatorGoLiveChecks,
   creatorPageMeta,
   creatorPublishBridges,
+  creatorWalkthrough,
 } from "@/lib/creator-page";
 import { getOperator } from "@/lib/claw-operators";
 import { applianceVersion, siteConfig } from "@/lib/config";
@@ -72,15 +70,22 @@ export default function CreatorPage() {
           </section>
         ) : null}
 
-        <section className="mt-14">
-          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
-            FLIGHT COMMAND
+        <section className="mt-14 overflow-hidden border border-white/10 bg-black">
+          <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
+            <span className="text-[10px] tracking-[0.25em] text-white/50">
+              {creatorWalkthrough.label}
+            </span>
+            <span className="border border-white/10 px-2 py-0.5 text-[9px] tracking-widest text-white/40">
+              APPROVAL · SCHEDULE
+            </span>
+          </div>
+          <DeskWalkthroughPreview
+            src={creatorWalkthrough.src}
+            ariaLabel={creatorWalkthrough.ariaLabel}
+          />
+          <p className="px-4 py-3 text-xs leading-relaxed text-white/45">
+            {creatorWalkthrough.caption}
           </p>
-          <ClawDemoHero {...creatorDemoHero} />
-        </section>
-
-        <section className="mt-10">
-          <DeskStripVideo {...creatorDeskStrip} />
         </section>
 
         <section className="mt-16">

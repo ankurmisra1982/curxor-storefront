@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import { MissionVisionSection } from "@/components/MissionVisionSection";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { siteConfig } from "@/lib/config";
+import { productStills } from "@/lib/product-stills";
 
 const aboutTitle = `About — ${siteConfig.name}`;
 const aboutDescription =
@@ -43,6 +45,21 @@ export default function AboutPage() {
             secondaryLabel="See how it works"
           />
         </div>
+
+        <figure className="mt-12 max-w-2xl border border-white/10 bg-black">
+          <Image
+            src={productStills.b.src}
+            alt={productStills.b.alt}
+            width={productStills.b.width}
+            height={productStills.b.height}
+            className="h-auto w-full"
+            sizes="(max-width: 768px) 100vw, 42rem"
+            priority
+          />
+          <figcaption className="border-t border-white/10 px-4 py-3 text-[10px] leading-relaxed tracking-wide text-white/35">
+            {productStills.honesty}
+          </figcaption>
+        </figure>
       </div>
 
       <MissionVisionSection variant="about" />

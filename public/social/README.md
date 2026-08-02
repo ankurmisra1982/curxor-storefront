@@ -36,4 +36,12 @@ Recommended upload size: **1024×1024** (platforms downscale).
 | `curxor-banner-facebook.png` | Facebook cover | 820×312 display (upload 1640×624+) |
 | `curxor-banner-youtube.png` | YouTube channel art | 2560×1440 — keep text in **center safe zone** |
 
-Generated for build mode — refine with product photography when MS-S1 assets are ready.
+Generated for build mode. Product stills unlocked (2026-08-02) under `/demo/hardware/`:
+
+| File | Use |
+|------|-----|
+| `../demo/hardware/product-still-a-act1.png` | Homepage / Act I metal hero |
+| `../demo/hardware/product-still-b-dream.png` | Soft secondary — live on `/about` |
+| `../demo/hardware/product-still-d-hero.png` | Close / LinkedIn brochure flip |
+
+Caption honesty: **Product still · MS-S1 class — not factory photography / unretouched batch photo.** Recrop LinkedIn cover (`curxor-banner-linkedin.png`) from still D when Ankur picture-locks the crop.

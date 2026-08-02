@@ -1,19 +1,28 @@
-/** MS-S1 unbox day + G1 gate — shared by ValidationBadge and /architecture#validation. */
+import { productStills } from "@/lib/product-stills";
+
+/** MS-S1 unbox day + golden-path gate — shared by ValidationBadge and /architecture#validation. */
 export const hardwareValidation = {
   unboxDate: "2026-06-28",
   g1ClosedDate: "2026-06-29",
   badgeAriaLabel: "curXor — MS-S1 unboxed · golden path closed",
   badgeSummary:
     "MS-S1 MAX unboxed Jun 28, 2026. Golden path closed Jun 29 — depth wave and demo captures closed Jul 2026. CurXor OS v1.0.3, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
-  /** Founder-box desk still — proof, not product photography. */
+  /** Act I product still — elevated plate, not factory photography. */
   deskStill: {
-    src: "/demo/hardware/ms-s1-desk-topdown.png",
-    alt: "MS-S1 MAX founder box on desk — top-down capture with curXor chassis badge",
-    caption: "Founder-box capture · MS-S1 MAX · not product photography",
-    width: 1024,
-    height: 1007,
+    src: productStills.a.src,
+    alt: productStills.a.alt,
+    caption: productStills.honesty,
+    width: productStills.a.width,
+    height: productStills.a.height,
   },
-
+  /** Close etch still — LinkedIn / brochure flip source. */
+  brochureStill: {
+    src: productStills.d.src,
+    alt: productStills.d.alt,
+    caption: productStills.honesty,
+    width: productStills.d.width,
+    height: productStills.d.height,
+  },
 
   computeBenchNote:
     "126 TOPS local NPU — ROCm inference validated on Standard 64 (moondream:1.8b, qwen3:8b); published mesh benchmarks pending",
@@ -42,9 +51,9 @@ export const hardwareValidation = {
   afterG1: {
     eyebrow: "NEXT UP",
     items: [
-      "First external operator UAT — design-partner golden path without founder hand-holding",
+      "More design-partner sessions — feedback stays private; not closed traction",
       "Published mesh latency benchmarks — not marketing guesses",
-      "Category hero 90s merge · production OTA fleet artifact",
+      "Category hero merge · production OTA fleet artifact when ready",
     ],
   },
   opsWave1: {
@@ -52,6 +61,7 @@ export const hardwareValidation = {
     items: [
       "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
       "Dogfood 7/7 Jul 9 — ops@ receipts · not a customer fleet · Capital stays paper",
+      "Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
       "Live brokerage fills and autonomous publish fleets are not claimed",
     ],
   },

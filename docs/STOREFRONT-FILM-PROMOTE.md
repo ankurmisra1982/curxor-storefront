@@ -2,7 +2,9 @@
 
 > **Wave:** Picture-locked investor v3 · inception v3 · hero badge v4 → curxor.ai  
 > **Owner:** CDO / storefront · masters remain in curxor-os  
-> **Homepage cold hero:** unchanged (ship-now GTM)
+> **Homepage cold hero:** unchanged (ship-now GTM)  
+> **Prod:** `b7f406f` · Vercel READY · CDN Content-Length verified 2026-08-02  
+> - investor-proof-v1 = 21333021 · inception-v1 = 12276207 · badge-v4 = 11930758
 
 ---
 

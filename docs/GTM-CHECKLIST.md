@@ -118,7 +118,7 @@ See [SYNC.md](SYNC.md) and [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md).
 
 | Date | Commit | Notes |
 |------|--------|-------|
-| 2026-08-02 | — | Film promote · Swap A investor/inception v3 · badge v4 URL · see [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md) |
+| 2026-08-02 | `b7f406f` | Film promote · Swap A investor/inception v3 · badge v4 URL · prod [READY](https://vercel.com/cur-xor/curxor-storefront/GZsPHsXGWmA1fz7Ud4iNudCEAwC3) · [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md) |
 | 2026-07-08 | `815e547` | STORE-C-DEPLOY closed · Vercel prod [READY](https://vercel.com/cur-xor/curxor-storefront/5vHpe6S45tiQMSvnggaLtStuemuk) · main branch · all asset smoke green |
 | 2026-07-08 | — | **Prod UAT green** — full page graph · films · press zip · subscribe E2E · doc mirror closed |
 

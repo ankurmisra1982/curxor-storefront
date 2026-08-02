@@ -38,6 +38,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] **Align kickoff** — [STOREFRONT-ALIGN-KICKOFF.md](STOREFRONT-ALIGN-KICKOFF.md) for post-deploy verification chat
 - [x] **Track C deploy (STORE-C-DEPLOY)** — sync/g1-green-mirror-p0 → main · G3 assets on prod · category film labeled ~90s Act I alias
 - [x] **Aug 2026 film promote** — Swap A investor + inception v3 · hero badge v4 URL · [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md)
+- [x] **Aug 2026 G3 still refresh** — 7/8 gallery PNGs resynced from OS pack (06-settings unchanged) · desk strips already matched
 - [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **deferred post-fundraise (G11)**
 - [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · **deferred post-fundraise (G12)**
 - [ ] **`/for-builders`** (IDEA-G13) — Build Plane power-user page · not main hero · **deferred post-fundraise (G13)**

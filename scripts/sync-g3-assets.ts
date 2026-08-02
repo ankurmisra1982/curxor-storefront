@@ -68,10 +68,16 @@ if (copyFile(
   path.join(demoRoot, "investor", "g3-inception-reel-v1.mp4")
 )) copied++;
 
-if (copyFile(
-  path.join(packRoot, "investor-pack", "g3-investor-proof-v1.mp4"),
-  path.join(demoRoot, "investor", "g3-investor-proof-v1.mp4")
-)) copied++;
+// Swap A (2026-08-02 picture-lock): prefer v3 remagination → live *-v1 URL
+{
+  const v3Proof = path.join(packRoot, "investor-pack", "g3-investor-proof-v3.mp4");
+  const v1Proof = path.join(packRoot, "investor-pack", "g3-investor-proof-v1.mp4");
+  const proofSrc = fs.existsSync(v3Proof) ? v3Proof : v1Proof;
+  if (copyFile(proofSrc, path.join(demoRoot, "investor", "g3-investor-proof-v1.mp4"))) copied++;
+  if (fs.existsSync(v3Proof)) {
+    if (copyFile(v3Proof, path.join(demoRoot, "investor", "g3-investor-proof-v3.mp4"))) copied++;
+  }
+}
 
 if (copyFile(
   path.join(packRoot, "master-film", "hero", "hero-category-v1.mp4"),

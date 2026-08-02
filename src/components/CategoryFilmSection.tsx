@@ -22,7 +22,7 @@ const FILMS: {
   {
     id: "badge",
     label: "Category vision",
-    duration: "~61s",
+    duration: "~62s",
     src: categoryFilmAssets.heroCategoryBadge,
     caption: "Vision cut — concept comps + voiceover",
     ariaLabel:
@@ -31,9 +31,10 @@ const FILMS: {
   {
     id: "product",
     label: "Product proof",
-    duration: "~90s",
-    src: categoryFilmAssets.heroCategory,
-    caption: "Product demo — onboarding through three flagship crewmates on real metal",
+    duration: "~89s",
+    src: categoryFilmAssets.inceptionReel,
+    caption:
+      "Warm intro — onboarding through three flagship crewmates on real metal",
     ariaLabel:
       "CurXor product proof film — onboarding through three flagship crewmates on real metal",
   },

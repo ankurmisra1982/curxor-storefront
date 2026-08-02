@@ -63,12 +63,17 @@ for (const mp4 of [
   if (copyFile(path.join(packRoot, "investor-pack", mp4), path.join(demoRoot, "g3", mp4))) copied++;
 }
 
-if (copyFile(
-  path.join(packRoot, "investor-pack", "g3-inception-reel-v1.mp4"),
-  path.join(demoRoot, "investor", "g3-inception-reel-v1.mp4")
-)) copied++;
-
 // Swap A (2026-08-02 picture-lock): prefer v3 remagination → live *-v1 URL
+{
+  const v3Inception = path.join(packRoot, "investor-pack", "g3-inception-reel-v3.mp4");
+  const v1Inception = path.join(packRoot, "investor-pack", "g3-inception-reel-v1.mp4");
+  const inceptionSrc = fs.existsSync(v3Inception) ? v3Inception : v1Inception;
+  if (copyFile(inceptionSrc, path.join(demoRoot, "investor", "g3-inception-reel-v1.mp4"))) copied++;
+  if (fs.existsSync(v3Inception)) {
+    if (copyFile(v3Inception, path.join(demoRoot, "investor", "g3-inception-reel-v3.mp4"))) copied++;
+  }
+}
+
 {
   const v3Proof = path.join(packRoot, "investor-pack", "g3-investor-proof-v3.mp4");
   const v1Proof = path.join(packRoot, "investor-pack", "g3-investor-proof-v1.mp4");
@@ -88,6 +93,14 @@ if (copyFile(
   path.join(packRoot, "master-film", "hero", "hero-category-badge-v1.mp4"),
   path.join(demoRoot, "hero-category-badge-v1.mp4")
 )) copied++;
+
+// Hero badge v4 — stage sibling URL; do not clobber *-v1 (rollback + CTO HOLD)
+{
+  const v4Badge = path.join(packRoot, "investor-pack", "hero-category-badge-v4.mp4");
+  const v4Master = path.join(packRoot, "master-film", "hero", "hero-category-badge-v4.mp4");
+  const badgeSrc = fs.existsSync(v4Badge) ? v4Badge : v4Master;
+  if (copyFile(badgeSrc, path.join(demoRoot, "hero-category-badge-v4.mp4"))) copied++;
+}
 
 if (copyFile(
   path.join(packRoot, "master-film", "hero", "hero-deck-loop-v1.mp4"),
@@ -109,9 +122,11 @@ if (fs.existsSync(heroFilmDir)) {
   fs.mkdirSync(pressDir, { recursive: true });
   const zipEntries = [
     ...fs.readdirSync(heroFilmDir).filter((f) => f.endsWith(".png")).map((f) => path.join(heroFilmDir, f)),
-    ...(fs.existsSync(path.join(demoRoot, "hero-category-badge-v1.mp4"))
-      ? [path.join(demoRoot, "hero-category-badge-v1.mp4")]
-      : []),
+    ...(fs.existsSync(path.join(demoRoot, "hero-category-badge-v4.mp4"))
+      ? [path.join(demoRoot, "hero-category-badge-v4.mp4")]
+      : fs.existsSync(path.join(demoRoot, "hero-category-badge-v1.mp4"))
+        ? [path.join(demoRoot, "hero-category-badge-v1.mp4")]
+        : []),
     ...(fs.existsSync(metricsCard) ? [metricsCard] : []),
   ];
   if (zipEntries.length > 0) {

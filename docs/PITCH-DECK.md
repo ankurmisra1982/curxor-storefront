@@ -23,9 +23,9 @@
 |-------|-----|
 | Storefront | https://curxor.ai |
 | Category film | https://curxor.ai/signal#category-film |
-| Category vision (~61s) | https://curxor.ai/demo/hero-category-badge-v1.mp4 |
-| Inception reel (~90s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
-| Investor proof (~3 min) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |
+| Category vision (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
+| Inception reel (~89s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
+| Investor proof (~2:50) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |
 | Press kit | https://curxor.ai/press |
 | Essay | https://x.com/ankurmisra/status/2070024704925077702 |
 | Origin thread | https://x.com/ankurmisra/status/2067473753924129162 |
@@ -68,7 +68,7 @@
 
 **Velocity:** `0.1.0` → `v1.0.3` · **239** smoke · **38 tok/s** local on validated metal.
 
-**Speaker notes:** This is the J-Cal / TWIST slide. Velocity + specificity beat adjectives. Jun 18 was public commitment; Jun 19 was build. Hardware validation is Act I proof plane — the product is the CurXor box + CurXor OS, not a mini-PC story. Do not claim SpaceX/Cursor partnership. Point to inception reel (~90s) if they want film; live box if they want truth. Jul 9–16 is follow-through, not a second origin myth.
+**Speaker notes:** This is the J-Cal / TWIST slide. Velocity + specificity beat adjectives. Jun 18 was public commitment; Jun 19 was build. Hardware validation is Act I proof plane — the product is the CurXor box + CurXor OS, not a mini-PC story. Do not claim SpaceX/Cursor partnership. Point to inception reel (~89s) if they want film; live box if they want truth. Jul 9–16 is follow-through, not a second origin myth.
 
 ---
 
@@ -243,7 +243,7 @@ Velocity: 182 commits · 20 days to v1.0.3 · film pack Jul 8 · Wave 1 dogfood 
 | Paying fleet / ARR | Red | Pre-revenue · pre-order live |
 | Live broker/social fills | Red | Founder-keyed · approval gate |
 | Custom CurXor hardware | Red | Act II · post-raise |
-| Full category hero | Yellow | ~61s vision + ~90s product live · live badge shoot open |
+| Full category hero | Yellow | ~62s vision + ~89s product live · live badge shoot open |
 
 ---
 

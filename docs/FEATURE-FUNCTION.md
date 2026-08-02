@@ -30,7 +30,7 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 | **G3 desk gallery** | MS-S1 captures in `public/demo/g3/` — homepage demo section |
 | **Spec matrix** | Compute / Network / OpenClaw Engine columns |
 | **App ecosystem** | Desk crew from `appliance-sync.ts` · mobile carousel |
-| **Category films** | `/signal#category-film` — vision ~61s default + product ~90s tab |
+| **Category films** | `/signal#category-film` — vision ~62s default + warm intro ~89s tab |
 | **Trust pages** | `/privacy`, `/terms`, `/architecture`, `/changelog`, `/press`, `/pricing` |
 | **Desk landings** | `/capital`, `/creator`, `/outreach`, `/signal` (Neural Link horizon) |
 | **Personas** | `/for/traders`, `/for/creators`, `/for/agencies` |

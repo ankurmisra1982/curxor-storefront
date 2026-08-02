@@ -1,4 +1,4 @@
-/** G3 capture paths — synced from curxor-os investor-pack (Jul 2026). */
+/** G3 capture paths — synced from curxor-os investor-pack (Aug 2026 film promote). */
 
 export const g3Screenshots = {
   home: "/demo/g3/01-home.png",
@@ -18,11 +18,13 @@ export const g3DeskStrips = {
 } as const;
 
 export const categoryFilmAssets = {
-  /** ~61s dream-state category cut — badge comp + hero VO (XOR wake). */
-  heroCategoryBadge: "/demo/hero-category-badge-v1.mp4",
-  /** ~90s Act I product cut — alias of g3-inception-reel-v1 (Layer B only). */
+  /** ~62s dream-state category cut — badge v4 (picture-locked Aug 2026). */
+  heroCategoryBadge: "/demo/hero-category-badge-v4.mp4",
+  /** Legacy Act I alias path — prefer inceptionReel for product tab. */
   heroCategory: "/demo/hero-category-v1.mp4",
+  /** ~89s warm intro / TWIST — Swap A of inception-reel-v3 → stable *-v1 URL. */
   inceptionReel: "/demo/investor/g3-inception-reel-v1.mp4",
+  /** ~2:50 diligence — Swap A of investor-proof-v3 → stable *-v1 URL. */
   investorProof: "/demo/investor/g3-investor-proof-v1.mp4",
   conductorPlate: "/demo/hero-film/01-conductor-glance@2x.png",
   deckLoop: "/demo/hero-deck-loop-v1.mp4",
@@ -41,5 +43,5 @@ export const g3Honesty = {
     "Local inference drafts · operator approval before anything posts on egress.",
   workPipeline:
     "UI and routing are real · outbound sends need operator-configured bridges on eno2 (ops Wave 1 proven on founder box — not a customer fleet).",
-  deskCapture: "Demo capture · MS-S1 box · Jul 2026",
+  deskCapture: "Demo capture · MS-S1 box · Aug 2026",
 } as const;

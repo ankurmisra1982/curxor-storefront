@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { symphonyWhatIsThis } from "@/lib/symphony-metaphor";
 
 const columns = [
@@ -22,7 +24,13 @@ export function WhatIsThisStrip() {
         </div>
 
         <p className="mt-6 border-t border-white/10 pt-5 text-xs text-white/55">
-          {symphonyWhatIsThis.footer}
+          {symphonyWhatIsThis.footer}{" "}
+          <Link
+            href="/journal/mint-autonomous-employees"
+            className="text-neon-purple transition-colors hover:underline"
+          >
+            Mint autonomous employees →
+          </Link>
         </p>
       </div>
     </section>

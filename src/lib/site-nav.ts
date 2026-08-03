@@ -23,7 +23,7 @@ export const navGroups: NavGroup[] = [
       { href: "/outreach", label: "Outreach", description: "Pipeline & sequences" },
     ],
     footer: {
-      href: "/architecture#claw-roster",
+      href: "/architecture#desk-crew-roster",
       label: "Full roster →",
       description: "Flagship · Forge · Cafe · Preview",
     },

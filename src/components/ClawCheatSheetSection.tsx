@@ -27,7 +27,9 @@ export function ClawCheatSheetSection() {
   const scoped = clawCheatSheetEntries.filter((entry) => entry.status === "scoped");
 
   return (
-    <div id="claw-roster" className="mt-16 scroll-mt-24">
+    <div id="desk-crew-roster" className="relative mt-16 scroll-mt-24">
+      {/* LEGACY bookmark — old /architecture#claw-roster links */}
+      <span id="claw-roster" className="absolute -top-24" aria-hidden="true" />
       <h2 className="mb-2 text-xs font-bold tracking-[0.3em] text-neon-purple">
         DESK CREW ROSTER CHEAT SHEET
       </h2>

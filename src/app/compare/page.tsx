@@ -48,13 +48,9 @@ export default function CompareHubPage() {
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
           Honest comparisons for operators evaluating alternatives — light
           assistants, cloud orchestration, independent computers, DIY inference,
-          and governance stacks. See also{" "}
-          <Link href="/#operators" className="text-neon-purple hover:underline">
-            operator stories
-          </Link>
-          {" · "}
+          and governance stacks. For longer takes, see the{" "}
           <Link href="/journal" className="text-neon-purple hover:underline">
-            founder journal
+            journal
           </Link>
           .
         </p>
@@ -83,6 +79,36 @@ export default function CompareHubPage() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-12 border-t border-white/10 pt-8">
+          <p className="text-[10px] tracking-[0.3em] text-white/40">JOURNAL</p>
+          <ul className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6">
+            <li>
+              <Link
+                href="/journal/appliance-not-diy"
+                className="text-sm text-neon-purple hover:underline"
+              >
+                The appliance, not the weekend project →
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/journal/mint-autonomous-employees"
+                className="text-sm text-neon-purple hover:underline"
+              >
+                Mint autonomous employees →
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/journal/working-product-on-real-metal"
+                className="text-sm text-neon-purple hover:underline"
+              >
+                Working product on real metal →
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <TcoSection />

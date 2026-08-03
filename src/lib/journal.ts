@@ -787,7 +787,7 @@ export const journalEssays: JournalEntry[] = [
     sourceLabel: "Product update · OS 0.9.1 era",
     author: "CurXor Systems",
     relatedLinks: [
-      { href: "/architecture#claw-roster", label: "Desk crew roster" },
+      { href: "/architecture#desk-crew-roster", label: "Desk crew roster" },
       { href: "/journal/curxor-os-v1-0-3", label: "CurXor OS v1.0.3 notes" },
       { href: "/#demo", label: "Demo captures" },
       { href: "/compare", label: "Compare alternatives" },

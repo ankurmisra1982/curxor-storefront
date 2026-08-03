@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { InfoTip } from "@/components/InfoTip";
 
 const beats = [
@@ -59,6 +61,19 @@ export function HowItWorks() {
             </article>
           ))}
         </div>
+        <p className="mt-6 text-xs text-white/45">
+          Deeper context:{" "}
+          <Link
+            href="/journal/working-product-on-real-metal"
+            className="text-neon-purple hover:underline"
+          >
+            working product on real metal
+          </Link>
+          {" · "}
+          <Link href="/journal" className="text-neon-purple hover:underline">
+            journal
+          </Link>
+        </p>
       </div>
     </section>
   );

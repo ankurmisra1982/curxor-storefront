@@ -1,10 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
+import { useState, type ReactNode } from "react";
 
 import { faqItems } from "@/lib/config";
 
 const FAQ_PREVIEW_COUNT = 7;
+
+/** Turn bare curxor.ai/path mentions into internal links for crawl + click. */
+function linkifyFaqAnswer(answer: string): ReactNode[] {
+  const parts = answer.split(/(curxor\.ai\/[a-z0-9\-/_]+)/gi);
+  return parts.map((part, index) => {
+    if (!/^curxor\.ai\//i.test(part)) return part;
+    const path = `/${part.slice("curxor.ai/".length)}`;
+    return (
+      <Link
+        key={`${part}-${index}`}
+        href={path}
+        className="text-neon-purple transition-colors hover:underline"
+      >
+        {part}
+      </Link>
+    );
+  });
+}
 
 export function Faq() {
   const [showAll, setShowAll] = useState(false);
@@ -39,7 +58,7 @@ export function Faq() {
                 </span>
               </summary>
               <p className="mt-4 text-sm leading-relaxed text-white/50">
-                {item.answer}
+                {linkifyFaqAnswer(item.answer)}
               </p>
             </details>
           ))}

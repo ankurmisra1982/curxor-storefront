@@ -76,7 +76,7 @@ export const comparePages: ComparePage[] = [
       "Compare CurXor (64GB UMA, flagship crewmates, Flight Command) with MIKY independent computer for agents (~€490).",
     eyebrow: "COMPARE · INDEPENDENT COMPUTER",
     headline: "Same category. Different compute class.",
-    lead: "MIKY and CurXor both sell an independent computer for AI agents — not a human-first PC. MIKY emphasizes mobile app control and secure-element trust at ~€490. CurXor adds 64GB UMA, dual 10GbE, and ten OOTB crewmates.",
+    lead: "MIKY and CurXor both sell an independent computer for digital employees — not a human-first PC. MIKY emphasizes mobile app control and secure-element trust at ~€490. CurXor adds 64GB UMA, dual 10GbE, and a desk crew of ten.",
     themLabel: "MIKY",
     positioning:
       "MIKY wins on category branding, fanless trust-node narrative, and lower reservation price. CurXor wins on memory, NPU class, wealth/work verticals, and Flight Command depth.",

@@ -34,9 +34,9 @@ export const dreamStateNaming = {
   gtmConductorAccent: "Interfaces drift. Your desk conducts.",
   gtmConductorNote:
     "Conductor = GTM verb · orchestrator = essay noun — same desk. Desk crew = orchestra sections.",
-  coldTrafficLead: ["digital employees", "AI agents"] as const,
+  coldTrafficLead: ["digital employees"] as const,
   gtmGlossExample:
-    "Ten autonomous AI agents on your metal — a desk crew for capital, content, outreach, and more.",
+    "Digital employees on metal you own — your desk crew. Each digital employee is a crewmate who owns a lane: capital, content, outreach, and more.",
   hierarchy: {
     operator: "Composer / principal — owns the score",
     desk: "Conductor + orchestrator — same desk, two registers",

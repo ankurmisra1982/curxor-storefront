@@ -125,14 +125,16 @@ export {
 
 import { apps as syncedApps } from "./generated/appliance-sync";
 
-/** Crewmate workspaces excluding The Forge — synced from curxor-os ootb-apps. */
+/** Synced workspace count excluding The Forge — internal only; includes Cafe/horizon apps. */
 export const clawVerticalCount = syncedApps.filter(
   (app) => app.applianceId !== "forge"
 ).length;
 
-export const clawRosterLabel = `${clawVerticalCount} crewmates + The Forge`;
+/** Public GTM roster — locked 2026-08-02; do not derive from syncedApps length. */
+export const clawRosterLabel = "desk crew of ten + The Forge";
 
-export const clawPickStackLabel = `${clawVerticalCount} crewmates + The Forge · pick your stack`;
+export const clawPickStackLabel =
+  "desk crew of ten + The Forge · pick your stack";
 
 export const shareLines = [
   "126 TOPS on my desk. $0 to OpenAI.",

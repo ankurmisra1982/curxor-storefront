@@ -82,7 +82,7 @@ export const tcoScenarios = {
     },
     {
       id: "curxor",
-      label: productIdentity.boxName,
+      label: "CurXor",
       upfront: "$3,999",
       monthly: "$0 CurXor fees",
       fourYear: "~$3,999",

@@ -145,7 +145,7 @@ export const shareLines = [
 export const faqItems = [
   {
     question: "What is CurXor?",
-    answer: `curXor is the sovereign AI box — 64GB compute with 126 TOPS NPU on your desk. CurXor Systems builds the hardware and CurXor OS: ${clawRosterLabel}. Enable the crewmates you want, chat in plain language, and scale 24/7 with local inference by default.`,
+    answer: `CurXor is the sovereign AI box — 64GB compute with 126 TOPS NPU on your desk. CurXor Systems builds the hardware and CurXor OS: ${clawRosterLabel}. Enable the crewmates you want, chat in plain language, and scale 24/7 with local inference by default.`,
   },
   {
     question: "How is CurXor different from a Mac Studio plus Ollama?",
@@ -164,7 +164,7 @@ export const faqItems = [
   },
   {
     question: "What is included for $3,999?",
-    answer: `The curXor box, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, optional messaging gateways (Telegram, Slack, WhatsApp, iMessage), local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.`,
+    answer: `The CurXor box, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, optional messaging gateways (Telegram, Slack, WhatsApp, iMessage), local LLM on 64GB UMA, optional frontier LLM via your own API keys, and software updates (OTA when ready). No CurXor subscription or per-token fees.`,
   },
   {
     question: "Do I need to code to use CurXor?",
@@ -333,7 +333,7 @@ export const comparisonOptions = [
   },
   {
     id: "curxor",
-    label: "curXor",
+    label: "CurXor",
     price: "$3,999 once",
     highlights: [
       "126 TOPS · 64GB UMA included",

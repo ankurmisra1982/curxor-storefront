@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { TcoSection } from "@/components/TcoSection";
@@ -31,6 +32,12 @@ export const metadata = {
 export default function CompareHubPage() {
   return (
     <SiteShell>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Compare", path: "/compare" },
+        ]}
+      />
       <div className="mx-auto max-w-6xl px-6 py-12 sm:py-14">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           WHY CURXOR
@@ -39,13 +46,17 @@ export default function CompareHubPage() {
           Compare CurXor
         </h1>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
-          Honest comparisons against the alternatives buyers actually evaluate —
-          light assistants, cloud orchestration, independent computers, DIY
-          inference, and governance stacks. Pair with{" "}
+          Honest comparisons for operators evaluating alternatives — light
+          assistants, cloud orchestration, independent computers, DIY inference,
+          and governance stacks. See also{" "}
           <Link href="/#operators" className="text-neon-purple hover:underline">
             operator stories
-          </Link>{" "}
-          for X and outreach threads.
+          </Link>
+          {" · "}
+          <Link href="/journal" className="text-neon-purple hover:underline">
+            founder journal
+          </Link>
+          .
         </p>
 
         <div className="mt-8">

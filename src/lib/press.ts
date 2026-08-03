@@ -268,7 +268,7 @@ export const pressKit = {
     {
       label: "Desk crew roster",
       value:
-        "Capital · Creator · Outreach · Arbitrage · Signal · Swarm · Vital · Kin · Learn · Gamer · Estate · Crew Cafe · The Forge (Engage inbox under Creator)",
+        "Desk crew of ten (Engage inbox under Creator). Crew Cafe = hall · The Forge = factory — not roster seats.",
     },
     { label: "Website", value: siteConfig.siteUrl },
     {

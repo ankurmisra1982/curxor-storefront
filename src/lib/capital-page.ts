@@ -6,7 +6,7 @@ export const capitalWalkthrough = {
   ariaLabel: "Play Capital desk walkthrough — paper book honesty",
   label: "DESK CREW · CAPITAL WALKTHROUGH",
   caption:
-    "Paper Capital honesty on the appliance — rules and Crew Cafe proof are real; live broker book not shown.",
+    "Paper Capital honesty on the appliance — rules run on metal; live broker book not shown.",
 } as const;
 
 export const capitalDemoHero = {

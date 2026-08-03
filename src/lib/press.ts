@@ -74,7 +74,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, twelve crewmate desks + The Forge, Crew Cafe ascension tied to Flagship desks",
+          "CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, desk crew of ten + The Forge, Crew Cafe ascension tied to Flagship desks",
       },
       {
         status: "Shipped" as const,

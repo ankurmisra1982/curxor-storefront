@@ -50,7 +50,7 @@ export const missionVision = {
   ],
   buyToday: {
     label: "What you buy today",
-    body: "A desk appliance with CurXor OS — ten AI agents, local inference, Flight Command on your network. $3,999 once · $0/mo API for the operate plane.",
+    body: "A desk appliance with CurXor OS — digital employees (your desk crew of ten), local inference, Flight Command on your network. $3,999 once · $0/mo API for the operate plane.",
   },
   /** Compact footer / tight About trio */
   shortPair: {

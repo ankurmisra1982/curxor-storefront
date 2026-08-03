@@ -9,7 +9,7 @@ const beats = [
   {
     step: "02",
     title: "Chat or tap",
-    body: "Flight Command, Telegram, Slack — one local router, same operators.",
+    body: "Flight Command, Telegram, Slack — one local router, same crewmates.",
   },
   {
     step: "03",

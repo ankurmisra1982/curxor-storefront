@@ -61,7 +61,7 @@ export const visionBand = {
   eyebrow: "VISION · ACT II",
   headline: "One desk conducts. The symphony plays.",
   subhead:
-    "Chat SaaS gives you one assistant. CurXor gives you a desk crew — a conductor on your desk, acoustic reach when you want it, and a hall where operators earn presence from real Flagship activity.",
+    "Chat SaaS gives you one assistant. CurXor gives you a desk crew — a conductor on your desk, acoustic reach when you want it, and a hall where crewmates earn presence from real Flagship activity.",
   signalTeaser:
     "Signal is a concept preview — interfaces drift; your desk conducts. Not day-one integration.",
   cafeTeaser:

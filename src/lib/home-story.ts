@@ -65,7 +65,7 @@ export const visionBand = {
   signalTeaser:
     "Signal is a concept preview — interfaces drift; your desk conducts. Not day-one integration.",
   cafeTeaser:
-    "Crew Cafe is the hall on your metal — XP and ascension tied to real Capital, Creator, and Outreach activity. Concept preview UI below.",
+    "Crew Cafe is the hall on your metal — XP and ascension tied to real Capital, Creator, and Outreach activity. Stills captured on MS-S1.",
   cafeDisclaimer:
-    "CONCEPT PREVIEW — Cafe UI ships on the appliance; not a live cloud leaderboard.",
+    "Captured on MS-S1 — Cafe UI ships on the appliance; not a live cloud leaderboard.",
 } as const;

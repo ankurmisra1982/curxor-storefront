@@ -1,13 +1,13 @@
 import Link from "next/link";
 
+import { CafeClawVisual } from "@/components/CafeClawVisual";
 import { SignalHorizonVisual } from "@/components/SignalHorizonVisual";
 import { gtmConductorAccent } from "@/lib/dream-state";
 import { actTwoStory, visionBand } from "@/lib/home-story";
 import { symphonyRoles } from "@/lib/symphony-metaphor";
 
 /**
- * Slim homepage vision band — symphony roles + Signal tease.
- * Full Crew Cafe mock lives on /signal and appliance demos, not cold-traffic mid-page.
+ * Slim homepage vision band — symphony roles + Crew Cafe stills + Signal tease.
  */
 export function VisionBand() {
   const roles = symphonyRoles.filter((r) => r.id !== "signal" && r.id !== "cafe");
@@ -53,6 +53,19 @@ export function VisionBand() {
           ))}
         </div>
 
+        <div className="mt-8">
+          <p className="mb-3 text-[10px] tracking-[0.25em] text-amber-200/70">
+            CREW CAFE · ON METAL
+          </p>
+          <p className="mb-4 max-w-2xl text-xs leading-relaxed text-white/55">
+            {visionBand.cafeTeaser}
+          </p>
+          <CafeClawVisual />
+          <p className="mt-3 text-[10px] tracking-wide text-white/35">
+            {visionBand.cafeDisclaimer}
+          </p>
+        </div>
+
         <div className="mt-8 grid gap-6 border border-neon-purple/20 bg-neon-purple/[0.03] p-5 sm:p-6 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-[10px] tracking-[0.25em] text-neon-purple">
@@ -60,9 +73,6 @@ export function VisionBand() {
             </p>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
               {visionBand.signalTeaser}
-            </p>
-            <p className="mt-3 text-xs leading-relaxed text-white/55">
-              {visionBand.cafeTeaser}
             </p>
             <Link
               href="/signal"

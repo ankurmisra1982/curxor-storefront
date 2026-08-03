@@ -21,6 +21,9 @@ const VisionBand = dynamic(() =>
 const ComparisonTable = dynamic(() =>
   import("@/components/ComparisonTable").then((m) => ({ default: m.ComparisonTable }))
 );
+const AppEcosystem = dynamic(() =>
+  import("@/components/AppEcosystem").then((m) => ({ default: m.AppEcosystem }))
+);
 const PricingPreview = dynamic(() =>
   import("@/components/PricingPreview").then((m) => ({ default: m.PricingPreview }))
 );
@@ -49,6 +52,7 @@ export default function Home() {
       <PersonaGrid />
       <VisionBand />
       <ComparisonTable />
+      <AppEcosystem variant="featured" />
       <PricingPreview />
       <Faq />
       <Footer />

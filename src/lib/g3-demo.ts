@@ -38,7 +38,7 @@ export const heroFilmLinks = {
 
 export const g3Honesty = {
   capitalPractice:
-    "Practice mode · paper book — rules and cafe proof are real on the appliance; live broker book not shown.",
+    "Practice mode · paper book — rules run on the appliance; live broker book not shown.",
   creatorPublish:
     "Local inference drafts · operator approval before anything posts on egress.",
   workPipeline:

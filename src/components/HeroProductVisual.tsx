@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { g3Screenshots } from "@/lib/g3-demo";
+import { productStills } from "@/lib/product-stills";
 
 const CLAW_CHIPS = [
   { icon: "↗", label: "Capital" },
@@ -10,6 +10,8 @@ const CLAW_CHIPS = [
 ] as const;
 
 export function HeroProductVisual() {
+  const still = productStills.a;
+
   return (
     <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
       <div
@@ -28,7 +30,7 @@ export function HeroProductVisual() {
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-neon-purple shadow-[0_0_8px_#BF5AF2]" />
             <span className="text-[10px] tracking-[0.25em] text-white/50">
-              FLIGHT COMMAND
+              CURXOR · MS-S1 CLASS
             </span>
           </div>
           <div className="hidden gap-2 sm:flex">
@@ -44,18 +46,18 @@ export function HeroProductVisual() {
         <Link href="#demo" className="group block">
           <div className="relative overflow-hidden">
             <Image
-              src={g3Screenshots.home}
-              alt="CurXor Flight Command Home hub with grouped crewmate workspaces"
-              width={1024}
-              height={640}
+              src={still.src}
+              alt={still.alt}
+              width={still.width}
+              height={still.height}
               sizes="(max-width: 1024px) 100vw, 50vw"
-              quality={80}
+              quality={85}
               priority
               className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-            <p className="absolute bottom-4 left-4 text-[10px] tracking-[0.2em] text-white/50 transition-colors group-hover:text-neon-purple">
-              REAL APPLIANCE UI · TAP TO SEE MORE
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+            <p className="absolute bottom-4 left-4 right-4 text-[10px] tracking-[0.18em] text-white/55 transition-colors group-hover:text-neon-purple">
+              PRODUCT STILL · MS-S1 CLASS · TAP FOR DESK PROOF
             </p>
           </div>
         </Link>
@@ -76,6 +78,9 @@ export function HeroProductVisual() {
             126 TOPS · 64GB UMA
           </p>
         </div>
+        <p className="border-t border-white/10 px-4 py-2.5 text-[10px] leading-relaxed tracking-wide text-white/35">
+          {productStills.honesty}
+        </p>
       </div>
     </div>
   );

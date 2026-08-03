@@ -35,6 +35,7 @@ export const pressKit = {
     technicalReadLinks: [
       { href: "/architecture#validation", label: "Architecture" },
       { href: "/changelog", label: "Changelog" },
+      { href: "/journal", label: "Journal" },
     ],
   },
 

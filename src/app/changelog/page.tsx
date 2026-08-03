@@ -81,7 +81,11 @@ export default function ChangelogPage() {
         </div>
 
         <p className="mt-16 text-xs text-white/40">
-          When CurXor OS bumps{" "}
+          Buyer-facing release notes and status updates also ship in the{" "}
+          <Link href="/journal" className="text-neon-purple hover:underline">
+            journal
+          </Link>
+          . When CurXor OS bumps{" "}
           <code className="text-white/50">version.json</code>, run{" "}
           <code className="text-white/50">npm run sync:appliance</code> — changelog
           entries auto-sync from{" "}

@@ -71,6 +71,10 @@ export default function AboutPage() {
             curxor.ai
           </Link>
           {" · "}
+          <Link href="/journal" className="text-neon-purple hover:underline">
+            Journal
+          </Link>
+          {" · "}
           <Link href="/press" className="text-neon-purple hover:underline">
             Press kit
           </Link>

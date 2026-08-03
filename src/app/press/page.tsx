@@ -4,8 +4,10 @@ import type { ReactNode } from "react";
 import { OpenWeightTierCompare } from "@/components/OpenWeightTierCompare";
 import { SocialLinks } from "@/components/SocialLinks";
 import { SiteShell } from "@/components/SiteShell";
+import { VideoJsonLd } from "@/components/VideoJsonLd";
 import { changelogEntries, changelogMeta } from "@/lib/changelog";
 import { siteConfig } from "@/lib/config";
+import { categoryFilmAssets } from "@/lib/g3-demo";
 import { investorDeckMailto, pressKit } from "@/lib/press";
 
 const pressTitle = `Press Kit — ${siteConfig.name}`;
@@ -77,6 +79,18 @@ export default function PressPage() {
 
   return (
     <SiteShell>
+      <VideoJsonLd
+        videos={[
+          {
+            name: "CurXor investor proof film",
+            description:
+              "Investor diligence cut — product proof on real metal for media and investor outreach.",
+            contentPath: categoryFilmAssets.investorProof,
+            thumbnailPath: categoryFilmAssets.conductorPlate,
+            uploadDate: "2026-08-01",
+          },
+        ]}
+      />
       <div className="mx-auto max-w-4xl px-6 py-12 sm:py-14">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           {pageIntro.eyebrow}

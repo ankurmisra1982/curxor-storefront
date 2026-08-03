@@ -41,7 +41,8 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 | **OG image** | `/opengraph-image` |
 | **Press kit** | `/press` — boilerplate, films, G3 zip, diligence path |
 | **Analytics** | Vercel Analytics · preorder + subscribe events |
-| **SEO** | `sitemap.xml`, `robots.txt`, `llms.txt`, JSON-LD |
+| **SEO** | `sitemap.xml`, `robots.txt`, `llms.txt`, JSON-LD (Org/Product/FAQ/Article/Breadcrumb/Video) |
+| **Journal** | `/journal` hub — essays · updates · releases · briefs (SEO-selected; full archives at `/changelog` + `/press`) |
 
 ---
 

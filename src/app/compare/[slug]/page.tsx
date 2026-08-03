@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { ComparePageContent } from "@/components/ComparePageContent";
 import { SiteShell } from "@/components/SiteShell";
 import { comparePages, getComparePage } from "@/lib/compare-pages";
@@ -43,6 +44,13 @@ export default async function CompareSlugPage({ params }: Props) {
 
   return (
     <SiteShell>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Compare", path: "/compare" },
+          { name: page.title, path: `/compare/${slug}` },
+        ]}
+      />
       <ComparePageContent page={page} />
     </SiteShell>
   );

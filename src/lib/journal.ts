@@ -602,6 +602,10 @@ export const journalEssays: JournalEntry[] = [
         text: "CurXor is the second answer. Appliance + CurXor OS + a desk crew of digital employees. Not a tutorial. Not a repo with a prayer.",
       },
       {
+        type: "p",
+        text: "The AI runs on your box — installed on your metal, not in a cloud tab. No internet required to think — BYOK and bridges use the network when you choose them.",
+      },
+      {
         type: "h2",
         text: "What DIY quietly taxes you for",
       },

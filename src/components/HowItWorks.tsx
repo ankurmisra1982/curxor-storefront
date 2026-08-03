@@ -16,7 +16,7 @@ const beats = [
   {
     step: "03",
     title: "Local by default",
-    body: "Reasoning on your metal. Trades and posts egress only through eno2.",
+    body: "The AI runs on your box — installed on your metal, not in a cloud tab. No internet required to think.",
   },
   {
     step: "04",
@@ -53,7 +53,7 @@ export function HowItWorks() {
               </p>
               <h3 className="mt-2 flex items-center gap-1.5 text-sm font-bold tracking-wide text-white/90">
                 {beat.title}
-                {beat.step === "03" ? <InfoTip tipId="eno2" /> : null}
+                {beat.step === "04" ? <InfoTip tipId="eno2" /> : null}
               </h3>
               <p className="mt-2 text-xs leading-relaxed text-white/55">
                 {beat.body}

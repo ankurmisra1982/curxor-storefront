@@ -145,26 +145,26 @@ export const shareLines = [
 export const faqItems = [
   {
     question: "What is CurXor?",
-    answer: `curXor is the sovereign AI box — 64GB compute with 126 TOPS NPU on your desk. CurXor Systems builds the hardware and CurXor OS: ${clawRosterLabel}. Enable the crewmates you want, chat in plain language, and scale 24/7 with local inference by default.`,
+    answer: `CurXor is the sovereign AI box — 64GB compute with 126 TOPS NPU on your desk. CurXor Systems builds the hardware and CurXor OS: ${clawRosterLabel}. Enable the crewmates you want, chat in plain language, and scale 24/7 with local inference by default. Category brief: curxor.ai/journal/mint-autonomous-employees.`,
   },
   {
     question: "How is CurXor different from a Mac Studio plus Ollama?",
     answer:
-      "A Mac Studio gives you inference hardware. CurXor gives you inference plus a complete agent platform: pre-built crewmate desks, The Forge wizard, dual-port networking with an eno2 kill switch, digital bridges for trading and social, and a Settings hub to customize everything — ready on day one.",
+      "A Mac Studio gives you inference hardware. CurXor gives you inference plus a complete agent platform: pre-built crewmate desks, The Forge wizard, dual-port networking with an eno2 kill switch, digital bridges for trading and social, and a Settings hub to customize everything — ready on day one. Compare: curxor.ai/compare/mac-studio-ollama · Longer take: curxor.ai/journal/appliance-not-diy.",
   },
   {
     question: "How is CurXor different from OpenClaw?",
     answer:
-      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Outreach), The Forge, Crew Cafe, and an eno2 egress kill switch OOTB. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare.",
+      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Outreach), The Forge, Crew Cafe, and an eno2 egress kill switch OOTB. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare · Status: curxor.ai/journal/working-product-on-real-metal.",
   },
   {
     question: "How is CurXor different from a €549 assistant box?",
     answer:
-      "€549-class boxes are chat and messaging appliances on light compute. CurXor is operator desk depth — 64GB UMA, flagship crewmates, Forge, and Crew Cafe. $3,999 is a filter for outcomes, not a race to assistant price. Compare: curxor.ai/compare/clawbox.",
+      "€549-class boxes are chat and messaging appliances on light compute. CurXor is operator desk depth — 64GB UMA, flagship crewmates, Forge, and Crew Cafe. $3,999 is a filter for outcomes, not a race to assistant price. Compare: curxor.ai/compare/clawbox · Appliance brief: curxor.ai/journal/appliance-not-diy.",
   },
   {
     question: "What is included for $3,999?",
-    answer: `The curXor box, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, optional messaging gateways (Telegram, Slack, WhatsApp, iMessage), local LLM on 64GB UMA, optional frontier LLM via your own API keys, and OTA updates. No CurXor subscription or per-token fees.`,
+    answer: `The CurXor box, CurXor OS, Flight Command (Home hub, Settings, Simple/Expert modes, light/dark themes), ${clawRosterLabel} (enable any combination), chat workspaces with one-tap skills, optional messaging gateways (Telegram, Slack, WhatsApp, iMessage), local LLM on 64GB UMA, optional frontier LLM via your own API keys, and software updates (production customer-fleet OTA pending — see Press). No CurXor subscription or per-token fees.`,
   },
   {
     question: "Do I need to code to use CurXor?",
@@ -194,7 +194,7 @@ export const faqItems = [
   {
     question: "What do Flagship, Forge, Cafe, and Preview mean?",
     answer:
-      "Honest depth labels on every crewmate. Flagship desks (Capital, Creator, Outreach) are demo-ready with Go Live paths and eno2 bridges. The Forge mints custom agents in natural language. Crew Cafe is the cross-crew growth home — XP, streaks, and ascension from real activity. Preview modules (Arbitrage, Signal, Swarm, Vital, Kin) are working shells with local data — not fake production pipelines.",
+      "Honest depth labels on every crewmate. Flagship desks (Capital, Creator, Outreach) are demo-ready with Go Live paths and eno2 bridges. The Forge mints custom agents in natural language. Crew Cafe is the cross-crew growth home — XP, streaks, and ascension from real activity. Preview modules (Arbitrage, Signal, Swarm, Vital, Kin) are working shells with local data — not fake production pipelines. Crew Cafe note: curxor.ai/journal/crew-cafe.",
   },
   {
     question: "What does Creator do on day one?",
@@ -333,7 +333,7 @@ export const comparisonOptions = [
   },
   {
     id: "curxor",
-    label: "curXor",
+    label: "CurXor",
     price: "$3,999 once",
     highlights: [
       "126 TOPS · 64GB UMA included",

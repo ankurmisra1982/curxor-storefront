@@ -61,7 +61,7 @@ export const symphonyWhatIsThis = {
   },
   os: {
     title: "CurXor OS",
-    body: "Agents, inference, and control stay on your metal — not a cloud subscription.",
+    body: "Agents, intelligence, and control stay on your metal — not a cloud subscription.",
   },
   claws: {
     title: "Desk crew",

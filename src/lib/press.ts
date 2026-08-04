@@ -35,6 +35,7 @@ export const pressKit = {
     technicalReadLinks: [
       { href: "/architecture#validation", label: "Architecture" },
       { href: "/changelog", label: "Changelog" },
+      { href: "/journal", label: "Journal" },
     ],
   },
 
@@ -268,7 +269,15 @@ export const pressKit = {
     {
       label: "Desk crew roster",
       value:
-        "Capital · Creator · Outreach · Arbitrage · Signal · Swarm · Vital · Kin · Learn · Gamer · Estate · Crew Cafe · The Forge (Engage inbox under Creator)",
+        "Capital · Creator · Outreach · Arbitrage · Signal · Swarm · Vital · Kin · Learn · Gamer (Engage inbox under Creator)",
+    },
+    {
+      label: "Crew Cafe",
+      value: "Hall — not a roster seat",
+    },
+    {
+      label: "The Forge",
+      value: "Factory — not a roster seat",
     },
     { label: "Website", value: siteConfig.siteUrl },
     {
@@ -312,9 +321,14 @@ export const pressKit = {
       note: "Text-only — tight spaces, dark backgrounds",
     },
     {
-      label: "Category vision film (~62s MP4)",
+      label: "Category vision film (~91s MP4)",
       path: categoryFilmAssets.heroCategoryBadge,
-      note: "Badge v4 · hero VO · XOR wake · dream-state category cut",
+      note: "Badge v5.01 · LIVE SEND · desk crew · always-on · approval gate · concept comps + VO",
+    },
+    {
+      label: "Category vision short (~62s MP4)",
+      path: categoryFilmAssets.heroCategoryBadgeShort,
+      note: "Badge v4 · short alternate for cold / short asks",
     },
     {
       label: "Product proof film (~89s MP4)",
@@ -324,7 +338,7 @@ export const pressKit = {
     {
       label: "Category film (/signal)",
       path: "/signal#category-film",
-      note: "Both cuts embedded · vision default tab · diligence on press only",
+      note: "Vision (~91s) default + product proof · diligence on press only",
     },
     {
       label: "Investor proof (~2:50 MP4)",

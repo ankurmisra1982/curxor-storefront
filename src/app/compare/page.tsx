@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { TcoSection } from "@/components/TcoSection";
@@ -31,6 +32,12 @@ export const metadata = {
 export default function CompareHubPage() {
   return (
     <SiteShell>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Compare", path: "/compare" },
+        ]}
+      />
       <div className="mx-auto max-w-6xl px-6 py-12 sm:py-14">
         <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
           WHY CURXOR
@@ -39,13 +46,13 @@ export default function CompareHubPage() {
           Compare CurXor
         </h1>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
-          Honest comparisons against the alternatives buyers actually evaluate —
-          light assistants, cloud orchestration, independent computers, DIY
-          inference, and governance stacks. Pair with{" "}
-          <Link href="/#operators" className="text-neon-purple hover:underline">
-            operator stories
-          </Link>{" "}
-          for X and outreach threads.
+          Honest comparisons for operators evaluating alternatives — light
+          assistants, cloud orchestration, independent computers, DIY inference,
+          and governance stacks. For longer takes, see the{" "}
+          <Link href="/journal" className="text-neon-purple hover:underline">
+            journal
+          </Link>
+          .
         </p>
 
         <div className="mt-8">
@@ -72,6 +79,36 @@ export default function CompareHubPage() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-12 border-t border-white/10 pt-8">
+          <p className="text-[10px] tracking-[0.3em] text-white/40">JOURNAL</p>
+          <ul className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6">
+            <li>
+              <Link
+                href="/journal/appliance-not-diy"
+                className="text-sm text-neon-purple hover:underline"
+              >
+                The appliance, not the weekend project →
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/journal/mint-autonomous-employees"
+                className="text-sm text-neon-purple hover:underline"
+              >
+                Mint autonomous employees →
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/journal/working-product-on-real-metal"
+                className="text-sm text-neon-purple hover:underline"
+              >
+                Working product on real metal →
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <TcoSection />

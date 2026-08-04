@@ -85,6 +85,18 @@ export function ComparisonTable() {
           >
             ALL COMPARISONS <span>→</span>
           </Link>
+          <Link
+            href="/journal/appliance-not-diy"
+            className="text-xs tracking-widest text-white/55 transition-colors hover:text-neon-purple"
+          >
+            APPLIANCE ≠ DIY →
+          </Link>
+          <Link
+            href="/journal/mint-autonomous-employees"
+            className="text-xs tracking-widest text-white/55 transition-colors hover:text-neon-purple"
+          >
+            CATEGORY BRIEF →
+          </Link>
           <span className="inline-flex items-center gap-1.5">
             <Link
               href="/pricing"

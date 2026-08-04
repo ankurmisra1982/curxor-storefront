@@ -36,6 +36,16 @@
 - Architecture (MS-S1 validation status + desk crew tiers): https://curxor.ai/architecture
 - Changelog: https://curxor.ai/changelog
 - Press (investors & media): https://curxor.ai/press
+- Journal (essays · updates · releases · briefs): https://curxor.ai/journal
+- Essay · harness is the product: https://curxor.ai/journal/harness-is-the-product
+- Essay · intelligence and the desk: https://curxor.ai/journal/intelligence-and-the-desk
+- Essay · shallow usage gap: https://curxor.ai/journal/shallow-usage-gap
+- Essay · why I'm building CurXor: https://curxor.ai/journal/why-im-building-curxor
+- Brief · appliance not DIY: https://curxor.ai/journal/appliance-not-diy
+- Brief · mint autonomous employees: https://curxor.ai/journal/mint-autonomous-employees
+- Update · working product on real metal: https://curxor.ai/journal/working-product-on-real-metal
+- Update · Crew Cafe: https://curxor.ai/journal/crew-cafe
+- Release · CurXor OS v1.0.3: https://curxor.ai/journal/curxor-os-v1-0-3
 - Compare hub: https://curxor.ai/compare
 - Persona: https://curxor.ai/for/traders · https://curxor.ai/for/creators · https://curxor.ai/for/agencies
 - vs ClawBox: https://curxor.ai/compare/clawbox

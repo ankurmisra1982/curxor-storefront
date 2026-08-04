@@ -83,4 +83,4 @@ cd "../curxor storefront"
 npm run sync:appliance
 ```
 
-Updates `src/lib/generated/claw-cheat-sheet-sync.ts` and roster cards on `/architecture#claw-roster`.
+Updates `src/lib/generated/claw-cheat-sheet-sync.ts` and roster cards on `/architecture#desk-crew-roster` (LEGACY alias `#claw-roster` kept for old bookmarks).

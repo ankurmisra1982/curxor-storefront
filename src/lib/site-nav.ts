@@ -23,7 +23,7 @@ export const navGroups: NavGroup[] = [
       { href: "/outreach", label: "Outreach", description: "Pipeline & sequences" },
     ],
     footer: {
-      href: "/architecture#claw-roster",
+      href: "/architecture#desk-crew-roster",
       label: "Full roster →",
       description: "Flagship · Forge · Cafe · Preview",
     },
@@ -33,6 +33,7 @@ export const navGroups: NavGroup[] = [
     label: "WHY CURXOR",
     items: [
       { href: "/about", label: "Mission, Vision & Purpose", description: "Principal · companion · ownable metal" },
+      { href: "/journal", label: "Journal", description: "Founder essays on owning the desk" },
       { href: "/compare", label: "Compare alternatives", description: "Honest buyer tables" },
       { href: "/architecture", label: "Stack & architecture", description: "OS · ports · tiers" },
       { href: "/#operators", label: "Meet operators", description: "Persona stories on home" },

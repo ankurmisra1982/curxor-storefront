@@ -15,6 +15,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] X / Twitter link (`@curxorai`)
 - [x] Industrial brand (black, neon purple, monospace)
 - [x] FAQ + JSON-LD + llms.txt + sitemap + robots
+- [x] Journal (`/journal`) — essays + SEO-selected updates/releases/briefs · Article/Breadcrumb/Video JSON-LD · archives stay `/changelog` + `/press`
 - [x] Investor pitch deck — [PITCH-DECK.md](PITCH-DECK.md) + branded [PowerPoint](CurXor-Pitch-Deck-Speaker-Notes.pptx) (`npm run export:pitch-deck`)
 - [x] Architecture page (`/architecture`) — four pillars + eno1/eno2
 - [x] Privacy policy (`/privacy`) + terms & trading disclaimer (`/terms`)
@@ -34,10 +35,10 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] `/signal` — Signal · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
 - [x] **Hero film v5.1 script + comp plates** (G3 · `46f9257`) — [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/` · Figma proto linked
 - [x] **Hero film UI** — `/signal` category section + film tabs · `/press` downloads
-- [x] **Hero film MP4** — badge vision (~62s v4) + warm intro (~89s inception) on /signal · investor proof (~2:50) on /press
+- [x] **Hero film MP4** — badge vision (~91s v5.01) + short (~62s v4) + warm intro (~89s inception) on /signal · investor proof (~2:50) on /press
 - [x] **Align kickoff** — [STOREFRONT-ALIGN-KICKOFF.md](STOREFRONT-ALIGN-KICKOFF.md) for post-deploy verification chat
 - [x] **Track C deploy (STORE-C-DEPLOY)** — sync/g1-green-mirror-p0 → main · G3 assets on prod · category film labeled ~90s Act I alias
-- [x] **Aug 2026 film promote** — Swap A investor + inception v3 · hero badge v4 URL · [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md)
+- [x] **Aug 2026 film promote** — Swap A investor + inception v3 · hero badge v5.01 LIVE SEND (v4 short) · [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md)
 - [x] **Aug 2026 G3 still refresh** — 7/8 gallery PNGs resynced from OS pack (06-settings unchanged) · desk strips already matched
 - [ ] **Loop positioning** (IDEA-G11) — three-loop homepage section + hero A/B per [LOOP-POSITIONING.md](LOOP-POSITIONING.md) · **deferred post-fundraise (G11)**
 - [ ] **Trust loop graphic** (IDEA-G12) — Go Live + approval strip visual for landing or `/architecture` · **deferred post-fundraise (G12)**
@@ -119,6 +120,7 @@ See [SYNC.md](SYNC.md) and [APPLIANCE-AUDIT.md](APPLIANCE-AUDIT.md).
 
 | Date | Commit | Notes |
 |------|--------|-------|
+| 2026-08-04 | — | Badge v5.01 LIVE SEND · journal category-vision-film · hero Watch category film · v4 short · [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md) |
 | 2026-08-02 | `b7f406f` | Film promote · Swap A investor/inception v3 · badge v4 URL · prod [READY](https://vercel.com/cur-xor/curxor-storefront/GZsPHsXGWmA1fz7Ud4iNudCEAwC3) · [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md) |
 | 2026-07-08 | `815e547` | STORE-C-DEPLOY closed · Vercel prod [READY](https://vercel.com/cur-xor/curxor-storefront/5vHpe6S45tiQMSvnggaLtStuemuk) · main branch · all asset smoke green |
 | 2026-07-08 | — | **Prod UAT green** — full page graph · films · press zip · subscribe E2E · doc mirror closed |

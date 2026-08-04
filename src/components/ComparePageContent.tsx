@@ -94,6 +94,48 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
         </div>
       </section>
 
+      <section className="mt-10 border-t border-white/10 pt-8">
+        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+          JOURNAL
+        </p>
+        <ul className="flex flex-col gap-3">
+          {page.slug === "mac-studio-ollama" ? (
+            <li>
+              <Link
+                href="/journal/appliance-not-diy"
+                className="text-sm text-neon-purple hover:underline"
+              >
+                The appliance, not the weekend project →
+              </Link>
+            </li>
+          ) : null}
+          <li>
+            <Link
+              href="/journal/mint-autonomous-employees"
+              className="text-sm text-neon-purple hover:underline"
+            >
+              Mint autonomous employees on bare metal →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/journal/working-product-on-real-metal"
+              className="text-sm text-neon-purple hover:underline"
+            >
+              Working product on real metal →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/journal"
+              className="text-sm text-white/50 hover:text-neon-purple"
+            >
+              All journal →
+            </Link>
+          </li>
+        </ul>
+      </section>
+
       <p className="mt-12">
         <Link href="/compare" className="text-sm text-neon-purple hover:underline">
           ← All comparisons

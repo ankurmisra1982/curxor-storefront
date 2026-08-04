@@ -30,7 +30,7 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 | **G3 desk gallery** | MS-S1 captures in `public/demo/g3/` — homepage demo section |
 | **Spec matrix** | Compute / Network / OpenClaw Engine columns |
 | **App ecosystem** | Desk crew from `appliance-sync.ts` · mobile carousel |
-| **Category films** | `/signal#category-film` — vision ~62s default + warm intro ~89s tab |
+| **Category films** | `/signal#category-film` — vision ~91s (v5.01) default + warm intro ~89s tab · short ~62s (v4) |
 | **Trust pages** | `/privacy`, `/terms`, `/architecture`, `/changelog`, `/press`, `/pricing` |
 | **Desk landings** | `/capital`, `/creator`, `/outreach`, `/signal` (Neural Link horizon) |
 | **Personas** | `/for/traders`, `/for/creators`, `/for/agencies` |
@@ -41,7 +41,8 @@ The storefront is the **go-to-market surface** — not the appliance. It pre-sel
 | **OG image** | `/opengraph-image` |
 | **Press kit** | `/press` — boilerplate, films, G3 zip, diligence path |
 | **Analytics** | Vercel Analytics · preorder + subscribe events |
-| **SEO** | `sitemap.xml`, `robots.txt`, `llms.txt`, JSON-LD |
+| **SEO** | `sitemap.xml`, `robots.txt`, `llms.txt`, JSON-LD (Org/Product/FAQ/Article/Breadcrumb/Video) |
+| **Journal** | `/journal` hub — essays · updates · releases · briefs (SEO-selected; full archives at `/changelog` + `/press`) |
 
 ---
 

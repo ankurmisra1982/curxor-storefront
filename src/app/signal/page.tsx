@@ -6,6 +6,7 @@ import { SignalHorizonVisual } from "@/components/SignalHorizonVisual";
 import { SignalOptimusPreview } from "@/components/SignalOptimusPreview";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
+import { VideoJsonLd } from "@/components/VideoJsonLd";
 import {
   signalDeviceClasses,
   signalHonesty,
@@ -16,6 +17,7 @@ import {
   signalTodayTabs,
 } from "@/lib/signal-page";
 import { applianceVersion, siteConfig } from "@/lib/config";
+import { categoryFilmAssets } from "@/lib/g3-demo";
 import { dreamStateNaming, dreamStateThesisAccents } from "@/lib/dream-state";
 import { symphonyPayoff, symphonySection } from "@/lib/symphony-metaphor";
 
@@ -40,6 +42,26 @@ export const metadata: Metadata = {
 export default function SignalPage() {
   return (
     <SiteShell>
+      <VideoJsonLd
+        videos={[
+          {
+            name: "CurXor category vision film",
+            description:
+              "Category vision — They live here. You conduct. Desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Concept comps + voiceover.",
+            contentPath: categoryFilmAssets.heroCategoryBadge,
+            thumbnailPath: categoryFilmAssets.conductorPlate,
+            uploadDate: "2026-08-04",
+          },
+          {
+            name: "CurXor product proof film",
+            description:
+              "Warm intro / product proof — onboarding through flagship crewmates on real MS-S1-class metal.",
+            contentPath: categoryFilmAssets.inceptionReel,
+            thumbnailPath: categoryFilmAssets.conductorPlate,
+            uploadDate: "2026-08-01",
+          },
+        ]}
+      />
       <div className="mx-auto max-w-6xl px-6 py-12 sm:py-14">
         <section>
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">

@@ -55,13 +55,21 @@ export function Hero() {
         <div className="relative flex min-h-0 flex-col">
           <HeroProductVisual />
 
-          {siteConfig.heroAccent ? (
-            <p className="mt-3 text-center text-sm italic text-white/55 lg:text-right">
-              <Link href="/signal" className="transition-colors hover:text-white/75">
-                {siteConfig.heroAccent}
-              </Link>
-            </p>
-          ) : null}
+          <div className="mt-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
+            <Link
+              href="/signal#category-film"
+              className="text-xs tracking-[0.2em] text-white/45 transition-colors hover:text-neon-purple"
+            >
+              Watch category film →
+            </Link>
+            {siteConfig.heroAccent ? (
+              <p className="text-sm italic text-white/55">
+                <Link href="/signal" className="transition-colors hover:text-white/75">
+                  {siteConfig.heroAccent}
+                </Link>
+              </p>
+            ) : null}
+          </div>
 
           <div className="mt-5 hidden w-full flex-col gap-3 lg:flex">
             <SubscribeForm variant="hero" className="[&_form]:max-w-none" />

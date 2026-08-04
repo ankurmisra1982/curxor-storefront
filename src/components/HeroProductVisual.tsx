@@ -43,8 +43,8 @@ export function HeroProductVisual() {
           </div>
         </div>
 
-        <Link href="#demo" className="group block">
-          <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden">
+          <Link href="#demo" className="group block">
             <Image
               src={still.src}
               alt={still.alt}
@@ -55,12 +55,25 @@ export function HeroProductVisual() {
               priority
               className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
-            <p className="absolute bottom-4 left-4 right-4 text-[10px] tracking-[0.18em] text-white/55 transition-colors group-hover:text-neon-purple">
-              PRODUCT STILL · MS-S1 CLASS · TAP FOR DESK PROOF
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
+            <p className="absolute bottom-4 right-4 text-right text-[10px] tracking-[0.18em] text-white/50 transition-colors group-hover:text-neon-purple">
+              PRODUCT STILL · TAP FOR DESK PROOF
             </p>
-          </div>
-        </Link>
+          </Link>
+
+          <Link
+            href="/signal#category-film"
+            className="absolute bottom-3.5 left-3.5 z-10 inline-flex items-center gap-2 border border-white/15 bg-black/80 px-3 py-2 text-[10px] tracking-[0.2em] text-white/75 backdrop-blur-[2px] transition-colors hover:border-neon-purple/45 hover:text-neon-purple"
+          >
+            <span
+              aria-hidden
+              className="flex h-3.5 w-3.5 items-center justify-center border border-current/40"
+            >
+              <span className="ml-0.5 border-y-[3px] border-l-[5px] border-y-transparent border-l-current" />
+            </span>
+            Watch category film
+          </Link>
+        </div>
 
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 px-4 py-3">
           <div className="flex flex-wrap gap-2">

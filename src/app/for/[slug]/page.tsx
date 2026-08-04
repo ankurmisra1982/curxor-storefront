@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { PersonaPageContent } from "@/components/PersonaPageContent";
 import { SiteShell } from "@/components/SiteShell";
 import { siteConfig } from "@/lib/config";
@@ -43,6 +44,12 @@ export default async function PersonaSlugPage({ params }: Props) {
 
   return (
     <SiteShell>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: page.title, path: `/for/${slug}` },
+        ]}
+      />
       <PersonaPageContent page={page} />
     </SiteShell>
   );

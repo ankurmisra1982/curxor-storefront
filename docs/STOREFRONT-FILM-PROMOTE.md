@@ -1,55 +1,59 @@
 # Storefront film promote — Aug 2026
 
-> **Wave:** Picture-locked investor v3 · inception v3 · hero badge v4 → curxor.ai  
+> **Wave (2026-08-04):** Hero badge **v5.01** → curxor.ai as LIVE SEND category vision  
+> **Prior wave (2026-08-02):** investor v3 · inception v3 · hero badge v4  
 > **Owner:** CDO / storefront · masters remain in curxor-os  
-> **Homepage cold hero:** unchanged (ship-now GTM)  
-> **Prod:** `b7f406f` · Vercel READY · CDN Content-Length verified 2026-08-02  
-> - investor-proof-v1 = 21333021 · inception-v1 = 12276207 · badge-v4 = 11930758
+> **Homepage cold hero:** unchanged (GTM still) · quiet “Watch category film” links into `/signal#category-film`  
+> **Prod:** verify Content-Length after deploy — badge-v5.01 ≈ 18931045
 
 ---
 
-## What went live where
+## What went live where (current)
 
 | Job | Master | Public URL strategy | Surfaces |
 |-----|--------|---------------------|----------|
+| Category / hype | hero-category-badge-v5.01 | **Versioned URL** `…/hero-category-badge-v5.01.mp4` | `/signal` default tab, `/press`, press zip, journal update, hero film links |
+| Category short | hero-category-badge-v4 | Keep `…/hero-category-badge-v4.mp4` | Cold / short asks · `/signal` “Short cut” · press |
 | Diligence | investor-proof-v3 | Swap A → `…/g3-investor-proof-v1.mp4` (+ `*-v3` sibling) | `/press`, pitch deck links |
 | Warm intro | inception-reel-v3 | Swap A → `…/g3-inception-reel-v1.mp4` (+ `*-v3` sibling) | `/signal` product tab, `/press` |
-| Category / hype | hero-category-badge-v4 | **Versioned URL** `…/hero-category-badge-v4.mp4` | `/signal` default tab, `/press`, press zip |
 
-Jul `hero-category-badge-v1.mp4` bytes left in place for rollback — not overwritten.
+Jul `hero-category-badge-v1.mp4` bytes left in place for rollback — not overwritten.  
+v4 kept as short alternate — not deleted.
 
 ---
 
 ## Creative decisions
 
-- **Swap A** for investor + inception (stable bookmarks).
-- **Hero v4 URL** this wave (CTO HOLD on clobbering `*-v1`).
+- **v5.01** = live category send (~91s) · night settle · Kin on night (not egress) · Cap/Work/Creator egress.
+- **v4** = short alternate (~62s).
 - `/signal` = two tabs only (vision + warm). Diligence stays `/press`.
-- Product tab uses `inceptionReel` path — not legacy `hero-category-v1` alias.
-- Nouns: desk crew · crewmate · Crew Cafe. Capture line: Aug 2026.
+- Homepage: text + industrial chip → `/signal#category-film` · no autoplay · no cold hero film.
+- Journal: `/journal/category-vision-film` — honest concept framing (added 2026-08-04 align pass).
+- Nouns: desk crew · crewmate · Crew Cafe. No G-milestone codes in public copy.
 
 ---
 
 ## Sync / code touchpoints
 
-- `scripts/sync-g3-assets.ts` — inception + investor Swap A; stage badge v4; press zip prefers v4
-- `src/lib/g3-demo.ts` — asset URLs + honesty date
-- `src/components/CategoryFilmSection.tsx` — durations + product src
-- `src/lib/press.ts` — download labels
-- Docs: `HERO-FILM-HANDOFF.md`, `GTM-CHECKLIST.md`, `PITCH-DECK.md` fundraise table
+- `scripts/sync-g3-assets.ts` — stage badge v5.01 + v4; press zip prefers v5.01
+- `src/lib/g3-demo.ts` — `heroCategoryBadge` + `heroCategoryBadgeShort`
+- `src/components/CategoryFilmSection.tsx` — ~91s + short-cut link
+- `src/components/Hero.tsx` · `HeroProductVisual.tsx` — Watch category film
+- `src/lib/press.ts` · `src/lib/journal.ts`
+- Docs: `HERO-FILM-HANDOFF.md`, `PITCH-DECK.md`, `GTM-CHECKLIST.md`
 
 ---
 
 ## Residual risks
 
 1. CDN may stick old MP4 bytes — hard-refresh / re-probe Content-Length after deploy.
-2. Bookmarks to `hero-category-badge-v1.mp4` still get Jul vision until a future Swap A + archive.
-3. Legacy `hero-category-v1.mp4` may still be Jul if anything deep-links it; live UI no longer uses it for the product tab.
-4. Do not put dream/category film on homepage cold hero without CEO gate.
+2. Bookmarks to `hero-category-badge-v4.mp4` still get the short cut (intentional).
+3. Do not put dream/category film as homepage cold hero autoplay without CEO gate.
 
 ---
 
 ## Rollback
 
-1. Point `categoryFilmAssets.heroCategoryBadge` back to `/demo/hero-category-badge-v1.mp4`.
-2. Redeploy prior asset commit, or restore Jul bytes from git history for `*-v1` investor/inception if needed.
+1. Point `categoryFilmAssets.heroCategoryBadge` back to `/demo/hero-category-badge-v4.mp4`.
+2. Revert journal slug / press labels if needed.
+3. Redeploy prior asset commit for bytes if CDN stuck.

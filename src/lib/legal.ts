@@ -10,6 +10,7 @@ export const footerLinks = [
   { href: "/compare", label: "Compare" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
+  { href: "/journal", label: "Journal" },
   { href: "/architecture", label: "Architecture" },
   { href: "/changelog", label: "Changelog" },
   { href: "/press", label: "Press" },

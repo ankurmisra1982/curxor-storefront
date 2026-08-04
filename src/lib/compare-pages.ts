@@ -100,7 +100,7 @@ export const comparePages: ComparePage[] = [
       "Compare turnkey CurXor agent appliance with DIY Mac Studio or Mac mini plus Ollama integration work.",
     eyebrow: "COMPARE · DIY INFERENCE",
     headline: "Mac Studio gives you inference. CurXor gives you employees.",
-    lead: "A Mac Studio with Ollama is excellent inference hardware — if you enjoy building the agent stack yourself. CurXor bundles CurXor OS, Flight Command, crewmates, bridges, and OTA on MS-S1 MAX class silicon.",
+    lead: "A Mac Studio with Ollama is excellent inference hardware — if you enjoy building the agent stack yourself. CurXor bundles CurXor OS, Flight Command, crewmates, and bridges on MS-S1 MAX class silicon.",
     themLabel: "Mac Studio + Ollama",
     positioning:
       "Mac wins on ecosystem, resale, and Apple's polish for general computing. CurXor wins when you want agent verticals, eno2 kill switch, and messaging gateways without weeks of integration.",

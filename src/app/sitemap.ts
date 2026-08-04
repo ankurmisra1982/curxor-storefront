@@ -26,6 +26,7 @@ const paths: { path: string; priority: number; changeFrequency: "weekly" | "mont
   { path: "/journal/why-im-building-curxor", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/appliance-not-diy", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/mint-autonomous-employees", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/journal/category-vision-film", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/working-product-on-real-metal", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/crew-cafe", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/curxor-os-v1-0-3", priority: 0.7, changeFrequency: "monthly" },

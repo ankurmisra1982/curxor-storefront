@@ -43,6 +43,7 @@
 - Essay · why I'm building CurXor: https://curxor.ai/journal/why-im-building-curxor
 - Brief · appliance not DIY: https://curxor.ai/journal/appliance-not-diy
 - Brief · mint autonomous employees: https://curxor.ai/journal/mint-autonomous-employees
+- Update · category vision film: https://curxor.ai/journal/category-vision-film
 - Update · working product on real metal: https://curxor.ai/journal/working-product-on-real-metal
 - Update · Crew Cafe: https://curxor.ai/journal/crew-cafe
 - Release · CurXor OS v1.0.3: https://curxor.ai/journal/curxor-os-v1-0-3

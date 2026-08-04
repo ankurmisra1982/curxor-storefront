@@ -23,7 +23,8 @@
 |-------|-----|
 | Storefront | https://curxor.ai |
 | Category film | https://curxor.ai/signal#category-film |
-| Category vision (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
+| Category vision (~91s) | https://curxor.ai/demo/hero-category-badge-v5.01.mp4 |
+| Category short (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
 | Inception reel (~89s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
 | Investor proof (~2:50) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |
 | Press kit | https://curxor.ai/press |
@@ -243,7 +244,7 @@ Velocity: 182 commits · 20 days to v1.0.3 · film pack Jul 8 · Wave 1 dogfood 
 | Paying fleet / ARR | Red | Pre-revenue · pre-order live |
 | Live broker/social fills | Red | Founder-keyed · approval gate |
 | Custom CurXor hardware | Red | Act II · post-raise |
-| Full category hero | Yellow | ~62s vision + ~89s product live · live badge shoot open |
+| Full category hero | Yellow | ~91s vision (v5.01) + ~89s product live · short ~62s (v4) · live badge shoot open |
 
 ---
 

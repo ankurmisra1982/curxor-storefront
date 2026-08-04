@@ -47,10 +47,10 @@ export default function SignalPage() {
           {
             name: "CurXor category vision film",
             description:
-              "Category vision cut — XOR wake, morning routine, dream-state comps on the sovereign AI desk.",
+              "Category vision — desk crew on metal you own, always-on life, approval gate. Concept comps + voiceover.",
             contentPath: categoryFilmAssets.heroCategoryBadge,
             thumbnailPath: categoryFilmAssets.conductorPlate,
-            uploadDate: "2026-08-01",
+            uploadDate: "2026-08-04",
           },
           {
             name: "CurXor product proof film",

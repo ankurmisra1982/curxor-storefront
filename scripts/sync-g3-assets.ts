@@ -94,8 +94,13 @@ if (copyFile(
   path.join(demoRoot, "hero-category-badge-v1.mp4")
 )) copied++;
 
-// Hero badge v4 — stage sibling URL; do not clobber *-v1 (rollback + CTO HOLD)
+// Hero badge v5.01 — LIVE SEND; v4 short alternate; do not clobber *-v1 (rollback + CTO HOLD)
 {
+  const v501Inv = path.join(packRoot, "investor-pack", "hero-category-badge-v5.01.mp4");
+  const v501Master = path.join(packRoot, "master-film", "hero", "hero-category-badge-v5.01.mp4");
+  const v501Src = fs.existsSync(v501Inv) ? v501Inv : v501Master;
+  if (copyFile(v501Src, path.join(demoRoot, "hero-category-badge-v5.01.mp4"))) copied++;
+
   const v4Badge = path.join(packRoot, "investor-pack", "hero-category-badge-v4.mp4");
   const v4Master = path.join(packRoot, "master-film", "hero", "hero-category-badge-v4.mp4");
   const badgeSrc = fs.existsSync(v4Badge) ? v4Badge : v4Master;
@@ -122,11 +127,13 @@ if (fs.existsSync(heroFilmDir)) {
   fs.mkdirSync(pressDir, { recursive: true });
   const zipEntries = [
     ...fs.readdirSync(heroFilmDir).filter((f) => f.endsWith(".png")).map((f) => path.join(heroFilmDir, f)),
-    ...(fs.existsSync(path.join(demoRoot, "hero-category-badge-v4.mp4"))
-      ? [path.join(demoRoot, "hero-category-badge-v4.mp4")]
-      : fs.existsSync(path.join(demoRoot, "hero-category-badge-v1.mp4"))
-        ? [path.join(demoRoot, "hero-category-badge-v1.mp4")]
-        : []),
+    ...(fs.existsSync(path.join(demoRoot, "hero-category-badge-v5.01.mp4"))
+      ? [path.join(demoRoot, "hero-category-badge-v5.01.mp4")]
+      : fs.existsSync(path.join(demoRoot, "hero-category-badge-v4.mp4"))
+        ? [path.join(demoRoot, "hero-category-badge-v4.mp4")]
+        : fs.existsSync(path.join(demoRoot, "hero-category-badge-v1.mp4"))
+          ? [path.join(demoRoot, "hero-category-badge-v1.mp4")]
+          : []),
     ...(fs.existsSync(metricsCard) ? [metricsCard] : []),
   ];
   if (zipEntries.length > 0) {

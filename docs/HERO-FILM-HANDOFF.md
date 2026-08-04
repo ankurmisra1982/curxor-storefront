@@ -1,8 +1,8 @@
 # Storefront handoff — Hero film (Aug 2026 promote)
 
 > **Source:** sibling `../curxor-os` picture-locked masters · Aug 2026  
-> **Canonical status:** `G3-INVESTOR-V3-STATUS.md` · `G3-INCEPTION-V3-STATUS.md` · `HERO-BADGE-V4-STATUS.md`  
-> **Gate:** Category + warm intro on `/signal` · diligence on `/press` · **not** cold homepage hero
+> **Canonical status:** `HERO-BADGE-V5.01-STATUS.md` · `G3-INVESTOR-V3-STATUS.md` · `G3-INCEPTION-V3-STATUS.md`  
+> **Gate:** Category + warm intro on `/signal` · diligence on `/press` · homepage links only (no cold-hero autoplay)
 
 Full tier rule (sync from sibling): [STOREFRONT-HERO-FILM-HANDOFF.md](../curxor-os/docs/gtm/STOREFRONT-HERO-FILM-HANDOFF.md)
 
@@ -23,7 +23,8 @@ Promote log: [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md)
 
 | File | Runtime | Use |
 |------|---------|-----|
-| `hero-category-badge-v4.mp4` | ~62s | Category vision · XOR wake · **live default** on `/signal` |
+| `hero-category-badge-v5.01.mp4` | ~91s | Category vision · **LIVE SEND** default on `/signal` |
+| `hero-category-badge-v4.mp4` | ~62s | Short alternate · cold / short asks |
 | `hero-category-badge-v1.mp4` | ~61s | Jul archive — kept for rollback; not cited as vision default |
 | `g3-inception-reel-v1.mp4` | ~89s | Warm product intro (Swap A of v3) · `/signal` product tab |
 | `g3-investor-proof-v1.mp4` | ~2:50 | Diligence (Swap A of v3) · `/press` + deck links |
@@ -52,13 +53,16 @@ npm run sync:g3-assets
 ## Build checklist (storefront)
 
 ```
-☑ /signal — CategoryFilmSection · vision (~62s) default + warm intro (~89s) tab
-☑ /press — badge v4 + inception + investor proof + press zip
-☑ hero-category-badge-v4.mp4 — staged + cited as vision default
+☑ /signal — CategoryFilmSection · vision (~91s v5.01) default + warm intro (~89s) tab
+☑ /press — badge v5.01 + short v4 + inception + investor proof + press zip
+☑ hero-category-badge-v5.01.mp4 — staged + cited as vision default
+☑ hero-category-badge-v4.mp4 — kept as short alternate
+☑ Homepage — Watch category film → `/signal#category-film` (no autoplay)
+☑ Journal — `/journal/category-vision-film`
 ☑ inception + investor — Swap A on stable *-v1 URLs
 ☑ Product tab retargeted to inceptionReel (no hero-category-v1 alias drift)
 ☑ Direct MP4 links on curxor.ai/demo/
-☐ Do NOT swap homepage H1 until G4
+☐ Do NOT autoplay category film on homepage cold hero
 ☐ Overwrite public hero-category-badge-v1.mp4 — only on explicit ask + archive rename
 ```
 
@@ -68,7 +72,9 @@ npm run sync:g3-assets
 
 | Asset | URL |
 |-------|-----|
-| Category vision (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
+| Category vision (~91s) | https://curxor.ai/demo/hero-category-badge-v5.01.mp4 |
+| Category short (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
 | Product proof (~89s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
 | Investor proof (~2:50) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |
 | Both embedded | https://curxor.ai/signal#category-film |
+| Journal note | https://curxor.ai/journal/category-vision-film |

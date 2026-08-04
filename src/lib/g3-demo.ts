@@ -18,8 +18,10 @@ export const g3DeskStrips = {
 } as const;
 
 export const categoryFilmAssets = {
-  /** ~62s dream-state category cut — badge v4 (picture-locked Aug 2026). */
-  heroCategoryBadge: "/demo/hero-category-badge-v4.mp4",
+  /** ~91s dream-state category cut — badge v5.01 (LIVE SEND · locked 2026-08-04). */
+  heroCategoryBadge: "/demo/hero-category-badge-v5.01.mp4",
+  /** ~62s short alternate — badge v4 · keep for cold / short asks. */
+  heroCategoryBadgeShort: "/demo/hero-category-badge-v4.mp4",
   /** Legacy Act I alias path — prefer inceptionReel for product tab. */
   heroCategory: "/demo/hero-category-v1.mp4",
   /** ~89s warm intro / TWIST — Swap A of inception-reel-v3 → stable *-v1 URL. */

@@ -52,6 +52,61 @@ export const journalArchiveLinks = [
 
 export const journalEssays: JournalEntry[] = [
   {
+    slug: "category-vision-film",
+    kind: "update",
+    title: "Category Vision Film",
+    metaDescription:
+      "CurXor category vision film is live — desk crew on metal you own, always-on life, approval gate. Watch on Signal; short cut available for cold asks.",
+    publishedAt: "2026-08-04",
+    excerpt:
+      "The category story is on film: your desk crew lives here, you conduct, nothing leaves without approval — on metal you own. Concept vision cut, not a product walkthrough.",
+    sourceLabel: "Product update · category film",
+    author: "CurXor Systems",
+    relatedLinks: [
+      { href: "/signal#category-film", label: "Watch on Signal" },
+      { href: "/demo/hero-category-badge-v5.01.mp4", label: "Category vision (~91s)" },
+      { href: "/demo/hero-category-badge-v4.mp4", label: "Short cut (~62s)" },
+      { href: "/press", label: "Press kit" },
+      { href: "/journal/mint-autonomous-employees", label: "Mint autonomous employees" },
+      { href: "/#subscribe", label: "Join the waitlist" },
+    ],
+    body: [
+      {
+        type: "h2",
+        text: "What this film is",
+      },
+      {
+        type: "p",
+        text: "A category vision cut — not a feature tour and not a diligence reel. It is the ownership story in motion: desk crew on metal you own, work that continues while you walk the day, and an approval gate before anything leaves.",
+      },
+      {
+        type: "p",
+        text: "Picture and voiceover are concept. Lifestyle plates and dream-state comps sell the thesis. Product proof — onboarding through Capital, Creator, and Outreach on real MS-S1-class metal — stays on the second tab.",
+      },
+      {
+        type: "h2",
+        text: "Where to watch",
+      },
+      {
+        type: "ul",
+        items: [
+          "Signal — category vision default (~91s), product proof beside it",
+          "Homepage — Watch category film links into Signal",
+          "Short alternate (~62s) for cold asks and tight decks",
+          "Press kit — downloadable MP4s for media and investors",
+        ],
+      },
+      {
+        type: "quote",
+        text: "They live here. You conduct. Owned by you.",
+      },
+      {
+        type: "p",
+        text: "If you want the category in plain English first, read Mint Autonomous Employees. If you want the box story on camera, hit play.",
+      },
+    ],
+  },
+  {
     slug: "harness-is-the-product",
     kind: "essay",
     title: "Why I'm Building CurXor — The Harness Is the Product",
@@ -675,6 +730,7 @@ export const journalEssays: JournalEntry[] = [
       { href: "/pricing", label: "Pricing" },
       { href: "/for/traders", label: "For traders" },
       { href: "/for/creators", label: "For creators" },
+      { href: "/#subscribe", label: "Join the waitlist" },
     ],
     body: [
       {
@@ -736,6 +792,7 @@ export const journalEssays: JournalEntry[] = [
       { href: "/architecture", label: "Architecture & validation" },
       { href: "/changelog", label: "Changelog" },
       { href: "/#demo", label: "Flight Command demo" },
+      { href: "/#subscribe", label: "Join the waitlist" },
     ],
     body: [
       {

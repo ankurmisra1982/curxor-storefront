@@ -270,7 +270,7 @@ When appliance bumps: run `npm run sync:appliance`, refresh this doc, update cha
 | Storefront `public/demo/investor/` | **G3 closed Jul 8** — inception reel, investor proof, category badge film |
 | `public/demo/cafe/` | **Wave A** — dev Flight Command UI; **not MS-S1 verified** |
 | Product photography / MS-S1 box hero | **G4 pending** — batch shoot when ready |
-| Next Interface film (GTM-FILM) | Category badge v4 (~62s) + inception reel (~89s) live on `/signal` · diligence on `/press` · full A+B+C merge deferred |
+| Next Interface film (GTM-FILM) | Category badge v5.01 (~91s) + short v4 (~62s) + inception (~89s) on `/signal` · diligence on `/press` · full A+B+C merge deferred |
 
 Copy captured assets to storefront `public/demo/` for GTM. Label dev captures honestly in decks.
 

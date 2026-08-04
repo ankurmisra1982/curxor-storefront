@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { CopyLinkButton } from "@/components/CopyLinkButton";
+import { siteConfig } from "@/lib/config";
 import type { JournalBlock, JournalEntry } from "@/lib/journal";
 import { formatJournalDate, journalKindLabel } from "@/lib/journal";
 
@@ -35,6 +37,8 @@ function Block({ block }: { block: JournalBlock }) {
 }
 
 export function JournalArticle({ essay }: { essay: JournalEntry }) {
+  const articleUrl = `${siteConfig.siteUrl}/journal/${essay.slug}`;
+
   return (
     <article className="mx-auto max-w-2xl px-6 py-10 sm:py-14">
       <p className="text-[10px] tracking-[0.3em] text-neon-purple">
@@ -54,6 +58,8 @@ export function JournalArticle({ essay }: { essay: JournalEntry }) {
         <span className="normal-case tracking-wide text-white/35">
           {essay.sourceLabel}
         </span>
+        <span aria-hidden>·</span>
+        <CopyLinkButton url={articleUrl} />
         {essay.xUrl ? (
           <>
             <span aria-hidden>·</span>

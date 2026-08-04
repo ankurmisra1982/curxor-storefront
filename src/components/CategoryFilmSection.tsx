@@ -22,11 +22,12 @@ const FILMS: {
   {
     id: "badge",
     label: "Category vision",
-    duration: "~62s",
+    duration: "~91s",
     src: categoryFilmAssets.heroCategoryBadge,
-    caption: "Vision cut — concept comps + voiceover",
+    caption:
+      "Category vision — desk crew, always-on life, approval gate · concept comps + voiceover",
     ariaLabel:
-      "CurXor category vision film — XOR wake, morning routine, dream-state comps",
+      "CurXor category vision film — desk crew on metal you own, always-on life, approval gate",
   },
   {
     id: "product",
@@ -53,8 +54,9 @@ export function CategoryFilmSection() {
           Two cuts. Play either.
         </h2>
         <p className="mt-2 max-w-xl text-xs leading-relaxed text-white/45">
-          Vision cut is concept. Product proof was captured on real MS-S1 metal —
-          onboarding through Capital, Creator, and Outreach.
+          Vision cut is concept (~91s). Short alternate stays available for cold
+          asks (~62s). Product proof was captured on real MS-S1 metal — onboarding
+          through Capital, Creator, and Outreach.
         </p>
       </div>
 
@@ -123,6 +125,14 @@ export function CategoryFilmSection() {
           <span className="text-white/25"> · {g3Honesty.deskCapture}</span>
         </p>
         <div className="flex flex-wrap gap-x-4 gap-y-2 sm:justify-end">
+          {activeFilm === "badge" ? (
+            <a
+              href={categoryFilmAssets.heroCategoryBadgeShort}
+              className="text-[10px] tracking-[0.18em] text-white/35 transition-colors hover:text-neon-purple"
+            >
+              SHORT CUT (~62S) →
+            </a>
+          ) : null}
           <a
             href={heroFilmLinks.figmaProto}
             target="_blank"

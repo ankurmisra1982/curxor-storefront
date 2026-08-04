@@ -54,55 +54,60 @@ export const journalEssays: JournalEntry[] = [
   {
     slug: "category-vision-film",
     kind: "update",
-    title: "Category Vision Film",
+    title: "Category Vision Film — Desk Crew on Metal You Own",
     metaDescription:
-      "CurXor category vision film is live — desk crew on metal you own, always-on life, approval gate. Watch on Signal; short cut available for cold asks.",
+      "CurXor category vision film (~91s) live on /signal — desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Concept comps + voiceover; product proof tab is real MS-S1 capture.",
     publishedAt: "2026-08-04",
     excerpt:
-      "The category story is on film: your desk crew lives here, you conduct, nothing leaves without approval — on metal you own. Concept vision cut, not a product walkthrough.",
-    sourceLabel: "Product update · category film",
+      "The category send is live: They live here. You conduct. Personal algorithm on metal you own — with an honest line between vision comps and product proof.",
+    sourceLabel: "Company update · category film",
     author: "CurXor Systems",
     relatedLinks: [
-      { href: "/signal#category-film", label: "Watch on Signal" },
+      { href: "/signal#category-film", label: "Watch on /signal" },
       { href: "/demo/hero-category-badge-v5.01.mp4", label: "Category vision (~91s)" },
       { href: "/demo/hero-category-badge-v4.mp4", label: "Short cut (~62s)" },
       { href: "/press", label: "Press kit" },
-      { href: "/journal/mint-autonomous-employees", label: "Mint autonomous employees" },
-      { href: "/#subscribe", label: "Join the waitlist" },
+      { href: "/journal/harness-is-the-product", label: "The harness is the product" },
     ],
     body: [
       {
         type: "h2",
-        text: "What this film is",
+        text: "What shipped",
       },
       {
         type: "p",
-        text: "A category vision cut — not a feature tour and not a diligence reel. It is the ownership story in motion: desk crew on metal you own, work that continues while you walk the day, and an approval gate before anything leaves.",
+        text: "The category vision film is live as the default cut on /signal — about ninety-one seconds of desk crew, always-on life, and the approval gate. Short alternate stays available for cold asks (~62s). Product proof remains the warm intro tab (~89s) captured on real MS-S1 metal.",
       },
       {
         type: "p",
-        text: "Picture and voiceover are concept. Lifestyle plates and dream-state comps sell the thesis. Product proof — onboarding through Capital, Creator, and Outreach on real MS-S1-class metal — stays on the second tab.",
+        text: "Homepage does not autoplay it. Quiet link only: Watch category film → /signal#category-film.",
       },
       {
         type: "h2",
-        text: "Where to watch",
+        text: "What the film says",
       },
       {
         type: "ul",
         items: [
-          "Signal — category vision default (~91s), product proof beside it",
-          "Homepage — Watch category film links into Signal",
-          "Short alternate (~62s) for cold asks and tight decks",
-          "Press kit — downloadable MP4s for media and investors",
+          "Everyone’s renting intelligence — access without ownership is rent",
+          "They live here. You conduct — Crew Cafe as the hall for the desk crew",
+          "Capital, Creator, Outreach on your metal — nothing leaves without your approval",
+          "Forge a new crewmate anytime",
+          "Your personal algorithm — on metal you own",
+          "Your AI server. On your desk. Designed around you. Owned by you.",
         ],
       },
       {
-        type: "quote",
-        text: "They live here. You conduct. Owned by you.",
+        type: "h2",
+        text: "Honesty",
       },
       {
         type: "p",
-        text: "If you want the category in plain English first, read Mint Autonomous Employees. If you want the box story on camera, hit play.",
+        text: "The vision cut mixes concept comps and voiceover with real operate-plane UI. It is not a VR SKU and not a claim that every surface is live customer fleet. The product-proof tab is the capture path for diligence: onboarding through Capital, Creator, and Outreach on the box.",
+      },
+      {
+        type: "p",
+        text: "Mission, Vision, and Purpose in the film match the site: operator as principal · AI team as extension of you · personal algorithm you own. Pre-revenue. Still shipping.",
       },
     ],
   },

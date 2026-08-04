@@ -28,7 +28,7 @@ v4 kept as short alternate — not deleted.
 - **v4** = short alternate (~62s).
 - `/signal` = two tabs only (vision + warm). Diligence stays `/press`.
 - Homepage: text + industrial chip → `/signal#category-film` · no autoplay · no cold hero film.
-- Journal: `/journal/category-vision-film` update — honest concept framing.
+- Journal: `/journal/category-vision-film` — honest concept framing (added 2026-08-04 align pass).
 - Nouns: desk crew · crewmate · Crew Cafe. No G-milestone codes in public copy.
 
 ---

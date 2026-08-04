@@ -25,9 +25,9 @@ const FILMS: {
     duration: "~91s",
     src: categoryFilmAssets.heroCategoryBadge,
     caption:
-      "Category vision — desk crew, always-on life, approval gate · concept comps + voiceover",
+      "Category vision — They live here. You conduct. Desk crew · Crew Cafe · approval gate · personal algorithm on metal you own · concept comps + VO",
     ariaLabel:
-      "CurXor category vision film — desk crew on metal you own, always-on life, approval gate",
+      "CurXor category vision film — desk crew and Crew Cafe on metal you own, approval gate, personal algorithm",
   },
   {
     id: "product",
@@ -54,9 +54,9 @@ export function CategoryFilmSection() {
           Two cuts. Play either.
         </h2>
         <p className="mt-2 max-w-xl text-xs leading-relaxed text-white/45">
-          Vision cut is concept (~91s). Short alternate stays available for cold
-          asks (~62s). Product proof was captured on real MS-S1 metal — onboarding
-          through Capital, Creator, and Outreach.
+          Vision cut (~91s) is the category send — desk crew, always-on life,
+          approval gate. Short alternate for cold asks (~62s). Product proof was
+          captured on real MS-S1 metal — Capital, Creator, Outreach.
         </p>
       </div>
 

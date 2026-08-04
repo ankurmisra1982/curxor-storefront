@@ -47,7 +47,7 @@ export default function SignalPage() {
           {
             name: "CurXor category vision film",
             description:
-              "Category vision — desk crew on metal you own, always-on life, approval gate. Concept comps + voiceover.",
+              "Category vision — They live here. You conduct. Desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Concept comps + voiceover.",
             contentPath: categoryFilmAssets.heroCategoryBadge,
             thumbnailPath: categoryFilmAssets.conductorPlate,
             uploadDate: "2026-08-04",

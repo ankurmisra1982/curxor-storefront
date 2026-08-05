@@ -3,11 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import {
-  categoryFilmAssets,
-  g3Honesty,
-  heroFilmLinks,
-} from "@/lib/g3-demo";
+import { categoryFilmAssets, g3Honesty } from "@/lib/g3-demo";
 
 type FilmId = "badge" | "product";
 
@@ -25,7 +21,7 @@ const FILMS: {
     duration: "~91s",
     src: categoryFilmAssets.heroCategoryBadge,
     caption:
-      "Category vision — They live here. You conduct. Desk crew · Crew Cafe · approval gate · personal algorithm on metal you own · concept comps + VO",
+      "Vision comps with voiceover — desk crew, Crew Cafe, approval gate, personal algorithm on metal you own",
     ariaLabel:
       "CurXor category vision film — desk crew and Crew Cafe on metal you own, approval gate, personal algorithm",
   },
@@ -35,7 +31,7 @@ const FILMS: {
     duration: "~89s",
     src: categoryFilmAssets.inceptionReel,
     caption:
-      "Warm intro — onboarding through three flagship crewmates on real metal",
+      "Onboarding through Capital, Creator, and Outreach on real metal",
     ariaLabel:
       "CurXor product proof film — onboarding through three flagship crewmates on real metal",
   },
@@ -51,18 +47,18 @@ export function CategoryFilmSection() {
       <div className="border-b border-white/10 px-4 py-4 sm:px-6">
         <p className="text-[10px] tracking-[0.25em] text-white/40">CATEGORY FILM</p>
         <h2 className="mt-2 text-xl font-bold tracking-tight sm:text-2xl">
-          Two cuts. Play either.
+          They live here. You conduct.
         </h2>
         <p className="mt-2 max-w-xl text-xs leading-relaxed text-white/45">
-          Vision cut (~91s) is the category send — desk crew, always-on life,
-          approval gate. Short alternate for cold asks (~62s). Product proof was
-          captured on real MS-S1 metal — Capital, Creator, Outreach.
+          Watch the category film — desk crew on metal you own, always-on life,
+          approval before anything leaves. Or the product cut: Capital, Creator,
+          and Outreach running on real MS-S1 hardware.
         </p>
       </div>
 
       <div
         role="tablist"
-        aria-label="Category film cuts"
+        aria-label="Category film versions"
         className="flex border-b border-white/10"
       >
         {FILMS.map((item) => {
@@ -130,17 +126,9 @@ export function CategoryFilmSection() {
               href={categoryFilmAssets.heroCategoryBadgeShort}
               className="text-[10px] tracking-[0.18em] text-white/35 transition-colors hover:text-neon-purple"
             >
-              SHORT CUT (~62S) →
+              SHORTER VERSION (~62S) →
             </a>
           ) : null}
-          <a
-            href={heroFilmLinks.figmaProto}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[10px] tracking-[0.18em] text-white/35 transition-colors hover:text-neon-purple"
-          >
-            FIGMA PROTO →
-          </a>
           <Link
             href="/press"
             className="text-[10px] tracking-[0.18em] text-white/35 transition-colors hover:text-neon-purple"

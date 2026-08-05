@@ -47,7 +47,7 @@ export default function SignalPage() {
           {
             name: "CurXor category vision film",
             description:
-              "Category vision — They live here. You conduct. Desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Concept comps + voiceover.",
+              "They live here. You conduct. Desk crew, Crew Cafe, approval gate, and personal algorithm on metal you own — vision comps with voiceover.",
             contentPath: categoryFilmAssets.heroCategoryBadge,
             thumbnailPath: categoryFilmAssets.conductorPlate,
             uploadDate: "2026-08-04",
@@ -55,7 +55,7 @@ export default function SignalPage() {
           {
             name: "CurXor product proof film",
             description:
-              "Warm intro / product proof — onboarding through flagship crewmates on real MS-S1-class metal.",
+              "Product proof — onboarding through Capital, Creator, and Outreach on real MS-S1-class metal.",
             contentPath: categoryFilmAssets.inceptionReel,
             thumbnailPath: categoryFilmAssets.conductorPlate,
             uploadDate: "2026-08-01",

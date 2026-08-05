@@ -56,16 +56,16 @@ export const journalEssays: JournalEntry[] = [
     kind: "update",
     title: "Category Vision Film — Desk Crew on Metal You Own",
     metaDescription:
-      "CurXor category vision film (~91s) live on /signal — desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Concept comps + voiceover; product proof tab is real MS-S1 capture.",
+      "CurXor category vision film is live on /signal — desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Vision comps with voiceover; product proof is real MS-S1 capture.",
     publishedAt: "2026-08-04",
     excerpt:
-      "The category send is live: They live here. You conduct. Personal algorithm on metal you own — with an honest line between vision comps and product proof.",
+      "They live here. You conduct. Personal algorithm on metal you own — with an honest line between vision comps and product proof.",
     sourceLabel: "Company update · category film",
     author: "CurXor Systems",
     relatedLinks: [
       { href: "/signal#category-film", label: "Watch on /signal" },
       { href: "/demo/hero-category-badge-v5.01.mp4", label: "Category vision (~91s)" },
-      { href: "/demo/hero-category-badge-v4.mp4", label: "Short cut (~62s)" },
+      { href: "/demo/hero-category-badge-v4.mp4", label: "Shorter version (~62s)" },
       { href: "/press", label: "Press kit" },
       { href: "/journal/harness-is-the-product", label: "The harness is the product" },
     ],
@@ -76,11 +76,11 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "The category vision film is live as the default cut on /signal — about ninety-one seconds of desk crew, always-on life, and the approval gate. Short alternate stays available for cold asks (~62s). Product proof remains the warm intro tab (~89s) captured on real MS-S1 metal.",
+        text: "The category vision film is live on /signal — about ninety-one seconds of desk crew, always-on life, and the approval gate. A shorter version (~62s) is there if you want the faster watch. Product proof (~89s) is the second tab: Capital, Creator, and Outreach captured on real MS-S1 metal.",
       },
       {
         type: "p",
-        text: "Homepage does not autoplay it. Quiet link only: Watch category film → /signal#category-film.",
+        text: "The homepage does not autoplay it. Quiet link only: Watch category film → /signal#category-film.",
       },
       {
         type: "h2",
@@ -103,7 +103,7 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "The vision cut mixes concept comps and voiceover with real operate-plane UI. It is not a VR SKU and not a claim that every surface is live customer fleet. The product-proof tab is the capture path for diligence: onboarding through Capital, Creator, and Outreach on the box.",
+        text: "The vision film mixes concept comps and voiceover with real operate-plane UI. It is not a VR SKU and not a claim that every surface is a live customer fleet. The product-proof tab is the capture path: onboarding through Capital, Creator, and Outreach on the box.",
       },
       {
         type: "p",
@@ -814,7 +814,7 @@ export const journalEssays: JournalEntry[] = [
           "MS-S1 MAX unboxed and running CurXor OS on Ubuntu",
           "Local inference validated on Standard 64 (qwen3:8b class path · ~38 tok/s on our default stack)",
           "Flagship desks — Capital, Creator, Outreach — demo-ready with Flight Command on the LAN",
-          "Priority bridges green on the founder box for dogfood (Capital stays paper)",
+          "Priority bridges green on the founder box (Capital stays paper)",
           "Design partners completed remote golden-path sessions — feedback private; not a customer fleet; not closed traction",
         ],
       },
@@ -924,7 +924,7 @@ export const journalEssays: JournalEntry[] = [
           "Crew Cafe copy lock — desk-crew naming sign-off for operator UI",
           "OS event bus hardening — serialized log writes and atomic dedupe emits",
           "Cafe feed fix — chronological sort after XP sync; demo tour awaits Cafe ingest",
-          "Box verified — local QA suite, box-smoke, and Capital handshake dogfood on MS-S1",
+          "Box verified — local QA suite, box-smoke, and Capital handshake proven on MS-S1",
         ],
       },
       {

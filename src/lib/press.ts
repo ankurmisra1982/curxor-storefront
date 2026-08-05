@@ -16,7 +16,7 @@ Dashboard: Flight Command on LAN :3080
 QA: 239 smoke · demo capture unit green
 Pricing: $3,999 once · $0/mo operate-plane API
 Stage: Working product on MS-S1 MAX · founder-box ops green · design-partner sessions done (private) · pre-revenue · solo founder
-Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · Wave 1 dogfood 7/7 Jul 9`;
+Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · seven bridges proven Jul 9`;
 
 export const investorDeckMailto =
   "mailto:hello@curxor.ai?subject=Investor%20inquiry%20%E2%80%94%20CurXor";
@@ -42,7 +42,7 @@ export const pressKit = {
   investorIntro: {
     eyebrow: "COMPANY",
     headline: "Sovereign agent appliance — working product on real MS-S1 metal.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops dogfood receipts; Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops receipts; Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
   },
 
   founders: {
@@ -80,7 +80,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**Demo captures closed** (2026-07-08) — inception reel, investor proof, desk strips, screenshot pack on MS-S1",
+          "**Demo captures closed** (2026-07-08) — product proof film, investor proof, desk strips, screenshot pack on MS-S1",
         href: "/#demo",
       },
       {
@@ -106,7 +106,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**Priority ops bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder box (dogfood 7/7; Capital paper-only)",
+          "**Priority ops bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder box (seven bridges proven; Capital paper-only)",
       },
       {
         status: "Shipped" as const,
@@ -323,32 +323,32 @@ export const pressKit = {
     {
       label: "Category vision film (~91s MP4)",
       path: categoryFilmAssets.heroCategoryBadge,
-      note: "Badge v5.01 · LIVE SEND · desk crew · always-on · approval gate · concept comps + VO",
+      note: "Desk crew · always-on life · approval gate — vision comps with voiceover",
     },
     {
       label: "Category vision short (~62s MP4)",
       path: categoryFilmAssets.heroCategoryBadgeShort,
-      note: "Badge v4 · short alternate for cold / short asks",
+      note: "Shorter version of the category vision film",
     },
     {
       label: "Product proof film (~89s MP4)",
       path: categoryFilmAssets.inceptionReel,
-      note: "Warm intro · inception reel (Swap A of locked v3 → stable *-v1 URL)",
+      note: "Onboarding through Capital, Creator, and Outreach on real MS-S1 metal",
     },
     {
       label: "Category film (/signal)",
       path: "/signal#category-film",
-      note: "Vision (~91s) default + product proof · diligence on press only",
+      note: "Category vision (~91s) + product proof — watch on site",
     },
     {
       label: "Investor proof (~2:50 MP4)",
       path: categoryFilmAssets.investorProof,
-      note: "Desk montage with VO — diligence async follow-up",
+      note: "Longer desk montage with voiceover — for media and investor outreach",
     },
     {
       label: "Pitch deck background loop (15s MP4)",
       path: categoryFilmAssets.deckLoop,
-      note: "Silent Layer C loop — cold open → XOR → conductor glance → box pullback",
+      note: "Silent background loop for decks — open → mark → conductor → box",
     },
     {
       label: "Press kit (ZIP)",

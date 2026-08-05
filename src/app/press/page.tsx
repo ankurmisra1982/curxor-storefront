@@ -84,7 +84,7 @@ export default function PressPage() {
           {
             name: "CurXor investor proof film",
             description:
-              "Investor diligence cut — product proof on real metal for media and investor outreach.",
+              "Product proof on real metal — for media and investor outreach.",
             contentPath: categoryFilmAssets.investorProof,
             thumbnailPath: categoryFilmAssets.conductorPlate,
             uploadDate: "2026-08-01",

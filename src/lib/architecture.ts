@@ -57,10 +57,10 @@ export const hardwareValidation = {
     ],
   },
   opsWave1: {
-    eyebrow: "OPS WAVE 1 · FOUNDER BOX",
+    eyebrow: "FOUNDER BOX · PRIORITY BRIDGES",
     items: [
       "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
-      "Dogfood 7/7 Jul 9 — ops@ receipts · not a customer fleet · Capital stays paper",
+      "Seven bridges proven Jul 9 with founder-box receipts — not a customer fleet · Capital stays paper",
       "Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
       "Live brokerage fills and autonomous publish fleets are not claimed",
     ],

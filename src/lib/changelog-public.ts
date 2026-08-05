@@ -19,7 +19,7 @@ const DROP =
 function publicizeHighlight(raw: string): string | null {
   if (DROP.test(raw)) return null;
 
-  let h = raw
+  const h = raw
     // Milestone / ticket codes in parens or as prefixes
     .replace(/\s*\((?:FC|SS|GK|FN|BP|G|W|F|C)\d+(?:[–-](?:FC|SS|GK|FN|BP|G|W|F|C)?\d+)?(?:,\s*(?:FC|SS|GK|FN|BP|G|W|F|C)\d+)*\)/gi, "")
     .replace(/\bG2 depth wave\b/gi, "Depth release")

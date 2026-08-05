@@ -49,7 +49,7 @@ export const capitalGoLiveChecks = [
   "Demo portfolio seeded — no broker keys required to explore",
   "At least one rule created and armed in Rule engine",
   "Demo tour or Execute now for first simulated fill",
-  "Exit-demo guide when ready to add Alpaca keys on eno2",
+  "Exit practice mode when ready to add Alpaca keys on eno2",
 ] as const;
 
 export const capitalEgressPaths = [

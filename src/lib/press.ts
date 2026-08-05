@@ -6,14 +6,13 @@ import {
   socialProfiles,
 } from "./config";
 import { categoryFilmAssets } from "./g3-demo";
-import { qaMetricsLine } from "./qa-metrics";
 
 export const metricsCiteCard = `Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA BIOS
 OS: Ubuntu 24.04 · CurXor OS v1.0.3
 Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
 RAM in use: 4.56 / 64 GB · UMA 7.1%
 Dashboard: Flight Command on LAN :3080
-QA: 239 smoke · demo capture unit green
+QA: appliance suite green · demo capture unit green
 Pricing: $3,999 once · $0/mo operate-plane API
 Stage: Working product on MS-S1 MAX · founder-unit ops green · design-partner sessions done (private) · pre-revenue · solo founder
 Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · seven bridges proven Jul 9`;
@@ -42,7 +41,7 @@ export const pressKit = {
   investorIntro: {
     eyebrow: "COMPANY",
     headline: "Sovereign agent appliance — working product on real MS-S1 metal.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, flagship desks (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder unit (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops receipts; Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, flagship desks (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder unit (Google · Alpaca paper · Bluesky · Telegram · Discord · X — real receipts; Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
   },
 
   founders: {
@@ -86,17 +85,17 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "Agent runtime, unified comms gateways, Build Plane delegation queue in software",
+          "Agent runtime, unified comms gateways, build-plane delegation queue in software",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**239** smoke + **40** user-flow QA checks in the CurXor OS local suite",
+          "Appliance QA suite green on CurXor OS — smoke and user-flow coverage on box",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Storefront at curxor.ai — symphony model, investor press kit, validation surfaces, Resend waitlist + Stripe pre-order",
+          "Storefront at curxor.ai — investor press kit, validation surfaces, waitlist + Stripe pre-order",
       },
       {
         status: "Shipped" as const,
@@ -254,7 +253,7 @@ export const pressKit = {
     },
     {
       label: "QA",
-      value: `${qaMetricsLine} (CurXor OS local suite)`,
+      value: "Appliance QA suite green on CurXor OS",
     },
     {
       label: "Hardware",
@@ -353,7 +352,7 @@ export const pressKit = {
     {
       label: "Press kit (ZIP)",
       path: "/press/curxor-press-kit-g3.zip",
-      note: "Hero film comp plates + metrics cite card",
+      note: "Press kit ZIP — film plates + metrics cite card",
     },
     {
       label: "Operator quick reference (PDF)",
@@ -366,7 +365,7 @@ export const pressKit = {
       note: "Full OS guide export · 2026-08-02",
     },
     {
-      label: "Product still A (Act I)",
+      label: "Product still A",
       path: "/demo/hardware/product-still-a-act1.png",
       note: "MS-S1 class elevated still — not factory photography",
     },
@@ -381,14 +380,14 @@ export const pressKit = {
       note: "Close / LinkedIn brochure flip — not factory photography",
     },
     {
-      label: "Hero film comp plates",
+      label: "Hero film stills",
       path: "/demo/hero-film/01-conductor-glance@2x.png",
-      note: "7× @2x PNGs in /demo/hero-film/",
+      note: "Film stills in /demo/hero-film/",
     },
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
     { label: "Desk gallery", path: "/#demo", note: "MS-S1 captures — Capital paper · Creator queue · Work pipeline" },
     { label: "Outreach tour", path: "/outreach", note: "Desk strip + pipeline capture" },
-    { label: "Capital tour", path: "/capital", note: "Paper Capital walkthrough · desk-crew chrome" },
+    { label: "Capital tour", path: "/capital", note: "Paper Capital walkthrough on the appliance" },
     { label: "Creator tour", path: "/creator", note: "Creator walkthrough · approval / schedule honesty" },
     { label: "Install video", path: "/architecture#validation", note: "Factory USB production batch — not published yet" },
   ],

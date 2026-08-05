@@ -7,7 +7,7 @@ export const hardwareValidation = {
   badgeAriaLabel: "curXor — MS-S1 unboxed · golden path closed",
   badgeSummary:
     "MS-S1 MAX unboxed Jun 28, 2026. Golden path closed Jun 29 — demo captures closed Jul 2026. CurXor OS v1.0.3, flagship desks, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
-  /** Act I product still — elevated plate, not factory photography. */
+  /** Elevated product still — not factory photography. */
   deskStill: {
     src: productStills.a.src,
     alt: productStills.a.alt,
@@ -57,7 +57,7 @@ export const hardwareValidation = {
     ],
   },
   opsWave1: {
-    eyebrow: "FOUNDER UNIT · PRIORITY BRIDGES",
+    eyebrow: "PRIORITY BRIDGES",
     items: [
       "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
       "Seven bridges proven Jul 9 with founder-unit receipts — not a customer fleet · Capital stays paper",
@@ -87,7 +87,7 @@ export const architectureContent = {
       name: "Engine",
       path: "pillar-2-engine/",
       role: "OpenClaw agent loop — workspace memory, skills, heartbeat scheduler, and channel gateway.",
-      detail: "Capital, Creator, Outreach, and Forge crewmates execute via dedicated bridges. Crew Cafe tracks cross-crew growth from real operator events. Dashboard chat and Telegram, Slack, WhatsApp, or iMessage share one router synced to CCP — you configure which gateways to enable.",
+      detail: "Capital, Creator, Outreach, and Forge crewmates execute via dedicated bridges. Crew Cafe tracks cross-crew growth from real operator events. Dashboard chat and Telegram, Slack, WhatsApp, or iMessage share one router synced to crew context — you configure which gateways to enable.",
     },
     {
       id: "telemetry",
@@ -119,9 +119,9 @@ export const architectureContent = {
     },
   ],
   bridges: [
-    "capital.execute_trade → Alpaca paper/live via Python bridge on eno2",
-    "content.publish_post → X, LinkedIn, Meta, YouTube, TikTok, and more via Python bridges on eno2",
-    "Channel router → Telegram, Slack, WhatsApp, iMessage — local inference, CCP inbox sync",
+    "Capital trade path → Alpaca paper/live via bridge on eno2",
+    "Creator publish path → X, LinkedIn, Meta, YouTube, TikTok, and more via bridges on eno2",
+    "Channel router → Telegram, Slack, WhatsApp, iMessage — local inference, crew-context inbox sync",
     "Your LLM never talks to the internet — dedicated bridges and gateways handle egress",
   ],
   principles: [

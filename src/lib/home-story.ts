@@ -3,7 +3,7 @@
 import { g3Screenshots } from "@/lib/g3-demo";
 
 export const actOneStory = {
-  eyebrow: "ACT I · WHAT YOU BUY",
+  eyebrow: "WHAT YOU BUY",
   headline: "Three crewmates you'll run in week one",
   subhead:
     "Digital employees on your metal — a desk crew of ten plus The Forge. Capital, Creator, and Outreach are your buy decision — demo-ready on MS-S1 metal, local context, egress you control.",

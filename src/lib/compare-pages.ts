@@ -39,7 +39,7 @@ export const comparePages: ComparePage[] = [
     rows: [
       { label: "Price", them: "~€549 one-time (+ optional €9–49/mo)", curxor: `${siteConfig.preOrderPrice} once · $0 CurXor API fees` },
       { label: "Memory / AI", them: "8GB · 67 TOPS Jetson", curxor: "64GB UMA · 126 TOPS Ryzen AI Max+ 395" },
-      { label: "OOTB verticals", them: "OpenClaw assistant · messaging", curxor: clawRosterLabel },
+      { label: "Included verticals", them: "OpenClaw assistant · messaging", curxor: clawRosterLabel },
       { label: "Wealth / Creator", them: "General automation", curxor: "Capital · Creator · Outreach" },
       { label: "Network kill switch", them: "Software-only", curxor: "Unplug eno2 → stop outbound agents" },
       { label: "Setup story", them: "~5 minutes · ships configured", curxor: "Flight Command day one · bridges need your credentials" },
@@ -88,7 +88,7 @@ export const comparePages: ComparePage[] = [
       { label: "Price", them: "~€490 (reservation)", curxor: `${siteConfig.preOrderPrice} pre-order` },
       { label: "Memory", them: "8–16GB class", curxor: "64GB LPDDR5X UMA" },
       { label: "Control surface", them: "Miky mobile app", curxor: "Flight Command + phone gateways" },
-      { label: "OOTB crewmates", them: "General agent host", curxor: clawRosterLabel },
+      { label: "Included crewmates", them: "General agent host", curxor: clawRosterLabel },
       { label: "Networking", them: "Wi-Fi · USB-C power", curxor: "Dual 10GbE · eno2 egress kill switch" },
       { label: "Security story", them: "Secure element · no data ports", curxor: "Local inference · eno2-isolated bridges" },
     ],
@@ -110,7 +110,7 @@ export const comparePages: ComparePage[] = [
       "Buy CurXor if you want a turnkey independent computer for digital employees — OpenClaw engine under the hood, Flight Command on day one.",
     rows: [
       { label: "Total entry", them: "~$3,500+ Mac + your time", curxor: `${siteConfig.preOrderPrice} appliance + OS` },
-      { label: "Agent platform", them: "DIY — you wire skills & bridges", curxor: `${clawRosterLabel} OOTB` },
+      { label: "Agent platform", them: "DIY — you wire skills & bridges", curxor: `${clawRosterLabel} day one` },
       { label: "Egress control", them: "Software firewall / VPN", curxor: "Dedicated eno2 egress port" },
       { label: "Messaging gateways", them: "Integrate yourself", curxor: "Telegram · Slack · WhatsApp · iMessage" },
       { label: "Wealth / Creator", them: "Build or buy separately", curxor: "Capital · Creator · Outreach" },
@@ -124,7 +124,7 @@ export const comparePages: ComparePage[] = [
       "NemoClaw hardens DIY OpenClaw deployments. CurXor ships the turnkey appliance product with Flight Command and crewmates.",
     eyebrow: "COMPARE · GOVERNANCE STACK",
     headline: "NemoClaw secures DIY OpenClaw. CurXor ships the product.",
-    lead: "NVIDIA NemoClaw is an open-source reference stack — OpenShell sandboxes, YAML policies, and governed egress for teams rolling their own OpenClaw. CurXor is the appliance: hardware, CurXor OS, Flight Command, and OOTB crewmates.",
+    lead: "NVIDIA NemoClaw is an open-source reference stack — OpenShell sandboxes, YAML policies, and governed egress for teams rolling their own OpenClaw. CurXor is the appliance: hardware, CurXor OS, Flight Command, and day-one crewmates.",
     themLabel: "NemoClaw",
     positioning:
       "NemoClaw wins for enterprises hardening bespoke agent deployments on hardware they already operate. CurXor wins for buyers who want a complete sovereign employee appliance without assembling the stack.",

@@ -9,12 +9,12 @@
 - Price: $3,999 USD (one-time pre-order, no monthly API fees)
 - Primary CTA: Join waitlist at https://curxor.ai/#subscribe
 - Hero H1: Your AI team. On a box you own.
-- Homepage story: Who it's for · Persona grid (Alex/Sam/Jordan) · Symphony · G3 desk captures · Act II horizon
+- Homepage story: Who it's for · Persona grid (Alex/Sam/Jordan) · Symphony · desk captures · Crew Cafe horizon
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU · 38 tok/s qwen3:8b on box
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
 - Software: CurXor OS v1.0.3 with a desk crew of digital employees + The Forge (enable any combination in Settings)
-- QA: 239 smoke + 40 user-flow checks in curxor-os (qa:local suite)
-- Hardware validation: working product on real MS-S1 MAX metal; published mesh benchmarks pending
+- Validation: working product on real MS-S1 MAX metal; published mesh benchmarks pending
+- Hardware status: pre-revenue · flagship desks demo-ready · Preview modules labeled honestly
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
 - Category: Independent computer for digital employees — OpenClaw engine, turnkey Flight Command UI
 - Pre-order (secondary): https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00
@@ -63,7 +63,7 @@
 - Bundled desk crew with honest depth tiers — Flagship · Forge · Cafe · Preview
 - Capital (Flagship): demo tour, Go Live desk, rule engine, paper/live Alpaca on eno2
 - Creator (Flagship): Creation Wizard, Go Live, publish bridges, engage loop, planner/analytics
-- Outreach (Flagship): L1–L3 persona levels, sequences, deliverability, approval flows, analytics
+- Outreach (Flagship): sequences, deliverability, approval flows, analytics
 - Crew Cafe (Cafe tier): cross-crew XP and ascension — reads real Flagship events
 - Preview modules: Arbitrage, Signal, Swarm, Vital, Kin — honest preview shells, no fake Go Live
 - Physical eno2 kill switch for outbound agents

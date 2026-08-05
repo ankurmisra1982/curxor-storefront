@@ -2,7 +2,7 @@
 export const productStills = {
   a: {
     src: "/demo/hardware/product-still-a-act1.png",
-    alt: "curXor MS-S1-class appliance — Act I product still",
+    alt: "curXor MS-S1-class appliance — product still",
     caption: "Product still · MS-S1 class — not factory photography",
     width: 1600,
     height: 1200,

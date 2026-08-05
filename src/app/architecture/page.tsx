@@ -8,7 +8,6 @@ import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { ValidationBadge } from "@/components/ValidationBadge";
 import { architectureContent, hardwareValidation } from "@/lib/architecture";
 import { gtmTierLegend } from "@/lib/claw-gtm-tiers";
-import { qaMetricsLine } from "@/lib/qa-metrics";
 import { siteConfig, applianceVersion } from "@/lib/config";
 
 const architectureTitle = `Architecture — ${siteConfig.name}`;
@@ -69,9 +68,6 @@ export default function ArchitecturePage() {
               <p className="mt-3 text-xs leading-relaxed text-white/40">
                 {pillar.detail}
               </p>
-              <p className="mt-6 font-mono text-[10px] tracking-widest text-white/20">
-                {pillar.path}
-              </p>
             </article>
           ))}
         </div>
@@ -115,7 +111,7 @@ export default function ArchitecturePage() {
             CREWMATE DEPTH TIERS
           </h2>
           <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">
-            CurXor OS {applianceVersion} — {qaMetricsLine}. Every crewmate carries an
+            CurXor OS {applianceVersion} — validated on MS-S1. Every crewmate carries an
             honest depth label on the storefront and in Flight Command.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">

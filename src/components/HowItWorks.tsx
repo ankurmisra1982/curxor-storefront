@@ -21,7 +21,7 @@ const beats = [
   {
     step: "04",
     title: "Pull the plug",
-    body: "Unplug eno2 — outbound stops cold. Intelligence can stay fully offline.",
+    body: "Unplug eno2 — outbound stops. Intelligence can stay fully offline.",
   },
 ] as const;
 
@@ -42,7 +42,7 @@ export function HowItWorks() {
             Day one on your desk
           </h2>
           <p className="mt-2 text-sm text-white/60">
-            Pick your desk crew, chat or tap, stay local — pull eno2 when you want outbound cold.
+            Pick your desk crew, chat or tap, stay local — pull eno2 when you want outbound off.
           </p>
         </div>
         <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">

@@ -21,7 +21,7 @@ export function DeskStripVideo({ src, title, honestyLabel, poster }: DeskStripVi
         </video>
       </div>
       <figcaption className="px-4 py-3 text-xs leading-relaxed text-white/55">
-        <span className="text-[10px] tracking-[0.2em] text-neon-purple">G3 DESK STRIP · ~30s</span>
+        <span className="text-[10px] tracking-[0.2em] text-neon-purple">DESK STRIP · ~30s</span>
         <p className="mt-2 font-medium text-white/75">{title}</p>
         <p className="mt-1">{honestyLabel}</p>
       </figcaption>

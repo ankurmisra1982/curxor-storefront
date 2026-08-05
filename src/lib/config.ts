@@ -171,7 +171,7 @@ export const faqItems = [
   {
     question: "How is CurXor different from OpenClaw?",
     answer:
-      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Outreach), The Forge, Crew Cafe, and an eno2 egress kill switch OOTB. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare · Status: curxor.ai/journal/working-product-on-real-metal.",
+      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Outreach), The Forge, Crew Cafe, and an eno2 egress kill switch day one. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare · Status: curxor.ai/journal/working-product-on-real-metal.",
   },
   {
     question: "How is CurXor different from a €549 assistant box?",
@@ -240,7 +240,7 @@ export const faqItems = [
   {
     question: "How is CurXor different from NVIDIA NemoClaw?",
     answer:
-      "NemoClaw is an alpha governance layer for DIY OpenClaw deployments — sandboxing, policies, and model routing on hardware you bring. CurXor is a complete appliance product: curated OOTB crewmates, local inference by default, optional frontier LLMs in Settings, and a physical eno2 egress kill switch — without assembling the stack yourself.",
+      "NemoClaw is an alpha governance layer for DIY OpenClaw deployments — sandboxing, policies, and model routing on hardware you bring. CurXor is a complete appliance product: curated day-one crewmates, local inference by default, optional frontier LLMs in Settings, and a physical eno2 egress kill switch — without assembling the stack yourself.",
   },
   {
     question: "How is CurXor different from Perplexity Personal Computer?",

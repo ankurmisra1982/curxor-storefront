@@ -3,7 +3,6 @@ import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
 import { changelogEntries, changelogMeta } from "@/lib/changelog";
 import { siteConfig } from "@/lib/config";
-import { qaMetricsLine } from "@/lib/qa-metrics";
 
 const changelogTitle = `Changelog — ${siteConfig.name}`;
 const changelogDescription =
@@ -46,9 +45,8 @@ export default function ChangelogPage() {
             month: "long",
             day: "numeric",
           })}
-          . {qaMetricsLine} on the appliance stack. MS-S1 MAX unboxed 2026-06-28 —
-          golden path closed Jun 29 (COMMAND captive portal + EGRESS mesh live on
-          box).
+          . Validated on the appliance stack. MS-S1 MAX unboxed 2026-06-28 —
+          golden path closed Jun 29 (command portal + egress mesh live on box).
         </p>
 
         <div className="mt-12 space-y-12">

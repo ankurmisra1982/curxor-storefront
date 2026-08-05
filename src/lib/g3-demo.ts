@@ -44,6 +44,6 @@ export const g3Honesty = {
   creatorPublish:
     "Local inference drafts · operator approval before anything posts on egress.",
   workPipeline:
-    "UI and routing are real · outbound sends need operator-configured bridges on eno2 (proven on the founder unit — not a customer fleet).",
+    "UI and routing are real · outbound sends need operator-configured bridges on eno2 (not a customer fleet).",
   deskCapture: "Demo capture · MS-S1 box · Aug 2026",
 } as const;

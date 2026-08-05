@@ -29,7 +29,7 @@ export const clawOperators: ClawOperator[] = [
     claw: "Outreach",
     eyebrow: "WORK",
     title: "The solo operator",
-    hook: "Pipeline on metal. Pull eno2 when you need cold.",
+    hook: "Pipeline on metal. Pull eno2 when you need the kill switch.",
     quote:
       "Twelve clients, one appliance. Outreach pauses sequences on reply before I pour coffee — no HubSpot rent, no token meter.",
     body: "Run Outreach sequences, Creator pipelines, and Capital rules from one desk. Local inference. Outbound on egress you control.",
@@ -37,7 +37,7 @@ export const clawOperators: ClawOperator[] = [
     cta: "See how it works",
     ctaHref: "#how-it-works",
     shareLine:
-      "Unplug eno2, outbound stops cold. That's the whole pitch. @curxorai",
+      "Unplug eno2, outbound stops. That's the whole pitch. @curxorai",
     tourHref: "/outreach",
     personaHref: "/for/agencies",
     demo: g3Screenshots.workPipeline,

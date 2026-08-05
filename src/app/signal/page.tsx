@@ -112,7 +112,7 @@ export default function SignalPage() {
           </div>
           <p className="mt-4 text-xs text-white/40">
             One crewmate registers every AI-capable device — not a new crewmate per gadget. Digital desks
-            think; Signal connects the worn and embodied world to the same CCP, Kin, and Crew Cafe.
+            think; Signal connects the worn and embodied world to the same crew context, Kin, and Crew Cafe.
           </p>
         </section>
 
@@ -133,7 +133,7 @@ export default function SignalPage() {
         <section className="mt-16 overflow-hidden border border-white/10 bg-black">
           <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
             <span className="text-[10px] tracking-[0.25em] text-white/50">
-              FLIGHT COMMAND · /optimus
+              FLIGHT COMMAND · HUMANOID HUB
             </span>
             <span className="border border-amber-400/30 px-2 py-0.5 text-[9px] tracking-widest text-amber-200/70">
               PREVIEW
@@ -146,7 +146,7 @@ export default function SignalPage() {
         </section>
 
         <section className="mt-16 border border-white/10 bg-black p-6 sm:p-8">
-          <p className="text-[10px] tracking-[0.25em] text-neon-purple">THE SYMPHONY MODEL</p>
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">THE SYMPHONY</p>
           <p className="mt-4 text-lg font-medium text-white/85">{symphonySection.headline}</p>
           <p className="mt-3 text-sm italic text-neon-purple/90">{symphonyPayoff}</p>
           <p className="mt-3 text-xs leading-relaxed text-white/45">{dreamStateNaming.symphonyBridgeLine}</p>

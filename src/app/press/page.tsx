@@ -193,7 +193,7 @@ export default function PressPage() {
             </Link>
             . Current appliance:{" "}
             <span className="text-white/70">v{changelogMeta.version}</span> (
-            {changelogMeta.channel}) · last sync{" "}
+            {changelogMeta.channel}) · updated{" "}
             {new Date(changelogMeta.syncedAt).toLocaleDateString("en-US", {
               year: "numeric",
               month: "short",

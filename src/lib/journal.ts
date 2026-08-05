@@ -924,7 +924,7 @@ export const journalEssays: JournalEntry[] = [
           "Crew Cafe copy lock — desk-crew naming sign-off for operator UI",
           "OS event bus hardening — serialized log writes and atomic dedupe emits",
           "Cafe feed fix — chronological sort after XP sync; demo tour awaits Cafe ingest",
-          "Box verified — local QA suite, box-smoke, and Capital handshake proven on MS-S1",
+          "Box verified — local QA suite, on-box smoke, and Capital handshake proven on MS-S1",
         ],
       },
       {

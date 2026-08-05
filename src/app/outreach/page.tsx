@@ -133,7 +133,7 @@ export default function OutreachPage() {
 
         <section className="mt-16">
           <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
-            TIER B · SHIPPED ON APPLIANCE
+            SHIPPED ON APPLIANCE
           </p>
           <div className="flex flex-wrap gap-2">
             {outreachTierBFeatures.map((feature) => (

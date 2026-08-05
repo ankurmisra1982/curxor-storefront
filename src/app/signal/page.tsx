@@ -136,7 +136,7 @@ export default function SignalPage() {
               FLIGHT COMMAND · /optimus
             </span>
             <span className="border border-amber-400/30 px-2 py-0.5 text-[9px] tracking-widest text-amber-200/70">
-              TIER C PREVIEW
+              PREVIEW
             </span>
           </div>
           <SignalOptimusPreview />
@@ -153,7 +153,7 @@ export default function SignalPage() {
         </section>
 
         <section className="mt-16 border border-white/10 bg-black p-6 sm:p-8">
-          <p className="text-[10px] tracking-[0.25em] text-neon-purple">DREAM STATE · THESIS</p>
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">VISION THESIS</p>
           <p className="mt-4 text-lg font-medium text-white/85">{dreamStateThesisAccents[0]}</p>
           <p className="mt-3 text-xs leading-relaxed text-white/45">
             Vision tier — custom CurXor hardware and fully sovereign OS post-investment. Today we

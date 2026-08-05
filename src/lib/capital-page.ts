@@ -20,7 +20,7 @@ export const capitalSetupSteps = [
   {
     step: "01",
     title: "Risk profile",
-    body: "Pick conservative, balanced, or aggressive — FRE stores it locally on the appliance.",
+    body: "Pick conservative, balanced, or aggressive — stored locally on the appliance.",
   },
   {
     step: "02",
@@ -45,11 +45,11 @@ export const capitalSetupSteps = [
 ] as const;
 
 export const capitalGoLiveChecks = [
-  "FRE setup complete — risk profile, paper mode, seed watchlist",
+  "Setup complete — risk profile, paper mode, seed watchlist",
   "Demo portfolio seeded — no broker keys required to explore",
   "At least one rule created and armed in Rule engine",
   "Demo tour or Execute now for first simulated fill",
-  "EXIT-DEMO guide when ready to add Alpaca keys on eno2",
+  "Exit-demo guide when ready to add Alpaca keys on eno2",
 ] as const;
 
 export const capitalEgressPaths = [

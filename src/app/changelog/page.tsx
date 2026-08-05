@@ -38,17 +38,17 @@ export default function ChangelogPage() {
           Changelog
         </h1>
         <p className="mt-4 text-sm text-white/50">
-          Synced from CurXor OS{" "}
+          CurXor OS{" "}
           <span className="text-white/70">v{changelogMeta.version}</span> (
-          {changelogMeta.channel}). Last appliance sync:{" "}
+          {changelogMeta.channel}). Updated{" "}
           {new Date(changelogMeta.syncedAt).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric",
           })}
-          . {qaMetricsLine} in curxor-os. MS-S1 MAX unboxed 2026-06-28 — golden
-          path closed Jun 29 (verify script + smile test PASS; COMMAND captive portal
-          + EGRESS mesh live on box).
+          . {qaMetricsLine} on the appliance stack. MS-S1 MAX unboxed 2026-06-28 —
+          golden path closed Jun 29 (COMMAND captive portal + EGRESS mesh live on
+          box).
         </p>
 
         <div className="mt-12 space-y-12">
@@ -85,12 +85,7 @@ export default function ChangelogPage() {
           <Link href="/journal" className="text-neon-purple hover:underline">
             journal
           </Link>
-          . When CurXor OS bumps{" "}
-          <code className="text-white/50">version.json</code>, run{" "}
-          <code className="text-white/50">npm run sync:appliance</code> — changelog
-          entries auto-sync from{" "}
-          <code className="text-white/50">data/changelog-entries.json</code> and{" "}
-          <code className="text-white/50">curxor-os/release-notes.json</code>.{" "}
+          .{" "}
           <Link href="/" className="text-neon-purple hover:underline">
             ← Back to home
           </Link>

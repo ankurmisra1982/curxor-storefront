@@ -17,7 +17,7 @@ export const symphonyRoles = [
     id: "operator",
     label: "You",
     metaphor: "Composer / principal",
-    body: "You own the score — rules, FRE, approvals.",
+    body: "You own the score — rules, desk setup, approvals.",
   },
   {
     id: "desk",

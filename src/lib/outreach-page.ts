@@ -18,7 +18,7 @@ export const outreachDemoTourSteps = [
   {
     step: "01",
     title: "Desk ready",
-    body: "FRE workspace configured — demo tour seeds your Outreach Desk name and focus areas.",
+    body: "Outreach workspace configured — demo tour seeds your desk name and focus areas.",
   },
   {
     step: "02",
@@ -43,11 +43,11 @@ export const outreachDemoTourSteps = [
 ] as const;
 
 export const outreachGoLiveChecks = [
-  "Outreach desk configured in FRE — workspace name and focus areas",
+  "Outreach desk configured — workspace name and focus areas",
   "Run demo tour for first simulated send — SMTP optional on day one",
   "First lead in pipeline — add manually, import CSV, or use demo tour seed",
   "Multi-step sequence created and activated with pause-on-reply",
-  "SMTP in digital.env on eno2 when ready for live bridge sends",
+  "SMTP on eno2 when ready for live bridge sends",
 ] as const;
 
 export const outreachTierBFeatures = [

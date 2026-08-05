@@ -19,8 +19,8 @@ export const creatorDemoHero = {
 export const creatorDemoTourSteps = [
   {
     step: "01",
-    title: "FRE ready",
-    body: "Channels configured in Creator FRE — demo tour picks your first platform automatically.",
+    title: "Desk ready",
+    body: "Channels configured on the Creator desk — demo tour picks your first platform automatically.",
   },
   {
     step: "02",
@@ -48,7 +48,7 @@ export const creatorWizardSteps = [
   {
     step: "01",
     title: "Channel",
-    body: "Pick TikTok, Instagram, YouTube, X, LinkedIn, or your FRE channel set.",
+    body: "Pick TikTok, Instagram, YouTube, X, LinkedIn, or your configured channel set.",
   },
   {
     step: "02",
@@ -73,9 +73,9 @@ export const creatorWizardSteps = [
 ] as const;
 
 export const creatorGoLiveChecks = [
-  "Channels configured in Creator FRE",
+  "Channels configured on the Creator desk",
   "Run demo tour for first scheduled post — simulated publish counts toward Go Live",
-  "Publish bridges ready in Bridge Health when you exit demo (digital.env on eno2)",
+  "Publish bridges ready in Bridge Health when you exit demo (egress config on eno2)",
   "Public media URL probe OK when IG/Pinterest/TikTok need asset URLs",
   "Optional Telegram/Slack operators for approve-before-publish on live sends",
 ] as const;

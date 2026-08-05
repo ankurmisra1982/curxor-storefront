@@ -27,7 +27,7 @@ export const clawOperators: ClawOperator[] = [
     name: "Alex",
     role: "Agency founder · NYC",
     claw: "Outreach",
-    eyebrow: "WORK · L2–L3",
+    eyebrow: "WORK",
     title: "The solo operator",
     hook: "Pipeline on metal. Pull eno2 when you need cold.",
     quote:
@@ -48,7 +48,7 @@ export const clawOperators: ClawOperator[] = [
     name: "Sam",
     role: "Indie creator · Berlin",
     claw: "Creator",
-    eyebrow: "GROWTH · L2–L3",
+    eyebrow: "GROWTH",
     title: "The creator who ships",
     hook: "Draft local. Ship on your signal.",
     quote:
@@ -69,7 +69,7 @@ export const clawOperators: ClawOperator[] = [
     name: "Jordan",
     role: "Solo quant · Austin",
     claw: "Capital",
-    eyebrow: "WEALTH · L2–L4",
+    eyebrow: "WEALTH",
     title: "The rules-first builder",
     hook: "Rules on metal. No API invoice.",
     quote:

@@ -6,7 +6,7 @@ export const hardwareValidation = {
   g1ClosedDate: "2026-06-29",
   badgeAriaLabel: "curXor — MS-S1 unboxed · golden path closed",
   badgeSummary:
-    "MS-S1 MAX unboxed Jun 28, 2026. Golden path closed Jun 29 — depth wave and demo captures closed Jul 2026. CurXor OS v1.0.3, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
+    "MS-S1 MAX unboxed Jun 28, 2026. Golden path closed Jun 29 — demo captures closed Jul 2026. CurXor OS v1.0.3, flagship desks, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
   /** Act I product still — elevated plate, not factory photography. */
   deskStill: {
     src: productStills.a.src,
@@ -27,17 +27,17 @@ export const hardwareValidation = {
   computeBenchNote:
     "126 TOPS local NPU — ROCm inference validated on Standard 64 (moondream:1.8b, qwen3:8b); published mesh benchmarks pending",
   telemetryNote:
-    "Telemetry broker live on mesh (10.77.0.1:9100–9201) — dual-port topology verified on box; published latency numbers pending",
+    "Telemetry broker live on the local mesh — dual-port topology verified on box; published latency numbers pending",
   doneOnBox: {
     eyebrow: "DONE ON BOX",
     items: [
       "Ubuntu 24.04 install · UMA 48 GB · CurXor OS v1.0.3 on MS-S1 MAX Standard 64",
       "Ollama ROCm live — moondream:1.8b + qwen3:8b (Standard 64 stack)",
-      "FRE complete — Capital, Creator, Work · Flight Command live on bare metal",
-      "eno1/eno2 cabling — COMMAND captive portal + EGRESS mesh scripts on verified ports",
-      "verify-unbox-day.sh --post-models — PASS (0 failures, 4 warnings)",
-      "Smile test — PASS",
-      "Telemetry broker active on mesh — 10.77.0.1:9100–9201",
+      "Flagship desks complete — Capital, Creator, Work · Flight Command live on bare metal",
+      "eno1/eno2 cabling — COMMAND captive portal + EGRESS mesh on verified ports",
+      "Unbox verification passed",
+      "Operator walkthrough passed",
+      "Telemetry broker active on the local mesh",
     ],
   },
   g1Closed: {
@@ -53,14 +53,14 @@ export const hardwareValidation = {
     items: [
       "More design-partner sessions — feedback stays private; not closed traction",
       "Published mesh latency benchmarks — not marketing guesses",
-      "Category hero merge · production OTA fleet artifact when ready",
+      "Production customer-fleet OTA when ready",
     ],
   },
   opsWave1: {
-    eyebrow: "FOUNDER BOX · PRIORITY BRIDGES",
+    eyebrow: "FOUNDER UNIT · PRIORITY BRIDGES",
     items: [
       "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
-      "Seven bridges proven Jul 9 with founder-box receipts — not a customer fleet · Capital stays paper",
+      "Seven bridges proven Jul 9 with founder-unit receipts — not a customer fleet · Capital stays paper",
       "Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
       "Live brokerage fills and autonomous publish fleets are not claimed",
     ],

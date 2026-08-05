@@ -115,7 +115,7 @@ export default function ArchitecturePage() {
             CREWMATE DEPTH TIERS
           </h2>
           <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">
-            CurXor OS {applianceVersion} — {qaMetricsLine}. Every OOTB crewmate carries an
+            CurXor OS {applianceVersion} — {qaMetricsLine}. Every crewmate carries an
             honest depth label on the storefront and in Flight Command.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -196,8 +196,8 @@ export default function ArchitecturePage() {
           </div>
           <p className="mt-4 text-xs leading-relaxed text-white/40">
             Unboxed {hardwareValidation.unboxDate}. Golden path closed on MS-S1 —
-            desk captures and investor pack are live on curxor.ai. Priority ops
-            bridges are green on the founder box (paper Capital). Design partners
+            desk captures and press assets are live on curxor.ai. Priority
+            bridges are green on the founder unit (paper Capital). Design partners
             have completed remote golden-path sessions on the founder MS-S1 —
             feedback is private; not a customer fleet.
           </p>
@@ -220,14 +220,11 @@ export default function ArchitecturePage() {
         </div>
 
         <p className="mt-16 text-xs text-white/40">
-          Operator documentation lives in CurXor OS under{" "}
-          <code className="text-white/50">docs/guides/02-architecture.md</code>.
-          {" "}
           Open-weight tier profiles (Standard · Pro 128 · Studio) evolve with the frontier — see{" "}
           <Link href="/pricing#compute-ladder" className="text-neon-purple hover:underline">
             compare tiers
           </Link>
-          .
+          . Deeper operator docs ship on the appliance.
         </p>
 
         <p className="mt-6">

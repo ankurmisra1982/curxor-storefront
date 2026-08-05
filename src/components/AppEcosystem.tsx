@@ -115,7 +115,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
               href="/architecture#desk-crew-roster"
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              FULL ROSTER CHEAT SHEET →
+              FULL DESK CREW ROSTER →
             </Link>
           </div>
         </div>

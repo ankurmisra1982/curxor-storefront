@@ -42,7 +42,7 @@ export const actOneStory = {
 } as const;
 
 export const actTwoStory = {
-  eyebrow: "ACT II · THE HALL",
+  eyebrow: "THE HALL",
   headline: "The box grows with you on metal.",
   subhead:
     "Your orchestra earns cross-app momentum on the appliance — not in a cloud leaderboard. The symphony plays while you live your life.",
@@ -58,7 +58,7 @@ export const actTwoStory = {
 
 /** Collapsed homepage vision band — Symphony + Signal + Cafe in one section. */
 export const visionBand = {
-  eyebrow: "VISION · ACT II",
+  eyebrow: "VISION",
   headline: "One desk conducts. The symphony plays.",
   subhead:
     "Chat SaaS gives you one assistant. CurXor gives you a desk crew — a conductor on your desk, acoustic reach when you want it, and a hall where crewmates earn presence from real Flagship activity.",

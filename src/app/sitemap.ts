@@ -20,6 +20,7 @@ const paths: { path: string; priority: number; changeFrequency: "weekly" | "mont
   { path: "/changelog", priority: 0.6, changeFrequency: "monthly" },
   { path: "/press", priority: 0.6, changeFrequency: "monthly" },
   { path: "/journal", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/journal/category-vision-film", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/harness-is-the-product", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/intelligence-and-the-desk", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/shallow-usage-gap", priority: 0.7, changeFrequency: "monthly" },

@@ -1,4 +1,4 @@
-/** Signal GTM — Neural Link positioning (preview Tier C). */
+/** Signal — Neural Link positioning (honest Preview). */
 
 /** Provocative hub name — avoids collision with Signal messenger. */
 export const signalHubName = "The Neural Link" as const;
@@ -29,32 +29,32 @@ export const signalDeviceClasses = [
   {
     label: "Glance",
     examples: "AR glasses · AI pin",
-    wave: "SIG2 · AD",
+    wave: "Coming soon",
   },
   {
     label: "VR",
     examples: "Spatial headsets · immersive rooms",
-    wave: "SIG2 · AD7",
+    wave: "Coming soon",
   },
   {
     label: "Robot",
     examples: "Humanoid · arm · rover",
-    wave: "SIG0 · preview today",
+    wave: "Preview today",
   },
   {
     label: "Vehicle",
     examples: "Robotaxi · fleet HUD",
-    wave: "SIG5",
+    wave: "Coming soon",
   },
   {
     label: "Home",
     examples: "Alexa · HomeKit · Matter",
-    wave: "SIG4",
+    wave: "Coming soon",
   },
   {
     label: "Ambient",
     examples: "TV · kiosk · room screen",
-    wave: "SIG2",
+    wave: "Coming soon",
   },
 ] as const;
 
@@ -84,7 +84,7 @@ export const signalTodayTabs = [
 export const signalHonesty = [
   "Humanoid Home Hub preview is real in CurXor OS — five tabs, pair wizard, mesh demo.",
   "No live robot motion or device pairing beyond preview state in this release.",
-  "Glasses, VR, smart home, and fleet classes are registry slots — Coming Soon, same Tier C honesty as Vital and KIN.",
+  "Glasses, VR, smart home, and fleet classes are registry slots — Coming Soon, same honest Preview depth as Vital and Kin.",
   "CurXor OS on your desk orchestrates; Signal is how worn and embodied devices get context, policy, and egress.",
 ] as const;
 

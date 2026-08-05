@@ -15,7 +15,7 @@ export const openWeightComputeLadder = {
     note: "Strix Halo / same silicon class evidence — directional, not a guarantee on your SKU until validated.",
   },
   pricingRoles: {
-    standard: "Flagship GTM — 3 desks demo-ready · daily operate",
+    standard: "Flagship desks — 3 demo-ready · daily operate",
     pro: "Power operators — heavier local models · dual hot-load",
     studio: "Horizon — largest open weights when memory demands it (no pre-order)",
   },

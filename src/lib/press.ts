@@ -15,7 +15,7 @@ RAM in use: 4.56 / 64 GB · UMA 7.1%
 Dashboard: Flight Command on LAN :3080
 QA: 239 smoke · demo capture unit green
 Pricing: $3,999 once · $0/mo operate-plane API
-Stage: Working product on MS-S1 MAX · founder-box ops green · design-partner sessions done (private) · pre-revenue · solo founder
+Stage: Working product on MS-S1 MAX · founder-unit ops green · design-partner sessions done (private) · pre-revenue · solo founder
 Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · seven bridges proven Jul 9`;
 
 export const investorDeckMailto =
@@ -42,7 +42,7 @@ export const pressKit = {
   investorIntro: {
     eyebrow: "COMPANY",
     headline: "Sovereign agent appliance — working product on real MS-S1 metal.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops receipts; Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, flagship desks (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder unit (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops receipts; Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
   },
 
   founders: {
@@ -52,7 +52,7 @@ export const pressKit = {
       {
         name: "Ankur",
         role: "Founder & CEO",
-        bio: "Vision, GTM, and customer trust. Building the category: mint autonomous employees on bare metal — not another chat subscription.",
+        bio: "Vision, go-to-market, and customer trust. Building the category: mint autonomous employees on bare metal — not another chat subscription.",
       },
     ],
     technicalCoFounderLine:
@@ -70,7 +70,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**FRE green** on bare metal — Capital, Creator, Work provisioned · Flight Command live on box",
+          "**Flagship desks green** on bare metal — Capital, Creator, Work provisioned · Flight Command live on box",
       },
       {
         status: "Shipped" as const,
@@ -91,22 +91,22 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**239** smoke + **40** user-flow QA checks in curxor-os (`qa:local` suite)",
+          "**239** smoke + **40** user-flow QA checks in the CurXor OS local suite",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Storefront GTM at curxor.ai — symphony model, investor press kit, polish waves, validation surfaces mirrored, Resend waitlist + Stripe pre-order",
+          "Storefront at curxor.ai — symphony model, investor press kit, validation surfaces, Resend waitlist + Stripe pre-order",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**Golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, `verify-unbox-day.sh` PASS, smile test PASS, telemetry broker on 10.77.0.1",
+          "**Golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, unbox verification passed, operator walkthrough passed, telemetry broker on local mesh",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**Priority ops bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder box (seven bridges proven; Capital paper-only)",
+          "**Priority bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder unit (seven bridges proven; Capital paper-only)",
       },
       {
         status: "Shipped" as const,
@@ -119,7 +119,7 @@ export const pressKit = {
       },
     ],
     footnote:
-      "Desk captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Priority bridges are proven on the founder box with real receipts — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
+      "Desk captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Priority bridges are proven on the founder unit with real receipts — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
     footnoteLink: { href: "/terms", label: "Terms — Software maturity" },
   },
 
@@ -148,14 +148,14 @@ export const pressKit = {
   whyCurXor: [
     "Category creation — independent computer for digital employees, not DIY Ollama or SaaS agents",
     "Sovereignty story — eno1 command · eno2 egress only · physical kill switch",
-    "Software-led proof — FRE, local inference, and golden path on unboxed MS-S1",
+    "Software-led proof — flagship desks, local inference, and golden path on unboxed MS-S1",
     "Honest depth tiers — Flagship · Forge · Cafe · Preview on every crewmate",
     "Viral loop — The Forge mints custom crewmates without per-token billing",
   ],
 
   changelog: {
     headline: "Recent releases",
-    lead: "CurXor OS ship velocity — synced from appliance. Full history at",
+    lead: "CurXor OS ship velocity. Full history at",
     link: { href: "/changelog", label: "/changelog" },
     /** How many version blocks to surface on press (newest first). */
     showCount: 3,
@@ -187,7 +187,7 @@ export const pressKit = {
       {
         href: "/changelog",
         label: "Changelog",
-        why: "Ship velocity — synced from CurXor OS",
+        why: "Ship velocity — CurXor OS release notes",
       },
       {
         href: "/compare",
@@ -233,7 +233,7 @@ export const pressKit = {
   },
 
   maturityDisclaimer:
-    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — by Jul 8: FRE, local inference, investor proof pack, and desk strips validated on Standard 64. Capital supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier crewmates are working shells with local data — production depth ships on the appliance roadmap.",
+    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — by Jul 8: flagship desks, local inference, investor proof pack, and desk strips validated on Standard 64. Capital supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier crewmates are working shells with local data — production depth ships on the appliance roadmap.",
 
   facts: [
     { label: "Company", value: "CurXor Systems" },
@@ -254,12 +254,12 @@ export const pressKit = {
     },
     {
       label: "QA",
-      value: `${qaMetricsLine} (curxor-os qa:local)`,
+      value: `${qaMetricsLine} (CurXor OS local suite)`,
     },
     {
       label: "Hardware",
       value:
-        "MS-S1 MAX Standard 64 — unboxed 2026-06-28 · UMA 48 GB · FRE + ROCm inference validated on box",
+        "MS-S1 MAX Standard 64 — unboxed 2026-06-28 · UMA 48 GB · flagship desks + ROCm inference validated on box",
     },
     {
       label: "Validation",

@@ -3,61 +3,40 @@ import {
   applianceVersion,
   type StorefrontApp,
 } from "@/lib/config";
-import {
-  clawCheatSheetEntries,
-  clawCheatSheetMeta,
-  type ClawCheatSheetEntry,
-} from "@/lib/generated/claw-cheat-sheet-sync";
 import { gtmTierBadgeClass } from "@/lib/claw-gtm-tiers";
+import {
+  getPublicRosterEntries,
+  publicRosterLead,
+  publicRosterSummary,
+  type PublicRosterEntry,
+} from "@/lib/public-roster";
 
-function resolveApp(entry: ClawCheatSheetEntry): StorefrontApp | undefined {
+function resolveApp(entry: PublicRosterEntry): StorefrontApp | undefined {
   return apps.find((app) => app.applianceId === entry.applianceId);
 }
 
-function statusBadge(entry: ClawCheatSheetEntry): string {
-  if (entry.status === "live") return clawCheatSheetMeta.statusLabels.live;
-  if (entry.scopedKind === "preview") {
-    return `${clawCheatSheetMeta.statusLabels.scoped} · ${clawCheatSheetMeta.scopedSublabels.preview}`;
-  }
-  return `${clawCheatSheetMeta.statusLabels.scoped} · ${clawCheatSheetMeta.scopedSublabels.underConstruction}`;
-}
-
 export function ClawCheatSheetSection() {
-  const live = clawCheatSheetEntries.filter((entry) => entry.status === "live");
-  const scoped = clawCheatSheetEntries.filter((entry) => entry.status === "scoped");
+  const entries = getPublicRosterEntries();
+  const live = entries.filter((entry) => entry.status === "live");
+  const preview = entries.filter((entry) => entry.status === "preview");
 
   return (
     <div id="desk-crew-roster" className="relative mt-16 scroll-mt-24">
       {/* LEGACY bookmark — old /architecture#claw-roster links */}
       <span id="claw-roster" className="absolute -top-24" aria-hidden="true" />
       <h2 className="mb-2 text-xs font-bold tracking-[0.3em] text-neon-purple">
-        DESK CREW ROSTER CHEAT SHEET
+        DESK CREW ROSTER
       </h2>
       <p className="mb-2 max-w-3xl text-xs leading-relaxed text-white/45">
-        {clawCheatSheetMeta.summary} CurXor OS {applianceVersion} — synced from appliance
-        source.
+        {publicRosterSummary} CurXor OS {applianceVersion}.
       </p>
       <p className="mb-8 max-w-3xl text-xs leading-relaxed text-white/55">
-        {clawCheatSheetMeta.gtmLead}
+        {publicRosterLead}
       </p>
 
       <div className="space-y-10">
         <RosterGroup title="Live" entries={live} />
-        <RosterGroup title="Scoped" entries={scoped} />
-      </div>
-
-      <div className="mt-8 border border-amber-400/20 bg-amber-400/[0.03] p-6">
-        <p className="text-[10px] font-bold tracking-[0.2em] text-amber-200/80">
-          GTM — DO NOT SAY
-        </p>
-        <ul className="mt-3 space-y-2">
-          {clawCheatSheetMeta.gtmDoNotSay.map((line) => (
-            <li key={line} className="flex items-start gap-2 text-xs leading-relaxed text-white/55">
-              <span className="mt-1.5 h-1 w-1 shrink-0 bg-amber-300/70" />
-              {line}
-            </li>
-          ))}
-        </ul>
+        <RosterGroup title="Preview" entries={preview} />
       </div>
     </div>
   );
@@ -68,7 +47,7 @@ function RosterGroup({
   entries,
 }: {
   title: string;
-  entries: readonly ClawCheatSheetEntry[];
+  entries: readonly PublicRosterEntry[];
 }) {
   return (
     <div>
@@ -96,7 +75,7 @@ function RosterGroup({
                     </span>
                   ) : null}
                   <span className="text-[9px] tracking-[0.12em] text-white/45">
-                    {statusBadge(entry)}
+                    {entry.statusLabel}
                   </span>
                 </div>
               </div>

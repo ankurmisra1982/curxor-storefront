@@ -77,7 +77,7 @@ export const creatorGoLiveChecks = [
   "Run demo tour for first scheduled post — simulated publish counts toward Go Live",
   "Publish bridges ready in Bridge Health when you exit demo (egress config on eno2)",
   "Public media URL probe OK when IG/Pinterest/TikTok need asset URLs",
-  "Optional Telegram/Slack operators for approve-before-publish on live sends",
+  "Optional Telegram/Slack operators for approve-before-publish on live publishes",
 ] as const;
 
 export const creatorPublishBridges = [

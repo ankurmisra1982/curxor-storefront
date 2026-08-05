@@ -13,6 +13,11 @@ function isLegacyModel(name: string): boolean {
   return /\(legacy\)/i.test(name);
 }
 
+/** Buyer overlay — appliance sync may still say Build Plane. */
+function publicModelDescription(description: string): string {
+  return description.replace(/\bBuild Plane\b/gi, "heavy agent");
+}
+
 export function PricingModelMatrix() {
   const [showLegacy, setShowLegacy] = useState(false);
   const legacyCount = pricingModels.filter((m) => isLegacyModel(m.name)).length;
@@ -64,7 +69,8 @@ export function PricingModelMatrix() {
                       </span>
                     </div>
                     <p className="mt-2 text-xs leading-relaxed text-white/55">
-                      {roleLabel(model.role)} · {model.umaGb} GB UMA · {model.description}
+                      {roleLabel(model.role)} · {model.umaGb} GB UMA ·{" "}
+                      {publicModelDescription(model.description)}
                     </p>
                   </li>
                 ))}

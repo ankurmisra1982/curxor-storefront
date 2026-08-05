@@ -46,7 +46,7 @@ const publicBullets: Record<string, readonly string[]> = {
     "Play · Ascension · Progress · Host — not a full social network",
   ],
   "my-shop": [
-    "Shopify, eBay, Printify read bridges via egress receipts",
+    "Shopify, eBay, Printify read bridges via egress proofs",
     "Margin and fulfillment preview strips on-box",
     "Demo tour on the appliance",
     "Not live: inventory writes, Printify order create, production credentials",

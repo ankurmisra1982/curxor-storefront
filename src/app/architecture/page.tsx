@@ -193,7 +193,7 @@ export default function ArchitecturePage() {
           <p className="mt-4 text-xs leading-relaxed text-white/40">
             Unboxed {hardwareValidation.unboxDate}. Golden path closed on MS-S1 —
             desk captures and press assets are live on curxor.ai. Priority
-            bridges are green on the founder unit (paper Capital). Design partners
+            bridges are green on the founder MS-S1 (paper Capital). Design partners
             have completed remote golden-path sessions on the founder MS-S1 —
             feedback is private; not a customer fleet.
           </p>

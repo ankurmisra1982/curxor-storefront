@@ -14,7 +14,7 @@ RAM in use: 4.56 / 64 GB · UMA 7.1%
 Dashboard: Flight Command on LAN :3080
 QA: appliance suite green · demo capture unit green
 Pricing: $3,999 once · $0/mo operate-plane API
-Stage: Working product on MS-S1 MAX · founder-unit ops green · design-partner sessions done (private) · pre-revenue · solo founder
+Stage: Working product on MS-S1 MAX · founder MS-S1 bridges proven · design-partner sessions done (private) · pre-revenue · solo founder
 Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · seven bridges proven Jul 9`;
 
 export const investorDeckMailto =
@@ -41,7 +41,7 @@ export const pressKit = {
   investorIntro: {
     eyebrow: "COMPANY",
     headline: "Sovereign agent appliance — working product on real MS-S1 metal.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, flagship desks (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder unit (Google · Alpaca paper · Bluesky · Telegram · Discord · X — real receipts; Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, flagship desks (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder MS-S1 (Google · Alpaca paper · Bluesky · Telegram · Discord · X — Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
   },
 
   founders: {
@@ -85,12 +85,12 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "Agent runtime, unified comms gateways, build-plane delegation queue in software",
+          "Agent runtime, unified comms gateways, and build-delegation queue in software",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Appliance QA suite green on CurXor OS — smoke and user-flow coverage on box",
+          "Appliance QA suite green on CurXor OS — automated and user-flow coverage on box",
       },
       {
         status: "Shipped" as const,
@@ -105,7 +105,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**Priority bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder unit (seven bridges proven; Capital paper-only)",
+          "**Priority bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder MS-S1 (seven bridges proven; Capital paper-only)",
       },
       {
         status: "Shipped" as const,
@@ -118,7 +118,7 @@ export const pressKit = {
       },
     ],
     footnote:
-      "Desk captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Priority bridges are proven on the founder unit with real receipts — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
+      "Desk captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Priority bridges are proven on the founder MS-S1 — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
     footnoteLink: { href: "/terms", label: "Terms — Software maturity" },
   },
 

@@ -5,7 +5,6 @@ import {
   siteConfig,
 } from "@/lib/config";
 import { g3Screenshots } from "@/lib/g3-demo";
-import { qaMetrics } from "@/lib/qa-metrics";
 
 export const supportEmail = siteConfig.contactEmail;
 

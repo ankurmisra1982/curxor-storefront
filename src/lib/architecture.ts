@@ -60,7 +60,7 @@ export const hardwareValidation = {
     eyebrow: "PRIORITY BRIDGES",
     items: [
       "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
-      "Seven bridges proven Jul 9 with founder-unit receipts — not a customer fleet · Capital stays paper",
+      "Seven bridges proven Jul 9 on the founder MS-S1 — not a customer fleet · Capital stays paper",
       "Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
       "Live brokerage fills and autonomous publish fleets are not claimed",
     ],

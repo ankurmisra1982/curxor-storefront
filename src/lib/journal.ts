@@ -789,7 +789,7 @@ export const journalEssays: JournalEntry[] = [
       "CurXor status for operators and media: MS-S1 MAX appliance running CurXor OS, flagship desks demo-ready, local inference on box, pre-revenue — honest traction without theater.",
     publishedAt: "2026-07-08",
     excerpt:
-      "Not a laptop demo pretending to be an appliance. CurXor OS on MS-S1-class metal — flagship desks, local inference, founder-unit bridges proven. Pre-revenue. Design-partner sessions private.",
+      "Not a laptop demo pretending to be an appliance. CurXor OS on MS-S1-class metal — flagship desks, local inference, bridges proven on the founder MS-S1. Pre-revenue. Design-partner sessions private.",
     sourceLabel: "Company update · status",
     author: "CurXor Systems",
     relatedLinks: [
@@ -814,7 +814,7 @@ export const journalEssays: JournalEntry[] = [
           "MS-S1 MAX unboxed and running CurXor OS on Ubuntu",
           "Local inference validated on Standard 64 (qwen3:8b class path · ~38 tok/s on our default stack)",
           "Flagship desks — Capital, Creator, Outreach — demo-ready with Flight Command on the LAN",
-          "Priority bridges green on the founder unit (Capital stays paper)",
+          "Priority bridges green on the founder MS-S1 (Capital stays paper)",
           "Design partners completed remote golden-path sessions — feedback private; not a customer fleet; not closed traction",
         ],
       },
@@ -921,7 +921,7 @@ export const journalEssays: JournalEntry[] = [
         items: [
           "Depth release — Firecrawl bridge paths, import safety gate, optional xAI Grok as a frontier provider when you bring your own key",
           "Forge hygiene — cleaner forged-desk registry and QA guardrails",
-          "Crew Cafe naming polish — desk-crew copy locked for operator UI",
+          "Crew Cafe naming polish — desk-crew naming finalized for operator UI",
           "OS event bus hardening — serialized log writes and atomic dedupe emits",
           "Cafe feed fix — chronological sort after XP sync; demo tour awaits Cafe ingest",
           "Box verified — appliance QA suite and Capital handshake proven on MS-S1",

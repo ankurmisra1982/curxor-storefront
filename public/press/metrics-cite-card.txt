@@ -3,7 +3,7 @@ OS: Ubuntu 24.04 · CurXor OS v1.0.3
 Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
 RAM in use: 4.56 / 64 GB · UMA 7.1%
 Dashboard: Flight Command on LAN :3080
-QA: 239 smoke · G3 capture unit green
+QA: appliance suite green · demo capture unit green
 Pricing: $3,999 once · $0/mo operate-plane API
-Stage: G1/G2/G3 green · pre-revenue · solo founder
-Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · G3 closed Jul 8
+Stage: Working product on MS-S1 MAX · founder MS-S1 bridges proven · design-partner sessions done (private) · pre-revenue · solo founder
+Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · seven bridges proven Jul 9

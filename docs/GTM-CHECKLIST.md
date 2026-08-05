@@ -16,7 +16,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] Industrial brand (black, neon purple, monospace)
 - [x] FAQ + JSON-LD + llms.txt + sitemap + robots
 - [x] Journal (`/journal`) — essays + SEO-selected updates/releases/briefs · Article/Breadcrumb/Video JSON-LD · archives stay `/changelog` + `/press`
-- [x] Investor pitch deck — [PITCH-DECK.md](PITCH-DECK.md) + branded [PowerPoint](CurXor-Pitch-Deck-Speaker-Notes.pptx) (`npm run export:pitch-deck`)
+- [x] Investor pitch deck **v1.7.2** (founder-edited leave-behind) — [PITCH-DECK.md](PITCH-DECK.md) + branded [PowerPoint](CurXor-Pitch-Deck-Speaker-Notes.pptx) (canonical `curxor-os/docs/founder/pitch-deck/` · do not blind-regenerate)
 - [x] Architecture page (`/architecture`) — four pillars + eno1/eno2
 - [x] Privacy policy (`/privacy`) + terms & trading disclaimer (`/terms`)
 - [x] Changelog (`/changelog`) tied to `../curxor-os/version.json` via sync

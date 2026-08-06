@@ -71,6 +71,38 @@ function todayIsoDate(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
+/** Developer TODO copy that must never ship on /changelog. */
+const PLACEHOLDER_HIGHLIGHT_RE =
+  /synced from version\.json|Add release highlights in data\/changelog-entries\.json|Add release highlights in .*release-notes\.json/i;
+
+function findPlaceholderHighlights(
+  entries: ChangelogEntry[]
+): Array<{ version: string; highlight: string }> {
+  const hits: Array<{ version: string; highlight: string }> = [];
+  for (const entry of entries) {
+    for (const highlight of entry.highlights) {
+      if (PLACEHOLDER_HIGHLIGHT_RE.test(highlight)) {
+        hits.push({ version: entry.version, highlight });
+      }
+    }
+  }
+  return hits;
+}
+
+function assertPublishableHighlights(entries: ChangelogEntry[]): void {
+  const hits = findPlaceholderHighlights(entries);
+  if (hits.length === 0) return;
+
+  const detail = hits
+    .map((hit) => `  v${hit.version}: ${JSON.stringify(hit.highlight)}`)
+    .join("\n");
+  throw new Error(
+    `[sync-changelog] Refusing to publish placeholder changelog highlights.\n` +
+      `Write real highlights in curxor-os/release-notes.json (source of truth) ` +
+      `or data/changelog-entries.json, then re-run sync.\n${detail}`
+  );
+}
+
 function ensureCurrentVersionEntry(
   entries: ChangelogEntry[],
   version: VersionFile
@@ -81,18 +113,19 @@ function ensureCurrentVersionEntry(
   }
 
   const releaseHighlights = loadReleaseNotes(version.version);
-  const highlights =
-    releaseHighlights ??
-    [
-      `CurXor OS ${version.version} — synced from version.json`,
-      "Add release highlights in data/changelog-entries.json or curxor-os/release-notes.json",
-    ];
+  if (!releaseHighlights) {
+    throw new Error(
+      `[sync-changelog] Missing publishable highlights for v${version.version}.\n` +
+        `Add an entry in curxor-os/release-notes.json (preferred) or ` +
+        `data/changelog-entries.json before syncing. Placeholder TODO text is not allowed.`
+    );
+  }
 
   const nextEntry: ChangelogEntry = {
     version: version.version,
     date: todayIsoDate(),
     channel: version.channel ?? "stable",
-    highlights,
+    highlights: releaseHighlights,
   };
 
   const next = [...entries, nextEntry].sort((a, b) =>
@@ -107,6 +140,26 @@ function ensureCurrentVersionEntry(
   );
 
   return { entries: next, appended: true };
+}
+
+function normalizeGeneratedSource(source: string): string {
+  return source
+    .replace(/\r\n/g, "\n")
+    .replace(/syncedAt:\s*"[^"]*"/g, 'syncedAt: ""')
+    .replace(/applianceSyncedAt\s*=\s*"[^"]*"/g, 'applianceSyncedAt = ""');
+}
+
+/** Skip rewrite when only the wall-clock syncedAt stamp changed. */
+function writeGeneratedIfChanged(filePath: string, content: string): boolean {
+  if (fs.existsSync(filePath)) {
+    const existing = fs.readFileSync(filePath, "utf8");
+    if (normalizeGeneratedSource(existing) === normalizeGeneratedSource(content)) {
+      return false;
+    }
+  }
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, content, "utf8");
+  return true;
 }
 
 function buildGeneratedSource(entries: ChangelogEntry[], version: VersionFile): string {
@@ -133,12 +186,15 @@ export function syncChangelog(): void {
     version
   );
   entries = syncedEntries.sort((a, b) => compareVersions(b.version, a.version));
+  assertPublishableHighlights(entries);
 
-  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.writeFileSync(outputPath, buildGeneratedSource(entries, version), "utf8");
+  const wrote = writeGeneratedIfChanged(
+    outputPath,
+    buildGeneratedSource(entries, version)
+  );
 
   console.log(
-    `[sync-changelog] Wrote ${entries.length} entries @ v${version.version}${
+    `[sync-changelog] ${wrote ? "Wrote" : "Unchanged"} ${entries.length} entries @ v${version.version}${
       appended ? " (new entry auto-appended)" : ""
     }`
   );

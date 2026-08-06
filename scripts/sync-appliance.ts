@@ -164,6 +164,26 @@ function pathToFileURL(filePath: string): URL {
   return new URL(`file:///${resolved.replace(/\\/g, "/")}`);
 }
 
+function normalizeGeneratedSource(source: string): string {
+  return source
+    .replace(/\r\n/g, "\n")
+    .replace(/syncedAt:\s*"[^"]*"/g, 'syncedAt: ""')
+    .replace(/applianceSyncedAt\s*=\s*"[^"]*"/g, 'applianceSyncedAt = ""');
+}
+
+/** Skip rewrite when only the wall-clock syncedAt stamp changed. */
+function writeGeneratedIfChanged(filePath: string, content: string): boolean {
+  if (fs.existsSync(filePath)) {
+    const existing = fs.readFileSync(filePath, "utf8");
+    if (normalizeGeneratedSource(existing) === normalizeGeneratedSource(content)) {
+      return false;
+    }
+  }
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, content, "utf8");
+  return true;
+}
+
 function buildGeneratedSource(
   apps: Array<{
     id: string;
@@ -255,30 +275,37 @@ async function main() {
     .sort((a, b) => a.sortOrder - b.sortOrder)
     .map(({ sortOrder: _sortOrder, ...app }) => app);
 
-  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.writeFileSync(outputPath, buildGeneratedSource(apps, version), "utf8");
-  fs.writeFileSync(
+  const wroteAppliance = writeGeneratedIfChanged(
+    outputPath,
+    buildGeneratedSource(apps, version)
+  );
+  const wrotePricing = writeGeneratedIfChanged(
     pricingOutputPath,
-    buildPricingSource(pricing.tiers, pricing.models),
-    "utf8"
+    buildPricingSource(pricing.tiers, pricing.models)
   );
 
   const cheatSheet = loadClawCheatSheet();
+  let wroteCheatSheet = false;
   if (cheatSheet) {
-    fs.writeFileSync(
+    wroteCheatSheet = writeGeneratedIfChanged(
       cheatSheetOutputPath,
-      buildClawCheatSheetSource(cheatSheet),
-      "utf8"
+      buildClawCheatSheetSource(cheatSheet)
     );
   }
 
   console.log(
     `Synced ${apps.length} apps @ v${version.version} from ${osRoot}`
   );
-  console.log(`→ ${path.relative(storefrontRoot, outputPath)}`);
-  console.log(`→ ${path.relative(storefrontRoot, pricingOutputPath)}`);
+  console.log(
+    `→ ${path.relative(storefrontRoot, outputPath)}${wroteAppliance ? "" : " (unchanged)"}`
+  );
+  console.log(
+    `→ ${path.relative(storefrontRoot, pricingOutputPath)}${wrotePricing ? "" : " (unchanged)"}`
+  );
   if (cheatSheet) {
-    console.log(`→ ${path.relative(storefrontRoot, cheatSheetOutputPath)}`);
+    console.log(
+      `→ ${path.relative(storefrontRoot, cheatSheetOutputPath)}${wroteCheatSheet ? "" : " (unchanged)"}`
+    );
   }
   syncChangelog();
 }

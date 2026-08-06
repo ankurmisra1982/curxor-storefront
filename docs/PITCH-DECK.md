@@ -1,16 +1,18 @@
 # CurXor — Investor Pitch Deck
 
 **Version:** 1.7.2 · **Date:** August 5, 2026  
-**Leave-behind:** `CurXor-Pitch-Deck-Speaker-Notes.pptx` — **founder hand-edit** after v1.7.1 export (do not blind-regenerate)  
-**Polish (1.7.1 scripts):** local-think · smiles in flight · desk crew of ten · Ask LINKS · voice open sync  
+**Leave-behind:** `CurXor-Pitch-Deck-Speaker-Notes.pptx` — exporter-generated from these sources (v1.7.2 regen verified against the prior bytes: no PowerPoint hand-edits were lost). The exporter writes a `-regen` file unless you pass `--force`, so hand-edits made in PowerPoint are never silently overwritten — but they must be folded back into source or the next `--force` drops them.  
+**Script polish:** local-think · smiles in flight · desk crew of ten · Ask LINKS · voice open sync · tok/s currency in IF ASKED  
+**QA gate:** `python docs/founder/pitch-deck/qa-deck.py` — version, claims, script mirror, export bounds  
 
 
 **Category:** Sovereign operator desk  
-**Format:** **10 slides** (2026 proof-led: Title → Problem → Solution → Market → Traction → Model → GTM → Competition → Team → Ask) + Appendix A + Appendix B · funds merged into Ask  
+**Format:** **12 slides** (2026 proof-led: Title → Problem → Why now → Solution → Market → Traction → Model → GTM → Competition → Moat → Team → Ask) + Appendix A + Appendix B · funds merged into Ask  
+**Profiles:** `--profile send` writes the core + maturity table for cold links; the default full build keeps the stills appendix for diligence  
 **Canonical home (this file):** `curxor-os/docs/founder/pitch-deck/`  
 **Mirror:** `curxor storefront/docs/` (same markdown · same PPTX · storefront `npm run export:pitch-deck` wraps this exporter)
 
-**Companions:** [SPEAKER-SCRIPTS.md](./SPEAKER-SCRIPTS.md) · [speaker_scripts.py](./speaker_scripts.py) · [appendix_visuals.py](./appendix_visuals.py) · [INVESTOR-MEMO.md](../INVESTOR-MEMO.md) · [SEED-FUNDRAISE-PROGRAM.md](../SEED-FUNDRAISE-PROGRAM.md) · [PITCH-DECK-VOICE.md](../PITCH-DECK-VOICE.md) · [ICP-ONE-PAGER.md](../../gtm/ICP-ONE-PAGER.md)
+**Companions:** [SPEAKER-SCRIPTS.md](./SPEAKER-SCRIPTS.md) · [BENCHMARK-2026.md](./BENCHMARK-2026.md) · [speaker_scripts.py](./speaker_scripts.py) · [appendix_visuals.py](./appendix_visuals.py) · [INVESTOR-MEMO.md](../INVESTOR-MEMO.md) · [SEED-FUNDRAISE-PROGRAM.md](../SEED-FUNDRAISE-PROGRAM.md) · [PITCH-DECK-VOICE.md](../PITCH-DECK-VOICE.md) · [ICP-ONE-PAGER.md](../../gtm/ICP-ONE-PAGER.md)
 
 **Practice:** Main-deck notes have **TIMING · SCRIPT · CUES · HOLD** — [SPEAKER-SCRIPTS.md](./SPEAKER-SCRIPTS.md).  
 **Appendix B:** Product/site stills with tip overlays — curated in [appendix_visuals.py](./appendix_visuals.py). Diligence depth; not the cold open.
@@ -70,7 +72,21 @@
 
 ---
 
-## Slide 3 — Solution · The CurXor box
+## Slide 3 — Why now (2026, not 2023)
+
+Every shift is dated so an investor can check it rather than take it on tone.
+
+| Shift | What changed | Evidence |
+|-------|--------------|----------|
+| **Models** | 9B-class models finish work, not just drafts | Measured on our own box: **38 tok/s** on Jul 4, 2026 (`qwen3:8b`) · today's pin runs `qwen3.5:9b` at ~36 tok/s |
+| **Metal** | 64 GB unified memory arrived on desk-class boards | Operator-grade inference stopped needing a rack, a rented GPU, or a datacenter contract |
+| **Behaviour** | Operators already pay ~$200–800/mo for AI | The habit is daily and it still stalls at chat — the aspiration gap now has a bill attached |
+
+**The counterfactual:** None of this was true in 2023 — the same appliance would have been a toy. It is buildable now, and the category has no default yet.
+
+---
+
+## Slide 4 — Solution · The CurXor box
 
 | Layer | What ships |
 |-------|------------|
@@ -82,7 +98,7 @@
 
 ---
 
-## Slide 4 — Beachhead & market
+## Slide 5 — Beachhead & market
 
 > **Beachhead:** Solo operators **28–45** who already pay for AI and still feel under-leveraged — **$3,999 once**.
 
@@ -96,7 +112,7 @@
 
 ---
 
-## Slide 5 — Proof on metal
+## Slide 6 — Proof on metal
 
 | Headline | |
 |----------|--|
@@ -116,7 +132,7 @@
 
 ---
 
-## Slide 6 — Business model
+## Slide 7 — Business model
 
 **Make money:** $3,999 once · Pro 128 $4,999 · $0/mo operate · frontier optional · pre-revenue by design.
 
@@ -130,7 +146,7 @@
 
 ---
 
-## Slide 7 — Go-to-market
+## Slide 8 — Go-to-market
 
 | | |
 |--|--|
@@ -142,7 +158,7 @@
 
 ---
 
-## Slide 8 — Why CurXor wins
+## Slide 9 — Why CurXor wins
 
 | Alternative | Why it falls short | CurXor wedge |
 |-------------|-------------------|--------------|
@@ -153,7 +169,24 @@
 
 ---
 
-## Slide 9 — Why this founder
+## Slide 10 — What compounds (moat)
+
+Structural only — the moat slide carries 30–40% of 2026 seed underwriting, and feature lists score zero.
+
+| Moat | Why it compounds |
+|------|------------------|
+| **Workflow lock-in** | The Forge — every crewmate an operator mints is their own workflow encoded on the box. Leaving means re-minting the desk. |
+| **Data gravity** | Rules, context, brand voice and alpha accumulate locally and never leave. A cloud rival cannot import what it never sees. |
+| **Integration surface** | Desk crew of ten · egress boundary · OTA on metal they own. A competitor has to ship an operating system, not a feature. |
+| **Distribution** | One invoice, one install. Once the box is on the desk it becomes the default compute surface — no per-app churn. |
+
+**Said out loud:** Not a moat — the enclosure. We run validated third-party metal today and custom CurXor hardware is post-raise. The moat is the OS and what the operator builds inside it.
+
+**Notes only:** never claim operator-to-operator network effects; we don't have them yet.
+
+---
+
+## Slide 11 — Why this founder
 
 | | |
 |--|--|
@@ -165,7 +198,7 @@
 
 ---
 
-## Slide 10 — The ask
+## Slide 12 — The ask
 
 **Ask:** $3M seed SAFE · 18 months · ≤5 people · warm intros to sovereign-compute angels and funds.
 
@@ -189,7 +222,8 @@
 ```
 Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA BIOS
 OS: Ubuntu 24.04 · CurXor OS v1.0.3
-Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
+Inference (cited, Jul 4): Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
+Inference (box today): Ollama 0.32.5 · qwen3.5:9b ~36 tok/s · vision moondream:1.8b
 RAM in use: 4.56 / 64 GB · UMA 7.1%
 Dashboard: Flight Command on LAN :3080
 QA: 239 smoke · capture unit green
@@ -198,7 +232,7 @@ Beachhead: solo operators 28–45 · under-leveraged · desk crew · $3,999 once
 Stage: proof-ready on metal · operator golden paths invite-ready · external UAT starting · pre-revenue · solo founder
 Velocity: 182 commits · 20 days to v1.0.3 · film pack Jul 8 · Wave 1 dogfood Jul 9 · invite-ready Jul 16
 Films: product proof ~90s · category vision ~91s (v5.01) · short v4 ~62s · investor proof ~3 min
-Deck: v1.7.2 · 2026-08-05 · founder-edited PPTX
+Deck: v1.7.2 · 2026-08-05 · 12-slide core · exporter-generated PPTX
 ```
 
 ## Appendix — Honesty matrix (say out loud)
@@ -207,6 +241,7 @@ Deck: v1.7.2 · 2026-08-05 · founder-edited PPTX
 |-------|------|---------|
 | Working product on MS-S1 | Green | Validated on target hardware |
 | v1.0.3 · 239 smoke | Green | CI-green appliance |
+| 38 tok/s local inference | Green · dated | Jul 4 evidence on qwen3:8b — box today runs qwen3.5:9b ~36 tok/s |
 | Capital/Creator/Outreach demos | Yellow | Flagship dogfooded · paper/sim on camera |
 | Founder-box bridges | Green | Real API receipts · not customer fleet |
 | External operator smile | Yellow / open | Invite-ready · first intros in flight |

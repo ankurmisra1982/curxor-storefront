@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { DeskStripVideo } from "@/components/DeskStripVideo";
 import { DeskWalkthroughPreview } from "@/components/DeskWalkthroughPreview";
 import { OperatorQuote } from "@/components/OperatorQuote";
 import { ShareOnX } from "@/components/ShareOnX";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import {
+  creatorDeskStrip,
   creatorDemoTourSteps,
   creatorFlowShots,
   creatorGoLiveChecks,
@@ -86,6 +88,10 @@ export default function CreatorPage() {
           <p className="px-4 py-3 text-xs leading-relaxed text-white/55">
             {creatorWalkthrough.caption}
           </p>
+        </section>
+
+        <section className="mt-10">
+          <DeskStripVideo {...creatorDeskStrip} />
         </section>
 
         <section className="mt-16">

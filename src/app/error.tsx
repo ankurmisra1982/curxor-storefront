@@ -19,7 +19,7 @@ export default function GlobalError({
   return (
     <div className="relative min-h-screen">
       <div className="pointer-events-none fixed inset-0 grid-industrial opacity-40" />
-      <main className="relative mx-auto max-w-3xl px-6 py-24">
+      <main id="main" className="relative mx-auto max-w-3xl px-6 py-24">
         <p className="text-[10px] tracking-[0.3em] text-neon-purple">
           SOMETHING BROKE
         </p>

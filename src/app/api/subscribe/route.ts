@@ -6,17 +6,6 @@ const RATE_LIMIT = { limit: 5, windowMs: 10 * 60 * 1000 };
 
 export async function POST(request: Request) {
   try {
-    const limit = rateLimit(`subscribe:${clientIp(request)}`, RATE_LIMIT);
-    if (!limit.ok) {
-      return NextResponse.json(
-        { error: "Too many signups from this address. Try again shortly." },
-        {
-          status: 429,
-          headers: { "Retry-After": String(limit.retryAfterSeconds) },
-        },
-      );
-    }
-
     let body: unknown;
     try {
       body = await request.json();
@@ -36,6 +25,19 @@ export async function POST(request: Request) {
       !isValidEmail(email)
     ) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
+    }
+
+    // Count only well-formed emails so a flood of junk cannot lock out a
+    // shared IP. Abuse friction for malformed traffic stays on platform WAF.
+    const limit = rateLimit(`subscribe:${clientIp(request)}`, RATE_LIMIT);
+    if (!limit.ok) {
+      return NextResponse.json(
+        { error: "Too many signups from this network. Try again shortly." },
+        {
+          status: 429,
+          headers: { "Retry-After": String(limit.retryAfterSeconds) },
+        },
+      );
     }
 
     await subscribeEmail(email);

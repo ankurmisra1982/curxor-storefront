@@ -881,7 +881,7 @@ export const journalEssays: JournalEntry[] = [
           "Ascension XP and pixel room react to Flagship desk activity",
           "Cross-crew growth moments on the box — local by default",
           "Storefront and press surfaces aligned to working product on real metal",
-          "Golden-path networking on the appliance — command and egress ports you control",
+          "End-to-end networking on the appliance — command and egress ports you control",
         ],
       },
       {

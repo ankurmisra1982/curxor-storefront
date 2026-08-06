@@ -100,7 +100,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**Golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, unbox verification passed, operator walkthrough passed, telemetry broker on local mesh",
+          "**First full run end to end on the box** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, unbox verification passed, operator walkthrough passed, telemetry broker on local mesh",
       },
       {
         status: "Shipped" as const,
@@ -263,7 +263,7 @@ export const pressKit = {
     {
       label: "Validation",
       value:
-        "Golden path closed Jun 29 — dual-port topology verified · see /architecture#validation",
+        "First full run end to end on the box Jun 29 — dual-port topology verified · see /architecture#validation",
     },
     {
       label: "Desk crew roster",

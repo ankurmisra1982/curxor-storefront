@@ -191,8 +191,8 @@ export default function ArchitecturePage() {
             })}
           </div>
           <p className="mt-4 text-xs leading-relaxed text-white/55">
-            Unboxed {hardwareValidation.unboxDate}. Golden path closed on MS-S1 —
-            desk captures and press assets are live on curxor.ai. Priority
+            Unboxed {hardwareValidation.unboxDate}. First full run end to end on
+            MS-S1 — desk captures and press assets are live on curxor.ai. Priority
             bridges are green on the founder MS-S1 (paper Capital). Design partners
             have completed remote walkthrough sessions on the founder MS-S1 —
             feedback is private; not a customer fleet.

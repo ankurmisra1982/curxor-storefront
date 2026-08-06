@@ -72,11 +72,13 @@ export function SubscribeForm({ variant = "default", className = "" }: Subscribe
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@domain.com"
-          aria-label="Email address"
+          aria-label="Email address for the CurXor waitlist"
+          aria-invalid={status === "error"}
+          autoComplete="email"
           className={
             isHero
-              ? "flex-1 border-industrial bg-black px-4 py-4 text-sm text-white placeholder:text-white/30 focus:border-neon-purple/50 focus:outline-none"
-              : "flex-1 border-industrial bg-black px-4 py-3 text-sm text-white placeholder:text-white/30 focus:border-neon-purple/50 focus:outline-none"
+              ? "flex-1 border-industrial bg-black px-4 py-4 text-sm text-white placeholder:text-white/50 focus:border-neon-purple/50"
+              : "flex-1 border-industrial bg-black px-4 py-3 text-sm text-white placeholder:text-white/50 focus:border-neon-purple/50"
           }
         />
         <button
@@ -92,14 +94,18 @@ export function SubscribeForm({ variant = "default", className = "" }: Subscribe
         </button>
       </form>
 
-      {status === "success" && (
-        <p className="mt-3 text-xs text-neon-purple">✓ You&apos;re on the list.</p>
-      )}
-      {status === "error" && (
-        <p className="mt-3 text-xs text-white/50">
-          {errorMessage ?? "Something went wrong. Try again or reach us on social."}
-        </p>
-      )}
+      <div role="status" aria-live="polite">
+        {status === "success" && (
+          <p className="mt-3 text-xs text-neon-purple">✓ You&apos;re on the list.</p>
+        )}
+      </div>
+      <div role="alert">
+        {status === "error" && (
+          <p className="mt-3 text-xs text-white/70">
+            {errorMessage ?? "Something went wrong. Try again or reach us on social."}
+          </p>
+        )}
+      </div>
     </div>
   );
 }

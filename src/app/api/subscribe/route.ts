@@ -1,8 +1,22 @@
 import { NextResponse } from "next/server";
 import { isValidEmail, subscribeEmail } from "@/lib/email";
+import { clientIp, rateLimit } from "@/lib/rate-limit";
+
+const RATE_LIMIT = { limit: 5, windowMs: 10 * 60 * 1000 };
 
 export async function POST(request: Request) {
   try {
+    const limit = rateLimit(`subscribe:${clientIp(request)}`, RATE_LIMIT);
+    if (!limit.ok) {
+      return NextResponse.json(
+        { error: "Too many signups from this address. Try again shortly." },
+        {
+          status: 429,
+          headers: { "Retry-After": String(limit.retryAfterSeconds) },
+        },
+      );
+    }
+
     let body: unknown;
     try {
       body = await request.json();
@@ -15,7 +29,12 @@ export async function POST(request: Request) {
         ? (body as { email?: unknown }).email
         : undefined;
 
-    if (!email || typeof email !== "string" || !isValidEmail(email)) {
+    if (
+      !email ||
+      typeof email !== "string" ||
+      email.length > 254 ||
+      !isValidEmail(email)
+    ) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
 

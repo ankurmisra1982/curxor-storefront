@@ -1,5 +1,5 @@
 import { clawHeadlines } from "@/lib/claw-headlines";
-import { g3Honesty, g3Screenshots } from "@/lib/g3-demo";
+import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
 export const capitalWalkthrough = {
   src: "/demo/capital-walkthrough.mp4",
@@ -7,6 +7,13 @@ export const capitalWalkthrough = {
   label: "DESK CREW · CAPITAL WALKTHROUGH",
   caption:
     "Paper Capital honesty on the appliance — rules run on metal; live broker book not shown.",
+} as const;
+
+export const capitalDeskStrip = {
+  src: g3DeskStrips.capital,
+  title: "Capital desk strip",
+  honestyLabel: g3Honesty.capitalPractice,
+  poster: g3Screenshots.capitalPaper,
 } as const;
 
 export const capitalDemoHero = {

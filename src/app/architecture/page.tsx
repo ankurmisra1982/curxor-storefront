@@ -43,7 +43,7 @@ export default function ArchitecturePage() {
           {eyebrow}
         </p>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{title}</h1>
-        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/65">
           {lead}
         </p>
 
@@ -65,7 +65,7 @@ export default function ArchitecturePage() {
               <p className="mt-3 text-sm leading-relaxed text-white/70">
                 {pillar.role}
               </p>
-              <p className="mt-3 text-xs leading-relaxed text-white/40">
+              <p className="mt-3 text-xs leading-relaxed text-white/55">
                 {pillar.detail}
               </p>
             </article>
@@ -79,9 +79,9 @@ export default function ArchitecturePage() {
           </h2>
           <div className="grid gap-4 md:grid-cols-2">
             {ports.map((port) => (
-              <div key={port.id} className="border-industrial bg-black p-6">
+              <div key={port.id} className="surface p-6">
                 <h3 className="text-sm font-bold tracking-wide">{port.name}</h3>
-                <p className="mt-3 text-xs leading-relaxed text-white/50">
+                <p className="mt-3 text-xs leading-relaxed text-white/60">
                   {port.body}
                 </p>
               </div>
@@ -110,17 +110,17 @@ export default function ArchitecturePage() {
           <h2 id="claw-tiers" className="mb-2 scroll-mt-24 text-xs font-bold tracking-[0.3em] text-neon-purple">
             CREWMATE DEPTH TIERS
           </h2>
-          <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/45">
+          <p className="mb-6 max-w-2xl text-xs leading-relaxed text-white/55">
             CurXor OS {applianceVersion} — validated on MS-S1. Every crewmate carries an
             honest depth label on the storefront and in Flight Command.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {gtmTierLegend.map((tier) => (
-              <div key={tier.id} className="border-industrial bg-black p-6">
+              <div key={tier.id} className="surface p-6">
                 <h3 className="text-sm font-bold tracking-wide text-neon-purple/90">
                   {tier.label}
                 </h3>
-                <p className="mt-3 text-xs leading-relaxed text-white/50">{tier.body}</p>
+                <p className="mt-3 text-xs leading-relaxed text-white/60">{tier.body}</p>
               </div>
             ))}
           </div>
@@ -143,7 +143,7 @@ export default function ArchitecturePage() {
                 className="h-auto w-full"
                 sizes="(max-width: 1024px) 100vw, 14rem"
               />
-              <figcaption className="border-t border-white/10 px-3 py-2 text-[10px] leading-relaxed tracking-wide text-white/35">
+              <figcaption className="border-t border-white/10 px-3 py-2 text-[10px] leading-relaxed tracking-wide text-white/55">
                 {hardwareValidation.deskStill.caption}
               </figcaption>
             </figure>
@@ -156,7 +156,7 @@ export default function ArchitecturePage() {
                 className="h-auto w-full"
                 sizes="(max-width: 1024px) 100vw, 14rem"
               />
-              <figcaption className="border-t border-white/10 px-3 py-2 text-[10px] leading-relaxed tracking-wide text-white/35">
+              <figcaption className="border-t border-white/10 px-3 py-2 text-[10px] leading-relaxed tracking-wide text-white/55">
                 {hardwareValidation.brochureStill.caption}
               </figcaption>
             </figure>
@@ -167,7 +167,7 @@ export default function ArchitecturePage() {
                 ["doneOnBox", "text-neon-purple"] as const,
                 ["g1Closed", "text-neon-purple"] as const,
                 ["opsWave1", "text-neon-purple"] as const,
-                ["afterG1", "text-white/40"] as const,
+                ["afterG1", "text-white/55"] as const,
               ] as const
             ).map(([key, statusClass]) => {
               const block = hardwareValidation[key];
@@ -190,11 +190,11 @@ export default function ArchitecturePage() {
               );
             })}
           </div>
-          <p className="mt-4 text-xs leading-relaxed text-white/40">
+          <p className="mt-4 text-xs leading-relaxed text-white/55">
             Unboxed {hardwareValidation.unboxDate}. Golden path closed on MS-S1 —
             desk captures and press assets are live on curxor.ai. Priority
             bridges are green on the founder MS-S1 (paper Capital). Design partners
-            have completed remote golden-path sessions on the founder MS-S1 —
+            have completed remote walkthrough sessions on the founder MS-S1 —
             feedback is private; not a customer fleet.
           </p>
         </div>
@@ -215,7 +215,7 @@ export default function ArchitecturePage() {
           </ul>
         </div>
 
-        <p className="mt-16 text-xs text-white/40">
+        <p className="mt-16 text-xs text-white/55">
           Open-weight tier profiles (Standard · Pro 128 · Studio) evolve with the frontier — see{" "}
           <Link href="/pricing#compute-ladder" className="text-neon-purple hover:underline">
             compare tiers

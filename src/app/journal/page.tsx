@@ -47,10 +47,10 @@ export default function JournalIndexPage() {
           <p className="text-[10px] tracking-[0.3em] text-neon-purple">
             JOURNAL
           </p>
-          <h1 className="mt-4 max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Essays, updates, releases
           </h1>
-          <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/55 sm:text-base">
+          <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/65 sm:text-base">
             Founder long-form, product status, OS release notes, and category
             briefs — selected for operators and search. Full changelog and press
             kit stay in the archives below.

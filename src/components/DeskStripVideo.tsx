@@ -13,7 +13,7 @@ export function DeskStripVideo({ src, title, honestyLabel, poster }: DeskStripVi
           className="h-auto w-full"
           controls
           playsInline
-          preload="metadata"
+          preload="none"
           poster={poster}
           aria-label={title}
         >

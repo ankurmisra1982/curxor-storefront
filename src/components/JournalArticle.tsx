@@ -48,14 +48,14 @@ export function JournalArticle({ essay }: { essay: JournalEntry }) {
         {essay.title}
       </h1>
       <p className="mt-4 text-sm leading-relaxed text-white/55">{essay.excerpt}</p>
-      <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-white/10 pb-6 text-[10px] tracking-widest text-white/40">
+      <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-white/10 pb-6 text-[10px] tracking-widest text-white/55">
         <time dateTime={essay.publishedAt}>
           {formatJournalDate(essay.publishedAt).toUpperCase()}
         </time>
         <span aria-hidden>·</span>
         <span className="normal-case tracking-wide">{essay.author}</span>
         <span aria-hidden>·</span>
-        <span className="normal-case tracking-wide text-white/35">
+        <span className="normal-case tracking-wide text-white/55">
           {essay.sourceLabel}
         </span>
         <span aria-hidden>·</span>
@@ -85,7 +85,7 @@ export function JournalArticle({ essay }: { essay: JournalEntry }) {
         aria-label="Related"
         className="mt-14 border-t border-white/10 pt-8"
       >
-        <p className="text-[10px] tracking-[0.3em] text-white/40">CONTINUE</p>
+        <p className="text-[10px] tracking-[0.3em] text-white/55">CONTINUE</p>
         <ul className="mt-4 flex flex-col gap-3">
           {essay.relatedLinks.map((link) => (
             <li key={link.href}>
@@ -100,7 +100,7 @@ export function JournalArticle({ essay }: { essay: JournalEntry }) {
           <li>
             <Link
               href="/journal"
-              className="text-sm text-white/50 transition-colors hover:text-neon-purple"
+              className="text-sm text-white/65 transition-colors hover:text-neon-purple"
             >
               All journal →
             </Link>

@@ -26,9 +26,9 @@ export function ComparisonTable() {
   if (!curxor) return null;
 
   return (
-    <section id="compare" className="relative border-t border-white/10 py-12 sm:py-14">
+    <section id="compare" className="band relative border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
               WHY CURXOR
@@ -54,13 +54,13 @@ export function ComparisonTable() {
               <p className="text-[10px] tracking-[0.25em] text-neon-purple">
                 RECOMMENDED
               </p>
-              <p className="mt-1 text-[10px] tracking-[0.2em] text-white/50">
+              <p className="mt-1 text-[10px] tracking-[0.2em] text-white/60">
                 {curxor.label}
               </p>
               <p className="mt-2 text-3xl font-bold text-neon-purple">
                 {curxor.price}
               </p>
-              <p className="mt-1 text-xs text-white/50">
+              <p className="mt-1 text-xs text-white/60">
                 $0/mo CurXor API · optional BYOK only
               </p>
             </div>
@@ -121,10 +121,10 @@ function ComparisonCard({
 
   return (
     <div className="bg-black p-5 sm:p-6">
-      <p className="text-[10px] tracking-[0.25em] text-white/50">
+      <p className="text-[10px] tracking-[0.25em] text-white/60">
         {option.label}
       </p>
-      <p className="mb-4 mt-1 text-xl font-bold text-white/50">{option.price}</p>
+      <p className="mb-4 mt-1 text-xl font-bold text-white/65">{option.price}</p>
       <ul className="space-y-2">
         {option.highlights.slice(0, 3).map((highlight) => (
           <li

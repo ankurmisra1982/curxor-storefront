@@ -31,19 +31,25 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl gap-8 px-6 pb-10 pt-6 lg:grid-cols-2 lg:items-center lg:gap-12 lg:pb-14 lg:pt-10">
         <div className="flex flex-col gap-5 sm:gap-6">
           <div className="flex flex-wrap items-center gap-2">
-            <div className="inline-flex items-center gap-2 border border-neon-purple/30 bg-neon-purple/5 px-3 py-1 text-[10px] tracking-[0.2em] text-neon-purple">
-              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-neon-purple" />
+            {/* Tracking tightens on narrow screens so the spec line stays one row. */}
+            <div className="inline-flex items-center gap-2 border border-neon-purple/30 bg-neon-purple/5 px-3 py-1 text-[10px] tracking-[0.12em] text-neon-purple sm:tracking-[0.2em]">
+              <span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-neon-purple" />
               {computePower.badge}
             </div>
             <ValidationBadge compact />
           </div>
 
-          <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          {/* Opts out of the global balance: it splits "Your AI team." mid-phrase. */}
+          <h1 className="text-wrap text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             {siteConfig.heroHeadline}
           </h1>
 
-          <p className="max-w-xl text-lg leading-relaxed text-white/70 sm:text-xl">
+          <p className="max-w-xl text-base leading-relaxed text-white/70 sm:text-lg lg:text-xl">
             {siteConfig.heroSubhead}
+          </p>
+
+          <p className="max-w-xl border-l-2 border-neon-purple/40 pl-4 text-sm leading-relaxed text-white/60">
+            {siteConfig.heroHonestyLine}
           </p>
 
           <div className="space-y-4 pt-1 lg:hidden">
@@ -55,21 +61,13 @@ export function Hero() {
         <div className="relative flex min-h-0 flex-col">
           <HeroProductVisual />
 
-          <div className="mt-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
-            <Link
-              href="/signal#category-film"
-              className="text-xs tracking-[0.2em] text-white/45 transition-colors hover:text-neon-purple"
-            >
-              Watch category film →
-            </Link>
-            {siteConfig.heroAccent ? (
-              <p className="text-sm italic text-white/55">
-                <Link href="/signal" className="transition-colors hover:text-white/75">
-                  {siteConfig.heroAccent}
-                </Link>
-              </p>
-            ) : null}
-          </div>
+          {siteConfig.heroAccent ? (
+            <p className="mt-3 text-sm italic text-white/60">
+              <Link href="/signal" className="transition-colors hover:text-white/85">
+                {siteConfig.heroAccent}
+              </Link>
+            </p>
+          ) : null}
 
           <div className="mt-5 hidden w-full flex-col gap-3 lg:flex">
             <SubscribeForm variant="hero" className="[&_form]:max-w-none" />

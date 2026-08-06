@@ -13,9 +13,16 @@ function isLegacyModel(name: string): boolean {
   return /\(legacy\)/i.test(name);
 }
 
-/** Buyer overlay — appliance sync may still say Build Plane. */
+/** Catalog entries sized for the 128 GB SKU — a Standard 64 buyer must not read them as included. */
+function needsPro128(description: string): boolean {
+  return /128 GB/i.test(description);
+}
+
+/** Buyer overlay — appliance sync may still say Build Plane, and pi-bench is not our SKU. */
 function publicModelDescription(description: string): string {
-  return description.replace(/\bBuild Plane\b/gi, "heavy agent");
+  return description
+    .replace(/\bBuild Plane\b/gi, "heavy agent")
+    .replace(/on pi-bench/gi, "on pi-bench, not yet measured on MS-S1");
 }
 
 export function PricingModelMatrix() {
@@ -59,12 +66,17 @@ export function PricingModelMatrix() {
                       <span className="text-sm font-bold text-white/90">
                         {model.name}
                         {isLegacyModel(model.name) ? (
-                          <span className="ml-2 text-[9px] font-normal tracking-widest text-white/45">
+                          <span className="ml-2 text-[9px] font-normal tracking-widest text-white/55">
                             LEGACY
                           </span>
                         ) : null}
+                        {needsPro128(model.description) ? (
+                          <span className="ml-2 border border-white/20 px-1.5 py-0.5 text-[9px] font-normal tracking-widest text-white/60">
+                            NEEDS PRO 128
+                          </span>
+                        ) : null}
                       </span>
-                      <span className="text-[10px] tracking-[0.25em] text-white/50">
+                      <span className="text-[10px] tracking-[0.25em] text-white/60">
                         {model.tokensPerSec} TOK/S
                       </span>
                     </div>
@@ -79,6 +91,13 @@ export function PricingModelMatrix() {
           );
         })}
       </div>
+
+      <p className="mt-4 text-xs leading-relaxed text-white/60">
+        Everything without a badge runs on the Standard 64 appliance you can buy
+        today. Entries marked <span className="text-white/70">NEEDS PRO 128</span>{" "}
+        are catalog headroom for the 128 GB SKU — listed so you can see where the
+        stack goes, not included at $3,999.
+      </p>
     </div>
   );
 }

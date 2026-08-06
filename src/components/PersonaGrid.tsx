@@ -6,12 +6,10 @@ import { clawOperators, operatorsSection } from "@/lib/claw-operators";
 
 export function PersonaGrid() {
   return (
-    <section id="operators" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-16">
+    <section id="operators" className="band relative scroll-mt-24 border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-8 max-w-2xl">
-          <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-            {operatorsSection.eyebrow}
-          </p>
+        <div className="mb-10 max-w-3xl">
+          <p className="eyebrow mb-2">{operatorsSection.eyebrow}</p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {operatorsSection.headline}
           </h2>
@@ -24,15 +22,26 @@ export function PersonaGrid() {
           {clawOperators.map((persona) => (
             <article
               key={persona.id}
-              className="group flex flex-col border-industrial bg-black transition-colors hover:border-neon-purple/25"
+              className="group flex flex-col surface transition-colors hover:border-neon-purple/25"
             >
+              {/*
+                These are dense dashboard captures at 176px tall — legible as
+                texture, not as UI. Scrimmed so they read as a backdrop behind
+                the glyph rather than competing detail.
+              */}
               <div className="relative overflow-hidden border-b border-white/10">
                 <Image
                   src={persona.demo}
-                  alt={`${persona.title} — ${persona.claws}`}
+                  alt=""
+                  aria-hidden
                   width={1024}
                   height={640}
-                  className="h-44 w-full object-cover object-top opacity-85 transition-opacity group-hover:opacity-100"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  className="h-32 w-full object-cover object-top opacity-30 transition-opacity duration-300 group-hover:opacity-45"
+                />
+                <div
+                  aria-hidden
+                  className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30"
                 />
                 <div className="absolute bottom-3 left-3 flex h-10 w-10 items-center justify-center border border-neon-purple/50 bg-black/90 font-mono text-base text-neon-purple">
                   {persona.glyph}
@@ -56,7 +65,7 @@ export function PersonaGrid() {
                   </Link>
                   <Link
                     href={persona.tourHref}
-                    className="border border-white/10 px-3 py-2 text-[10px] tracking-[0.2em] text-white/50 transition-colors hover:text-white/75"
+                    className="border border-white/10 px-3 py-2 text-[10px] tracking-[0.2em] text-white/55 transition-colors hover:text-white/80"
                   >
                     TOUR →
                   </Link>
@@ -73,7 +82,7 @@ export function PersonaGrid() {
           ))}
         </div>
 
-        <p className="mt-6 text-center text-[10px] text-white/50">
+        <p className="mt-8 text-center text-[10px] text-white/55">
           Composite operators — pre-launch storytelling, not paid endorsements.
         </p>
       </div>

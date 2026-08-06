@@ -29,28 +29,20 @@ export function MissionVisionSection({
     <section
       id={variant === "about" ? "mission" : "mission-vision"}
       aria-labelledby={headingId}
-      className="relative border-t border-white/10 py-12 sm:py-14"
+      className="band-tight relative border-t border-white/10"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-3xl">
           <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
             {eyebrow}
           </p>
-          {variant === "about" ? (
-            <h1
-              id={headingId}
-              className="text-3xl font-bold tracking-tight sm:text-4xl"
-            >
-              Mission, Vision &amp; Purpose
-            </h1>
-          ) : (
-            <h2
-              id={headingId}
-              className="text-3xl font-bold tracking-tight sm:text-4xl"
-            >
-              Mission, Vision &amp; Purpose
-            </h2>
-          )}
+          {/* Always an h2 — /about carries its own H1 at the top of the page. */}
+          <h2
+            id={headingId}
+            className="text-3xl font-bold tracking-tight sm:text-4xl"
+          >
+            Mission, Vision &amp; Purpose
+          </h2>
         </div>
 
         <div className="mt-10 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-2 md:gap-12">
@@ -79,7 +71,7 @@ export function MissionVisionSection({
           <p className="mt-3 text-base leading-relaxed text-white/75 sm:text-lg">
             {purpose.body}
           </p>
-          <p className="mt-3 text-sm leading-relaxed text-white/50">
+          <p className="mt-3 text-sm leading-relaxed text-white/65">
             {purpose.gloss}
           </p>
         </div>
@@ -98,14 +90,14 @@ export function MissionVisionSection({
                 <p className="text-sm font-medium tracking-tight text-white/80">
                   {pillar.title}
                 </p>
-                <p className="mt-1.5 text-sm leading-relaxed text-white/45">
+                <p className="mt-1.5 text-sm leading-relaxed text-white/65">
                   {pillar.body}
                 </p>
               </li>
             ))}
           </ul>
 
-          <p className="mt-7 border-t border-white/5 pt-5 text-[11px] tracking-[0.12em] text-white/35">
+          <p className="mt-7 border-t border-white/5 pt-5 text-[11px] tracking-[0.12em] text-white/55">
             {purposeHorizon.honesty}
           </p>
         </div>
@@ -114,7 +106,7 @@ export function MissionVisionSection({
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             {buyToday.label.toUpperCase()}
           </p>
-          <p className="mt-3 text-sm leading-relaxed text-white/50">
+          <p className="mt-3 text-sm leading-relaxed text-white/65">
             {buyToday.body}
           </p>
           {variant === "home" ? (

@@ -30,18 +30,18 @@ export function HowItWorks() {
     <section
       id="how-it-works"
       aria-labelledby="how-it-works-heading"
-      className="scroll-mt-24 border-t border-white/10 bg-white/[0.02] py-10 sm:py-12"
+      className="band scroll-mt-24 border-t border-white/10 bg-white/[0.02]"
     >
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-6 max-w-2xl">
-          <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">HOW IT WORKS</p>
+        <div className="mb-8 max-w-3xl">
+          <p className="eyebrow mb-2">How it works</p>
           <h2
             id="how-it-works-heading"
             className="text-2xl font-bold tracking-tight sm:text-3xl"
           >
             Day one on your desk
           </h2>
-          <p className="mt-2 text-sm text-white/60">
+          <p className="mt-3 text-sm text-white/60">
             Pick your desk crew, chat or tap, stay local — pull eno2 when you want outbound off.
           </p>
         </div>
@@ -61,7 +61,7 @@ export function HowItWorks() {
             </article>
           ))}
         </div>
-        <p className="mt-6 text-xs text-white/45">
+        <p className="mt-6 text-xs text-white/55">
           Deeper context:{" "}
           <Link
             href="/journal/working-product-on-real-metal"

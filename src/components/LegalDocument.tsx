@@ -17,7 +17,7 @@ export function LegalDocument({
         {eyebrow}
       </p>
       <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{title}</h1>
-      <p className="mt-4 text-xs tracking-wide text-white/40">
+      <p className="mt-4 text-xs tracking-wide text-white/55">
         Last updated: {updated}
       </p>
       <div className="prose-legal mt-12 space-y-8 text-sm leading-relaxed text-white/70">

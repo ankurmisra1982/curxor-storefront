@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const statusStyles = {
   Shipped: "text-neon-purple",
   "In progress": "text-amber-400",
-  Pending: "text-white/40",
+  Pending: "text-white/55",
 } as const;
 
 function renderInlineBold(text: string): ReactNode[] {
@@ -67,7 +67,7 @@ function IndustrialSection({
   className?: string;
 }) {
   return (
-    <section className={`border-industrial bg-black p-8 ${className}`}>
+    <section className={`surface p-8 ${className}`}>
       {children}
     </section>
   );
@@ -98,7 +98,7 @@ export default function PressPage() {
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Press Kit
         </h1>
-        <p className="mt-4 text-sm text-white/50">
+        <p className="mt-4 text-sm text-white/65">
           {pageIntro.lead}{" "}
           {pageIntro.technicalReadPrefix}{" "}
           {pageIntro.technicalReadLinks.map((link, index) => (
@@ -135,7 +135,7 @@ export default function PressPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-sm leading-relaxed text-white/50">
+          <p className="mt-4 text-sm leading-relaxed text-white/65">
             {pressKit.founders.technicalCoFounderLine}
           </p>
         </IndustrialSection>
@@ -169,7 +169,7 @@ export default function PressPage() {
               </div>
             ))}
           </div>
-          <p className="mt-4 text-xs leading-relaxed text-white/40">
+          <p className="mt-4 text-xs leading-relaxed text-white/55">
             {pressKit.traction.footnote.split(pressKit.traction.footnoteLink.label)[0]}
             <Link
               href={pressKit.traction.footnoteLink.href}
@@ -183,7 +183,7 @@ export default function PressPage() {
 
         <section className="mt-8">
           <SectionEyebrow>{pressKit.changelog.headline.toUpperCase()}</SectionEyebrow>
-          <p className="mt-4 text-sm text-white/50">
+          <p className="mt-4 text-sm text-white/65">
             {pressKit.changelog.lead}{" "}
             <Link
               href={pressKit.changelog.link.href}
@@ -211,7 +211,7 @@ export default function PressPage() {
                   <h3 className="text-base font-bold tracking-tight">
                     v{entry.version}
                   </h3>
-                  <span className="text-[10px] tracking-widest text-white/30">
+                  <span className="text-[10px] tracking-widest text-white/55">
                     {entry.date} · {entry.channel}
                   </span>
                 </div>
@@ -236,7 +236,7 @@ export default function PressPage() {
           <p className="mt-4 text-lg font-bold tracking-tight">
             {pressKit.businessModel.headline}
           </p>
-          <p className="mt-6 text-[10px] tracking-widest text-white/40">NOW</p>
+          <p className="mt-6 text-[10px] tracking-widest text-white/55">NOW</p>
           <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-white/70">
             {pressKit.businessModel.now.map((item) => (
               <li key={item}>
@@ -253,13 +253,13 @@ export default function PressPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-[10px] tracking-widest text-white/40">
+          <p className="mt-6 text-[10px] tracking-widest text-white/55">
             EXPANSION (FORWARD-LOOKING)
           </p>
           <p className="mt-2 text-sm text-white/70">
             {pressKit.businessModel.expansion.join(" · ")}
           </p>
-          <p className="mt-6 text-xs leading-relaxed text-white/50">
+          <p className="mt-6 text-xs leading-relaxed text-white/60">
             {pressKit.businessModel.wedgeNote}{" "}
             <Link
               href={pressKit.businessModel.wedgeNoteLink.href}
@@ -300,7 +300,7 @@ export default function PressPage() {
                 >
                   {link.label}
                 </Link>
-                <p className="mt-1 text-xs text-white/40">{link.why}</p>
+                <p className="mt-1 text-xs text-white/55">{link.why}</p>
               </li>
             ))}
           </ul>
@@ -313,7 +313,7 @@ export default function PressPage() {
               <li key={item}>{item}</li>
             ))}
           </ul>
-          <p className="mt-6 text-sm text-white/50">
+          <p className="mt-6 text-sm text-white/65">
             <a
               href={pressKit.focusAsk.mailto}
               className="text-neon-purple hover:underline"
@@ -340,7 +340,7 @@ export default function PressPage() {
         </IndustrialSection>
 
         <section className="mt-8 border border-white/10 bg-black/50 p-6">
-          <p className="text-xs leading-relaxed text-white/40">
+          <p className="text-xs leading-relaxed text-white/55">
             {pressKit.maturityDisclaimer}
           </p>
         </section>
@@ -374,7 +374,7 @@ export default function PressPage() {
                 key={fact.label}
                 className="grid gap-2 border-b border-white/10 bg-black px-6 py-4 last:border-b-0 sm:grid-cols-[140px_1fr]"
               >
-                <dt className="text-[10px] tracking-widest text-white/40">
+                <dt className="text-[10px] tracking-widest text-white/55">
                   {fact.label}
                 </dt>
                 <dd className="text-sm text-white/80">{fact.value}</dd>
@@ -394,13 +394,13 @@ export default function PressPage() {
                 >
                   {asset.label}
                 </Link>
-                <span className="text-white/30"> — {asset.note}</span>
+                <span className="text-white/55"> — {asset.note}</span>
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="mt-12 text-sm text-white/50">
+        <section className="mt-12 text-sm text-white/65">
           <div className="flex flex-wrap items-center gap-x-2 gap-y-2">
             <span>
               Contact:{" "}

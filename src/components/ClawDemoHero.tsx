@@ -25,7 +25,7 @@ export function ClawDemoHero({
           priority
         />
       </div>
-      <figcaption className="px-4 py-3 text-xs leading-relaxed text-white/45">
+      <figcaption className="px-4 py-3 text-xs leading-relaxed text-white/55">
         <span className="text-[10px] tracking-[0.2em] text-neon-purple">
           {label}
         </span>

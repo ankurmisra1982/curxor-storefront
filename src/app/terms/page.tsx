@@ -76,7 +76,8 @@ export default function TermsPage() {
           <p>
             Hardware specs (126 TOPS NPU, 64GB UMA) reference manufacturer datasheets
             for the target platform. Mesh telemetry latency targets are design goals —
-            published benchmarks follow golden-path close and eno2 mesh validation.
+            published benchmarks follow full end-to-end validation of the box and the
+            eno2 mesh.
           </p>
         </LegalSection>
 

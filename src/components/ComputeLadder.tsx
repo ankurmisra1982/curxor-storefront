@@ -17,7 +17,7 @@ const RUNGS = [
   },
   {
     id: "curxor",
-    label: "CurXor Nexus",
+    label: "CurXor Standard 64",
     uma: "64 GB UMA",
     tops: "126 TOPS",
     note: "Turnkey wealth · work · life crewmates",
@@ -37,7 +37,7 @@ export function ComputeLadder() {
             Same always-on idea. Different memory class.
           </h2>
         </div>
-        <p className="flex max-w-sm items-start gap-1.5 text-xs leading-relaxed text-white/40">
+        <p className="flex max-w-sm items-start gap-1.5 text-xs leading-relaxed text-white/55">
           <span>
             UMA tiers below are model budgets on CurXor hardware — not separate
             products.
@@ -56,14 +56,14 @@ export function ComputeLadder() {
           >
             <p
               className={`text-[10px] tracking-[0.2em] ${
-                highlighted ? "text-neon-purple" : "text-white/35"
+                highlighted ? "text-neon-purple" : "text-white/55"
               }`}
             >
               {rung.label.toUpperCase()}
             </p>
             <p className="mt-3 text-2xl font-bold text-white">{rung.uma}</p>
-            <p className="mt-1 text-xs text-white/50">{rung.tops} NPU class</p>
-            <p className="mt-4 text-xs leading-relaxed text-white/45">
+            <p className="mt-1 text-xs text-white/60">{rung.tops} NPU class</p>
+            <p className="mt-4 text-xs leading-relaxed text-white/55">
               {rung.note}
             </p>
           </div>

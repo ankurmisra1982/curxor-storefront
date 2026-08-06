@@ -17,24 +17,27 @@ export function VisionBand() {
     <section
       id="vision"
       aria-labelledby="vision-heading"
-      className="relative border-t border-white/10 bg-black py-12 sm:py-14"
+      className="band relative border-t border-white/10 bg-black"
     >
       <div className="mx-auto max-w-7xl px-6">
-        <div className="max-w-3xl">
-          <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
-            {visionBand.eyebrow}
-          </p>
+        {/* max-w-4xl keeps the headline on one line at sm:text-4xl. */}
+        <div className="max-w-4xl">
+          <p className="eyebrow mb-2">{visionBand.eyebrow}</p>
           <h2
             id="vision-heading"
             className="text-3xl font-bold tracking-tight sm:text-4xl"
           >
             {visionBand.headline}
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-white/60">
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/60">
             {visionBand.subhead}
           </p>
-          <p className="mt-2 text-xs italic text-white/55">{gtmConductorAccent}</p>
-          <p className="mt-1 text-xs italic text-white/50">{evolutionTease}</p>
+          <p className="mt-5 border-l-2 border-neon-purple/30 pl-4 text-xs italic leading-relaxed text-white/55">
+            {gtmConductorAccent}
+            <span className="mt-1 block not-italic text-white/55">
+              {evolutionTease}
+            </span>
+          </p>
         </div>
 
         <div className="mt-8 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-3">
@@ -61,7 +64,7 @@ export function VisionBand() {
             {visionBand.cafeTeaser}
           </p>
           <CafeClawVisual />
-          <p className="mt-3 text-[10px] tracking-wide text-white/35">
+          <p className="mt-3 text-[10px] tracking-wide text-white/55">
             {visionBand.cafeDisclaimer}
           </p>
         </div>

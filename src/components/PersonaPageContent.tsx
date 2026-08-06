@@ -18,7 +18,7 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
       <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
         {page.headline}
       </h1>
-      <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
+      <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/65">
         {page.lead}
       </p>
 
@@ -40,7 +40,7 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
             >
               {operator.claw.toUpperCase()} TOUR →
             </Link>
-            <ShareOnX text={operator.shareLine} label="PASTE FOR X" />
+            <ShareOnX text={operator.shareLine} />
           </div>
         </div>
       ) : null}
@@ -57,7 +57,7 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
       </div>
 
       <section className="mt-14">
-        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/55">
           WHY OPERATORS SWITCH
         </p>
         <ul className="space-y-2">
@@ -77,7 +77,7 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
         {page.claws.map((claw) => (
           <article key={claw.name} className="bg-black p-6">
             <h2 className="text-sm font-bold text-neon-purple">{claw.name}</h2>
-            <p className="mt-2 text-xs leading-relaxed text-white/50">
+            <p className="mt-2 text-xs leading-relaxed text-white/60">
               {claw.body}
             </p>
           </article>
@@ -85,7 +85,7 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
       </section>
 
       <section className="mt-12">
-        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/55">
           OUTCOMES
         </p>
         <ul className="grid gap-3 sm:grid-cols-2">
@@ -106,7 +106,7 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
             <Link
               key={link.href}
               href={link.href}
-              className="border border-white/10 px-4 py-2 text-[10px] tracking-widest text-white/50 hover:border-neon-purple/40 hover:text-neon-purple"
+              className="border border-white/10 px-4 py-2 text-[10px] tracking-widest text-white/60 hover:border-neon-purple/40 hover:text-neon-purple"
             >
               {link.label.toUpperCase()}
             </Link>
@@ -114,7 +114,7 @@ export function PersonaPageContent({ page }: { page: PersonaPage }) {
         </div>
       </section>
 
-      <p className="mt-12 text-[10px] text-white/30">
+      <p className="mt-12 text-[10px] text-white/55">
         Composite operator storytelling — pre-launch, not paid endorsements.
       </p>
 

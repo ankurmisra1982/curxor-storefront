@@ -27,7 +27,7 @@ export function ClawCheatSheetSection() {
       <h2 className="mb-2 text-xs font-bold tracking-[0.3em] text-neon-purple">
         DESK CREW ROSTER
       </h2>
-      <p className="mb-2 max-w-3xl text-xs leading-relaxed text-white/45">
+      <p className="mb-2 max-w-3xl text-xs leading-relaxed text-white/55">
         {publicRosterSummary} CurXor OS {applianceVersion}.
       </p>
       <p className="mb-8 max-w-3xl text-xs leading-relaxed text-white/55">
@@ -55,16 +55,16 @@ function RosterGroup({
       <div className="grid gap-4 lg:grid-cols-2">
         {entries.map((entry) => {
           const app = resolveApp(entry);
-          const tierClass = app ? gtmTierBadgeClass(app.gtmTier) : "border-white/15 text-white/40";
+          const tierClass = app ? gtmTierBadgeClass(app.gtmTier) : "border-white/15 text-white/55";
 
           return (
-            <article key={entry.applianceId} className="border-industrial bg-black p-6">
+            <article key={entry.applianceId} className="surface p-6">
               <div className="mb-3 flex flex-wrap items-start justify-between gap-2">
                 <div>
                   <h4 className="text-sm font-bold tracking-wide">
                     {app?.name ?? entry.applianceId}
                   </h4>
-                  <p className="mt-1 font-mono text-[10px] text-white/35">{entry.route}</p>
+                  <p className="mt-1 font-mono text-[10px] text-white/55">{entry.route}</p>
                 </div>
                 <div className="flex flex-col items-end gap-1">
                   {app ? (
@@ -74,7 +74,7 @@ function RosterGroup({
                       {app.gtmTierLabel.toUpperCase()}
                     </span>
                   ) : null}
-                  <span className="text-[9px] tracking-[0.12em] text-white/45">
+                  <span className="text-[9px] tracking-[0.12em] text-white/55">
                     {entry.statusLabel}
                   </span>
                 </div>

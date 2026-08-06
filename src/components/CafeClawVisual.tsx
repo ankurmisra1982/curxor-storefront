@@ -30,7 +30,7 @@ export function CafeClawVisual() {
               className="h-auto w-full"
             />
           </div>
-          <figcaption className="px-3 py-2.5 text-xs leading-relaxed text-white/45">
+          <figcaption className="px-3 py-2.5 text-xs leading-relaxed text-white/55">
             <span className="text-[10px] tracking-[0.2em] text-amber-200/70">
               {shot.label}
             </span>

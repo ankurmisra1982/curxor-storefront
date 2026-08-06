@@ -46,9 +46,10 @@ export function InfoTip({ tipId, className = "" }: InfoTipProps) {
         aria-controls={panelId}
         aria-label={`What is ${tip.title}?`}
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-white/20 text-[9px] leading-none text-white/45 transition-colors hover:border-neon-purple/60 hover:text-neon-purple focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon-purple/70"
+        className="group relative inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-white/30 text-[9px] leading-none text-white/60 transition-colors hover:border-neon-purple/60 hover:text-neon-purple"
       >
-        ?
+        {/* Pointer/touch target reaches 24px without disturbing inline text flow. */}
+        <span aria-hidden className="absolute -inset-[5px]" />?
       </button>
 
       {open ? (

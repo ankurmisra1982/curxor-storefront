@@ -33,7 +33,7 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
           <h2 className="mt-2 text-lg font-bold tracking-tight text-white/90">
             Compare tiers
           </h2>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/50">
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/65">
             {subhead}{" "}
             <Link href="/press#compute-ladder" className="text-neon-purple hover:underline">
               Press kit
@@ -47,7 +47,7 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
         <table className="w-full min-w-[640px] border-collapse text-left text-sm">
           <thead>
             <tr className="border-b border-white/10">
-              <th className="pb-4 pr-4 text-[10px] tracking-[0.2em] text-white/35">
+              <th className="pb-4 pr-4 text-[10px] tracking-[0.2em] text-white/55">
                 TIER
               </th>
               {hardwareTierCompare.columns.map((col) => (
@@ -58,7 +58,7 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
                   }`}
                 >
                   <span className="block text-base font-bold">{col.name}</span>
-                  <span className="mt-1 block text-xs font-normal text-white/50">
+                  <span className="mt-1 block text-xs font-normal text-white/60">
                     {col.price} · {col.memory} · {col.status.toLowerCase()}
                   </span>
                 </th>
@@ -68,7 +68,7 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
           <tbody>
             {hardwareTierCompare.rows.map((row) => (
               <tr key={row.label} className="border-b border-white/10 last:border-b-0">
-                <th className="py-4 pr-4 align-top text-[10px] font-normal tracking-[0.15em] text-white/40">
+                <th className="py-4 pr-4 align-top text-[10px] font-normal tracking-[0.15em] text-white/55">
                   {row.label.toUpperCase()}
                 </th>
                 <td className="py-4 px-3 align-top text-xs leading-relaxed text-white/65">
@@ -77,7 +77,7 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
                 <td className="py-4 px-3 align-top text-xs leading-relaxed text-white/55">
                   {row.pro128}
                 </td>
-                <td className="py-4 px-3 align-top text-xs leading-relaxed text-white/45">
+                <td className="py-4 px-3 align-top text-xs leading-relaxed text-white/55">
                   {row.studio}
                 </td>
               </tr>
@@ -86,12 +86,12 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
         </table>
       </div>
 
-      <p className="mt-6 text-xs leading-relaxed text-white/40">
+      <p className="mt-6 text-xs leading-relaxed text-white/55">
         <strong className="font-semibold text-white/55">Honest footnote:</strong>{" "}
         {footnote}
       </p>
 
-      <p className="mt-3 text-xs leading-relaxed text-white/35">
+      <p className="mt-3 text-xs leading-relaxed text-white/55">
         Directional evidence (same silicon class as MS-S1):{" "}
         <a
           href={evidence.href}
@@ -105,20 +105,22 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
       </p>
 
       {variant === "pricing" ? (
-        <p className="mt-4 text-xs text-white/40">
-          CurXor Studio is post-traction horizon — no checkout.{" "}
+        <p className="mt-4 text-xs leading-relaxed text-white/60">
+          Standard 64 is the only tier you can buy today. Pro 128 pricing is
+          indicative and CurXor Studio is post-traction horizon — neither has a
+          checkout.{" "}
           <Link href="/press#compute-ladder" className="text-neon-purple hover:underline">
             Press ladder copy
           </Link>
         </p>
       ) : (
-        <p className="mt-4 text-xs text-white/40">
+        <p className="mt-4 text-xs text-white/55">
           Tier compare also on{" "}
           <Link href="/pricing#compute-ladder" className="text-neon-purple hover:underline">
             /pricing
           </Link>
           . Full doc:{" "}
-          <span className="text-white/50">docs/COMPUTE-LADDER.md</span> in storefront repo.
+          <span className="text-white/60">docs/COMPUTE-LADDER.md</span> in storefront repo.
         </p>
       )}
     </section>

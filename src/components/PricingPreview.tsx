@@ -5,9 +5,9 @@ import { pricingTiers } from "@/lib/generated/pricing-sync";
 
 export function PricingPreview() {
   return (
-    <section id="pricing" className="relative border-t border-white/10 py-12 sm:py-14">
+    <section id="pricing" className="band relative border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
               LOCAL MODEL BUDGETS
@@ -31,7 +31,7 @@ export function PricingPreview() {
               <h3 className="mt-2 text-3xl font-bold text-white">
                 {tier.umaCapGb} GB UMA
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/50">
+              <p className="mt-3 text-sm leading-relaxed text-white/65">
                 {tier.description}
               </p>
             </article>

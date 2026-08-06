@@ -11,16 +11,16 @@ const statTipByLabel: Partial<Record<string, BuyerTipId>> = {
 export function HeroSpecStrip() {
   return (
     <section aria-label="Hardware highlights" className="border-b border-white/10">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-3 px-6 py-4">
+      <div className="band-bar mx-auto flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-3 px-6">
         {computePower.stats.slice(0, 4).map((stat, i) => (
           <div key={stat.label} className="flex items-center gap-4">
             {i > 0 ? <div className="hidden h-6 w-px bg-white/10 sm:block" aria-hidden /> : null}
             <div>
               <div className="text-base font-bold text-neon-purple sm:text-lg">
                 {stat.value}
-                <span className="ml-1 text-xs text-white/50">{stat.unit}</span>
+                <span className="ml-1 text-xs text-white/60">{stat.unit}</span>
               </div>
-              <div className="flex items-center gap-1 text-[10px] tracking-widest text-white/50">
+              <div className="flex items-center gap-1 text-[10px] tracking-widest text-white/60">
                 {stat.label}
                 {statTipByLabel[stat.label] ? (
                   <InfoTip tipId={statTipByLabel[stat.label]!} />

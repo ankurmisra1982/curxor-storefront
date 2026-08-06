@@ -28,7 +28,7 @@ function NavLinkItem({
     >
       <span className="font-medium text-white/80">{label}</span>
       {description ? (
-        <span className="mt-0.5 block text-[10px] normal-case tracking-normal text-white/35">
+        <span className="mt-0.5 block text-[10px] normal-case tracking-normal text-white/55">
           {description}
         </span>
       ) : null}
@@ -41,6 +41,7 @@ export function Header() {
   const [mobileSection, setMobileSection] = useState<string | null>("claws");
   const [openGroup, setOpenGroup] = useState<string | null>(null);
   const navRef = useRef<HTMLElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!openGroup) return;
@@ -64,6 +65,20 @@ export function Header() {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [openGroup]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setMobileOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [mobileOpen]);
 
   function closeMobileMenu() {
     setMobileOpen(false);
@@ -101,7 +116,7 @@ export function Header() {
                   }`}
                 >
                   {group.label}
-                  <span aria-hidden className="text-[10px] text-white/30">
+                  <span aria-hidden className="text-[10px] text-white/60">
                     ▾
                   </span>
                 </button>
@@ -131,7 +146,7 @@ export function Header() {
                             label={group.footer.label}
                             description={group.footer.description}
                             onNavigate={() => setOpenGroup(null)}
-                            className="text-white/45 hover:text-neon-purple [&_span:first-child]:font-normal [&_span:first-child]:text-white/45"
+                            className="text-white/55 hover:text-neon-purple [&_span:first-child]:font-normal [&_span:first-child]:text-white/55"
                           />
                         </div>
                       ) : null}
@@ -174,11 +189,13 @@ export function Header() {
             WAITLIST
           </Link>
           <button
+            ref={menuButtonRef}
             type="button"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
+            aria-controls="mobile-nav"
             onClick={() => setMobileOpen((value) => !value)}
-            className="border border-white/10 px-3 py-2 text-xs tracking-widest text-white/60"
+            className="border border-white/10 px-3 py-2 text-xs tracking-widest text-white/70"
           >
             {mobileOpen ? "CLOSE" : "MENU"}
           </button>
@@ -186,7 +203,11 @@ export function Header() {
       </div>
 
       {mobileOpen ? (
-        <nav aria-label="Mobile primary" className="border-t border-white/10 bg-black px-6 py-4 lg:hidden">
+        <nav
+          id="mobile-nav"
+          aria-label="Mobile primary"
+          className="border-t border-white/10 bg-black px-6 py-4 lg:hidden"
+        >
           <div className="flex flex-col gap-2 text-xs tracking-widest text-white/60">
             {navGroups.map((group) => {
               const expanded = mobileSection === group.id;
@@ -200,7 +221,7 @@ export function Header() {
                     className="flex w-full items-center justify-between py-2 text-left transition-colors hover:text-neon-purple"
                   >
                     {group.label}
-                    <span aria-hidden className="text-white/30">
+                    <span aria-hidden className="text-white/60">
                       {expanded ? "−" : "+"}
                     </span>
                   </button>
@@ -224,7 +245,7 @@ export function Header() {
                             label={group.footer.label}
                             description={group.footer.description}
                             onNavigate={closeMobileMenu}
-                            className="text-white/45 hover:text-neon-purple [&_span:first-child]:font-normal [&_span:first-child]:text-white/45"
+                            className="text-white/55 hover:text-neon-purple [&_span:first-child]:font-normal [&_span:first-child]:text-white/55"
                           />
                         </li>
                       ) : null}
@@ -254,7 +275,7 @@ export function Header() {
             </Link>
             <TrackedPreorderLink
               location="header"
-              className="pb-2 text-white/45 transition-colors hover:text-neon-purple"
+              className="pb-2 text-white/55 transition-colors hover:text-neon-purple"
               onClick={closeMobileMenu}
             >
               PRE-ORDER

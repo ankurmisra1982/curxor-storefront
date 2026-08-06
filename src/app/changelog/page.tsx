@@ -36,7 +36,7 @@ export default function ChangelogPage() {
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Changelog
         </h1>
-        <p className="mt-4 text-sm text-white/50">
+        <p className="mt-4 text-sm text-white/65">
           CurXor OS{" "}
           <span className="text-white/70">v{changelogMeta.version}</span> (
           {changelogMeta.channel}). Updated{" "}
@@ -46,7 +46,8 @@ export default function ChangelogPage() {
             day: "numeric",
           })}
           . Validated on the appliance stack. MS-S1 MAX unboxed 2026-06-28 —
-          golden path closed Jun 29 (command portal + egress mesh live on box).
+          first full end-to-end run on the box Jun 29 (command portal + egress mesh
+          live).
         </p>
 
         <div className="mt-12 space-y-12">
@@ -59,7 +60,7 @@ export default function ChangelogPage() {
                 <h2 className="text-xl font-bold tracking-tight">
                   v{entry.version}
                 </h2>
-                <span className="text-[10px] tracking-widest text-white/30">
+                <span className="text-[10px] tracking-widest text-white/55">
                   {entry.date} · {entry.channel}
                 </span>
               </div>
@@ -78,7 +79,7 @@ export default function ChangelogPage() {
           ))}
         </div>
 
-        <p className="mt-16 text-xs text-white/40">
+        <p className="mt-16 text-xs text-white/55">
           Buyer-facing release notes and status updates also ship in the{" "}
           <Link href="/journal" className="text-neon-purple hover:underline">
             journal

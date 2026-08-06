@@ -27,7 +27,7 @@ const tierBadgeClass: Record<StorefrontApp["gtmTier"], string> = {
   flagship: "border-neon-purple/40 text-neon-purple/90",
   forge: "border-white/25 text-white/70",
   cafe: "border-amber-400/30 text-amber-200/80",
-  preview: "border-white/15 text-white/40",
+  preview: "border-white/15 text-white/55",
 };
 
 export function gtmTierBadgeClass(tier: StorefrontApp["gtmTier"]): string {

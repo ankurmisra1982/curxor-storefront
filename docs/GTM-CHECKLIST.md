@@ -35,7 +35,7 @@ MS-S1 MAX **unboxed 2026-06-28** — **G1/G2/G3 closed Jul 2026** · CurXor OS *
 - [x] `/signal` — Signal · The Neural Link horizon visual + preview honesty ([signal-page.ts](../src/lib/signal-page.ts))
 - [x] **Hero film v5.1 script + comp plates** (G3 · `46f9257`) — [HERO-FILM-HANDOFF.md](HERO-FILM-HANDOFF.md) · `public/demo/hero-film/` · Figma proto linked
 - [x] **Hero film UI** — `/signal` category section + film tabs · `/press` downloads
-- [x] **Hero film MP4** — badge vision (~91s v5.01) + short (~62s v4) + warm intro (~89s inception) on /signal · investor proof (~2:50) on /press
+- [x] **Hero film MP4** — badge vision (~89s v6 · 1080p) + short (~62s v4) + warm intro (~89s inception) on /signal · investor proof (~2:50) on /press
 - [x] **Align kickoff** — [STOREFRONT-ALIGN-KICKOFF.md](STOREFRONT-ALIGN-KICKOFF.md) for post-deploy verification chat
 - [x] **Track C deploy (STORE-C-DEPLOY)** — sync/g1-green-mirror-p0 → main · G3 assets on prod · category film labeled ~90s Act I alias
 - [x] **Aug 2026 film promote** — Swap A investor + inception v3 · hero badge v5.01 LIVE SEND (v4 short) · [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md)

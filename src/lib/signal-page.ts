@@ -3,6 +3,14 @@
 /** Provocative hub name — avoids collision with Signal messenger. */
 export const signalHubName = "The Neural Link" as const;
 
+export const signalWalkthrough = {
+  src: "/demo/optimus-walkthrough-vo.mp4",
+  ariaLabel: "Play Signal Neural Link walkthrough — humanoid home hub preview",
+  label: "FLIGHT COMMAND · HUMANOID HUB",
+  caption:
+    "Home → Knowledge → Routines → Fleet → Control on the appliance — preview honesty; no live humanoid motion. Sound on.",
+} as const;
+
 export const signalPageMeta = {
   title: "Signal — The Neural Link",
   description:

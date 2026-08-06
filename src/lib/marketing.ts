@@ -5,7 +5,6 @@ import {
   siteConfig,
 } from "@/lib/config";
 import { g3Screenshots } from "@/lib/g3-demo";
-import { qaMetrics } from "@/lib/qa-metrics";
 
 export const supportEmail = siteConfig.contactEmail;
 
@@ -33,7 +32,7 @@ export const trustSignals = [
   },
 ] as const;
 
-export const socialProofLine = `CurXor OS v${applianceVersion} · ${qaMetrics.smokeChecks} smoke · golden path on MS-S1`;
+export const socialProofLine = `CurXor OS v${applianceVersion} · validated on MS-S1`;
 
 export const priceIncludes = {
   headline: "What $3,999 includes",
@@ -49,7 +48,7 @@ export const priceIncludes = {
       body: `${clawRosterLabel} · Flight Command · Settings · unified messaging · OTA updates`,
     },
     {
-      title: "Digital bridges scaffold",
+      title: "Digital bridges",
       body: "Capital, Creator, Outreach, and Forge egress paths — you add broker and social credentials",
     },
     {

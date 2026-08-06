@@ -25,16 +25,16 @@ export function HeroProductVisual() {
       <div className="absolute -inset-3 border border-neon-purple/25 bg-neon-purple/[0.02]" />
       <div className="absolute -inset-6 border border-white/5" />
 
-      <div className="relative border-industrial bg-black">
+      <div className="surface relative">
         <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-neon-purple shadow-[0_0_8px_#BF5AF2]" />
-            <span className="text-[10px] tracking-[0.25em] text-white/50">
+            <span className="text-[10px] tracking-[0.25em] text-white/60">
               CURXOR · MS-S1 CLASS
             </span>
           </div>
           <div className="hidden gap-2 sm:flex">
-            <span className="border border-white/10 px-2 py-0.5 text-[9px] tracking-widest text-white/40">
+            <span className="border border-white/10 px-2 py-0.5 text-[9px] tracking-widest text-white/55">
               eno1 · COMMAND
             </span>
             <span className="border border-neon-purple/30 px-2 py-0.5 text-[9px] tracking-widest text-neon-purple/80">
@@ -56,7 +56,7 @@ export function HeroProductVisual() {
               className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
-            <p className="absolute bottom-4 right-4 text-right text-[10px] tracking-[0.18em] text-white/50 transition-colors group-hover:text-neon-purple">
+            <p className="absolute bottom-4 right-4 text-right text-[10px] tracking-[0.18em] text-white/60 transition-colors group-hover:text-neon-purple">
               PRODUCT STILL · TAP FOR DESK PROOF
             </p>
           </Link>
@@ -80,18 +80,18 @@ export function HeroProductVisual() {
             {CLAW_CHIPS.map((chip) => (
               <span
                 key={chip.label}
-                className="inline-flex items-center gap-1.5 border border-white/10 px-2 py-1 text-[10px] tracking-wide text-white/50"
+                className="inline-flex items-center gap-1.5 border border-white/10 px-2 py-1 text-[10px] tracking-wide text-white/60"
               >
                 <span className="text-neon-purple">{chip.icon}</span>
                 {chip.label}
               </span>
             ))}
           </div>
-          <p className="text-[10px] tracking-widest text-white/25">
+          <p className="text-[10px] tracking-widest text-white/55">
             126 TOPS · 64GB UMA
           </p>
         </div>
-        <p className="border-t border-white/10 px-4 py-2.5 text-[10px] leading-relaxed tracking-wide text-white/35">
+        <p className="border-t border-white/10 px-4 py-2.5 text-[10px] leading-relaxed tracking-wide text-white/60">
           {productStills.honesty}
         </p>
       </div>

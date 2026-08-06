@@ -56,16 +56,16 @@ export const journalEssays: JournalEntry[] = [
     kind: "update",
     title: "Category Vision Film — Desk Crew on Metal You Own",
     metaDescription:
-      "CurXor category vision film (~91s) live on /signal — desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Concept comps + voiceover; product proof tab is real MS-S1 capture.",
+      "CurXor category vision film is live on /signal — desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Vision comps with voiceover; product proof is real MS-S1 capture.",
     publishedAt: "2026-08-04",
     excerpt:
-      "The category send is live: They live here. You conduct. Personal algorithm on metal you own — with an honest line between vision comps and product proof.",
+      "They live here. You conduct. Personal algorithm on metal you own — with an honest line between vision comps and product proof.",
     sourceLabel: "Company update · category film",
     author: "CurXor Systems",
     relatedLinks: [
       { href: "/signal#category-film", label: "Watch on /signal" },
       { href: "/demo/hero-category-badge-v5.01.mp4", label: "Category vision (~91s)" },
-      { href: "/demo/hero-category-badge-v4.mp4", label: "Short cut (~62s)" },
+      { href: "/demo/hero-category-badge-v4.mp4", label: "Shorter version (~62s)" },
       { href: "/press", label: "Press kit" },
       { href: "/journal/harness-is-the-product", label: "The harness is the product" },
     ],
@@ -76,11 +76,11 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "The category vision film is live as the default cut on /signal — about ninety-one seconds of desk crew, always-on life, and the approval gate. Short alternate stays available for cold asks (~62s). Product proof remains the warm intro tab (~89s) captured on real MS-S1 metal.",
+        text: "The category vision film is live on /signal — about ninety-one seconds of desk crew, always-on life, and the approval gate. A shorter version (~62s) is there if you want the faster watch. Product proof (~89s) is the second tab: Capital, Creator, and Outreach captured on real MS-S1 metal.",
       },
       {
         type: "p",
-        text: "Homepage does not autoplay it. Quiet link only: Watch category film → /signal#category-film.",
+        text: "The homepage does not autoplay it. Quiet link only: Watch category film → /signal#category-film.",
       },
       {
         type: "h2",
@@ -103,7 +103,7 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "The vision cut mixes concept comps and voiceover with real operate-plane UI. It is not a VR SKU and not a claim that every surface is live customer fleet. The product-proof tab is the capture path for diligence: onboarding through Capital, Creator, and Outreach on the box.",
+        text: "The vision film mixes concept comps and voiceover with real operate-plane UI. It is not a VR SKU and not a claim that every surface is a live customer fleet. The product-proof tab is the capture path: onboarding through Capital, Creator, and Outreach on the box.",
       },
       {
         type: "p",
@@ -510,7 +510,7 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "Working product on real MS-S1-class metal. Flagship desks — Capital, Creator, Outreach — demo-ready day one. Preview modules labeled honestly. Pre-revenue. Published mesh benchmarks pending. If you are evaluating CurXor: judge us on the build path and the golden-path walkthrough, not on mock depth that confuses a demo with a product.",
+        text: "Working product on real MS-S1-class metal. Flagship desks — Capital, Creator, Outreach — demo-ready day one. Preview modules labeled honestly. Pre-revenue. Published mesh benchmarks pending. If you are evaluating CurXor: judge us on the build path and the end-to-end walkthrough on the box, not on mock depth that confuses a demo with a product.",
       },
       {
         type: "quote",
@@ -789,8 +789,8 @@ export const journalEssays: JournalEntry[] = [
       "CurXor status for operators and media: MS-S1 MAX appliance running CurXor OS, flagship desks demo-ready, local inference on box, pre-revenue — honest traction without theater.",
     publishedAt: "2026-07-08",
     excerpt:
-      "Not a laptop demo pretending to be an appliance. CurXor OS on MS-S1-class metal — flagship desks, local inference, founder-box ops green. Pre-revenue. Design-partner sessions private.",
-    sourceLabel: "Company update · press kit spine",
+      "Not a laptop demo pretending to be an appliance. CurXor OS on MS-S1-class metal — flagship desks, local inference, bridges proven on the founder MS-S1. Pre-revenue. Design-partner sessions private.",
+    sourceLabel: "Company update · status",
     author: "CurXor Systems",
     relatedLinks: [
       { href: "/press", label: "Full press kit" },
@@ -814,8 +814,8 @@ export const journalEssays: JournalEntry[] = [
           "MS-S1 MAX unboxed and running CurXor OS on Ubuntu",
           "Local inference validated on Standard 64 (qwen3:8b class path · ~38 tok/s on our default stack)",
           "Flagship desks — Capital, Creator, Outreach — demo-ready with Flight Command on the LAN",
-          "Priority bridges green on the founder box for dogfood (Capital stays paper)",
-          "Design partners completed remote golden-path sessions — feedback private; not a customer fleet; not closed traction",
+          "Priority bridges green on the founder MS-S1 (Capital stays paper)",
+          "Design partners completed remote walkthrough sessions — feedback private; not a customer fleet; not closed traction",
         ],
       },
       {
@@ -881,7 +881,7 @@ export const journalEssays: JournalEntry[] = [
           "Ascension XP and pixel room react to Flagship desk activity",
           "Cross-crew growth moments on the box — local by default",
           "Storefront and press surfaces aligned to working product on real metal",
-          "Golden-path networking on the appliance — command and egress ports you control",
+          "End-to-end networking on the appliance — command and egress ports you control",
         ],
       },
       {
@@ -895,7 +895,7 @@ export const journalEssays: JournalEntry[] = [
     kind: "release",
     title: "CurXor OS v1.0.3 — Release Notes",
     metaDescription:
-      "CurXor OS v1.0.3 stable: Firecrawl bridge, SkillSpector CI gate, xAI Grok frontier provider option, Crew Cafe copy lock, event bus hardening, MS-S1 box verification.",
+      "CurXor OS v1.0.3 stable: Firecrawl bridge, import safety gate, xAI Grok frontier provider option, Crew Cafe naming polish, event bus hardening, MS-S1 box verification.",
     publishedAt: "2026-07-08",
     excerpt:
       "Stable channel release — depth on bridges and quality gates, Cafe polish, event bus hardening, and box verification on MS-S1.",
@@ -914,17 +914,17 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "Public highlights for operators evaluating the stack. Internal ticket codes stripped — see /changelog for the machine-synced list.",
+        text: "Public highlights for operators evaluating the stack. See /changelog for the full release list.",
       },
       {
         type: "ul",
         items: [
-          "Depth wave — Firecrawl bridge paths, SkillSpector CI gate, optional xAI Grok as a frontier provider when you bring your own key",
-          "Forge hygiene — prune QA forged-app pollution from seed and operate rail; registry smoke guardrails",
-          "Crew Cafe copy lock — desk-crew naming sign-off for operator UI",
+          "Depth release — Firecrawl bridge paths, import safety gate, optional xAI Grok as a frontier provider when you bring your own key",
+          "Forge hygiene — cleaner forged-desk registry and QA guardrails",
+          "Crew Cafe naming polish — desk-crew naming finalized for operator UI",
           "OS event bus hardening — serialized log writes and atomic dedupe emits",
           "Cafe feed fix — chronological sort after XP sync; demo tour awaits Cafe ingest",
-          "Box verified — local QA suite, box-smoke, and Capital handshake dogfood on MS-S1",
+          "Box verified — appliance QA suite and Capital handshake proven on MS-S1",
         ],
       },
       {
@@ -933,7 +933,7 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "QA baseline at this release: 239 smoke checks in curxor-os. Pre-revenue. Published mesh benchmarks still pending. Flagship desks demo-ready; Preview modules remain labeled Preview.",
+        text: "Validated on MS-S1 at this release. Pre-revenue. Published mesh benchmarks still pending. Flagship desks demo-ready; Preview modules remain labeled Preview.",
       },
       {
         type: "p",

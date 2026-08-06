@@ -27,7 +27,7 @@ export const missionVision = {
   purposeHorizon: {
     label: "Where Purpose goes",
     body: "Today you buy the desk and the desk crew that runs on it. After we prove those jobs — and raise for the next era of the box — Purpose becomes something you feel: a personal algorithm on your metal that your crewmates compound with. Not another cloud that rents who you are.",
-    honesty: "Building toward. Act I proves the jobs first.",
+    honesty: "Building toward. Flagship desks prove the jobs first.",
   },
   /** Dream-state / after-fundraise moat pattern — plain English, no internal codes */
   purposePillars: [

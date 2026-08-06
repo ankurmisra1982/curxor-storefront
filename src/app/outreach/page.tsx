@@ -51,9 +51,9 @@ export default function OutreachPage() {
         </p>
         <h1 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
           {outreachPageMeta.hero}{" "}
-          <span className="text-neon-purple">{outreachPageMeta.accent}</span>
+          <span className="text-neon-purple lg:block">{outreachPageMeta.accent}</span>
         </h1>
-        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/65">
           {outreachPageMeta.oneLiner}
         </p>
 
@@ -63,7 +63,7 @@ export default function OutreachPage() {
             secondaryHref="/compare/miky"
             secondaryLabel="vs MIKY"
           />
-          {alex ? <ShareOnX text={alex.shareLine} label="ALEX ON X" /> : null}
+          {alex ? <ShareOnX text={alex.shareLine} /> : null}
         </div>
 
         {alex ? (
@@ -73,7 +73,7 @@ export default function OutreachPage() {
         ) : null}
 
         <section className="mt-14">
-          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/55">
             FLIGHT COMMAND
           </p>
           <ClawDemoHero {...outreachDemoHero} />
@@ -94,7 +94,7 @@ export default function OutreachPage() {
                   STEP {item.step}
                 </p>
                 <h2 className="mt-3 text-sm font-bold">{item.title}</h2>
-                <p className="mt-2 text-xs leading-relaxed text-white/50">
+                <p className="mt-2 text-xs leading-relaxed text-white/60">
                   {item.body}
                 </p>
               </article>
@@ -132,20 +132,20 @@ export default function OutreachPage() {
         </section>
 
         <section className="mt-16">
-          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
-            TIER B · SHIPPED ON APPLIANCE
+          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/60">
+            ON THE APPLIANCE TODAY
           </p>
           <div className="flex flex-wrap gap-2">
             {outreachTierBFeatures.map((feature) => (
               <span
                 key={feature}
-                className="border border-white/10 px-3 py-2 text-[10px] tracking-widest text-white/50"
+                className="border border-white/10 px-3 py-2 text-[10px] tracking-widest text-white/60"
               >
                 {feature.toUpperCase()}
               </span>
             ))}
           </div>
-          <p className="mt-4 text-xs text-white/40">
+          <p className="mt-4 text-xs text-white/55">
             Sequences draft locally. Mail egresses only through SMTP on eno2.
           </p>
         </section>
@@ -156,7 +156,7 @@ export default function OutreachPage() {
           </p>
           <div className="grid gap-6 sm:grid-cols-2">
             {outreachFlowShots.map((shot) => (
-              <article key={shot.src} className="border-industrial bg-black p-4">
+              <article key={shot.src} className="surface p-4">
                 <div className="overflow-hidden border border-white/10">
                   <Image
                     src={shot.src}
@@ -169,7 +169,7 @@ export default function OutreachPage() {
                 <h3 className="mt-4 text-sm font-bold text-white/90">
                   {shot.title}
                 </h3>
-                <p className="mt-2 text-xs leading-relaxed text-white/50">
+                <p className="mt-2 text-xs leading-relaxed text-white/60">
                   {shot.body}
                 </p>
               </article>
@@ -177,7 +177,7 @@ export default function OutreachPage() {
           </div>
         </section>
 
-        <section className="mt-14 border border-neon-purple/30 bg-neon-purple/[0.03] p-6 sm:p-8">
+        <section className="mt-14 surface-accent p-6 sm:p-8">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             BEGINNER · STANDARD · EXPERT
           </p>
@@ -190,11 +190,11 @@ export default function OutreachPage() {
               href="/for/agencies"
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              MEET CLEO →
+              FOR AGENCIES →
             </Link>
             <Link
               href="/#operators"
-              className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
+              className="text-xs tracking-[0.2em] text-white/55 hover:text-neon-purple"
             >
               ALL OPERATORS →
             </Link>

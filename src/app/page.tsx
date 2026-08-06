@@ -39,24 +39,26 @@ const MobileStickyCta = dynamic(() =>
 
 export default function Home() {
   return (
-    <main className="relative">
+    <div className="relative">
       <JsonLd product faq organization={false} />
       <div className="pointer-events-none fixed inset-0 grid-industrial opacity-40" />
       <Header />
-      <Hero />
-      <HeroSpecStrip />
-      <TrustStrip />
-      <WhatIsThisStrip />
-      <HowItWorks />
-      <ScreenshotGallery />
-      <PersonaGrid />
-      <VisionBand />
-      <ComparisonTable />
-      <AppEcosystem variant="featured" />
-      <PricingPreview />
-      <Faq />
+      <main id="main" className="relative">
+        <Hero />
+        <HeroSpecStrip />
+        <TrustStrip />
+        <WhatIsThisStrip />
+        <HowItWorks />
+        <ScreenshotGallery />
+        <PersonaGrid />
+        <VisionBand />
+        <ComparisonTable />
+        <AppEcosystem variant="featured" />
+        <PricingPreview />
+        <Faq />
+      </main>
       <Footer />
       <MobileStickyCta />
-    </main>
+    </div>
   );
 }

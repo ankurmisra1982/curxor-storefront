@@ -32,9 +32,9 @@ const SHOTS = [
 
 export function ScreenshotGallery() {
   return (
-    <section id="demo" className="relative scroll-mt-24 border-t border-white/10 py-10 sm:py-12">
+    <section id="demo" className="band relative scroll-mt-24 border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
               FLIGHT COMMAND · DEMO
@@ -49,15 +49,16 @@ export function ScreenshotGallery() {
           </p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2">
           {SHOTS.map((shot) => (
-            <article key={shot.src} className="border-industrial bg-black p-3">
+            <article key={shot.src} className="surface p-3">
               <div className="overflow-hidden border border-white/10">
                 <Image
                   src={shot.src}
-                  alt={shot.title}
+                  alt={`Flight Command ${shot.title} screen captured on the MS-S1 appliance`}
                   width={1024}
                   height={640}
+                  sizes="(max-width: 640px) 100vw, 45vw"
                   className="h-auto w-full"
                 />
               </div>

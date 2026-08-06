@@ -32,7 +32,7 @@ export function Faq() {
     : faqItems.slice(0, FAQ_PREVIEW_COUNT);
 
   return (
-    <section id="faq" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-14">
+    <section id="faq" className="band relative scroll-mt-24 border-t border-white/10">
       <div className="mx-auto max-w-3xl px-6">
         <div className="mb-6 text-center">
           <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
@@ -57,7 +57,7 @@ export function Faq() {
                   </span>
                 </span>
               </summary>
-              <p className="mt-4 text-sm leading-relaxed text-white/50">
+              <p className="mt-4 text-sm leading-relaxed text-white/65">
                 {linkifyFaqAnswer(item.answer)}
               </p>
             </details>
@@ -69,7 +69,7 @@ export function Faq() {
             <button
               type="button"
               onClick={() => setShowAll(true)}
-              className="border border-white/10 px-5 py-3 text-xs tracking-[0.2em] text-white/50 transition-colors hover:border-neon-purple/40 hover:text-neon-purple"
+              className="border border-white/10 px-5 py-3 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/40 hover:text-neon-purple"
             >
               SHOW ALL {faqItems.length} QUESTIONS
             </button>

@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
 import { isValidEmail, subscribeEmail } from "@/lib/email";
+import { clientIp, rateLimit } from "@/lib/rate-limit";
+
+const RATE_LIMIT = { limit: 5, windowMs: 10 * 60 * 1000 };
 
 export async function POST(request: Request) {
   try {
@@ -15,8 +18,26 @@ export async function POST(request: Request) {
         ? (body as { email?: unknown }).email
         : undefined;
 
-    if (!email || typeof email !== "string" || !isValidEmail(email)) {
+    if (
+      !email ||
+      typeof email !== "string" ||
+      email.length > 254 ||
+      !isValidEmail(email)
+    ) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
+    }
+
+    // Count only well-formed emails so a flood of junk cannot lock out a
+    // shared IP. Abuse friction for malformed traffic stays on platform WAF.
+    const limit = rateLimit(`subscribe:${clientIp(request)}`, RATE_LIMIT);
+    if (!limit.ok) {
+      return NextResponse.json(
+        { error: "Too many signups from this network. Try again shortly." },
+        {
+          status: 429,
+          headers: { "Retry-After": String(limit.retryAfterSeconds) },
+        },
+      );
     }
 
     await subscribeEmail(email);

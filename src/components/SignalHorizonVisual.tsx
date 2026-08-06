@@ -96,7 +96,7 @@ export function SignalHorizonVisual({
               <svg viewBox="0 0 40 36" className="h-10 w-10 sm:h-12 sm:w-12" aria-hidden>
                 <DeviceSilhouette id={device.id} />
               </svg>
-              <span className="mt-1 block text-center text-[7px] tracking-[0.25em] text-white/50">
+              <span className="mt-1 block text-center text-[7px] tracking-[0.25em] text-white/60">
                 {device.label}
               </span>
             </div>
@@ -106,7 +106,7 @@ export function SignalHorizonVisual({
         {/* Void question — omit on /signal where H1 already asks it */}
         {showVoidQuestion ? (
           <div className="pointer-events-none absolute left-0 right-0 top-[38%] text-center">
-            <p className="text-[9px] tracking-[0.35em] text-white/20 sm:text-[10px]">
+            <p className="text-[9px] tracking-[0.35em] text-white/55 sm:text-[10px]">
               WHAT IS THE NEXT INTERFACE?
             </p>
           </div>
@@ -144,18 +144,18 @@ export function SignalHorizonVisual({
                 <span className="text-[9px] tracking-[0.25em] text-neon-purple">
                   CURXOR OS · ORCHESTRATOR
                 </span>
-                <span className="text-[8px] tracking-widest text-white/30">ON YOUR DESK</span>
+                <span className="text-[8px] tracking-widest text-white/55">ON YOUR DESK</span>
               </div>
 
               <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
                 <div className="space-y-1 text-right">
                   <p className="text-[8px] tracking-[0.2em] text-neon-purple/80">ENO1 · COMMAND</p>
-                  <p className="text-[8px] text-white/35">Telegram · Slack · Flight Command</p>
+                  <p className="text-[8px] text-white/55">Telegram · Slack · Flight Command</p>
                 </div>
 
                 <div className="relative flex h-14 w-24 flex-col items-center justify-center border border-neon-purple/40 bg-[#080808] shadow-[0_0_24px_rgba(191,90,242,0.15)] sm:h-16 sm:w-28">
                   <div className="absolute inset-x-2 top-2 h-0.5 bg-neon-purple/60" />
-                  <span className="text-[8px] font-bold tracking-[0.2em] text-white/70">NEXUS</span>
+                  <span className="text-[8px] font-bold tracking-[0.2em] text-white/70">CURXOR</span>
                   <span className="mt-1 text-[7px] tracking-widest text-neon-purple/70">SIGNAL</span>
                   <div className="absolute bottom-2 flex gap-1">
                     <span className="h-1 w-1 rounded-full bg-neon-purple shadow-[0_0_6px_#BF5AF2]" />
@@ -165,7 +165,7 @@ export function SignalHorizonVisual({
 
                 <div className="space-y-1">
                   <p className="text-[8px] tracking-[0.2em] text-amber-200/80">ENO2 · EGRESS</p>
-                  <p className="text-[8px] text-white/35">Capital · Creator · Outreach</p>
+                  <p className="text-[8px] text-white/55">Capital · Creator · Outreach</p>
                 </div>
               </div>
 
@@ -173,7 +173,7 @@ export function SignalHorizonVisual({
                 {["CAPITAL", "CREATOR", "OUTREACH", "KIN", "VITAL"].map((chip) => (
                   <span
                     key={chip}
-                    className="border border-white/10 px-1.5 py-0.5 text-[7px] tracking-widest text-white/30"
+                    className="border border-white/10 px-1.5 py-0.5 text-[7px] tracking-widest text-white/55"
                   >
                     {chip}
                   </span>
@@ -186,7 +186,7 @@ export function SignalHorizonVisual({
 
       {compact ? (
         <figcaption className="px-4 py-2">
-          <p className="text-[10px] italic tracking-wide text-white/25">
+          <p className="text-[10px] italic tracking-wide text-white/60">
             {signalHorizonCopy.conceptLabel}
           </p>
         </figcaption>
@@ -194,8 +194,8 @@ export function SignalHorizonVisual({
         <figcaption className="space-y-2 px-4 py-3">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">{signalHorizonCopy.eyebrow}</p>
           <p className="text-sm font-medium text-white/80">{signalHorizonCopy.headline}</p>
-          <p className="text-xs leading-relaxed text-white/45">{signalHorizonCopy.subhead}</p>
-          <p className="text-[10px] italic tracking-wide text-white/25">{signalHorizonCopy.conceptLabel}</p>
+          <p className="text-xs leading-relaxed text-white/55">{signalHorizonCopy.subhead}</p>
+          <p className="text-[10px] italic tracking-wide text-white/60">{signalHorizonCopy.conceptLabel}</p>
         </figcaption>
       )}
     </figure>

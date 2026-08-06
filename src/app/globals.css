@@ -14,6 +14,43 @@
   ::selection {
     @apply bg-neon-purple/30 text-white;
   }
+
+  /*
+   * Headline copy is data-driven and varies per slug, so line breaks can't be
+   * tuned by hand. Balance evens out heading lines; pretty keeps body copy from
+   * ending on a single orphaned word. Both degrade to normal wrapping.
+   */
+  h1,
+  h2,
+  h3,
+  blockquote {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  /* Keyboard focus must be visible on an all-black UI. */
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-neon-purple;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
 @layer utilities {
@@ -26,6 +63,78 @@
 
   .border-industrial {
     @apply border border-white/10;
+  }
+
+  /*
+   * Vertical rhythm. Three bands only — pick the one that matches the section's
+   * job, never a one-off py value, or the page drifts back into a dense stack.
+   */
+  .band {
+    @apply py-16 sm:py-20;
+  }
+
+  .band-tight {
+    @apply py-11 sm:py-14;
+  }
+
+  .band-bar {
+    @apply py-4 sm:py-5;
+  }
+
+  /*
+   * Two tiers of small-caps label, matching the existing convention:
+   * 0.3em sits above a page or section heading, 0.25em labels a block inside one.
+   */
+  .eyebrow {
+    @apply text-[10px] uppercase tracking-[0.3em] text-neon-purple;
+  }
+
+  .eyebrow-sub {
+    @apply text-[10px] uppercase tracking-[0.25em] text-neon-purple;
+  }
+
+  .eyebrow-muted {
+    @apply text-[10px] uppercase tracking-[0.25em] text-white/55;
+  }
+
+  /*
+   * Cards are black boxes on a black page — without a hair of lift the border
+   * is the only thing separating them from the background.
+   */
+  .surface {
+    @apply border border-white/10 bg-white/[0.02];
+  }
+
+  .surface-raised {
+    @apply border border-white/10 bg-white/[0.035];
+  }
+
+  .surface-accent {
+    @apply border border-neon-purple/30 bg-neon-purple/[0.03];
+  }
+
+  /*
+   * Bypass block — visible only once focused. Written as plain CSS because
+   * @apply reorders sr-only/not-sr-only against the position utilities.
+   */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip-link:focus {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    @apply border border-neon-purple bg-black px-4 py-3 text-xs font-bold tracking-[0.2em] text-neon-purple;
   }
 
   .text-glow-purple {

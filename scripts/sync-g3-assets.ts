@@ -55,12 +55,14 @@ for (const [srcName, destName] of SCREENSHOT_MAP) {
   if (copyFile(path.join(g3Src, srcName), path.join(demoRoot, "g3", destName))) copied++;
 }
 
-for (const mp4 of [
-  "g3-desk-strip-capital.mp4",
-  "g3-desk-strip-creator.mp4",
-  "g3-desk-strip-work.mp4",
-]) {
-  if (copyFile(path.join(packRoot, "investor-pack", mp4), path.join(demoRoot, "g3", mp4))) copied++;
+// Desk strips keep their unversioned public URL (g3-demo.ts links them) but are
+// sourced from the current -v3 cuts. The unversioned files in the pack are the
+// Jul 8 originals, which predate the desk-crew rebrand and were never remastered.
+for (const desk of ["capital", "creator", "work"]) {
+  const v3 = path.join(packRoot, "investor-pack", `g3-desk-strip-${desk}-v3.mp4`);
+  const legacy = path.join(packRoot, "investor-pack", `g3-desk-strip-${desk}.mp4`);
+  const src = fs.existsSync(v3) ? v3 : legacy;
+  if (copyFile(src, path.join(demoRoot, "g3", `g3-desk-strip-${desk}.mp4`))) copied++;
 }
 
 // Swap A (2026-08-02 picture-lock): prefer v3 remagination → live *-v1 URL

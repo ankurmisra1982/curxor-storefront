@@ -39,3 +39,6 @@ next-env.d.ts
 
 # pitch deck versioned exports (canonical: CurXor-Pitch-Deck-Speaker-Notes.pptx)
 docs/CurXor-Pitch-Deck-Speaker-Notes-v*.pptx
+
+# local design-review screenshots
+.aes/

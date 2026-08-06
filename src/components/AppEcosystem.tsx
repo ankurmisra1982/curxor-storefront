@@ -88,9 +88,9 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
 
   if (variant === "featured") {
     return (
-      <section id="apps" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-14">
+      <section id="apps" className="band relative scroll-mt-24 border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
                 THE STACK
@@ -99,7 +99,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
                 Desk crew + The Forge
               </h2>
             </div>
-            <p className="max-w-sm text-xs text-white/40">
+            <p className="max-w-sm text-xs text-white/55">
               Enable your crew in Settings. Mint custom crewmates from The Forge.
             </p>
           </div>
@@ -115,7 +115,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
               href="/architecture#desk-crew-roster"
               className="text-xs tracking-[0.2em] text-neon-purple hover:underline"
             >
-              FULL ROSTER CHEAT SHEET →
+              FULL DESK CREW ROSTER →
             </Link>
           </div>
         </div>
@@ -124,7 +124,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
   }
 
   return (
-    <section id="apps" className="relative border-t border-white/10 py-12 sm:py-16">
+    <section id="apps" className="band relative border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -135,7 +135,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
               Desk crew
             </h2>
           </div>
-          <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/40">
+          <p className="max-w-sm text-xs leading-relaxed tracking-wide text-white/55">
             126 TOPS running your stack — grouped like Flight Command nav. Depth labels:
             Flagship · Forge · Cafe · Preview.
           </p>
@@ -150,7 +150,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
               <p className="text-[10px] font-bold tracking-[0.2em] text-neon-purple">
                 {tier.label.toUpperCase()}
               </p>
-              <p className="mt-1 text-[11px] leading-relaxed text-white/45">{tier.body}</p>
+              <p className="mt-1 text-[11px] leading-relaxed text-white/55">{tier.body}</p>
             </div>
           ))}
         </div>
@@ -162,7 +162,7 @@ export function AppEcosystem({ variant = "full" }: AppEcosystemProps) {
                 <h3 className="text-sm font-bold tracking-wide text-white/80">
                   {group.label}
                 </h3>
-                <span className="text-[10px] tracking-widest text-white/25">
+                <span className="text-[10px] tracking-widest text-white/55">
                   {group.apps.length} CREWMATE{group.apps.length === 1 ? "" : "S"}
                 </span>
               </div>
@@ -260,7 +260,7 @@ function AppCard({
       </p>
 
       {!compact ? (
-        <p className="mt-2 flex-1 text-xs leading-relaxed text-white/50">
+        <p className="mt-2 flex-1 text-xs leading-relaxed text-white/60">
           {app.description}
         </p>
       ) : null}
@@ -277,7 +277,7 @@ function AppCard({
     return (
       <Link
         href={href}
-        className={`group relative flex flex-col border-industrial bg-black transition-all hover:border-neon-purple/40 ${
+        className={`group relative flex flex-col surface transition-all hover:border-neon-purple/40 ${
           featured ? "p-8" : compact ? "p-5" : "p-6"
         }`}
       >
@@ -288,7 +288,7 @@ function AppCard({
 
   return (
     <article
-      className={`group relative flex flex-col border-industrial bg-black transition-all hover:border-neon-purple/40 ${
+      className={`group relative flex flex-col surface transition-all hover:border-neon-purple/40 ${
         featured ? "p-8" : compact ? "p-5" : "p-6"
       }`}
     >

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
 import { changelogEntries, changelogMeta } from "@/lib/changelog";
 import { siteConfig } from "@/lib/config";
-import { qaMetricsLine } from "@/lib/qa-metrics";
 
 const changelogTitle = `Changelog — ${siteConfig.name}`;
 const changelogDescription =
@@ -37,18 +36,18 @@ export default function ChangelogPage() {
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Changelog
         </h1>
-        <p className="mt-4 text-sm text-white/50">
-          Synced from CurXor OS{" "}
+        <p className="mt-4 text-sm text-white/65">
+          CurXor OS{" "}
           <span className="text-white/70">v{changelogMeta.version}</span> (
-          {changelogMeta.channel}). Last appliance sync:{" "}
+          {changelogMeta.channel}). Updated{" "}
           {new Date(changelogMeta.syncedAt).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric",
           })}
-          . {qaMetricsLine} in curxor-os. MS-S1 MAX unboxed 2026-06-28 — golden
-          path closed Jun 29 (verify script + smile test PASS; COMMAND captive portal
-          + EGRESS mesh live on box).
+          . Validated on the appliance stack. MS-S1 MAX unboxed 2026-06-28 —
+          first full end-to-end run on the box Jun 29 (command portal + egress mesh
+          live).
         </p>
 
         <div className="mt-12 space-y-12">
@@ -61,7 +60,7 @@ export default function ChangelogPage() {
                 <h2 className="text-xl font-bold tracking-tight">
                   v{entry.version}
                 </h2>
-                <span className="text-[10px] tracking-widest text-white/30">
+                <span className="text-[10px] tracking-widest text-white/55">
                   {entry.date} · {entry.channel}
                 </span>
               </div>
@@ -80,17 +79,12 @@ export default function ChangelogPage() {
           ))}
         </div>
 
-        <p className="mt-16 text-xs text-white/40">
+        <p className="mt-16 text-xs text-white/55">
           Buyer-facing release notes and status updates also ship in the{" "}
           <Link href="/journal" className="text-neon-purple hover:underline">
             journal
           </Link>
-          . When CurXor OS bumps{" "}
-          <code className="text-white/50">version.json</code>, run{" "}
-          <code className="text-white/50">npm run sync:appliance</code> — changelog
-          entries auto-sync from{" "}
-          <code className="text-white/50">data/changelog-entries.json</code> and{" "}
-          <code className="text-white/50">curxor-os/release-notes.json</code>.{" "}
+          .{" "}
           <Link href="/" className="text-neon-purple hover:underline">
             ← Back to home
           </Link>

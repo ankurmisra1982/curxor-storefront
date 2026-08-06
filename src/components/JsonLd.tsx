@@ -70,7 +70,20 @@ export function JsonLd({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "CurXor Systems",
+    description: siteConfig.metaDescription,
     url: siteConfig.siteUrl,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteConfig.siteUrl}/brand/curxor-mark-512.png`,
+      width: 512,
+      height: 512,
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: siteConfig.contactEmail,
+      contactType: "sales",
+      availableLanguage: "English",
+    },
     sameAs: socialSameAs,
   };
 

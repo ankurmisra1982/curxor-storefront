@@ -49,9 +49,9 @@ export default function CreatorPage() {
         </p>
         <h1 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
           {creatorPageMeta.hero}{" "}
-          <span className="text-neon-purple">{creatorPageMeta.accent}</span>
+          <span className="text-neon-purple lg:block">{creatorPageMeta.accent}</span>
         </h1>
-        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/65">
           {creatorPageMeta.oneLiner}
         </p>
 
@@ -61,7 +61,7 @@ export default function CreatorPage() {
             secondaryHref="/compare/clawbox"
             secondaryLabel="vs ClawBox"
           />
-          {sam ? <ShareOnX text={sam.shareLine} label="SAM ON X" /> : null}
+          {sam ? <ShareOnX text={sam.shareLine} /> : null}
         </div>
 
         {sam ? (
@@ -72,10 +72,10 @@ export default function CreatorPage() {
 
         <section className="mt-14 overflow-hidden border border-white/10 bg-black">
           <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
-            <span className="text-[10px] tracking-[0.25em] text-white/50">
+            <span className="text-[10px] tracking-[0.25em] text-white/60">
               {creatorWalkthrough.label}
             </span>
-            <span className="border border-white/10 px-2 py-0.5 text-[9px] tracking-widest text-white/40">
+            <span className="border border-white/10 px-2 py-0.5 text-[9px] tracking-widest text-white/55">
               APPROVAL · SCHEDULE
             </span>
           </div>
@@ -83,7 +83,7 @@ export default function CreatorPage() {
             src={creatorWalkthrough.src}
             ariaLabel={creatorWalkthrough.ariaLabel}
           />
-          <p className="px-4 py-3 text-xs leading-relaxed text-white/45">
+          <p className="px-4 py-3 text-xs leading-relaxed text-white/55">
             {creatorWalkthrough.caption}
           </p>
         </section>
@@ -99,7 +99,7 @@ export default function CreatorPage() {
                   STEP {item.step}
                 </p>
                 <h2 className="mt-3 text-sm font-bold">{item.title}</h2>
-                <p className="mt-2 text-xs leading-relaxed text-white/50">
+                <p className="mt-2 text-xs leading-relaxed text-white/60">
                   {item.body}
                 </p>
               </article>
@@ -137,20 +137,20 @@ export default function CreatorPage() {
         </section>
 
         <section className="mt-16">
-          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/55">
             PUBLISH BRIDGES ON ENO2
           </p>
           <div className="flex flex-wrap gap-2">
             {creatorPublishBridges.map((platform) => (
               <span
                 key={platform}
-                className="border border-white/10 px-3 py-2 text-[10px] tracking-widest text-white/50"
+                className="border border-white/10 px-3 py-2 text-[10px] tracking-widest text-white/60"
               >
                 {platform.toUpperCase()}
               </span>
             ))}
           </div>
-          <p className="mt-4 text-xs text-white/40">
+          <p className="mt-4 text-xs text-white/55">
             Drafts stay local. Posts egress only through bridges on eno2.
           </p>
         </section>
@@ -161,7 +161,7 @@ export default function CreatorPage() {
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {creatorFlowShots.map((shot) => (
-              <article key={shot.src} className="border-industrial bg-black p-4">
+              <article key={shot.src} className="surface p-4">
                 <div className="overflow-hidden border border-white/10">
                   <Image
                     src={shot.src}
@@ -174,7 +174,7 @@ export default function CreatorPage() {
                 <h3 className="mt-4 text-sm font-bold text-white/90">
                   {shot.title}
                 </h3>
-                <p className="mt-2 text-xs leading-relaxed text-white/50">
+                <p className="mt-2 text-xs leading-relaxed text-white/60">
                   {shot.body}
                 </p>
               </article>
@@ -182,7 +182,7 @@ export default function CreatorPage() {
           </div>
         </section>
 
-        <section className="mt-14 border border-neon-purple/30 bg-neon-purple/[0.03] p-6 sm:p-8">
+        <section className="mt-14 surface-accent p-6 sm:p-8">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             BEGINNER · STANDARD · EXPERT
           </p>
@@ -199,7 +199,7 @@ export default function CreatorPage() {
             </Link>
             <Link
               href="/#operators"
-              className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
+              className="text-xs tracking-[0.2em] text-white/55 hover:text-neon-purple"
             >
               ALL OPERATORS →
             </Link>

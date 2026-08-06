@@ -46,14 +46,14 @@ export function ValidationBadge({ className = "", compact = false }: ValidationB
           decoding="async"
         />
         <div>
-          <p className="text-[10px] tracking-[0.25em] text-white/40">THE BOX</p>
+          <p className="text-[10px] tracking-[0.25em] text-white/55">THE BOX</p>
           <div className="mt-2 flex items-center gap-3">
             <CurXorLogo variant="wordmark" className="h-5 opacity-95" />
           </div>
           <p className="mt-2 text-sm font-bold text-white/85">
             {productIdentity.chassisNote}
           </p>
-          <p className="mt-2 text-xs leading-relaxed text-white/45 group-hover:text-white/55">
+          <p className="mt-2 text-xs leading-relaxed text-white/55 group-hover:text-white/55">
             {hardwareValidation.badgeSummary}
           </p>
         </div>

@@ -48,7 +48,7 @@ export function JournalIndex({ entries }: { entries: JournalEntry[] }) {
               className={
                 active
                   ? "border border-neon-purple/50 bg-neon-purple/10 px-3 py-1.5 text-[10px] tracking-[0.2em] text-neon-purple"
-                  : "border border-white/10 px-3 py-1.5 text-[10px] tracking-[0.2em] text-white/45 transition-colors hover:border-white/25 hover:text-white/70"
+                  : "border border-white/10 px-3 py-1.5 text-[10px] tracking-[0.2em] text-white/55 transition-colors hover:border-white/25 hover:text-white/70"
               }
             >
               {item.label.toUpperCase()}
@@ -64,7 +64,7 @@ export function JournalIndex({ entries }: { entries: JournalEntry[] }) {
               href={`/journal/${entry.slug}`}
               className="group block py-8 transition-colors hover:bg-white/[0.02]"
             >
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] tracking-[0.25em] text-white/35">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] tracking-[0.25em] text-white/55">
                 <span className="text-neon-purple/80">
                   {journalKindLabel[entry.kind].toUpperCase()}
                 </span>
@@ -88,12 +88,12 @@ export function JournalIndex({ entries }: { entries: JournalEntry[] }) {
       </ul>
 
       {visible.length === 0 ? (
-        <p className="py-10 text-sm text-white/45">No entries in this filter.</p>
+        <p className="py-10 text-sm text-white/65">No entries in this filter.</p>
       ) : null}
 
       <div className="mt-12 border-t border-white/10 pt-8">
-        <p className="text-[10px] tracking-[0.3em] text-white/40">ARCHIVES</p>
-        <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/45">
+        <p className="text-[10px] tracking-[0.3em] text-white/55">ARCHIVES</p>
+        <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/65">
           Journal ships the pieces worth a URL. Full release history and media
           kit stay on their own pages.
         </p>

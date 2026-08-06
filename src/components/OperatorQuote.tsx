@@ -1,4 +1,4 @@
-import type { ClawOperator } from "@/lib/claw-operators";
+import { operatorDisclaimer, type ClawOperator } from "@/lib/claw-operators";
 
 type OperatorQuoteProps = {
   operator: ClawOperator;
@@ -10,12 +10,15 @@ export function OperatorQuote({ operator, compact }: OperatorQuoteProps) {
     return (
       <aside className="border-l-2 border-neon-purple/50 bg-neon-purple/[0.03] px-5 py-4">
         <p className="text-[10px] tracking-[0.2em] text-neon-purple">
-          MEET {operator.name.toUpperCase()}
+          MEET {operator.name.toUpperCase()} · COMPOSITE
         </p>
         <p className="mt-2 text-sm leading-relaxed text-white/70">
           &ldquo;{operator.hook}&rdquo;
         </p>
-        <p className="mt-2 text-[10px] text-white/35">{operator.role}</p>
+        <p className="mt-2 text-[10px] text-white/60">{operator.role}</p>
+        <p className="mt-2 text-[10px] leading-relaxed text-white/60">
+          {operatorDisclaimer}
+        </p>
       </aside>
     );
   }
@@ -30,12 +33,15 @@ export function OperatorQuote({ operator, compact }: OperatorQuoteProps) {
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             MEET {operator.name.toUpperCase()} · {operator.claw}
           </p>
-          <p className="mt-1 text-[10px] tracking-widest text-white/35">
-            {operator.role}
+          <p className="mt-1 text-[10px] tracking-widest text-white/60">
+            {operator.role} · composite
           </p>
           <blockquote className="mt-4 text-base font-medium leading-relaxed text-white/80 sm:text-lg">
             &ldquo;{operator.quote}&rdquo;
           </blockquote>
+          <p className="mt-4 text-[11px] leading-relaxed text-white/60">
+            {operatorDisclaimer}
+          </p>
         </div>
       </div>
     </aside>

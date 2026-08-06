@@ -15,7 +15,7 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
       <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
         {page.headline}
       </h1>
-      <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/50">
+      <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/65">
         {page.lead}
       </p>
 
@@ -31,14 +31,14 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
         />
       </div>
 
-      <p className="mt-10 text-sm leading-relaxed text-white/55">
+      <p className="mt-10 max-w-3xl text-sm leading-relaxed text-white/65">
         {page.positioning}
       </p>
 
       <div className="mt-12 overflow-x-auto border border-white/10">
         <table className="w-full min-w-[520px] border-collapse text-left text-xs">
           <thead>
-            <tr className="border-b border-white/10 bg-white/[0.02] text-[10px] tracking-[0.2em] text-white/35">
+            <tr className="border-b border-white/10 bg-white/[0.02] text-[10px] tracking-[0.2em] text-white/55">
               <th className="p-4 font-normal">FEATURE</th>
               <th className="p-4 font-normal">{page.themLabel.toUpperCase()}</th>
               <th className="p-4 font-normal text-neon-purple">CURXOR</th>
@@ -48,7 +48,7 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
             {page.rows.map((row) => (
               <tr key={row.label} className="border-b border-white/10">
                 <td className="p-4 font-bold text-white/75">{row.label}</td>
-                <td className="p-4 text-white/50">{row.them}</td>
+                <td className="p-4 text-white/60">{row.them}</td>
                 <td className="p-4 text-white/80">{row.curxor}</td>
               </tr>
             ))}
@@ -58,14 +58,14 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         <div className="border-industrial p-6">
-          <p className="text-[10px] tracking-[0.25em] text-white/35">
+          <p className="text-[10px] tracking-[0.25em] text-white/55">
             CHOOSE {page.themLabel.toUpperCase()}
           </p>
           <p className="mt-3 text-sm leading-relaxed text-white/55">
             {page.whoShouldBuyThem}
           </p>
         </div>
-        <div className="border border-neon-purple/30 bg-neon-purple/[0.03] p-6">
+        <div className="surface-accent p-6">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">
             CHOOSE CURXOR
           </p>
@@ -76,7 +76,7 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
       </div>
 
       <section className="mt-16">
-        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/55">
           MORE COMPARISONS
         </p>
         <div className="flex flex-wrap gap-3">
@@ -86,7 +86,7 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
               <Link
                 key={other.slug}
                 href={`/compare/${other.slug}`}
-                className="border border-white/10 px-4 py-2 text-[10px] tracking-widest text-white/50 transition-colors hover:border-neon-purple/40 hover:text-neon-purple"
+                className="border border-white/10 px-4 py-2 text-[10px] tracking-widest text-white/60 transition-colors hover:border-neon-purple/40 hover:text-neon-purple"
               >
                 {other.title.toUpperCase()}
               </Link>
@@ -95,7 +95,7 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
       </section>
 
       <section className="mt-10 border-t border-white/10 pt-8">
-        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/35">
+        <p className="mb-4 text-[10px] tracking-[0.25em] text-white/55">
           JOURNAL
         </p>
         <ul className="flex flex-col gap-3">
@@ -128,7 +128,7 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
           <li>
             <Link
               href="/journal"
-              className="text-sm text-white/50 hover:text-neon-purple"
+              className="text-sm text-white/60 hover:text-neon-purple"
             >
               All journal →
             </Link>
@@ -136,17 +136,14 @@ export function ComparePageContent({ page }: { page: ComparePage }) {
         </ul>
       </section>
 
-      <p className="mt-12">
+      <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/10 pt-8">
         <Link href="/compare" className="text-sm text-neon-purple hover:underline">
           ← All comparisons
         </Link>
-      </p>
-
-      <p className="mt-4">
         <Link href="/" className="text-sm text-neon-purple hover:underline">
           ← Back to home
         </Link>
-      </p>
+      </div>
     </div>
   );
 }

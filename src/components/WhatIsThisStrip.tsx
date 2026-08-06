@@ -11,8 +11,8 @@ const columns = [
 export function WhatIsThisStrip() {
   return (
     <section id="what-is-this" className="border-t border-white/10 bg-black/40">
-      <div className="mx-auto max-w-7xl px-6 py-8 sm:py-10">
-        <p className="mb-6 text-[10px] tracking-[0.3em] text-neon-purple">WHAT IS THIS?</p>
+      <div className="band-tight mx-auto max-w-7xl px-6">
+        <p className="eyebrow mb-6">What is this?</p>
 
         <div className="grid gap-6 md:grid-cols-3 md:gap-6">
           {columns.map((column) => (

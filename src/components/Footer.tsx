@@ -12,7 +12,7 @@ export function Footer() {
   const { shortPair } = missionVision;
 
   return (
-    <footer id="subscribe" className="relative scroll-mt-24 border-t border-white/10 py-12 sm:py-14">
+    <footer id="subscribe" className="band-tight relative scroll-mt-24 border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 max-w-2xl border-b border-white/10 pb-8">
           <p className="text-xs leading-relaxed text-white/55">
@@ -69,16 +69,16 @@ export function Footer() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-[10px] tracking-widest text-white/50 transition-colors hover:text-neon-purple"
+                    className="text-[10px] tracking-widest text-white/60 transition-colors hover:text-neon-purple"
                   >
                     {link.label.toUpperCase()}
                   </Link>
                 ))}
               </nav>
-              <p className="mt-4 text-[10px] tracking-[0.2em] text-white/50">
+              <p className="mt-4 text-[10px] tracking-[0.2em] text-white/60">
                 {socialProofLine}
               </p>
-              <p className="mt-4 text-[10px] tracking-[0.3em] text-white/50">
+              <p className="mt-4 text-[10px] tracking-[0.3em] text-white/60">
                 © {new Date().getFullYear()} CURXOR SYSTEMS
               </p>
             </div>

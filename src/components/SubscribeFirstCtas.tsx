@@ -28,14 +28,14 @@ export function SubscribeFirstCtas({
         <div className="flex flex-wrap items-center gap-4">
           <TrackedPreorderLink
             location={preorderLocation}
-            className="text-xs tracking-[0.2em] text-white/50 transition-colors hover:text-neon-purple"
+            className="text-xs tracking-[0.2em] text-white/60 transition-colors hover:text-neon-purple"
           >
             Pre-order · {siteConfig.preOrderPrice} →
           </TrackedPreorderLink>
           {secondaryHref && secondaryLabel ? (
             <Link
               href={secondaryHref}
-              className="text-xs tracking-[0.2em] text-white/50 transition-colors hover:text-neon-purple"
+              className="text-xs tracking-[0.2em] text-white/60 transition-colors hover:text-neon-purple"
             >
               {secondaryLabel} →
             </Link>
@@ -45,24 +45,27 @@ export function SubscribeFirstCtas({
     );
   }
 
+  // Stacks to equal-width buttons on mobile; ragged intrinsic widths look broken there.
   return (
-    <div className={`flex flex-wrap items-center gap-4 ${className}`}>
+    <div
+      className={`flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 ${className}`}
+    >
       <Link
         href="/#subscribe"
-        className="inline-flex bg-neon-purple px-6 py-4 text-xs font-bold tracking-[0.2em] text-black transition-all hover:bg-neon-glow"
+        className="inline-flex justify-center bg-neon-purple px-6 py-4 text-xs font-bold tracking-[0.2em] text-black transition-all hover:bg-neon-glow"
       >
         JOIN WAITLIST
       </Link>
       <TrackedPreorderLink
         location={preorderLocation}
-        className="border-industrial px-6 py-4 text-xs tracking-[0.2em] text-white/60 hover:text-neon-purple"
+        className="border-industrial px-6 py-4 text-center text-xs tracking-[0.2em] text-white/60 hover:text-neon-purple"
       >
         PRE-ORDER {siteConfig.preOrderPrice}
       </TrackedPreorderLink>
       {secondaryHref && secondaryLabel ? (
         <Link
           href={secondaryHref}
-          className="px-2 py-4 text-xs tracking-[0.2em] text-white/45 transition-colors hover:text-neon-purple"
+          className="px-2 py-2 text-center text-xs tracking-[0.2em] text-white/55 transition-colors hover:text-neon-purple sm:py-4 sm:text-left"
         >
           {secondaryLabel} →
         </Link>

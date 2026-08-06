@@ -6,17 +6,16 @@ import {
   socialProfiles,
 } from "./config";
 import { categoryFilmAssets } from "./g3-demo";
-import { qaMetricsLine } from "./qa-metrics";
 
-export const metricsCiteCard = `Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA BIOS
+export const metricsCiteCard = `Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA allocated in BIOS
 OS: Ubuntu 24.04 · CurXor OS v1.0.3
 Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
 RAM in use: 4.56 / 64 GB · UMA 7.1%
 Dashboard: Flight Command on LAN :3080
-QA: 239 smoke · demo capture unit green
+QA: appliance suite green · demo capture unit green
 Pricing: $3,999 once · $0/mo operate-plane API
-Stage: Working product on MS-S1 MAX · founder-box ops green · design-partner sessions done (private) · pre-revenue · solo founder
-Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · Wave 1 dogfood 7/7 Jul 9`;
+Stage: Working product on MS-S1 MAX · founder MS-S1 bridges proven · design-partner sessions done (private) · pre-revenue · solo founder
+Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · seven bridges proven Jul 9`;
 
 export const investorDeckMailto =
   "mailto:hello@curxor.ai?subject=Investor%20inquiry%20%E2%80%94%20CurXor";
@@ -42,7 +41,7 @@ export const pressKit = {
   investorIntro: {
     eyebrow: "COMPANY",
     headline: "Sovereign agent appliance — working product on real MS-S1 metal.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; golden path closed the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, FRE (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s on ROCm), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder box (Google · Alpaca paper · Bluesky · Telegram · Discord · X — ops dogfood receipts; Capital stays paper). Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
+    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; first full end-to-end run on the box the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, flagship desks (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s measured on ROCm on the founder MS-S1), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder MS-S1 (Google · Alpaca paper · Bluesky · Telegram · Discord · X — Capital stays paper). Design partners have completed remote walkthrough sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
   },
 
   founders: {
@@ -52,7 +51,7 @@ export const pressKit = {
       {
         name: "Ankur",
         role: "Founder & CEO",
-        bio: "Vision, GTM, and customer trust. Building the category: mint autonomous employees on bare metal — not another chat subscription.",
+        bio: "Vision, go-to-market, and customer trust. Building the category: mint autonomous employees on bare metal — not another chat subscription.",
       },
     ],
     technicalCoFounderLine:
@@ -65,12 +64,12 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **v1.0.3**, Ollama ROCm on Standard 64 (qwen3:8b · 38 tok/s)",
+          "MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **v1.0.3**, Ollama ROCm on Standard 64 (qwen3:8b · 38 tok/s measured on the founder box)",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**FRE green** on bare metal — Capital, Creator, Work provisioned · Flight Command live on box",
+          "**Flagship desks green** on bare metal — Capital, Creator, Outreach provisioned · Flight Command live on box",
       },
       {
         status: "Shipped" as const,
@@ -80,38 +79,38 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**Demo captures closed** (2026-07-08) — inception reel, investor proof, desk strips, screenshot pack on MS-S1",
+          "**Demo captures closed** (2026-07-08) — product proof film, investor proof, desk strips, screenshot pack on MS-S1",
         href: "/#demo",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Agent runtime, unified comms gateways, Build Plane delegation queue in software",
+          "Agent runtime, unified comms gateways, and build-delegation queue in software",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**239** smoke + **40** user-flow QA checks in curxor-os (`qa:local` suite)",
+          "Appliance QA suite green on CurXor OS — automated and user-flow coverage on box",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Storefront GTM at curxor.ai — symphony model, investor press kit, polish waves, validation surfaces mirrored, Resend waitlist + Stripe pre-order",
+          "Storefront at curxor.ai — investor press kit, validation surfaces, waitlist + Stripe pre-order",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**Golden path closed** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, `verify-unbox-day.sh` PASS, smile test PASS, telemetry broker on 10.77.0.1",
+          "**First full run end to end on the box** (2026-06-29) — eno1/eno2 captive portal + EGRESS mesh on box, unbox verification passed, operator walkthrough passed, telemetry broker on local mesh",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "**Priority ops bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder box (dogfood 7/7; Capital paper-only)",
+          "**Priority bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder MS-S1 (seven bridges proven; Capital paper-only)",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Design partners completed remote golden-path sessions on the founder MS-S1 (creator and trader desks) — feedback private; not a customer fleet; not closed traction",
+          "Design partners completed remote walkthrough sessions on the founder MS-S1 (creator and trader desks) — feedback private; not a customer fleet; not closed traction",
       },
       {
         status: "Pending" as const,
@@ -119,7 +118,7 @@ export const pressKit = {
       },
     ],
     footnote:
-      "Desk captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Work pipeline. Priority bridges are proven on the founder box with real receipts — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
+      "Desk captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Outreach pipeline. Priority bridges are proven on the founder MS-S1 — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
     footnoteLink: { href: "/terms", label: "Terms — Software maturity" },
   },
 
@@ -148,14 +147,14 @@ export const pressKit = {
   whyCurXor: [
     "Category creation — independent computer for digital employees, not DIY Ollama or SaaS agents",
     "Sovereignty story — eno1 command · eno2 egress only · physical kill switch",
-    "Software-led proof — FRE, local inference, and golden path on unboxed MS-S1",
+    "Software-led proof — flagship desks, local inference, and a full end-to-end run on unboxed MS-S1",
     "Honest depth tiers — Flagship · Forge · Cafe · Preview on every crewmate",
     "Viral loop — The Forge mints custom crewmates without per-token billing",
   ],
 
   changelog: {
     headline: "Recent releases",
-    lead: "CurXor OS ship velocity — synced from appliance. Full history at",
+    lead: "CurXor OS ship velocity. Full history at",
     link: { href: "/changelog", label: "/changelog" },
     /** How many version blocks to surface on press (newest first). */
     showCount: 3,
@@ -167,7 +166,7 @@ export const pressKit = {
       {
         href: "/#demo",
         label: "Desk gallery",
-        why: "MS-S1 Flight Command captures — Capital paper · Creator queue · Work pipeline",
+        why: "MS-S1 Flight Command captures — Capital paper · Creator queue · Outreach pipeline",
       },
       {
         href: "/pricing#compute-ladder",
@@ -187,7 +186,7 @@ export const pressKit = {
       {
         href: "/changelog",
         label: "Changelog",
-        why: "Ship velocity — synced from CurXor OS",
+        why: "Ship velocity — CurXor OS release notes",
       },
       {
         href: "/compare",
@@ -233,7 +232,7 @@ export const pressKit = {
   },
 
   maturityDisclaimer:
-    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — by Jul 8: FRE, local inference, investor proof pack, and desk strips validated on Standard 64. Capital supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier crewmates are working shells with local data — production depth ships on the appliance roadmap.",
+    "CurXor does not guarantee investment returns, trading performance, or benchmark superiority over cloud APIs. Published mesh latency benchmarks are not yet available — topology is verified on box, not sub-millisecond marketing. MS-S1 unboxed Jun 28, 2026 — by Jul 8: flagship desks, local inference, investor proof pack, and desk strips validated on Standard 64. Capital supports paper and live trading via operator-configured Alpaca bridges — strategy risk is yours. Creator and Outreach outbound actions require explicit operator approval. Preview-tier crewmates are working shells with local data — production depth ships on the appliance roadmap.",
 
   facts: [
     { label: "Company", value: "CurXor Systems" },
@@ -254,17 +253,17 @@ export const pressKit = {
     },
     {
       label: "QA",
-      value: `${qaMetricsLine} (curxor-os qa:local)`,
+      value: "Appliance QA suite green on CurXor OS",
     },
     {
       label: "Hardware",
       value:
-        "MS-S1 MAX Standard 64 — unboxed 2026-06-28 · UMA 48 GB · FRE + ROCm inference validated on box",
+        "MS-S1 MAX Standard 64 — unboxed 2026-06-28 · 48 GB UMA allocated in BIOS on the 64 GB SKU · flagship desks + ROCm inference validated on box",
     },
     {
       label: "Validation",
       value:
-        "Golden path closed Jun 29 — dual-port topology verified · see /architecture#validation",
+        "First full run end to end on the box Jun 29 — dual-port topology verified · see /architecture#validation",
     },
     {
       label: "Desk crew roster",
@@ -323,37 +322,37 @@ export const pressKit = {
     {
       label: "Category vision film (~91s MP4)",
       path: categoryFilmAssets.heroCategoryBadge,
-      note: "Badge v5.01 · LIVE SEND · desk crew · always-on · approval gate · concept comps + VO",
+      note: "Desk crew · always-on life · approval gate — vision comps with voiceover",
     },
     {
       label: "Category vision short (~62s MP4)",
       path: categoryFilmAssets.heroCategoryBadgeShort,
-      note: "Badge v4 · short alternate for cold / short asks",
+      note: "Shorter version of the category vision film",
     },
     {
       label: "Product proof film (~89s MP4)",
       path: categoryFilmAssets.inceptionReel,
-      note: "Warm intro · inception reel (Swap A of locked v3 → stable *-v1 URL)",
+      note: "Onboarding through Capital, Creator, and Outreach on real MS-S1 metal",
     },
     {
       label: "Category film (/signal)",
       path: "/signal#category-film",
-      note: "Vision (~91s) default + product proof · diligence on press only",
+      note: "Category vision (~91s) + product proof — watch on site",
     },
     {
       label: "Investor proof (~2:50 MP4)",
       path: categoryFilmAssets.investorProof,
-      note: "Desk montage with VO — diligence async follow-up",
+      note: "Longer desk montage with voiceover — for media and investor outreach",
     },
     {
       label: "Pitch deck background loop (15s MP4)",
       path: categoryFilmAssets.deckLoop,
-      note: "Silent Layer C loop — cold open → XOR → conductor glance → box pullback",
+      note: "Silent background loop for decks — open → mark → conductor → box",
     },
     {
       label: "Press kit (ZIP)",
       path: "/press/curxor-press-kit-g3.zip",
-      note: "Hero film comp plates + metrics cite card",
+      note: "Press kit ZIP — film plates + metrics cite card",
     },
     {
       label: "Operator quick reference (PDF)",
@@ -366,7 +365,7 @@ export const pressKit = {
       note: "Full OS guide export · 2026-08-02",
     },
     {
-      label: "Product still A (Act I)",
+      label: "Product still A",
       path: "/demo/hardware/product-still-a-act1.png",
       note: "MS-S1 class elevated still — not factory photography",
     },
@@ -381,14 +380,14 @@ export const pressKit = {
       note: "Close / LinkedIn brochure flip — not factory photography",
     },
     {
-      label: "Hero film comp plates",
+      label: "Hero film stills",
       path: "/demo/hero-film/01-conductor-glance@2x.png",
-      note: "7× @2x PNGs in /demo/hero-film/",
+      note: "Film stills in /demo/hero-film/",
     },
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
-    { label: "Desk gallery", path: "/#demo", note: "MS-S1 captures — Capital paper · Creator queue · Work pipeline" },
+    { label: "Desk gallery", path: "/#demo", note: "MS-S1 captures — Capital paper · Creator queue · Outreach pipeline" },
     { label: "Outreach tour", path: "/outreach", note: "Desk strip + pipeline capture" },
-    { label: "Capital tour", path: "/capital", note: "Paper Capital walkthrough · desk-crew chrome" },
+    { label: "Capital tour", path: "/capital", note: "Paper Capital walkthrough on the appliance" },
     { label: "Creator tour", path: "/creator", note: "Creator walkthrough · approval / schedule honesty" },
     { label: "Install video", path: "/architecture#validation", note: "Factory USB production batch — not published yet" },
   ],

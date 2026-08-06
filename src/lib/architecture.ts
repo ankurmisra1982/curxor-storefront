@@ -4,10 +4,11 @@ import { productStills } from "@/lib/product-stills";
 export const hardwareValidation = {
   unboxDate: "2026-06-28",
   g1ClosedDate: "2026-06-29",
-  badgeAriaLabel: "curXor — MS-S1 unboxed · golden path closed",
+  badgeAriaLabel:
+    "curXor — MS-S1 unboxed and running end to end on real metal",
   badgeSummary:
-    "MS-S1 MAX unboxed Jun 28, 2026. Golden path closed Jun 29 — depth wave and demo captures closed Jul 2026. CurXor OS v1.0.3, FRE, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
-  /** Act I product still — elevated plate, not factory photography. */
+    "MS-S1 MAX unboxed Jun 28, 2026. First full run end to end on the box the next day — demo captures closed Jul 2026. CurXor OS v1.0.3, flagship desks, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
+  /** Elevated product still — not factory photography. */
   deskStill: {
     src: productStills.a.src,
     alt: productStills.a.alt,
@@ -25,25 +26,25 @@ export const hardwareValidation = {
   },
 
   computeBenchNote:
-    "126 TOPS local NPU — ROCm inference validated on Standard 64 (moondream:1.8b, qwen3:8b); published mesh benchmarks pending",
+    "126 TOPS local NPU — ROCm inference validated on Standard 64; moondream:1.8b + qwen3.5:9b is the current default stack; published mesh benchmarks pending",
   telemetryNote:
-    "Telemetry broker live on mesh (10.77.0.1:9100–9201) — dual-port topology verified on box; published latency numbers pending",
+    "Telemetry broker live on the local mesh — dual-port topology verified on box; published latency numbers pending",
   doneOnBox: {
     eyebrow: "DONE ON BOX",
     items: [
-      "Ubuntu 24.04 install · UMA 48 GB · CurXor OS v1.0.3 on MS-S1 MAX Standard 64",
-      "Ollama ROCm live — moondream:1.8b + qwen3:8b (Standard 64 stack)",
-      "FRE complete — Capital, Creator, Work · Flight Command live on bare metal",
-      "eno1/eno2 cabling — COMMAND captive portal + EGRESS mesh scripts on verified ports",
-      "verify-unbox-day.sh --post-models — PASS (0 failures, 4 warnings)",
-      "Smile test — PASS",
-      "Telemetry broker active on mesh — 10.77.0.1:9100–9201",
+      "Ubuntu 24.04 install · 48 GB UMA allocated in BIOS on the 64 GB SKU · CurXor OS v1.0.3 on MS-S1 MAX Standard 64",
+      "Ollama ROCm live — validated at unbox on qwen3:8b; moondream:1.8b + qwen3.5:9b is the current default stack",
+      "Flagship desks complete — Capital, Creator, Outreach · Flight Command live on bare metal",
+      "eno1/eno2 cabling — COMMAND captive portal + EGRESS mesh on verified ports",
+      "Unbox verification passed",
+      "Operator walkthrough passed",
+      "Telemetry broker active on the local mesh",
     ],
   },
   g1Closed: {
-    eyebrow: "GOLDEN PATH",
+    eyebrow: "END-TO-END ON THE BOX",
     items: [
-      "Golden path complete — closed Jun 29, 2026",
+      "First full run start to finish on real metal — Jun 29, 2026",
       "Dual-port topology verified on MS-S1 MAX hardware",
       "COMMAND captive portal + EGRESS mesh live on box",
     ],
@@ -53,15 +54,15 @@ export const hardwareValidation = {
     items: [
       "More design-partner sessions — feedback stays private; not closed traction",
       "Published mesh latency benchmarks — not marketing guesses",
-      "Category hero merge · production OTA fleet artifact when ready",
+      "Production customer-fleet OTA when ready",
     ],
   },
   opsWave1: {
-    eyebrow: "OPS WAVE 1 · FOUNDER BOX",
+    eyebrow: "PRIORITY BRIDGES",
     items: [
       "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
-      "Dogfood 7/7 Jul 9 — ops@ receipts · not a customer fleet · Capital stays paper",
-      "Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
+      "Seven bridges proven Jul 9 on the founder MS-S1 — not a customer fleet · Capital stays paper",
+      "Design partners have completed remote walkthrough sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
       "Live brokerage fills and autonomous publish fleets are not claimed",
     ],
   },
@@ -87,7 +88,7 @@ export const architectureContent = {
       name: "Engine",
       path: "pillar-2-engine/",
       role: "OpenClaw agent loop — workspace memory, skills, heartbeat scheduler, and channel gateway.",
-      detail: "Capital, Creator, Outreach, and Forge crewmates execute via dedicated bridges. Crew Cafe tracks cross-crew growth from real operator events. Dashboard chat and Telegram, Slack, WhatsApp, or iMessage share one router synced to CCP — you configure which gateways to enable.",
+      detail: "Capital, Creator, Outreach, and Forge crewmates execute via dedicated bridges. Crew Cafe tracks cross-crew growth from real operator events. Dashboard chat and Telegram, Slack, WhatsApp, or iMessage share one router synced to crew context — you configure which gateways to enable.",
     },
     {
       id: "telemetry",
@@ -119,9 +120,9 @@ export const architectureContent = {
     },
   ],
   bridges: [
-    "capital.execute_trade → Alpaca paper/live via Python bridge on eno2",
-    "content.publish_post → X, LinkedIn, Meta, YouTube, TikTok, and more via Python bridges on eno2",
-    "Channel router → Telegram, Slack, WhatsApp, iMessage — local inference, CCP inbox sync",
+    "Capital trade path → Alpaca paper/live via bridge on eno2",
+    "Creator publish path → X, LinkedIn, Meta, YouTube, TikTok, and more via bridges on eno2",
+    "Channel router → Telegram, Slack, WhatsApp, iMessage — local inference, crew-context inbox sync",
     "Your LLM never talks to the internet — dedicated bridges and gateways handle egress",
   ],
   principles: [

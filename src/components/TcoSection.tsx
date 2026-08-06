@@ -3,7 +3,7 @@ import { tcoScenarios } from "@/lib/marketing";
 
 export function TcoSection() {
   return (
-    <section id="tco" className="relative border-t border-white/10 py-12 sm:py-14">
+    <section id="tco" className="band relative border-t border-white/10">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-8 max-w-2xl">
           <p className="mb-2 text-[10px] tracking-[0.3em] text-neon-purple">
@@ -13,7 +13,7 @@ export function TcoSection() {
             {tcoScenarios.headline}
             <InfoTip tipId="illustrativeSpend" className="mt-1" />
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-white/50">
+          <p className="mt-4 text-sm leading-relaxed text-white/65">
             {tcoScenarios.subhead}
           </p>
         </div>
@@ -21,7 +21,7 @@ export function TcoSection() {
         <div className="overflow-x-auto">
           <table className="w-full min-w-[640px] border-collapse text-left text-xs">
             <thead>
-              <tr className="border-b border-white/10 text-[10px] tracking-[0.2em] text-white/35">
+              <tr className="border-b border-white/10 text-[10px] tracking-[0.2em] text-white/55">
                 <th className="py-4 pr-4 font-normal">SCENARIO</th>
                 <th className="py-4 pr-4 font-normal">UPFRONT</th>
                 <th className="py-4 pr-4 font-normal">MONTHLY</th>
@@ -53,14 +53,14 @@ export function TcoSection() {
                   >
                     {row.fourYear}
                   </td>
-                  <td className="py-4 text-white/45">{row.note}</td>
+                  <td className="py-4 text-white/55">{row.note}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        <p className="mt-6 text-[10px] leading-relaxed text-white/30">
+        <p className="mt-6 text-[10px] leading-relaxed text-white/55">
           {tcoScenarios.methodology}
         </p>
       </div>

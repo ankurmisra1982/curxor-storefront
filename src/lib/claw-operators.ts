@@ -27,9 +27,9 @@ export const clawOperators: ClawOperator[] = [
     name: "Alex",
     role: "Agency founder · NYC",
     claw: "Outreach",
-    eyebrow: "WORK · L2–L3",
+    eyebrow: "WORK",
     title: "The solo operator",
-    hook: "Pipeline on metal. Pull eno2 when you need cold.",
+    hook: "Pipeline on metal. Pull eno2 when you need the kill switch.",
     quote:
       "Twelve clients, one appliance. Outreach pauses sequences on reply before I pour coffee — no HubSpot rent, no token meter.",
     body: "Run Outreach sequences, Creator pipelines, and Capital rules from one desk. Local inference. Outbound on egress you control.",
@@ -37,7 +37,7 @@ export const clawOperators: ClawOperator[] = [
     cta: "See how it works",
     ctaHref: "#how-it-works",
     shareLine:
-      "Unplug eno2, outbound stops cold. That's the whole pitch. @curxorai",
+      "Unplug eno2, outbound stops. That's the whole pitch. @curxorai",
     tourHref: "/outreach",
     personaHref: "/for/agencies",
     demo: g3Screenshots.workPipeline,
@@ -48,7 +48,7 @@ export const clawOperators: ClawOperator[] = [
     name: "Sam",
     role: "Indie creator · Berlin",
     claw: "Creator",
-    eyebrow: "GROWTH · L2–L3",
+    eyebrow: "GROWTH",
     title: "The creator who ships",
     hook: "Draft local. Ship on your signal.",
     quote:
@@ -69,7 +69,7 @@ export const clawOperators: ClawOperator[] = [
     name: "Jordan",
     role: "Solo quant · Austin",
     claw: "Capital",
-    eyebrow: "WEALTH · L2–L4",
+    eyebrow: "WEALTH",
     title: "The rules-first builder",
     hook: "Rules on metal. No API invoice.",
     quote:
@@ -93,6 +93,10 @@ export const operatorsSection = {
   subhead:
     "Composite operator stories — the grammar gap in human terms. Not paid endorsements; product proof in the desk tour above.",
 } as const;
+
+/** Must appear anywhere an operator quote renders — these people are not customers. */
+export const operatorDisclaimer =
+  "Composite operator — illustrative pre-launch story, not a customer testimonial.";
 
 export function getOperator(id: ClawOperator["id"]): ClawOperator | undefined {
   return clawOperators.find((op) => op.id === id);

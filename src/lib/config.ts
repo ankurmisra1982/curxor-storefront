@@ -99,7 +99,7 @@ export const computePower = {
   badge: "126 TOPS · 64GB UMA · RYZEN AI MAX+ 395",
   headline: "The Powerhouse",
   subhead:
-    "126 TOPS NPU on your desk — validated on Standard 64. Mesh benchmarks after G1 publish.",
+    "126 TOPS NPU on your desk — validated on Standard 64. Published mesh benchmarks pending.",
   stats: [
     { value: "126", unit: "TOPS", label: "NPU INFERENCE" },
     { value: "64", unit: "GB", label: "LPDDR5X UMA" },
@@ -114,16 +114,32 @@ export const computePower = {
 } as const;
 
 export {
-  apps,
   applianceVersion,
   applianceChannel,
   applianceSyncedAt,
   clawCategoryLabels,
   clawCategoryOrder,
-  type StorefrontApp,
 } from "./generated/appliance-sync";
 
 import { apps as syncedApps } from "./generated/appliance-sync";
+
+type SyncedApp = (typeof syncedApps)[number];
+
+/** Public app card — description may be buyer-overlaid vs appliance sync. */
+export type StorefrontApp = Omit<SyncedApp, "description"> & {
+  description: string;
+};
+
+/** Buyer overlay — appliance sync may still carry internal milestone codes in descriptions. */
+export const apps: StorefrontApp[] = syncedApps.map((app) =>
+  app.applianceId === "my-learn"
+    ? {
+        ...app,
+        description:
+          "Tutor desk — pick a learner from Kin, track curriculum progress, and earn Cafe XP when depth ships. Honest Preview shell today.",
+      }
+    : app,
+);
 
 /** Synced workspace count excluding The Forge — internal only; includes Cafe/horizon apps. */
 export const clawVerticalCount = syncedApps.filter(
@@ -155,7 +171,7 @@ export const faqItems = [
   {
     question: "How is CurXor different from OpenClaw?",
     answer:
-      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Outreach), The Forge, Crew Cafe, and an eno2 egress kill switch OOTB. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare · Status: curxor.ai/journal/working-product-on-real-metal.",
+      "OpenClaw is a free assistant runtime — you supply hardware, install the stack, and harden security yourself. CurXor is the appliance product: CurXor OS, vertical desks (Capital, Creator, Outreach), The Forge, Crew Cafe, and an eno2 egress kill switch day one. Not OpenClaw packaging on a Mac Mini. Deep dive: curxor.ai/compare · Status: curxor.ai/journal/working-product-on-real-metal.",
   },
   {
     question: "How is CurXor different from a €549 assistant box?",
@@ -209,7 +225,7 @@ export const faqItems = [
   {
     question: "What does Outreach do on day one?",
     answer:
-      "Outreach is a Flagship desk: persona levels L1–L3, sequences, CSV import, deliverability checks, approval flows, and outbound analytics. Demo tour simulates sends until you connect mail and CRM bridges on eno2.",
+      "Outreach is a Flagship desk: sequences, CSV import, deliverability checks, approval flows, and outbound analytics. Demo tour simulates sends until you connect mail and CRM bridges on eno2.",
   },
   {
     question: "Can Vital sync with my smartwatch or health apps?",
@@ -224,7 +240,7 @@ export const faqItems = [
   {
     question: "How is CurXor different from NVIDIA NemoClaw?",
     answer:
-      "NemoClaw is an alpha governance layer for DIY OpenClaw deployments — sandboxing, policies, and model routing on hardware you bring. CurXor is a complete appliance product: curated OOTB crewmates, local inference by default, optional frontier LLMs in Settings, and a physical eno2 egress kill switch — without assembling the stack yourself.",
+      "NemoClaw is an alpha governance layer for DIY OpenClaw deployments — sandboxing, policies, and model routing on hardware you bring. CurXor is a complete appliance product: curated day-one crewmates, local inference by default, optional frontier LLMs in Settings, and a physical eno2 egress kill switch — without assembling the stack yourself.",
   },
   {
     question: "How is CurXor different from Perplexity Personal Computer?",
@@ -249,12 +265,12 @@ export const faqItems = [
   {
     question: "Who is CurXor NOT for?",
     answer:
-      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need every crewmate production-complete on day one — five are honest Coming Soon previews; Capital, Creator, and Outreach are the demo-ready desks.",
+      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need every crewmate production-complete on day one — eight are honest Coming Soon previews; Capital, Creator, and Outreach are the demo-ready desks.",
   },
   {
     question: "Which crewmates actually work today?",
     answer:
-      "Outreach, Creator, Capital, and The Forge are flagship depth with exit-demo proof. Kin, Vital, Signal, Swarm, and Arbitrage include preview or Coming Soon surfaces — labeled honestly in Flight Command. Crew Cafe is the universal spatial home (pixel room, ascension); Engage is the Creator inbox tab.",
+      "Outreach, Creator, Capital, and The Forge are flagship depth with demo-tour proof on metal. Kin, Vital, Signal, Swarm, and Arbitrage include preview or Coming Soon surfaces — labeled honestly in Flight Command. Crew Cafe is the universal spatial home (pixel room, ascension); Engage is the Creator inbox tab.",
   },
 ] as const;
 

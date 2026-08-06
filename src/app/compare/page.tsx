@@ -45,7 +45,7 @@ export default function CompareHubPage() {
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Compare CurXor
         </h1>
-        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/50">
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/65">
           Honest comparisons for operators evaluating alternatives — light
           assistants, cloud orchestration, independent computers, DIY inference,
           and governance stacks. For longer takes, see the{" "}
@@ -72,7 +72,7 @@ export default function CompareHubPage() {
                 <h2 className="mt-2 text-lg font-bold group-hover:text-neon-purple">
                   {page.title}
                 </h2>
-                <p className="mt-2 text-xs leading-relaxed text-white/45">
+                <p className="mt-2 max-w-3xl text-xs leading-relaxed text-white/60">
                   {page.lead}
                 </p>
               </Link>
@@ -81,7 +81,7 @@ export default function CompareHubPage() {
         </ul>
 
         <div className="mt-12 border-t border-white/10 pt-8">
-          <p className="text-[10px] tracking-[0.3em] text-white/40">JOURNAL</p>
+          <p className="text-[10px] tracking-[0.3em] text-white/55">JOURNAL</p>
           <ul className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6">
             <li>
               <Link

@@ -3,7 +3,7 @@
 import { g3Screenshots } from "@/lib/g3-demo";
 
 export const actOneStory = {
-  eyebrow: "ACT I · WHAT YOU BUY",
+  eyebrow: "WHAT YOU BUY",
   headline: "Three crewmates you'll run in week one",
   subhead:
     "Digital employees on your metal — a desk crew of ten plus The Forge. Capital, Creator, and Outreach are your buy decision — demo-ready on MS-S1 metal, local context, egress you control.",
@@ -38,11 +38,11 @@ export const actOneStory = {
     href: "/architecture#claw-tiers",
   },
   honestyFooter:
-    "Five additional crewmates ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
+    "Eight additional crewmates ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
 } as const;
 
 export const actTwoStory = {
-  eyebrow: "ACT II · THE HALL",
+  eyebrow: "THE HALL",
   headline: "The box grows with you on metal.",
   subhead:
     "Your orchestra earns cross-app momentum on the appliance — not in a cloud leaderboard. The symphony plays while you live your life.",
@@ -58,7 +58,7 @@ export const actTwoStory = {
 
 /** Collapsed homepage vision band — Symphony + Signal + Cafe in one section. */
 export const visionBand = {
-  eyebrow: "VISION · ACT II",
+  eyebrow: "VISION",
   headline: "One desk conducts. The symphony plays.",
   subhead:
     "Chat SaaS gives you one assistant. CurXor gives you a desk crew — a conductor on your desk, acoustic reach when you want it, and a hall where crewmates earn presence from real Flagship activity.",

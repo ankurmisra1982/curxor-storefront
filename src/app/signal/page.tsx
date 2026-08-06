@@ -47,7 +47,7 @@ export default function SignalPage() {
           {
             name: "CurXor category vision film",
             description:
-              "Category vision — They live here. You conduct. Desk crew, Crew Cafe, approval gate, personal algorithm on metal you own. Concept comps + voiceover.",
+              "They live here. You conduct. Desk crew, Crew Cafe, approval gate, and personal algorithm on metal you own — vision comps with voiceover.",
             contentPath: categoryFilmAssets.heroCategoryBadge,
             thumbnailPath: categoryFilmAssets.conductorPlate,
             uploadDate: "2026-08-04",
@@ -55,7 +55,7 @@ export default function SignalPage() {
           {
             name: "CurXor product proof film",
             description:
-              "Warm intro / product proof — onboarding through flagship crewmates on real MS-S1-class metal.",
+              "Product proof — onboarding through Capital, Creator, and Outreach on real MS-S1-class metal.",
             contentPath: categoryFilmAssets.inceptionReel,
             thumbnailPath: categoryFilmAssets.conductorPlate,
             uploadDate: "2026-08-01",
@@ -71,11 +71,11 @@ export default function SignalPage() {
               </p>
               <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
                 {signalPageHero.hero}{" "}
-                <span className="text-neon-purple">{signalPageHero.accent}</span>
+                <span className="text-neon-purple lg:block">{signalPageHero.accent}</span>
               </h1>
-              <p className="mt-4 text-sm leading-relaxed text-white/50">{signalPageHero.oneLiner}</p>
+              <p className="mt-4 text-sm leading-relaxed text-white/65">{signalPageHero.oneLiner}</p>
               <p className="mt-6 text-base font-medium text-white/80">{signalHorizonCopy.headline}</p>
-              <p className="mt-2 text-sm leading-relaxed text-white/45">{signalHorizonCopy.subhead}</p>
+              <p className="mt-2 text-sm leading-relaxed text-white/65">{signalHorizonCopy.subhead}</p>
               <p className="mt-6 border-l-2 border-neon-purple/40 pl-4 text-sm font-medium text-white/70">
                 {dreamStateNaming.essayOneLiner}
               </p>
@@ -106,25 +106,25 @@ export default function SignalPage() {
               <article key={item.label} className="bg-black p-6">
                 <p className="text-[10px] tracking-[0.3em] text-neon-purple">{item.label}</p>
                 <p className="mt-2 text-sm font-bold text-white/85">{item.examples}</p>
-                <p className="mt-2 text-[10px] tracking-widest text-white/35">{item.wave}</p>
+                <p className="mt-2 text-[10px] tracking-widest text-white/55">{item.wave}</p>
               </article>
             ))}
           </div>
-          <p className="mt-4 text-xs text-white/40">
+          <p className="mt-4 text-xs text-white/55">
             One crewmate registers every AI-capable device — not a new crewmate per gadget. Digital desks
-            think; Signal connects the worn and embodied world to the same CCP, Kin, and Crew Cafe.
+            think; Signal connects the worn and embodied world to the same crew context, Kin, and Crew Cafe.
           </p>
         </section>
 
         <section className="mt-16">
-          <p className="mb-6 text-[10px] tracking-[0.25em] text-white/35">
-            SHIPPED TODAY · HUMANOID HOME HUB
+          <p className="mb-6 text-[10px] tracking-[0.25em] text-white/60">
+            ON THE APPLIANCE TODAY · HUMANOID HOME HUB
           </p>
           <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
             {signalTodayTabs.map((item) => (
               <article key={item.tab} className="bg-black p-5">
                 <p className="text-[10px] tracking-[0.3em] text-neon-purple">{item.tab}</p>
-                <p className="mt-2 text-xs leading-relaxed text-white/50">{item.body}</p>
+                <p className="mt-2 text-xs leading-relaxed text-white/60">{item.body}</p>
               </article>
             ))}
           </div>
@@ -132,30 +132,30 @@ export default function SignalPage() {
 
         <section className="mt-16 overflow-hidden border border-white/10 bg-black">
           <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
-            <span className="text-[10px] tracking-[0.25em] text-white/50">
-              FLIGHT COMMAND · /optimus
+            <span className="text-[10px] tracking-[0.25em] text-white/60">
+              FLIGHT COMMAND · HUMANOID HUB
             </span>
             <span className="border border-amber-400/30 px-2 py-0.5 text-[9px] tracking-widest text-amber-200/70">
-              TIER C PREVIEW
+              PREVIEW
             </span>
           </div>
           <SignalOptimusPreview />
-          <p className="px-4 py-3 text-xs leading-relaxed text-white/45">
+          <p className="px-4 py-3 text-xs leading-relaxed text-white/55">
             Pair wizard and mesh preview on appliance — live humanoid motion hardware-gated.
           </p>
         </section>
 
         <section className="mt-16 border border-white/10 bg-black p-6 sm:p-8">
-          <p className="text-[10px] tracking-[0.25em] text-neon-purple">THE SYMPHONY MODEL</p>
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">THE SYMPHONY</p>
           <p className="mt-4 text-lg font-medium text-white/85">{symphonySection.headline}</p>
           <p className="mt-3 text-sm italic text-neon-purple/90">{symphonyPayoff}</p>
-          <p className="mt-3 text-xs leading-relaxed text-white/45">{dreamStateNaming.symphonyBridgeLine}</p>
+          <p className="mt-3 text-xs leading-relaxed text-white/55">{dreamStateNaming.symphonyBridgeLine}</p>
         </section>
 
         <section className="mt-16 border border-white/10 bg-black p-6 sm:p-8">
-          <p className="text-[10px] tracking-[0.25em] text-neon-purple">DREAM STATE · THESIS</p>
+          <p className="text-[10px] tracking-[0.25em] text-neon-purple">VISION THESIS</p>
           <p className="mt-4 text-lg font-medium text-white/85">{dreamStateThesisAccents[0]}</p>
-          <p className="mt-3 text-xs leading-relaxed text-white/45">
+          <p className="mt-3 text-xs leading-relaxed text-white/55">
             Vision tier — custom CurXor hardware and fully sovereign OS post-investment. Today we
             ship on MS-S1-class metal. See{" "}
             <Link href="/architecture" className="text-neon-purple hover:underline">
@@ -165,7 +165,7 @@ export default function SignalPage() {
           </p>
         </section>
 
-        <section className="mt-16 border border-neon-purple/30 bg-neon-purple/[0.03] p-6 sm:p-8">
+        <section className="mt-16 surface-accent p-6 sm:p-8">
           <p className="text-[10px] tracking-[0.25em] text-neon-purple">HONEST PREVIEW</p>
           <ul className="mt-4 space-y-3">
             {signalHonesty.map((item) => (
@@ -187,7 +187,7 @@ export default function SignalPage() {
             </Link>
             <Link
               href="/#apps"
-              className="text-xs tracking-[0.2em] text-white/40 hover:text-neon-purple"
+              className="text-xs tracking-[0.2em] text-white/55 hover:text-neon-purple"
             >
               FULL DESK CREW →
             </Link>

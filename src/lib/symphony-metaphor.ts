@@ -17,7 +17,7 @@ export const symphonyRoles = [
     id: "operator",
     label: "You",
     metaphor: "Composer / principal",
-    body: "You own the score — rules, FRE, approvals.",
+    body: "You own the score — rules, desk setup, approvals.",
   },
   {
     id: "desk",
@@ -46,7 +46,7 @@ export const symphonyRoles = [
 ] as const;
 
 export const symphonySection = {
-  eyebrow: "THE SYMPHONY MODEL",
+  eyebrow: "THE SYMPHONY",
   headline: "One desk conducts. The symphony plays.",
   subhead:
     "Chat SaaS gives you one assistant. CurXor gives you a desk crew — a conductor on your desk, and a hall where your operators live.",

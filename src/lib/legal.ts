@@ -1,4 +1,4 @@
-export const legalUpdated = "June 19, 2026";
+export const legalUpdated = "August 5, 2026";
 
 export const footerLinks = [
   { href: "/outreach", label: "Outreach" },

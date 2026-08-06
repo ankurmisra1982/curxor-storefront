@@ -16,7 +16,7 @@ export function SocialLinks({ className, linkClassName }: SocialLinksProps) {
           rel="noopener noreferrer"
           className={
             linkClassName ??
-            "text-[10px] tracking-widest text-white/40 transition-colors hover:text-neon-purple"
+            "text-[10px] tracking-widest text-white/55 transition-colors hover:text-neon-purple"
           }
         >
           {profile.label.toUpperCase()}

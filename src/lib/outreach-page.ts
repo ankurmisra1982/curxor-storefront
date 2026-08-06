@@ -4,12 +4,12 @@ import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 export const outreachDemoHero = {
   src: g3Screenshots.workPipeline,
   alt: "Outreach desk — pipeline and active sequences",
-  caption: "Demo capture — Work pipeline on CurXor OS.",
+  caption: "Demo capture — Outreach pipeline on CurXor OS.",
 } as const;
 
 export const outreachDeskStrip = {
   src: g3DeskStrips.work,
-  title: "Work desk strip",
+  title: "Outreach desk strip",
   honestyLabel: g3Honesty.workPipeline,
   poster: g3Screenshots.workPipeline,
 } as const;

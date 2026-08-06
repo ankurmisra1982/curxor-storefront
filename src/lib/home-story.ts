@@ -38,7 +38,7 @@ export const actOneStory = {
     href: "/architecture#claw-tiers",
   },
   honestyFooter:
-    "Five additional crewmates ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
+    "Eight additional crewmates ship as honest previews — clearly labeled Coming Soon on the dashboard. We don't dress mock depth as production at $3,999.",
 } as const;
 
 export const actTwoStory = {

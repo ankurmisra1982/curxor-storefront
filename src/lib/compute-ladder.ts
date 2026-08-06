@@ -21,6 +21,26 @@ export const openWeightComputeLadder = {
   },
 } as const;
 
+/** The one thing a buyer came to /pricing for. Keep every claim here purchasable today. */
+export const priceCard = {
+  eyebrow: "CURXOR STANDARD 64",
+  price: "$3,999",
+  cadence: "once",
+  sub: "One-time hardware · no CurXor subscription · $0/mo CurXor API on the operate plane",
+  includes: [
+    "curXor appliance — 64 GB LPDDR5X UMA · 126 TOPS NPU class",
+    "CurXor OS + Flight Command — Home hub, Settings, Simple and Expert modes",
+    "Desk crew of ten + The Forge — enable any combination in Settings",
+    "Local inference by default; frontier models optional on your own keys",
+    "Dual 10GbE — eno1 command, eno2 egress with a physical kill switch",
+    "Messaging gateways — Telegram, Slack, WhatsApp, iMessage, user-configured",
+  ],
+  honesty:
+    "Capital, Creator and Outreach are demo-ready desks; eight further crewmates ship as labelled previews. Outbound stays simulated until you wire your own bridges on eno2.",
+  shipping:
+    "Pre-order reserves your place in the queue. Ship dates are announced by email as production batches are scheduled — no delivery date is promised at checkout.",
+} as const;
+
 /** Pricing page — evolving business model (INVESTOR-MEMO § Business model) */
 export const pricingEvolutionBlurb = {
   eyebrow: "EVOLVING MODEL",
@@ -38,15 +58,15 @@ export const hardwareTierCompare = {
       name: "Standard",
       price: "$3,999",
       memory: "64 GB UMA",
-      status: "Shipping",
+      status: "Pre-order",
       highlight: true,
     },
     {
       id: "pro128",
       name: "Pro 128",
-      price: "$4,999",
+      price: "$4,999 indicative",
       memory: "128 GB UMA",
-      status: "Coming",
+      status: "Roadmap · no checkout",
       highlight: false,
     },
     {
@@ -54,7 +74,7 @@ export const hardwareTierCompare = {
       name: "CurXor Studio",
       price: "TBD",
       memory: "256 GB+ UMA",
-      status: "Future",
+      status: "Horizon · no checkout",
       highlight: false,
     },
   ],
@@ -67,7 +87,7 @@ export const hardwareTierCompare = {
     },
     {
       label: "Default local stack",
-      standard: "moondream:1.8b + qwen3:8b",
+      standard: "moondream:1.8b + qwen3.5:9b",
       pro128: "Above + qwen3-vl:8b · qwen3:14b · qwen3.6-35b:q4",
       studio: "Largest open-weight models at usable quant",
     },

@@ -23,7 +23,9 @@ function publicizeHighlight(raw: string): string | null {
     // Milestone / ticket codes in parens
     .replace(/\s*\((?:FC|SS|GK|FN|BP|G|W|F|C)\d+(?:[–-](?:FC|SS|GK|FN|BP|G|W|F|C)?\d+)?(?:,\s*(?:FC|SS|GK|FN|BP|G|W|F|C)\d+)*\)/gi, "")
     .replace(/\bG2 depth wave\b/gi, "Depth release")
-    .replace(/\bG1 golden path closed\b/gi, "Golden path closed")
+    .replace(/\bG1 golden path closed\b/gi, "First full end-to-end run on the box")
+    .replace(/\bgolden path closed\b/gi, "first full end-to-end run on the box")
+    .replace(/\bgolden[- ]path\b/gi, "end-to-end")
     .replace(/\bG1-era\b/gi, "")
     .replace(/\buntil G4\+?\b/gi, "until deeper tutor depth ships")
     .replace(/\bqa:local\b/gi, "appliance QA")
@@ -59,8 +61,10 @@ function publicizeHighlight(raw: string): string | null {
     .replace(/\bBeginner FRE nudge\b/gi, "Beginner setup nudge")
     .replace(/\bFRE mesh opt-in\b/gi, "mesh opt-in")
     .replace(/\bFRE-configurable\b/gi, "operator-configurable")
-    .replace(/\bFRE\s*\(\s*Capital,\s*Creator,\s*Work\s*\)/gi, "flagship desks (Capital, Creator, Work)")
-    .replace(/\bFRE\s*\(\s*Capital,\s*Creator,\s*Outreach\s*\)/gi, "flagship desks (Capital, Creator, Outreach)")
+    .replace(/\bFRE\s*\(\s*Capital,\s*Creator,\s*(?:Work|Outreach)\s*\)/gi, "flagship desks (Capital, Creator, Outreach)")
+    // "Work" was the pre-launch name for the Outreach desk — never ship it to buyers.
+    .replace(/\bCapital,\s*Creator,\s*(?:and\s*)?Work\b/gi, "Capital, Creator, and Outreach")
+    .replace(/\bWork (pipeline|desk|workspace)\b/g, "Outreach $1")
     .replace(/\bon FRE mesh\b/gi, "on the mesh")
     .replace(/\bFRE\b/g, "desk setup")
     .replace(/\bSkillSpector(?:\s+CI gate)?\b/gi, "import safety gate")

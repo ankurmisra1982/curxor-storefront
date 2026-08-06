@@ -265,7 +265,7 @@ export const faqItems = [
   {
     question: "Who is CurXor NOT for?",
     answer:
-      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need every crewmate production-complete on day one — five are honest Coming Soon previews; Capital, Creator, and Outreach are the demo-ready desks.",
+      "Enterprise teams needing SSO and fleet admin. Hobbyists looking for a cheap chat box. Buyers who need every crewmate production-complete on day one — eight are honest Coming Soon previews; Capital, Creator, and Outreach are the demo-ready desks.",
   },
   {
     question: "Which crewmates actually work today?",

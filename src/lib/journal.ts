@@ -510,7 +510,7 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "Working product on real MS-S1-class metal. Flagship desks — Capital, Creator, Outreach — demo-ready day one. Preview modules labeled honestly. Pre-revenue. Published mesh benchmarks pending. If you are evaluating CurXor: judge us on the build path and the golden-path walkthrough, not on mock depth that confuses a demo with a product.",
+        text: "Working product on real MS-S1-class metal. Flagship desks — Capital, Creator, Outreach — demo-ready day one. Preview modules labeled honestly. Pre-revenue. Published mesh benchmarks pending. If you are evaluating CurXor: judge us on the build path and the end-to-end walkthrough on the box, not on mock depth that confuses a demo with a product.",
       },
       {
         type: "quote",
@@ -815,7 +815,7 @@ export const journalEssays: JournalEntry[] = [
           "Local inference validated on Standard 64 (qwen3:8b class path · ~38 tok/s on our default stack)",
           "Flagship desks — Capital, Creator, Outreach — demo-ready with Flight Command on the LAN",
           "Priority bridges green on the founder MS-S1 (Capital stays paper)",
-          "Design partners completed remote golden-path sessions — feedback private; not a customer fleet; not closed traction",
+          "Design partners completed remote walkthrough sessions — feedback private; not a customer fleet; not closed traction",
         ],
       },
       {

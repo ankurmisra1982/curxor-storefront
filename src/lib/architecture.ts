@@ -4,9 +4,10 @@ import { productStills } from "@/lib/product-stills";
 export const hardwareValidation = {
   unboxDate: "2026-06-28",
   g1ClosedDate: "2026-06-29",
-  badgeAriaLabel: "curXor — MS-S1 unboxed · golden path closed",
+  badgeAriaLabel:
+    "curXor — MS-S1 unboxed and running end to end on real metal",
   badgeSummary:
-    "MS-S1 MAX unboxed Jun 28, 2026. Golden path closed Jun 29 — demo captures closed Jul 2026. CurXor OS v1.0.3, flagship desks, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
+    "MS-S1 MAX unboxed Jun 28, 2026. First full run end to end on the box the next day — demo captures closed Jul 2026. CurXor OS v1.0.3, flagship desks, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
   /** Elevated product still — not factory photography. */
   deskStill: {
     src: productStills.a.src,
@@ -25,15 +26,15 @@ export const hardwareValidation = {
   },
 
   computeBenchNote:
-    "126 TOPS local NPU — ROCm inference validated on Standard 64 (moondream:1.8b, qwen3:8b); published mesh benchmarks pending",
+    "126 TOPS local NPU — ROCm inference validated on Standard 64; moondream:1.8b + qwen3.5:9b is the current default stack; published mesh benchmarks pending",
   telemetryNote:
     "Telemetry broker live on the local mesh — dual-port topology verified on box; published latency numbers pending",
   doneOnBox: {
     eyebrow: "DONE ON BOX",
     items: [
-      "Ubuntu 24.04 install · UMA 48 GB · CurXor OS v1.0.3 on MS-S1 MAX Standard 64",
-      "Ollama ROCm live — moondream:1.8b + qwen3:8b (Standard 64 stack)",
-      "Flagship desks complete — Capital, Creator, Work · Flight Command live on bare metal",
+      "Ubuntu 24.04 install · 48 GB UMA allocated in BIOS on the 64 GB SKU · CurXor OS v1.0.3 on MS-S1 MAX Standard 64",
+      "Ollama ROCm live — validated at unbox on qwen3:8b; moondream:1.8b + qwen3.5:9b is the current default stack",
+      "Flagship desks complete — Capital, Creator, Outreach · Flight Command live on bare metal",
       "eno1/eno2 cabling — COMMAND captive portal + EGRESS mesh on verified ports",
       "Unbox verification passed",
       "Operator walkthrough passed",
@@ -41,9 +42,9 @@ export const hardwareValidation = {
     ],
   },
   g1Closed: {
-    eyebrow: "GOLDEN PATH",
+    eyebrow: "END-TO-END ON THE BOX",
     items: [
-      "Golden path complete — closed Jun 29, 2026",
+      "First full run start to finish on real metal — Jun 29, 2026",
       "Dual-port topology verified on MS-S1 MAX hardware",
       "COMMAND captive portal + EGRESS mesh live on box",
     ],
@@ -61,7 +62,7 @@ export const hardwareValidation = {
     items: [
       "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
       "Seven bridges proven Jul 9 on the founder MS-S1 — not a customer fleet · Capital stays paper",
-      "Design partners have completed remote golden-path sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
+      "Design partners have completed remote walkthrough sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
       "Live brokerage fills and autonomous publish fleets are not claimed",
     ],
   },

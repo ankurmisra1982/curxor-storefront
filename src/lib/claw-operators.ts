@@ -94,6 +94,10 @@ export const operatorsSection = {
     "Composite operator stories — the grammar gap in human terms. Not paid endorsements; product proof in the desk tour above.",
 } as const;
 
+/** Must appear anywhere an operator quote renders — these people are not customers. */
+export const operatorDisclaimer =
+  "Composite operator — illustrative pre-launch story, not a customer testimonial.";
+
 export function getOperator(id: ClawOperator["id"]): ClawOperator | undefined {
   return clawOperators.find((op) => op.id === id);
 }

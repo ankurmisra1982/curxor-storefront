@@ -36,7 +36,7 @@ const publicBullets: Record<string, readonly string[]> = {
   "my-work": [
     "Sequences, task matrix, morning brief, and deliverability story",
     "CRM connectors — Google, Microsoft, HubSpot, Notion via egress bridges",
-    "Work gamification opt-out in Settings",
+    "Outreach gamification opt-out in Settings",
     "Handshake paths into Capital and Creator",
   ],
   "crew-cafe": [

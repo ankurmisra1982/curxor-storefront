@@ -12,9 +12,10 @@ export const g3Screenshots = {
 } as const;
 
 export const g3DeskStrips = {
-  capital: "/demo/g3/g3-desk-strip-capital.mp4",
-  creator: "/demo/g3/g3-desk-strip-creator.mp4",
-  work: "/demo/g3/g3-desk-strip-work.mp4",
+  /** VO burns from curxor-os investor-pack g3-desk-strip-*-v3.mp4 (2026-08-06). */
+  capital: "/demo/g3/g3-desk-strip-capital-vo.mp4",
+  creator: "/demo/g3/g3-desk-strip-creator-vo.mp4",
+  work: "/demo/g3/g3-desk-strip-work-vo.mp4",
 } as const;
 
 export const categoryFilmAssets = {

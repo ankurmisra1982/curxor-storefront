@@ -78,7 +78,7 @@ export function SignalOptimusPreview() {
           setStarted(true);
         }}
       >
-        <source src="/demo/optimus-walkthrough.webm" type="video/webm" />
+        <source src="/demo/optimus-walkthrough.mp4" type="video/mp4" />
       </video>
 
       {!started ? (

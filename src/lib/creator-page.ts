@@ -2,7 +2,7 @@ import { clawHeadlines } from "@/lib/claw-headlines";
 import { g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
 export const creatorWalkthrough = {
-  src: "/demo/creator-walkthrough.webm",
+  src: "/demo/creator-walkthrough.mp4",
   ariaLabel: "Play Creator desk walkthrough — approval and schedule honesty",
   label: "DESK CREW · CREATOR WALKTHROUGH",
   caption:

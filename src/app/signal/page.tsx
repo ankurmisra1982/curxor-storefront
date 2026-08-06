@@ -15,6 +15,7 @@ import {
   signalPageHero,
   signalPageMeta,
   signalTodayTabs,
+  signalWalkthrough,
 } from "@/lib/signal-page";
 import { applianceVersion, siteConfig } from "@/lib/config";
 import { categoryFilmAssets } from "@/lib/g3-demo";
@@ -133,7 +134,7 @@ export default function SignalPage() {
         <section className="mt-16 overflow-hidden border border-white/10 bg-black">
           <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
             <span className="text-[10px] tracking-[0.25em] text-white/60">
-              FLIGHT COMMAND · HUMANOID HUB
+              {signalWalkthrough.label}
             </span>
             <span className="border border-amber-400/30 px-2 py-0.5 text-[9px] tracking-widest text-amber-200/70">
               PREVIEW
@@ -141,7 +142,7 @@ export default function SignalPage() {
           </div>
           <SignalOptimusPreview />
           <p className="px-4 py-3 text-xs leading-relaxed text-white/55">
-            Pair wizard and mesh preview on appliance — live humanoid motion hardware-gated.
+            {signalWalkthrough.caption}
           </p>
         </section>
 

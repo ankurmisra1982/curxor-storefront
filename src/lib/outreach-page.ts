@@ -7,6 +7,14 @@ export const outreachDemoHero = {
   caption: "Demo capture — Outreach pipeline on CurXor OS.",
 } as const;
 
+export const outreachWalkthrough = {
+  src: "/demo/outreach-walkthrough-vo.mp4",
+  ariaLabel: "Play Outreach desk walkthrough — pipeline to send honesty",
+  label: "DESK CREW · OUTREACH WALKTHROUGH",
+  caption:
+    "Pipeline to send on the appliance — sequences stay local; live mail needs SMTP on eno2. Sound on.",
+} as const;
+
 export const outreachDeskStrip = {
   src: g3DeskStrips.work,
   title: "Outreach desk strip",

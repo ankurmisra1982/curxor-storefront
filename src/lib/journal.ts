@@ -64,7 +64,7 @@ export const journalEssays: JournalEntry[] = [
     author: "CurXor Systems",
     relatedLinks: [
       { href: "/signal#category-film", label: "Watch on /signal" },
-      { href: "/demo/hero-category-badge-v5.01.mp4", label: "Category vision (~91s)" },
+      { href: "/demo/hero-category-badge-v6.mp4", label: "Category vision (~89s)" },
       { href: "/demo/hero-category-badge-v4.mp4", label: "Shorter version (~62s)" },
       { href: "/press", label: "Press kit" },
       { href: "/journal/harness-is-the-product", label: "The harness is the product" },

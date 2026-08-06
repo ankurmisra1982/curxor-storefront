@@ -96,17 +96,22 @@ if (copyFile(
   path.join(demoRoot, "hero-category-badge-v1.mp4")
 )) copied++;
 
-// Hero badge v5.01 — LIVE SEND; v4 short alternate; do not clobber *-v1 (rollback + CTO HOLD)
+// Hero badge v6 — LIVE SEND (promoted 2026-08-06); v5.01 prior send kept for rollback and
+// because links already sent to investors point at the versioned v5.01 URL; v4 short alternate.
+// Every badge cut is staged under its own versioned URL, so no already-sent link ever changes
+// what it plays. Do not clobber *-v1 (rollback + CTO HOLD).
 {
-  const v501Inv = path.join(packRoot, "investor-pack", "hero-category-badge-v5.01.mp4");
-  const v501Master = path.join(packRoot, "master-film", "hero", "hero-category-badge-v5.01.mp4");
-  const v501Src = fs.existsSync(v501Inv) ? v501Inv : v501Master;
-  if (copyFile(v501Src, path.join(demoRoot, "hero-category-badge-v5.01.mp4"))) copied++;
+  const stageBadge = (name: string) => {
+    const inv = path.join(packRoot, "investor-pack", name);
+    const master = path.join(packRoot, "master-film", "hero", name);
+    const src = fs.existsSync(inv) ? inv : master;
+    if (!fs.existsSync(src)) return;
+    if (copyFile(src, path.join(demoRoot, name))) copied++;
+  };
 
-  const v4Badge = path.join(packRoot, "investor-pack", "hero-category-badge-v4.mp4");
-  const v4Master = path.join(packRoot, "master-film", "hero", "hero-category-badge-v4.mp4");
-  const badgeSrc = fs.existsSync(v4Badge) ? v4Badge : v4Master;
-  if (copyFile(badgeSrc, path.join(demoRoot, "hero-category-badge-v4.mp4"))) copied++;
+  stageBadge("hero-category-badge-v6.mp4");
+  stageBadge("hero-category-badge-v5.01.mp4");
+  stageBadge("hero-category-badge-v4.mp4");
 }
 
 if (copyFile(
@@ -129,13 +134,17 @@ if (fs.existsSync(heroFilmDir)) {
   fs.mkdirSync(pressDir, { recursive: true });
   const zipEntries = [
     ...fs.readdirSync(heroFilmDir).filter((f) => f.endsWith(".png")).map((f) => path.join(heroFilmDir, f)),
-    ...(fs.existsSync(path.join(demoRoot, "hero-category-badge-v5.01.mp4"))
-      ? [path.join(demoRoot, "hero-category-badge-v5.01.mp4")]
-      : fs.existsSync(path.join(demoRoot, "hero-category-badge-v4.mp4"))
-        ? [path.join(demoRoot, "hero-category-badge-v4.mp4")]
-        : fs.existsSync(path.join(demoRoot, "hero-category-badge-v1.mp4"))
-          ? [path.join(demoRoot, "hero-category-badge-v1.mp4")]
-          : []),
+    // Press kit carries exactly one category cut — the live send, newest first.
+    ...((): string[] => {
+      const preferred = [
+        "hero-category-badge-v6.mp4",
+        "hero-category-badge-v5.01.mp4",
+        "hero-category-badge-v4.mp4",
+        "hero-category-badge-v1.mp4",
+      ].map((n) => path.join(demoRoot, n));
+      const hit = preferred.find((p) => fs.existsSync(p));
+      return hit ? [hit] : [];
+    })(),
     ...(fs.existsSync(metricsCard) ? [metricsCard] : []),
   ];
   if (zipEntries.length > 0) {

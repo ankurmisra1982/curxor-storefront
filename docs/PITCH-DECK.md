@@ -32,7 +32,7 @@
 |-------|-----|
 | Storefront | https://curxor.ai |
 | Category film | https://curxor.ai/signal#category-film |
-| Category vision (~91s LIVE SEND) | https://curxor.ai/demo/hero-category-badge-v5.01.mp4 |
+| Category vision (~89s LIVE SEND) | https://curxor.ai/demo/hero-category-badge-v6.mp4 |
 | Category short alternate (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
 | Product proof / inception (~90s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
 | Investor proof (~3 min) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |
@@ -231,7 +231,7 @@ Pricing: $3,999 once · Pro 128 $4,999 · $0/mo operate-plane API
 Beachhead: solo operators 28–45 · under-leveraged · desk crew · $3,999 once
 Stage: proof-ready on metal · operator golden paths invite-ready · external UAT starting · pre-revenue · solo founder
 Velocity: 182 commits · 20 days to v1.0.3 · film pack Jul 8 · Wave 1 dogfood Jul 9 · invite-ready Jul 16
-Films: product proof ~90s · category vision ~91s (v5.01) · short v4 ~62s · investor proof ~3 min
+Films: product proof ~90s · category vision ~89s (v6) · short v4 ~62s · investor proof ~3 min
 Deck: v1.7.2 · 2026-08-05 · 12-slide core · exporter-generated PPTX
 ```
 
@@ -248,7 +248,7 @@ Deck: v1.7.2 · 2026-08-05 · 12-slide core · exporter-generated PPTX
 | Paying fleet / ARR | Red | Pre-revenue · pre-order live |
 | Live broker/social fills | Red | Founder-keyed · approval gate |
 | Custom CurXor hardware | Red | Act II · post-raise |
-| Full category hero | Yellow | ~91s vision (v5.01 LIVE SEND) + ~90s product live · short v4 (~62s) · live badge shoot open |
+| Full category hero | Yellow | ~89s vision (v6 LIVE SEND · 1080p) + ~90s product live · short v4 (~62s) · live badge shoot open |
 | TAM / SOM dollars | Yellow | Funnel + illustrative unit math — not a forecast |
 
 ---

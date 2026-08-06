@@ -12,14 +12,21 @@ const FILMS: {
   label: string;
   duration: string;
   src: string;
+  /**
+   * The two cuts are not the same shape: the category film is 1920x1080 since v6,
+   * the product cut is still 1440x900. One shared frame would letterbox whichever
+   * one it was not built for, so the frame follows the film.
+   */
+  aspect: string;
   caption: string;
   ariaLabel: string;
 }[] = [
   {
     id: "badge",
     label: "Category vision",
-    duration: "~91s",
+    duration: "~89s",
     src: categoryFilmAssets.heroCategoryBadge,
+    aspect: "aspect-[16/9]",
     caption:
       "Vision comps with voiceover — desk crew, Crew Cafe, approval gate, personal algorithm on metal you own",
     ariaLabel:
@@ -30,6 +37,7 @@ const FILMS: {
     label: "Product proof",
     duration: "~89s",
     src: categoryFilmAssets.inceptionReel,
+    aspect: "aspect-[16/10]",
     caption:
       "Onboarding through Capital, Creator, and Outreach on real metal",
     ariaLabel:
@@ -98,13 +106,13 @@ export function CategoryFilmSection() {
       </div>
 
       {/*
-        Film is 1440×900 dual-pane (phone | desktop). Full-width + intrinsic
-        aspect — never object-cover in a tall cell (that crops to the phone).
+        Dual-pane films (phone | desktop). Full-width + intrinsic aspect — never
+        object-cover in a tall cell (that crops to the phone).
       */}
       <div className="relative bg-black">
         <video
           key={film.src}
-          className="aspect-[16/10] h-auto w-full bg-black object-contain"
+          className={`${film.aspect} h-auto w-full bg-black object-contain`}
           controls
           playsInline
           preload="none"

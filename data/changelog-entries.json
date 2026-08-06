@@ -1,15 +1,35 @@
 [
   {
+    "version": "1.0.5",
+    "date": "2026-08-06",
+    "channel": "stable",
+    "highlights": [
+      "Customer update package cut from hundreds of megabytes to a lean runtime payload — demo films, investor decks, and internal GTM docs no longer ship to appliances",
+      "Release packaging switched to an allow-list so missing runtime paths fail the build and internal docs cannot leak quietly",
+      "Signed release published with a hard size ceiling so oversized payloads fail CI before they reach a box"
+    ]
+  },
+  {
+    "version": "1.0.4",
+    "date": "2026-08-06",
+    "channel": "stable",
+    "highlights": [
+      "First signed update release — CI refuses unsigned builds; the appliance can verify what it installs",
+      "Verifying updater ships with the release so later updates can be checked on-box",
+      "Closes the empty-signature gap from earlier v1.0.x publishes"
+    ]
+  },
+  {
     "version": "1.0.3",
     "date": "2026-07-08",
     "channel": "stable",
     "highlights": [
-      "G2 depth wave — Firecrawl bridge (FC1–FC3), SkillSpector CI gate (SS1–SS2), xAI Grok frontier provider (GK1)",
-      "Forge hygiene (FN1) — prune QA forged-app pollution from dev-qa seed and operate rail; registry smoke guardrails",
-      "Crew Cafe rebrand sign-off (G04) — locked copy per REBRAND-DECISION; Patron Hall subtitle",
-      "OS event bus hardening (BP2) — serialized log writes and atomic dedupe emits",
-      "Cafe feed fix — game demo tour awaits cafe ingest; chronological sort after XP silo sync (239 smoke green)",
-      "Box verified — qa:local + box-smoke + Capital handshake dogfood on MS-S1"
+      "Depth wave — web research bridge, import safety gate in CI, optional xAI Grok frontier provider",
+      "Forge hygiene — prune QA forged-app pollution from demo seed and operate rail; registry smoke guardrails",
+      "Crew Cafe rebrand sign-off — locked public copy; Patron Hall subtitle",
+      "OS event bus hardening — serialized log writes and atomic dedupe emits",
+      "Cafe feed fix — demo tour waits for cafe ingest; chronological sort after XP sync",
+      "Box verified — local QA, box smoke, and Capital handshake dogfood on MS-S1"
     ]
   },
   {
@@ -17,8 +37,9 @@
     "date": "2026-07-03",
     "channel": "stable",
     "highlights": [
-      "CurXor OS 1.0.1 — synced from version.json",
-      "Add release highlights in data/changelog-entries.json or curxor-os/release-notes.json"
+      "Settings System tab — restart, reboot, and shutdown controls for the appliance stack",
+      "Kin household mapper polish — clearer household profile naming across Life & family desks",
+      "QA coverage for power controls and Kin household paths"
     ]
   },
   {
@@ -29,11 +50,11 @@
       "Crew Cafe — ascension XP and pixel room react to real Capital, Creator, and Outreach activity on your appliance",
       "Cross-crew growth and level-up moments tied to Flagship desks — not a cloud leaderboard",
       "MS-S1 MAX unboxed 2026-06-28 — CurXor OS 0.9.1, FRE (Capital, Creator, Work), and Ollama ROCm inference validated on Standard 64 (moondream:1.8b + qwen3:8b)",
-      "G1 golden path closed 2026-06-29 — eno1/eno2 captive portal + EGRESS mesh wired on box, verify-unbox-day.sh PASS, smile test PASS, telemetry broker active on 10.77.0.1; pre-v1.0.0, production OTA is G2",
-      "G1-era QA baseline on box (suite later grew to 239 smoke at v1.0.3)",
-      "Storefront G1 mirror — validation badge, trust strip, architecture, press kit, and changelog aligned to golden path close on curxor.ai",
+      "First full end-to-end run on the box 2026-06-29 — COMMAND/EGRESS mesh wired, unbox verify pass, smile test pass; telemetry broker active on the appliance LAN",
+      "On-box QA baseline established (suite later grew through the v1.0.3 depth wave)",
+      "Storefront aligned to golden-path close — validation badge, trust strip, architecture, press kit, and changelog on curxor.ai",
       "Symphony GTM model — homepage #symphony section, conductor metaphor, conducts accent line",
-      "Storefront UX waves A–E — mega-menu nav, crewmate tour grids, persona parity, conversion width, press layout polish",
+      "Storefront UX waves — mega-menu nav, crewmate tour grids, persona parity, conversion width, press layout polish",
       "Investor press landing — compute ladder, diligence path, traction milestones, open-weight tier compare"
     ]
   },
@@ -44,7 +65,7 @@
     "highlights": [
       "Settings remote-worker setup — guided path for a second dev machine on your LAN",
       "SSH connectivity checks and host configuration from Flight Command",
-      "Operator tooling polish before on-device golden path (G1)"
+      "Operator tooling polish before on-device golden path"
     ]
   },
   {
@@ -83,8 +104,9 @@
     "date": "2026-06-22",
     "channel": "stable",
     "highlights": [
-      "CurXor OS 0.5.1 — synced from version.json",
-      "Add release highlights in data/changelog-entries.json or curxor-os/release-notes.json"
+      "Outreach excellence arc — HubSpot sync, Microsoft OAuth, richer inbox triage, and Needs-you digest",
+      "Outbound worker path and connector health surfacing on the Work / Outreach desk",
+      "Morning brief and Cafe bonus hooks tied to real Outreach activity on the appliance"
     ]
   },
   {

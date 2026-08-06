@@ -71,6 +71,38 @@ function todayIsoDate(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
+/** Developer TODO copy that must never ship on /changelog. */
+const PLACEHOLDER_HIGHLIGHT_RE =
+  /synced from version\.json|Add release highlights in data\/changelog-entries\.json|Add release highlights in .*release-notes\.json/i;
+
+function findPlaceholderHighlights(
+  entries: ChangelogEntry[]
+): Array<{ version: string; highlight: string }> {
+  const hits: Array<{ version: string; highlight: string }> = [];
+  for (const entry of entries) {
+    for (const highlight of entry.highlights) {
+      if (PLACEHOLDER_HIGHLIGHT_RE.test(highlight)) {
+        hits.push({ version: entry.version, highlight });
+      }
+    }
+  }
+  return hits;
+}
+
+function assertPublishableHighlights(entries: ChangelogEntry[]): void {
+  const hits = findPlaceholderHighlights(entries);
+  if (hits.length === 0) return;
+
+  const detail = hits
+    .map((hit) => `  v${hit.version}: ${JSON.stringify(hit.highlight)}`)
+    .join("\n");
+  throw new Error(
+    `[sync-changelog] Refusing to publish placeholder changelog highlights.\n` +
+      `Write real highlights in curxor-os/release-notes.json (source of truth) ` +
+      `or data/changelog-entries.json, then re-run sync.\n${detail}`
+  );
+}
+
 function ensureCurrentVersionEntry(
   entries: ChangelogEntry[],
   version: VersionFile
@@ -81,18 +113,19 @@ function ensureCurrentVersionEntry(
   }
 
   const releaseHighlights = loadReleaseNotes(version.version);
-  const highlights =
-    releaseHighlights ??
-    [
-      `CurXor OS ${version.version} — synced from version.json`,
-      "Add release highlights in data/changelog-entries.json or curxor-os/release-notes.json",
-    ];
+  if (!releaseHighlights) {
+    throw new Error(
+      `[sync-changelog] Missing publishable highlights for v${version.version}.\n` +
+        `Add an entry in curxor-os/release-notes.json (preferred) or ` +
+        `data/changelog-entries.json before syncing. Placeholder TODO text is not allowed.`
+    );
+  }
 
   const nextEntry: ChangelogEntry = {
     version: version.version,
     date: todayIsoDate(),
     channel: version.channel ?? "stable",
-    highlights,
+    highlights: releaseHighlights,
   };
 
   const next = [...entries, nextEntry].sort((a, b) =>
@@ -133,6 +166,7 @@ export function syncChangelog(): void {
     version
   );
   entries = syncedEntries.sort((a, b) => compareVersions(b.version, a.version));
+  assertPublishableHighlights(entries);
 
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, buildGeneratedSource(entries, version), "utf8");

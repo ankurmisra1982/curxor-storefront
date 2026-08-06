@@ -3,7 +3,10 @@
 import { useRef, useState } from "react";
 
 export type DeskWalkthroughPreviewProps = {
+  /** H.264 mp4 — primary for Safari + Chrome. */
   src: string;
+  /** Optional WebM alternate. Listed after mp4 so broken VP9 never wins. */
+  webmSrc?: string;
   ariaLabel: string;
   playLabel?: string;
 };
@@ -11,6 +14,7 @@ export type DeskWalkthroughPreviewProps = {
 /** Light Optimus-style walkthrough embed — one composition, native controls after play. */
 export function DeskWalkthroughPreview({
   src,
+  webmSrc,
   ariaLabel,
   playLabel = "PLAY WALKTHROUGH",
 }: DeskWalkthroughPreviewProps) {
@@ -34,7 +38,8 @@ export function DeskWalkthroughPreview({
         preload="metadata"
         onPlay={() => setStarted(true)}
       >
-        <source src={src} type="video/webm" />
+        <source src={src} type="video/mp4" />
+        {webmSrc ? <source src={webmSrc} type="video/webm" /> : null}
       </video>
 
       {!started ? (

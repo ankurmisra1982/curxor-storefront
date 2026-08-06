@@ -2,7 +2,7 @@ import { clawHeadlines } from "@/lib/claw-headlines";
 import { g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
 export const capitalWalkthrough = {
-  src: "/demo/capital-walkthrough.webm",
+  src: "/demo/capital-walkthrough.mp4",
   ariaLabel: "Play Capital desk walkthrough — paper book honesty",
   label: "DESK CREW · CAPITAL WALKTHROUGH",
   caption:

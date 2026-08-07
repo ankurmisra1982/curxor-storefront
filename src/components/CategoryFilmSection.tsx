@@ -24,7 +24,7 @@ const FILMS: {
   {
     id: "badge",
     label: "Category vision",
-    duration: "~89s",
+    duration: "~99s",
     src: categoryFilmAssets.heroCategoryBadge,
     aspect: "aspect-[16/9]",
     caption:

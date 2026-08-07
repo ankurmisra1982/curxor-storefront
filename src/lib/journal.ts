@@ -64,7 +64,7 @@ export const journalEssays: JournalEntry[] = [
     author: "CurXor Systems",
     relatedLinks: [
       { href: "/signal#category-film", label: "Watch on /signal" },
-      { href: "/demo/hero-category-badge-v6.mp4", label: "Category vision (~89s)" },
+      { href: "/demo/hero-category-badge-v7.mp4", label: "Category vision (~99s)" },
       { href: "/demo/hero-category-badge-v4.mp4", label: "Shorter version (~62s)" },
       { href: "/press", label: "Press kit" },
       { href: "/journal/harness-is-the-product", label: "The harness is the product" },
@@ -76,7 +76,7 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "The category vision film is live on /signal — about ninety-one seconds of desk crew, always-on life, and the approval gate. A shorter version (~62s) is there if you want the faster watch. Product proof (~89s) is the second tab: Capital, Creator, and Outreach captured on real MS-S1 metal.",
+        text: "The category vision film is live on /signal — about ninety-nine seconds of desk crew, always-on life, the approval gate, and how the desk gets richer as you evolve. A shorter version (~62s) is there if you want the faster watch. Product proof (~89s) is the second tab: Capital, Creator, and Outreach captured on real MS-S1 metal.",
       },
       {
         type: "p",

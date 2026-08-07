@@ -96,8 +96,8 @@ if (copyFile(
   path.join(demoRoot, "hero-category-badge-v1.mp4")
 )) copied++;
 
-// Hero badge v6 — LIVE SEND (promoted 2026-08-06); v5.01 prior send kept for rollback and
-// because links already sent to investors point at the versioned v5.01 URL; v4 short alternate.
+// Hero badge v7 — LIVE SEND (promoted 2026-08-07); v6 prior send kept for rollback and
+// because links already sent to investors point at the versioned v6 URL; v5.01 + v4 stay staged.
 // Every badge cut is staged under its own versioned URL, so no already-sent link ever changes
 // what it plays. Do not clobber *-v1 (rollback + CTO HOLD).
 {
@@ -109,6 +109,7 @@ if (copyFile(
     if (copyFile(src, path.join(demoRoot, name))) copied++;
   };
 
+  stageBadge("hero-category-badge-v7.mp4");
   stageBadge("hero-category-badge-v6.mp4");
   stageBadge("hero-category-badge-v5.01.mp4");
   stageBadge("hero-category-badge-v4.mp4");
@@ -137,6 +138,7 @@ if (fs.existsSync(heroFilmDir)) {
     // Press kit carries exactly one category cut — the live send, newest first.
     ...((): string[] => {
       const preferred = [
+        "hero-category-badge-v7.mp4",
         "hero-category-badge-v6.mp4",
         "hero-category-badge-v5.01.mp4",
         "hero-category-badge-v4.mp4",

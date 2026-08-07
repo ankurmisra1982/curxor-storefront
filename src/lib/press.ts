@@ -320,7 +320,7 @@ export const pressKit = {
       note: "Text-only — tight spaces, dark backgrounds",
     },
     {
-      label: "Category vision film (~89s MP4)",
+      label: "Category vision film (~99s MP4)",
       path: categoryFilmAssets.heroCategoryBadge,
       note: "Desk crew · always-on life · approval gate — vision comps with voiceover · 1080p",
     },

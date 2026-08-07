@@ -32,7 +32,7 @@ Baseline: main @ latest · sibling curxor-os master @ latest
 - **NO homepage category-film autoplay** · no cold hero MP4
 - **NO public raise copy** on site (no $3M SAFE / seed ask on curxor.ai pages)
 - Films on /signal, diligence on /press:
-  - **hero-category-badge-v6.mp4 (~89s · 1080p)** = category vision · **LIVE SEND DEFAULT** on /signal#category-film (promoted 2026-08-06, replacing v5.01)
+  - **hero-category-badge-v7.mp4 (~99s · 1080p)** = category vision · **LIVE SEND DEFAULT** on /signal#category-film (promoted 2026-08-07, replacing v6)
   - **hero-category-badge-v4.mp4 (~62s)** = short alternate (link under vision tab · press)
   - **g3-inception-reel-v1.mp4 (~89s)** = warm product intro (second /signal tab)
   - **g3-investor-proof-v1.mp4 (~2:50)** = diligence · /press + deck (not a /signal tab)
@@ -44,7 +44,7 @@ Baseline: main @ latest · sibling curxor-os master @ latest
 
 | Asset | URL |
 |-------|-----|
-| **Category vision (~89s LIVE SEND)** | https://curxor.ai/demo/hero-category-badge-v6.mp4 |
+| **Category vision (~99s LIVE SEND)** | https://curxor.ai/demo/hero-category-badge-v7.mp4 |
 | Category short (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
 | Product proof (~89s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
 | Investor proof (~2:50) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |
@@ -57,8 +57,9 @@ Baseline: main @ latest · sibling curxor-os master @ latest
 1. **Mirror check** — byte/hash compare storefront `docs/PITCH-DECK.md` + `docs/CurXor-Pitch-Deck-Speaker-Notes.pptx` vs `curxor-os/docs/founder/pitch-deck/`. Confirm version pin **v1.7.2**. If PPTX drifts, copy from OS — **do not** run `npm run export:pitch-deck` without Ankur confirm.
 
 2. **Prod smoke** — timed HEAD/GET; report status + content-length:
-   - https://curxor.ai/demo/hero-category-badge-v6.mp4  ← LIVE SEND (~29419799)
-   - https://curxor.ai/demo/hero-category-badge-v5.01.mp4  ← prior send, still served (~19210433)
+   - https://curxor.ai/demo/hero-category-badge-v7.mp4  ← LIVE SEND (~29346963)
+   - https://curxor.ai/demo/hero-category-badge-v6.mp4  ← prior send, still served (~29419799)
+   - https://curxor.ai/demo/hero-category-badge-v5.01.mp4  ← older prior, still served (~19210433)
    - https://curxor.ai/demo/hero-category-badge-v4.mp4
    - https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4
    - https://curxor.ai/signal#category-film (vision ~89s tab default + captions)
@@ -86,7 +87,7 @@ Baseline: main @ latest · sibling curxor-os master @ latest
 ## Done when
 
 - Mirror: PITCH-DECK.md + PPTX match OS · pin v1.7.2
-- hero-category-badge-v6.mp4 verified 200 on prod (Content-Length ≈ 29419799)
+- hero-category-badge-v7.mp4 verified 200 on prod (Content-Length ≈ 29346963)
 - /signal defaults to ~89s vision tab; shorter → v4; product tab → inception
 - /press lists v5.01 + v4 + inception + diligence; journal category-vision-film live
 - Homepage Watch category film → /signal#category-film · no autoplay

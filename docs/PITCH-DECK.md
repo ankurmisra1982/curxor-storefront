@@ -32,7 +32,7 @@
 |-------|-----|
 | Storefront | https://curxor.ai |
 | Category film | https://curxor.ai/signal#category-film |
-| Category vision (~89s LIVE SEND) | https://curxor.ai/demo/hero-category-badge-v6.mp4 |
+| Category vision (~99s LIVE SEND) | https://curxor.ai/demo/hero-category-badge-v7.mp4 |
 | Category short alternate (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
 | Product proof / inception (~90s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
 | Investor proof (~3 min) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |

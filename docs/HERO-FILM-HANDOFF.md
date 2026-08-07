@@ -23,8 +23,9 @@ Promote log: [STOREFRONT-FILM-PROMOTE.md](STOREFRONT-FILM-PROMOTE.md)
 
 | File | Runtime | Use |
 |------|---------|-----|
-| `hero-category-badge-v6.mp4` | ~89s | Category vision · **LIVE SEND** default on `/signal` · 1920x1080 |
-| `hero-category-badge-v5.01.mp4` | ~91s | Prior send — still served for rollback and already-sent links |
+| `hero-category-badge-v7.mp4` | ~99s | Category vision · **LIVE SEND** default on `/signal` · 1920x1080 |
+| `hero-category-badge-v6.mp4` | ~89s | Prior send — still served for rollback and already-sent links |
+| `hero-category-badge-v5.01.mp4` | ~91s | Older prior — still served |
 | `hero-category-badge-v4.mp4` | ~62s | Short alternate · cold / short asks |
 | `hero-category-badge-v1.mp4` | ~61s | Jul archive — kept for rollback; not cited as vision default |
 | `g3-inception-reel-v1.mp4` | ~89s | Warm product intro (Swap A of v3) · `/signal` product tab |
@@ -54,9 +55,9 @@ npm run sync:g3-assets
 ## Build checklist (storefront)
 
 ```
-☑ /signal — CategoryFilmSection · vision (~89s v6) default + warm intro (~89s) tab
-☑ /press — badge v5.01 + short v4 + inception + investor proof + press zip
-☑ hero-category-badge-v6.mp4 — staged + cited as vision default (v5.01 still staged, now prior)
+☑ /signal — CategoryFilmSection · vision (~99s v7) default + warm intro (~89s) tab
+☑ /press — badge v7 + short v4 + inception + investor proof + press zip
+☑ hero-category-badge-v7.mp4 — staged + cited as vision default (v6 still staged, now prior)
 ☑ hero-category-badge-v4.mp4 — kept as short alternate
 ☑ Homepage — Watch category film → `/signal#category-film` (no autoplay)
 ☑ Journal — `/journal/category-vision-film`
@@ -73,7 +74,7 @@ npm run sync:g3-assets
 
 | Asset | URL |
 |-------|-----|
-| Category vision (~89s) | https://curxor.ai/demo/hero-category-badge-v6.mp4 |
+| Category vision (~99s) | https://curxor.ai/demo/hero-category-badge-v7.mp4 |
 | Category short (~62s) | https://curxor.ai/demo/hero-category-badge-v4.mp4 |
 | Product proof (~89s) | https://curxor.ai/demo/investor/g3-inception-reel-v1.mp4 |
 | Investor proof (~2:50) | https://curxor.ai/demo/investor/g3-investor-proof-v1.mp4 |

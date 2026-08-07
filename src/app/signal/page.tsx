@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { CategoryFilmSection } from "@/components/CategoryFilmSection";
 import { SignalHorizonVisual } from "@/components/SignalHorizonVisual";
-import { SignalOptimusPreview } from "@/components/SignalOptimusPreview";
 import { SiteShell } from "@/components/SiteShell";
 import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { VideoJsonLd } from "@/components/VideoJsonLd";
@@ -15,7 +14,6 @@ import {
   signalPageHero,
   signalPageMeta,
   signalTodayTabs,
-  signalWalkthrough,
 } from "@/lib/signal-page";
 import { applianceVersion, siteConfig } from "@/lib/config";
 import { categoryFilmAssets } from "@/lib/g3-demo";
@@ -129,21 +127,6 @@ export default function SignalPage() {
               </article>
             ))}
           </div>
-        </section>
-
-        <section className="mt-16 overflow-hidden border border-white/10 bg-black">
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
-            <span className="text-[10px] tracking-[0.25em] text-white/60">
-              {signalWalkthrough.label}
-            </span>
-            <span className="border border-amber-400/30 px-2 py-0.5 text-[9px] tracking-widest text-amber-200/70">
-              PREVIEW
-            </span>
-          </div>
-          <SignalOptimusPreview />
-          <p className="px-4 py-3 text-xs leading-relaxed text-white/55">
-            {signalWalkthrough.caption}
-          </p>
         </section>
 
         <section className="mt-16 border border-white/10 bg-black p-6 sm:p-8">

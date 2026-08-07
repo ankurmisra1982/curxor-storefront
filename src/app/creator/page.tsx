@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { DeskStripVideo } from "@/components/DeskStripVideo";
-import { DeskWalkthroughPreview } from "@/components/DeskWalkthroughPreview";
 import { OperatorQuote } from "@/components/OperatorQuote";
 import { ShareOnX } from "@/components/ShareOnX";
 import { SiteShell } from "@/components/SiteShell";
@@ -15,7 +14,6 @@ import {
   creatorGoLiveChecks,
   creatorPageMeta,
   creatorPublishBridges,
-  creatorWalkthrough,
 } from "@/lib/creator-page";
 import { getOperator } from "@/lib/claw-operators";
 import { applianceVersion, siteConfig } from "@/lib/config";
@@ -72,25 +70,7 @@ export default function CreatorPage() {
           </section>
         ) : null}
 
-        <section className="mt-14 overflow-hidden border border-white/10 bg-black">
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
-            <span className="text-[10px] tracking-[0.25em] text-white/60">
-              {creatorWalkthrough.label}
-            </span>
-            <span className="border border-white/10 px-2 py-0.5 text-[9px] tracking-widest text-white/55">
-              APPROVAL · SCHEDULE
-            </span>
-          </div>
-          <DeskWalkthroughPreview
-            src={creatorWalkthrough.src}
-            ariaLabel={creatorWalkthrough.ariaLabel}
-          />
-          <p className="px-4 py-3 text-xs leading-relaxed text-white/55">
-            {creatorWalkthrough.caption}
-          </p>
-        </section>
-
-        <section className="mt-10">
+        <section className="mt-14">
           <DeskStripVideo {...creatorDeskStrip} />
         </section>
 

@@ -386,9 +386,9 @@ export const pressKit = {
     },
     { label: "Open Graph image", path: "/opengraph-image", note: "Auto-generated at curxor.ai/opengraph-image" },
     { label: "Desk gallery", path: "/#demo", note: "MS-S1 captures — Capital paper · Creator queue · Outreach pipeline" },
-    { label: "Outreach tour", path: "/outreach", note: "Desk strip + pipeline capture" },
-    { label: "Capital tour", path: "/capital", note: "Paper Capital walkthrough on the appliance" },
-    { label: "Creator tour", path: "/creator", note: "Creator walkthrough · approval / schedule honesty" },
+    { label: "Outreach tour", path: "/outreach", note: "Desk strip · pipeline honesty" },
+    { label: "Capital tour", path: "/capital", note: "Desk strip · paper book honesty" },
+    { label: "Creator tour", path: "/creator", note: "Desk strip · approval / schedule honesty" },
     { label: "Install video", path: "/architecture#validation", note: "Factory USB production batch — not published yet" },
   ],
 } as const;

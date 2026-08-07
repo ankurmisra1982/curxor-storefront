@@ -1,14 +1,6 @@
 import { clawHeadlines } from "@/lib/claw-headlines";
 import { g3DeskStrips, g3Honesty, g3Screenshots } from "@/lib/g3-demo";
 
-export const creatorWalkthrough = {
-  src: "/demo/creator-walkthrough-vo.mp4",
-  ariaLabel: "Play Creator desk walkthrough — approval and schedule honesty",
-  label: "DESK CREW · CREATOR WALKTHROUGH",
-  caption:
-    "Standard Publisher path — local drafts, operator approval before schedule or publish on egress. Desk crew / Crew Cafe chrome on the appliance. Sound on.",
-} as const;
-
 export const creatorDeskStrip = {
   src: g3DeskStrips.creator,
   title: "Creator desk strip",

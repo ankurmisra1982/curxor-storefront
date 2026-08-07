@@ -3,8 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { DeskStripVideo } from "@/components/DeskStripVideo";
-import { DeskWalkthroughPreview } from "@/components/DeskWalkthroughPreview";
-import { ClawDemoHero } from "@/components/ClawDemoHero";
 import { OperatorQuote } from "@/components/OperatorQuote";
 import { ShareOnX } from "@/components/ShareOnX";
 import { SiteShell } from "@/components/SiteShell";
@@ -12,14 +10,12 @@ import { SubscribeFirstCtas } from "@/components/SubscribeFirstCtas";
 import { getOperator } from "@/lib/claw-operators";
 import { applianceVersion, siteConfig } from "@/lib/config";
 import {
-  outreachDemoHero,
   outreachDemoTourSteps,
   outreachDeskStrip,
   outreachFlowShots,
   outreachGoLiveChecks,
   outreachPageMeta,
   outreachTierBFeatures,
-  outreachWalkthrough,
 } from "@/lib/outreach-page";
 
 export const metadata: Metadata = {
@@ -74,32 +70,7 @@ export default function OutreachPage() {
           </section>
         ) : null}
 
-        <section className="mt-14 overflow-hidden border border-white/10 bg-black">
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
-            <span className="text-[10px] tracking-[0.25em] text-white/60">
-              {outreachWalkthrough.label}
-            </span>
-            <span className="border border-white/10 px-2 py-0.5 text-[9px] tracking-widest text-white/55">
-              PIPELINE · SEND
-            </span>
-          </div>
-          <DeskWalkthroughPreview
-            src={outreachWalkthrough.src}
-            ariaLabel={outreachWalkthrough.ariaLabel}
-          />
-          <p className="px-4 py-3 text-xs leading-relaxed text-white/55">
-            {outreachWalkthrough.caption}
-          </p>
-        </section>
-
-        <section className="mt-10">
-          <p className="mb-4 text-[10px] tracking-[0.25em] text-white/55">
-            FLIGHT COMMAND
-          </p>
-          <ClawDemoHero {...outreachDemoHero} />
-        </section>
-
-        <section className="mt-10">
+        <section className="mt-14">
           <DeskStripVideo {...outreachDeskStrip} />
         </section>
 

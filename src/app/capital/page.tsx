@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { DeskStripVideo } from "@/components/DeskStripVideo";
-import { DeskWalkthroughPreview } from "@/components/DeskWalkthroughPreview";
 import { OperatorQuote } from "@/components/OperatorQuote";
 import { ShareOnX } from "@/components/ShareOnX";
 import { SiteShell } from "@/components/SiteShell";
@@ -16,7 +15,6 @@ import {
   capitalGoLiveChecks,
   capitalPageMeta,
   capitalSetupSteps,
-  capitalWalkthrough,
 } from "@/lib/capital-page";
 import { applianceVersion, siteConfig } from "@/lib/config";
 
@@ -72,25 +70,7 @@ export default function CapitalPage() {
           </section>
         ) : null}
 
-        <section className="mt-14 overflow-hidden border border-white/10 bg-black">
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
-            <span className="text-[10px] tracking-[0.25em] text-white/60">
-              {capitalWalkthrough.label}
-            </span>
-            <span className="border border-white/10 px-2 py-0.5 text-[9px] tracking-widest text-white/55">
-              PAPER BOOK
-            </span>
-          </div>
-          <DeskWalkthroughPreview
-            src={capitalWalkthrough.src}
-            ariaLabel={capitalWalkthrough.ariaLabel}
-          />
-          <p className="px-4 py-3 text-xs leading-relaxed text-white/55">
-            {capitalWalkthrough.caption}
-          </p>
-        </section>
-
-        <section className="mt-10">
+        <section className="mt-14">
           <DeskStripVideo {...capitalDeskStrip} />
         </section>
 

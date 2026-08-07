@@ -95,7 +95,11 @@ const publicBullets: Record<string, readonly string[]> = {
   ],
 };
 
-export type PublicRosterEntry = Omit<ClawCheatSheetEntry, "bullets" | "status"> & {
+export type PublicRosterEntry = Omit<
+  ClawCheatSheetEntry,
+  "bullets" | "status" | "route"
+> & {
+  route: string;
   status: "live" | "preview";
   statusLabel: string;
   bullets: readonly string[];

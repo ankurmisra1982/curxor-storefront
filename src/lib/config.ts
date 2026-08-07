@@ -125,9 +125,10 @@ import { apps as syncedApps } from "./generated/appliance-sync";
 
 type SyncedApp = (typeof syncedApps)[number];
 
-/** Public app card — description may be buyer-overlaid vs appliance sync. */
-export type StorefrontApp = Omit<SyncedApp, "description"> & {
+/** Public app card — description/tagline may be buyer-overlaid vs appliance sync. */
+export type StorefrontApp = Omit<SyncedApp, "description" | "tagline"> & {
   description: string;
+  tagline: string;
 };
 
 /** Buyer overlay — appliance sync may still carry internal milestone codes in descriptions. */

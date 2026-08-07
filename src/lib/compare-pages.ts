@@ -28,7 +28,7 @@ export const comparePages: ComparePage[] = [
       `Compare ${productIdentity.boxName} (64GB UMA, 126 TOPS, flagship crewmates + Forge) with ClawBox (€549 Jetson assistant, 8GB, messaging bots).`,
     eyebrow: "COMPARE · LIGHT ASSISTANT",
     headline: "ClawBox is a desk assistant. CurXor is an employee appliance.",
-    lead: "ClawBox (~€549) is an excellent always-on OpenClaw box for Telegram, WhatsApp, and light automations. CurXor targets a different buyer: 64GB local inference, wealth/work/life crewmates, and dual-port egress control.",
+    lead: "ClawBox (~€549) is an excellent always-on OpenClaw box for Telegram, WhatsApp, and light automations. CurXor targets a different buyer: 64GB local inference, wealth, creation, and outreach crewmates, and dual-port egress control.",
     themLabel: "ClawBox",
     positioning:
       "ClawBox wins on price and 5-minute setup for messaging-first assistants. CurXor wins when you need large local models, Capital/Creator/Outreach desks, and a physical eno2 kill switch.",
@@ -79,7 +79,7 @@ export const comparePages: ComparePage[] = [
     lead: "MIKY and CurXor both sell an independent computer for digital employees — not a human-first PC. MIKY emphasizes mobile app control and secure-element trust at ~€490. CurXor adds 64GB UMA, dual 10GbE, and a desk crew of ten.",
     themLabel: "MIKY",
     positioning:
-      "MIKY wins on category branding, fanless trust-node narrative, and lower reservation price. CurXor wins on memory, NPU class, wealth/work verticals, and Flight Command depth.",
+      "MIKY wins on category branding, fanless trust-node narrative, and lower reservation price. CurXor wins on memory, NPU class, wealth and outreach verticals, and Flight Command depth.",
     whoShouldBuyThem:
       "Reserve MIKY if you want a screenless trust node, app-controlled agents, and general independence at a lower price point — with compute suited to lighter workloads.",
     whoShouldBuyCurxor:
@@ -131,7 +131,7 @@ export const comparePages: ComparePage[] = [
     whoShouldBuyThem:
       "Use NemoClaw if you have integrators, existing NVIDIA/DGX infrastructure, and need OpenShell policy sandboxes on your own images.",
     whoShouldBuyCurxor:
-      "Pre-order CurXor if you want eno2 physical egress isolation, Flight Command, and wealth/work/life crewmates on day one — not a weekend integrator project.",
+      "Pre-order CurXor if you want eno2 physical egress isolation, Flight Command, and wealth, creation, and outreach crewmates on day one — not a weekend integrator project.",
     rows: [
       { label: "What you buy", them: "Open-source governance stack", curxor: "Hardware + CurXor OS + crewmates" },
       { label: "Target buyer", them: "Platform / security teams", curxor: "Operators · creators · agencies" },

@@ -131,15 +131,22 @@ export type StorefrontApp = Omit<SyncedApp, "description"> & {
 };
 
 /** Buyer overlay — appliance sync may still carry internal milestone codes in descriptions. */
-export const apps: StorefrontApp[] = syncedApps.map((app) =>
-  app.applianceId === "my-learn"
-    ? {
-        ...app,
-        description:
-          "Tutor desk — pick a learner from Kin, track curriculum progress, and earn Cafe XP when depth ships. Honest Preview shell today.",
-      }
-    : app,
-);
+export const apps: StorefrontApp[] = syncedApps.map((app) => {
+  if (app.applianceId === "my-learn") {
+    return {
+      ...app,
+      description:
+        "Tutor desk — pick a learner from Kin, track curriculum progress, and earn Cafe XP when depth ships. Honest Preview shell today.",
+    };
+  }
+  if (app.applianceId === "my-estate") {
+    return {
+      ...app,
+      tagline: "Legal · Property · Tax — local sandbox preview",
+    };
+  }
+  return app;
+});
 
 /** Synced workspace count excluding The Forge — internal only; includes Cafe/horizon apps. */
 export const clawVerticalCount = syncedApps.filter(
@@ -210,7 +217,7 @@ export const faqItems = [
   {
     question: "What do Flagship, Forge, Cafe, and Preview mean?",
     answer:
-      "Honest depth labels on every crewmate. Flagship desks (Capital, Creator, Outreach) are demo-ready with Go Live paths and eno2 bridges. The Forge mints custom agents in natural language. Crew Cafe is the cross-crew growth home — XP, streaks, and ascension from real activity. Preview modules (Arbitrage, Signal, Swarm, Vital, Kin) are working shells with local data — not fake production pipelines. Crew Cafe note: curxor.ai/journal/crew-cafe.",
+      "Honest depth labels on every crewmate. Flagship desks (Capital, Creator, Outreach) are demo-ready with Go Live paths and eno2 bridges. The Forge mints custom agents in natural language. Crew Cafe is the cross-crew growth home — XP, streaks, and ascension from real activity. Eight Preview crewmates (Arbitrage, Signal, Swarm, Vital, Kin, Learn, Gamer, Estate) are working shells with local data — not fake production pipelines. Crew Cafe note: curxor.ai/journal/crew-cafe.",
   },
   {
     question: "What does Creator do on day one?",
@@ -250,7 +257,7 @@ export const faqItems = [
   {
     question: "How is CurXor different from MIKY or other “independent computer for agents” NAS boxes?",
     answer:
-      "MIKY-class and Minisforum NAS-style boxes target always-on agent hosts with bundled messaging and calendar skills — great for general automation. CurXor matches the independence story and adds serious local inference (64GB UMA, 126 TOPS), wealth/work/life crewmates, Telegram/Slack/WhatsApp/iMessage gateways, dual-port eno1/eno2 isolation, and The Forge to customize anything — not a fixed skill bundle.",
+      "MIKY-class and Minisforum NAS-style boxes target always-on agent hosts with bundled messaging and calendar skills — great for general automation. CurXor matches the independence story and adds serious local inference (64GB UMA, 126 TOPS), wealth, creation, and outreach crewmates, Telegram/Slack/WhatsApp/iMessage gateways, dual-port eno1/eno2 isolation, and The Forge to customize anything — not a fixed skill bundle.",
   },
   {
     question: "Where are your privacy policy and trading disclaimers?",
@@ -270,7 +277,7 @@ export const faqItems = [
   {
     question: "Which crewmates actually work today?",
     answer:
-      "Outreach, Creator, Capital, and The Forge are flagship depth with demo-tour proof on metal. Kin, Vital, Signal, Swarm, and Arbitrage include preview or Coming Soon surfaces — labeled honestly in Flight Command. Crew Cafe is the universal spatial home (pixel room, ascension); Engage is the Creator inbox tab.",
+      "Outreach, Creator, Capital, and The Forge are flagship depth with demo-tour proof on metal. Eight Preview crewmates — Arbitrage, Signal, Swarm, Vital, Kin, Learn, Gamer, Estate — stay labeled honestly in Flight Command. Crew Cafe is the universal spatial home (pixel room, ascension); Engage is the Creator inbox tab.",
   },
 ] as const;
 

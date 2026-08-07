@@ -77,7 +77,7 @@ const publicBullets: Record<string, readonly string[]> = {
   ],
   "robotaxi-fleet-manager": [
     "Geospatial grid — assign/recall, policy pick, workload queue",
-    "Handoffs to Work and Capital · simulators and Forge-linked units",
+    "Handoffs to Outreach and Capital · simulators and Forge-linked units",
     "Robotaxi horizon panel — fleet vision copy",
     "Not live: Tesla VIN pairing, on-road dispatch, production fleet APIs",
   ],
@@ -107,9 +107,15 @@ function statusLabel(entry: ClawCheatSheetEntry): string {
   return "Preview · Under construction";
 }
 
+/** Buyer-facing route labels — never show pre-launch desk paths like /my-work. */
+const publicRoutes: Record<string, string> = {
+  "my-work": "Outreach desk",
+};
+
 export function getPublicRosterEntries(): PublicRosterEntry[] {
   return clawCheatSheetEntries.map((entry) => ({
     ...entry,
+    route: publicRoutes[entry.applianceId] ?? entry.route,
     status: entry.status === "live" ? "live" : "preview",
     statusLabel: statusLabel(entry),
     bullets: publicBullets[entry.applianceId] ?? entry.bullets,

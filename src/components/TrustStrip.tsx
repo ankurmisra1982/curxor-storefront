@@ -5,7 +5,7 @@ import { trustSignals } from "@/lib/marketing";
 export function TrustStrip() {
   return (
     <section
-      aria-label="Pre-order trust signals"
+      aria-label="Trust signals"
       className="border-b border-white/10 bg-black/60"
     >
       <div className="band-bar mx-auto max-w-7xl px-6">

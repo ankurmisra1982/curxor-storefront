@@ -1,9 +1,8 @@
-Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA BIOS
-OS: Ubuntu 24.04 · CurXor OS v1.0.3
-Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
-RAM in use: 4.56 / 64 GB · UMA 7.1%
-Dashboard: Flight Command on LAN :3080
-QA: appliance suite green · demo capture unit green
+Box: MINISFORUM MS-S1 MAX · 64 GB unified memory
+OS: Ubuntu 24.04 · CurXor OS v1.0.5
+Inference: Ollama ROCm · qwen3:8b · 38 tok/s measured on MS-S1 MAX
+Dashboard: Flight Command on the appliance LAN
+QA: Appliance suite green on CurXor OS
 Pricing: $3,999 once · $0/mo operate-plane API
-Stage: Working product on MS-S1 MAX · founder MS-S1 bridges proven · design-partner sessions done (private) · pre-revenue · solo founder
-Velocity: 182 commits · 20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · seven bridges proven Jul 9
+Stage: Working product on MS-S1 MAX · priority bridges proven on the appliance · design-partner sessions done (private) · pre-revenue
+Velocity: ~20 days from first commit to first stable · proof pack on site Jul 8 · seven bridges proven Jul 9

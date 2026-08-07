@@ -64,7 +64,16 @@ function publicizeHighlight(raw: string): string | null {
     .replace(/\bFRE\s*\(\s*Capital,\s*Creator,\s*(?:Work|Outreach)\s*\)/gi, "flagship desks (Capital, Creator, Outreach)")
     // "Work" was the pre-launch name for the Outreach desk — never ship it to buyers.
     .replace(/\bCapital,\s*Creator,\s*(?:and\s*)?Work\b/gi, "Capital, Creator, and Outreach")
+    .replace(/\bCapital,\s*Work,\s*and\s*Creator\b/gi, "Capital, Creator, and Outreach")
+    .replace(/\bWork\s*\/\s*Outreach\b/gi, "Outreach")
+    .replace(/\bwork-checklist\b/gi, "Outreach checklist")
+    .replace(
+      /\bCrew Cafe rebrand sign-off\b[^.—]*/gi,
+      "Crew Cafe naming polish for operator UI",
+    )
+    .replace(/\brebrand sign-off\b/gi, "naming polish")
     .replace(/\bWork (pipeline|desk|workspace)\b/g, "Outreach $1")
+    .replace(/\bDepth wave\b/gi, "Depth release")
     .replace(/\bon FRE mesh\b/gi, "on the mesh")
     .replace(/\bFRE\b/g, "desk setup")
     .replace(/\bSkillSpector(?:\s+CI gate)?\b/gi, "import safety gate")

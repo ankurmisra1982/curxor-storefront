@@ -34,6 +34,12 @@ const nextConfig: NextConfig = {
         destination: "/demo/08-creator.png",
         permanent: true,
       },
+      // Press kit — drop internal G-code from public asset URL
+      {
+        source: "/press/curxor-press-kit-g3.zip",
+        destination: "/press/curxor-press-kit.zip",
+        permanent: true,
+      },
     ];
   },
   async headers() {

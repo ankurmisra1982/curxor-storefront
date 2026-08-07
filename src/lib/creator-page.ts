@@ -95,7 +95,7 @@ export const creatorPublishBridges = [
 export const creatorPageMeta = {
   title: "Creator — Sovereign Social Operator",
   description:
-    "Creator on CurXor OS — one-click demo tour, 5-step Creation Wizard, Go Live checklist, 10 publish bridges on eno2, engage loop, and analytics. Draft locally, publish on your terms.",
+    "Creator on CurXor OS — one-click demo tour, 5-step Creation Wizard, Go Live checklist, up to 10 publish bridges on eno2 when you connect OAuth, engage loop, and analytics. Draft locally, publish on your terms.",
   ...clawHeadlines.creator,
 } as const;
 

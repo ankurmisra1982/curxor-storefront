@@ -12,9 +12,9 @@ export const clawHeadlines = {
     hero: "Go Live in one session.",
     accent: "Demo tour to scheduled post — bridges optional.",
     oneLiner:
-      "One click runs draft → pre-flight → best-time schedule → simulated publish. Ten live bridges on eno2 when you connect OAuth.",
+      "One click runs draft → pre-flight → best-time schedule → simulated publish. Up to 10 publish bridges on eno2 when you connect OAuth — priority bridges proven on the appliance.",
     personaCard:
-      "Creator — demo tour, 5-step Creation Wizard, Go Live checklist, and 10 publish bridges on eno2.",
+      "Creator — demo tour, 5-step Creation Wizard, Go Live checklist, and up to 10 publish bridges on eno2.",
   },
   outreach: {
     hero: "Pipeline to send — one desk.",

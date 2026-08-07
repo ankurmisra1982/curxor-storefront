@@ -1,13 +1,13 @@
+import { applianceVersion } from "@/lib/generated/appliance-sync";
 import { productStills } from "@/lib/product-stills";
 
-/** MS-S1 unbox day + golden-path gate — shared by ValidationBadge and /architecture#validation. */
+/** MS-S1 unbox day + end-to-end gate — shared by ValidationBadge and /architecture#validation. */
 export const hardwareValidation = {
   unboxDate: "2026-06-28",
   g1ClosedDate: "2026-06-29",
   badgeAriaLabel:
     "curXor — MS-S1 unboxed and running end to end on real metal",
-  badgeSummary:
-    "MS-S1 MAX unboxed Jun 28, 2026. First full run end to end on the box the next day — demo captures closed Jul 2026. CurXor OS v1.0.3, flagship desks, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.",
+  badgeSummary: `MS-S1 MAX unboxed Jun 28, 2026. First full run end to end on the box the next day — demo captures closed Jul 2026. CurXor OS ${applianceVersion}, flagship desks, local inference, COMMAND captive portal, and EGRESS mesh validated on Standard 64.`,
   /** Elevated product still — not factory photography. */
   deskStill: {
     src: productStills.a.src,
@@ -32,7 +32,7 @@ export const hardwareValidation = {
   doneOnBox: {
     eyebrow: "DONE ON BOX",
     items: [
-      "Ubuntu 24.04 install · 48 GB UMA allocated in BIOS on the 64 GB SKU · CurXor OS v1.0.3 on MS-S1 MAX Standard 64",
+      `Ubuntu 24.04 install · 48 GB UMA allocated in BIOS on the 64 GB SKU · CurXor OS ${applianceVersion} on MS-S1 MAX Standard 64`,
       "Ollama ROCm live — validated at unbox on qwen3:8b; moondream:1.8b + qwen3.5:9b is the current default stack",
       "Flagship desks complete — Capital, Creator, Outreach · Flight Command live on bare metal",
       "eno1/eno2 cabling — COMMAND captive portal + EGRESS mesh on verified ports",
@@ -61,8 +61,8 @@ export const hardwareValidation = {
     eyebrow: "PRIORITY BRIDGES",
     items: [
       "Priority bridges green on MS-S1 — Google · Alpaca paper · Bluesky · Telegram · Discord · X (quota-sensitive FinTwit)",
-      "Seven bridges proven Jul 9 on the founder MS-S1 — not a customer fleet · Capital stays paper",
-      "Design partners have completed remote walkthrough sessions on the founder MS-S1 (creator and trader desks) — private feedback only",
+      "Seven bridges proven Jul 9 on MS-S1 MAX — not a customer fleet · Capital stays paper",
+      "Design partners have completed remote walkthrough sessions on MS-S1 MAX (creator and trader desks) — private feedback only",
       "Live brokerage fills and autonomous publish fleets are not claimed",
     ],
   },

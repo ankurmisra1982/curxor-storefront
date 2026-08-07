@@ -18,11 +18,18 @@ function needsPro128(description: string): boolean {
   return /128 GB/i.test(description);
 }
 
-/** Buyer overlay — appliance sync may still say Build Plane, and pi-bench is not our SKU. */
+/** Buyer overlay — appliance sync may still carry internal role names or third-party bench labels. */
 function publicModelDescription(description: string): string {
   return description
     .replace(/\bBuild Plane\b/gi, "heavy agent")
-    .replace(/on pi-bench/gi, "on pi-bench, not yet measured on MS-S1");
+    .replace(
+      /\bStrix Halo coding leader\s*[—-]\s*~?\d+%?\s*SWE-mini on pi-bench;?\s*/gi,
+      "Strong local coding model — ",
+    )
+    .replace(/\bpi-bench sweet spot\b/gi, "strong local coding fit")
+    .replace(/\bon pi-bench\b/gi, "for local coding workloads")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }
 
 export function PricingModelMatrix() {

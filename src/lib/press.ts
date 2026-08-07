@@ -7,22 +7,21 @@ import {
 } from "./config";
 import { categoryFilmAssets } from "./g3-demo";
 
-export const metricsCiteCard = `Box: MINISFORUM MS-S1 MAX · 64 GB · 48 GB UMA allocated in BIOS
-OS: Ubuntu 24.04 · CurXor OS v1.0.3
-Inference: Ollama ROCm · qwen3:8b · 38 tok/s (System Health)
-RAM in use: 4.56 / 64 GB · UMA 7.1%
-Dashboard: Flight Command on LAN :3080
-QA: appliance suite green · demo capture unit green
+export const metricsCiteCard = `Box: MINISFORUM MS-S1 MAX · 64 GB unified memory
+OS: Ubuntu 24.04 · CurXor OS v${applianceVersion}
+Inference: Ollama ROCm · qwen3:8b · 38 tok/s measured on MS-S1 MAX
+Dashboard: Flight Command on the appliance LAN
+QA: Appliance suite green on CurXor OS
 Pricing: $3,999 once · $0/mo operate-plane API
-Stage: Working product on MS-S1 MAX · founder MS-S1 bridges proven · design-partner sessions done (private) · pre-revenue · solo founder
-Velocity: 182 commits · ~20 days · v0.1.0→v1.0.3 · proof pack on site Jul 8 · seven bridges proven Jul 9`;
+Stage: Working product on MS-S1 MAX · priority bridges proven on the appliance · design-partner sessions done (private) · pre-revenue
+Velocity: ~20 days from first commit to first stable · proof pack on site Jul 8 · seven bridges proven Jul 9`;
 
 export const investorDeckMailto =
   "mailto:hello@curxor.ai?subject=Investor%20inquiry%20%E2%80%94%20CurXor";
 
 export const pressKit = {
   headline: "Your AI team. On a box you own.",
-  boilerplate: `${productIdentity.companyName} builds sovereign AI appliances that run digital employees — a desk crew on local hardware — with zero monthly API fees. ${productIdentity.boxName} is the chassis name on every box — 126 TOPS NPU, 64GB unified memory, ${productIdentity.osName}, and ${clawRosterLabel} spanning wealth, work, signals, and life & family. Message your desk crew from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Pre-order at curxor.ai for $3,999.`,
+  boilerplate: `${productIdentity.companyName} builds sovereign AI appliances that run digital employees — a desk crew on local hardware — with zero monthly API fees. ${productIdentity.boxName} is the chassis name on every box — 126 TOPS NPU, 64GB unified memory, ${productIdentity.osName}, and ${clawRosterLabel} spanning wealth, creation, outreach, signals, and life & family. Message your desk crew from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Join the waitlist at curxor.ai; pre-order is $3,999 when you are ready.`,
   founderQuote:
     "ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.",
   contactEmail: siteConfig.contactEmail,
@@ -41,7 +40,7 @@ export const pressKit = {
   investorIntro: {
     eyebrow: "COMPANY",
     headline: "Sovereign agent appliance — working product on real MS-S1 metal.",
-    body: "CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; first full end-to-end run on the box the next day; demo captures closed 2026-07-08: CurXor OS v1.0.3, flagship desks (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s measured on ROCm on the founder MS-S1), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the founder MS-S1 (Google · Alpaca paper · Bluesky · Telegram · Discord · X — Capital stays paper). Design partners have completed remote walkthrough sessions on the founder MS-S1 (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.",
+    body: `CurXor Systems builds curXor — a 64GB sovereign AI appliance that runs a desk crew of digital employees on bare metal. Buyers pay once for hardware; CurXor does not bill per token. MS-S1 MAX unboxed 2026-06-28; first full end-to-end run on the box the next day; demo captures closed 2026-07-08. Current release: CurXor OS ${applianceVersion} — flagship desks (Capital, Creator, Outreach), local inference (qwen3:8b · 38 tok/s measured on ROCm on MS-S1 MAX), investor proof pack, and desk strips on Standard 64. Priority bridges are green on the appliance (Google · Alpaca paper · Bluesky · Telegram · Discord · X — Capital stays paper). Design partners have completed remote walkthrough sessions on MS-S1 MAX (creator and trader desks). Feedback is private. Not a customer fleet. Not closed traction. Not live brokerage fills.`,
   },
 
   founders: {
@@ -64,7 +63,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **v1.0.3**, Ollama ROCm on Standard 64 (qwen3:8b · 38 tok/s measured on the founder box)",
+          "MS-S1 MAX **unboxed** (2026-06-28) — Ubuntu, CurXor OS **v1.0.3**, Ollama ROCm on Standard 64 (qwen3:8b · 38 tok/s measured on MS-S1 MAX)",
       },
       {
         status: "Shipped" as const,
@@ -74,7 +73,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "CurXor OS **v1.0.3** — four-pillar stack, Flight Command UI, desk crew of ten + The Forge, Crew Cafe ascension tied to Flagship desks",
+          `CurXor OS **v${applianceVersion}** — four-pillar stack, Flight Command UI, desk crew of ten + The Forge, Crew Cafe ascension tied to Flagship desks`,
       },
       {
         status: "Shipped" as const,
@@ -105,12 +104,12 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "**Priority bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on founder MS-S1 (seven bridges proven; Capital paper-only)",
+          "**Priority bridges green** (2026-07-08/09) — Google · Alpaca paper · Bluesky · Telegram · Discord · X OAuth1 + FinTwit on MS-S1 MAX (seven bridges proven; Capital paper-only)",
       },
       {
         status: "Shipped" as const,
         milestone:
-          "Design partners completed remote walkthrough sessions on the founder MS-S1 (creator and trader desks) — feedback private; not a customer fleet; not closed traction",
+          "Design partners completed remote walkthrough sessions on MS-S1 MAX (creator and trader desks) — feedback private; not a customer fleet; not closed traction",
       },
       {
         status: "Pending" as const,
@@ -118,7 +117,7 @@ export const pressKit = {
       },
     ],
     footnote:
-      "Desk captures on curxor.ai are from MS-S1 box — paper Capital, approval-gated Creator, honest Outreach pipeline. Priority bridges are proven on the founder MS-S1 — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
+      "Desk captures on curxor.ai are from MS-S1 MAX — paper Capital, approval-gated Creator, honest Outreach pipeline. Priority bridges are proven on the appliance — not a customer fleet. Live broker fills stay off until the operator flips Capital live and wires their own keys on eno2. See Terms — Software maturity.",
     footnoteLink: { href: "/terms", label: "Terms — Software maturity" },
   },
 
@@ -214,7 +213,7 @@ export const pressKit = {
   focusAsk: {
     headline: "Use of focus / capital",
     bullets: [
-      "v1.0.0 tag + golden image + production OTA pipeline when ready",
+      "Production flash image + customer OTA pipeline when ready",
       "first 100 units",
       "field engineer for support and factory flash",
     ],
@@ -351,7 +350,7 @@ export const pressKit = {
     },
     {
       label: "Press kit (ZIP)",
-      path: "/press/curxor-press-kit-g3.zip",
+      path: "/press/curxor-press-kit.zip",
       note: "Press kit ZIP — film plates + metrics cite card",
     },
     {

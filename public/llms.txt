@@ -12,7 +12,7 @@
 - Homepage story: Who it's for · Persona grid (Alex/Sam/Jordan) · Symphony · desk captures · Crew Cafe horizon
 - Compute: AMD Ryzen AI Max+ 395, 64GB LPDDR5X UMA, 126 TOPS NPU · 38 tok/s qwen3:8b on box
 - Dual 10GbE: eno1 Command Port (UI), eno2 Egress Port (agent outbound — unplug to kill agents)
-- Software: CurXor OS v1.0.3 with a desk crew of digital employees + The Forge (enable any combination in Settings)
+- Software: CurXor OS v1.0.5 with a desk crew of digital employees + The Forge (enable any combination in Settings)
 - Validation: working product on real MS-S1 MAX metal; published mesh benchmarks pending
 - Hardware status: pre-revenue · flagship desks demo-ready · Preview modules labeled honestly
 - Messaging: Telegram, Slack, WhatsApp, iMessage gateways — user-configured; unified inbox on appliance
@@ -24,7 +24,7 @@
 - Flagship: Capital, Creator, Outreach — demo-ready desks, Go Live paths, eno2 bridges
 - Forge: The Forge — natural-language crewmate factory
 - Cafe: Crew Cafe — cross-crew growth home (XP, streaks, ascension from real activity)
-- Preview: Arbitrage, Signal, Swarm, Vital, Kin — working shells; local data OK; production depth ships later
+- Preview: Arbitrage, Signal, Swarm, Vital, Kin, Learn, Gamer, Estate — working shells; local data OK; production depth ships later
 
 ## Canonical URLs
 

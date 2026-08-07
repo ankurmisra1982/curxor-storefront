@@ -52,7 +52,7 @@ export const personaPages: PersonaPage[] = [
     slug: "creators",
     title: "CurXor for Creators",
     metaDescription:
-      "Creator — one-click demo tour, 5-step Creation Wizard, Go Live checklist, and 10 publish bridges. Local inference, eno2 egress only.",
+      "Creator — one-click demo tour, 5-step Creation Wizard, Go Live checklist, and up to 10 publish bridges when you connect OAuth. Local inference, eno2 egress only.",
     eyebrow: "FOR CREATORS",
     headline: "Go Live in one session.",
     lead: "Creator demo tour — draft, schedule, simulated publish. Full wizard and 10 bridges when you scale.",
@@ -63,7 +63,7 @@ export const personaPages: PersonaPage[] = [
     claws: [
       {
         name: "Creator",
-        body: "Demo tour, 5-step wizard, Go Live checklist, 10 publish bridges on eno2.",
+        body: "Demo tour, 5-step wizard, Go Live checklist, up to 10 publish bridges on eno2.",
       },
       {
         name: "The Forge",

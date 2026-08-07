@@ -72,7 +72,7 @@ export default function ArchitecturePage() {
           ))}
         </div>
 
-        <div className="mt-16">
+        <div id="dual-port" className="mt-16 scroll-mt-24">
           <h2 className="mb-8 flex items-center gap-2 text-xs font-bold tracking-[0.3em] text-neon-purple">
             DUAL-PORT ISOLATION
             <InfoTip tipId="dualPort" />
@@ -193,9 +193,9 @@ export default function ArchitecturePage() {
           <p className="mt-4 text-xs leading-relaxed text-white/55">
             Unboxed {hardwareValidation.unboxDate}. First full run end to end on
             MS-S1 — desk captures and press assets are live on curxor.ai. Priority
-            bridges are green on the founder MS-S1 (paper Capital). Design partners
-            have completed remote walkthrough sessions on the founder MS-S1 —
-            feedback is private; not a customer fleet.
+            bridges are green on MS-S1 MAX (paper Capital). Design partners have
+            completed remote walkthrough sessions on the appliance — feedback is
+            private; not a customer fleet.
           </p>
         </div>
 

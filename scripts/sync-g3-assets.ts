@@ -127,7 +127,7 @@ if (fs.existsSync(heroExports)) {
 }
 
 const pressDir = path.join(storefrontRoot, "public", "press");
-const pressZip = path.join(pressDir, "curxor-press-kit-g3.zip");
+const pressZip = path.join(pressDir, "curxor-press-kit.zip");
 const heroFilmDir = path.join(demoRoot, "hero-film");
 const metricsCard = path.join(pressDir, "metrics-cite-card.txt");
 

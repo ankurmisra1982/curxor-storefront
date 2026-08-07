@@ -43,7 +43,7 @@ export function PricingPreview() {
             href="/pricing"
             className="inline-flex items-center gap-2 border border-neon-purple/50 px-5 py-3 text-xs tracking-[0.2em] text-neon-purple transition-colors hover:bg-neon-purple/10"
           >
-            MODEL MATRIX + PRE-ORDER <span>→</span>
+            MODEL MATRIX · JOIN WAITLIST <span>→</span>
           </Link>
         </div>
       </div>

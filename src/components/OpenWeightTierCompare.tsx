@@ -7,8 +7,7 @@ import {
 type Variant = "press" | "pricing";
 
 export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Variant }) {
-  const { eyebrow, hero, subhead, paragraph, footnote, evidence } =
-    openWeightComputeLadder;
+  const { eyebrow, hero, subhead, paragraph, footnote } = openWeightComputeLadder;
   const showNarrative = variant === "press";
 
   return (
@@ -86,23 +85,7 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
         </table>
       </div>
 
-      <p className="mt-6 text-xs leading-relaxed text-white/55">
-        <strong className="font-semibold text-white/55">Honest footnote:</strong>{" "}
-        {footnote}
-      </p>
-
-      <p className="mt-3 text-xs leading-relaxed text-white/55">
-        Directional evidence (same silicon class as MS-S1):{" "}
-        <a
-          href={evidence.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-neon-purple hover:underline"
-        >
-          {evidence.label}
-        </a>{" "}
-        — {evidence.note}
-      </p>
+      <p className="mt-6 text-xs leading-relaxed text-white/55">{footnote}</p>
 
       {variant === "pricing" ? (
         <p className="mt-4 text-xs leading-relaxed text-white/60">
@@ -119,8 +102,7 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
           <Link href="/pricing#compute-ladder" className="text-neon-purple hover:underline">
             /pricing
           </Link>
-          . Full doc:{" "}
-          <span className="text-white/60">docs/COMPUTE-LADDER.md</span> in storefront repo.
+          .
         </p>
       )}
     </section>

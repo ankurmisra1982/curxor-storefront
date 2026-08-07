@@ -27,7 +27,7 @@ export const clawOperators: ClawOperator[] = [
     name: "Alex",
     role: "Agency founder · NYC",
     claw: "Outreach",
-    eyebrow: "WORK",
+    eyebrow: "OUTREACH",
     title: "The solo operator",
     hook: "Pipeline on metal. Pull eno2 when you need the kill switch.",
     quote:

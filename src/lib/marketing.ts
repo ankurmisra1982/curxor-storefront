@@ -10,23 +10,25 @@ export const supportEmail = siteConfig.contactEmail;
 
 export const trustSignals = [
   {
-    label: "PRE-ORDER",
-    value: siteConfig.preOrderPrice,
-    detail: "One-time hardware · no CurXor subscription",
+    label: "WAITLIST",
+    value: "Primary path",
+    detail: "Join first · pre-order when you are ready",
+    href: "/#subscribe",
   },
   {
-    label: "SHIP WINDOW",
-    value: "Batch updates",
-    detail: "Dates announced by email as production schedules",
+    label: "HARDWARE",
+    value: siteConfig.preOrderPrice,
+    detail: "One-time · no CurXor subscription",
+    href: "/pricing",
   },
   {
     label: "SUPPORT",
     value: supportEmail,
-    detail: "Pre-order and technical questions",
+    detail: "Waitlist, pre-order, and technical questions",
   },
   {
     label: "TERMS",
-    value: "Pre-order policy",
+    value: "Buyer policy",
     detail: "Ship dates, trading disclaimers, refunds",
     href: "/terms",
   },

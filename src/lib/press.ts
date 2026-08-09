@@ -319,9 +319,9 @@ export const pressKit = {
       note: "Text-only — tight spaces, dark backgrounds",
     },
     {
-      label: "Category vision film (~99s MP4)",
+      label: "Category vision film (~103s MP4)",
       path: categoryFilmAssets.heroCategoryBadge,
-      note: "Desk crew · always-on life · approval gate — vision comps with voiceover · 1080p",
+      note: "Desk crew · always-on life · approval gate — vision comps with voiceover · 1080p · fundraising lock v8.2",
     },
     {
       label: "Category vision short (~62s MP4)",
@@ -336,7 +336,7 @@ export const pressKit = {
     {
       label: "Category film (/signal)",
       path: "/signal#category-film",
-      note: "Category vision (~91s) + product proof — watch on site",
+      note: "Category vision (~103s) + product proof — watch on site",
     },
     {
       label: "Investor proof (~2:50 MP4)",

@@ -96,10 +96,11 @@ if (copyFile(
   path.join(demoRoot, "hero-category-badge-v1.mp4")
 )) copied++;
 
-// Hero badge v7 — LIVE SEND (promoted 2026-08-07); v6 prior send kept for rollback and
-// because links already sent to investors point at the versioned v6 URL; v5.01 + v4 stay staged.
-// Every badge cut is staged under its own versioned URL, so no already-sent link ever changes
-// what it plays. Do not clobber *-v1 (rollback + CTO HOLD).
+// Hero badge v8.2 — LIVE SEND (fundraising lock 2026-08-09); v8.1 voice-only twin;
+// v8 / v7 / v6 / v5.01 / v4 stay staged under versioned URLs so already-sent links
+// never change what they play. Do not clobber *-v1 (rollback + CTO HOLD).
+// Point CURXOR_OS_ROOT at the worktree that holds the pack when promoting from a
+// film wave (default sibling is ../curxor-os).
 {
   const stageBadge = (name: string) => {
     const inv = path.join(packRoot, "investor-pack", name);
@@ -109,6 +110,9 @@ if (copyFile(
     if (copyFile(src, path.join(demoRoot, name))) copied++;
   };
 
+  stageBadge("hero-category-badge-v8.2.mp4");
+  stageBadge("hero-category-badge-v8.1.mp4");
+  stageBadge("hero-category-badge-v8.mp4");
   stageBadge("hero-category-badge-v7.mp4");
   stageBadge("hero-category-badge-v6.mp4");
   stageBadge("hero-category-badge-v5.01.mp4");
@@ -138,6 +142,9 @@ if (fs.existsSync(heroFilmDir)) {
     // Press kit carries exactly one category cut — the live send, newest first.
     ...((): string[] => {
       const preferred = [
+        "hero-category-badge-v8.2.mp4",
+        "hero-category-badge-v8.1.mp4",
+        "hero-category-badge-v8.mp4",
         "hero-category-badge-v7.mp4",
         "hero-category-badge-v6.mp4",
         "hero-category-badge-v5.01.mp4",

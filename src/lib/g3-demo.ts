@@ -19,10 +19,10 @@ export const g3DeskStrips = {
 } as const;
 
 export const categoryFilmAssets = {
-  /** ~99s dream-state category cut — badge v7 (LIVE SEND · promoted 2026-08-07 · 1920x1080). */
-  heroCategoryBadge: "/demo/hero-category-badge-v7.mp4",
-  /** Prior send, still staged: links already sent to investors point at this versioned URL. */
-  heroCategoryBadgePrior: "/demo/hero-category-badge-v6.mp4",
+  /** ~103s dream-state category cut — badge v8.2 (LIVE SEND · fundraising lock 2026-08-09 · 1920x1080 · EL music @0.45). */
+  heroCategoryBadge: "/demo/hero-category-badge-v8.2.mp4",
+  /** Prior storefront send (v7), still staged: already-sent links keep playing v7. */
+  heroCategoryBadgePrior: "/demo/hero-category-badge-v7.mp4",
   /** ~62s short alternate — badge v4 · keep for cold / short asks. */
   heroCategoryBadgeShort: "/demo/hero-category-badge-v4.mp4",
   /** Legacy Act I alias path — prefer inceptionReel for product tab. */

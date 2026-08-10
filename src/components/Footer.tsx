@@ -40,7 +40,7 @@ export function Footer() {
               Get launch updates
             </h3>
             <p className="mb-5 max-w-sm text-xs leading-relaxed text-white/55">
-              Forge updates, desk crew drops, and pre-order availability —
+              Forge updates, desk crew drops, and launch availability —
               delivered to your inbox.
             </p>
 

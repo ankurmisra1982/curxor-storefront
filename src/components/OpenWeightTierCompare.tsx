@@ -89,9 +89,9 @@ export function OpenWeightTierCompare({ variant = "pricing" }: { variant?: Varia
 
       {variant === "pricing" ? (
         <p className="mt-4 text-xs leading-relaxed text-white/60">
-          Standard 64 is the only tier you can buy today. Pro 128 pricing is
-          indicative and CurXor Studio is post-traction horizon — neither has a
-          checkout.{" "}
+          Standard 64 is the flagship price intent today — waitlist only; we are
+          not taking pre-orders yet. Pro 128 pricing is indicative and CurXor
+          Studio is post-traction horizon — neither has a charge path.{" "}
           <Link href="/press#compute-ladder" className="text-neon-purple hover:underline">
             Press ladder copy
           </Link>

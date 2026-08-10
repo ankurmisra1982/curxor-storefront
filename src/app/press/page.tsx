@@ -240,12 +240,13 @@ export default function PressPage() {
           <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-white/70">
             {pressKit.businessModel.now.map((item) => (
               <li key={item}>
-                {item.startsWith("Stripe pre-order") ? (
+                {item.startsWith("Waitlist at curxor.ai") ? (
                   <>
-                    Stripe pre-order at{" "}
+                    Waitlist at{" "}
                     <Link href="/pricing" className="text-neon-purple hover:underline">
                       /pricing
-                    </Link>
+                    </Link>{" "}
+                    (no cold-traffic checkout)
                   </>
                 ) : (
                   item

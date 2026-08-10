@@ -12,7 +12,7 @@ export const trustSignals = [
   {
     label: "WAITLIST",
     value: "Primary path",
-    detail: "Join first · pre-order when you are ready",
+    detail: "We’re not taking pre-orders yet",
     href: "/#subscribe",
   },
   {
@@ -24,7 +24,7 @@ export const trustSignals = [
   {
     label: "SUPPORT",
     value: supportEmail,
-    detail: "Waitlist, pre-order, and technical questions",
+    detail: "Waitlist and technical questions",
   },
   {
     label: "TERMS",

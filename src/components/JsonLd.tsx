@@ -34,7 +34,7 @@ export function JsonLd({
       url: waitlistOfferUrl,
       priceCurrency: "USD",
       price: siteConfig.preOrderPriceUsd,
-      availability: "https://schema.org/PreOrder",
+      availability: "https://schema.org/OutOfStock",
       itemCondition: "https://schema.org/NewCondition",
       seller: {
         "@type": "Organization",

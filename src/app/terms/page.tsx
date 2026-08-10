@@ -6,7 +6,7 @@ import { applianceVersion, clawRosterLabel, siteConfig } from "@/lib/config";
 
 const termsTitle = `Terms & Disclaimers — ${siteConfig.name}`;
 const termsDescription =
-  "Pre-order terms, trading disclaimers, and limitations for CurXor hardware and CurXor OS crewmates.";
+  "Waitlist and purchase terms, trading disclaimers, and limitations for CurXor hardware and CurXor OS crewmates.";
 
 export const metadata: Metadata = {
   title: termsTitle,
@@ -34,17 +34,19 @@ export default function TermsPage() {
         title="Terms & Disclaimers"
         updated={legalUpdated}
       >
-        <LegalSection title="Pre-order">
+        <LegalSection title="Waitlist and purchase">
           <p>
-            Pre-ordering on {siteConfig.siteUrl} reserves a place in our production
-            queue at the listed price ({siteConfig.preOrderPrice}). Ship dates are
-            announced as batches are scheduled. Pre-orders are subject to change
-            until fulfillment — we will communicate material changes by email.
+            {siteConfig.ctaHonesty} Joining the waitlist on {siteConfig.siteUrl}{" "}
+            does not reserve a unit, charge a card, or create a purchase
+            obligation. The listed hardware price ({siteConfig.preOrderPrice}) is
+            price intent — not a live checkout.
           </p>
           <p>
-            Questions before or after pre-order: {siteConfig.contactEmail}. Full pre-order
-            policy, support expectations, and refund handling are updated here as
-            production batches are finalized.
+            When we reopen a charge path, we will announce it by email to waitlist
+            subscribers. Ship dates are announced as production batches are
+            scheduled. Questions: {siteConfig.contactEmail}. Full purchase policy,
+            support expectations, and refund handling will be updated here before
+            any charge-now path goes live.
           </p>
         </LegalSection>
 

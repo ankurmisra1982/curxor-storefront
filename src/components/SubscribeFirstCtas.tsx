@@ -1,74 +1,73 @@
 import Link from "next/link";
 
 import { SubscribeForm } from "@/components/SubscribeForm";
-import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 import type { PreorderLocation } from "@/lib/analytics";
 import { siteConfig } from "@/lib/config";
 
 type SubscribeFirstCtasProps = {
-  preorderLocation: PreorderLocation;
-  /** Compact: waitlist link + pre-order text. Full: inline subscribe form. */
+  /** @deprecated Waitlist-only — kept so call sites need not churn. */
+  preorderLocation?: PreorderLocation;
+  /** Compact: waitlist link. Full: inline subscribe form. */
   variant?: "compact" | "full";
   secondaryHref?: string;
   secondaryLabel?: string;
   className?: string;
+  showHonesty?: boolean;
 };
 
 export function SubscribeFirstCtas({
-  preorderLocation,
   variant = "compact",
   secondaryHref,
   secondaryLabel,
   className = "",
+  showHonesty = true,
 }: SubscribeFirstCtasProps) {
   if (variant === "full") {
     return (
       <div className={`space-y-4 ${className}`}>
         <SubscribeForm variant="hero" />
-        <div className="flex flex-wrap items-center gap-4">
-          <TrackedPreorderLink
-            location={preorderLocation}
-            className="text-xs tracking-[0.2em] text-white/60 transition-colors hover:text-neon-purple"
-          >
-            Pre-order · {siteConfig.preOrderPrice} →
-          </TrackedPreorderLink>
-          {secondaryHref && secondaryLabel ? (
+        {showHonesty ? (
+          <p className="text-xs leading-relaxed text-white/55">
+            {siteConfig.ctaHonesty}
+          </p>
+        ) : null}
+        {secondaryHref && secondaryLabel ? (
+          <div className="flex flex-wrap items-center gap-4">
             <Link
               href={secondaryHref}
               className="text-xs tracking-[0.2em] text-white/60 transition-colors hover:text-neon-purple"
             >
               {secondaryLabel} →
             </Link>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
       </div>
     );
   }
 
   // Stacks to equal-width buttons on mobile; ragged intrinsic widths look broken there.
   return (
-    <div
-      className={`flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 ${className}`}
-    >
-      <Link
-        href="/#subscribe"
-        className="inline-flex justify-center bg-neon-purple px-6 py-4 text-xs font-bold tracking-[0.2em] text-black transition-all hover:bg-neon-glow"
-      >
-        JOIN WAITLIST
-      </Link>
-      <TrackedPreorderLink
-        location={preorderLocation}
-        className="border-industrial px-6 py-4 text-center text-xs tracking-[0.2em] text-white/60 hover:text-neon-purple"
-      >
-        PRE-ORDER {siteConfig.preOrderPrice}
-      </TrackedPreorderLink>
-      {secondaryHref && secondaryLabel ? (
+    <div className={`space-y-3 ${className}`}>
+      <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
         <Link
-          href={secondaryHref}
-          className="px-2 py-2 text-center text-xs tracking-[0.2em] text-white/55 transition-colors hover:text-neon-purple sm:py-4 sm:text-left"
+          href="/#subscribe"
+          className="inline-flex justify-center bg-neon-purple px-6 py-4 text-xs font-bold tracking-[0.2em] text-black transition-all hover:bg-neon-glow"
         >
-          {secondaryLabel} →
+          JOIN WAITLIST
         </Link>
+        {secondaryHref && secondaryLabel ? (
+          <Link
+            href={secondaryHref}
+            className="px-2 py-2 text-center text-xs tracking-[0.2em] text-white/55 transition-colors hover:text-neon-purple sm:py-4 sm:text-left"
+          >
+            {secondaryLabel} →
+          </Link>
+        ) : null}
+      </div>
+      {showHonesty ? (
+        <p className="text-xs leading-relaxed text-white/55">
+          {siteConfig.ctaHonesty}
+        </p>
       ) : null}
     </div>
   );

@@ -56,8 +56,9 @@ export default function PrivacyPage() {
             performance metrics. We do not sell your personal information.
           </p>
           <p>
-            Pre-orders are processed by Stripe. Payment data is handled by Stripe under
-            their privacy policy — we do not store full card numbers on our servers.
+            We are not taking payments on cold traffic today. When a charge path
+            reopens, payments will be processed by Stripe under their privacy policy —
+            we do not store full card numbers on our servers.
           </p>
         </LegalSection>
 

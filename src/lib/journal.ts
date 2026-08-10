@@ -777,7 +777,7 @@ export const journalEssays: JournalEntry[] = [
       },
       {
         type: "p",
-        text: "Pre-revenue. Working product on real MS-S1-class metal. Published mesh benchmarks pending. Subscribe for launch updates; pre-order when you are ready.",
+        text: "Pre-revenue. Working product on real MS-S1-class metal. Published mesh benchmarks pending. Subscribe for launch updates — we’re not taking pre-orders yet.",
       },
     ],
   },

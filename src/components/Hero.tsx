@@ -3,18 +3,11 @@ import Link from "next/link";
 import { computePower, siteConfig } from "@/lib/config";
 import { HeroProductVisual } from "@/components/HeroProductVisual";
 import { SubscribeForm } from "@/components/SubscribeForm";
-import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 import { ValidationBadge } from "@/components/ValidationBadge";
 
 function HeroSecondaryCtas() {
   return (
     <div className="flex flex-wrap items-center gap-5">
-      <TrackedPreorderLink
-        location="hero"
-        className="text-xs tracking-[0.2em] text-white/55 transition-colors hover:text-neon-purple"
-      >
-        Pre-order · {siteConfig.preOrderPrice} →
-      </TrackedPreorderLink>
       <a
         href="#how-it-works"
         className="border-industrial px-6 py-3 text-xs tracking-[0.2em] text-white/60 transition-colors hover:border-neon-purple/50 hover:text-neon-purple"
@@ -54,6 +47,9 @@ export function Hero() {
 
           <div className="space-y-4 pt-1 lg:hidden">
             <SubscribeForm variant="hero" />
+            <p className="text-xs leading-relaxed text-white/55">
+              {siteConfig.ctaHonesty}
+            </p>
             <HeroSecondaryCtas />
           </div>
         </div>
@@ -71,6 +67,9 @@ export function Hero() {
 
           <div className="mt-5 hidden w-full flex-col gap-3 lg:flex">
             <SubscribeForm variant="hero" className="[&_form]:max-w-none" />
+            <p className="text-xs leading-relaxed text-white/55">
+              {siteConfig.ctaHonesty}
+            </p>
             <HeroSecondaryCtas />
           </div>
         </div>

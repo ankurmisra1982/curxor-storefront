@@ -83,9 +83,9 @@ export const comparePages: ComparePage[] = [
     whoShouldBuyThem:
       "Reserve MIKY if you want a screenless trust node, app-controlled agents, and general independence at a lower price point — with compute suited to lighter workloads.",
     whoShouldBuyCurxor:
-      "Pre-order CurXor if you need 64GB local models, Capital/Creator/Outreach crewmates, messaging gateways, and eno1/eno2 networking on day one.",
+      "Join the CurXor waitlist if you need 64GB local models, Capital/Creator/Outreach crewmates, messaging gateways, and eno1/eno2 networking on day one.",
     rows: [
-      { label: "Price", them: "~€490 (reservation)", curxor: `${siteConfig.preOrderPrice} pre-order` },
+      { label: "Price", them: "~€490 (reservation)", curxor: `${siteConfig.preOrderPrice} waitlist` },
       { label: "Memory", them: "8–16GB class", curxor: "64GB LPDDR5X UMA" },
       { label: "Control surface", them: "Miky mobile app", curxor: "Flight Command + phone gateways" },
       { label: "Included crewmates", them: "General agent host", curxor: clawRosterLabel },
@@ -131,14 +131,14 @@ export const comparePages: ComparePage[] = [
     whoShouldBuyThem:
       "Use NemoClaw if you have integrators, existing NVIDIA/DGX infrastructure, and need OpenShell policy sandboxes on your own images.",
     whoShouldBuyCurxor:
-      "Pre-order CurXor if you want eno2 physical egress isolation, Flight Command, and wealth, creation, and outreach crewmates on day one — not a weekend integrator project.",
+      "Join the CurXor waitlist if you want eno2 physical egress isolation, Flight Command, and wealth, creation, and outreach crewmates on day one — not a weekend integrator project.",
     rows: [
       { label: "What you buy", them: "Open-source governance stack", curxor: "Hardware + CurXor OS + crewmates" },
       { label: "Target buyer", them: "Platform / security teams", curxor: "Operators · creators · agencies" },
       { label: "UI", them: "Bring your own", curxor: "Flight Command dashboard" },
       { label: "Egress model", them: "OpenShell YAML policies", curxor: "eno2 bridges + Settings" },
       { label: "Crewmate desks", them: "Configure yourself", curxor: clawRosterLabel },
-      { label: "Integration time", them: "Days to weeks per deployment", curxor: "Turnkey pre-order appliance" },
+      { label: "Integration time", them: "Days to weeks per deployment", curxor: "Turnkey appliance (waitlist)" },
     ],
   },
 ];

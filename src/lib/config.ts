@@ -3,7 +3,7 @@ export const siteConfig = {
   siteUrl: "https://curxor.ai",
   pageTitle: "CurXor — Your AI team on a box you own",
   metaDescription:
-    "Desk appliance + CurXor OS. Mint autonomous employees on bare metal — Capital, Creator, Outreach demo-ready day one, local inference, $3,999 once, $0/mo API rent.",
+    "Desk appliance + CurXor OS. Digital employees — your desk crew of ten. Local inference. $3,999 once · $0/mo API rent. Join the waitlist for the sovereign AI desk.",
   keywords: [
     "sovereign AI hardware",
     "local LLM appliance",
@@ -29,12 +29,19 @@ export const siteConfig = {
   /** Above-fold honesty — 3 flagships demo-ready; previews labeled; outbound until eno2 wired. */
   heroHonestyLine:
     "3 desks demo-ready · 8 previews labeled · simulated outbound until you wire eno2",
+  /** Commercial honesty (FOUNDER-PROTOCOL S0 · 2026-08-10) — near CTA / pricing. */
+  ctaHonesty: "We’re not taking pre-orders yet. Join the waitlist.",
+  ctaPrimary: "Join waitlist",
+  ctaSecondary: "See how it works",
+  /** Public path is waitlist only — no cold-traffic Stripe / charge-now. */
+  commercialPath: "waitlist_only" as const,
   heroSubtext:
     "126 TOPS local inference · dual 10GbE · eno2 kill switch · $0 CurXor API fees.",
   heroCreatorBadge:
     "Capital · Creator · Outreach — demo tour day one",
   preOrderPrice: "$3,999",
   preOrderPriceUsd: 3999,
+  /** Kept for env compatibility — UI must not expose this while commercialPath is waitlist_only. */
   stripeCheckoutUrl:
     process.env.NEXT_PUBLIC_STRIPE_CHECKOUT_URL ??
     "https://buy.stripe.com/00w4gzb5U6gKc6igCZabK00",
@@ -208,7 +215,7 @@ export const faqItems = [
   {
     question: "When does it ship?",
     answer:
-      "CurXor is available for pre-order now. Pre-order customers receive launch updates by email as production batches are scheduled. Subscribe on curxor.ai or follow @curxorai on X for ship-date announcements.",
+      "We’re not taking pre-orders yet. Join the waitlist on curxor.ai for launch updates — ship dates are announced by email as production batches are scheduled. Follow @curxorai on X for the same news.",
   },
   {
     question: "Can I message my desk crew from Telegram, WhatsApp, or Slack?",
@@ -263,7 +270,7 @@ export const faqItems = [
   {
     question: "Where are your privacy policy and trading disclaimers?",
     answer:
-      "Privacy policy: curxor.ai/privacy. Terms, pre-order conditions, and Capital trading disclaimers: curxor.ai/terms.",
+      "Privacy policy: curxor.ai/privacy. Terms, waitlist/purchase conditions, and Capital trading disclaimers: curxor.ai/terms.",
   },
   {
     question: "Who is CurXor for?",

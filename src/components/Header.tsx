@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 import { CurXorLogo } from "@/components/brand/CurXorLogo";
-import { TrackedPreorderLink } from "@/components/TrackedPreorderLink";
 import { navGroups, navTopLinks } from "@/lib/site-nav";
 
 function NavLinkItem({
@@ -173,12 +172,6 @@ export function Header() {
           >
             JOIN WAITLIST
           </Link>
-          <TrackedPreorderLink
-            location="header"
-            className="ml-1 text-white/55 transition-colors hover:text-neon-purple"
-          >
-            PRE-ORDER
-          </TrackedPreorderLink>
         </nav>
 
         <div className="flex items-center gap-3 lg:hidden">
@@ -269,17 +262,10 @@ export function Header() {
             <Link
               href="/#subscribe"
               onClick={closeMobileMenu}
-              className="pt-2 font-bold text-neon-purple transition-colors hover:text-neon-glow"
+              className="pt-2 pb-2 font-bold text-neon-purple transition-colors hover:text-neon-glow"
             >
               JOIN WAITLIST
             </Link>
-            <TrackedPreorderLink
-              location="header"
-              className="pb-2 text-white/55 transition-colors hover:text-neon-purple"
-              onClick={closeMobileMenu}
-            >
-              PRE-ORDER
-            </TrackedPreorderLink>
           </div>
         </nav>
       ) : null}

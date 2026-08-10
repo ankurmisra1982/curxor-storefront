@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { siteConfig } from "@/lib/config";
-import { trackPreorderClick, type PreorderLocation } from "@/lib/analytics";
 
+/**
+ * Safety shim — commercial path is waitlist_only (FOUNDER-PROTOCOL S0).
+ * Never link cold traffic to Stripe. Prefer Join Waitlist CTAs instead of this component.
+ */
 type TrackedPreorderLinkProps = {
-  location: PreorderLocation;
+  location?: string;
   className?: string;
   children: React.ReactNode;
   onClick?: () => void;
@@ -13,7 +15,6 @@ type TrackedPreorderLinkProps = {
 };
 
 export function TrackedPreorderLink({
-  location,
   className,
   children,
   onClick,
@@ -21,13 +22,10 @@ export function TrackedPreorderLink({
 }: TrackedPreorderLinkProps) {
   return (
     <Link
-      href={siteConfig.stripeCheckoutUrl}
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/#subscribe"
       className={className}
       tabIndex={tabIndex}
       onClick={() => {
-        trackPreorderClick(location);
         onClick?.();
       }}
     >

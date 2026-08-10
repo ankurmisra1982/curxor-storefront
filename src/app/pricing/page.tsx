@@ -92,7 +92,7 @@ export default function PricingPage() {
           <p className="mt-2 text-xs leading-relaxed text-white/55">
             {priceCard.shipping}{" "}
             <Link href="/terms" className="text-neon-purple hover:underline">
-              Pre-order terms
+              Terms
             </Link>
           </p>
         </section>

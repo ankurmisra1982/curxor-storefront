@@ -39,7 +39,7 @@ export function Faq() {
             FAQ
           </p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Pre-order questions
+            Waitlist questions
           </h2>
         </div>
 

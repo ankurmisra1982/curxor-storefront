@@ -21,7 +21,7 @@ export const investorDeckMailto =
 
 export const pressKit = {
   headline: "Your AI team. On a box you own.",
-  boilerplate: `${productIdentity.companyName} builds sovereign AI appliances that run digital employees — a desk crew on local hardware — with zero monthly API fees. ${productIdentity.boxName} is the chassis name on every box — 126 TOPS NPU, 64GB unified memory, ${productIdentity.osName}, and ${clawRosterLabel} spanning wealth, creation, outreach, signals, and life & family. Message your desk crew from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Join the waitlist at curxor.ai; pre-order is $3,999 when you are ready.`,
+  boilerplate: `${productIdentity.companyName} builds sovereign AI appliances that run digital employees — a desk crew on local hardware — with zero monthly API fees. ${productIdentity.boxName} is the chassis name on every box — 126 TOPS NPU, 64GB unified memory, ${productIdentity.osName}, and ${clawRosterLabel} spanning wealth, creation, outreach, signals, and life & family. Message your desk crew from Flight Command or Telegram, Slack, WhatsApp, and iMessage — local inference by default, integrations you configure. Join the waitlist at curxor.ai — we’re not taking pre-orders yet; price intent is $3,999 once.`,
   founderQuote:
     "ChatGPT bills per token. CurXor bills once. Your alpha stays on your metal.",
   contactEmail: siteConfig.contactEmail,
@@ -94,7 +94,7 @@ export const pressKit = {
       {
         status: "Shipped" as const,
         milestone:
-          "Storefront at curxor.ai — investor press kit, validation surfaces, waitlist + Stripe pre-order",
+          "Storefront at curxor.ai — investor press kit, validation surfaces, waitlist capture",
       },
       {
         status: "Shipped" as const,
@@ -125,7 +125,7 @@ export const pressKit = {
     headline: "Hardware wedge today. Platform expansion tomorrow.",
     now: [
       "$3,999 one-time hardware (MS-S1 MAX class, CurXor OS pre-flash)",
-      "Stripe pre-order at /pricing",
+      "Waitlist at curxor.ai / pricing (no cold-traffic checkout)",
       "No CurXor subscription for local inference or bundled crewmates",
     ],
     expansion: [
@@ -205,7 +205,7 @@ export const pressKit = {
       {
         href: "/terms",
         label: "Terms",
-        why: "Pre-order, trading disclaimers, software maturity",
+        why: "Waitlist/purchase terms, trading disclaimers, software maturity",
       },
     ],
   },
@@ -243,7 +243,7 @@ export const pressKit = {
         "Bootstrapped and selectively meeting aligned angels and seed investors.",
     },
     { label: "Product", value: `${productIdentity.boxName} (${productIdentity.boxDescriptor})` },
-    { label: "Price", value: "$3,999 pre-order (one-time hardware)" },
+    { label: "Price", value: "$3,999 price intent · waitlist only (one-time hardware)" },
     { label: "Compute", value: "AMD Ryzen AI Max+ 395 · 126 TOPS NPU · 64GB LPDDR5X UMA" },
     { label: "Networking", value: "Dual 10GbE — eno1 Command · eno2 Egress" },
     {

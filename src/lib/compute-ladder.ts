@@ -12,16 +12,16 @@ export const openWeightComputeLadder = {
   pricingRoles: {
     standard: "Flagship desks — 3 demo-ready · daily operate",
     pro: "Power operators — heavier local models · dual hot-load",
-    studio: "Horizon — largest open weights when memory demands it (no pre-order)",
+    studio: "Horizon — largest open weights when memory demands it (waitlist path)",
   },
 } as const;
 
-/** The one thing a buyer came to /pricing for. Keep every claim here purchasable today. */
+/** The one thing a buyer came to /pricing for. Price intent — waitlist only until charge path reopens. */
 export const priceCard = {
   eyebrow: "CURXOR STANDARD 64",
   price: "$3,999",
   cadence: "once",
-  sub: "One-time hardware · no CurXor subscription · $0/mo CurXor API on the operate plane",
+  sub: "Price intent · no CurXor subscription · $0/mo CurXor API on the operate plane",
   includes: [
     "curXor appliance — 64 GB LPDDR5X UMA · 126 TOPS NPU class",
     "CurXor OS + Flight Command — Home hub, Settings, Simple and Expert modes",
@@ -31,9 +31,9 @@ export const priceCard = {
     "Messaging gateways — Telegram, Slack, WhatsApp, iMessage, user-configured",
   ],
   honesty:
-    "Capital, Creator and Outreach are demo-ready desks; eight further crewmates ship as labelled previews. Outbound stays simulated until you wire your own bridges on eno2.",
+    "We’re not taking pre-orders yet. Join the waitlist. Capital, Creator and Outreach are demo-ready desks; eight further crewmates ship as labelled previews. Outbound stays simulated until you wire your own bridges on eno2.",
   shipping:
-    "Pre-order reserves your place in the queue. Ship dates are announced by email as production batches are scheduled — no delivery date is promised at checkout.",
+    "Join the waitlist for launch updates. Ship dates are announced by email as production batches are scheduled — no delivery date is promised today.",
 } as const;
 
 /** Pricing page — evolving business model (INVESTOR-MEMO § Business model) */
@@ -53,7 +53,7 @@ export const hardwareTierCompare = {
       name: "Standard",
       price: "$3,999",
       memory: "64 GB UMA",
-      status: "Pre-order",
+      status: "Waitlist",
       highlight: true,
     },
     {
@@ -61,7 +61,7 @@ export const hardwareTierCompare = {
       name: "Pro 128",
       price: "$4,999 indicative",
       memory: "128 GB UMA",
-      status: "Roadmap · no checkout",
+      status: "Roadmap · waitlist path",
       highlight: false,
     },
     {
@@ -69,7 +69,7 @@ export const hardwareTierCompare = {
       name: "CurXor Studio",
       price: "TBD",
       memory: "256 GB+ UMA",
-      status: "Horizon · no checkout",
+      status: "Horizon · waitlist path",
       highlight: false,
     },
   ],
